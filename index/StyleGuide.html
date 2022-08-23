@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>차세대 PSS프로젝트 스타일 가이드</title>
+
+    <link href="css/style.css" rel="stylesheet"> <!-- style guide layout -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/plugins/jQueryUI/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+    <link href="css/plugins/jqGrid/ui.jqgrid.css" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="../pub/assets/css/global.css">
+    <link rel="stylesheet" href="../pub/assets/css/component.css">
+    <link rel="stylesheet" href="../pub/assets/css/page.css">
+    <link rel="stylesheet" href="../pub/assets/css/responsive.css">
+    <link rel="stylesheet" href="../pub/assets/css/lang.css">  
+    <link rel="stylesheet" href="../index/css/style-guide.css">
+    
+</head>
+<body>
+    <div id="wrapper" class="style-guide">
+        <nav class="navbar-default navbar-static-side" role="navigation" style="position: fixed;">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <h1 style="line-height: 20px;">
+                            <span class="logo">제주항공</span>
+                            차세대 PSS프로젝트 <br>
+                            Style Guide
+                            <span class="date">Last update : 2021.00.00</span>
+                            <span class="new-window">*새창으로 : Shift + 클릭</span>
+                        </h1>
+                    </li>
+                </ul>
+
+                <aside class="sidebar">
+                    <div id="sidebar">
+                        <ul class="snb">                            
+                            <li><a class="snbmenu active" href="StyleGuide.html"><i class="fa fa-th-large"></i>&nbsp;&nbsp;CSS Guide</a>
+                                <div class="snbView" style="display: block;">
+                                    <ul class="nav-second-level"> 
+                                        <li class="level level_01">
+                                            <a href="../pub/web_html/GUIDE/layout_guide.html" target="content-area">Content (Layout)</a>
+                                        </li>
+                                        <li class="level level_02">
+                                            <a href="../pub/web_html/GUIDE/stepui_guide.html" target="content-area">Step</a>
+                                        </li>
+                                        <li class="level level_03">
+                                            <a href="../pub/web_html/GUIDE/font_guide.html" target="content-area">Font</a>
+                                        </li>                                      
+                                        <li class="level level_04">
+                                            <a href="../pub/web_html/GUIDE/alert_guide.html" target="content-area">Alert</a>
+                                        </li>
+                                        <li class="level level_05">
+                                            <a href="../pub/web_html/GUIDE/popup_guide.html" target="content-area">Popup</a>
+                                        </li>
+                                        <li class="level level_06">
+                                            <a href="../pub/web_html/GUIDE/button_guide.html" target="content-area">Button</a>
+                                        </li>
+                                        <li class="level level_07">
+                                            <a href="../pub/web_html/GUIDE/banner_guide.html" target="content-area">Banner</a>
+                                        </li>
+                                        
+                                        <li class="level level_08">
+                                            <a href="../pub/web_html/GUIDE/tab_guide.html" target="content-area">Tab</a>
+                                        </li>
+                                        <!-- <li class="level level_09">
+                                            <a href="../pub/web_html/GUIDE/list_guide.html" target="content-area">List</a>
+                                        </li> -->
+                                        <li class="level level_10">
+                                            <a href="../pub/web_html/GUIDE/table_guide.html" target="content-area">Table</a>
+                                        </li>
+                                        <li class="level level_11">
+                                            <a href="../pub/web_html/GUIDE/searchbox_guide.html" target="content-area">SearchBox</a>
+                                        </li>
+                                        <li class="level level_12">
+                                            <a href="../pub/web_html/GUIDE/textbox_guide.html" target="content-area">TextBox</a>
+                                        </li>
+                                        <!-- <li class="level level_13">
+                                            <a href="../pub/web_html/GUIDE/text_guide.html" target="content-area">Text</a>
+                                        </li> -->
+                                        <li class="level level_14">
+                                            <a href="../pub/web_html/GUIDE/input_guide.html" target="content-area">Input</a>
+                                        </li>
+                                        <!-- <li class="level level_15">
+                                            <a href="../pub/web_html/GUIDE/bottomsheet_guide.html" target="content-area">Bottomsheet</a>
+                                        </li> -->
+                                        <!-- <li class="level level_16">
+                                            <a href="../pub/web_html/GUIDE/agreement_guide.html" target="content-area">Agreement</a>
+                                        </li> -->
+    
+                                    </ul>
+                                </div>
+                                <!--//snbView-->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //sidebar -->
+                </aside>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+
+            <div class="wrapper-if">
+                <iframe id="iframe1" name="content-area" src="../pub/web_html/GUIDE/component_tab.html"></iframe>
+            </div>
+
+            <div class="wrapper wrapper-content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox">                           
+                            <div class="ibox-content guide-main">  
+                                
+                                    
+                                <h1 class="guide_title">CSS</h1> 
+                                <div style="padding:10px 0 20px;font-size:14px;color:#006766">PC 웹뷰은 1004px에 맞춰져있고, 1080px부터 모바일웹뷰 (브레이크포인트) </div>
+                                <div class="css-info">
+                                    
+                                    <ul>
+                                        <li>global.css - 공통정의, 폰트스타일 지정</li>
+                                        <li>component.css - 컴포넌트별 스타일(PC, 모바일, 320) </li>
+                                        <li>page.css - 모바일웹을 기본으로 CSS정의가 됨 </li>
+                                        <li>responsive.css - 반응형이 적용된 PC화면</li>
+                                
+                                        <li>main.css - 메인만 쓰는 CSS, page.css에 import </li>
+                                        <li>ticketing.css - 퀵부킹 공통영역 CSS, page.css에 import </li>
+                                
+                                        <li>jjpay.css - 모달 새창, 별도로 관리해야함 (모바일, PC 공통 한스타일)</li>
+                                
+                                        <li>dark_main.css - 다크메인만 쓰는 CSS</li>
+                                        <li>lang.css - 언어별 CSS 다국어) </li>
+                                
+                                        <li>front_global.css - CMS 미리보기영역</li>
+                                        <li>front_main.css - CMS 미리보기영역 (main.css 카피해서 개발전달)</li>
+                                        <li>front_page.css - CMS 미리보기영역 (page.css 카피해서 개발전달)</li>                                
+                                    </ul>
+                                </div>
+                           
+                                                                
+                                <br>
+                                
+                                <h1 class="guide_title">Typograpy</h1> 
+                                  <div  style="padding-bottom:10px; padding-top:10px">
+                                    <h2>국문 / 영문 / 일문 - SpoqaHanSansNeo </h2> 
+                                    <h2 >중국어 간체 - 노토산스 SC </h2>
+                                    <h2>중국어 번체-  노토산스 TC</h2>
+                                  
+                                    <div style="padding:20px 0px">  
+                                        <span class="font-st">SpoqaHanSansNeo-Light 300  / </span>
+                                        <span class="font-st">SpoqaHanSansNeo-Regular 400  / </span>
+                                        <span class="font-st">SpoqaHanSansNeo-Medium 700  / </span>
+                                        <span class="font-st">SpoqaHanSansNeo-Bold 800  / </span><br>
+                                        <span class="font-st">Letter-spacing:-0.2 / line-height:1.5 </span>
+                                    </div>
+                                </div>
+                                
+                                <h1 class="guide_title">Color</h1> 
+                                <h2 style="padding-bottom:10px; padding-top:10px">Text</h2>
+
+                                <div style="background: #000; min-width:100px; height:100px; padding:10px; float: left; margin-right:5px; position: relative;">
+                                    <p style="color: #fff; font-size: 11px; letter-spacing:.5px;">TextColor01 / <br>Title</p>
+                                    <p style="color: #fff; font-size: 13px; letter-spacing:.5px;position: absolute; bottom: 10px;">#000000</p>
+                                </div>
+
+                                <div style="background: #333;min-width:100px; height:100px; padding:10px; float: left; margin-right:5px; position: relative;">
+                                    <p style="color: #fff; font-size: 11px; letter-spacing:.5px;">TextColor02 / <br>Contents</p>
+                                    <p style="color: #fff; font-size: 13px; letter-spacing:.5px;position: absolute; bottom: 10px;">#333333</p>
+                                </div>
+
+                                <div style="background: #666;min-width:100px; height:100px; padding:10px; float: left; margin-right:5px; position: relative;">
+                                    <p style="color: #fff; font-size: 11px; letter-spacing:.5px;">TextColor03 /</p>
+                                    <p style="color: #fff; font-size: 13px; letter-spacing:.5px;position: absolute; bottom: 10px;">#666666</p>
+                                </div>
+
+                                <div style="background: #888;min-width:100px; height:100px; padding:10px; float: left; margin-right:5px; position: relative;">
+                                    <p style="color: #fff; font-size: 11px; letter-spacing:.5px;">TextColor04 /</p>
+                                    <p style="color: #fff; font-size: 13px; letter-spacing:.5px;position: absolute; bottom: 10px;">#888888</p>
+                                </div>
+
+                                <div style="clear: both;"></div>
+
+                                <h2 style="padding-bottom:10px; padding-top:30px">Point</h2>
+
+                                <div>
+                                    <div style="background: #ff5000; width:100px; height:80px; padding:10px;float: left; margin-right:5px;">
+                                        <p style="color: #fff; font-size: 11px; letter-spacing:.5px;">PointColor01</p>
+                                        <p style="color: #fff; font-size: 13px; letter-spacing:.5px;padding-top:20px">#ff5000</p>
+                                    </div>
+                                
+                                    <div style="background: #06a0de; width:100px; height:80px; padding:10px;float: left; margin-right:5px;">
+                                        <p style="color: #fff; font-size: 11px; letter-spacing:.5px;">PointColor02</p>
+                                        <p style="color: #fff; font-size: 13px; letter-spacing:.5px;padding-top:20px">#06a0de</p>
+                                    </div>
+                                </div>
+
+                                <div style="clear: both;"></div>
+
+                                <h2 style="padding-bottom:10px; padding-top:30px">Componet</h2>
+
+                                <div>                                
+                                    <div style="background: #f2f2f2;min-width:100px; height:100px; padding:10px; float: left; margin-right:5px; position: relative;">
+                                        <p style="color:#333; font-size: 11px; letter-spacing:.5px;">Tab Color / <br> Accordion / </p>
+                                        <p style="color:#333; font-size: 13px; letter-spacing:.5px; position: absolute; bottom: 10px;">#f2f2f2</p>
+                                    </div>
+                                
+                                    <div style="background: #f5f5f5;min-width:100px; height:100px; padding:10px; float: left; margin-right:5px; position: relative;">
+                                        <p style="color:#333; font-size: 11px; letter-spacing:.5px;">ContentBoxColor /<br>SearchBoxColor /  </p>
+                                        <p style="color:#333; font-size: 13px; letter-spacing:.5px;position: absolute; bottom: 10px;">#f5f5f5</p>
+                                    </div>
+                                
+                                
+                                    <div style="background: #f8f8f8;min-width:100px; height:100px; padding:10px; float: left; margin-right:5px; position: relative;">
+                                        <p style="color:#333; font-size: 11px; letter-spacing:.5px;">TitleBgColor /<br>ContentBgColor /</p>
+                                        <p style="color:#333; font-size: 13px; letter-spacing:.5px;position: absolute; bottom: 10px;">#f8f8f8</p>
+                                    </div>
+                                </div>
+
+                                <div style="clear: both;"></div>
+
+
+
+
+
+
+                            </div>  
+
+
+                            
+
+
+
+
+                     
+                        </div><!-- //ibox -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <!-- jqGrid -->
+    <script src="js/plugins/jqGrid/i18n/grid.locale-en.js"></script>
+    <script src="js/plugins/jqGrid/jquery.jqGrid.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script>
+           $(function () {
+                $("#iframe1").on("load", function () {
+                    $(window).scrollTop(0);
+                });               
+            });
+            
+            $(".nav-second-level li a").click(function(){
+                $('.wrapper-content').hide();
+                $('.wrapper-if').show();
+           });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,129 @@
+/* guide setting */
+.color_box { width: 150px; height: 50px; }
+.color_000 { background: #000; }
+.color_333 { background: #333; }
+.color_666 { background: #666; }
+.color_888 { background: #888; }
+.color_aaa { background: #aaa; }
+.color_fff { background: #fff; border: 1px solid #000; }
+.color_ff0000 { background: #ff0000; }
+.color_ff5000 { background: #ff5000; }
+.color_00a7e1 { background: #00a7e1; }
+.ds_flex { display: flex; }
+.font_group { flex: 1; padding-right: 40px; }
+.font_group.color { margin-bottom: 20px; }
+.guide_bg { padding: 20px; background: rgba(0, 0, 0, .3); text-align: center; }
+.table-vertical__col.bg { background: rgba(0, 0, 0, .3); text-align: center; }
+.style_guide.table .table-vertical__col { padding: 50px 0 60px; }
+.style_guide.alert .table-vertical__col { padding: 30px; background: #eee; }
+.style_guide.popup .table-vertical__col { padding: 0; }
+.style_guide.textbox .table-vertical__col, 
+.style_guide.search_box .table-vertical__col, 
+.style_guide.tab .table-vertical__col, 
+.style_guide.input .table-vertical__col,
+.style_guide.btn .table-vertical__col { padding: 60px 0; }
+.style_guide.textbox .bundle_cont_inner { padding-top: 0; }
+.style_guide.textbox .search, .style_guide.banner .search { margin: 0; }
+.style_guide.search_box .sub-box, .style_guide.tab .sub-box  { margin: 0; }
+.style_guide.input .login .input-row,
+.style_guide.input .input-wrap--custom { width: 360px; margin: 20px auto; }
+.style_guide.input .main-ticketing { margin-top: 20px; }
+.style_guide.input .login__input-area { margin: 0; }
+.style_guide.input .customer-layer, .style_guide.btn .customer-layer  { display: block; position: relative; top: 0; left: 0; }
+.style_guide.input .customer-layer .fixed-wrap--multi-line, .style_guide.btn .customer-layer .fixed-wrap--multi-line { padding: 40px 0 30px; }
+.style_guide.input .calendar_wrap { margin-bottom: 20px; }
+.style_guide.input .calendar_wrap .main-ticketing .ticketing-date { float: none; width: 100%; margin-left: 0; }
+.style_guide.btn .button--small { margin-top: 0; }
+.style_guide.btn .content { min-height: auto; }
+.style_guide.btn .breadcrumb { border-top: 1px solid #ddd; }
+.style_guide.btn .action .fixed-wrap.button-wrap.float, .style_guide.btn .booking-sticky.float { position: relative; }
+.style_guide.btn .paging-center { padding-top: 0; border-top: none; }
+.style_guide.btn .bundle_skip { bottom: 80px; }
+.style_guide.btn .ticket-pare { padding: 0; border-top: none; }
+.style_guide.btn .select-wrap.type01 + .select-wrap.type01 { margin-top: 0; }
+.style_guide.btn .simple-info { display: block !important; }
+.style_guide.banner { margin: 0; }
+.style_guide.banner .banner { margin: 0; }
+.style_guide.banner .guide_wrap { padding: 0; }
+.style_guide.banner .temp-banner { margin-top: 0; }
+.style_guide.banner .reflash-pay-banner { margin-top: 0; }
+.style_guide.banner .temp-banner-swiper { margin-top: 0; }
+.style_guide.banner .date-layer { position: relative; top: 0; }
+.style_guide.banner .date-layer.guide_test { display: block; }
+.style_guide.banner .date-layer.guide_test .flatpickr-prev-month.flatpickr-disabled,
+.style_guide.banner .date-layer.guide_test .flatpickr-next-month.flatpickr-disabled { opacity: 1; }
+.style_guide.banner .flatpickr-wrapper .flatpickr-wrapper { display: none; }
+.style_guide.banner .main-banner { margin: 0; }
+.flatpickr-innerContainer .info { display: none; }
+.guide_wrap { width: 1044px; margin:0 auto; padding: 0 20px; }
+.guide_wrap .guide_box {margin: 10px 0 50px; padding: 30px; border: 1px solid #ddd; border-radius:5px; }
+.guide_section { padding: 100px 0; border-bottom: 5px dashed #ff5000; }
+.guide_section:last-child { border-bottom: none; }
+.guide_title {font-size:30px; font-weight:800; letter-spacing: -1px; height:40px;}
+.guide_main_title + .guide_section { padding-top: 30px; }
+.guide_main_title {background: #313131;font-family: "맑은 고딕", malgun-gothic, san-serif;color: #fff;font-weight:600; margin: 80px 0 0; font-size: 24px; padding: 20px 15px; }
+.guide_main_title:first-child { margin-top: 0; }
+.guide_page { position: relative; padding: 40px 20px 15px; border: 1px solid #ddd; background: #eee; font-size: 14px; line-height: 1.6; }
+.guide_page:after { content: '화면ID'; position: absolute; top: 0; left: 0; font-size: 12px; color: #fff; padding: 5px 15px; background: #000; letter-spacing: 1px; }
+.guide_page a:hover { color: #ff5000; font-weight: bold; }
+.guide_infor { padding-top: 20px; }
+.guide_infor_title { margin-bottom: 10px; font-size: 20px; color; #000; font-weight: 900; }
+.guide_infor_text { margin-bottom: 5px; font-size: 14px; color: #819cf5; font-weight: 700; }
+
+.guide_cover { padding: 0 20px; background: #f2f2f2; }
+.guide_cover.flex { display: flex; }
+.guide_cover.flex .guide_cover_inner { -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; }
+.guide_cover_inner { margin: 30px 0; }
+.guide_sub_title { margin: 100px 0 10px; font-size: 16px; border-top: 3px dotted #333; padding-top: 100px; font-weight: 700; }
+
+.style-guide #page-wrapper { height: 100%; padding:0; }
+.style-guide .page-title-wrap {border:0px solid #ddd}
+.style-guide .nav-second-level li a {font-size:13px;color:#fff;font-size:13px; width:210px; display: block;padding: 7px 10px 7px 10px;}
+.style-guide .nav-second-level li a:hover {color: #000; }
+.style-guide .guide-main {border:0px solid #000;position: relative;width: 1004px;margin: 40px auto 100px;}
+.style-guide .navbar-default { background: #e3e3e3;}
+.style-guide .snbmenu.active { background: #ff5000;font-weight: 400; font-size:14px;color:#ffffdb;}
+.style-guide .snbView .nav-second-level li {background: #ff5100;}
+.style-guide .snbView .nav-second-level {border:0}
+.snbView .nav-second-level li {padding:0}
+.new-window {color:#666; font-size:11px;}
+.css-info {border:1px solid #a6e8e7; padding:10px; background: #e4ffff; line-height:22px}
+.css-info li {line-height:28px; position: relative; margin-left:20px;font-size:13px; }
+.css-info li::before {content: ''; display: block;position: absolute; width:4px; height:4px; border-radius: 50%; background: #333;top:50%; left:-10px}
+.style-guide .g_line1 {border:1px solid #ff5100}
+.font-st {font-size:13px; color:#999}
+.tbl_st1 {background: #fff;}
+.tbl_st2 {background: #fff;}
+.wrapper-if {display: none; width:100%; height: 100%; border:0; padding-bottom:0px; }
+.wrapper-if iframe {width:100%; height: 100%; border:0; }
+.step_ui .header:not(.header--main) .header__inner.mobile-only { position: relative; }
+.header .sticky-header.is-sticky { position: relative; margin-top:0 !important }
+.header .sticky-header.is-sticky::before { display:none }
+.header .sticky-header.is-sticky .header__box, .header .sticky-header.step03.is-sticky .header__box { height: 76px; }
+.table-vertical__col { padding: 60px 20px; }
+
+.btn_mo {display: inline-block;}
+.btn_mo button {border:1px solid #000; background: #121212; color:#fff; padding:3px 10px 5px; border-radius: 3px;font-size:12px; margin-left: 10px;}
+
+.dashed { padding:20px 0 30px; border-top:1px dashed #999 }
+.wrap--main { position: relative; margin:0; padding:0; }
+.booking-loading { position: relative; height:280px; }
+.wrap--main .premium-service-wrap {margin-top:0; margin-bottom:0; }
+.benefit-wrap { margin: 30px auto 0; }
+.snbView .nav-second-level li {padding:0}
+.font-st {font-size:13px; color:#999}
+.banner_table { margin:10px 0; table-layout: inherit; }
+.banner_table thead th,
+.banner_table tbody td { border:1px solid #ddd; font-size:12px; padding:2px 5px; text-align: center; vertical-align: middle; }
+.banner_table thead th { background:#f2f2f2; }
+.jquery-modal--full { background: rgba(0, 0, 0, .4); }
+
+@media screen and (max-width: 1079px){
+    .guide_wrap { min-width: 320px; width: auto; }
+    .style_guide.banner .guide_wrap { padding: 0 20px; }
+    .style_guide.input .login .input-row, .style_guide.input .input-wrap--custom { width: 100%; }
+}
+@media screen and (min-width: 1079px){
+    .style_guide.banner .wrap--main { height: 480px; }
+    .style_guide.banner .wrap--main .main-carousel { position: absolute; top: 0; left: 50%; width: 2000px; margin-left: -1000px; }
+}
