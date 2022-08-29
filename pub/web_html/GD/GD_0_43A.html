@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+<!-- 개발시 삭제: robots -->
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+<link rel="stylesheet" href="../../assets/css/component.css">
+<link rel="stylesheet" href="../../assets/css/page.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+<!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+  <div class="util__inner">
+    <div class="util__benefit">
+      <a href="#" class="util__link">기업 우대</a>
+      <a href="#" class="util__link">여행사 우대</a>
+    </div>
+
+    <div class="util__link-list" data-custom-toggle="wrap">
+      <!-- 로그인 이후 노출 -->
+      <span class="util__personal">
+        <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+      </span>
+      <!-- // 로그인 이후 노출 -->
+      <!-- 로그인 전 노출 -->
+      <a href="#" class="util__link">로그인</a>
+      <a href="#" class="util__link">회원가입</a>
+      <!-- // 로그인 전 노출 -->
+      <a href="#" class="util__link">리프레시 포인트</a>
+      <a href="#" class="util__link">이벤트</a>
+      <a href="#" class="util__link">고객센터</a>
+      <button type="button" class="util__country" data-custom-toggle="button">
+        <span class="text">대한민국</span>
+      </button>
+      <div class="header-country__layer" data-custom-toggle="panel">
+        <div class="country__title">
+          지역 및 언어 설정
+        </div>
+        <div class="country__input">
+          <div data-element="select" class="select-wrap select-wrap--line">
+            <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택" class="select-wrap__select" data-select-container=".country__input">
+              <option></option>
+              <option value="1" selected>대한민국</option>
+              <option value="2">중국</option>
+              <option value="3">일본</option>
+            </select>
+          </div>
+          <div data-element="select" class="select-wrap select-wrap--line">
+            <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택" class="select-wrap__select" data-select-container=".country__input">
+              <option></option>
+              <option value="1" selected>한국어</option>
+              <option value="2">중국어</option>
+              <option value="3">일본어</option>
+            </select>
+          </div>
+
+          <button class="country__button">확인</button>
+        </div>
+        <button class="button-close" data-custom-toggle="close">
+          <span class="hidden">닫기</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<header class="header__inner pc-only">
+  <div class="sticky-header" data-sticky>
+    <div class="header__box"><!-- header__box 추가 -->
+      <h1 class="header__logo">
+        <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+      </h1>
+
+      <div class="header__link-list">
+        <a href="#" class="header__link">항공권 예매</a>
+        <a href="#" class="header__link header__link--current">마이페이지</a>
+        <a href="#" class="header__link">부가서비스</a>
+        <a href="#" class="header__link">모바일탑승권</a>
+      </div>
+
+      <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+        <button type="button" class="header__button-ticket">
+          <span class="hidden">티켓보기</span>
+        </button>
+        <button type="button" class="header__button-search" data-custom-toggle="button">
+          <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+        </button>
+        <div class="header-search__layer" data-custom-toggle="panel">
+          <div class="header-search__form" data-element="form">
+            <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+            <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+            <div class="search-button">
+              <button class="button" type="button">검색</button>
+            </div>
+          </div>
+          <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+        </div>
+      </div>
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+    </div><!-- //header__box 추가 -->
+
+    <!-- 전체메뉴 -->
+<!-- //전체메뉴 -->
+  </div>
+</header>
+  </div>
+
+  <div class="wrap">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">환불확인증</a>
+      </main>
+    </div>
+  </div>
+
+  <!-- 풀팝업 -->
+  <div id="modalLayer01" class="modal modal-full modal--fixed-multi modal-scroll h100" data-width="910">
+    <div  class="modal-header">
+      <h2 class="modal-header__title">환불확인증</h2>
+    </div>
+    <div class="modal-content">
+      <div class="tab tab--default pdf-tab-fixed" data-element="tab">
+        <div class="tab__button-wrap">
+          <div class="tab__buttons">
+            <div class="tab__button" data-element="tab__list">
+              <button class="tab__anchor" type="button" data-element="tab__anchor">환불내역1</button>
+            </div>
+            <div class="tab__button" data-element="tab__list">
+              <button class="tab__anchor" type="button" data-element="tab__anchor">환불내역2</button>
+            </div>
+            <div class="tab__button" data-element="tab__list">
+              <button class="tab__anchor" type="button" data-element="tab__anchor">환불내역3</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- tab1 -->
+        <div class="tab__panel" data-element="tab__panel">
+          <div class="pdf-wrap">
+            <div class="container--small cancel--mt">
+              <div class="table-horizontal">
+                <table>
+                  <caption>환불일자 설명</caption>
+                  <colgroup>
+                    <col style="width:30%">
+                    <col>
+                  </colgroup>
+                  <tbody class="table-horizontal__tbody">
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">구매일자</th>
+                      <td class="table-horizontal__td">2020.09.11(금)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+    
+            <!-- 항공일정 -->
+            <div class="container--large">
+              <div class="title">
+                <h2 class="title__section title__section--small">항공일정</h2>
+              </div>
+              <div class="table-horizontal">
+                <table>
+                  <caption>항공일정의 구간1 설명</caption>
+                  <colgroup>
+                    <col style="width:30%">
+                    <col>
+                  </colgroup>
+                  <thead class="table-horizontal__thead">
+                    <tr>
+                      <th scope="col" class="table-horizontal__td align--center" colspan="2">구간1</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-horizontal__tbody">
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">여정</th>
+                      <td class="table-horizontal__td">서울(김포) ->제주</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">편명</th>
+                      <td class="table-horizontal__td">7C2201</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">출발일시</th>
+                      <td class="table-horizontal__td">2020.09.11(금) 15:10</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">도착일시</th>
+                      <td class="table-horizontal__td">2020.09.11(금) 16:00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">좌석</th>
+                      <td class="table-horizontal__td">1석</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">운임</th>
+                      <td class="table-horizontal__td color--org">FLYBAG / 포인트 항공권</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">예약등급</th>
+                      <td class="table-horizontal__td">K</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-horizontal">
+                <table>
+                  <caption>항공일정의 구간2 설명</caption>
+                  <colgroup>
+                    <col style="width:30%">
+                    <col>
+                  </colgroup>
+                  <thead class="table-horizontal__thead">
+                    <tr>
+                      <th scope="col" class="table-horizontal__td align--center" colspan="2">구간2</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-horizontal__tbody">
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">여정</th>
+                      <td class="table-horizontal__td">서울(김포) ->제주</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">편명</th>
+                      <td class="table-horizontal__td">7C2201</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">출발일시</th>
+                      <td class="table-horizontal__td">2020.09.11(금) 15:10</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">도착일시</th>
+                      <td class="table-horizontal__td">2020.09.11(금) 16:00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">좌석</th>
+                      <td class="table-horizontal__td">1석</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">운임</th>
+                      <td class="table-horizontal__td color--org">FLYBAG / 포인트 항공권</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">예약등급</th>
+                      <td class="table-horizontal__td">K</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+    
+            <!-- 탑승객 및 항공권 정보 -->
+            <div class="container--large">
+              <div class="title">
+                <h2 class="title__section title__section--small">탑승객 및 항공권 정보</h2>
+              </div>
+              <div class="table-horizontal">
+                <table>
+                  <caption>탑승객 및 항공권 정보의 성인1 설명</caption>
+                  <colgroup>
+                    <col style="width:30%">
+                    <col>
+                  </colgroup>
+                  <thead class="table-horizontal__thead">
+                    <tr>
+                      <th scope="col" class="table-horizontal__td align--center" colspan="2">성인1</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-horizontal__tbody">
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">성명</th>
+                      <td class="table-horizontal__td">김/제주</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">구간</th>
+                      <td class="table-horizontal__td">구간1</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">항공권번호</th>
+                      <td class="table-horizontal__td color--org">2174784608</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">판매운임</th>
+                      <td class="table-horizontal__td">1,000,000원</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">유류할증료</th>
+                      <td class="table-horizontal__td">0원</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">공항시설<br>사용료</th>
+                      <td class="table-horizontal__td color--org vertical--middle">4,000원</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">합계금액</th>
+                      <td class="table-horizontal__td color--org">1,004,000원</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-horizontal">
+                <table>
+                  <caption>탑승객 및 항공권 정보의 성인2 설명</caption>
+                  <colgroup>
+                    <col style="width:30%">
+                    <col>
+                  </colgroup>
+                  <thead class="table-horizontal__thead">
+                    <tr>
+                      <th scope="col" class="table-horizontal__td align--center" colspan="2">성인2</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-horizontal__tbody">
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">성명</th>
+                      <td class="table-horizontal__td">정/부산</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">구간</th>
+                      <td class="table-horizontal__td">구간1</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">항공권번호</th>
+                      <td class="table-horizontal__td color--org">2174784608</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">판매운임</th>
+                      <td class="table-horizontal__td">1,000,000원</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">유류할증료</th>
+                      <td class="table-horizontal__td">0원</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">공항시설<br>사용료</th>
+                      <td class="table-horizontal__td color--org vertical--middle">4,000원</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">합계금액</th>
+                      <td class="table-horizontal__td color--org">1,004,000원</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+    
+            <!-- 부가서비스 -->
+            <div class="container--large">
+              <div class="title">
+                <h2 class="title__section title__section--small">부가서비스</h2>
+              </div>
+              <div class="table-horizontal">
+                <table>
+                  <caption>부가서비스의 성인1 설명</caption>
+                  <colgroup>
+                    <col style="width:30%">
+                    <col>
+                  </colgroup>
+                  <thead class="table-horizontal__thead">
+                    <tr>
+                      <th scope="col" class="table-horizontal__td align--center" colspan="2">성인1</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-horizontal__tbody">
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">성명</th>
+                      <td class="table-horizontal__td">김/제주</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">구간</th>
+                      <td class="table-horizontal__td">구간1</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th vertical--middle">서비스 번호</th>
+                      <td class="table-horizontal__td">여행보험 <br class="mobile-only">(8068216910188)</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">금액</th>
+                      <td class="table-horizontal__td">28,900원</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">상태</th>
+                      <td class="table-horizontal__td">환불</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-horizontal">
+                <table>
+                  <caption>부가서비스의 성인2 설명</caption>
+                  <colgroup>
+                    <col style="width:30%">
+                    <col>
+                  </colgroup>
+                  <thead class="table-horizontal__thead">
+                    <tr>
+                      <th scope="col" class="table-horizontal__td align--center" colspan="2">성인2</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-horizontal__tbody">
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">성명</th>
+                      <td class="table-horizontal__td">정/부산</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">구간</th>
+                      <td class="table-horizontal__td">구간1</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th vertical--middle">서비스 번호</th>
+                      <td class="table-horizontal__td">여행보험 <br class="mobile-only">(8068216910188)</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">금액</th>
+                      <td class="table-horizontal__td">28,900원</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">상태</th>
+                      <td class="table-horizontal__td">환불</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+    
+            <!-- 결제내역 -->
+            <div class="container--large">
+              <div class="title">
+                <h2 class="title__section title__section--small">결제내역</h2>
+              </div>
+              <div class="table-horizontal">
+                <table>
+                  <caption>결제내역의 설명</caption>
+                  <colgroup>
+                    <col style="width:30%">
+                    <col>
+                  </colgroup>
+                  <tbody class="table-horizontal__tbody">
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">결제수단</th>
+                      <td class="table-horizontal__td">카드</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">카드번호</th>
+                      <td class="table-horizontal__td">XXXX-XXXX-XXXX-8062</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">할부개월</th>
+                      <td class="table-horizontal__td">일시불</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">승인번호</th>
+                      <td class="table-horizontal__td">33709562</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">결제금액</th>
+                      <td class="table-horizontal__td color--org ">1,000,000원</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">결제일</th>
+                      <td class="table-horizontal__td">2020.09.11</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+    
+            <!-- 환불내역 -->
+            <div class="container--large">
+              <div class="title">
+                <h2 class="title__section title__section--small">환불내역</h2>
+              </div>
+              <div class="table-horizontal">
+                <table>
+                  <caption>환불내역의 설명</caption>
+                  <colgroup>
+                    <col style="width:30%">
+                    <col>
+                  </colgroup>
+                  <tbody class="table-horizontal__tbody">
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">구분</th>
+                      <td class="table-horizontal__td">환불</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">카드번호</th>
+                      <td class="table-horizontal__td">XXXX-XXXX-XXXX-8062</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">할부개월</th>
+                      <td class="table-horizontal__td">일시불</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">승인번호</th>
+                      <td class="table-horizontal__td">33709562</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">위약금</th>
+                      <td class="table-horizontal__td">14,000원</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">환불금액</th>
+                      <td class="table-horizontal__td color--org">1,000,000원</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- tab2 -->
+        <div class="tab__panel" data-element="tab__panel">tab2</div>
+        <!-- tab3 -->
+        <div class="tab__panel" data-element="tab__panel">tab3</div>
+      </div>
+
+      <ul class="list-guide list-guide--type1 pc-20">
+        <li class="list-guide__item">국내선 탑승수속은 해당 항공편 출발 20분 전까지 입니다. 해당 시간까지 탑승수속을 마치시기 바랍니다.</li>
+        <li class="list-guide__item">항공편 일정은 정부 인가 조건이며, 사전 예고 없이 변경될 수 있습니다.</li>
+        <li class="list-guide__item">리프레시 포인트 적립을 위해 고객센터 또는 탑승수속 직원에게 회원번호를 알려주시기 바랍니다.</li>
+      </ul>
+
+      <div class="fixed-wrap button-wrap">
+        <button type="button" class="button button--primary button--black"><span class="button__text">이미지 저장</span></button>
+        <button type="button" class="button button--primary button--active"><span class="button__text">PDF 다운로드</span></button>
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

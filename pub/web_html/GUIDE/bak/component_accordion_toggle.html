@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+<title>Component_Accordion_Toggle</title>
+<link rel="stylesheet" href="../../assets/css/global.css">
+<link rel="stylesheet" href="../../assets/css/component.css">
+<link rel="stylesheet" href="../../assets/css/page.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+<link rel="stylesheet" href="../../../index/css/component_guide.css">
+
+<!-- syntaxHighlighter -->
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shCore.js"></script>
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushCss.js"></script>
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+<script>
+//<![CDATA[
+SyntaxHighlighter.defaults['toolbar'] = false; 
+SyntaxHighlighter.all()
+//]]> 
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="content" id="content">
+    <div id="main" class="main">
+      <div class="title__page">
+        Accordion&amp;Toggle
+      </div>
+      <h3 class="g-title">data-element="accordion"</h3>
+      <div class="sample-view">
+        <!-- accordion -->
+        <div class="accordion accordion--customer">
+          <div data-element="accordion" class="accordion__group">
+            <div data-element="accordion__item" class="accordion__item">
+              <a href="#" data-element="accordion__anchor" class="accordion__anchor">
+                <span class="accordion__hashtag">#항공권 취소</span>
+                <div class="accordion__text">
+                  <p class="accordion__text-sentence">항공권 예매 후 환불 하려는데 위약금 규정이 어떻게 되나요?</p>
+                </div>
+              </a>
+              <div data-element="accordion__panel" class="accordion__panel">
+                <div class="accordion__text">
+                  <p class="accordion__text-item">항공권 환불시에는 취소위약금이 부과되며 각 항공권 운임 규정과 출발전 기간에 따라 상이하게 적용됩니다.</p>
+                </div>
+                <div class="link-wrap link-wrap--left">
+                  <a href="#" class="link-wrap__underline"><span>1:1 문의하기</span></a>
+                </div>
+              </div>
+            </div>
+            <div data-element="accordion__item" class="accordion__item">
+              <a href="#" data-element="accordion__anchor" class="accordion__anchor">
+                <span class="accordion__hashtag">#라운지</span>
+                <div class="accordion__text">
+                  <p class="accordion__text-sentence">라운지 운영시간이 어떻게되나요?</p>
+                </div>
+              </a>
+              <div data-element="accordion__panel" class="accordion__panel">
+                <div class="accordion__text">
+                  <p class="accordion__text-item">라운지 운영시간이 어떻게되나요?라운지 운영시간이 어떻게되나요?.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //accordion -->
+      </div>
+      <pre class="brush:html;">
+        &lt;div class="accordion accordion--customer"&gt;
+          &lt;div data-element="accordion" class="accordion__group"&gt;
+            &lt;div data-element="accordion__item" class="accordion__item"&gt;
+              &lt;a href="#" data-element="accordion__anchor" class="accordion__anchor"&gt;
+                &lt;span class="accordion__hashtag"&gt;#항공권 취소&lt;/span&gt;
+                ...
+              &lt;/a&gt;
+              &lt;div data-element="accordion__panel" class="accordion__panel"&gt;
+                ...
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div data-element="accordion__item" class="accordion__item"&gt;
+              &lt;a href="#" data-element="accordion__anchor" class="accordion__anchor"&gt;
+                &lt;span class="accordion__hashtag"&gt;#라운지&lt;/span&gt;
+                ...
+              &lt;/a&gt;
+              &lt;div data-element="accordion__panel" class="accordion__panel"&gt;
+                ...
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      </pre> 
+
+      <h3 class="g-title">data-element="toggle"</h3>
+      <div class="sample-view">
+        <!-- toggle -->
+        <div class="service-information" data-element="toggle" data-options='{"mode": "move scroll"}'>
+          <div class="service-information__title">
+            <button type="button" class="service-information__anchor" data-element="toggle__anchor">탑승 내역 조회
+              안내</button>
+          </div>
+          <div class="service-information__content" data-element="toggle__panel">
+            <div class="list-wrap">
+              <ul class="list-guide" style="margin-bottom:0;">
+                <li class="list-guide__item">항공권 구매 시, 회원번호를 입력하지 않고 구매하고 탑승한 내역은 조회하실 수 없습니다.</li>
+                <li class="list-guide__item">제주항공 홈페이지에서 예매한 탑승 내역에 대한 결제 정보만 조회하실 수 있습니다.</li>
+                <li class="list-guide__item">회원가입 이후의 탑승 내역만 조회하실 수 있습니다.</li>
+                <li class="list-guide__item">최근 3년 이내 본인이 탑승했던 내역만 조회하실 수 있습니다.</li>
+                <li class="list-guide__item">‘적립 예정‘은 항공권 구매 후 적립에 필요한 기간 내에서 처리 중임을 뜻하며, 처리 완료 후 포인트 및 탑승 횟수가 적립됩니다.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- //toggle -->
+      </div>
+      <pre class="brush:html;">
+        &lt;div class="service-information" data-element="toggle" data-options='{"mode": "move scroll"}'&gt;
+          &lt;div class="service-information__title"&gt;
+            &lt;button type="button" class="service-information__anchor" data-element="toggle__anchor"&gt;탑승 내역 조회 안내&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class="service-information__content" data-element="toggle__panel"&gt;
+            ...
+          &lt;/div&gt;
+        &lt;/div&gt;
+      </pre>  
+      <ul class="list-guide">
+        <li>data-element="toggle" : accordion과 동일한 UI로 toggle 형태로 적용 가능</li>
+        <li>data-element="toggle__panel" : 타이틀 클릭시 display 됨</li>
+        <li>data-options='{"mode": "slide"}' : 슬라이드 transition 부드럽게 처리</li>
+        <li>data-options='{"mode": "move scroll"}' : PC는 단순 오픈 / MOBILE 아래에서 위로 올림</li>
+      </ul>
+
+      <div class="sample-view">
+        <!-- toggle -->
+        <div class="bundle_item">
+          <div class="bundle_box" data-element="toggle" data-options='{"mode": "slide"}' style="float:none;">
+            <div class="bundle_box__btn_wrap">
+              <input type="radio" id="radio01" name="radio_00">
+              <label for="radio01">
+                <dl>
+                  <dt class="bundle_name">번들 FLY</dt>
+                  <dd class="bundle__price">
+                    <div class="before">
+                      <div class="discount">30% 할인</div>
+                      <div class="del">12,000원</div>
+                    </div>
+                    <div class="after">
+                      <strong class="price">+ 12,000</strong>
+                      <span class="currency">원</span>
+                    </div>
+                  </dd>
+                </dl>
+                <div class="bundle_ico_list">
+                  <ul>
+                    <li><em class="bundle_ico ico_point"></em></li>
+                    <li><em class="bundle_ico ico_bag"></em></li>
+                    <li><em class="bundle_ico ico_seat"></em></li>
+                    <li><em class="bundle_ico ico_sale"></em></li>
+                    <li><em class="bundle_ico ico_sale"></em></li>
+                    <li><em class="bundle_ico ico_first"></em></li>
+                    <li><em class="bundle_ico ico_sale"></em></li>
+                    <li><em class="bundle_ico ico_free disabled"></em></li>
+                    <li><em class="bundle_ico ico_jj disabled"></em></li>
+                    <li><em class="bundle_ico ico_food disabled"></em></li>
+                    <li><em class="bundle_ico ico_premium disabled"></em></li>
+                  </ul>
+                </div>
+              </label>
+            </div>
+            <div class="bundle_box__content" data-element="toggle__panel">
+              <div class="bundle_ico_list txt_in">
+                <ul>
+                  <li><em class="bundle_ico ico_point"></em> 포인트 <strong>추가 적립</strong></li>
+                  <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 <strong>20kg</strong></li>
+                  <li><em class="bundle_ico ico_seat"></em> 좌석 선택 <strong>일반석 무료</strong></li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="bundle_box__anchor" data-element="toggle__anchor"><span>자세히 보기</span></button>
+          </div>
+        </div>
+        <!-- //toggle -->
+      </div>
+      <pre class="brush:html;">
+        &lt;div class="bundle_box" data-element="toggle" data-options='{"mode": "slide"}'"&gt;
+          &lt;div class="bundle_box__btn_wrap"&gt;
+            ...
+          &lt;/div&gt;
+          &lt;div class="bundle_box__content" data-element="toggle__panel"&gt;
+            ...
+          &lt;/div&gt;
+        &lt;/div&gt;
+      </pre>  
+
+      <h3 class="g-title">data-element="toggle" (booking-sticky)</h3>
+      <ul class="list-guide">
+        <li>booking-sticky의 toggle 형태로 브라우저 하단 fixed 처리</li>
+      </ul>      
+      <div class="sample-view">
+        <!-- toggle -->
+        <div class="booking-sticky booking-sticky--reservation" data-element="toggle" data-options='{"mode": "slide"}'>
+          <div class="reservation-container">
+            <div class="booking-sticky__top">
+              <div class="toggle-wrap toggle-wrap--button toggle-wrap--height">
+                <div class="label label--point">
+                  <span>예상 결제금액</span>
+                  <button type="button" class="icon" data-target="#modalLayer11" data-modal-type="default" data-element="modal_anchor">
+                    <span class="hidden">예상 결제금액 상세</span>
+                  </button>
+                </div>
+                <button type="button" class="summary summary--point" data-element="toggle__anchor">
+                  <span class="cost">
+                    <span class="price_txt">1,508,000</span>
+                    <span class="unit">원</span>
+                  </span>
+                  <span class="point">
+                    <span class="cost">
+                      <span class="price_txt">+ 508,000</span>
+                      <span class="unit">P</span>
+                    </span>
+                  </span>
+                </button>
+                <div class="link-wrap">
+                  <div class="link-wrap link-wrap--left">
+                    <a href="#" class="link-wrap__underline"><span>나중에 결제</span></a>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="button button--primary pc-only">
+                <span class="button__text">부가서비스 신청하기</span>
+              </button>
+            </div>
+            <div class="booking-sticky__bottom -limitH" data-element="toggle__panel"> 
+              <div class="title">
+                <h3 class="title__section title__section--small">항목별 운임 상세</h3>
+              </div>
+              <h4 class="text__default text--exbold">항공 운송료</h4>
+              <div class="itemize__item">
+                <div class="flex-text">
+                  <div class="flex-text__title">항공운임 </div>
+                  <div class="flex-text__additional">123,000원</div>
+                </div>
+                <div class="flex-text">
+                  <div class="flex-text__title">공항이용료 및 제반시설 </div>
+                  <div class="flex-text__additional">10,000원</div>
+                </div>
+                <div class="flex-text">
+                  <div class="flex-text__title">유류할증료</div>
+                  <div class="flex-text__additional">3,000원</div>
+                </div>
+                <div class="flex-text">
+                  <div class="flex-text__title color-org">프로모션 코드 할인</div>
+                  <div class="flex-text__additional color-org">-10,000원</div>
+                </div>
+              </div>
+            </div>
+            <div class="button-wrap mobile-only">
+              <button type="button" class="button button--primary">
+                <span class="button__text">부가서비스 신청하기</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- //toggle -->
+      </div>
+
+      <h3 class="g-title ex-bold border">data option 목록</h3>
+      <pre class="brush:js;">
+        data-element="accordion" data-options='{ "autoFold": false }'
+      </pre>       
+      <ul class="list-guide">
+        <li>autoScroll : 화면 스크롤 이동(true / false)</li>
+        <li>autoFold : 자동 닫힘(true / false)</li>
+        <li>initIndex : 초기화시 열릴 패널의 index(0)</li>
+      </ul>
+      <h3 class="g-title ex-bold">Event</h3>
+      <pre class="brush:js;">
+        var accordionItem = $('.your-element');
+        accordionItem.on('beforeChange', function(event, plugin, anchor) {
+          /* your code ... */
+        })
+      </pre>     
+      <ul class="list-guide" style="margin-bottom:200px;">
+        <li>beforeChange : 패널 오픈 전 실행될 함수(arguments: event, plugin, anchor)</li>
+        <li>afterChange : 패널 오픈 후 실행될 함수(arguments: event, plugin, anchor)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

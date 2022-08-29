@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div class="wrap">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">
+          항공권 운임규정
+        </a>
+      </main>
+    </div>
+  </div>
+  <!-- 항공권 운임규정 팝업  작업 시 style 값 삭제 -->
+  <div id="modalLayer01" class="modal modal-full modal-scroll modal--fixed-multi ">
+    <div class="modal-header">
+      <div class="modal-header__title">항공권 운임규정</div>
+    </div>
+    <div class="modal-content h_70_type01">
+
+        <div data-element="tab" class="tab tab--default pc-tab-full tab-fixed">
+          <div class="tab__buttons">
+            <div data-element="tab__list" class="tab__button">
+              <button type="button" data-element="tab__anchor" class="tab__anchor is-active">운임 및 수수료</button>
+            </div>
+            <div data-element="tab__list" class="tab__button">
+              <button type="button" data-element="tab__anchor" class="tab__anchor">일반규정</button>
+            </div>
+          </div>
+          <!-- 운임 및 수수료 -->
+          <div data-element="tab__panel" class="tab__panel info-text">
+            
+            <div class="sub-section mt0">
+              <div class="section-title">가는 편 :  서울(인천)  -  오사카(간사이)</div>
+              <div class="table-horizontal">
+                <table>
+                  <caption>구간당 변경 수수료, 구간당 취소 위약금</caption>
+                  <colgroup>
+                    <col style="width: 30%;">
+                    <col>
+                  </colgroup>
+                  <tbody class="table-horizontal__tbody">
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">운임종류</th>
+                      <td class="table-horizontal__td">FLYBAG</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">구간당 <br class="mobile-only">변경 수수료</th>
+                      <td class="table-horizontal__td">구매 다음날 ~ 출발 당일 : 0원</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">구간당 <br class="mobile-only">취소 위약금</th>
+                      <td class="table-horizontal__td">
+                        <ul class="list-guide large list-guide--pt0">
+                          <li class="list-guide__item">구매 다음날 ~ 출발 91일 전 : 0원</li>
+                          <li class="list-guide__item">출발 90일 ~ 61일전 : 10,000원</li>
+                          <li class="list-guide__item">출발 60일 ~ 31일전 : 20,000원</li>
+                          <li class="list-guide__item">출발 30일 ~ 출발 당일 : 30,000원</li>
+                        </ul>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="sub-section">
+              <div class="section-title">오는 편 :  오사카(간사이)  - 서울(인천)</div>
+
+              <div class="table-horizontal">
+                <table>
+                  <caption>구간당 변경 수수료, 구간당 취소 위약금</caption>
+                  <colgroup>
+                    <col style="width: 30%;">
+                    <col>
+                  </colgroup>
+                  <tbody class="table-horizontal__tbody">
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">운임종류</th>
+                      <td class="table-horizontal__td">FLYBAG</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">구간당 <br class="mobile-only">변경 수수료</th>
+                      <td class="table-horizontal__td">구매 다음날 ~ 출발 당일 : 0원</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table-horizontal__th">구간당 <br class="mobile-only">취소 위약금</th>
+                      <td class="table-horizontal__td">
+                        <ul class="list-guide large list-guide--pt0">
+                          <li class="list-guide__item">구매 다음날 ~ 출발 91일 전 : 0원</li>
+                          <li class="list-guide__item">출발 90일 ~ 61일전 : 10,000원</li>
+                          <li class="list-guide__item">출발 60일 ~ 31일전 : 20,000원</li>
+                          <li class="list-guide__item">출발 30일 ~ 출발 당일 : 30,000원</li>
+                        </ul>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+          <!-- //운임 및 수수료 -->
+
+          <!-- 일반규정-->
+          <div data-element="tab__panel" class="tab__panel info-text">
+            <div class="sub-section mt0">
+              <div class="section-title">운임 규정</div>
+              <ul class="list-guide large list-guide--narrow">
+                <li class="list-guide__item">
+                  신분 할인 : 소아는 성인 운임의 75% 부과, 유아는 성인 운임의 10% 부과
+                  <ul class="list-guide--hyphen">
+                    <li class="list-guide__item">단, 공시 운임의 60% 이상 할인되거나 프로모션 운임인 경우 신분 할인이 적용되지 않을 수 있습니다.</li>
+                  </ul>
+                </li>
+                <li class="list-guide__item">
+                  예약변경 : 가능 (단, 노선 변경 불가)
+                  <ul class="list-guide--hyphen">
+                    <li class="list-guide__item">구매할 때와 다른 조건(날짜, 요일, 편명, 클래스 등)으로 변경 시 운임 차액과 변경 수수료 발생</li>
+                    <li class="list-guide__item">여정 변경 시 동일 또는 상위 운임으로만 변경 가능</li>
+                    <li class="list-guide__item">단, 포인트로 항공권 구매 시에는 변경할 수 없으며, 환불 후 재결제 가능합니다.</li>
+                    <li class="list-guide__item">단, 다구간 여정 구매 시에는 홈페이지에서 변경할 수 없으니, 고객센터로 문의해 주세요.</li>
+                    <li class="list-guide__item">비지니스 라이트에서 일반석으로 여정을 변경할 경우, 고객센터로 문의해 주세요. </li>
+                  </ul>
+                </li>
+                <li class="list-guide__item">
+                  환불/취소 : 가능
+                  <ul class="list-guide--hyphen">
+                    <li class="list-guide__item">결제 당일(~23:54까지, 한국 시간 기준) 예약을 취소하는 경우 위약금이 면제되며, 오프라인 구매 항공권일 경우 고객센터 및 공항 현장에서 운영시간 안에 접수하면 환불/취소 가능 (단, 항공기 출발 시각 전까지만 해당)</li>
+                    <li class="list-guide__item">왕복 여정 중 출발 여정 이용 후 남은 여정을 취소하는 경우, 출발 여정의 ‘편도 구매 시 판매되는 운임’을 제외하고 남은 차액 환불 (단, 왕복 할인 운임은 적용 안 됨)</li>
+                    <li class="list-guide__item">여행 시작 전 부분 여정 취소는 할 수 없으며, 여행 시작 후 남은 여정의 취소 시 구매처를 통해서 가능</li>
+                  </ul>
+                </li>
+                <li class="list-guide__item">변경 수수료 및 취소 위약금은 1인당, 구간당 적용됩니다. (좌석이 배정되지 않는 유아는 수수료 및 위약금 부과 안 됨)</li>
+                <li class="list-guide__item">왕복 여정의 시점별 수수료 및 위약금은 전체를 사용하지 않은 경우 첫 구간 기준으로 적용됩니다.</li>
+                <li class="list-guide__item">탑승 수속 마감 전까지 예약을 취소하지 않고 탑승하지 않은 경우 환불 요청 시에는 카운터 노쇼(No-Show) 위약금(KRW 120,000)이 적용됩니다.</li>
+                <li class="list-guide__item">탑승 수속 후 탑승을 하지 않은 경우 변경 및 환불 요청 시에는 탑승구 노쇼(No-Show) 위약금(KRW 240,000)이 적용됩니다.</li>
+                <li class="list-guide__item">코로나19 기간 중 중국발 노선은 한시적으로 Y클래스에 대한 예약부도위약금(No-Show Penalty)을 CNY 2,000으로 적용합니다.</li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <div class="section-title">일반 규정</div>
+              <ul class="list-guide large list-guide--narrow">
+                <li class="list-guide__item">항공권은 명시된 여정 순서대로 사용해야 하며, 왕복 여정 중 첫 구간에 탑승하지 않은 경우 되돌아 오는 구간만 사용할 수 없으며 부분 환불도 되지 않습니다. </li>
+                <li class="list-guide__item">항공권은 타인 양도 및 명의 변경이 불가합니다.</li>
+                <li class="list-guide__item">항공권 예매 후 탑승자명을 변경할 수 없으니 성명을 정확히 입력해 주세요. 탑승자 성명이 다를 경우 기존 항공권 환불에 따른 취소 위약금이 부과됩니다.</li>
+                <li class="list-guide__item">영문명과 성별 등 여권 정보와 다른 정보로 예약한 경우 탑승이 거절될 수 있으며 항공권 결제 후 정보 변경 시에는 환불 위약금을 내고, 다시 예약하셔야 합니다.</li>
+                <li class="list-guide__item">항공권 구매 후 결제수단은 변경할 수 없습니다.</li>
+                <li class="list-guide__item">편도항공권 구매 시 오는 편 항공권을 소지하지 않거나 해당 국가의 비자를 소지하지 않아 입국 거절 등의 문제가 발생하면 책임은 승객 본인에게 있습니다.</li>
+              </ul>
+            </div>
+
+          </div><!-- //일반규정 -->
+        </div>
+
+
+    </div>
+    <div class="fixed-wrap fixed-wrap--multi-line border-none">
+      <!-- checkbox 없는 경우 border-none class 추가 -->
+      <div class="button-wrap">
+        <button type="button" class="button button--active"><span class="button__text">동의</span></button>
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <!-- //항공권 운임규정 팝업 -->
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

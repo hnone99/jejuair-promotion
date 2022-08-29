@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/jjpay.css">
+</head>
+
+<body>
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-header__title">ARS 인증</div>
+    </div>
+    <div class="modal-content">
+
+      <div class="ars-content">
+        <div class="title">
+          <div class="title__page">ARS 인증이 종료되었어요.</div>
+        </div>
+        <div class="ars-content__img">
+          <img src="../../assets/images/icon/icon-ars-com.png" aria-hidden="true" alt="">
+        </div>
+        <p class="text__large text--bold ars-content__txt">ARS 인증이 완료되었다면<br>[인증완료] 버튼을 눌러 주세요.</p>
+        <p class="text__default">
+          인증 전화가 오지 않거나 인증 실패한<br>경우 <span class="text--color-org">[재인증]</span> 버튼을 눌러 주세요.
+        </p>
+        <div class="link-wrap link-wrap--arrow">
+          <a href="#" class="link-wrap__text"><span>ARS 재인증</span></a>
+        </div>
+      </div>
+
+    </div>
+    <div class="fixed-wrap fixed-wrap--multi-line border-none">
+      <!-- checkbox 없는 경우 border-none class 추가 -->
+      <div class="button-wrap">
+        <button type="button" class="button button--active"><span class="button__text">인증완료</span></button>
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close" onclick="closeWindow ()"><span class="blind">닫기</span></a>
+  </div>
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script>
+    // 창닫기
+    function closeWindow() {
+      window.open('', '_self', '');
+      window.close();
+    }
+  </script>
+</body>
+
+</html>

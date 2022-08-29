@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">포인트 조회</h2>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div id="body">
+    <div class="wrap NC_1">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">회원혜택</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">리프레시 포인트 </a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle"
+            data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>
+            <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor">포인트
+              조회</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel">
+              <a href="#" class="item">사전 수하물</a>
+              <a href="#" class="item">사전 수하물</a>
+              <a href="#" class="item">사전 수하물 수하물</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div class="page-title-wrap">
+            <div class="page-title">포인트 조회</div>
+            <div class="page-sub-title">나의 포인트 사용 내역을 <br class="mobile-only">확인해 보세요.</div>
+          </div>
+          <div class="new-top-wrap refresh_point_searh">
+            <div class="new-top-box">
+              <div class="new-top-box__inner">
+                <div class="pc-left">
+                  <div class="mypage__grade">
+                    <span class="grade vip" aria-label="vip"></span>
+                    <!-- <span class="grade gold" aria-label="gold"></span>
+                    <span class="grade sliverplus" aria-label="sliverplus"></span>
+                    <span class="grade sliver" aria-label="sliver"></span> -->
+                  </div>
+                  <div class="link-wrap link-wrap--arrow">
+                    <a href="#" class="link-wrap__text"><span><em>김제주</em> VIP</span></a>
+                  </div>
+                </div>
+                <div class="pc-right">
+                  <div class="pc-box">
+                    <div class="mypage__point">
+                      <strong class="mypage__point--title ">사용가능 포인트</strong>
+                      <span>187,300</span>P
+                    </div>
+                  </div>
+                  <div class="table-toggle">
+                    <div class="toggle" data-element="toggle" data-options='{"mode": "slide"}'>
+                      <div class="toggle__panel" data-element="toggle__panel">
+                        <div class="box-point-list">
+                          <ul class="member-point__list">
+                            <li class="accumlate-point"><span class="text-title">등급 산정 탑승</span><strong class="text-desc">12회</strong></li><!--2021025 오픈 후 변경-->
+                            <li><span class="text-title">등급 산정 포인트</span><strong class="text-desc">0P</strong></li><!--20210609 문구 수정-->
+                            <li><span class="text-title">1개월 내 소멸 예정</span><strong class="text-desc">0P</strong></li>
+                            <li><span class="text-title">등급 산정 기간</span><strong class="text-desc">2017.09.17 ~ 2020.09.16</strong></li>
+                          </ul>
+                          <div class="button-wrap">
+                            <button type="button" class="button button--optional"><span class="button__text">나의 탑승 내역</span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="button" class="toggle__button arrow" data-element="toggle__anchor" aria-label="더보기"></button>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-wrap pc-single-line">
+            <div class="tab tab--square tab--square-cols3 tab--square-small">
+              <div class="tab__buttons">
+                <div class="tab__button">
+                  <button type="button" class="tab__anchor">1개월</button>
+                </div>
+                <div class="tab__button">
+                  <button type="button" class="tab__anchor is-active">3개월</button>
+                </div>
+                <div class="tab__button">
+                  <button type="button" class="tab__anchor">6개월</button>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="input-wrap input--line">
+              <div class="input-row input-row--dash">
+                <div class="input-item"><!--error시 .input--error 추가-->
+                  <!-- <div class="input-label label-top">날짜선택</div> -->
+                  <div class="input-label label-top">日付を選択してください。</div>
+                  <div class="input-box">
+                    <button type="button" class="picker picker--button is-select" data-element="modal_anchor" data-modal-type="datepicker" data-target="#datepicker01" data-today=false>2021.03.30 (月)</button>
+                  </div>
+                  <p tabindex="0" class="input__error">에러메세지 따로따로</p>
+                </div>
+                <div class="input-item"><!--error시 .input--error 추가-->
+                  <div class="input-box">
+                    <button type="button" class="picker picker--button is-select" data-element="modal_anchor" data-modal-type="datepicker" data-target="">2021.06.30 (Tue)</button>
+                  </div>
+                  <p tabindex="0" class="input__error">에러메세지 따로따로</p>
+                </div>
+              </div>
+            </div>
+            <div class="button-wrap button-wrap--center">
+              <button type="button" class="button button--optional"><span
+                  class="button__text">조회</span></button>
+            </div>
+          </div>
+
+          <!-- 조회리스트 -->
+          <div class="section-wrap">
+            <div class="select-chips full swiper-container">
+              <ul class="chips-group swiper-wrapper">
+                <li class="chip swiper-slide">
+                  <button type="button" class="chip-btn checked" data-index=0 data-element="tab__anchor" >
+                    <span class="txt">전체</span>
+                  </button>
+                </li>
+                <li class="chip swiper-slide">
+                  <button type="button" class="chip-btn" data-index=1 data-element="tab__anchor" >
+                    <span class="txt">적립</span>
+                  </button>
+                </li>
+                <li class="chip swiper-slide">
+                  <button type="button" class="chip-btn" data-index=2 data-element="tab__anchor" >
+                    <span class="txt">구매</span>
+                  </button>
+                </li>
+                <li class="chip swiper-slide">
+                  <button type="button" class="chip-btn" data-index=2 data-element="tab__anchor" >
+                    <span class="txt">사용</span>
+                  </button>
+                </li>
+                <li class="chip swiper-slide">
+                  <button type="button" class="chip-btn" data-index=2 data-element="tab__anchor" >
+                    <span class="txt">선물</span>
+                  </button>
+                </li>
+                <li class="chip swiper-slide">
+                  <button type="button" class="chip-btn" data-index=2 data-element="tab__anchor" >
+                    <span class="txt">보내기</span><!--20210831-->
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+
+            <!-- 전체 -->
+            <div data-element="tab__panel" class="tab__panel">
+              <div class="result-box result-box--point result-box--col3">
+                <div class="result-box-item ">
+                  <div class="result-box__header">
+                    <p class="result-box__point">- 100,000P</p><!--포인트-->
+                    <div class="flex-text__additional">2020.12.31</div><!--일자 // 20210609 : 위치 이동-->
+                  </div>
+                  <div class="result-box__content">
+                    <div class="flex-text">
+                      <div class="flex-text__point">
+                        <p class="flex-text__point-title">환불</p><!--구분-->
+                        <p class="flex-text__point-text">부분환불</p><!--내용-->
+                        <p class="flex-text__point-text end_date">소멸일자 : YYYY.MM.DD</p><!--20210609 : 소멸일자 추가-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-box-item">
+                  <div class="result-box__header">
+                    <p class="result-box__point">+ 100,000P</p>
+                    <div class="flex-text__additional">2020.12.31</div>
+                  </div>
+                  <div class="result-box__content">
+                    <div class="flex-text">
+                      <div class="flex-text__point">
+                        <p class="flex-text__point-title">받기</p>
+                        <p class="flex-text__point-text">보낸사람: OOO</p>
+                        <p class="flex-text__point-text end_date">소멸일자 : YYYY.MM.DD</p><!--20210609 : 소멸일자 추가-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-box-item">
+                  <div class="result-box__header">
+                    <p class="result-box__point">+ 100,000P</p>
+                    <div class="flex-text__additional">2020.12.31</div>
+                  </div>
+                  <div class="result-box__content">
+                    <div class="flex-text">
+                      <div class="flex-text__point">
+                        <p class="flex-text__point-title">관리자 추가</p>
+                        <p class="flex-text__point-text">포인트 선물</p>
+                        <p class="flex-text__point-text end_date">소멸일자 : YYYY.MM.DD</p><!--20210609 : 소멸일자 추가-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-box-item">
+                  <div class="result-box__header">
+                    <p class="result-box__point">- 100,000P</p>
+                    <div class="flex-text__additional">2020.12.31</div>
+                  </div>
+                  <div class="result-box__content">
+                    <div class="flex-text">
+                      <div class="flex-text__point">
+                        <p class="flex-text__point-title">환불</p>
+                        <p class="flex-text__point-text">포인트 구매</p>
+                        <p class="flex-text__point-text end_date">소멸일자 : YYYY.MM.DD</p><!--20210609 : 소멸일자 추가-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="result-box-item">
+                  <div class="result-box__header">
+                    <p class="result-box__point">12345678P</p>
+                    <div class="flex-text__additional">2020.12.31</div>
+                  </div>
+                  <div class="result-box__content">
+                    <div class="flex-text">
+                      <div class="flex-text__point">
+                        <span class="label-wrap__item label-wrap__item--complete">취소완료</span><!--상태-->
+                        <p class="flex-text__point-title">구매</p>
+                        <p class="flex-text__point-text">12,345,678P 취소완료</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-box-item">
+                  <div class="result-box__header">
+                    <p class="result-box__point">12345678P</p>
+                    <div class="flex-text__additional">2020.12.31</div>
+                  </div>
+                  <div class="result-box__content">
+                    <div class="flex-text">
+                      <div class="flex-text__point">
+                        <span class="label-wrap__item label-wrap__item--complete">취소완료</span><!--상태-->
+                        <p class="flex-text__point-title">선물</p>
+                        <p class="flex-text__point-text">받는사람 OOO</p>
+                        <p class="flex-text__point-text">12,345,678P 취소완료</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-box-item btn_in"><!--하단 버튼 있을경우 노출-->
+                  <div class="result-box__header">
+                    <p class="result-box__point">10,000P</p>
+                    <div class="flex-text__additional">2020.12.31</div>
+                  </div>
+                  <div class="result-box__content">
+                    <div class="flex-text">
+                      <div class="flex-text__point">
+                        <p class="flex-text__point-title">구매</p>
+                        <p class="flex-text__point-text">1,000P 이벤트 포인트</p>
+                        <p class="flex-text__point-text">12,345,678P 취소가능</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="result-box__button">
+                    <button type="button"><span class="text">구매취소</span></button>
+                  </div>
+                </div>
+                <div class="result-box-item btn_in"><!--하단 버튼 있을경우 노출-->
+                  <div class="result-box__header">
+                    <p class="result-box__point">10,000P</p>
+                    <div class="flex-text__additional">2020.12.31</div>
+                  </div>
+                  <div class="result-box__content">
+                    <div class="flex-text">
+                      <div class="flex-text__point">
+                        <p class="flex-text__point-title">선물</p>
+                        <p class="flex-text__point-text">받는사람 OOO</p>
+                        <p class="flex-text__point-text">1,000P 이벤트 포인트</p>
+                        <p class="flex-text__point-text">12,345,678P 취소가능</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="result-box__button">
+                    <button type="button"><span class="text">구매취소</span></button>
+                  </div>
+                </div>
+
+                <div class="result-box-item btn_in"><!--하단 버튼 있을경우 노출-->
+                  <div class="result-box__header">
+                    <p class="result-box__point">10,000P</p>
+                    <div class="flex-text__additional">2020.12.31</div>
+                  </div>
+                  <div class="result-box__content">
+                    <div class="flex-text">
+                      <div class="flex-text__point">
+                        <p class="flex-text__point-title">구매</p>
+                        <p class="flex-text__point-text">1,000P 이벤트 포인트</p>
+                        <p class="flex-text__point-text">6,000P 사용</p>
+                        <p class="flex-text__point-text">1,000P 환불가능</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="result-box__button">
+                    <button type="button"><span class="text">잔액환불</span></button>
+                  </div>
+                </div>
+
+                <div class="result-box-item btn_in"><!--하단 버튼 있을경우 노출-->
+                  <div class="result-box__header">
+                    <p class="result-box__point">12345678P</p>
+                    <div class="flex-text__additional">2020.12.31</div>
+                  </div>
+                  <div class="result-box__content">
+                    <div class="flex-text">
+                      <div class="flex-text__point">
+                        <p class="flex-text__point-title">구매</p>
+                        <p class="flex-text__point-text">10,000P 이벤트 포인트</p>
+                        <p class="flex-text__point-text">6,000P 사용</p>
+                        <p class="flex-text__point-text">4,000P 환불가능</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="result-box__button">
+                    <button type="button"><span class="text">잔액환불</span></button>
+                  </div>
+                </div>
+
+
+
+              </div>
+              <!-- //전체 -->
+
+              <!--  조회 내역이 없을 경우 노출 -->
+              <div class="finish-item-wrap">
+                <div class="finish-item">
+                  <div class="finish-item__img">
+                    <img src="../../assets/images/icon/icon-result-none.png" alt="">
+                  </div>
+                  <p class="finish-item__title">조회 결과가 없습니다.</p>
+                </div>
+              </div>
+              <!--  //조회 내역이 없을 경우 노출 -->
+            </div>
+
+          </div>
+          <!-- //조회리스트 -->
+          
+          <div data-show="true" class="more-wrap">
+            <button type="button" class="more__button"><span class="more__button-text">더보기</button>
+          </div>
+
+          <!-- 소멸 포인트 안내 -->
+          <div class="section-wrap">
+            <div class="arrow-list">
+              <a href="#" class="arrow-list__item">
+                <span class="arrow-list__text">소멸 포인트 안내</span>
+              </a>
+            </div>
+          </div>
+          <!-- //소멸 포인트 안내 -->
+
+          <!-- 날짜 선택 -->
+          <div id="datepicker01" class="modal modal-full modal-full--picker">
+            <div class="modal-header">
+              <h2 class="header__page-name">날짜를 선택해 주세요.</h2>
+            </div>
+
+            <div class="modal-content">
+              <div class="picker picker--full">
+                <input type="text" class="picker__input" id="selectDate" data-set-from="2020-01" data-picker="single">
+              </div>
+              <div class="booking-button">
+                <button type="button" class="button button--primary button--active" data-select-date="#selectDate">
+                  <span class="button__text">선택</span>
+                </button>
+              </div>
+            </div>
+            <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+          </div>
+          <!-- // 날짜 선택 -->
+          <!-- 날짜 선택 -->
+          <div id="datepicker02" class="modal modal-full modal-full--picker">
+            <div class="modal-header">
+              <h2 class="header__page-name">날짜를 선택해 주세요.</h2>
+            </div>
+
+            <div class="modal-content">
+              <div class="picker picker--full">
+                <input type="text" class="picker__input" id="selectDate" data-set-from="2020-01" data-picker="single">
+              </div>
+              <div class="booking-button">
+                <button type="button" class="button button--primary button--active" data-select-date="#selectDate">
+                  <span class="button__text">선택</span>
+                </button>
+              </div>
+            </div>
+            <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+          </div>
+          <!-- // 날짜 선택 -->
+        </main>
+      </div>
+    </div>
+  </div>
+  <!--#body-->
+
+  <!-- FOOTER -->
+  <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+  <div class="footer pc-only">
+    <!-- pc -->
+    <footer class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">제주항공 소개</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">투자정보</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">채용안내</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">여객운송약관</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">홈페이지이용약관</a>
+        </div>
+        <div class="footer__top-item footer__top-item--privacy">
+          <a href="#" class="footer__top-link">개인정보처리방침</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">사이트맵</a>
+        </div>
+
+        <div class="footer__top-item footer__top-item--family">
+          <div class="family-wrap" data-element="toggle"
+            data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+            <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+            <div class="family-list" data-element="toggle__panel">
+              <a href="#" class="family-link">㈜애경산업</a>
+              <a href="#" class="family-link">㈜에이텍</a>
+              <a href="#" class="family-link">애경S.T</a>
+              <a href="#" class="family-link">에이케이아이에스㈜</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer__spacer">
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__logo">
+          <img src="../../assets/images/upload/logo_jeju_gray.png" alt="JEJU air">
+        </a>
+        <div class="footer__bottom-contents">
+          <div class="footer__bottom-info">
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 서비스 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공위험물안내</a>
+            </div>
+          </div>
+          <div class="footer__bottom-recommand">
+            <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+            <div class="recommand-list">
+              <div class="recommand-item">
+                <a href="#" class="link">최저 운임 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">서울 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">제주 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">부산 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">무안 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">청부 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">대구 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">광주 출발 항공</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-util">
+            <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png" alt="VALUE ALLIANCE"></a>
+            <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
+            <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt=""> Android</a>
+          </div>
+          <p class="footer__bottom-address"><span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br>
+            제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)</p>
+          <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- //pc -->
+  </div>
+  <!-- //FOOTER -->
+
+  <!-- 날짜선택 -->
+  <div id="datepicker01" class="modal modal-full modal-full--picker" data-max-rate="none" >
+    <div  class="modal-header">
+      <h2 class="header__page-name">날짜를 선택해 주세요.</h2>
+    </div>
+
+    <div class="modal-content">
+      <div class="picker picker--full">
+        <input
+          type="text"
+          class="picker__input"
+          id="selectDate"
+          data-min-date="today"
+          data-text="하단 금액은 1인 편도 기준입니다."
+          data-default-date='["2021-02-10"]'
+          data-json-id="flightList"
+          data-picker="single"
+        >
+      </div>
+      <div class="booking-button cal-button">
+        <button type="button" class="button button--primary button--black pc-only" data-reset-date="#selectDate">
+          <span class="button__text">초기화</span>
+        </button>
+        <!-- <button type="button" class="button button--primary button--black" id="resetDate">
+          <span class="button__text">초기화 테스트(개발 테스트 후 삭제 요망)</span>
+        </button> -->
+        <button type="button" class="button button--primary button--active" data-select-date="#selectDate" rel="modal:close">
+          <span class="button__text">선택</span>
+        </button>
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <!-- // 날짜선택 -->
+  
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <script>
+    // 칩셀렉트 plugin.js
+    $('.select-chips').selectChips()
+  </script> 
+  
+</body>
+
+</html>

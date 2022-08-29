@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <!-- HEADER -->
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">보험 상품</h2>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 --><!-- //전체메뉴 -->
+    </header>
+    <!-- //mobile -->
+
+    <!-- pc용 공통 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+                    <span class="hidden">검색창 닫기</span>
+                </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 --><!-- //전체메뉴 -->
+      </div>
+    </header>
+    <!-- //pc용 공통 헤더 -->
+    <!-- pc용 공통 헤더 -->
+  </div>
+  <!-- //HEADER -->
+
+  <div id="body">
+    <div class="wrap wrap--button-fixed2 ND">
+      
+
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div class="button-wrap button-wrap--center">
+            <button type="button" class="button button--primary button--active" data-target-open="sheet01"><span  class="button__text">해외 여행자 보험</span></button>
+          </div>
+            
+        </main>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <!-- 해외 여행자 보험 -->
+  <div data-target="sheet01" class="bottom-sheet ND_4" data-element="bottomSheet">
+    <div class="bottom-sheet__top">
+      <div class="title">
+        <h2 class="title__main">해외 여행자 보험</h2>
+      </div>
+    </div>
+    <div class="bottom-sheet__bot bottom-sheet__bot--button">
+      <div class="list-wrap">
+        <div class="text__default text--bold">단체(취급) 여행보험 가입 규약 안내</div>
+        <ol class="list-guide list-guide--decimal">
+          <li class="list-guide__item"><span class="point">제주항공</span>은 보험계약자를 제주항공으로, 피보험자 및 보험수익자를 여객 탑승객으로 하는 단체(취급)
+            여행보험계약을 체결할 수 있습니다. 단, 보험금의 종류가 사망보험금인 경우에는 그 보험수익자를 피보험자의 법정상속인으로 합니다.</li>
+          <li class="list-guide__item"><span class="point">탑승객</span>은 제1항의 보험계약에 따른 담보항목 및 내용을 제주항공이 제공하는 범주 내에서 자유롭게
+            선택할 수 있으며 보험료를 직접 보험회사에 납부해야 합니다.</li>
+          <li class="list-guide__item">2항에 따라 보험회사에 보험료를 직접 납부한 회원은 계약자의 권리를 행사할 수 있습니다.</li>
+          <li class="list-guide__item">보험계약에 관한 세부내용은 보험사가 제공하는 보험약관에 따릅니다.</li>
+          <li class="list-guide__item">위 <span class="point">‘단체(취급) 여행보험의 가입 규약’</span>에 동의하십니까?</li>
+        </ol>
+      </div>
+    </div>
+    <div class="fixed-wrap button-wrap pc-center pc-30">
+      <button type="button" class="button button--primary button--active"><span class="button__text">동의 후 가입</span></button>
+    </div>
+    <!-- <div class="bottom-sheet__fixed">
+      <div class="button-wrap button-wrap-stick">
+        <button type="button" class="button button--primary button--active"><span class="button__text">동의 후
+            가입</span></button>
+      </div>
+    </div> -->
+    <button type="button" class="bottom-sheet__button-close" data-element="bottomSheet__button-close"
+      aria-label="하단시트 닫기"></button>
+  </div>
+  <!-- //해외 여행자 보험 -->
+
+
+
+</body>
+</html>

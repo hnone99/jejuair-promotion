@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" href="../../../index/css/style-guide.css">
+
+</head>
+
+<body>
+
+
+  <div class="guide_wrap">
+
+    <h1 class="title1">Button Style Guide</h1>
+    <dl class="history">
+      <dd>
+        <span><strong>[2021-05-11]</strong>
+      </dd>
+    </dl>
+
+    <div class="table-vertical">
+      <table>
+        <caption></caption>
+        <colgroup>
+          <col style="width:auto">                
+          <col style="width:500px">
+        </colgroup>
+        <thead>
+        <tbody class="table-verticalbody">
+          <tr>
+            <th colspan="2"><p class="tl">Action button - primary :  <span class="tl_sub">페이지 이동버튼(프로세스 진행시 페이지 이동버튼으로 주로 쓰이며 
+              화면 하단에 fixed로 위치)</span></p></th>
+          </tr>
+          <tr>
+            <td class="table-vertical__td">                    
+              <div class="info">
+                <div class="tl_s2">[PC]</div>
+                <p>
+                - height:50px; min-width:110px, 버튼 내 좌우 padding:40px; font-size:16px; font-weight:700 <br>               
+                - 페이지 이동버튼 (프로세스 진행 상 꼭 필요한 버튼으로 페이지 상 하나만 존재)<br> 
+                - disable시 'button--active' class 추가 <br> 
+                - Normal-Black : 버튼 두개가 나란히 올경우 부정케이스 적용 (아니오, 취소)
+              </p>
+              </div>
+
+              <div class="info">
+                
+                <div class="tl_s2">
+                  [Mobile]                          
+                </div>
+                
+                <div class="btn_mo">
+                  <button type="button" onclick="window.open('button_ex1.html','pagename','resizable=no, width=360, height=600'); return false">모바일 Action button-primary</button>
+                </div>
+                <p>
+                - height:56px; font-size:16px; font-weight:700 <br>               
+                - 페이지 이동버튼 (프로세스 진행 상 꼭 필요한 버튼으로 페이지 상 하나만 존재)<br> 
+                - disable시 'button--active' class 추가 <br> 
+                - Normal-Black : 버튼 두개가 나란히 올경우 부정케이스 적용 (아니오, 취소)<br>
+                - Nomal-Action과 Floating-Action 두가지 스타일로 나뉨 <br>
+                  <span class="red">
+                    <strong>＊Nomal-Action :</strong> 회원가입, 로그인과 같은 프로세스가 있는 페이지경우, <br>
+                    &nbsp;&nbsp;&nbsp;페이지 중간에 올 경우(확실치 않음)<br>
+                    <strong>＊Floating-Action :</strong>유플리트 기획에 fixed라고 정의 된 버튼은 Floating-Action <br>
+                    &nbsp;&nbsp;&nbsp;스타일이라고 확인함(대부분페이지)<br>                          
+                </span>
+                </p>
+              </div>
+            </td>
+            <td class="table-vertical__td">
+
+              <p class="tl_s">Normal / Active</p>
+              <div class="fixed-wrap button-wrap pc-center">   
+                <button type="button" class="button button--primary button--active"
+                  onclick="window.open('button_ex1.html','pagename','resizable, width=360, height=600'); return false"><span
+                    class="button__text">Normal/Active</span></button>
+              </div>                 
+
+
+              <p class="tl_s">Disable</p>
+              <div class="fixed-wrap button-wrap pc-center">                   
+                <button type="button" class="button button--primary"
+                onclick="window.open('button_ex1.html','pagename','resizable, width=360, height=600'); return false"><span 
+                class="button__text">Disable</span></button>
+              </div>
+
+              <p class="tl_s">Normal-Black</p>
+              <div class="fixed-wrap button-wrap pc-center">   
+                <button type="button" class="button button--primary button--black" 
+                onclick="window.open('button_ex1.html','pagename','resizable, width=360, height=600'); return false"><span
+                    class="button__text">Normal-Black</span></button>
+              </div>
+
+            
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-vertical">
+      <table>
+        <caption></caption>
+        <colgroup>
+          <col style="width:auto">                
+          <col style="width:500px">
+        </colgroup>
+        <thead>
+        <tbody class="table-verticalbody">
+          <tr>
+            <th colspan="2"><p class="tl">Action button - Secondary : <span class="tl_sub">컨텐츠 영역안에서 이동이나 진행 버튼으로 사용, 팝업 내 이동 버튼으로 사용</span></p></th>
+          </tr>
+          <tr>
+            <td class="table-vertical__td">                    
+              <div class="info">
+                <div class="tl_s2">[PC]</div>
+                <p>
+                - height:44px; min-width:110px, 버튼 내 좌우 padding:36px; font-size:16px; font-weight:700 <br>     
+                - disable시 'button--active' class 추가 <br> 
+                - Normal-Black : 버튼 두개가 나란히 올경우 부정케이스 적용 (아니오, 취소)
+              </p>
+              </div>
+
+              <div class="info">
+                
+                <div class="tl_s2">
+                  [Mobile]                          
+                </div>
+                
+                <div class="btn_mo">
+                  <button type="button" onclick="window.open('button_ex1.html','pagename','resizable=no, width=360, height=600'); return false">모바일 버튼 스타일 보기</button>
+                </div>
+                <p>
+                - height:56px; font-size:16px; font-weight:700 <br>               
+                - 페이지 이동버튼 (프로세스 진행 상 꼭 필요한 버튼으로 페이지 상 하나만 존재)<br> 
+                - disable시 'button--active' class 추가 <br> 
+                - Normal-Black : 버튼 두개가 나란히 올경우 부정케이스 적용 (아니오, 취소)<br>
+                - Nomal-Action과 Floating-Action 두가지 스타일로 나뉨 <br>
+                  <span class="red">
+                    <strong>＊Nomal-Action :</strong> 회원가입, 로그인과 같은 프로세스가 있는 페이지경우, <br>
+                    &nbsp;&nbsp;&nbsp;페이지 중간에 올 경우(확실치 않음)<br>
+                    <strong>＊Floating-Action :</strong>유플리트 기획에 fixed라고 정의 된 버튼은 Floating-Action <br>
+                    &nbsp;&nbsp;&nbsp;스타일이라고 확인함(대부분페이지)<br>                          
+                </span>
+                </p>
+              </div>
+            </td>
+            <td class="table-vertical__td">
+
+              <p class="tl_s">Normal / Active</p>
+              <div class="button-wrap button-wrap--center">
+                <button type="button" class="button button--secondary button--active">
+                  <span class="button__text">확인</span>
+                </button>
+              </div>
+
+            
+            <div class="fixed-wrap--multi-line">
+              <div class="button-wrap">
+                <!-- button 활성화시 button--active class 추가 -->
+                <button type="button" class="button button--primary"><span class="button__text">확인</span></button><!-- 버튼 활성화 시 .button--active 추가-->
+              </div>
+            </div>
+            
+
+              
+              <p class="tl_s">Disable</p>
+              <div class="button-wrap button-wrap--center">
+                <button type="button" class="button button--secondary">
+                  <span class="button__text">확인</span>
+                </button>
+              </div>
+
+              
+              <p class="tl_s">Normal-Black</p>
+              <div class="button-wrap button-wrap--center">
+                <button type="button" class="button button--secondary">
+                  <span class="button__text">확인</span>
+                </button>
+              </div>
+
+
+
+
+            
+
+              <p class="tl_s">Normal-Black + Normal</p>
+              <div class="fixed-wrap fixed-wrap--multi-line border-none" style="padding-top:10px">
+                <div class="button-wrap pc-center">
+                  <button type="button" class="button button--primary button--black"><span class="button__text">다른 좌석 선택</span></button>
+                  <button type="button" class="button button--primary button--active width_155"><span class="button__text">선택</span></button>
+                </div>
+              </div>
+
+
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- // guide_wrap -->
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

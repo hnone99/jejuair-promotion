@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" href="../../../index/css/style-guide.css">
+</head>
+
+<body class="style_guide search_box">
+  <div class="wrap guide_wrap">
+
+    <h1 class="guide_main_title">SearchBox</h1>
+    <div class="guide_section">
+      <!-- Search Box Guide 설명 -->
+      <div class="guide_infor">
+        <p class="guide_infor_title">Search Box Guide</p>
+        <p class="guide_infor_text">- 배경색상 #f5f5f5</p>
+        <p class="guide_infor_text">- 폰트 Spoqa Han Sans Neo 14px Regular</p>
+        <p class="guide_infor_text">- 폰트컬러 #333 / #888</p>
+      </div>
+      <!-- // Search Box Guide 설명 -->
+
+      <!-- 기업명 검색 -->
+      <p class="guide_sub_title">기업명 검색</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 기업명 검색 영역 -->
+                <div class="section-wrap">
+                  <div class="gray-box gray-box--result pc-search pc-search--flex align-start">
+                    <div class="input-wrap input--line">
+                      <div class="input-row">
+                        <div class="input-item">
+                          <div class="input-box">
+                            <label for="inp" class="input__label">기업명을 입력해 주세요.</label>
+                            <div data-element="form" class="input">
+                              <input type="text" data-element="input" id="inp" class="input__text">
+                              <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                            </div>
+                          </div>
+                          <p class="input__sub-text">예) 제주항공</p>
+                          <p tabindex="0" class="input__error">에러메세지</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-wrap button-wrap--center">
+                      <!-- D : 활성화 클래스  button--active -->
+                      <button type="button" class="button button--optional"><span class="button__text">조회</span></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 기업명 검색 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NJ/NJ_1_4.html" target="_blank">NJ_1_4</a> / 
+        <a href="../NJ/NJ_1_31.html" target="_blank">NJ_1_31(팝업)</a>
+      </div>
+      <!-- // 기업명 검색 -->
+      
+      <!-- 수하물 선택 -->
+      <p class="guide_sub_title">수하물 선택</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 수하물 선택 영역 -->
+                <div class="section-wrap">
+                  <div class="gray-box pc-search pc-search--flex">
+                    <div class="input-wrap input--line">
+                      <div class="input-row">
+                        <div class="input-label label-top">수하물선택</div>
+                        <div class="select-wrap select-wrap--line select-special-cargo">
+                          <select title="특수 수하물 선택" class="select-wrap__select selected">
+                            <option disabled="" selected="" hidden="">선택해 주세요</option>
+                            <option value="1">골프클럽</option>
+                            <option value="2">스포츠 용품</option>
+                            <option value="3">스쿠버 다이빙 장비</option>
+                            <option value="4">낚시 장비</option>
+                            <option value="5">하키/라크로스 장비</option>
+                            <option value="6">라켓</option>
+                            <option value="7">스케이드 보드</option>
+                            <option value="8">총기 및 실탄</option>
+                            <option value="9">악기(기타, 바이올린, 관악기 등)</option>
+                          </select>
+                        </div>                 
+                      </div>
+                    </div>
+                    <div class="button-wrap sub-section">
+                      <button type="button" class="button button--optional"><span class="button__text">조회</span></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 수하물 선택 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NF/NF_5_3.html" target="_blank">NF_5_3</a>
+      </div>
+      <!-- // 수하물 선택 -->
+
+      <!-- 공항 선택 -->
+      <p class="guide_sub_title">공항 선택</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 공항 선택 영역 -->
+                <div class="section-wrap">
+                  <div class="gray-box pc-search pc-search--flex">
+                    <div class="input-wrap input--line">
+                      <div class="input-row">
+                        <div class="input-label label-top">공항선택</div>
+                          <div class="select-wrap select-wrap--line airport-search">
+                            <select title="출발지 선택" class="select-wrap__select">
+                              <option>선택해 주세요</option>
+                              <option value="1">서울(김포)</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>              
+                      <div class="button-wrap sub-section">
+                        <button type="button" class="button button--optional"><span class="button__text">조회</span></button>
+                      </div>
+                  </div>
+                </div>
+                <!-- // 공항 선택 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NF/NF_3.html" target="_blank">NF_3</a>
+      </div>
+      <!-- // 공항 선택 -->
+
+      <!-- 여행사 예약번호 조회 -->
+      <p class="guide_sub_title">여행사 예약번호 조회</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 여행사 예약번호 조회 영역 -->
+                <div class="section-wrap">
+                  <div class="gray-box gray-box--pc pc-search pc-search--flex pc-search--row2">
+                    <div class="input-wrap input--line">
+                      <div class="input-row">
+                        <div class="input-item">
+                          <div class="input-box">
+                            <label class="input__label">예약번호</label>
+                            <div data-element="form" class="input">
+                              <input type="text" data-element="input" id="inp3" class="input__text" title="예약번호 입력" value="">
+                              <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                            </div>
+                          </div>
+                          <p class="input__sub-text">여행사 예약번호는 조회되지 않습니다.</p>
+                          <p tabindex="0" class="input__error">에러메세지</p>
+                        </div>
+                      </div>
+                      <div class="input-row">
+                        <div class="input-item">
+                          <div class="input-box label-active">
+                            <label class="input__label">탑승일자</label>
+                            <button type="button" data-element="modal_anchor" data-modal-type="datepicker" data-target="#datepicker01" class="picker picker--button"> YYYY.MM.DD</button>
+                          </div>
+                          <p tabindex="0" class="input__error">에러메세지</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-wrap button-wrap--center">
+                      <!-- D : 액티브 클래스 button--active -->
+                      <button type="button" class="button button--optional"><span class="button__text">조회</span></button>
+                    </div>              
+                  </div>
+                </div>
+                <!-- // 여행사 예약번호 조회 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../GD/GD_0_421.html" target="_blank">GD_0_421</a>
+      </div>
+      <!-- // 여행사 예약번호 조회 -->
+
+      <!-- 탑승객 정보 입력 조회 -->
+      <p class="guide_sub_title">탑승객 정보 입력 조회</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 탑승객 정보 입력 조회 영역 -->
+                <div class="gray-box pc-search pc-search--flex pc-search--row2 row-small pc-search--name">
+                  <div class="input-wrap input--line">
+                    <div class="input-row">
+                      <div class="input-item">
+                        <div class="input-flex">
+                          <div class="input-box">
+                            <label for="inp1-1" class="input__label">성</label>
+                            <div data-element="form" class="input">
+                              <input type="text" data-element="input" id="inp1-1" class="input__text">
+                              <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                            </div>
+                          </div>
+                          <div class="input-box">
+                            <label for="inp1-2" class="input__label">이름</label>
+                            <div data-element="form" class="input">
+                              <input type="text" data-element="input" id="inp1-2" class="input__text" title="이름 입력">
+                              <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="input__sub-text">국제선 조회 시 여권에 기재된 영문 성명을 입력해주세요.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="button-wrap button-wrap--center">
+                    <!-- D : 액티브 클래스 button--active -->
+                    <button type="button" class="button button--optional"><span class="button__text">조회</span></button>
+                  </div>
+                </div>
+                <!-- // 탑승객 정보 입력 조회 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../GD/GD_0_4211.html" target="_blank">GD_0_4211</a>
+      </div>
+      <!-- // 탑승객 정보 입력 조회 -->
+
+      <!-- 예약 정보로 조회 -->
+      <p class="guide_sub_title">예약 정보로 조회</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 예약 정보로 조회 영역 -->
+                <div class="section-wrap">
+                  <!--PC-->
+                  <div class="gray-box pc-search pc-search--flex pc-search--row2 pc-15 pc-only">
+                    <div class="input-wrap input--line">
+                      <div class="input-row">
+                        <div class="input-item">
+                          <div class="input-box label-active">
+                            <label for="inp" class="input__label">예약번호</label>
+                            <div data-element="form" class="input">
+                              <input type="text" data-element="input" id="inp" class="input__text" value="J7VEC ">
+                              <button type="button" data-element="remove" class="input__remove-button"><span
+                                  class="hidden">삭제</span></button>
+                            </div>
+                          </div>
+                          <p tabindex="0" class="input__error">에러메세지</p>
+                          <!-- <p class="placeholder">예)12345678/ABCDE</p> -->
+                        </div>
+                      </div>
+                      <div class="input-row">
+                        <div class="input-item">
+                          <div class="input-box label-active">
+                            <label for="inp2" class="input__label">탑승일자</label>
+                            <button type="button" class="picker picker--button" data-element="modal_anchor"
+                              data-modal-type="datepicker" data-target="#datepicker01">YYYY.MM.DD</button>
+                          </div>
+                          <p tabindex="0" class="input__error">에러메세지</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sub-box">
+                      <div class="button-wrap button-wrap--center">
+                        <button type="button" class="button button--optional"><span
+                            class="button__text">조회</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--//PC-->
+                  <!--모바일용-->
+                  <div class="section-wrap mobile-only">
+                    <div class="toggle-item" data-element="toggle" data-options='{"mode": "move scroll"}'>
+                      <div class="toggle-item__title">
+                        <button type="button" class="toggle-item__anchor" data-element="toggle__anchor">예약정보로 조회하기</button>
+                      </div>
+                      <div class="toggle-item__content" data-element="toggle__panel">
+                        <div class="input-wrap input--line">
+                          <div class="input-row">
+                            <div class="input-item">
+                              <div class="input-box label-active">
+                                <label for="inp" class="input__label">예약번호</label>
+                                <div data-element="form" class="input">
+                                  <input type="text" data-element="input" id="inp" class="input__text" value="J7VEC">
+                                  <button type="button" data-element="remove" class="input__remove-button"><span
+                                      class="hidden">삭제</span></button>
+                                </div>
+                              </div>
+                              <p tabindex="0" class="input__error">에러메세지</p>
+                            </div>
+                          </div>
+                          <div class="input-row">
+                            <div class="input-item">
+                              <div class="input-box label-active">
+                                <label for="inp4" class="input__label">탑승일</label>
+                                <button type="button" class="picker picker--button is-select" data-element="modal_anchor"
+                                  data-modal-type="datepicker" data-target="#datepicker01">2020.10.14 (수)
+                                </button>
+                              </div>
+                              <p tabindex="0" class="input__error">에러메세지</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub-box">
+                          <div class="button-wrap button-wrap--center">
+                            <!-- D : 활성화 클래스 button--active -->
+                            <button type="button" class="button button--optional"><span
+                                class="button__text">조회</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--20210728 추가-->
+                    <div class="guide-info guide-info--gray pb20">
+                      <p class="guide-info__text">여행사, 공항, 고객센터를 통한 예약도 조회할 수 있어요.</p>
+                    </div>
+                    <!--//20210728 추가-->
+                  </div>
+                  <!--//모바일용-->
+                </div>
+                <!-- // 예약 정보로 조회 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NF/NF_1.html" target="_blank">NF_1</a> / 
+        <a href="../NF/NF_1_1.html" target="_blank">NF_1_1 (PC Only, Mobile Only)</a>
+      </div>
+      <!-- // 예약 정보로 조회 -->
+
+      <!-- 출발지 도착지 운임조회 -->
+      <p class="guide_sub_title">출발지 도착지 운임조회</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 출발지 도착지 운임조회 영역 -->
+                <div class="section-wrap">
+                  <div class="gray-box pc-search pc-search--flex">
+                    <div class="input--line">
+                      <div class="input-flex">
+                        <div class="input-item">
+                          <div class="input-label label-top">출발지</div>
+                          <div class="select-wrap select-wrap--line">
+                            <select title="수하물 출발지 선택" class="select-wrap__select">
+                              <option>선택해 주세요</option>
+                              <option>대한민국</option>
+                              <option>중국(산동성)</option>
+                              <option>일본</option>
+                            </select>
+                          </div>
+                        </div>
+          
+                        <span class="mark_oneway"></span>
+                        <div class="input-item">
+                          <div class="input-label label-top">도착지</div>
+                          <div class="select-wrap select-wrap--line">
+                            <select title="수하물 도착지 선택" class="select-wrap__select">
+                              <option>선택해 주세요</option>
+                              <option>중국(산동성)</option>
+                              <option>일본</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      
+                    <div class="button-wrap sub-section">
+                      <button type="button" class="button button--optional"><span class="button__text">조회</span></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 출발지 도착지 운임조회 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../ND/ND_2_1.html" target="_blank">ND_2_1</a> / 
+        <a href="../ND/ND_2_2.html" target="_blank">ND_2_2</a> / 
+        <a href="../NF/NF_5_51.html" target="_blank">NF_5_51</a>
+      </div>
+      <!-- // 출발지 도착지 운임조회 -->
+
+      <!-- 탑승내역 기간조회 -->
+      <p class="guide_sub_title">탑승내역 기간조회</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 탑승내역 기간조회 영역 -->
+                <div class="sub-section">
+                  <!-- [수정 : 210215] pc-30 class 추가 -->
+                  <div class="gray-box pc-search pc-search--flex pc-search--number">
+                    <div class="input-wrap input--line">
+                      <div class="input-row input-row--number">
+                        <label for="inputNumber" class="input__label">기간선택</label>
+                        <div data-element="form" class="input input--number">
+                          <button type="button" data-element="number__button" data-type="decrease" aria-label="빼기"
+                            class="input__number input__number-minus"></button>
+                          <input type="text" id="inputNumber" data-element="number__input" value="3" data-max="12" data-min="1"
+                            data-string-number="" class="input__number" disabled>
+                          <span class="text">개월</span>
+                          <button type="button" data-element="number__button" data-type="increase" aria-label="더하기"
+                            class="input__number input__number-plus"></button>
+                        </div>
+                      </div>
+                      <div class="input-row input-row--label">
+                        <!-- <div class="input-label mobile-only">직접입력</div> -->
+                        <div class="input-item">
+                          <!-- 에러메세지 있을 경우 input--error class 추가-->
+                          <div class="input-box label-active">
+                            <label class="input__label">탑승일</label>
+                            <button type="button" class="picker picker--button is-select" data-element="modal_anchor" data-modal-type="datepicker" data-target="">
+                              2021.02.05(금) ~ 2021.05.04(화)
+                            </button><!-- default : 오늘날짜 기준 이전 3개월 노출-->
+                          </div>
+                          <!-- <p class="input__sub-text">최근 6개월만 조회할 수 있습니다.</p> -->
+                          <p tabindex="0" class="input__error">에러메세지</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-wrap button-wrap--center">
+                      <button type="button" class="button button--optional"><span 
+                          class="button__text">조회</span></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 탑승내역 기간조회 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../GD/GD_0_6.html" target="_blank">GD_0_6</a>
+      </div>
+      <!-- // 탑승내역 기간조회 -->
+
+      <!-- 유실물 조회 -->
+      <p class="guide_sub_title">유실물 조회</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 유실물 조회 영역 -->
+                <div class="section-wrap MO">
+                  <div class="section-title">유실물 조회</div>
+          
+                  <div class="gray-box pc-15">
+                    <div class="input-wrap input--line input-wrap--plex">
+                      <div class="input-row">
+                        <div class="input-item">
+                          <div class="input-label">기간</div>
+                          <div class="input-box">
+                            <button type="button" data-element="modal_anchor" data-modal-type="datepicker"
+                              data-target="#datepicker01" class="picker picker--button is-select">2020.10.14 (수) ~
+                              2020.10.24.(토)</button>
+                          </div>
+                          <p tabindex="0" class="input__error">에러메세지</p>
+                          <p class="input__sub-text">최근 1개월만 조회할 수 있습니다.</p>
+                        </div>
+                        <div class="input-item">
+                          <div class="input-label">품목</div>
+                          <div class="input-box">
+                            <div class="select-wrap select-wrap--line">
+                              <select title="출발지 선택" class="select-wrap__select">
+                                <option value="1">전체</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="input-item">
+                          <div class="input-label">색상</div>
+                          <div class="input-box">
+                            <div class="select-wrap select-wrap--line">
+                              <select title="도착지 선택" class="select-wrap__select">
+                                <option value="1">전체</option>
+                                <option value="2">도착지</option>
+                                <option value="3">도착지</option>
+                                <option value="4">도착지</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--스크립트 pc:항상 오픈/모바일:접혀있게-->
+                      <div class="input-row toggle-row pc-25 pc-show">
+                        <div class="input-item">
+                          <label for="inp3-1" class="input-label">항공편 명</label>
+                          <div class="input-box">
+                            <div data-element="form" data-change="true" class="input input-wraping">
+                              <div class="default-text"><span>7</span><span>C</span></div>
+                              <input type="tel" id="inp3-1" class="input__text" data-element="input" maxlength="4"
+                                placeholder="●●●●">
+                            </div>
+                          </div>
+                          <p tabindex="0" class="input__error">편명을 입력해 주세요.</p>
+                          <p class="input__sub-text">예) 1234</p>
+                        </div>
+          
+                        <!-- D : 에러시  input--error 클래스 추가 -->
+                        <div class="input-item">
+                          <div class="input-box">
+                            <label for="inp" class="input__label">좌석번호</label>
+                            <div data-element="form" class="input">
+                              <input type="text" data-element="input" id="inp" class="input__text">
+                              <button type="button" data-element="remove" class="input__remove-button"><span
+                                  class="hidden">삭제</span></button>
+                            </div>
+                          </div>
+                          <p tabindex="0" class="input__error">에러메세지</p>
+                          <p class="input__sub-text">예) 10A</p>
+                        </div>
+          
+                        <div class="input-item"></div>
+          
+                      </div>
+                      <button type="button" class="btn-lost-more"></button>
+          
+                    </div>
+                  </div>
+          
+                  <div class="sub-section">
+                    <div class="button-wrap button-wrap--center">
+                      <button type="button" class="button button--optional button--active"><span
+                          class="button__text">조회</span></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 유실물 조회 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NI/NI_2.html" target="_blank">NI_2</a>
+      </div>
+      <!-- // 유실물 조회 -->
+
+      <!-- 민항공후급증 여정조회 -->
+      <p class="guide_sub_title">민항공후급증 여정조회</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 민항공후급증 여정조회 영역 -->
+                <div class="NA_3 NA">
+                  <div class="gray-box  pc-search--flex pc-search--flight">
+                    <div class="input-wrap input--line">
+                      <div class="input-row">
+                        <div class="input-label">출발지 선택</div>
+                        <div class="input-box">
+                          <div class="select-wrap select-wrap--line">
+                            <select title="출발지 선택" class="select-wrap__select">
+                              <option>선택</option>
+                              <option value="1">인천(체험)</option>
+                              <option value="2">서울(김포)</option>
+                              <option value="3">군산</option>
+                              <option value="4">제주</option>
+                              <option value="5">광주</option>
+                              <option value="6">무안</option>
+                              <option value="7">부산</option>
+                              <option value="8">청주</option>
+                              <option value="9">여수</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-row">
+                        <div class="input-label">도착지 선택</div>
+                        <div class="input-box">
+                          <div class="select-wrap select-wrap--line">
+                            <select title="도착지 선택" class="select-wrap__select">
+                              <option>선택</option>
+                              <option value="1">인천(체험)</option>
+                              <option value="2">서울(김포)</option>
+                              <option value="3">군산</option>
+                              <option value="4">제주</option>
+                              <option value="5">광주</option>
+                              <option value="6">무안</option>
+                              <option value="7">부산</option>
+                              <option value="8">청주</option>
+                              <option value="9">여수</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-row">
+                        <div class="input-item">
+                          <div class="input-box label-active">
+                            <label for="inp" class="input__label ">출발일 선택</label>
+                            <button type="button" data-element="modal_anchor" data-modal-type="datepicker"
+                              data-target="#datepicker01" class="picker picker--button">YYYY.MM.DD</button>
+                          </div>
+                          <p tabindex="0" class="input__error">에러메세지</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-wrap search-btn">
+                      <button type="button" class="button button--optional"><span class="button__text">항공권 검색</span></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 민항공후급증 여정조회 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NA/NA_3.html" target="_blank">NA_3</a>
+      </div>
+      <!-- // 민항공후급증 여정조회 -->
+
+
+      <!-- 포인트구매 - 선물하기 - 회원찾기 -->
+      <p class="guide_sub_title">포인트구매 - 선물하기 - 회원찾기</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 포인트구매 - 선물하기 - 회원찾기 -->
+                <div class="sub-section">
+                  <!--선물하기 - 회원찾기-->
+                  <div class="section-title">회원 찾기</div>
+                  <div class="box-round-box" data-element="inputToggle">
+                    <div class="radio-wrap">
+                      <div class="radio-flex type01">
+                        <span class="radio">
+                          <input type="radio" id="inputRadio1-1" name="inputRadio-cash1" class="radio__input"
+                            data-toggle="toggle__anchor" checked>
+                          <label for="inputRadio11-1" class="radio__label">
+                            <i aria-hidden="true" class="radio__ico"></i>
+                            <span>연락처로 찾기</span>
+                          </label>
+                        </span>
+                        <span class="radio">
+                          <input type="radio" id="inputRadio1-2" name="inputRadio-cash1" class="radio__input"
+                            data-toggle="toggle__anchor">
+                          <label for="inputRadio11-2" class="radio__label">
+                            <i aria-hidden="true" class="radio__ico"></i>
+                            <span>회원번호/ID 찾기</span>
+                          </label>
+                        </span>
+                      </div>
+                      <!-- 연락처로 찾기 -->
+                      <div data-toggle="toggle__panel">
+                        <div class="input-wrap input--line pc-col pc-col-2">
+                          <div class="input-row">
+                            <div class="input-item">
+                              <div class="input-box">
+                                <label for="inp-1" class="input__label">성(한글)<span title="required"
+                                    class="input__label-asterisk">*</span></label>
+                                <div data-element="form" class="input">
+                                  <input type="text" data-element="input" id="inp-1" placeholder="" class="input__text">
+                                  <button type="button" data-element="remove" class="input__remove-button"><span
+                                      class="hidden">삭제</span></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-row">
+                            <div class="input-item">
+                              <div class="input-box">
+                                <label for="inp-2" class="input__label">이름(한글)<span title="required"
+                                    class="input__label-asterisk">*</span></label>
+                                <div data-element="form" class="input">
+                                  <input type="text" data-element="input" id="inp-2" placeholder="" class="input__text">
+                                  <button type="button" data-element="remove" class="input__remove-button"><span
+                                      class="hidden">삭제</span></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-row">
+                            <div class="input-item">
+                              <div class="input-flex">
+                                <div class="input-box input-box--tel">
+                                  <div class="select-wrap select-wrap--line">
+                                    <button class="select-wrap__button active" type="button" data-element="modal_anchor"
+                                      data-width="910" data-target="#modalLayer01" data-modal-type="full">+82</button>
+                                  </div>
+                                </div>
+                                <div class="input-box label-active">
+                                  <div class="input" data-element="form">
+                                    <input type="tel" class="input__text" data-element="input" title="전화번호입력"
+                                      value="010-1234-5678">
+                                    <button type="button" class="input__remove-button" data-element="remove">삭제</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <!-- 회원번호/ID 찾기 -->
+                      <div data-toggle="toggle__panel">
+                        <div class="input-wrap input--line pc-col pc-col-2">
+                          <div class="input-row">
+                            <div class="input-item">
+                              <div class="input-box">
+                                <label for="inp-2" class="input__label">회원번호 또는 ID<span title="required"
+                                    class="input__label-asterisk">*</span></label>
+                                <!--20210406 타이틀명 수정-->
+                                <div data-element="form" class="input">
+                                  <input type="text" data-element="input" id="inp-2" placeholder="" class="input__text">
+                                  <button type="button" data-element="remove" class="input__remove-button"><span
+                                      class="hidden">삭제</span></button>
+                                </div>
+                              </div>
+                              <p tabindex="0" class="input__error">회원번호 9자리를 입력해 주세요.</p>
+                            </div>
+                          </div>
+                          <!-- //사회원번호 -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--//box-round-box-->
+                  <div class="button-wrap button-wrap--center sub-section">
+                    <button type="button" class="button button--optional button--active js-inquiry"><span
+                        class="button__text">조회</span></button>
+                  </div>
+
+                  <!--//선물하기 - 회원찾기-->
+                </div>
+                <!-- // 포인트구매 - 선물하기 - 회원찾기 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NC/NC_1_72.html" target="_blank">NC_1_72</a>
+      </div>
+      <!-- // 포인트구매 - 선물하기 - 회원찾기 -->
+
+      <!-- 운항정보 조회 (스케줄/출도착 조회) -->
+      <p class="guide_sub_title">운항정보 조회 (스케줄/출도착 조회)</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 운항정보 조회 (스케줄/출도착 조회) 영역 -->
+                <div class="section-wrap">
+                  <div class="quick-book-sch info-search type01">
+                    <div class="radio-wrap">
+                      <span class="radio">
+                        <input type="radio" class="radio__input inquiry" id="inputRadio2-1" name="inputRadio2"
+                          data-toggle="toggle__anchor" checked="" aria-controls="inputRadio2-1-0" aria-expanded="true">
+                        <label for="inputRadio2-1" class="radio__label">
+                          <i class="radio__ico" aria-hidden="true"></i>
+                          <span class="text--bold">왕복</span>
+                        </label>
+                      </span>
+                      <span class="radio">
+                        <input type="radio" class="radio__input inquiry" id="inputRadio2-2" name="inputRadio2"
+                          data-toggle="toggle__anchor" aria-controls="inputRadio2-1-1" aria-expanded="false">
+                        <label for="inputRadio2-2" class="radio__label">
+                          <i class="radio__ico" aria-hidden="true"></i>
+                          <span class="text--bold">편도</span>
+                        </label>
+                      </span>
+                    </div>
+                    <div class="main-ticketing">
+                      <div class="ticketing-in content-guide">
+          
+                        <div class="ticketing-row-top">
+                          <div class="ticketing-target">
+                            <button type="button" class="start js-target-pick">
+                              <!-- 선택전 -->
+                              <span class="txt before-select">출발지</span>
+                              <!-- 선택전 -->
+          
+                              <!-- 선택후 -->
+                              <!-- <span class="txt">블라디보스토크</span> -->
+                              <!-- 선택후 -->
+                            </button>
+                            <button type="button" class="target js-target-pick">
+                              <!-- 선택전 -->
+                              <span class="txt before-select">도착지</span>
+                              <!-- 선택전 -->
+          
+                              <!-- 선택후 -->
+                              <!-- <span class="txt">서울 <em class="sub"><span>(</span>인천<span>)</span></em></span> -->
+                              <!-- 선택후 -->
+                            </button>
+                            <button type="button" class="btn-open js-target-pick"><span class="blind">열기</span></button>
+                          </div>
+                          <div class="ticketing-date">
+                            <button type="button" class="btn-date "><span class="txt">2020.12.23(수)</span></button>
+                            <!--default 금일 날짜-->
+                            <!-- <button type="button" class="btn-date is-select"><span class="txt">2020.12.23(수) ~ 2020.12.30(목)</span></button> -->
+                            <!--날짜 선택 시 .is-select 추가-->
+                          </div>
+                        </div>
+          
+                      </div>
+                      <!-- 조회 내역이 없을 경우 노출 -->
+                      <p class="boarding-error">선택하신 조건으로 항공편이 조회되지 않습니다.<br>가는 편 / 오는 편 선택과 날짜를 다시 확인해 주세요.</p>
+                      <!-- //조회 내역이 없을 경우 노출 -->
+          
+                      <div class="button-wrap button-wrap--center sub-section">
+                        <button type="button" class="button button--optional button--active"><span
+                            class="button__text">조회</span></button>
+                        <!-- button 활성화시 button--active class 추가 -->
+                      </div>
+          
+                    </div>
+          
+                  </div>
+                </div>
+                <!-- // 운항정보 조회 (스케줄/출도착 조회) 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NB/NB_3_11.html" target="_blank">NB_3_11</a> / 
+        <a href="../NB/NB_3_21.html" target="_blank">NB_3_21</a>
+      </div>
+      <!-- // 운항정보 조회 (스케줄/출도착 조회) -->
+
+
+      <!-- 스케줄 조회 상세 -->
+      <p class="guide_sub_title">스케줄 조회 상세</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 스케줄 조회 상세 영역 -->
+                <div class="quick-book-sch info-search type01">
+
+                  <div class="main-ticketing open">
+                    <div class="ticketing-in content-guide">
+          
+                      <div class="ticketing-row-top">
+                        <div class="ticketing-target">
+                          <button type="button" class="start js-target-pick">
+                            <!-- 선택전 -->
+                            <span class="txt before-select">출발지</span>
+                            <!-- 선택전 -->
+          
+                            <!-- 선택후 -->
+                            <!-- <span class="txt">블라디보스토크</span> -->
+                            <!-- 선택후 -->
+                          </button>
+                          <button type="button" class="target js-target-pick">
+                            <!-- 선택전 -->
+                            <span class="txt before-select">도착지</span>
+                            <!-- 선택전 -->
+          
+                            <!-- 선택후 -->
+                            <!-- <span class="txt">서울 <em class="sub"><span>(</span>인천<span>)</span></em></span> -->
+                            <!-- 선택후 -->
+                          </button>
+                          <button type="button" class="btn-open js-target-pick"><span class="blind">열기</span></button>
+                        </div>
+                        <div class="ticketing-date">
+                          <button type="button" class="btn-date "><span class="txt">2020.12.23(수)</span></button>
+                          <!--default 금일 날짜-->
+                          <!-- <button type="button" class="btn-date is-select"><span class="txt">2020.12.23(수) ~ 2020.12.30(목)</span></button> -->
+                          <!--날짜 선택 시 .is-select 추가-->
+                        </div>
+                      </div>
+          
+                    </div>
+                    <!-- 조회 내역이 없을 경우 노출 -->
+                    <!-- <p class="boarding-error">선택하신 조건으로 항공편이 조회되지 않습니다.<br>가는 편 / 오는 편 선택과 날짜를 다시 확인해 주세요.</p> -->
+                    <!-- //조회 내역이 없을 경우 노출 -->
+          
+                    <div class="button-wrap button-wrap--center sub-section">
+                      <button type="button" class="button button--optional button--active"><span
+                          class="button__text">조회</span></button>
+                      <!-- button 활성화시 button--active class 추가 -->
+                    </div>
+                  </div>
+          
+                </div>
+                <!-- // 스케줄 조회 상세 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NB/NB_3_121.html" target="_blank">NB_3_121 / </a>
+        <a href="../NB/NB_3_1111.html" target="_blank">NB_3_1111 / </a>
+        <a href="../NB/NB_3_1112.html" target="_blank">NB_3_1112</a>
+      </div>
+      <!-- // 스케줄 조회 상세 -->
+
+      <!-- 고객센터 검색 -->
+      <p class="guide_sub_title">고객센터 검색</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 고객센터 검색 영역 -->
+                <div class="section-wrap MO">
+                  <div class="input-wrap--custom">
+                    <div class="input-wrap">
+                      <div class="input-row">
+                        <div data-element="form" class="input input--search input--search-big">
+                          <input type="text" data-element="input" id="inputSearch" placeholder="검색어를 입력해 주세요"
+                            class="input__text">
+                          <button type="button" data-element="remove" class="input__remove-button">
+                            <span class="hidden">삭제</span></button>
+                          <button class="input__icon input__icon--search">
+                            <img src="../../assets/images/icon/icon-search-gray.png" alt="검색">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="keyword">
+                        <div class="keyword__title">인기 검색어</div>
+                        <div class="keyword__list">
+                          <button type="button" class="keyword__button">#수하물</button>
+                          <button type="button" class="keyword__button">#항공권 취소</button>
+                          <button type="button" class="keyword__button">#환불</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 고객센터 검색 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NI/NI_1.html" target="_blank">NI_1</a>
+      </div>
+      <!-- // 고객센터 검색 -->
+
+      <!-- 포인트 조회 -->
+      <p class="guide_sub_title">포인트 조회</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 포인트 조회 영역 -->
+                <div class="NC_1">
+                  <div class="section-wrap pc-single-line">
+                    <div class="tab tab--square tab--square-cols3 tab--square-small">
+                      <div class="tab__buttons">
+                        <div class="tab__button">
+                          <button type="button" class="tab__anchor">1개월</button>
+                        </div>
+                        <div class="tab__button">
+                          <button type="button" class="tab__anchor  is-active">3개월</button><!-- active시 is-active class 추가 -->
+                        </div>
+                        <div class="tab__button">
+                          <button type="button" class="tab__anchor">6개월</button>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="input-wrap input--line">
+                      <div class="input-row input-row--dash">
+                        <div class="input-item">
+                          <!--error시 .input--error 추가-->
+                          <div class="input-label label-top">날짜선택</div>
+                          <div class="input-box">
+                            <button type="button" class="picker picker--button" data-element="modal_anchor"
+                              data-modal-type="datepicker" data-target="">YYYY.MM.DD</button>
+                          </div>
+                          <p tabindex="0" class="input__error">에러메세지 따로따로</p>
+                        </div>
+                        <div class="input-item">
+                          <!--error시 .input--error 추가-->
+                          <div class="input-box">
+                            <button type="button" class="picker picker--button" data-element="modal_anchor"
+                              data-modal-type="datepicker" data-target="">YYYY.MM.DD</button>
+                          </div>
+                          <p tabindex="0" class="input__error">에러메세지 따로따로</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-wrap button-wrap--center">
+                      <button type="button" class="button button--optional"><span class="button__text">조회</span></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 포인트 조회 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NC/NC_1_91.html" target="_blank">NC_1_91</a>
+      </div>
+      <!-- // 포인트 조회 -->
+
+      <!-- 기타예약조회 -->
+      <p class="guide_sub_title">기타예약조회</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 기타예약조회 영역 -->
+                <div class="modal" style="display: block;">
+                  <div class="gray-box">
+                    <div class="input-wrap input--line">
+                      <div class="input-row">
+                        <div class="input-item">
+                          <div class="input-box">
+                            <label for="inp" class="input__label">예약번호</label>
+                            <div data-element="form" class="input">
+                              <input type="text" data-element="input" id="inp" class="input__text">
+                              <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                            </div>
+                          </div>
+                          <p tabindex="0" class="input__error">에러메세지</p>
+                          <p class="input__sub-text">여행사 예약번호는 조회되지 않습니다.</p>
+                        </div>
+                    </div>
+                      <div class="input-row">
+                        <div class="input-item">
+                          <div class="input-label label-top">탑승일<span title="required" class="input__label-asterisk">*</span></div>
+                          <div class="input-box">
+                            <button type="button" class="picker picker--button add--pl-5" data-element="modal_anchor" data-modal-type="datepicker" data-target="">YYYY.MM.DD</button>
+                          </div>
+                          <p tabindex="0" class="input__error">에러메세지</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-wrap pc-center pc-20">
+                      <button type="button" class="button button--optional"><span class="button__text">조회</span></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 기타예약조회 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NI/NI_1_124.html" target="_blank">NI_1_124(팝업)</a>
+      </div>
+      <!-- // 기타예약조회 -->
+      
+      <!-- 우편번호검색 팝업 -->
+      <p class="guide_sub_title">우편번호검색 팝업</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 우편번호검색 팝업 영역 -->
+                <div class="modal" style="display: block;">
+                  <div class="gray-box gray-box--result pc-search pc-search--flex">
+                    <div class="input-wrap input--line">
+                      <div class="input-row">
+                        <div class="input-item">
+                          <div class="input-box">
+                            <label for="inp" class="input__label">검색할 주소를 입력해 주세요</label>
+                            <div data-element="form" class="input">
+                              <input type="text" data-element="input" id="inp" class="input__text">
+                              <button type="button" data-element="remove" class="input__remove-button"><span
+                                  class="hidden">삭제</span></button>
+                            </div>
+                          </div>
+                          <p class="input__sub-text">예) 제주 첨단로 242</p>
+                          <p tabindex="0" class="input__error">에러메세지</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-wrap button-wrap--center">
+                      <!-- D : 활성화 클래스  button--active -->
+                      <button type="button" class="button button--optional"><span
+                          class="button__text">검색</span></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 우편번호검색 팝업 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../CO/CO_1_C.html" target="_blank">CO_1_C : 우편번호 검색(팝업)</a>
+      </div>
+      <!-- // 우편번호검색 팝업  -->
+
+      <!-- 보내기 회원 등록 팝업 -->
+      <p class="guide_sub_title">보내기 회원 등록 팝업</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 보내기 회원 등록 팝업 영역 -->
+                <div class="modal" style="display: block;">
+                  <div class="sub-section">
+                    <div class="section-title">회원 찾기</div>
+                    <div data-element="inputToggle">
+                      <div class="radio-wrap gray-box pc-15 container--small">
+                        <div class="radio-flex type01">
+                          <span class="radio">
+                            <input type="radio" id="inputRadio1-1" name="inputRadio-cash2" class="radio__input"
+                              data-toggle="toggle__anchor" checked>
+                            <label for="inputRadio2-1" class="radio__label">
+                              <i aria-hidden="true" class="radio__ico"></i>
+                              <span>연락처로 찾기</span>
+                            </label>
+                          </span>
+                          <span class="radio">
+                            <input type="radio" id="inputRadio1-2" name="inputRadio-cash2" class="radio__input"
+                              data-toggle="toggle__anchor">
+                            <label for="inputRadio2-2" class="radio__label">
+                              <i aria-hidden="true" class="radio__ico"></i>
+                              <span>회원번호/ID 찾기</span>
+                            </label>
+                          </span>
+                        </div>
+                        <!-- 연락처로 찾기 -->
+                        <div class="input-wrap input--line container--xsmall m-15" data-toggle="toggle__panel">
+                          <div class="input-row">
+                            <div class="input-item">
+                              <div class="input-box">
+                                <label for="inp-1" class="input__label">성(한글)<span title="required"
+                                    class="input__label-asterisk">*</span></label>
+                                <div data-element="form" class="input">
+                                  <input type="text" data-element="input" id="inp-1" placeholder="" class="input__text">
+                                  <button type="button" data-element="remove" class="input__remove-button"><span
+                                      class="hidden">삭제</span></button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="input-item">
+                              <div class="input-box">
+                                <label for="inp-2" class="input__label">이름(한글)<span title="required"
+                                    class="input__label-asterisk">*</span></label>
+                                <div data-element="form" class="input">
+                                  <input type="text" data-element="input" id="inp-2" placeholder="" class="input__text">
+                                  <button type="button" data-element="remove" class="input__remove-button"><span
+                                      class="hidden">삭제</span></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-row">
+                            <div class="input-label label-top">휴대전화번호</div>
+                            <div class="input-item">
+                              <div class="input-flex">
+                                <div class="input-box input-box--tel">
+                                  <div class="select-wrap select-wrap--line">
+                                    <button class="select-wrap__button active" type="button" data-element="modal_anchor"
+                                      data-width="910" data-target="#modalLayer01" data-modal-type="full">+82</button>
+                                  </div>
+                                </div>
+                                <div class="input-box">
+                                  <div class="input" data-element="form">
+                                    <input type="tel" class="input__text" data-element="input" title="전화번호입력">
+                                    <button type="button" class="input__remove-button" data-element="remove">삭제</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+          
+                        </div>
+          
+                        <!-- 회원번호/ID 찾기 -->
+                        <div class="input-wrap input--line container--xsmall m-15" data-toggle="toggle__panel">
+                          <div class="input-row">
+                            <div class="input-item">
+                              <div class="input-box">
+                                <label for="inp-2" class="input__label">회원번호 또는 ID<span title="required"
+                                    class="input__label-asterisk">*</span></label>
+                                <!--20210406 타이틀명 수정-->
+                                <div data-element="form" class="input">
+                                  <input type="text" data-element="input" id="inp-2" placeholder="" class="input__text">
+                                  <button type="button" data-element="remove" class="input__remove-button"><span
+                                      class="hidden">삭제</span></button>
+                                </div>
+                              </div>
+                              <p tabindex="0" class="input__error">회원번호 9자리를 입력해 주세요.</p>
+                            </div>
+                          </div>
+                          <!-- //사회원번호 -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-wrap button-wrap--center sub-section">
+                      <!-- D : 활성화 클래스 button--active -->
+                      <button type="button" class="button button--optional button--active js-inquiry"><span
+                          class="button__text">조회</span></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 보내기 회원 등록 팝업 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NC/NC_1_85A.html" target="_blank">NC_1_85A</a>
+      </div>
+      <!-- // 보내기 회원 등록 팝업  -->
+
+      <!-- 예약정보조회 팝업 -->
+      <p class="guide_sub_title">예약정보조회 팝업</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">배경색상 #f5f5f5</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 예약정보조회 팝업 영역 -->
+                <div class="modal" style="display: block;">
+                  <div class="gray-box pc-search">
+                    <div class="input-wrap input--line">
+                      <div class="input-row">
+                        <div class="input-item input--error"><!-- 조회 내역 없을 경우 에러메세지 노출을 위한 input--error class 추가 -->
+                          <div class="input-flex">
+                            <!-- input__text에 값이 있으면 label-active -->
+                            <div class="input-box label-active">
+                              <label for="inp1-1" class="input__label">성</label>
+                              <div class="input" data-element="form">
+                                <input type="text" class="input__text" data-element="input" id="inp1-1" value="FLORENCE"  >
+                                <button type="button" class="input__remove-button" data-element="remove">삭제</button>
+                              </div>
+                            </div>
+                            <!-- input__text에 값이 있으면 label-active -->
+                            <div class="input-box label-active">
+                              <label for="inp1-2" class="input__label">이름</label>
+                              <div class="input" data-element="form">
+                                <input type="text" class="input__text" data-element="input" id="inp1-2" value="WELCH">
+                                <button type="button" class="input__remove-button" data-element="remove">삭제</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="guide-info guide-info--gray">
+                            <p class="guide-info__text">국제선의 경우 영문 성/이름을 입력해 주세요.</p>
+                          </div>
+                          <p class="input__error" tabindex="0">FLORENCE/WELCH 을(를) 찾을 수 없습니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sub-section">
+                      <div class="button-wrap button-wrap--center">
+                        <button type="button" class="button button--optional"><span class="button__text">조회</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 예약정보조회 팝업 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NF/NF_1_7.html" target="_blank">NF_1_7</a>
+      </div>
+      <!-- // 예약정보조회 팝업 -->
+    
+
+  </div>
+  <!-- // guide_wrap -->
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+
+  <script>
+    // 예매
+    $.fn.ticketing = function () {
+      var ticketingWrap = this
+      var rowBot = ticketingWrap.find('.ticketing-row-bot')
+      var btnPick = ticketingWrap.find('.js-target-pick')
+      var btnStart = ticketingWrap.find('.start.js-target-pick')
+      var btnTarget = ticketingWrap.find('.target.js-target-pick')
+      var btnOpen = ticketingWrap.find('.btn-open.js-target-pick')
+      var rowTop = ticketingWrap.find('.ticketing-row-top')
+      var flightStart = ticketingWrap.find('.flight-start')
+      var flightTarget = ticketingWrap.find('.flight-target')
+      var ticketPath = ticketingWrap.find('.ticket-path')
+      var layerClose = ticketingWrap.find('.layer-close')
+      var promotionTop = ticketingWrap.find('.promotion-top')
+      var promotionInp = ticketingWrap.find('.promotion-inp .inp-txt')
+
+      // 편도, 왕복, 다구간 탭
+      var typeTab = ticketingWrap.find('.ticketing-type')
+      var typeTabItem = ticketingWrap.find('.ticketing-type .item')
+      var typeTabBtn = ticketingWrap.find('.ticketing-type .item-btn')
+      typeTabBtn.on('click', function (e) {
+        e.preventDefault()
+        var currentIndex = $(this).parent().index()
+        typeTabItem.removeClass('selected')
+        $(this).parent().addClass('selected')
+        if (currentIndex == 0) {
+          console.log('왕복')
+        }
+        else if (currentIndex == 1) {
+          console.log('편도')
+        }
+        else {
+          console.log('다구간')
+        }
+      });
+
+      // 가려진 부분 열기
+      btnPick.on('click', function () {
+        open()
+      })
+
+      function open() {
+        ticketingWrap.addClass('open')
+        typeTab.slideDown(200)
+        rowBot.slideDown(200)
+      }
+
+      function close() {
+        $('.quick-booking').removeClass('active')
+        ticketingWrap.removeClass('open')
+        typeTab.slideUp(200)
+        rowBot.slideUp(200)
+      }
+
+      // 결제 방법
+      var payment = ticketingWrap.find('.payment')
+      var paymentRadio = ticketingWrap.find('.radio__input')
+      var promotion = ticketingWrap.find('.promotion')
+      var gTicket = ticketingWrap.find('.g-ticket')
+      paymentRadio.on('change', function () {
+        var currentIndex = $(this).parent().index()
+        if (currentIndex == 0) {
+          console.log('일반')
+          gTicket.hide()
+          if ($('body').hasClass('isPc')) {
+            promotion.css('display', 'block')
+          }
+          else {
+            promotion.css('display', 'block')
+          }
+        }
+        else if (currentIndex == 1) {
+          console.log('포인트')
+          gTicket.hide()
+          promotion.hide()
+        }
+        else {
+          console.log('기프티켓')
+          gTicket.show()
+          promotion.hide()
+        }
+      });
+
+      // 출발, 도착지 선택
+      btnStart.on('click', function () {
+        customerLayer.hide();
+        dateLayer.hide();
+        flightTarget.hide();
+        flightStart.slideDown(200)
+        $('.quick-booking').addClass('active')
+        // 맵 위에 탭 plugin.js
+        $('.flight-start .map-wrap').mapInnerTab();
+        $('.flight-layer').removeClass('map');
+      })
+      btnTarget.on('click', function () {
+        customerLayer.hide();
+        flightStart.hide();
+        dateLayer.hide();
+        flightTarget.slideDown(200)
+        $('.quick-booking').addClass('active')
+        // 맵 위에 탭 plugin.js
+        $('.flight-target .map-wrap').mapInnerTab();
+        $('.flight-layer').removeClass('map');
+      })
+
+      // 날짜 선택
+      var btnDate = ticketingWrap.find('.btn-date')
+      var dateLayer = ticketingWrap.find('.date-layer')
+
+      btnDate.on('click', function () {
+        open()
+        customerLayer.hide();
+        flightStart.hide();
+        flightTarget.hide();
+        dateLayer.slideDown(200)
+        $('.quick-booking').addClass('active')
+      });
+
+      // 탑승자 선택
+      var btnPassengers = ticketingWrap.find('.btn-passengers')
+      var customerLayer = ticketingWrap.find('.customer-layer')
+      btnPassengers.on('click', function () {
+        open()
+        dateLayer.hide();
+        flightStart.hide();
+        flightTarget.hide();
+        customerLayer.slideDown(200)
+        $('.quick-booking').addClass('active')
+      });
+
+      // 내부 슬라이드 요소 닫을 때
+      layerClose.on('click', function () {
+        $('.quick-booking').removeClass('active')
+      });
+
+      // 프로모션 코드 활성화 체크
+      promotionInp.on('focusin', function () {
+        promotionTop.addClass('focus')
+      });
+      promotionInp.on('focusout', function () {
+        promotionTop.removeClass('focus')
+      });
+    }
+
+    // 예매
+    $('.main-ticketing').ticketing();
+
+    // 데이트 레이어 날짜 선택
+    $('.date-layer button[data-select-date]').on('click', function () {
+      var ticketingDate = $('.ticketing-date')
+      var startRange = $('.startRange')
+      var endRange = $('.endRange')
+      var startRef = $('.startRange').attr('aria-label').split(',')
+      var startTxt = ''
+      var startY = startRef[0]
+      var startM = startRef[1].split('월')[0]
+      var startDate = startRef[1].split('월')[1].split(' ')[1]
+      var startDay = ''
+      var endRef = $('.endRange').attr('aria-label').split(',')
+      var endTxt = ''
+      var endY = endRef[0]
+      var endM = endRef[1].split('월')[0].split(' ')[1]
+      console.log(endM)
+      var endDate = endRef[1].split('월')[1].split(' ')[1]
+      var endDay = ''
+      if (startRange.hasClass('mon')) {
+        startDay = '(월)'
+      }
+      else if (startRange.hasClass('tue')) {
+        startDay = '(화)'
+      }
+      else if (startRange.hasClass('wed')) {
+        startDay = '(수)'
+      }
+      else if (startRange.hasClass('thu')) {
+        startDay = '(목)'
+      }
+      else if (startRange.hasClass('fri')) {
+        startDay = '(금)'
+      }
+      else if (startRange.hasClass('sat')) {
+        startDay = '(토)'
+      }
+      else if (startRange.hasClass('sun')) {
+        startDay = '(일)'
+      }
+      if (endRange.hasClass('mon')) {
+        endDay = '(월)'
+      }
+      else if (endRange.hasClass('tue')) {
+        endDay = '(화)'
+      }
+      else if (endRange.hasClass('wed')) {
+        endDay = '(수)'
+      }
+      else if (endRange.hasClass('thu')) {
+        endDay = '(목)'
+      }
+      else if (endRange.hasClass('fri')) {
+        endDay = '(금)'
+      }
+      else if (endRange.hasClass('sat')) {
+        endDay = '(토)'
+      }
+      else if (endRange.hasClass('sun')) {
+        endDay = '(일)'
+      }
+      startTxt = startY + '.' + + startM + '.' + startDate + '.' + startDay
+      endTxt = endY + '.' + endM + '.' + endDate + '.' + endDay
+      ticketingDate.find('.txt').text(startTxt + ' ~ ' + endTxt)
+      $('.date-layer').slideUp(200)
+    })
+
+    // am4 map
+    function createAm4Map(mapNum) {
+      var chart = am4core.create(mapNum, am4maps.MapChart);
+      chart.geodata = am4geodata_worldLow;
+      chart.homeZoomLevel = 5;
+      chart.homeGeoPoint = {
+        latitude: 30,
+        longitude: 95
+      };
+      chart.projection = new am4maps.projections.Miller();
+      var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+      polygonSeries.useGeodata = true;
+    }
+
+    // 리스트, 맵 변경 
+    function viewArea(target, type) {
+      var type = type;
+      if (target == 'start' && type == 'map') {
+        $('.flight-start').addClass('map')
+        createAm4Map('map-start')
+      }
+      else if (target == 'start' && type != 'map') {
+        $('.flight-start').removeClass('map')
+      }
+      else if (target == 'target' && type == 'map') {
+        $('.flight-target').addClass('map')
+        createAm4Map('map-target')
+      }
+      else if (target == 'target' && type != 'map') {
+        $('.flight-target').removeClass('map')
+      }
+    }
+
+    // 구간, 편명조회 선택
+    $('input[type="radio"].inquiry').on('change', function () {
+      var currentId = $(this).attr('id');
+      if (currentId == 'inputRadio2-1') {
+        $('.main-ticketing').removeClass('flight-info');
+        $('.boarding-search').addClass('flight-info');
+      }
+      else {
+        $('.main-ticketing').addClass('flight-info');
+        $('.boarding-search').removeClass('flight-info');
+      }
+    })
+  </script>
+</body>
+
+</html>

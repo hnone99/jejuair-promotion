@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only ">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <div class="header__stepper">
+        <ol class="stepper__group_new booking_step">
+            <li>
+              <span class="step">1</span>
+              <span class="text">항공권선택</span>
+            </li>
+            <li>
+              <span class="step">2</span>
+              <span class="text">탑승객 정보 입력</span>
+            </li>
+            <li>
+              <span class="step">3</span>
+              <span class="text">부가서비스 선택</span>
+            </li>
+            <li>
+              <span class="step">4</span>
+              <span class="text">확인 및 동의</span>
+            </li>
+            <li class="active">
+              <span class="step">5</span>
+              <span class="text">결제</span>
+            </li>
+          </ol>
+      </div>
+
+    </header>
+    <!-- //mobile -->
+
+    <!-- pc용 예매 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div class="select-wrap select-wrap--line">
+                <select title="국가 선택" class="select-wrap__select">
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div class="select-wrap select-wrap--line">
+                <select class="select-wrap__select" title="언어 선택"> 
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+  
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner header__inner--step pc-only ">
+      <!--step 스타일 변경-->
+
+      <div class="sticky-header" data-sticky="">
+        <div class="header__box">
+          <h1 class="header__logo">
+            <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+          </h1>
+          <h2 class="header__page-name">항공권 예매</h2>
+
+          <div class="header__stepper">
+            <ol class="stepper__group_new booking_step">
+              <li>
+                <span class="step">1</span>
+                <span class="text">항공권선택</span>
+              </li>
+              <li>
+                <span class="step">2</span>
+                <span class="text">탑승객 정보 입력</span>
+              </li>
+              <li>
+                <span class="step">3</span>
+                <span class="text">부가서비스 선택</span>
+              </li>
+              <li>
+                <span class="step">4</span>
+                <span class="text">확인 및 동의</span>
+              </li>
+              <li class="active">
+                <span class="step">5</span>
+                <span class="text">결제</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- // pc용 공통 헤더 -->
+  </div>
+  <div id="body">
+    <div class="wrap wrap--booking NA_1_B step-ui">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">2 Depth</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle" data-options="{&quot;mode&quot;: &quot;slide&quot;, &quot;speed&quot;: 100, &quot;clickToClose&quot;: true}">
+            <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor" aria-controls="toggle-1" aria-expanded="false">3
+              Depth</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel" id="toggle-1">
+              <a href="#" class="item">4 Depth</a>
+              <a href="#" class="item">4 DepthDepthDepth</a>
+              <a href="#" class="item">4 DepthDepthDepth</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div class="page-title-wrap pc-only">
+            <div class="page-title">결제</div>
+          </div>
+
+          <!-- 항목별 운임 상세 -->
+          <div class="section-wrap">
+            <div class="pc-pay-layout pc-30">
+              <div class="layout-left ">
+                <div class="section-title">항목별 운임 상세</div>
+              </div>
+              <div class="layout-right">
+     
+                <div data-element="toggle" class="toggle-item pay">
+                  <div class="toggle-item__title">
+                    <button type="button" data-element="toggle__anchor" class="toggle-item__anchor">
+                      <div class="payment-amount">
+                        <div class="payment-amount__title">예상 결제 금액</div>
+                        <p class="payment-amount__sum">
+                          <span class="unit">USD</span> 
+                          <span class="price_txt"> 2,120,000</span>
+                        </p>
+                        
+                      </div>
+                    </button>
+                  </div>
+                  <div data-element="toggle__panel" class="toggle-item__content">
+                    <div class="itemize__item itemize__item--payment">
+                      <div class="group">
+                        <div class="group__title">항공 운송료</div>
+                        <div class="group__info">
+                          <div class="flex-text">
+                            <div class="flex-text__title">항공운임</div>
+                            <div class="flex-text__additional">
+                              <span class="unit">USD</span>
+                              <span class="price_txt">2,000,000</span>
+                            </div>
+                          </div>
+                          <div class="flex-text">
+                            <div class="flex-text__title">
+                              <div class="link-wrap--left">
+                                <button type="button" class="link-wrap__underline link-wrap__underline--gray"><span>공항시설 사용료</span></button>
+                              </div>
+                            </div>
+                            <div class="flex-text__additional">
+                              <span class="unit">USD</span>
+                              <span class="price_txt">100,000</span>
+                            </div>
+                          </div>
+                          <div class="flex-text">
+                            <div class="flex-text__title">유류할증료</div>
+                            <div class="flex-text__additional">
+                              <span class="unit">USD</span>
+                              <span class="price_txt">10,000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="group">
+                        <div class="group__title">부가서비스</div>
+                        <div class="group__info">
+                          <div class="flex-text">
+                            <div class="flex-text__title">사전 수하물</div>
+                            <div class="flex-text__additional">
+                              <span class="unit">USD</span>
+                              <span class="price_txt">10,000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="guide-info guide-info--gray">
+                  <p class="guide-info__text">구매일 및 환율에 따라 차이가 있을 수 있으며, 일부 해외카드 결제수수료로 인해 실제 청구금액은 최종 결제 금액과 다를 수 있습니다. 
+                      자세한 사항은 해당 카드사를 통해 확인하시기 바랍니다.</p>
+                </div>
+        
+
+                  <!-- 제휴카드 안내 배너 -->
+                  <div class="reflash-pay-banner">
+
+                  <div class="carousel carousel--full swiper-container" data-carousel="fullItemAuto">
+                    <div class="carousel__item swiper-wrapper">
+                      <div class="carousel__list swiper-slide">
+                        <div class="banner-inner" style="background-color:#e8dfc8"> <!-- 배너 background-color 지정 -->
+                          <div class="txt-area">
+                            <span class="one-line">PC 강제한줄 PC 강제한줄 PC 강제한줄 PC 강제한줄 PC 강제한줄 PC 강제한줄 제주항공 이용은 JJPay로 간편하게 결제하세요.111</span>
+                          </div>
+                          <div class="img-area"> <!-- 이미지 영역 110x120 -->
+                            <img src="../../assets/images/banner/banner_jjpay.png" alt="">
+                          </div> 
+                        </div>
+                      </div>
+                      
+                      <div class="carousel__list swiper-slide">
+                        <div class="banner-inner" style="background-color:#e8dfc8"> <!-- 배너 background-color 지정 -->
+                          <div class="txt-area">
+                            <span class="one-line"> 제주항공 이용은 JJPay로 간편하게 결제하세요.222</span>
+                          </div>
+                          <div class="img-area"> <!-- 이미지 영역 110x120 -->
+                            <img src="../../assets/images/banner/banner_jjpay.png" alt="">
+                          </div> 
+                        </div>
+                      </div>
+    
+                    </div>
+                    <button class="carousel__button carousel__button-prev"></button>
+                    <button class="carousel__button carousel__button-next"></button>
+                    <div class="carousel__pagination carousel__pagination--orange"></div>
+                  </div>
+    
+                </div> 
+                <!-- //제휴카드 안내 배너 -->
+
+              </div>
+            </div>
+          </div>
+          <!-- //항목별 운임 상세 -->
+
+          <!-- 결제방법 -->
+          <div class="section-wrap">
+            <div class="pc-pay-layout pc-100">
+              <div class="layout-left">
+                <div class="section-title">결제방법</div>
+              </div>
+              <div class="layout-right">
+              <!-- 해외출발 CASE -->
+              <div class="payment-use-wrap no_border">
+              
+                <div data-element="tab" class="tab tab--default">
+                  <div class="tab__buttons">
+                    <div data-element="tab__list" class="tab__button">
+                      <button type="button" data-element="tab__anchor" class="tab__anchor is-active">신용카드</button>
+                    </div>
+                    <div data-element="tab__list" class="tab__button">
+                      <button type="button" data-element="tab__anchor" class="tab__anchor">간편결제</button>
+                    </div>
+                    <!--일본/동남아 case-->
+                    <div data-element="tab__list" class="tab__button">
+                      <button type="button" data-element="tab__anchor" class="tab__anchor">현금결제</button>
+                    </div>
+                  </div>
+                  <!--신용카드 결제-->
+                  <div data-element="tab__panel" class="tab__panel">
+                    <div class="input-wrap input--line -type1 pc-col pc-col-2 card_box">
+                      <div class="link-wrap--arrow">
+                        <button type="button" class="link-wrap__text"><span>제휴카드 안내</span></button><!--20210503 문구 수정-->
+                      </div>
+                      <div class="input-row input-row--label input-row pc-mgl-0 mo-0"><!--20210503 class추가 -->
+                        <div class="input-label label-top">카드번호</div>
+                        <div class="input-item ">
+                          <div class="input-flex input-flex--dash">
+                            <div class="input-box">
+                              <div data-element="form" class="input">
+                                <input type="text" data-element="input" title="카드번호 앞 4자리 입력" placeholder="1234" class="input__text" maxlength="4">
+                                <button type="button" data-element="remove" class="input__remove-button" tabindex="0"><span class="hidden">삭제</span></button>
+                              </div>
+                            </div>
+                            <div class="input-box">
+                              <div data-element="form" class="input">
+                                <input type="password" data-element="input" title="카드번호 두번째 자리 4자리 입력" placeholder="1234" class="input__text" maxlength="4">
+                                <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                              </div>
+                            </div>
+                            <div class="input-box">
+                              <div data-element="form" class="input">
+                                <input type="password" data-element="input" title="카드번호 세번째 자리 4자리 입력" placeholder="1234" class="input__text" maxlength="4">
+                                <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                              </div>
+                            </div>
+                            <div class="input-box">
+                              <div data-element="form" class="input">
+                                <input type="text" data-element="input" title="카드번호 네번째 자리 4자리 입력" placeholder="1234" class="input__text" maxlength="4">
+                                <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                              </div>
+                            </div>
+                          </div>
+                          <p tabindex="0" class="input__error">유효하지 않은 카드 번호입니다.</p>
+                        </div>
+                      </div>
+                      <div class="input-row input-row--label pc-mgl-30"><!--20210503 class추가 -->
+                        <div class="input-item input-item--flex">
+                          <div class="input-flex">
+                            <div class="input-box">
+                              <label for="inp" class="input__label">유효기간</label>
+                              <div data-element="form" class="input">
+                                <input type="text" data-element="input" title="유효기간 년도 입력" class="input__text input__text--placeholder" maxlength="5">
+                                <button type="button" data-element="remove" class="input__remove-button" ><span class="hidden">삭제</span></button>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <p tabindex="0" class="input__error">에러메세지 따로따로</p>
+                          <p tabindex="0" class="input__sub-text">MM/YY</p>
+                        </div>
+                        <div class="input-item input-item--flex">
+                          <div class="input-box">
+                            <label for="inp" class="input__label">CVC</label>
+                            <div data-element="form" class="input">
+                              <input type="text" data-element="input" title="3자리 입력" maxlength="3" class="input__text">
+                              <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                            </div>
+                          </div>
+                          <p tabindex="0" class="input__error">에러메세지</p>
+                          <p tabindex="0" class="input__sub-text">카드 뒷면 3자리</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 간편결제-->
+                  <div data-element="tab__panel" class="tab__panel">
+                    <div class="payment-card">
+                      <div class="payment-card__item"><button type="button"><img src="../../assets/images/icon/payment-card-PL.png" alt="paypal"></button></div>
+                      <div class="payment-card__item"><button type="button"><img src="../../assets/images/icon/payment-card-WP.png" alt="wechatpay"></button></div>
+                      <div class="payment-card__item"><button type="button"><img src="../../assets/images/icon/payment-card-UP.png" alt="unionbay"></button></div>
+                      <div class="payment-card__item"><button type="button"><img src="../../assets/images/icon/payment-card-AP.png" alt="alipay"></button></div>
+                      <div class="payment-card__item"><button type="button"><img src="../../assets/images/icon/payment-card-JL.png" alt="Linepay"></button></div><!--20210910 라인페이 추가-->
+                    </div>
+                  </div>
+                  <!--일본/동남아 현금결제 CASE -->
+                  <div data-element="tab__panel" class="tab__panel">
+                    <div class="text-item-between">
+                      <div class="list-wrap">
+                        <p class="text__default text--bold">현금 발권 항공권 환불 시 이체수수료 안내</p>
+                        <p class="text__default">홈페이지에서 현금으로 항공권을 구입하시고 환불하는 경우, 환불위약금과는 별도로 이체수수료도 함께 부과됩니다.</p>
+                        <ul class="list-guide">
+                          <li class="list-guide__item">개시일: 2014년 1월 1일 환불 신청분부터</li>
+                          <li class="list-guide__item">수수료: 일괄 JPY 450 </li>
+                        </ul>
+                      </div>
+                      <div class="sub-box"><!--20210503 class추가 -->
+                        <div class="text__default">온라인을 이용한 현금 결제의 경우, 온라인상으로는 변경할 수 없으므로 예약센터로 변경 요청을 하시기 바랍니다.</div>
+                      </div>
+                    </div>
+
+
+                    <div class="text-item-between">
+                      <div class="list-wrap">
+
+                        <div class="sub-section-title">편의점을 통한 결제</div>
+          
+                        <div class="payment-card payment-card--store pay-store">
+                          <div class="payment-card__item"><img src="../../assets/images/@temp/@img-store-lawson.png" alt="로손"></div>
+                          <div class="payment-card__item"><img src="../../assets/images/@temp/@img-store-familymart.png" alt="패밀리마트"></div>
+                          <div class="payment-card__item"><img src="../../assets/images/@temp/@img-store-seicomart.png" alt="세이코마트"></div>
+                          <div class="payment-card__item"><img src="../../assets/images/@temp/@img-store-7eleven.png" alt="세븐일레븐"></div>
+                          <div class="payment-card__item"><img src="../../assets/images/@temp/@img-store-sunkus.png" alt="선커스"></div>
+                          <div class="payment-card__item"><img src="../../assets/images/@temp/@img-store-daily.png" alt="데일리 야마자"></div>
+                          <div class="payment-card__item"><img src="../../assets/images/@temp/@img-store-ministop.png" alt="미니스탑"></div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="text-item-between">
+                      <div class="list-wrap">
+                        <p class="text__default text--bold">Pay-easy를 통한 결제</p>
+                        <p class="text__default">우체국 은행(은행, ATM, 우체국 다이렉트 인터넷 서비스)를 통해 결제할 수 있습니다.</p>
+                      </div>
+                      <div class="link-wrap--arrow">
+                        <button type="button" class="link-wrap__text"><span>자세히보기</span></button>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--//일본/동남아 현금결제 CASE -->
+                </div>
+
+                 <!--20210503 추가 -->
+                 <div class="check-wrap payment-border-top">
+                  <span class="checkbox checkbox--small">
+                    <input type="checkbox" id="inputCheck1" class="checkbox__input">
+                    <label for="inputCheck1" class="checkbox__label">
+                      <i aria-hidden="true" class="checkbox__ico"></i>
+                      <span>이 결제수단을 다음에도 사용합니다.</span>
+                    </label>
+                  </span>
+                </div>
+                <!--//20210503 추가 -->
+
+              </div>
+              <!-- //해외출발 CASE -->    
+              </div>
+            </div>
+          </div>
+          <!-- //결제방법 -->
+
+          <div class="booking-sticky mobile-only"><!-- 현금 결제 선택시 .round0 추가 -->
+            <div class="booking-sticky__top">
+
+              <!-- 현금 결제 선택시 해당 영역 none 처리 -->
+              <div class="toggle-wrap">
+                <div class="label">
+                  <span>총 결제 금액</span>
+                </div>
+                <div class="summary summary--without-icon">
+                  <span class="cost">
+                    <span class="unit">JPY</span>
+                    <span class="price_txt">2,120,000</span>
+                  </span>
+                </div>
+              </div>
+              <!-- //현금 결제 선택시 해당 영역 none 처리 -->
+            </div>
+            <div class="button-wrap button-wrap--stick">
+              <button type="button" class="button button--primary button--active">
+                <span class="button__text">결제하기</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="booking-sticky booking-sticky--reservation pc-only">
+            <div class="reservation-container">
+              <div class="booking-sticky__top payment">
+                <div class="toggle-wrap toggle-wrap--button">
+                  <!-- 현금 결제 선택시 해당 영역 none 처리 -->
+                  <div class="label no-icon">
+                    <span>총 결제 금액</span>
+                  </div>
+                  <div class="summary no-icon">
+                    <span class="cost">
+                      <span class="unit">JPY</span>
+                      <span class="price_txt">2,120,000</span>
+                    </span>
+                  </div>
+                <!-- //현금 결제 선택시 해당 영역 none 처리 -->
+                </div>
+                <button type="button" class="button button--primary pc-only">
+                  <span class="button__text">결제하기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+  
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <script>
+    $('.card-fav').on('click', function () {
+      $(this).toggleClass('active');
+    });
+
+    // 결제방법 tab
+    $('.payment-use-wrap .tab__anchor').on('click', function () {
+      var dataIdx = $(this).data('index');
+      if (dataIdx == 2)
+      {
+        $('.toggle-wrap .label').hide();
+        $('.toggle-wrap .summary').hide();
+        $('.booking-sticky.mobile-only').addClass('round0').find('.toggle-wrap').hide();
+      }
+      else
+      {
+        $('.toggle-wrap .label').show();
+        $('.toggle-wrap .summary').show();
+        $('.booking-sticky.mobile-only').removeClass('round0').find('.toggle-wrap').show();
+      }
+    })
+  </script>
+</body>
+
+</html>

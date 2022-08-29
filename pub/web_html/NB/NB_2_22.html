@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">국내선 운임안내</h2>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+              <span class="hidden">검색창 닫기</span>
+            </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div id="body">
+    <div class="wrap NB">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">여행준비</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle"
+            data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>
+            <button type="button" class="breadcrumb__link breadcrumb__link--list"
+              data-element="toggle__anchor">운임안내</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel">
+              <a href="#" class="item">국내선 운임안내</a>
+              <a href="#" class="item">국제선 운임안내</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div class="page-title-wrap">
+            <div class="page-title">국내선 운임 안내</div>
+            <div class="page-sub-title">노선별 운임 정보 및 할인 정보를 제공합니다.</div>
+          </div>
+
+          <div class="section-wrap">
+            <div class="tab tab--round" data-element="tab"
+            data-options='{"tabType": "scroll", "linkedTab": "#linkedTab2", "initIndex": "2"}'>
+
+            <div class="tab__button-wrap" data-element="tab__scroll-wrap">
+              <div class="tab__buttons" data-element="tab__scroll">
+                <div class="tab__button" data-element="tab__list">
+                  <button class="tab__anchor" type="button" data-element="tab__anchor"
+                    onclick="location.href='NB_2_11.html'">국내선 운임 혜택</button>
+                </div>
+              
+                <div class="tab__button" data-element="tab__list">
+                  <button class="tab__anchor" type="button" data-element="tab__anchor"
+                    onclick="location.href='NB_2_211.html'">노선별 운임</button>
+                </div>
+                <div class="tab__button" data-element="tab__list">
+                  <button class="tab__anchor" type="button" data-element="tab__anchor">개인 및 단체 할인 안내
+                  </button>
+                </div>
+                <div class="tab__button" data-element="tab__list">
+                  <button class="tab__anchor" type="button" data-element="tab__anchor"
+                    onclick="location.href='NB_2_231.html'">수수료 및 위약금
+                  </button>
+                </div>
+                <div class="tab__button" data-element="tab__list">
+                  <button class="tab__anchor" type="button" data-element="tab__anchor"
+                    onclick="location.href='NB_2_24.html'">유류할증료
+                  </button>
+                </div>
+                <div class="tab__button" data-element="tab__list">
+                  <button class="tab__anchor" type="button" data-element="tab__anchor"
+                    onclick="location.href='NB_2_25.html'">성수기 안내
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="linked-tab" id="linkedTab" data-element="tab__link">
+
+            <!-- 개인 및 단체 할인 안내 -->
+            <div class="tab__panel" data-element="tab__panel">
+              <div class="list-wrap">
+                <div class="section-title">개인 할인</div>
+                <ul class="list-guide">
+                  <li class="list-guide__item">조건에 따라 일반석 정상운임에서 할인 적용됩니다. 탑승이 완료된 후에는 소급 환불이 불가합니다.</li>
+                  <li class="list-guide__item">운임 미 부과 고객의 동반보호자 할인적용은 불가합니다.</li>               </ul>
+              </div>
+
+              <div class="container--small pc-30">
+                <div class="select-wrap select-wrap--line select-wrap--top pc-w350 select-tab">
+                  <select title="예매방법 선택" class="select-wrap__select sel_tab">
+                    <option value="1">소아/군인/장애인</option>
+                    <option value="2">제주도민</option>
+                    <option value="3">재외 제주도민</option>
+                    <option value="4">국가보훈</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="sel_tab_cont show" data-select-tab-content="1">
+                <div class="sub-section">
+                  <!-- 소아/군인/장애인 -->
+                  <div class="gray-box-wrap ">
+                    <div>
+                      <p class="section-sub-title">소아</p>
+                      <div class="gray-box gray-box-w320">
+                        <div class="description-list">
+                          <div class="description-list__item">
+                            <div class="description-list__title">할인율</div>
+                            <div class="description-list__text">성수기 10% (일반석만 적용)</div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">적용조건</div>
+                            <div class="description-list__text">만 24개월 이상~만 13세 미만</div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">증빙서류</div>
+                            <div class="description-list__text">연령을 확인할 수 있는 서류<br>(주민등록등본, 건강보험증, 여권 등)</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="section-sub-title">출장 목적의 군인</p>
+                      <div class="gray-box gray-box-w320">
+                        <div class="description-list">
+                          <div class="description-list__item">
+                            <div class="description-list__title">할인율</div>
+                            <div class="description-list__text">10%</div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">적용조건</div>
+                            <div class="description-list__text">
+                              <ul class="list-guide">
+                                <li class="list-guide__item">출장 목적의 군인(사병 및 장교), 군무원, 국방부 소속공무원</li>
+                                <li class="list-guide__item">출장 외 사유(휴가, 여행 등)에 해당하는 군인은 기업우대 서비스 적용</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">증빙서류</div>
+                            <div class="description-list__text">
+                              <ul class="list-guide list-guide--number">
+                                <li class="list-guide__item">출장증명서</li>
+                                <li class="list-guide__item">신분증 : 군무원증, 국방부 소속 공무원임을 확인할 수있는 신분증</li>
+                                <li class="list-guide__item type1">1), 2) 모두 필수 지참</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="section-sub-title">장애인</p>
+                      <div class="gray-box gray-box-w320">
+                        <div class="description-list">
+                          <div class="description-list__item">
+                            <div class="description-list__title">할인율</div>
+                            <div class="description-list__text">40%</div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">적용조건</div>
+                            <div class="description-list__text">
+                              <ul class="list-guide">
+                                <li class="list-guide__item">1~4급 장애인</li>
+                                <li class="list-guide__item">1~3급 장애인의 동반 보호자 1명</li>
+                                <li class="list-guide__item">장애의 정도가 심한 장애인(중증)</li>
+                                <li class="list-guide__item">장애의 정도가 심한 장애인(중증)의 동반 보호자 1명</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">증빙서류</div>
+                            <div class="description-list__text">
+                              <ul class="list-guide">
+                                <li class="list-guide__item">보건복지부장관 명의 시/군/구청 발행 장애인 등록증 및 복지카드</li>
+                                <li class="list-guide__item">장애정도/장애등급이 표기된 장애인 등록증 및 복지카드 모두 가능</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sel_tab_cont show" data-select-tab-content="2">
+                <div class="sub-section">
+                  <!-- 제주도민 -->
+                  <div class="gray-box-wrap nf">
+                    <div>
+                      <p class="section-sub-title">제주도민</p>
+                      <div class="gray-box">
+                        <div class="description-list">
+                          <div class="description-list__item">
+                            <div class="description-list__title">할인율</div>
+                            <div class="description-list__text">평수기 25% / 성수기 15%</div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">적용조건</div>
+                            <div class="description-list__text">신분증상 현 주소지가 제주특별자치도인 제주도민 또는 명예 제주도민(명예제주도민의 배우자 포함)
+                            </div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">증빙서류</div>
+                            <div class="description-list__text">현 주소지가 제주특별자치도로 명시된 주민등록증/운전면허증, 명예제주도민증(배우자)</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sel_tab_cont show" data-select-tab-content="3">
+                <div class="sub-section">
+                  <!-- 재외 제주도민 -->
+                  <div class="gray-box-wrap nf">
+                    <div>
+                      <p class="section-sub-title">재외 제주도민</p>
+                      <div class="gray-box">
+                        <div class="description-list">
+                          <div class="description-list__item">
+                            <div class="description-list__title">할인율</div>
+                            <div class="description-list__text">15%(주말/성수기 제외)</div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">적용조건</div>
+                            <div class="description-list__text">제주특별자치도에 등록 기준지를 두고 있으면서 다른 지역에 거주하는 사람(배우자/직계비속 포함)
+                            </div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">증빙서류</div>
+                            <div class="description-list__text">재외 제주도민증 또는 가족관계증명서</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sel_tab_cont show" data-select-tab-content="4">
+                <div class="sub-section">
+                  <!-- 국가보훈 -->
+                  <div class="gray-box-wrap">
+                    <div>
+                      <p class="section-sub-title">4.3 생존 희생자 및 유족</p>
+                      <div class="gray-box gray-box-w320">
+                        <div class="description-list">
+                          <div class="description-list__item">
+                            <div class="description-list__title">할인율</div>
+                            <div class="description-list__text">생존 희생자 본인 50% / 유족 30%)</div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">적용조건</div>
+                            <div class="description-list__text">제주 4.3 사건의 생존 희생자 본인 및 유족</div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">증빙서류</div>
+                            <div class="description-list__text">제주특별자치도와 제주4‧3평화재단 등이 발행한 생존 희생자 및 유족 진료증, 결정 통지서, 희생자증,
+                              유족증</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="section-sub-title">국가유공자</p>
+                      <div class="gray-box gray-box-w320">
+                        <div class="description-list">
+                          <div class="description-list__item">
+                            <div class="description-list__title">할인율</div>
+                            <div class="description-list__text">40%</div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">적용조건</div>
+                            <div class="description-list__text">국가유공상이자, 1~4급 국가유공상이자의 동반 보호자 1명</div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">증빙서류</div>
+                            <div class="description-list__text">국가보훈처 발행 신분증</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="section-sub-title">독립유공자</p>
+                      <div class="gray-box gray-box-w320">
+                        <div class="description-list">
+                          <div class="description-list__item">
+                            <div class="description-list__title">할인율</div>
+                            <div class="description-list__text">40%</div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">적용조건</div>
+                            <div class="description-list__text">독립유공자, 독립유공자의 동반 보호자 1명</div>
+                          </div>
+                          <div class="description-list__item">
+                            <div class="description-list__title">증빙서류</div>
+                            <div class="description-list__text">국가보훈처 발행 신분증</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="section-wrap">
+                <div class="list-wrap">
+                  <div class="section-title">단체 할인</div>
+                  <ul class="list-guide">
+                    <li class="list-guide__item">10명 이상 예매를 원하시는 경우 제주항공 홈페이지 [항공권 예매 > 단체예약신청] 메뉴에서 문의해 주세요. (로그인 필요)
+                    </li>
+                    <li class="list-guide__item">여행사 회원일 경우 <a href="http://jj.jejuair.net"
+                        class="text--color-org text--link">http://jj.jejuair.net</a> 에서 가입하거나 문의해 주세요.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- 개인 및 단체 할인 안내 -->
+            <div class="tab__panel" data-element="tab__panel">
+              수수료 및 위약금
+            </div>
+            <div class="tab__panel" data-element="tab__panel">
+              유류할증료
+            </div>
+            <div class="tab__panel" data-element="tab__panel">
+              성수기 안내
+            </div>
+          </div>
+          </div>
+        </main>
+      </div>
+
+    </div>
+  </div>
+  <!--//#body-->
+
+  <!-- footer -->
+  <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+  <div class="footer pc-only">
+    <!-- pc -->
+    <footer class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">제주항공 소개</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">투자정보</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">채용안내</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">여객운송약관</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">홈페이지이용약관</a>
+        </div>
+        <div class="footer__top-item footer__top-item--privacy">
+          <a href="#" class="footer__top-link">개인정보처리방침</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">사이트맵</a>
+        </div>
+
+        <div class="footer__top-item footer__top-item--family">
+          <div class="family-wrap" data-element="toggle"
+            data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+            <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+            <div class="family-list" data-element="toggle__panel">
+              <a href="#" class="family-link">㈜애경산업</a>
+              <a href="#" class="family-link">㈜에이텍</a>
+              <a href="#" class="family-link">애경S.T</a>
+              <a href="#" class="family-link">에이케이아이에스㈜</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer__spacer">
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__logo">
+          <img src="../../assets/images/upload/logo_jeju_gray.png" alt="jeju Air">
+          <!--2021-04-13 이미지로 변경-->
+        </a>
+        <div class="footer__bottom-contents">
+          <div class="footer__bottom-info">
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 서비스 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공위험물안내</a>
+            </div>
+          </div>
+          <div class="footer__bottom-recommand">
+            <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+            <div class="recommand-list">
+              <div class="recommand-item">
+                <a href="#" class="link">최저 운임 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">서울 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">제주 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">부산 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">무안 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">청부 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">대구 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">광주 출발 항공</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-util">
+            <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png"
+                alt="VALUE ALLIANCE"></a>
+            <!--2021-04-13 이미지로 변경-->
+            <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
+            <!--2021-04-13 이미지로 변경-->
+            <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt="">
+              Android</a>
+            <!--2021-04-13 이미지로 변경-->
+          </div>
+          <p class="footer__bottom-address"><span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br>
+            제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)</p>
+          <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- //pc -->
+  </div>
+  <!-- //footer -->
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <script>
+    //셀렉트 탭 plugin.js
+    $('.select-tab').selectTab();
+  </script>
+
+  
+</body>
+</html>

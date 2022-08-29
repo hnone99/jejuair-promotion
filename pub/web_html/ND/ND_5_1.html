@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" href="../../assets/css/lang.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <!-- HEADER -->
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">부가서비스 번들</h2>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 --><!-- //전체메뉴 -->
+    </header>
+    <!-- //mobile -->
+
+    <!-- pc용 공통 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link">마이페이지</a>
+            <a href="#" class="header__link header__link--current">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+                      <span class="hidden">검색창 닫기</span>
+                  </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 --><!-- //전체메뉴 -->
+      </div>
+    </header>
+    <!-- //pc용 공통 헤더 -->
+    <!-- pc용 공통 헤더 -->
+  </div>
+  <!-- //HEADER -->
+
+  <div id="body">
+    <div class="wrap wrap--button-fixed2 ND bundle-info">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">부가서비스</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle"
+            data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>
+            <button type="button" class="breadcrumb__link breadcrumb__link--list"
+              data-element="toggle__anchor">번들 안내</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel">
+              <a href="#" class="item">번들 안내</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div class="page-title-wrap">
+            <div class="page-title">부가서비스 번들</div>
+            <div class="page-sub-title">여러가지 부가서비스를 묶음으로 구매하여 개별 구매 대비 더 저렴하게 구매할 수 있습니다.</div><!--20210818 개발적용 필요 -->
+          </div>
+
+
+
+          <div class="banner">
+            <div class="banner_single-img" style="background-image: url(../../assets/images/@temp/guest-img_01.png);"></div>
+          </div>
+         
+          <div class="section-wrap">
+            <div class="section-title">구매 가능 대상 및 시간</div>
+            <ul class="list-guide">
+              <li class="list-guide__item">제주항공 모바일 웹/앱, PC에서 예약한 고객</li>
+              <li class="list-guide__item">국내/국제선 FLY, FLYBAG 운임을 예약한 고객</li>
+              <li class="list-guide__item">출발시간으로부터 24시간 전까지 구매 및 취소 가능</li>
+            </ul>
+            
+          </div>
+
+          <div class="section-wrap">
+            <div class="section-title">번들 구매시 혜택 </div>
+            <div class="border-box border-box__ico ">
+              <ul class="step-wrap step-wrap__ico">
+                <li>
+                  <i class="icon"><img src="../../assets/images/icon/icon-service-option01-40.png" alt=""></i>
+                  <dl class="step-wrap__text">
+                    <dt>혜택 1</dt>
+                    <dd>개별구매 대비 최대 61% 할인</dd><!--20210910 할인율 수정-->
+                  </dl>
+                </li>
+                <li>
+                  <i class="icon"><img src="../../assets/images/icon/icon-service-option08-40.png" alt=""></i>
+                  <dl class="step-wrap__text">
+                    <dt>혜택 2</dt>
+                    <dd>공항 현장 탑승 혜택 제공<br>
+                      (우선 탑승, 빠른 수하물 수취, 전용 수속 카운터 등)
+                      </dd>
+                  </dl>
+                </li>
+                <li>
+                  <i class="icon"><img src="../../assets/images/icon/icon-service-option09-40.png" alt=""></i>
+                  <dl class="step-wrap__text">
+                    <dt>혜택 3</dt>
+                    <dd>기내 서비스 혜택 제공<br>
+                      (에어카페 현장 할인, 사전 기내식 주문 추가 할인 등)
+                      </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+        <div class="section-wrap">
+          <div class="section-title">번들 구성</div>
+              <!-- tab -->
+              <div class="tab tab--default" data-element="tab" data-options='{"linkedTab": "#linkedTab1"}'>
+                <div class="tab__buttons">
+                  <div class="tab__button" data-element="tab__list" role="presentation">
+                    <button class="tab__anchor" type="button" data-element="tab__anchor">국내선</button>
+                  </div>
+                  <div class="tab__button" data-element="tab__list" role="presentation">
+                    <button class="tab__anchor is-active" type="button" data-element="tab__anchor" >국제선</button>
+                  </div>
+                </div>
+              </div>
+              <!--20210818 개발적용 필요-->
+              <div class="linked-tab" id="linkedTab1" data-element="tab__link">
+                <div class="tab__panel" data-element="tab__panel">
+                  <div class="tab tab--2depth" data-element="tab">
+                    <div class="tab__buttons">
+                      <div class="tab__button" data-element="tab__list" role="presentation">
+                        <button class="tab__anchor" type="button" data-element="tab__anchor">FLY 운임</button>
+                      </div>
+                      <div class="tab__button" data-element="tab__list" role="presentation">
+                        <button class="tab__anchor" type="button" data-element="tab__anchor">FLYBAG 운임</button>
+                      </div>
+                    </div>
+              
+                    <div class="tab__panel" data-element="tab__panel">
+                      <div class="swiper-full">
+                        <div class="swiper-full-in">
+                          <div class="package__items" data-carousel="bookingTicket">
+                            <div class="swiper-wrapper">
+                              <div class="package__item swiper-slide">
+                                <div class="package__item-inner">
+                                  <div class="package-pad">
+                                    <div class="package__top">
+                                      <strong class="name">플러스</strong>
+                                    </div>
+                                    <div class="package__info">
+                                      <ul class="bundle_ico_list txt_in">
+                                        <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                        <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 20kg</li>
+                                        <li><em class="bundle_ico ico_seat"></em> 일반 좌석 선택 무료</li>
+                                        <li><em class="bundle_ico ico_first"></em> 우선 탑승서비스</li>
+                                        <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                        <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="package__item swiper-slide">
+                                <div class="package__item-inner">
+                                  <div class="package-pad">
+                                    <div class="package__top">
+                                      <strong class="name">프리미엄 플러스 </strong>
+                                      
+                                    </div>
+                                    <div class="package__info">
+                                      <ul class="bundle_ico_list txt_in">
+                                        <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                        <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 30kg</li>
+                                        <li><em class="bundle_ico ico_seat"></em> 전 좌석 선택 무료</li>
+                                        <li><em class="bundle_ico ico_first"></em> 우선 탑승 서비스</li>
+                                        <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                        <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>
+                                        <li><em class="bundle_ico ico_free"></em> 공항 카운터 수속 무료</li>
+                                        <li><em class="bundle_ico ico_premium"></em> 전용 수속 카운터</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <div class="tab__button-wrap tab-bundle-wrap">
+                        <div class="pop_bundle_box_wrap">
+                          <div class="bundle_dl-box list03">
+                            <dl class="bundle_dl type_fly">
+                              <dt>플러스</dt>
+                              <dd>
+                                <ul class="bundle_ico_list txt_in">
+                                  <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 20kg</li>
+                                  <li><em class="bundle_ico ico_seat"></em> 일반 좌석 선택 무료</li>
+                                  <li><em class="bundle_ico ico_first"></em> 우선 탑승서비스</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                  <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>
+                                </ul>
+                              </dd>
+                            </dl>
+                          </div>
+                          <div class="bundle_dl-box list03">
+                            <dl class="bundle_dl type_flybag">
+                              <dt>프리미엄 플러스 </dt>
+                              <dd>
+                                <ul class="bundle_ico_list txt_in">
+                                  <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 30kg</li>
+                                  <li><em class="bundle_ico ico_seat"></em> 전 좌석 선택 무료</li>
+                                  <li><em class="bundle_ico ico_first"></em> 우선 탑승 서비스</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                  <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>
+                                  <li><em class="bundle_ico ico_free"></em> 공항 카운터 수속 무료</li>
+                                  <li><em class="bundle_ico ico_premium"></em> 전용 수속 카운터</li>
+                                </ul>
+                              </dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </div> -->
+                      <div class="guide-info guide-info--gray">
+                        <p class="guide-info__text">표기된 수하물 허용량은 무료 위탁 수하물 포함 무게입니다.</p>
+                      </div>
+                    </div>
+                    <!--// 국내선 / FLY 운임-->
+              
+                    <div class="tab__panel" data-element="tab__panel">
+                      <!-- <div class="tab__button-wrap tab-bundle-wrap">
+                        <div class="pop_bundle_box_wrap">
+                          <div class="bundle_dl-box list03">
+                            <dl class="bundle_dl type_fly">
+                              <dt>플러스</dt>
+                              <dd>
+                                <ul class="bundle_ico_list txt_in">
+                                  <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 15kg</li>
+                                  <li><em class="bundle_ico ico_seat"></em> 일반 좌석 선택 무료</li>
+                                  <li><em class="bundle_ico ico_first"></em> 우선 탑승서비스</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                  <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>
+                                </ul>
+                              </dd>
+                            </dl>
+                          </div>
+                          <div class="bundle_dl-box list03">
+                            <dl class="bundle_dl type_flybag">
+                              <dt>프리미엄 플러스 </dt>
+                              <dd>
+                                <ul class="bundle_ico_list txt_in">
+                                  <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 30kg</li>
+                                  <li><em class="bundle_ico ico_seat"></em> 전 좌석 선택 무료</li>
+                                  <li><em class="bundle_ico ico_first"></em> 우선 탑승 서비스</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                  <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>
+                                  <li><em class="bundle_ico ico_free"></em> 공항 카운터 수속 무료</li>
+                                  <li><em class="bundle_ico ico_premium"></em> 전용 수속 카운터</li>
+                                </ul>
+                              </dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </div> -->
+                      <div class="swiper-full">
+                        <div class="swiper-full-in">
+                          <div class="package__items" data-carousel="bookingTicket">
+                            <div class="swiper-wrapper">
+                              <div class="package__item swiper-slide selected">
+                                <div class="package__item-inner">
+                                  <div class="package-pad">
+                                    <div class="package__top">
+                                      <strong class="name">플러스</strong>
+                                    </div>
+                                    <div class="package__info">
+                                      <ul class="bundle_ico_list txt_in">
+                                        <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                        <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 20kg</li>
+                                        <li><em class="bundle_ico ico_seat"></em> 일반 좌석 선택 무료</li>
+                                        <li><em class="bundle_ico ico_first"></em> 우선 탑승서비스</li>
+                                        <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                        <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="package__item swiper-slide">
+                                <div class="package__item-inner">
+                                  <div class="package-pad">
+                                    <div class="package__top">
+                                      <strong class="name">프리미엄 플러스 </strong>
+                                      
+                                    </div>
+                                    <div class="package__info">
+                                      <ul class="bundle_ico_list txt_in">
+                                        <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                        <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 30kg</li>
+                                        <li><em class="bundle_ico ico_seat"></em> 전 좌석 선택 무료</li>
+                                        <li><em class="bundle_ico ico_first"></em> 우선 탑승 서비스</li>
+                                        <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                        <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>
+                                        <li><em class="bundle_ico ico_free"></em> 공항 카운터 수속 무료</li>
+                                        <li><em class="bundle_ico ico_premium"></em> 전용 수속 카운터</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="guide-info guide-info--gray">
+                        <p class="guide-info__text">표기된 수하물 허용량은 무료 위탁 수하물 포함 무게입니다.</p>
+                      </div>
+                    </div>
+                    <!--// 국내선 / FLYBAG 운임-->              
+                  </div>
+                </div><!--//tab__panel-->
+
+                <div class="tab__panel" data-element="tab__panel">
+                  <div class="tab tab--2depth" data-element="tab">
+                    <div class="tab__buttons">
+                      <div class="tab__button" data-element="tab__list" role="presentation">
+                        <button class="tab__anchor" type="button" data-element="tab__anchor">FLY 운임</button>
+                      </div>
+                      <div class="tab__button" data-element="tab__list" role="presentation">
+                        <button class="tab__anchor" type="button" data-element="tab__anchor">FLYBAG 운임</button>
+                      </div>
+                    </div>
+              
+                    <div class="tab__panel" data-element="tab__panel">
+
+                      <!-- <div class="tab__button-wrap tab-bundle-wrap">
+                        <div class="pop_bundle_box_wrap">
+                          <div class="bundle_dl-box list03">
+                            <dl class="bundle_dl type_fly">
+                              <dt>플러스</dt>
+                              <dd>
+                                <ul class="bundle_ico_list txt_in">
+                                  <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 20kg</li>
+                                  <li><em class="bundle_ico ico_seat"></em> 일반 좌석 선택 무료</li>
+                                  <li><em class="bundle_ico ico_first"></em> 우선 탑승서비스</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                  <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>                                  
+                                  <li><em class="bundle_ico ico_food"></em> 사전 기내식 주문 할인</li>
+                                </ul>
+                              </dd>
+                            </dl>
+                          </div>
+                          <div class="bundle_dl-box list03">
+                            <dl class="bundle_dl type_flybag">
+                              <dt>프리미엄 플러스 </dt>
+                              <dd>
+                                <ul class="bundle_ico_list txt_in">
+                                  <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 30kg</li>
+                                  <li><em class="bundle_ico ico_seat"></em> 전 좌석 선택 무료</li>
+                                  <li><em class="bundle_ico ico_first"></em> 우선 탑승 서비스</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                  <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>
+                                  <li><em class="bundle_ico ico_jj"></em> JJ 라운지 이용권 (인천 출발편에 한함)</li>
+                                  <li><em class="bundle_ico ico_food"></em> 웰컴 스낵 </li>
+                                  <li><em class="bundle_ico ico_premium"></em> 전용 수속 카운터</li>
+                                  <li><em class="bundle_ico ico_food"></em> 사전 기내식 주문 할인</li>
+                                </ul>
+                              </dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </div> -->
+                      <div class="swiper-full">
+                        <div class="swiper-full-in">
+                          <div class="package__items" data-carousel="bookingTicket">
+                            <div class="swiper-wrapper">
+                              <div class="package__item swiper-slide selected">
+                                <div class="package__item-inner">
+                                  <div class="package-pad">
+                                  <div class="package__top">
+                                    <strong class="name">플러스</strong>
+                                  </div>
+                                  <div class="package__info">
+                                    <ul class="bundle_ico_list txt_in">
+                                      <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                      <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 20kg</li>
+                                      <li><em class="bundle_ico ico_seat"></em> 일반 좌석 선택 무료</li>
+                                      <li><em class="bundle_ico ico_first"></em> 우선 탑승서비스</li>
+                                      <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                      <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>                                  
+                                      <li><em class="bundle_ico ico_food"></em> 사전 기내식 주문 할인</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="package__item swiper-slide">
+                                <div class="package__item-inner">
+                                  <div class="package-pad">
+                                  <div class="package__top">
+                                    <strong class="name">프리미엄 플러스 </strong>
+                                    
+                                  </div>
+                                  <div class="package__info">
+                                    <ul class="bundle_ico_list txt_in">
+                                      <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                      <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 30kg</li>
+                                      <li><em class="bundle_ico ico_seat"></em> 전 좌석 선택 무료</li>
+                                      <li><em class="bundle_ico ico_first"></em> 우선 탑승 서비스</li>
+                                      <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                      <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>
+                                      <!-- <li><em class="bundle_ico ico_jj"></em> JJ 라운지 이용권 (인천 출발편에 한함)</li> --><!--20210910 삭제-->
+                                      <li><em class="bundle_ico ico_food"></em> 웰컴 스낵 </li>
+                                      <li><em class="bundle_ico ico_premium"></em> 전용 수속 카운터</li>
+                                      <li><em class="bundle_ico ico_food"></em> 사전 기내식 주문 할인</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="guide-info guide-info--gray">
+                        <p class="guide-info__text">표기된 수하물 허용량은 무료 위탁 수하물 포함 무게입니다.</p>
+                      </div>
+                    </div>
+                    <!--// 국내선 / FLY 운임-->
+              
+                    <div class="tab__panel" data-element="tab__panel">
+                      <!-- <div class="tab__button-wrap tab-bundle-wrap">
+                        <div class="pop_bundle_box_wrap">
+                          <div class="bundle_dl-box list03">
+                            <dl class="bundle_dl type_fly">
+                              <dt>플러스</dt>
+                              <dd>
+                                <ul class="bundle_ico_list txt_in">
+                                  <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 15kg (괌/사이판 노선은 1개 23KG)</li>
+                                  <li><em class="bundle_ico ico_seat"></em> 일반 좌석 선택 무료</li>
+                                  <li><em class="bundle_ico ico_first"></em> 우선 탑승서비스</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                  <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>
+                                  <li><em class="bundle_ico ico_food"></em> 사전 기내식 주문 할인</li>
+                                </ul>
+                              </dd>
+                            </dl>
+                          </div>
+                          <div class="bundle_dl-box list03">
+                            <dl class="bundle_dl type_flybag">
+                              <dt>프리미엄 플러스 </dt>
+                              <dd>
+                                <ul class="bundle_ico_list txt_in">
+                                  <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 30kg (괌/사이판 노선은 1개 23KG)</li>
+                                  <li><em class="bundle_ico ico_seat"></em> 전 좌석 선택 무료</li>
+                                  <li><em class="bundle_ico ico_first"></em> 우선 탑승 서비스</li>
+                                  <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                  <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>
+                                  <li><em class="bundle_ico ico_food"></em> 사전 기내식 주문 할인</li>
+                                  <li><em class="bundle_ico ico_jj"></em> JJ 라운지 이용권 (인천 출발편에 한함)</li>
+                                  <li><em class="bundle_ico ico_food"></em> 웰컴 스낵 </li>
+                                  <li><em class="bundle_ico ico_premium"></em> 전용 수속 카운터 (일부공항제외)</li>
+                                </ul>
+                              </dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </div> -->
+                      <div class="swiper-full">
+                        <div class="swiper-full-in">
+                          <div class="package__items" data-carousel="bookingTicket">
+                            <div class="swiper-wrapper">
+                              <div class="package__item swiper-slide selected">
+                                <div class="package__item-inner">
+                                  <div class="package-pad">
+                                    <div class="package__top">
+                                      <strong class="name">플러스</strong>
+                                    </div>
+                                    <div class="package__info">
+                                      <ul class="bundle_ico_list txt_in">
+                                        <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                        <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 20kg (괌/사이판 노선은 1개 23kg)</li>
+                                        <li><em class="bundle_ico ico_seat"></em> 일반 좌석 선택 무료</li>
+                                        <li><em class="bundle_ico ico_first"></em> 우선 탑승서비스</li>
+                                        <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                        <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>
+                                        <li><em class="bundle_ico ico_food"></em> 사전 기내식 주문 할인</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="package__item swiper-slide">
+                                <div class="package__item-inner">
+                                  <div class="package-pad">
+                                    <div class="package__top">
+                                      <strong class="name">프리미엄 플러스 </strong>
+                                      
+                                    </div>
+                                    <div class="package__info">
+                                      <ul class="bundle_ico_list txt_in">
+                                        <li><em class="bundle_ico ico_bag"></em> 기내 수하물 10kg (1개)</li>
+                                        <li><em class="bundle_ico ico_bag"></em> 위탁 수하물 30kg (괌/사이판 노선은 2개 23kg)</li>
+                                        <li><em class="bundle_ico ico_seat"></em> 전 좌석 선택 무료</li>
+                                        <li><em class="bundle_ico ico_first"></em> 우선 탑승 서비스</li>
+                                        <li><em class="bundle_ico ico_bag"></em> 빠른 수하물 수취</li>
+                                        <li><em class="bundle_ico ico_sale"></em> 에어카페 현장 할인</li>
+                                        <li><em class="bundle_ico ico_food"></em> 사전 기내식 주문 할인</li>
+                                        <!-- <li><em class="bundle_ico ico_jj"></em> JJ 라운지 이용권 (인천 출발편에 한함)</li> --><!--20210910 문구 삭제-->
+                                        <li><em class="bundle_ico ico_food"></em> 웰컴 스낵 </li>
+                                        <li><em class="bundle_ico ico_premium"></em> 전용 수속 카운터 (일부공항제외)</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="guide-info guide-info--gray">
+                        <p class="guide-info__text">표기된 수하물 허용량은 무료 위탁 수하물 포함 무게입니다.</p>
+                      </div>
+                    </div>
+                    <!--// 국내선 / FLYBAG 운임-->              
+                  </div>
+                </div><!--//tab__panel-->
+              </div>
+              <!-- //linked-tab -->
+              <!--//20210818 개발적용 필요-->
+            </div>
+
+
+          <div class="section-wrap">
+            <div class="section-title">번들 구매 방법</div>
+            <!-- 아이콘 리스트 -->
+            <div class="main-sel">
+              <!--20210818 개발적용 필요-->
+              <ul class="step-wrap thum-txt">
+                <li>
+                  <div class="step-wrap__image">
+                    <img src="../../assets/images/@temp/guide_bundle_01.png" alt="이미지설명">
+                  </div>
+                  <dl class="step-wrap__text">
+                    <dt>STEP 01</dt>
+                    <dd>국내/국제선 항공권 운임 선택</dd>
+                  </dl>
+                </li>
+                <li>
+                  <div class="step-wrap__image">
+                    <img src="../../assets/images/@temp/guide_bundle_02.png" alt="이미지설명">
+                  </div>
+                  <dl class="step-wrap__text">
+                    <dt>STEP 02</dt>
+                    <dd>선택한 운임에 맞게 번들 종류 선택</dd>
+                  </dl>
+                </li>
+
+                <li>
+                  <div class="step-wrap__image">
+                    <img src="../../assets/images/@temp/guide_bundle_03.png" alt="이미지설명">
+                  </div>
+                  <dl class="step-wrap__text">
+                    <dt>STEP 03</dt>
+                    <dd>번들에 포함된 부가서비스 선택 (좌석 지정 등)</dd>
+                  </dl>
+                </li>
+                <li>
+                  <div class="step-wrap__image">
+                    <img src="../../assets/images/@temp/guide_bundle_04.png" alt="이미지설명">
+                  </div>
+                  <dl class="step-wrap__text">
+                    <dt>STEP 04</dt>
+                    <dd>항공권 예매 시 번들 포함 내역 확인</dd>
+                  </dl>
+                </li>
+              </ul>
+              <!--//20210818 개발적용 필요-->
+            </div>
+            <!-- //아이콘리스트 -->
+          </div>
+
+          <div class="section-wrap">
+            <div class="service-information" data-element="toggle" data-options='{"mode": "move scroll"}'>
+              <div class="service-information__title">               
+                  <button type="button" class="service-information__anchor" data-element="toggle__anchor">유의사항</button>
+              </div>
+              <div class="service-information__content" data-element="toggle__panel">
+                <div class="list-wrap">
+                  <ul class="list-guide">
+                    <li class="list-guide__item">구간별 출발 시간으로부터 24시간 전까지 구매/취소할 수 있습니다.</li>
+                    <li class="list-guide__item">동일 예약 건내 포함된 탑승객 전원의 구매/취소만 가능하며, 일부 탑승객만 구매/취소 할 수 없습니다. </li>
+                    <li class="list-guide__item">마이페이지의 예약상세에서 번들만 단독 취소 가능합니다. </li>
+                    <li class="list-guide__item">JJ 라운지 이용권은 인천 출발 국제선에 한해 제공됩니다.</li>
+                    <li class="list-guide__item">일부 해외 공항은 전용 수속 카운터 제공이 제한될 수 있습니다.</li>
+                    <li class="list-guide__item">일부 여정은 번들 서비스를 구매할 수 없습니다. </li>
+                    <li class="list-guide__item">항공권 예약 취소 시 구매한 번들은 자동 취소됩니다.</li>
+                    <li class="list-guide__item">번들 서비스의 일부 서비스만 취소 또는 환불되지 않습니다.</li>
+                    <li class="list-guide__item">예약 변경 시 기존의 구매한 번들은 변경할 운임의 종류에 따라 아래와 같이 처리됩니다.</li>
+                    <li class="list-guide__item">동일한 종류의 운임으로 변경 시 기존의 구매한 번들은 유지됩니다. 단, 기존 여정 또는 변경할 여정이 출발시간으로부터 24시간 이내일 경우 자동
+                      취소됩니다. </li>
+                    <li class="list-guide__item">다른 종류의 운임으로 변경 시 기존의 구매한 번들은 자동 취소되며 재구매 가능합니다. </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>   
+      
+          <div class="fixed-wrap section-wrap">
+            <div class="button-wrap button-wrap--stick pc-center">
+              <button type="button" class="button button--primary button--active"><span class="button__text">예매하기</span></button>
+            </div>
+          </div>
+      
+        </main>
+        <!--//main-->
+      </div>
+      <!--// content -->
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+  <div class="footer pc-only">
+    <!-- pc -->
+    <footer class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">제주항공 소개</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">투자정보</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">채용안내</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">여객운송약관</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">홈페이지이용약관</a>
+        </div>
+        <div class="footer__top-item footer__top-item--privacy">
+          <a href="#" class="footer__top-link">개인정보처리방침</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">사이트맵</a>
+        </div>
+
+        <div class="footer__top-item footer__top-item--family">
+          <div class="family-wrap" data-element="toggle"
+            data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+            <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+            <div class="family-list" data-element="toggle__panel">
+              <a href="#" class="family-link">㈜애경산업</a>
+              <a href="#" class="family-link">㈜에이텍</a>
+              <a href="#" class="family-link">애경S.T</a>
+              <a href="#" class="family-link">에이케이아이에스㈜</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer__spacer">
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__logo">
+          <img src="../../assets/images/upload/logo_jeju_gray.png" alt="jeju Air">
+          <!--2021-04-13 이미지로 변경-->
+        </a>
+        <div class="footer__bottom-contents">
+          <div class="footer__bottom-info">
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 서비스 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공위험물안내</a>
+            </div>
+          </div>
+          <div class="footer__bottom-recommand">
+            <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+            <div class="recommand-list">
+              <div class="recommand-item">
+                <a href="#" class="link">최저 운임 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">서울 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">제주 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">부산 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">무안 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">청부 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">대구 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">광주 출발 항공</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-util">
+            <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png"
+                alt="VALUE ALLIANCE"></a>
+            <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
+            <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt="">
+              Android</a>
+          </div>
+          <p class="footer__bottom-address"><span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br>
+            제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)</p>
+          <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- //pc -->
+  </div>
+  <!-- //FOOTER -->
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+</body>
+
+</html>

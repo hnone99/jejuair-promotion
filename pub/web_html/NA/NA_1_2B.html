@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공 온라인(모바일,홈페이지 구매)</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div class="wrap">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full"  style="color: #fff;">
+          통합 플러그인 설치 안내
+        </a>
+      </main>
+    </div>
+  </div>
+  <!-- 통합 플러그인 설치 안내 -->
+  <div id="modalLayer01" class="modal modal-full modal-scroll">
+    <div class="modal-header">
+      <div class="modal-header__title">통합 플러그인 설치 안내</div>
+    </div>
+    <div class="modal-content">
+      <div class="first-margin">
+        <div class="section-title">안심결제(ISP), 안심클릭(MPI) 설치 및 안내</div>
+        <div class="section-sub-title">한국 발행 실용/체크 카드 결제 안내</div>
+        <div class="section-sub-txt">
+          안전한 전자 상거래를 위하여 안전결제(ISP), 안심클릭(MPI)을 통한 신용카드 인증 서비스를 실시하고 있습니다.<br>
+          항공권 구매를 위해서는 안전결제(ISP), 안심클릭(MPI)에 먼저 가입해 주세요. 또한 온라인 결제를 위해 하나의 통합 플러그인 설치가 필요합니다.<br>
+          통합 플러그인은 한국정보통신(KICC)사에서 제공하고 있으며, 해당 플러그인을 설치하신 경우, 모든 브라우저에서 항공권 결제를 할 수 있습니다.<br>(단, WINDOWS OS 내 브라우저에서만 가능)
+        </div>
+        <div class="table-vertical pc-20">
+          <table>
+            <caption>테이블의 설명</caption>
+            <colgroup>
+              <col>
+              <col>
+            </colgroup>
+            <thead class="table-vertical__thead">
+              <tr>
+                <th scope="col" class="table-vertical__th">안전결제(ISP) 대상 카드</th>
+                <th scope="col" class="table-vertical__th">안심클릭(MPI) 대상 카드</th>
+              </tr>
+            </thead>
+            <tbody class="table-vertical__tbody">
+              <tr>
+                <td class="table-vertical__td   vertical--middle">
+                    국민카드(국민VISA 포함), BC카드, 우리카드, 수협카드, 전북카드, 제주카드, 광주카드, 저축은행카드 등
+                </td>
+                <td class="table-vertical__td   vertical--middle">
+                    그 외 모든 신용카드
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="button-wrap type01">
+          <button type="button" class="button button--small"><span class="button__text">통합 플러그인 수동 설치</span></button>
+          <a href="https://www.easypay.co.kr/help.jsp" target="_blank" title="새창열림" class="button button--small"><span class="button__text">통합 플러그인 설치 가이드</span></a>
+        </div>
+        <div class="sub-section">
+          <div class="section-sub-title">한국발행 신용/체크 카드 결제 안내</div>
+          <div class="section-sub-txt">
+            안전결제(ISP), 안심클릭(MPI)의 인증 절차는 고객님이 사용하시는 카드 종류(개인 법인카드, 법인 공용카드)와 카드사 정책에 따라 다르며,  
+            30만원 미만의 경우에도 공인인증서가 필요할 수 있습니다.<br>자세한 내용은 소지하고 계신 신용카드사로 문의해 주세요.
+          </div>
+        </div>        
+      </div>
+
+      <div class="section-wrap">
+        <div class="section-title">실시간 계좌이체 플러그인(BankPay) 설치 및 안내</div>
+        <div class="section-sub-title">실시간 계좌이체 구매 관련 안내 사항</div>
+        <ul class="list-guide">
+          <li class="list-guide__item">실시간 계좌이체 플러그인은 금융결제원에서 제공하고 있으며, 인터넷 익스플로러(IE) 브라우저에서만 항공권 결제를 할 수 있습니다.</li>
+          <li class="list-guide__item">매일 23:30 ~ 01:30에는 시스템 점검으로 인해 계좌이체 서비스가 잠시 중단됩니다. (이용 가능시간 : 매일 01:30 ~ 23:30)</li>
+          <li class="list-guide__item">공인인증서를 가지고 계시지 않을 경우 공인인증서를 발급 받으신 후 서비스를 이용할 수 있습니다.</li>
+        </ul>
+        <div class="button-wrap left">
+          <a href="https://www.bankpay.or.kr/html/error.html" target="_blank" title="새창열림" class="button button--small"><span class="button__text">실시간 계좌이체 플러그인 수동 설치</span></a>
+        </div>
+      </div>
+
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <!-- //통합 플러그인 설치 안내 -->
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+
+</body>
+
+</html>

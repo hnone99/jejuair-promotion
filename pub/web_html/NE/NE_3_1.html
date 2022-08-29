@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div class="wrap">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">
+          J PASS 이용약관
+        </a>
+      </main>
+    </div>
+  </div>
+
+  <!-- 풀팝업 -->
+  <div id="modalLayer01" class="modal modal-full modal-scroll">
+    <div class="modal-header">
+      <div class="modal-header__title">J PASS 이용약관</div>
+    </div>
+    <div class="modal-content">
+      <div class="terms-item">
+        <h2 class="terms-item__title">제1조 [목적]</h2>
+        <div class="terms-item__box">
+          <p class="terms-item__text">
+            본 약관은 주식회사 제주항공(이하 “회사”)이 운영하는 제주항공 온라인 사이트(PC, Mobile Web, App)(이하 “제주항공 사이트”)의 리프레시포인트 회원(이하 “리프레시포인트 회원”)이 
+            회사가 제공하는 유료멤버십인 J Pass 서비스를 이용함에 있어 회사와 해당 서비스를 이용하는 J Pass 회원의 제반 권리, 의무 등을 규정함에 그 목적이 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="terms-item">
+        <h2 class="terms-item__title">제2조 [약관의 명시, 효력 및 변경]</h2>
+        <div class="terms-item__box">
+          <ol class="terms-item__list">
+            <li class="terms-item__list-text indent">
+              1) 본 약관은 회사가 운영하는 제주항공 사이트에 게시하는 방법으로 J Pass회원에게 제시, 설명 되고 J Pass 회원이 본 약관에 동의함으로써 그 효력이 발생됩니다.
+            </li>
+            <li class="terms-item__list-text indent">
+              2) 회사는 관련 법률에 위배되지 않는 범위 내에서 약관을 개정할 수 있으며 약관을 개정하는 경우에는 개정된 약관의 적용일자 및 개정사유를 명시하여 
+              적용일 7일전(회원에게 불리한 내용으로 변경하는 경우 30일전)까지 서비스화면을 통하여 공지합니다. 개정된 약관은 적용일자 이전으로 소급하여 적용되지 아니합니다.
+            </li>
+            <li class="terms-item__list-text indent">
+              3) 회사는 J Pass 회원의 요청이 있는 경우 전자문서 전송(전자문서의 다운로드 방법 또는 전자우편을 이용한 전송을 포함합니다), 
+              Fax 또는 우편의 방식으로 본 약관의 사본을 J Pass 회원에게 교부합니다.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="terms-item">
+        <h2 class="terms-item__title">제3조 [용어의 정의]</h2>
+        <div class="terms-item__box">
+          <p class="terms-item__text">본 약관에서 사용하는 용어의 정의는 다음 각호와 같습니다.</p>
+          <ol class="terms-item__list">
+            <li class="terms-item__list-text indent">
+              1) “J Pass”란 리프레시포인트 회원인 고객이 제주항공 사이트에서 회사가 정한 연회비(이하 “연회비”)를 결제하여 가입할 수 있는 유료 멤버십 제도를 말합니다.</li>
+            <li class="terms-item__list-text indent">
+              2) “J Pass 회원”이란 리프레시포인트 회원 중 J Pass에 가입한 고객을 말합니다.
+            </li>
+            <li class="terms-item__list-text indent">
+              3) “J Pass 회원혜택”이란 회사가 J Pass 회원에게 제공하는 제5조에서 정한 혜택을 말합니다.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="terms-item">
+        <h2 class="terms-item__title">제4조 [유료 회원가입과 재가입]</h2>
+        <div class="terms-item__box">
+          <ol class="terms-item__list">
+            <li class="terms-item__list-text indent">
+              1) J Pass는 제주항공 리프레시포인트 회원인 경우에 한하여, 제주항공 사이트를 통해 가입할 수 있습니다.
+            </li>
+            <li class="terms-item__list-text indent">
+              2) 리프레시포인트 회원은 이 약관에 동의하고, 연회비를 제주항공 사이트에서 결제함으로써 J Pass에 가입할 수 있습니다.
+            </li>
+            <li class="terms-item__list-text indent">
+              3) J Pass 회원은 제5조에 따른 유료 회원 자격 및 혜택 종료 30일전부터 종료일 이내의 기간에 절차에 따라 J Pass에 연장 가입할 수 있습니다(이하 “연장가입”).
+            </li>
+            <li class="terms-item__list-text indent">
+              4) 연장가입 시 연회비 결제일과 무관하게, 기존 J Pass 회원 서비스 종료일 다음날부터 새로운 J Pass 회원 서비스가 제공됩니다.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="terms-item">
+        <h2 class="terms-item__title">제5조 [회원혜택]</h2>
+        <div class="terms-item__box">
+          <ol class="terms-item__list">
+            <li class="terms-item__list-text indent">
+              1) 회사는 제주항공 사이트를 통해 항공권을 구매한 J Pass 회원에게 J Pass 회원혜택을 제공합니다.
+            </li>
+            <li class="terms-item__list-text indent">2) 회사는 제1항의 회원혜택을 J Pass 서비스 화면을 통해 알립니다.</li>
+            <li class="terms-item__list-text indent">3) J Pass의 회원혜택은 회사 정책 변경, 기상악화, 공항 사정 등 불가항력적 사유, J Pass 회원의 책임있는 사유(레이트 체크인, 탑승쇼업 등) 등에 따라 그 혜택의 전부 또는 일부가 변경, 제한될 수 있습니다.</li>
+            <li class="terms-item__list-text indent">4) 회사는 J Pass 회원혜택 적용을 위해 본인 확인 절차를 진행할 수 있습니다. 이 경우 회사는 모바일 회원카드를 요청할 수 있으며, 이 경우 J Pass 회원은 회사의 확인 절차 후 J Pass 회원혜택을 제공받을 수 있습니다.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="terms-item">
+        <h2 class="terms-item__title">제6조 [유효기간, 서비스 이용 종료]</h2>
+        <div class="terms-item__box">
+          <ol class="terms-item__list">
+            <li class="terms-item__list-text indent">1) J Pass회원혜택 제공은 J Pass 회원 연회비 결제 다음 날부터 1년간 유효하며, 유효기간이 경과한 때에는 J Pass 회원의 자격 및 혜택은 자동 종료됩니다.</li>
+            <li class="terms-item__list-text indent">2) 제1항에 따라 J Pass회원의 자격 및 혜택이 종료된 후 다시 J Pass에 가입하고자 하는 고객은 제4조에 따른 J Pass 가입절차를 거쳐야 합니다.</li>
+            <li class="terms-item__list-text indent">3) J Pass 운영 취지에 부합하지 않는 부정한 사용이 확인될 경우, 회사는 J Pass 회원혜택의 전부 또는 일부를 제한할 수 있습니다.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="terms-item">
+        <h2 class="terms-item__title">제7조 [회원의 의무]</h2>
+        <div class="terms-item__box">
+          <ol class="terms-item__list">
+            <li class="terms-item__list-text indent">1) J Pass회원은 이 약관에 따른 회원의 권리•의무를 타인에게 대여, 양도, 위임, 상속할 수 없습니다.</li>
+            <li class="terms-item__list-text indent">2) J Pass 회원은 J Pass 회원혜택 적용을 위해 회사의 본인확인 요청에 적극 협조해야 합니다.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="terms-item">
+        <h2 class="terms-item__title">제8조 [서비스 종료 및 가입 취소]</h2>
+        <div class="terms-item__box">
+          <ol class="terms-item__list">
+            <li class="terms-item__list-text indent">1) J Pass 회원은 유효기간 중 언제라도 회사에 대하여 J Pass의 종료를 요구할 수 있으며, 회사는 지체 없이 필요한 조치를 취합니다. 다만, J Pass 종료 시 연회비는 환불되지 않습니다.</li>
+            <li class="terms-item__list-text indent">
+              2) 제1항에도 불구하고 아래 조건을 모두 충족할 때 J Pass 회원은 연회비 결제일로부터 7일내에 한하여 회사에 대하여 연회비의 환불을 요구할 수 있습니다.<br>
+              - J Pass 회원 가입 후 연회비 결제일로부터 7일 이내,<br>
+              ① 가입 이벤트로 제공된 포인트 및 항공운임 할인쿠폰을 일절 사용하지 않은 경우<br>
+              ② 찜 특가 프로모션 기간 사전구매 기회를 통해 항공권을 구매하지 않은 경우
+            </li>
+            <li class="terms-item__list-text indent">
+              3) J Pass 회원이 제2항에 따라 연회비 환불을 요청하고자 할 때에는 결제일 당일의 경우 회사 온라인 사이트 취소 화면에서 직접 취소 및 환불 처리를 진행할 수 있으며, 
+              이외 건에 대해서는 회사의 고객센터를 통해 유선으로 취소 및 환불 처리를 진행합니다.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="terms-item">
+        <h2 class="terms-item__title">제9조 [유료 멤버십의 서비스 중단]</h2>
+        <div class="terms-item__box">
+          <p class="terms-item__text">
+            회사가 회사의 사정으로 이 약관에 따른 J Pass 회원혜택 제공을 중단하기로 결정한 경우, 회사는 J Pass 회원에 대하여 연회비 중 잔여 유효기간 일수만큼 일할 계산한 금액을 환불합니다. 
+          </p>
+        </div>
+      </div>
+
+      <div class="terms-item">
+        <h2 class="terms-item__title">제10조 [기타]</h2>
+        <div class="terms-item__box">
+          <ol class="terms-item__list">
+            <li class="terms-item__list-text indent">
+              1) 회사는 J Pass 회원혜택 제공을 위하여 필요한 범위 내에서 회원정보를 이용할 수 있고, 
+              관련법령에 의해 보관의무가 있는 회원정보 및 관련 정보의 경우 회사는 법령에서 정한 기간 동안 보관합니다.
+            </li>
+            <li class="terms-item__list-text indent">
+              2)본 약관에 규정되지 않은 사항에 관하여는 J Pass 회원이 이용하는 각 리프레시포인트 회원 이용약관에 따릅니다. 
+              단, 성격상 J Pass에 대하여 적용될 수 없는 내용은 그러하지 아니합니다.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="terms-item">
+        <h2 class="terms-item__title">부칙</h2>
+        <h3 class="terms-item__title-sub">제1조(적용일자)</h3>
+        <div class="terms-item__box">
+          <p class="terms-item__text">
+            이 약관은 2019년 3월 26일부터 적용됩니다. J Pass 유료멤버십 회원 약관
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

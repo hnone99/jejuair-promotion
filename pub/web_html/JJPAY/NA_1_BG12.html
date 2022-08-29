@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- 개발시 삭제: robots -->
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+<title>제주항공</title>
+<link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+<link rel="stylesheet" href="../../assets/css/global.css">
+<link rel="stylesheet" href="../../assets/css/jjpay.css">
+</head>
+<body>
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-header__title"> 오픈뱅킹 이용 약관</div>
+    </div>
+    <div class="modal-content">
+      
+      <div class="agree-wrap section-wrap">
+        <div class="check-wrap" data-element="checkList">
+          <div class="check-wrap__all-check">
+            <span class="checkbox">
+              <input type="checkbox" class="checkbox__input" id="inpAgreeAll" data-element="checkAll">
+              <label for="inpAgreeAll" class="checkbox__label">
+                <i class="checkbox__ico" aria-hidden="true"></i>
+                <span>전체 동의</span>
+              </label>
+            </span>
+          </div>
+          <ul class="check-wrap__list">
+            <li class="agree-wrap__item">
+              <span class="checkbox checkbox--small">
+                <input type="checkbox" class="checkbox__input" id="inpAgree-01" data-element="checkbox">
+                <label for="inpAgree-01" class="checkbox__label">
+                  <i class="checkbox__ico" aria-hidden="true"></i>
+                  <span>오픈뱅킹 금융정보조회 약관</span>
+                </label>
+              </span>
+              <button type="button" class="agree-wrap__button" aria-label="오픈뱅킹 금융정보조회 약관 보기"></button>
+            </li>
+            <li class="agree-wrap__item">
+              <span class="checkbox checkbox--small">
+                <input type="checkbox" class="checkbox__input" id="inpAgree-02" data-element="checkbox">
+                <label for="inpAgree-02" class="checkbox__label">
+                  <i class="checkbox__ico" aria-hidden="true"></i>
+                  <span>오픈뱅킹 자동 계좌이체 약관</span>
+                </label>
+              </span>
+              <button type="button" class="agree-wrap__button" aria-label="오픈뱅킹 자동 계좌이체 약관 보기"></button>
+            </li>
+            <li class="agree-wrap__item">
+              <span class="checkbox checkbox--small">
+                <input type="checkbox" class="checkbox__input" id="inpAgree-03" data-element="checkbox">
+                <label for="inpAgree-03" class="checkbox__label">
+                  <i class="checkbox__ico" aria-hidden="true"></i>
+                  <span>개인정보 수집 이용 동의 </span>
+                </label>
+              </span>
+              <button type="button" class="agree-wrap__button" aria-label="개인정보 수집 이용 동의 보기"></button>
+            </li>
+            <li class="agree-wrap__item">
+              <span class="checkbox checkbox--small">
+                <input type="checkbox" class="checkbox__input" id="inpAgree-04" data-element="checkbox">
+                <label for="inpAgree-04" class="checkbox__label">
+                  <i class="checkbox__ico" aria-hidden="true"></i>
+                  <span>개인정보 제3자 제공동의</span>
+                </label>
+              </span>
+              <button type="button" class="agree-wrap__button" aria-label="개인정보 제3자 제공동의 보기"></button>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="fixed-wrap fixed-wrap--multi-line border-none">
+      <!-- checkbox 없는 경우 border-none class 추가 -->
+      <div class="button-wrap">
+        <button type="button" class="button button--active"><span class="button__text">동의</span></button>
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close" onclick="closeWindow ()"><span class="blind">닫기</span></a>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script>
+    // 창닫기
+    function closeWindow () {
+      window.open('', '_self', '');
+      window.close();      
+    }
+
+    // 전체동의
+    $('#inpAgreeAll').on('change', function () {
+      if ($(this).prop('checked') == true)
+      {
+        $('.check-wrap__list .checkbox__input').prop('checked', true)
+      }
+      else
+      {
+        $('.check-wrap__list .checkbox__input').prop('checked', false)
+      }
+    });
+  </script>
+</body>
+
+</html>

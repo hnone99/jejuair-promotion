@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <!-- HEADER -->
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">제주항공 소개</h2>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <div class="gnb" id="gnb">
+        <div class="gnb__header">
+          <div class="gnb__header-top" data-absolute-sticky>
+            <a href="#none" class="button-home" title="홈으로 이동"></a>
+            <div data-element="select" data-select-target="0" class="select-wrap select-wrap--inline">
+              <select data-element="select__select" title="지역 선택" class="select-wrap__select">
+                <option></option>
+                <option value="1" selected>대한민국</option>
+                <option value="2">미국1</option>
+                <option value="3">미국2</option>
+                <option value="4">미국3</option>
+              </select>
+              <select data-element="select__select" title="언어 선택" class="select-wrap__select">
+                <option></option>
+                <option value="1" selected>한국어</option>
+                <option value="2">영어</option>
+              </select>
+            </div>
+            <div class="additional">
+              <!-- D : '웹'일경우 APP다운로드 버튼 -->
+              <button type="button" class="button button--small"><span
+                  class="button__text button__icon">APP</span></button>
+              <a href="#none" class="button-search" title="통합검색이동"></a>
+              <!-- D : '앱'일경우 세팅 버튼 -->
+              <!-- <button type="button" class="button-setting" aria-label="setting"></button> -->
+              <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+            </div>
+          </div>
+          <div class="gnb__header-bot">
+            <!-- 로그인 전 -->
+            <div class="before" style="display: none;">
+              <div class="title">
+                로그인 하시고<br>더 풍부한 혜택을 누리세요.
+              </div>
+              <!-- fixed 영역 -->
+              <div class="sticky-wrap">
+                <div class="button-wrap button-flex sticky__inner gnb-sticky1">
+                  <button type="button" class="button button--secondary"><span class="button__text">회원가입</span></button>
+                  <button type="button" class="button button--secondary button--active"><span
+                      class="button__text">로그인</span></button>
+                  <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                </div>
+              </div>
+              <!-- //fixed 영역 -->
+              <div class="title">
+                <div class="title__section title__section--additional">제주항공에서 예약하지 않으셨다면?
+                  <div class="additional">
+                    <div class="link-wrap">
+                      <a href="#" class="link-wrap__underline"><span>예약조회</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //로그인 전 -->
+            <!-- 로그인 후 -->
+            <div class="after">
+              <!-- fixed 영역 -->
+              <div class="sticky-wrap">
+                <div class="title sticky__inner gnb-sticky2">
+                  <i class="icon vip" aria-label="vip"></i>
+                  <!-- <i class="icon gold" aria-label="gold"></i>
+            <i class="icon sliverplus" aria-label="sliverplus"></i>
+            <i class="icon silver" aria-label="sliver"></i> -->
+                  <div class="text">
+                    <p class="name"><span class="exbold">김제주</span>님</p>
+                    <p class="hide">안녕하세요?</p>
+                  </div>
+                  <div class="additional">
+                    <button type="button" class="button-card" aria-label="card-popup">
+                    <img src="../../assets/images/icon/icon-card.png" alt="알림">
+                  </button>
+                    <button type="button" class="button-alarm" aria-label="alarm-popup"><span>3<span
+                          class="hidden">개</span></span></button>
+                    <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                  </div>
+                </div>
+              </div>
+              <!-- //fixed 영역 -->
+              <div class="gray-box">
+                <div class="flex-text">
+                  회원 번호
+                  <div class="flex-text__additional">080041313</div>
+                </div>
+                <div class="flex-text">
+                  사용 가능한 포인트
+                  <div class="flex-text__additional">10,000P</div>
+                </div>
+              </div>
+              <div class="button-wrap button-flex">
+                <button type="button" class="button button--secondary button--border"><span
+                    class="button__text">리프레시포인트</span></button>
+                <button type="button" class="button button--secondary button--border add--ml-10"><span
+                    class="button__text">마이페이지</span></button>
+              </div>
+            </div>
+            <!-- //로그인 후 -->
+            <div class="icon-link">
+              <a href="#none" class="icon-link__item">
+                <img src="../../assets/images/icon/icon-join-item-04.png" alt="" aria-hidden="true">
+                <span class="icon-link__text">투어&티켓</span>
+              </a>
+              <a href="#none" class="icon-link__item">
+                <img src="../../assets/images/icon/icon-join-item-06.png" alt="" aria-hidden="true">
+                <span class="icon-link__text">출도착조회</span>
+              </a>
+              <a href="#none" class="icon-link__item">
+                <img src="../../assets/images/icon/icon-join-item-07.png" alt="" aria-hidden="true">
+                <span class="icon-link__text">고객센터</span>
+              </a>
+            </div>
+            <!-- //로그인 후 -->
+          </div>
+        </div>
+        <hr class="section-spacer">
+        <div class="gnb-wrap">
+          <div class="gnb__box">
+            <div class="gnb__title">예약</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">항공권 예매</a>
+              <a href="#none" class="gnb__list-item">항공권 추천</a>
+              <a href="#none" class="gnb__list-item">민항공후급증</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">여행준비</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">예약 안내</a>
+              <a href="#none" class="gnb__list-item">운임 안내</a>
+              <a href="#none" class="gnb__list-item">운항 정보</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">회원 혜택</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">리프레시 포인트</a>
+              <a href="#none" class="gnb__list-item">쿠폰 혜택</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">부가서비스 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">사전 수하물</a>
+              <a href="#none" class="gnb__list-item">사전 좌석</a>
+              <a href="#none" class="gnb__list-item">사전 기내식</a>
+              <a href="#none" class="gnb__list-item">보험 상품</a>
+              <a href="#none" class="gnb__list-item">투어&티켓</a>
+              <a href="#none" class="gnb__list-item">프리패스</a>
+              <a href="#none" class="gnb__list-item">기프티켓</a>
+              <a href="#none" class="gnb__list-item">제휴 서비스</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">프리미엄 서비스 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">NEW CLASS</a>
+              <a href="#none" class="gnb__list-item">JJ 라운지</a>
+              <a href="#none" class="gnb__list-item">J PASS</a>
+              <a href="#none" class="gnb__list-item">스포츠멤버십</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">탑승 수속 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">모바일 탑승권</a>
+              <a href="#none" class="gnb__list-item">빠른 수속 안내</a>
+              <a href="#none" class="gnb__list-item">공항 정보</a>
+              <a href="#none" class="gnb__list-item">수하물 안내</a>
+              <a href="#none" class="gnb__list-item">도움이 필요한 승객</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">기내 서비스 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">에어카페</a>
+              <a href="#none" class="gnb__list-item">기내 FUN 서비스</a>
+              <a href="#none" class="gnb__list-item">출입국신고서 <br class="pc-only">작성방법</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">이벤트</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">이벤트</a>
+              <a href="#none" class="gnb__list-item">스탬프 랠리</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">고객센터</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">고객센터</a>
+              <a href="#none" class="gnb__list-item">기내 유실물 센터</a>
+              <a href="#none" class="gnb__list-item">공지사항</a>
+            </div>
+          </div>
+          <div class="gnb__box mobile-only">
+            <div class="gnb__title">우대 프로그램</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">기업우대 서비스</a>
+            </div>
+          </div>
+          <div class="gnb__box mobile-only">
+            <div class="gnb__title">제주항공 소개</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">About 제주항공</a>
+              <a href="#none" class="gnb__list-item">코로나19 종합안내 센터</a>
+            </div>
+          </div>
+
+          <div class="gnb__footer">
+            <div class="gnb__title">SNS</div>
+            <div class="sns-wrap">
+              <a href="https://m.facebook.com/funjejuair" aria-label="facebook" class="sns-wrap__item facebook"></a>
+              <a href="https://instagram.com/jejuair_official?igshid=1r3itj1zo2k6w" aria-label="instagram"
+                class="sns-wrap__item instagram"></a>
+              <a href="https://www.youtube.com/user/funjejuair" aria-label="youtube" class="sns-wrap__item youtube"></a>
+            </div>
+            <div class="button-wrap button-wrap--center">
+              <button type="button" class="button button--secondary button--border"><span
+                  class="button__text">로그아웃</span></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- //전체메뉴 -->
+    </header>
+    <!-- //mobile -->
+
+    <!-- pc용 공통 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+                    <span class="hidden">검색창 닫기</span>
+                </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+        <div class="gnb" id="gnb">
+          <div class="gnb__header">
+            <div class="gnb__header-top" data-absolute-sticky>
+              <a href="#none" class="button-home" title="홈으로 이동"></a>
+              <div data-element="select" data-select-target="0" class="select-wrap select-wrap--inline">
+                <select data-element="select__select" title="지역 선택" class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">미국1</option>
+                  <option value="3">미국2</option>
+                  <option value="4">미국3</option>
+                </select>
+                <select data-element="select__select" title="언어 선택" class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">영어</option>
+                </select>
+              </div>
+              <div class="additional">
+                <!-- D : '웹'일경우 APP다운로드 버튼 -->
+                <button type="button" class="button button--small"><span
+                    class="button__text button__icon">APP</span></button>
+                <a href="#none" class="button-search" title="통합검색이동"></a>
+                <!-- D : '앱'일경우 세팅 버튼 -->
+                <!-- <button type="button" class="button-setting" aria-label="setting"></button> -->
+                <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+              </div>
+            </div>
+            <div class="gnb__header-bot">
+              <!-- 로그인 전 -->
+              <div class="before" style="display: none;">
+                <div class="title">
+                  로그인 하시고<br>더 풍부한 혜택을 누리세요.
+                </div>
+                <!-- fixed 영역 -->
+                <div class="sticky-wrap">
+                  <div class="button-wrap button-flex sticky__inner gnb-sticky1">
+                    <button type="button" class="button button--secondary"><span
+                        class="button__text">회원가입</span></button>
+                    <button type="button" class="button button--secondary button--active"><span
+                        class="button__text">로그인</span></button>
+                    <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                  </div>
+                </div>
+                <!-- //fixed 영역 -->
+                <div class="title">
+                  <div class="title__section title__section--additional">제주항공에서 예약하지 않으셨다면?
+                    <div class="additional">
+                      <div class="link-wrap">
+                        <a href="#" class="link-wrap__underline"><span>예약조회</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //로그인 전 -->
+              <!-- 로그인 후 -->
+              <div class="after">
+                <!-- fixed 영역 -->
+                <div class="sticky-wrap">
+                  <div class="title sticky__inner gnb-sticky2">
+                    <i class="icon vip" aria-label="vip"></i>
+                    <!-- <i class="icon gold" aria-label="gold"></i>
+            <i class="icon sliverplus" aria-label="sliverplus"></i>
+            <i class="icon silver" aria-label="sliver"></i> -->
+                    <div class="text">
+                      <p class="name"><span class="exbold">김제주</span>님</p>
+                      <p class="hide">안녕하세요?</p>
+                    </div>
+                    <div class="additional">
+                      <button type="button" class="button-card" aria-label="card-popup">
+                    <img src="../../assets/images/icon/icon-card.png" alt="알림">
+                  </button>
+                      <button type="button" class="button-alarm" aria-label="alarm-popup"><span>3<span
+                            class="hidden">개</span></span></button>
+                      <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- //fixed 영역 -->
+                <div class="gray-box">
+                  <div class="flex-text">
+                    회원 번호
+                    <div class="flex-text__additional">080041313</div>
+                  </div>
+                  <div class="flex-text">
+                    사용 가능한 포인트
+                    <div class="flex-text__additional">10,000P</div>
+                  </div>
+                </div>
+                <div class="button-wrap button-flex">
+                  <button type="button" class="button button--secondary button--border"><span
+                      class="button__text">리프레시포인트</span></button>
+                  <button type="button" class="button button--secondary button--border add--ml-10"><span
+                      class="button__text">마이페이지</span></button>
+                </div>
+              </div>
+              <!-- //로그인 후 -->
+              <div class="icon-link">
+                <a href="#none" class="icon-link__item">
+                  <img src="../../assets/images/icon/icon-join-item-04.png" alt="" aria-hidden="true">
+                  <span class="icon-link__text">투어&티켓</span>
+                </a>
+                <a href="#none" class="icon-link__item">
+                  <img src="../../assets/images/icon/icon-join-item-06.png" alt="" aria-hidden="true">
+                  <span class="icon-link__text">출도착조회</span>
+                </a>
+                <a href="#none" class="icon-link__item">
+                  <img src="../../assets/images/icon/icon-join-item-07.png" alt="" aria-hidden="true">
+                  <span class="icon-link__text">고객센터</span>
+                </a>
+              </div>
+              <!-- //로그인 후 -->
+            </div>
+          </div>
+          <hr class="section-spacer">
+          <div class="gnb-wrap">
+            <div class="gnb__box">
+              <div class="gnb__title">예약</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">항공권 예매</a>
+                <a href="#none" class="gnb__list-item">항공권 추천</a>
+                <a href="#none" class="gnb__list-item">민항공후급증</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">여행준비</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">예약 안내</a>
+                <a href="#none" class="gnb__list-item">운임 안내</a>
+                <a href="#none" class="gnb__list-item">운항 정보</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">회원 혜택</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">리프레시 포인트</a>
+                <a href="#none" class="gnb__list-item">쿠폰 혜택</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">부가서비스 안내</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">사전 수하물</a>
+                <a href="#none" class="gnb__list-item">사전 좌석</a>
+                <a href="#none" class="gnb__list-item">사전 기내식</a>
+                <a href="#none" class="gnb__list-item">보험 상품</a>
+                <a href="#none" class="gnb__list-item">투어&티켓</a>
+                <a href="#none" class="gnb__list-item">프리패스</a>
+                <a href="#none" class="gnb__list-item">기프티켓</a>
+                <a href="#none" class="gnb__list-item">제휴 서비스</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">프리미엄 서비스 안내</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">NEW CLASS</a>
+                <a href="#none" class="gnb__list-item">JJ 라운지</a>
+                <a href="#none" class="gnb__list-item">J PASS</a>
+                <a href="#none" class="gnb__list-item">스포츠멤버십</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">탑승 수속 안내</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">모바일 탑승권</a>
+                <a href="#none" class="gnb__list-item">빠른 수속 안내</a>
+                <a href="#none" class="gnb__list-item">공항 정보</a>
+                <a href="#none" class="gnb__list-item">수하물 안내</a>
+                <a href="#none" class="gnb__list-item">도움이 필요한 승객</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">기내 서비스 안내</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">에어카페</a>
+                <a href="#none" class="gnb__list-item">기내 FUN 서비스</a>
+                <a href="#none" class="gnb__list-item">출입국신고서 <br class="pc-only">작성방법</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">이벤트</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">이벤트</a>
+                <a href="#none" class="gnb__list-item">스탬프 랠리</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">고객센터</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">고객센터</a>
+                <a href="#none" class="gnb__list-item">기내 유실물 센터</a>
+                <a href="#none" class="gnb__list-item">공지사항</a>
+              </div>
+            </div>
+            <div class="gnb__box mobile-only">
+              <div class="gnb__title">우대 프로그램</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">기업우대 서비스</a>
+              </div>
+            </div>
+            <div class="gnb__box mobile-only">
+              <div class="gnb__title">제주항공 소개</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">About 제주항공</a>
+                <a href="#none" class="gnb__list-item">코로나19 종합안내 센터</a>
+              </div>
+            </div>
+
+            <div class="gnb__footer">
+              <div class="gnb__title">SNS</div>
+              <div class="sns-wrap">
+                <a href="https://m.facebook.com/funjejuair" aria-label="facebook" class="sns-wrap__item facebook"></a>
+                <a href="https://instagram.com/jejuair_official?igshid=1r3itj1zo2k6w" aria-label="instagram"
+                  class="sns-wrap__item instagram"></a>
+                <a href="https://www.youtube.com/user/funjejuair" aria-label="youtube"
+                  class="sns-wrap__item youtube"></a>
+              </div>
+              <div class="button-wrap button-wrap--center">
+                <button type="button" class="button button--secondary button--border"><span
+                    class="button__text">로그아웃</span></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+    <!-- //pc용 공통 헤더 -->
+    <!-- pc용 공통 헤더 -->
+  </div>
+  <!-- //HEADER -->
+
+  <div id="body">
+    <div class="wrap ND">
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <a href="#" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full"><span>기프티켓 이용약관
+              보기</span></a>
+        </main>
+      </div>
+
+      <!-- 풀팝업 (PC X) -->
+      <div id="modalLayer01" class="modal modal-full modal-scroll modal--fixed-multi">
+        <div class="modal-header">
+          <div class="modal-header__title">기프티켓 이용약관</div>
+        </div>
+
+        <div class="modal-content">
+
+          <div class="terms-item">
+            <div class="terms-item__title">가. 목적</div>
+            <ul class="terms-item__list">
+              <li class="list-guide__item">본 약관은 프리(FREE)패스 및 프리패스 항공권의 이용에 관한 제반 사항에 대하여 약정함을 목적으로 합니다.</li>
+            </ul>
+          </div>
+
+          <div class="terms-item">
+            <div class="terms-item__title">나. 용어의 정의</div>
+            <ul class="terms-item__list">
+              <li class="terms-item__list-text indent">① 프리패스란, 제주항공이 항공 운송서비스의 제공만을 목적으로 발행하는 예약권으로, 프리패스에 명시된 유효기간 동안 정해진 횟수만큼 개별 항공권을 예약•발권할 수 있고 유효기간
+                경과로써 소멸되는 상품를 의미합니다.</li>
+              <li class="terms-item__list-text indent">② 패스 상품의 종류는 다음과 같습니다.
+                <ul class="terms-item__list">
+                  <li class="terms-item__list-text">동북아 프리패스 : 동북아 노선을 유효기간동안 왕복 2회 발권 가능한 패스</li>
+                  <li class="terms-item__list-text">국제선 올 프리패스 : 국제선 전 노선을 유효기간 동안 왕복 2회 발권 가능한 패스</li>
+                  <li class="terms-item__list-text">실속 국내선 프리패스 : 국내선 전 노선을 유효기간 동안 편도 10회 발권 가능한 패스</li>
+                  <li class="terms-item__list-text">알뜰 국내선 프리패스 : 국내선 전 노선의 월~목 운항편에 한해 유효기간 동안 편도 10회 발권 가능한 패스</li>
+                </ul>
+              </li>
+              <li class="terms-item__list-text indent">③ 소아 프리패스의 정의 및 내용은 다음과 같습니다.
+                <ul class="terms-item__list">
+                  <li class="terms-item__list-text">소아(유아 제외) 프리패스는 성인 동반을 전제로 유효기간 동안 소아 적용 항공권만 구매 가능한 패스입니다.</li>
+                  <li class="terms-item__list-text">국내선의 경우, 소아는 만 2세~ 만 13세 (항공권 최초 출발일 기준)입니다.</li>
+                  <li class="terms-item__list-text">국제선의 경우, 소아는 만 2세~ 만 12세 (항공권 최초 출발일 기준)입니다.</li>
+                  <li class="terms-item__list-text">만 2세 미만의 유아는 프리패스를 구매 불가합니다.</li>
+                </ul>
+              </li>
+              <li class="terms-item__list-text indent">④ 프리패스 항공권이란, 프리패스를 사용하여 구매한 항공권을 의미합니다.</li>
+              <li class="terms-item__list-text indent">⑤ 프리패스 유효기간이란, 프리패스를 사용하여 프리패스 항공권을 구매할 수 있는 기간을 의미하며, 유효기간은 프리패스의 종류별로 각 기재된 바에 따르며, 프리패스는 유효기간이
+                도과함으로써 소멸되므로 유효기간 만료 후에는 사용 및 환불이 불가합니다.</li>
+              <li class="terms-item__list-text indent">⑥ 미사용 프리패스란, 프리패스를 사용하여 프리패스 항공권을 구매한 이력(구매 후 취소한 경우 포함)이 일체 없는 프리패스를 의미합니다.</li>
+              <li class="terms-item__list-text indent">⑦ 운송약관이란, 제주항공 국내/국제 여객운송약관을 의미합니다.</li>
+            </ul>
+          </div>
+
+          <div class="terms-item">
+            <div class="terms-item__title">다. 프리패스의 구매</div>
+            <ul class="terms-item__list">
+              <li class="terms-item__list-text">프리패스 구매는 제주항공 홈페이지(PC버전), 모바일 웹/앱에서 회원가입 후 가능합니다.</li>
+              <li class="terms-item__list-text">프리패스는 타인에게 양도 불가합니다.</li>
+              <li class="terms-item__list-text">프리패스는 상품 종류별로 1인당 1 패스만 구매 가능합니다.</li>
+              <li class="terms-item__list-text">소아 프리패스 구매는 반드시 성인이 동반하여야 가능합니다(동반 탑승객을 회원 ID로 추가하면 예약 가능).</li>
+              <li class="terms-item__list-text">소아 프리패스는 일반 프리패스 금액의 74~75% 금액으로 적용됩니다.</li>
+              <li class="terms-item__list-text">소아 프리패스를 사용하여 성인 항공권을 예약하는 것은 불가합니다.</li>
+              <li class="terms-item__list-text">유아는 성인 동반 여부와 관계 없이 프리패스의 구매가 불가합니다.</li>
+            </ul>
+          </div>
+
+          <div class="terms-item">
+            <div class="terms-item__title">라. 프리패스의 사용과 제한</div>
+            <ul class="terms-item__list">
+              <li class="terms-item__list-text">프리패스에 명시된 사용기간 내에만 사용(항공권 구매) 가능하며, 항공기 탑승 기간도 프리패스에 명시된 바에 따릅니다.</li>
+              <li class="terms-item__list-text">프리패스는 성수기에 사용이 불가합니다.</li>
+              <li class="terms-item__list-text">프리패스는 유효기간의 연장이 불가하고, 유효기간 경과 시 소멸됩니다.</li>
+              <li class="terms-item__list-text">알뜰 국내선 프리패스에 한하여, 금/토/일요일의 출/도착편 항공권 예약이 불가합니다.</li>
+              <li class="terms-item__list-text">프리패스 항공권을 구매함과 동시에 프리패스 사용 횟수가 차감되고, 구매 후 프리패스 항공권을 취소하더라도 차감된 사용 횟수는 다시 제공되지
+                아니합니다.</li>
+            </ul>
+          </div>
+
+          <div class="terms-item">
+            <div class="terms-item__title">마. 프리패스의 환불</div>
+            <ul class="terms-item__list">
+              <li class="terms-item__list-text">미사용 프리패스의 경우 프리패스 유효기간 내에 한하여 전액 환불이 가능하고, 프리패스 유효기간이 경과한 경우에는 프리패스는 소멸되므로
+                환불이 일절 불가합니다.프리패스 항공권을 구매하여 프리패스 횟수가 1회 이상 차감된 경우, 프리패스 항공권을 취소&middot;환불하여도 프리패스는 이미 사용 처리 되었으므로 프리패스의
+                환불은 불가합니다.</li>
+            </ul>
+          </div>
+
+          <div class="terms-item">
+            <div class="terms-item__title">바. 프리패스 항공권의 구매 사용</div>
+            <ul class="terms-item__list">
+              <li class="terms-item__list-text">제주항공 홈페이지(또는 모바일 웹/앱) 내 일반 항공권과 동일하게 예약 및 발권을 진행합니다.</li>
+              <li class="terms-item__list-text">항공권 결제 시, 쿠폰 적용 기능을 통하여 프리패스 사용이 가능합니다.</li>
+              <li class="terms-item__list-text">프리패스 항공권 구매 시 세금, 공항이용료, 유류할증료 등이 추가로 부과됩니다.</li>
+              <li class="terms-item__list-text">국내선 프리(FREE)패스로 국내선 항공권 구매는 FLY로만 가능합니다.</li>
+              <li class="terms-item__list-text">국제선 프리(FREE)패스로 국제선 항공권 구매는 FLYBAG으로만 가능합니다.</li>
+              <li class="terms-item__list-text">FLY 와 FLYBAG은 제주항공 운임 타입의 하나입니다.</li>
+              <li class="terms-item__list-text">국내선 프리(FREE)패스는 편도 /왕복 모두 사용 가능합니다.</li>
+              <li class="terms-item__list-text">국제선 프리(FREE)패스는 한국에서 출발하는 왕복 항공권 구매 시에만 사용 가능합니다.</li>
+            </ul>
+          </div>
+
+          <div class="terms-item">
+            <div class="terms-item__title">바. 프리패스 항공권의 구매 사용</div>
+            <ul class="terms-item__list">
+              <li class="terms-item__list-text">제주항공 홈페이지(또는 모바일 웹/앱) 내 일반 항공권과 동일하게 예약 및 발권을 진행합니다.</li>
+              <li class="terms-item__list-text">항공권 결제 시, 쿠폰 적용 기능을 통하여 프리패스 사용이 가능합니다.</li>
+              <li class="terms-item__list-text">프리패스 항공권 구매 시 세금, 공항이용료, 유류할증료 등이 추가로 부과됩니다.</li>
+              <li class="terms-item__list-text">국내선 프리(FREE)패스로 국내선 항공권 구매는 FLY로만 가능합니다.</li>
+              <li class="terms-item__list-text">국제선 프리(FREE)패스로 국제선 항공권 구매는 FLYBAG으로만 가능합니다.</li>
+              <li class="terms-item__list-text">FLY 와 FLYBAG은 제주항공 운임 타입의 하나입니다.</li>
+              <li class="terms-item__list-text">국내선 프리(FREE)패스는 편도 /왕복 모두 사용 가능합니다.</li>
+              <li class="terms-item__list-text">국제선 프리(FREE)패스는 한국에서 출발하는 왕복 항공권 구매 시에만 사용 가능합니다.</li>
+            </ul>
+          </div>
+
+          <div class="terms-item">
+            <div class="terms-item__title">아. 기타 사항</div>
+            <ul class="terms-item__list">
+              <li class="terms-item__list-text">프리패스는 제주항공 운송약관상의 항공권 규정을 적용 받지 아니하고, 본 상품 약관을 적용 받습니다.</li>
+              <li class="terms-item__list-text">프리패스 항공권은 본 상품 약관의 적용을 받으며 본 상품 약관에 규정되지 아니한 사항에 대하여는 제주항공 운송약관에 따릅니다. 본
+                상품약관과 운송약관 사이에 서로 달리 규정된 내용이 있을 경우 본 상품 약관의 내용이 특약사항으로서 우선 적용됩니다.</li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="fixed-wrap fixed-wrap--multi-line border-none "><!-- checkbox 없는 경우 border-none class 추가 -->
+          <div class="button-wrap">
+            <button type="button" class="button button--primary button--active "><span class="button__text">확인</span></button>
+          </div>
+        </div>
+        <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+  <div class="footer pc-only">
+    <!-- pc -->
+    <footer class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">제주항공 소개</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">투자정보</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">채용안내</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">여객운송약관</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">홈페이지이용약관</a>
+        </div>
+        <div class="footer__top-item footer__top-item--privacy">
+          <a href="#" class="footer__top-link">개인정보처리방침</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">사이트맵</a>
+        </div>
+
+        <div class="footer__top-item footer__top-item--family">
+          <div class="family-wrap" data-element="toggle"
+            data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+            <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+            <div class="family-list" data-element="toggle__panel">
+              <a href="#" class="family-link">㈜애경산업</a>
+              <a href="#" class="family-link">㈜에이텍</a>
+              <a href="#" class="family-link">애경S.T</a>
+              <a href="#" class="family-link">에이케이아이에스㈜</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer__spacer">
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__logo">
+        <img src="../../assets/images/upload/logo_jeju_gray.png" alt="jeju Air"><!--2021-04-13 이미지로 변경-->
+      </a>
+        <div class="footer__bottom-contents">
+          <div class="footer__bottom-info">
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 서비스 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공위험물안내</a>
+            </div>
+          </div>
+          <div class="footer__bottom-recommand">
+            <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+            <div class="recommand-list">
+              <div class="recommand-item">
+                <a href="#" class="link">최저 운임 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">서울 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">제주 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">부산 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">무안 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">청부 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">대구 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">광주 출발 항공</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-util">
+            <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png" alt="VALUE ALLIANCE"></a>
+            <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
+            <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt=""> Android</a>
+          </div>
+          <p class="footer__bottom-address"><span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br>
+            제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)</p>
+          <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- //pc -->
+  </div>
+  <!-- //FOOTER -->
+  
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+</body>
+</html>

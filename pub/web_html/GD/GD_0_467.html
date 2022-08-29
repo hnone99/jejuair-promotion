@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">부가서비스 구매</h2>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div id="body">
+    <div class="wrap wrap--booking GD">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">마이페이지</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle"
+            data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>
+            <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor">예약
+              현황</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel">
+              <a href="#" class="item">회원 정보 수정</a>
+              <a href="#" class="item">예약 현황</a>
+              <a href="#" class="item">결제수단 관리</a>
+              <a href="#" class="item">나의 탑승 내역</a>
+              <a href="#" class="item">즐겨찾기</a>
+              <a href="#" class="item">나의 쿠폰함</a>
+              <a href="#" class="item">나의 J pass</a>
+              <a href="#" class="item">나의 기프티켓</a>
+              <a href="#" class="item">나의 JJ 라운지 이용권</a>
+              <a href="#" class="item">나의 프리패스</a>
+              <a href="#" class="item">나의 스포츠 멤버십</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="content" id="content">
+        <main id="main" class="main">
+
+          <div class="page-title-wrap">
+            <div class="page-title">부가서비스 구매</div>
+            <div class="page-sub-title">구매하신<br class="mobile-only"> 내역을 꼭 확인해 주세요.</div>
+          </div>
+
+          <div class="section-wrap">
+            <div class="pc-pay-wrap">
+              <div class="title left">
+                <h2 class="section-title">가는 편</h2>
+              </div>
+              <div class="right">
+                <div class="payment-amount-info itemize--line">
+                  <div class="pc-flex-pay">
+                    <div class="payment-amount left payment-amount--type2">
+                      <div class="payment-amount__title">박/제주</div>
+                    </div>
+                    <div class="payment-amount">                      
+                      <table class="tbl_receipt">
+                          <tr>
+                              <td class="receipt_title"><span>사전 수하물</span></td>
+                              <td class="receipt_conts">
+                                  <ul>
+                                    <li>
+                                       <span class="item">5kg</span>
+                                       <span class="price">10,000원</span>
+                                    </li>
+                                  </ul>
+                              </td>
+                          </tr>
+                          <tr>
+                            <td class="receipt_title"><span>사전 좌석</span></td>
+                            <td class="receipt_conts">
+                                <ul>
+                                  <li>
+                                     <span class="item">2F<em class="route">(나리타 - 인천)</em></span>
+                                     <span class="price">10,000원</span>
+                                  </li>
+                                  <li>
+                                    <span class="item">3G<em class="route">(인천 - 괌)</em></span>
+                                    <span class="price">10,000원</span>
+                                  </li>
+                                </ul>
+                            </td>
+                        </tr>
+                          <tr>
+                            <td class="receipt_title"><span>사전 기내식</span></td>
+                            <td class="receipt_conts">
+                                <ul>
+                                  <li>
+                                     <span class="item">불고기<em class="route">(나리타 - 인천)</em></span>
+                                     <span class="price">20,000원</span>
+                                  </li>
+                                  <li>
+                                    <span class="item">비빔밥<em class="route">(인천 - 괌)</em></span>
+                                    <span class="price">15,000원</span>
+                                 </li>
+                                </ul>
+                            </td>
+                        </tr>
+                      </table><!--//tbl_receipt-->
+                    </div><!--//payment-amount-->
+                  </div><!--//pc-flex-pay-->
+                </div>
+
+                <div class="payment-amount-info itemize--line">
+                  <div class="pc-flex-pay">
+                    <div class="payment-amount left payment-amount--type2">
+                      <div class="payment-amount__title">강/부산</div>
+                    </div>
+                    <div class="payment-amount">                      
+                      <table class="tbl_receipt">
+                          <tr>
+                              <td class="receipt_title"><span>사전 수하물</span></td>
+                              <td class="receipt_conts">
+                                  <ul>
+                                    <li>
+                                       <span class="item">5kg</span>
+                                       <span class="price">10,000원</span>
+                                    </li>
+                                  </ul>
+                              </td>
+                          </tr>
+                          <tr>
+                            <td class="receipt_title"><span>사전 좌석</span></td>
+                            <td class="receipt_conts">
+                                <ul>
+                                  <li>
+                                    <span class="item">2F<em class="route">(나리타 - 인천)</em></span>
+                                    <span class="price">10,000원</span>
+                                 </li>
+                                 <li>
+                                   <span class="item">3G<em class="route">(인천 - 괌)</em></span>
+                                   <span class="price">10,000원</span>
+                                 </li>
+                                </ul>
+                            </td>
+                        </tr>
+                          <tr>
+                            <td class="receipt_title"><span>사전 기내식</span></td>
+                            <td class="receipt_conts">
+                                <ul>
+                                    <li>
+                                      <span class="item">불고기<em class="route">(나리타 - 인천)</em></span>
+                                      <span class="price">20,000원</span>
+                                    </li>
+                                    <li>
+                                      <span class="item">비빔밥<em class="route">(인천 - 괌)</em></span>
+                                      <span class="price">15,000원</span>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                      </table><!--//tbl_receipt-->
+                    </div><!--//payment-amount-->
+                  </div><!--//pc-flex-pay-->
+                </div>
+
+              </div>
+            </div>
+          </div> <!--// 가는편-->
+
+
+
+        <div class="section-wrap">
+          <div class="pc-pay-wrap">
+            <div class="title left">
+              <h2 class="section-title">오는 편</h2>
+            </div>
+            <div class="right">
+              <div class="payment-amount-info itemize--line">
+                <div class="pc-flex-pay">
+                  <div class="payment-amount left payment-amount--type2">
+                    <div class="payment-amount__title">박/제주</div>
+                  </div>
+                  <div class="payment-amount">                      
+                    <table class="tbl_receipt">
+                        <tr>
+                            <td class="receipt_title"><span>사전 수하물</span></td>
+                            <td class="receipt_conts">
+                                <ul>
+                                  <li>
+                                    <span class="item">5kg</span>
+                                    <span class="price">10,000원</span>
+                                  </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="receipt_title"><span>사전 좌석</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                  <span class="item">2F<em class="route">(나리타 - 인천)</em></span>
+                                  <span class="price">10,000원</span>
+                               </li>
+                               <li>
+                                 <span class="item">3G<em class="route">(인천 - 괌)</em></span>
+                                 <span class="price">10,000원</span>
+                               </li>
+                              </ul>
+                          </td>
+                      </tr>
+                        <tr>
+                          <td class="receipt_title"><span>사전 기내식</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                  <span class="item">불고기<em class="route">(나리타 - 인천)</em></span>
+                                  <span class="price">20,000원</span>
+                                </li>
+                                <li>
+                                  <span class="item">비빔밥<em class="route">(인천 - 괌)</em></span>
+                                  <span class="price">15,000원</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                    </table><!--//tbl_receipt-->
+                  </div><!--//payment-amount-->
+                </div><!--//pc-flex-pay-->
+              </div>
+
+              <div class="payment-amount-info itemize--line">
+                <div class="pc-flex-pay">
+                  <div class="payment-amount left payment-amount--type2">
+                    <div class="payment-amount__title">강/부산</div>
+                  </div>
+                  <div class="payment-amount">                      
+                    <table class="tbl_receipt">
+                        <tr>
+                            <td class="receipt_title"><span>사전 수하물</span></td>
+                            <td class="receipt_conts">
+                                <ul>
+                                  <li>
+                                    <span class="item">5kg</span>
+                                    <span class="price">10,000원</span>
+                                  </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="receipt_title"><span>사전 좌석</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                  <span class="item">2F<em class="route">(나리타 - 인천)</em></span>
+                                  <span class="price">10,000원</span>
+                               </li>
+                               <li>
+                                 <span class="item">3G<em class="route">(인천 - 괌)</em></span>
+                                 <span class="price">10,000원</span>
+                               </li>
+                              </ul>
+                          </td>
+                      </tr>
+                        <tr>
+                          <td class="receipt_title"><span>사전 기내식</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                  <span class="item">불고기<em class="route">(나리타 - 인천)</em></span>
+                                  <span class="price">20,000원</span>
+                                </li>
+                                <li>
+                                  <span class="item">비빔밥<em class="route">(인천 - 괌)</em></span>
+                                  <span class="price">15,000원</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                    </table><!--//tbl_receipt-->
+                  </div><!--//payment-amount-->
+                </div><!--//pc-flex-pay-->
+              </div>
+
+            </div>
+          </div>
+        </div> <!--// 오는편-->
+
+
+          <!--수하물 취소 후 재구매 : GD_0_4673-->
+          <div class="section-wrap">
+            <div class="pc-pay-wrap">
+              <div class="title left">
+                <h2 class="section-title">자동취소될 내역을 <br class="pc-only">확인해 주세요.</h2>
+              </div>
+              <div class="right">
+
+                <div class="payment-amount-info itemize--line">
+                  <div class="pc-flex-pay">
+                    <div class="payment-amount left payment-amount--type2">
+                      <div class="payment-amount__title">강/부산</div>
+                    </div>
+                    <div class="payment-amount">                      
+                      <table class="tbl_receipt">
+                          <tr>
+                              <td class="receipt_title"><span>사전 수하물</span></td>
+                              <td class="receipt_conts">
+                                  <ul>
+                                    <li>
+                                      <span class="item">5kg</span>
+                                      <span class="price color--org">- 50,000원</span>
+                                    </li>
+                                  </ul>
+                              </td>
+                          </tr>
+                      </table><!--//tbl_receipt-->
+                    </div><!--//payment-amount-->
+                  </div><!--//pc-flex-pay-->
+                </div>
+
+
+                <div class="payment-amount-info itemize--line">
+                  <div class="pc-flex-pay">
+                    <div class="payment-amount left payment-amount--type2">
+                      <div class="payment-amount__title">강/부산</div>
+                    </div>
+                    <div class="payment-amount">                      
+                      <table class="tbl_receipt">
+                          <tr>
+                              <td class="receipt_title"><span>사전 수하물</span></td>
+                              <td class="receipt_conts">
+                                  <ul>
+                                    <li>
+                                      <span class="item">5kg</span>
+                                      <span class="price color--org">- 50,000원</span>
+                                    </li>
+                                  </ul>
+                              </td>
+                          </tr>
+                      </table><!--//tbl_receipt-->
+                    </div><!--//payment-amount-->
+                  </div><!--//pc-flex-pay-->
+                </div>
+
+                <div class="payment-amount-info itemize--line inline-row">
+                  <div class="pc-flex-pay">
+                    <div class="payment-amount left payment-amount--type2">
+                      <div class="payment-amount__title">취소수수료</div>
+                    </div>
+                    <div class="payment-amount">                      
+                      <table class="tbl_receipt">
+                          <tr>
+                              <td class="receipt_conts">
+                                  <ul>
+                                    <li>
+                                      <span class="item"></span>
+                                      <span class="price color">5,000원</span>
+                                    </li>
+                                  </ul>
+                              </td>
+                          </tr>
+                      </table><!--//tbl_receipt-->
+                    </div><!--//payment-amount-->
+                  </div><!--//pc-flex-pay-->
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <!--//수하물 취소 후 재구매 : GD_0_4673-->
+
+          <!-- 전체 동의 -->
+          <div class="section-wrap">
+            <div class="pc-pay-wrap">
+              <div class="title left">
+                <h2 class="section-title mt0">약관 및 규정 동의</h2>
+              </div>
+              <div class="right">
+                <div class="agree-wrap mt0">
+                  <div class="check-wrap" data-element="checkList">
+                    <div class="check-wrap__all-check">
+                      <span class="checkbox">
+                        <input type="checkbox" class="checkbox__input" id="inpAgreeAll" data-element="checkAll">
+                        <label for="inpAgreeAll" class="checkbox__label">
+                          <i class="checkbox__ico" aria-hidden="true"></i>
+                          <span>전체 동의</span>
+                        </label>
+                      </span>
+                    </div>
+                    <ul class="check-wrap__list check-wrap__list--type2">
+                      <li class="agree-wrap__item">
+                        <span class="checkbox checkbox--small">
+                          <input type="checkbox" class="checkbox__input" id="inpAgree-01" data-element="checkbox">
+                          <label for="inpAgree-01" class="checkbox__label">
+                            <i class="checkbox__ico" aria-hidden="true"></i>
+                            <span>부가서비스 환불 규정 동의</span>
+                          </label>
+                        </span>
+                        <button type="button" class="agree-wrap__button" aria-label="부가서비스 환불 규정 동의"></button>
+                      </li>
+                      <!--20210621 삭제-->
+                      <!-- <li class="agree-wrap__item">
+                        <span class="checkbox checkbox--small">
+                          <input type="checkbox" class="checkbox__input" id="inpAgree-02" data-element="checkbox">
+                          <label for="inpAgree-02" class="checkbox__label">
+                            <i class="checkbox__ico" aria-hidden="true"></i>
+                            <span>여행보험 환불 규정 동의</span>
+                          </label>
+                        </span>
+                        <button type="button" class="agree-wrap__button" aria-label="여행보험 환불 규정 동의"></button>
+                      </li> -->
+                      <li class="agree-wrap__item">
+                        <span class="checkbox checkbox--small">
+                          <input type="checkbox" class="checkbox__input" id="inpAgree-03" data-element="checkbox">
+                          <label for="inpAgree-03" class="checkbox__label">
+                            <i class="checkbox__ico" aria-hidden="true"></i>
+                            <span>포인트 환불 규정에 동의합니다.</span>
+                          </label>
+                        </span>
+                      </li>
+                      <li class="agree-wrap__item">
+                        <span class="checkbox checkbox--small">
+                          <input type="checkbox" class="checkbox__input" id="inpAgree-04" data-element="checkbox">
+                          <label for="inpAgree-04" class="checkbox__label">
+                            <i class="checkbox__ico" aria-hidden="true"></i>
+                            <span>항공권, 부가서비스 및 여행보험 환불 규정을 확인하였으며, 이에 동의합니다.</span>
+                          </label>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+          </div>
+          <div class="pb30 mobile-only"></div>
+          <!-- //약관 및 규정 동의 -->
+
+          <!-- 예상 결제금액 -->
+          <div class="booking-sticky booking-sticky--reservation">
+            <div class="reservation-container">
+              <div class="booking-sticky__top payment">
+                <div class="toggle-wrap toggle-wrap--button toggle-none toggle-none--type2">
+                  <div class="flex-wrap">
+                    <div class="label">
+                      <span>총 환불금액</span>
+                    </div>
+                    <div class="summary">
+                      <span class="cost text--color-org">
+                        <span class="price_txt ">- 95,000</span>
+                        <span class="unit">원</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex-wrap">
+                    <div class="label">
+                      <span>총 결제금액</span>
+                      <!-- <button type="button" class="icon">
+                        <span class="hidden">항공운임</span>
+                      </button> -->
+                    </div>
+                    <button type="button" class="summary">
+                      <span class="cost">
+                        <span class="price_txt">120,000</span>
+                        <span class="unit">원</span>
+                      </span>
+                    </button>
+                  </div>
+
+
+                  <!-- <div class="link-wrap">
+                    <div class="link-wrap link-wrap--left">
+                      <a href="#" class="link-wrap__underline"><span>나중에 결제</span></a>
+                    </div>
+                    <div class="after-message">
+                      <p>수수료만 결제하고 최종 결제는 나중에</p>
+                    </div>
+                  </div> -->
+                  <!-- D : 체크가 모두 완료 되면 나오는 메세지 on 클래스 추가 -->
+                </div>
+                <div class="pc-only">
+                  <button type="button" class="button button--primary button--active">
+                    <span class="button__text">결제하기</span>
+                  </button>
+                </div>
+              </div>
+              <div class="button-wrap mobile-only">
+                <!-- D : 액티브 클래스 button--active -->
+                <button type="button" class="button button--primary button--active">
+                  <span class="button__text">결제하기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+   </div>
+  <!--//#body-->
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

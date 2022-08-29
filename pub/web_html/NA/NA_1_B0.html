@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+  <!--20210616 header추가-->
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <h2 class="header__page-name">결제</h2>
+      <a href="#" rel="modal:close" class="modal__close" onclick="closeWindow ()"><span class="blind">닫기</span></a>
+    </header>
+  </div>
+  <!--//20210616 header추가-->
+
+  <div id="body">
+    <div class="wrap NA_1_B">
+
+      <div class="content" id="content">
+        <main id="main" class="main">
+
+          <div class="payment-amount only">
+            <div class="payment-amount__title">예상 결제 금액</div>
+            <p class="payment-amount__sum">
+              <span class="price_txt">2,200,000</span>
+              <span class="unit">원</span>
+            </p>
+          </div>
+
+
+          <!-- 결제방법 -->
+          <div class="section-wrap">
+            <div class="pc-pay-layout ">
+              <div class="layout-left">
+                <div class="section-title">결제방법</div>
+              </div>
+              <div class="layout-right">
+                <div class="payment-use-wrap bottom3" data-element="inputToggle">
+
+                  <!-- 간편결제 -->
+                  <div class="radio-wrap">
+                    <div class="radio-flex">
+                      <div class="radio-item">
+                        <span class="radio">
+                          <input type="radio" id="inputRadio2" name="inputRadio" class="radio__input"
+                            data-toggle="toggle__anchor">
+                          <label for="inputRadio2" class="radio__label">
+                            <i aria-hidden="true" class="radio__ico"></i>
+                            <span>간편결제</span>
+                          </label>
+                        </span>
+                      </div>
+                      <div class="radio-item">
+                        <div class="link-wrap--arrow">
+                          <button type="button" class="link__text_arrow"><span>할인 안내</span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="gray-box pc-15">
+                      <div class="flex-text">
+                        <div class="flex-text__title">카카오페이</div>
+                        <div class="flex-text__additional color-org">1만원 즉시할인</div>
+                      </div>
+                    </div>
+                    <div class="radio--toggle" data-element="inputToggle" data-toggle="toggle__panel">
+                      <div class="payment-card">
+                        <div class="payment-card__item active"><button type="button"><img
+                              src="../../assets/images/icon/payment-card-KP.png" alt="카카오페이"></button></div><!--활성화 시 .active 추가-->
+                        <div class="payment-card__item"><button type="button"><img
+                              src="../../assets/images/icon/payment-card-NP.png" alt="네이버페이"></button></div>
+                        <div class="payment-card__item"><button type="button"><img
+                              src="../../assets/images/icon/payment-card-CP.png" alt="cu간편결제"></button></div>
+                        <div class="payment-card__item"><button type="button"><img
+                              src="../../assets/images/icon/payment-card-PL.png" alt="paypal"></button></div>
+                        <div class="payment-card__item"><button type="button"><img
+                              src="../../assets/images/icon/payment-card-UP.png" alt="unionbay"></button></div>
+                        <div class="payment-card__item"><button type="button"><img
+                              src="../../assets/images/icon/payment-card-TS.png" alt="toss"></button></div>
+                        <div class="payment-card__item"><button type="button"><img
+                              src="../../assets/images/icon/payment-card-WP.png" alt="wechatpay"></button></div>
+                        <div class="payment-card__item"><button type="button"><img
+                                src="../../assets/images/icon/payment-card-SP.png" alt="삼성페이"></button></div>
+                        <div class="payment-card__item"><button type="button"><img
+                          src="../../assets/images/icon/payment-card-AP.png" alt="알리페이"></button></div>
+                      </div>
+
+                      <!-- 현금영수증 신청 -->
+                      <div class="cash-receipt-item pc-cash-wrap">
+                        <div class="pc-cash">
+                          <div class="check-wrap">
+                            <div class="check-flex">
+                              <span class="checkbox checkbox--small">
+                                <input type="checkbox" id="inputCheck4_1" data-element="checkbox" class="checkbox__input"
+                                  data-toggle="toggle__anchor" aria-controls="inpAgree-09-0" aria-expanded="true">
+                                <label for="inputCheck4_1" class="checkbox__label">
+                                  <i aria-hidden="true" class="checkbox__ico"></i><span>현금영수증 신청</span>
+                                </label>
+                              </span>
+                            </div>
+                          </div>
+                          <!-- <div class="flex-text pc-only">
+                            <div class="flex-text__title text--bold">개인소득공제용</div>
+                            <div class="flex-text__additional text--regular color-org">김*주 010-****-1234</div>
+                          </div> -->
+                        </div>
+
+                        <div class="radio--toggle">
+                          <div class="carousel--paypal-wrap mt0" data-element="inputToggle" data-toggle="toggle__panel">
+                            <div class="pc-cash-type2">
+                              <div class="radio-wrap">
+                                <span class="radio">
+                                  <input type="radio" id="inputRadio-a11" name="inputRadio21" checked="checked"
+                                    class="radio__input" data-toggle="toggle__anchor">
+                                  <label for="inputRadio-a11" class="radio__label">
+                                    <i aria-hidden="true" class="radio__ico"></i>
+                                    <span>소득공제용</span>
+                                  </label>
+                                </span>
+                                <span class="radio">
+                                  <input type="radio" id="inputRadio-a21" name="inputRadio21" class="radio__input"
+                                    data-toggle="toggle__anchor">
+                                  <label for="inputRadio-a21" class="radio__label">
+                                    <i aria-hidden="true" class="radio__ico"></i>
+                                    <span>지출증빙용</span>
+                                  </label>
+                                </span>
+                              </div>
+                              <div class="container--xsmall">
+                                <div class="input-wrap input--line w100">
+                                  <div class="input-row">
+                                    <div class="input-item">
+                                      <div class="input-box">
+                                        <!-- 소득공제용 -->
+                                        <label for="inp2" class="input__label" data-toggle="toggle__panel">휴대전화번호</label>
+                                        <!-- 지출증빙용 -->
+                                        <label for="inp2" class="input__label" data-toggle="toggle__panel">사업자등록번호</label>
+                                        <div data-element="form" class="input">
+                                          <input type="text" id="inp2" class="input__text" title="번호입력">
+                                          <button type="button" data-element="remove" class="input__remove-button"><span
+                                              class="hidden">삭제</span></button>
+                                        </div>
+                                      </div>
+                                      <p tabindex="0" class="input__error">에러메세지</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="guide-info guide-info--gray">
+                                  <p class="guide-info__text">휴대전화번호 또는 사업자번호가 유효하지 않으면 발급되지 않습니다.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- <div class="check-wrap">
+                              <span class="checkbox checkbox--line">
+                                <input type="checkbox" id="inputCheckLine4" class="checkbox__input">
+                                <label for="inputCheckLine4" class="checkbox__label">
+                                  <i aria-hidden="true" class="checkbox__ico"></i>
+                                  <span>입력된 현금영수증 신청정보를 저장합니다.</span>
+                                </label>
+                              </span>
+                            </div> -->
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- //현금영수증 신청 -->
+                    </div>
+
+                  </div>
+                  <!-- //간편결제 -->
+
+                  <!-- 카드 일반결제 -->
+                  <div class="radio-wrap">
+                    <div class="radio-flex">
+                      <div class="radio-item">
+                        <span class="radio">
+                          <input type="radio" id="inputRadio3" name="inputRadio" class="radio__input"
+                            data-toggle="toggle__anchor">
+                          <label for="inputRadio3" class="radio__label">
+                            <i aria-hidden="true" class="radio__ico"></i>
+                            <span>카드 일반결제</span>
+                          </label>
+                        </span>
+                      </div>
+                      <div class="radio-item">
+                        <div class="link-wrap--arrow">
+                          <button type="button" class="link__text_arrow"><span>즉시할인안내</span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="gray-box pc-15">
+                      <div class="flex-text">
+                        <div class="flex-text__title">KB국민카드</div>
+                        <div class="flex-text__additional color-org">1만원 즉시할인</div>
+                      </div>
+                    </div>
+
+                    <!--카드일반결제 선택시오픈-->
+                    <div class="radio--toggle" data-toggle="toggle__panel">
+                      <div class="card_line_box">
+                        <div class="select-wrap payment_card_wrap">
+                          <div class="select-wrap--line pc-20">
+                            <!-- [수정 : 210215] pc-20 class 추가 -->
+                            <select title="할부개월 선택" class="select-wrap__select">
+                              <option>할부개월 선택</option>
+                              <option value="1" selected>일시불</option>
+                              <option value="2">할부개월 선택</option>
+                              <option value="3">할부개월 선택</option>
+                              <option value="4">할부개월 선택</option>
+                            </select>
+                          </div>
+
+                           <div class="link_btn_wrap"><button type="button"
+                            class="link-wrap__underline link-wrap__underline--gray"><span>무이자 할부</span></button></div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                    <!--//카드일반결제 선택시오픈-->
+                  </div>
+                  <!-- //카드 일반결제 -->
+
+                  <!-- 해외카드 결제 -->
+                  <div class="radio-wrap">
+                    <div class="radio-item">
+                      <span class="radio">
+                        <input type="radio" id="inputRadio4" name="inputRadio" class="radio__input">
+                        <label for="inputRadio4" class="radio__label">
+                          <i aria-hidden="true" class="radio__ico"></i>
+                          <span>해외카드 결제</span>
+                        </label>
+                      </span>
+                    </div>
+                    <!-- 내용이 없더라도 요소를 만들어 놔야 충돌 안생김 -->
+                    <div class="radio--toggle" data-toggle="toggle__panel"></div>
+                    <!-- 내용이 없더라도 요소를 만들어 놔야 충돌 안생김 -->
+                  </div>
+                  <!-- //해외카드 결제 -->
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- //결제방법 -->
+
+          <div class="booking-sticky mobile-only">
+            <div class="booking-sticky__top">
+
+              <div class="toggle-wrap">
+                <div class="label">
+                  <span>총 결제 금액</span>
+                </div>
+                <div class="summary summary--without-icon">
+                  <span class="cost">
+                    <span class="price_txt">2,200,000</span>
+                    <span class="unit">원</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="button-wrap button-wrap--stick">
+              <button type="button" class="button button--primary button--active">
+                <span class="button__text">결제하기</span>
+              </button>
+            </div>
+          </div>
+
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <script>
+    
+    cardSwiper.on('observerUpdate transitionEnd', function () {
+      var cardData = $('.carousel--paypal-wrap .swiper-slide-active').data('card')
+      if (cardData == 'credit') {
+        $('.payment_card_wrap.fare-detail-jjpay').show()
+        $('.pc-cash.fare-detail-jjpay').hide()
+      } else if (cardData == 'bank') {
+        $('.payment_card_wrap.fare-detail-jjpay').hide()
+        $('.pc-cash.fare-detail-jjpay').show()
+      }
+      else {
+        $('.payment_card_wrap.fare-detail-jjpay').hide()
+        $('.pc-cash.fare-detail-jjpay').hide()
+      }
+    })
+
+  </script>
+</body>
+
+</html>

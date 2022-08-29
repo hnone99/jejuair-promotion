@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+
+  </div>
+
+  <div class="wrap">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <div class="button-wrap button-wrap--center">
+          <button type="button" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full"><span  class="button__text">RSV00X_NO SHOW 환불팝업</span></button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- 기내식 상세 -->
+  <div id="modalLayer01" class="modal modal-full modal-scroll modal--fixed-multi" >
+    
+    <div class="modal-header">
+      <div class="modal-header__title">일부 구간 환불 안내</div>
+    </div>
+    
+    <div class="modal-content">
+      <div class="text">
+        <p class="text__large"> 환불 받을실 금액이 존재합니다.<br>환불을 진행하시겠습니까?</p>
+      </div>
+      <div class=" sub-section"><!--20210514 class명 추가  -->
+        <div class="gray-box refund-info">
+          <div class="flex-text">
+            <div class="flex-text__title">환불금액</div>
+            <div class="flex-text__additional">
+              <span class="price_txt">100,000</span>
+              <span class="unit">원</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--하단 버튼영역-->
+    <div class="fixed-wrap fixed-wrap--multi-line border-none">
+      <div class="button-wrap pc-center">
+        <button type="button" class="button button--primary button--black "><span class="button__text">취소</span></button>
+        <button type="button" class="button button--primary button--active "><span class="button__text">환불정보 입력</span></button>
+        <!-- <button type="button" class="button button--primary button--active "><span class="button__text">확인</span></button> -->
+      </div>
+    </div>
+    
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <!-- //기내식 상세 -->
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+</body>
+
+</html>

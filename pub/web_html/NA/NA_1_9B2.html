@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공 온라인(모바일,홈페이지 구매)</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div class="wrap wrap--booking">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor"
+          data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">가입플랜 팝업</a>
+      </main>
+    </div>
+  </div>
+  <!-- 풀팝업 -->
+  <div id="modalLayer01" class="modal modal-full modal-scroll modal--fixed-multi">
+    <div class="modal-header">
+      <div class="modal-header__title"><span>KIM JEJU</span>님의 가입 플랜</div>
+    </div>
+    <div class="modal-content na_1_9c1"> <!-- 2021119 na_1_9c1 class추가-->
+      <div class="modal-info" data-element="inputToggle">
+        <!-- <div class="first-margin">
+          <div class="radio-button-wrap">
+            <span class="radio-button">
+              <input type="radio" id="radio-1" name="radio" class="radio-button__input" data-toggle="toggle__anchor"
+                checked>
+              <label for="radio-1" class="radio-button__label">
+                <span>실속형</span>
+              </label>
+            </span>
+            <span class="radio-button">
+              <input type="radio" id="radio-2" name="radio" class="radio-button__input" data-toggle="toggle__anchor">
+              <label for="radio-2" class="radio-button__label">
+                <span>표준형</span>
+              </label>
+            </span>
+            <span class="radio-button">
+              <input type="radio" id="radio-3" name="radio" class="radio-button__input" data-toggle="toggle__anchor">
+              <label for="radio-3" class="radio-button__label">
+                <span>고급형</span>
+              </label>
+            </span>
+          </div>
+        </div> -->
+        <!-- 플랜 컨텐츠 : 실속형 -->
+          <div class="sub-section">
+            <div class="section-title">실속형</div>
+            <div class="gray-box">
+              <div class="flex-text">
+                <div class="flex-text blurred">3명 총 보험료</div>
+                <div class="flex-text__additional">
+                  <span class="price_txt">300,000</span>
+                  <span class="unit">원</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <div class="section-sub-title">보장내용</div>
+            <div class="table-horizontal">
+              <table>
+                <caption>가입 보험 연령</caption>
+                <colgroup>
+                  <col class="col_na_1_9c1">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">가입보험연령</th>
+                    <td class="table-horizontal__td">15~70세</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <div class="section-sub-title">주 계약보험</div>
+            <!--20210502 리스트 수정-->
+            <div class="table-horizontal">
+              <table>
+                <caption>해외여행중 상해사망후유장해,해외여행중 상해 후유장해</caption>
+                <colgroup>
+                  <col class="col_na_1_9c1">
+                  <col><col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">
+                      해외여행중 상해사망후유장해
+                      <span data-element="tooltip" role="tooltip" class="tooltip"
+                        data-set='{"width": "300", "left":"-40", "arrow" : "40"}'>
+                        <button type="button" aria-label="해외의료비 (상해_해외여행실손)  툴팁 열기" data-element="tooltip__anchor" class="tooltip__button"></button>
+                        <span data-element="tooltip__panel" class="tooltip__panel">
+                          <span aria-hidden="true" class="tooltip-arrow"></span>
+                          <span class="tooltip-title">해외여행중 상해사망후유장해</span>
+                          <span class="tooltip-desc">가. 해외여행 중에 상해의 직접결과로써 사망한 경우 보험가입금액 전액 지급</span>
+                          <span class="tooltip-desc"> 나. 해외여행 중 상해로 장해지급률에 해당하는 장해가 되었을 경우 보험가입금액x지급률로 산출한 금액 지급</span>
+                        </span>
+                      </span>
+                    </th>
+                    <td class="table-horizontal__td vertical--middle">1억원</td>
+                    <td class="table-horizontal__td vertical--middle">1억원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">해외여행중 상해 후유장해
+                      <span data-element="tooltip" role="tooltip" class="tooltip"
+                        data-set='{"width": "300", "left":"-40", "arrow" : "40"}'>
+                        <button type="button" aria-label="해외의료비 (상해_해외여행실손)  툴팁 열기" data-element="tooltip__anchor" class="tooltip__button"></button>
+                        <span data-element="tooltip__panel" class="tooltip__panel">
+                          <span aria-hidden="true" class="tooltip-arrow"></span>
+                          <span class="tooltip-title">해외여행중 상해사망후유장해</span>
+                          <span class="tooltip-desc">가. 해외여행 중에 상해의 직접결과로써 사망한 경우 보험가입금액 전액 지급</span>
+                          <span class="tooltip-desc"> 나. 해외여행 중 상해로 장해지급률에 해당하는 장해가 되었을 경우 보험가입금액x지급률로 산출한 금액 지급</span>
+                        </span>
+                      </span>
+                    </th>
+                    <td class="table-horizontal__td vertical--middle">-</td>
+                    <td class="table-horizontal__td vertical--middle">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <div class="section-sub-title">특약보험</div>
+            <div class="table-horizontal">
+              <table>
+                <caption>해외의료비(상해_해외여행실손),국내의료비(상해입원_해외여행실손, 상해통원외래_해외여행실손,상해통원처방조제_해외여행실손), 해외의료비(질병_해외여행실손), 
+                  국내의료비(질병입원_해외여행실손, 질병통원외래_해외여행실손, 질병통원처방조제_해외여행실손)   </caption>
+                <colgroup>
+                  <col class="col_na_1_9c1">
+                  <col><col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">
+                      해외의료비(상해_해외여행실손)
+                      <span data-element="tooltip" role="tooltip" class="tooltip" data-set='{"width": "300", "left":"-40", "arrow" : "40"}'>
+                        <button type="button" aria-label="해외의료비 (상해_해외여행실손)  툴팁 열기" data-element="tooltip__anchor"
+                          class="tooltip__button"></button>
+                        <span data-element="tooltip__panel" class="tooltip__panel">
+                          <span aria-hidden="true" class="tooltip-arrow"></span>
+                          <span class="tooltip-title">해외여행중 상해사망후유장해</span>
+                          <span class="tooltip-desc">가. 해외여행 중에 상해의 직접결과로써 사망한 경우 보험가입금액 전액 지급</span>
+                          <span class="tooltip-desc"> 나. 해외여행 중 상해로 장해지급률에 해당하는 장해가 되었을 경우 보험가입금액x지급률로 산출한 금액 지급</span>
+                        </span>
+                      </span>
+                    </th>
+                    <td class="table-horizontal__td vertical--middle">1억원</td>
+                    <td class="table-horizontal__td vertical--middle">5,000만원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(상해입원_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">-</td>
+                    <td class="table-horizontal__td vertical--middle">5,000만원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(상해통원외래_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만원</td>
+                    <td class="table-horizontal__td vertical--middle">5,000만원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(상해통원처방조제_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만원</td>
+                    <td class="table-horizontal__td vertical--middle">5,000만원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">해외의료비(질병_해외여행실손) </th>
+                    <td class="table-horizontal__td vertical--middle">5,000만원</td>
+                    <td class="table-horizontal__td vertical--middle">5,000만원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(질병입원_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만원</td>
+                    <td class="table-horizontal__td vertical--middle">5,000만원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(질병통원외래_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만원</td>
+                    <td class="table-horizontal__td vertical--middle">5,000만원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(질병통원처방조제_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만원</td>
+                    <td class="table-horizontal__td vertical--middle">5,000만원</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+       
+        <!-- //플랜 컨텐츠 : 실속형 -->
+
+        <!-- 플랜 컨텐츠 : 표준형 -->
+        <div data-toggle="toggle__panel">
+
+          <div class="sub-section">
+            <div class="section-title">표준형</div>
+            <div class="gray-box">
+              <div class="flex-text">
+                <div class="flex-text">3명 총 보험료</div>
+                <div class="flex-text__additional">
+                  <span class="price_txt">300,000</span>
+                  <span class="unit">원</span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <div class="section-sub-title">보장내용</div>
+            <div class="table-horizontal">
+              <table>
+                <caption>가입 보험 연령 안내</caption>
+                <colgroup>
+                  <col style="width: 55%;">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">가입 보험 연령</th>
+                    <td class="table-horizontal__td">15~70세</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+
+          <div class="sub-section">
+            <div class="section-sub-title">주 계약보험</div>
+            <!--20210502 리스트 수정-->
+            <div class="table-horizontal">
+              <table>
+                <caption>해외여행중 상해사망후유장해,해외여행중 상해 후유장해</caption>
+                <colgroup>
+                  <col class="col_na_1_9c1">
+                  <col><col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">
+                      해외의료비 (상해_해외여행실손)
+                      <span data-element="tooltip" role="tooltip" class="tooltip"
+                        data-set='{"width": "300", "left":"-40", "arrow" : "40"}'>
+                        <button type="button" aria-label="해외의료비 (상해_해외여행실손)  툴팁 열기" data-element="tooltip__anchor" class="tooltip__button"></button>
+                        <span data-element="tooltip__panel" class="tooltip__panel">
+                          <span aria-hidden="true" class="tooltip-arrow"></span>
+                          <span class="tooltip-title">해외여행중 상해사망후유장해</span>
+                          <span class="tooltip-desc">가. 해외여행 중에 상해의 직접결과로써 사망한 경우 보험가입금액 전액 지급</span>
+                          <span class="tooltip-desc"> 나. 해외여행 중 상해로 장해지급률에 해당하는 장해가 되었을 경우 보험가입금액x지급률로 산출한 금액 지급</span>
+                        </span>
+                      </span>
+                    </th>
+                    <td class="table-horizontal__td vertical--middle">1억원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">해외여행중 상해 후유장해
+                      <span data-element="tooltip" role="tooltip" class="tooltip"
+                        data-set='{"width": "300", "left":"-40", "arrow" : "40"}'>
+                        <button type="button" aria-label="해외의료비 (상해_해외여행실손)  툴팁 열기" data-element="tooltip__anchor" class="tooltip__button"></button>
+                        <span data-element="tooltip__panel" class="tooltip__panel">
+                          <span aria-hidden="true" class="tooltip-arrow"></span>
+                          <span class="tooltip-title">해외여행중 상해사망후유장해</span>
+                          <span class="tooltip-desc">가. 해외여행 중에 상해의 직접결과로써 사망한 경우 보험가입금액 전액 지급</span>
+                          <span class="tooltip-desc"> 나. 해외여행 중 상해로 장해지급률에 해당하는 장해가 되었을 경우 보험가입금액x지급률로 산출한 금액 지급</span>
+                        </span>
+                      </span>
+                    </th>
+                    <td class="table-horizontal__td vertical--middle">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <div class="section-sub-title">특약보험</div>
+            <div class="table-horizontal">
+              <table>
+                <caption>해외의료비(상해_해외여행실손),국내의료비(상해입원_해외여행실손, 상해통원외래_해외여행실손,상해통원처방조제_해외여행실손), 해외의료비(질병_해외여행실손), 
+                  국내의료비(질병입원_해외여행실손, 질병통원외래_해외여행실손, 질병통원처방조제_해외여행실손)   </caption>
+                <colgroup>
+                  <col style="width: 55%;">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">
+                      해외의료비(상해_해외여행실손)
+                      <span data-element="tooltip" role="tooltip" class="tooltip" data-set='{"width": "300", "left":"-40", "arrow" : "40"}'>
+                        <button type="button" aria-label="해외의료비 (상해_해외여행실손)  툴팁 열기" data-element="tooltip__anchor"
+                          class="tooltip__button"></button>
+                        <span data-element="tooltip__panel" class="tooltip__panel">
+                          <span aria-hidden="true" class="tooltip-arrow"></span>
+                          <span class="tooltip-title">해외여행중 상해사망후유장해</span>
+                          <span class="tooltip-desc">가. 해외여행 중에 상해의 직접결과로써 사망한 경우 보험가입금액 전액 지급</span>
+                          <span class="tooltip-desc"> 나. 해외여행 중 상해로 장해지급률에 해당하는 장해가 되었을 경우 보험가입금액x지급률로 산출한 금액 지급</span>
+                        </span>
+                      </span>
+                    </th>
+                    <td class="table-horizontal__td vertical--middle">1억원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(상해입원_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">-</td>
+                    <td class="table-horizontal__td vertical--middle">5,000만 원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(상해통원외래_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만 원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(상해통원처방조제_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만 원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">해외의료비(질병_해외여행실손) </th>
+                    <td class="table-horizontal__td vertical--middle">5,000만 원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(질병입원_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만 원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(질병통원외래_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만 원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(질병통원처방조제_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만 원</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+        </div>
+        <!-- //플랜 컨텐츠 : 표준형 -->
+
+        <!-- 플랜 컨텐츠 : 고급형 -->
+        <div data-toggle="toggle__panel">
+          <div class="sub-section">
+            <div class="section-title">고급형</div>
+            <div class="gray-box">
+              <div class="flex-text">
+                <div class="flex-text">3명 총 보험료</div>
+                <div class="flex-text__additional"><span>300,000</span>원</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <div class="section-sub-title">주 계약보험</div>
+            <div class="table-horizontal">
+              <table>
+                <caption>해외여행중 상해사망후유장해,해외여행중 상해 후유장해</caption>
+                <colgroup>
+                  <col class="col_na_1_9c1">
+                  <col><col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">
+                      해외의료비 (상해_해외여행실손)
+                      <span data-element="tooltip" role="tooltip" class="tooltip"
+                        data-set='{"width": "300", "left":"-40", "arrow" : "40"}'>
+                        <button type="button" aria-label="해외의료비 (상해_해외여행실손)  툴팁 열기" data-element="tooltip__anchor" class="tooltip__button"></button>
+                        <span data-element="tooltip__panel" class="tooltip__panel">
+                          <span aria-hidden="true" class="tooltip-arrow"></span>
+                          <span class="tooltip-title">해외여행중 상해사망후유장해</span>
+                          <span class="tooltip-desc">가. 해외여행 중에 상해의 직접결과로써 사망한 경우 보험가입금액 전액 지급</span>
+                          <span class="tooltip-desc"> 나. 해외여행 중 상해로 장해지급률에 해당하는 장해가 되었을 경우 보험가입금액x지급률로 산출한 금액 지급</span>
+                        </span>
+                      </span>
+                    </th>
+                    <td class="table-horizontal__td vertical--middle">1억원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">해외여행중 상해 후유장해
+                      <span data-element="tooltip" role="tooltip" class="tooltip"
+                        data-set='{"width": "300", "left":"-40", "arrow" : "40"}'>
+                        <button type="button" aria-label="해외의료비 (상해_해외여행실손)  툴팁 열기" data-element="tooltip__anchor" class="tooltip__button"></button>
+                        <span data-element="tooltip__panel" class="tooltip__panel">
+                          <span aria-hidden="true" class="tooltip-arrow"></span>
+                          <span class="tooltip-title">해외여행중 상해사망후유장해</span>
+                          <span class="tooltip-desc">가. 해외여행 중에 상해의 직접결과로써 사망한 경우 보험가입금액 전액 지급</span>
+                          <span class="tooltip-desc"> 나. 해외여행 중 상해로 장해지급률에 해당하는 장해가 되었을 경우 보험가입금액x지급률로 산출한 금액 지급</span>
+                        </span>
+                      </span>
+                    </th>
+                    <td class="table-horizontal__td vertical--middle">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <div class="section-sub-title">특약보험</div>
+            <div class="table-horizontal">
+              <table>
+                <caption>해외의료비(상해_해외여행실손),국내의료비(상해입원_해외여행실손, 상해통원외래_해외여행실손,상해통원처방조제_해외여행실손), 해외의료비(질병_해외여행실손), 
+                  국내의료비(질병입원_해외여행실손, 질병통원외래_해외여행실손, 질병통원처방조제_해외여행실손)   </caption>
+                  <colgroup>
+                    <col class="col_na_1_9c1">
+                    <col><col>
+                  </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">
+                      해외의료비(상해_해외여행실손)
+                      <span data-element="tooltip" role="tooltip" class="tooltip" data-set='{"width": "300", "left":"-40", "arrow" : "40"}'>
+                        <button type="button" aria-label="해외의료비 (상해_해외여행실손)  툴팁 열기" data-element="tooltip__anchor"
+                          class="tooltip__button"></button>
+                        <span data-element="tooltip__panel" class="tooltip__panel">
+                          <span aria-hidden="true" class="tooltip-arrow"></span>
+                          <span class="tooltip-title">해외여행중 상해사망후유장해</span>
+                          <span class="tooltip-desc">가. 해외여행 중에 상해의 직접결과로써 사망한 경우 보험가입금액 전액 지급</span>
+                          <span class="tooltip-desc"> 나. 해외여행 중 상해로 장해지급률에 해당하는 장해가 되었을 경우 보험가입금액x지급률로 산출한 금액 지급</span>
+                        </span>
+                      </span>
+                    </th>
+                    <td class="table-horizontal__td vertical--middle">1억원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(상해입원_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(상해통원외래_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만 원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(상해통원처방조제_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만 원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">해외의료비(질병_해외여행실손) </th>
+                    <td class="table-horizontal__td vertical--middle">5,000만 원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(질병입원_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만 원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(질병통원외래_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만 원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">국내의료비(질병통원처방조제_해외여행실손)</th>
+                    <td class="table-horizontal__td vertical--middle">5,000만 원</td>
+                     <td class="table-horizontal__td vertical--middle">5,000만 원</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--하단 버튼영역-->
+    <div class="fixed-wrap fixed-wrap--multi-line border-none "><!-- checkbox 없는 경우 border-none class 추가 -->
+      <div class="button-wrap">
+        <button type="button" class="button button--primary button--active "><span class="button__text">선택 완료</span></button>
+      </div>
+    </div>
+
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

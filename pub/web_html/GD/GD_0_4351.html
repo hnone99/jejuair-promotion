@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공 온라인(모바일,홈페이지 구매)</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+
+
+
+  <div class="wrap wrap--button">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor"
+          data-target="#modalLayer01" data-modal-type="full">
+          <span class="button__text">이메일 입력 팝업</span>
+        </a>
+        <div id="modalLayer01" class="modal modal-full modal--fixed-multi modal-scroll">
+          <div class="modal-header">
+            <h2 class="modal-header__title">이메일 입력</h2>
+          </div>
+          <div class="modal-content modal-content--alert">
+            <p class="modal-content__text">여정확인서는 입력하신 이메일로 전송됩니다.<br>정확한 이메일을 입력해 주세요.</p>
+            <div class="sub-section">
+              <div class="input-wrap input--line">
+                <div class="input-row">
+                  <div class="input-item">
+                    <label for="inputEmail1" class="input-label label-top">이메일<span title="required" class="input__label-asterisk">*</span></label><!--20210910 라벨상단고정-->
+                      <div class="input-box ">
+                        <div data-element="form" class="input">
+                          <input type="text" class="input__text" data-element="input" id="inp" title="이메일 입력"  class="input__text">
+                          <button type="button" data-element="remove" class="input__remove-button hide"><span class="hidden">삭제</span></button>
+                        </div>
+                      </div>
+                    <p tabindex="0" class="input__error">에러메세지</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fixed-wrap fixed-wrap--multi-line border-none">
+            <!-- checkbox 없는 경우 border-none class 추가 -->
+            <div class="button-wrap">
+              <button type="button" class="button button--active"><span class="button__text">여정 확인서 전송</span></button>
+            </div>
+          </div>
+          <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

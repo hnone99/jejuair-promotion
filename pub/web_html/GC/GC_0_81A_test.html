@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<div id="body">
+		
+		<div class="wrap wrap--button pc-small" style="border:1px solid #000">
+			
+			
+
+			
+			<div class="content" id="content" style="padding-bottom: 60px;">
+				<main id="main" class="main ">
+					
+					<div class="content" id="content" style="padding-bottom: 60px;">
+		<main id="main" class="main">
+          <div class="page-title-wrap">
+            <div class="page-title">가입한 아이디 안내</div>
+            <div class="page-sub-title">입력하신 정보와 <br class="mobile-only">일치하는 계정이 있습니다.</div>
+          </div>
+
+          <div id="divHtml" class="section-wrap"> <div class="gray-box">                                                           <dl class="join-info">                                                           <div class="join-info__row">                                                       <dt class="w90">이름</dt>                                                       <dd id="ddTextName">장근애</dd>                                                     </div>                                                                           <div class="join-info__row">                                                       <dt class="w90">아이디</dt>                                                     <dd>                                                                              <span class="color-org" id="spanTextId">wizkiki0625                                        </span>                                                                       </dd>                                                                         </div>                                                                           <div class="join-info__row">                                                       <dt class="w90">가입일</dt>                                                     <dd><span id="spanTextJoinDate">2021.10.07</span></dd>                                  </div>                                                                         </dl>                                                                         </div>                                                                        </div>
+
+		  <div data-element="bottomContent" style="position: absolute; bottom: 20px; left: 0px;">
+            <div class="guide-info guide-info--gray">
+			  <p class="guide-info__text emailTag" style="">새로 입력한 이메일주소로 인증하시면 해당 이메일로 정보를 변경할 수 있습니다. 이전 계정의 이메일 정보는 삭제됩니다.</p>
+
+               <!--휴대전화번호 인증 시-->
+              <p class="guide-info__text mobileTag" style="display:none;">새로 입력한 휴대전화번호로 인증하시면 해당 휴대전화번호로 정보를 변경할 수 있습니다. 이전 계정의 휴대전화번호 정보는 삭제됩니다.</p> 
+            </div>
+
+			<div class="section-wrap">
+              <div class="button-wrap emailTag" style="">
+                <button type="button" data-action="sendEmail" class="button button--primary button--active"><span class="button__text">인증 이메일 보내기</span></button>
+              </div>
+          		<!-- 휴대전화번호 인증 시-->
+              <div class="button-wrap mobileTag" style="display:none;">
+                <button type="button" id="nextBtn" data-action="nextBtn" class="button button--primary button--active"><span class="button__text">인증코드 전송하기</span></button>
+              </div>
+			</div>
+
+		  </div>
+		</main>
+    </div>
+
+
+<form id="frm" name="frm" method="post" action="">
+	<input type="hidden" id="changeStatus" name="changeStatus" value="email">
+	<input type="hidden" id="loginId">
+	<input type="hidden" id="memberList" value="[{&quot;country&quot;:&quot;KR&quot;,&quot;emailYn&quot;:&quot;Y&quot;,&quot;engCountry&quot;:&quot;KOREA, REPUBLIC OF&quot;,&quot;engLastName&quot;:&quot;JANG&quot;,&quot;membergrade&quot;:&quot;S&quot;,&quot;korFirstName&quot;:&quot;근애&quot;,&quot;nextgradeInternationalBoardcnt&quot;:&quot;10&quot;,&quot;nextGradedatefr&quot;:&quot;20241007&quot;,&quot;nextgradeDomesticBoardcnt&quot;:&quot;20&quot;,&quot;currentGradeInternationalBoardcnt&quot;:&quot;0&quot;,&quot;enrollDate&quot;:&quot;20211007&quot;,&quot;korLastName&quot;:&quot;장&quot;,&quot;nextgradepoint&quot;:&quot;50000&quot;,&quot;gradedatefr&quot;:&quot;20211007&quot;,&quot;nationality&quot;:&quot;KR&quot;,&quot;foreignYn&quot;:&quot;N&quot;,&quot;userAccountStatus&quot;:&quot;E&quot;,&quot;userPassword&quot;:&quot;Y&quot;,&quot;engNationality&quot;:&quot;KOREA, REPUBLIC OF&quot;,&quot;smsYn&quot;:&quot;Y&quot;,&quot;isLock&quot;:&quot;N&quot;,&quot;engFirstName&quot;:&quot;KEUNAE&quot;,&quot;flightPoint&quot;:&quot;0&quot;,&quot;ffpNo&quot;:&quot;085065916&quot;,&quot;korCountry&quot;:&quot;대한민국&quot;,&quot;currentGradeDomesticBoardcnt&quot;:&quot;0&quot;,&quot;email&quot;:&quot;wizkiki.jang@gmail.com&quot;,&quot;korNationality&quot;:&quot;대한민국&quot;,&quot;passportNo&quot;:&quot; &quot;,&quot;gradedateto&quot;:&quot;20241006&quot;,&quot;jointype&quot;:&quot;NOR&quot;,&quot;sex&quot;:&quot;F&quot;,&quot;availPoint&quot;:&quot;1000&quot;,&quot;ciNo&quot;:&quot;KJtg9oH9xIyY/34cYuhU04xB0Fjyews8beiu9nLQGUyehYz4TTJPag6mwdXo1qN7q58eM7NAWHEdlYhTGQV0oA==&quot;,&quot;mobileNo&quot;:&quot;82-010-2326-2868&quot;,&quot;userId&quot;:&quot;wizkiki0625&quot;,&quot;birthDate&quot;:&quot;19740625&quot;,&quot;snsloginFlag&quot;:&quot;N&quot;,&quot;nextGradedateto&quot;:&quot;20271007&quot;}]">
+	<input type="hidden" id="lang" name="lang" value="ko">
+	<input type="hidden" id="email" name="email" value="wizkiki.jang@gmail.com">
+	
+	<input type="hidden" id="apiRequestType" name="apiRequestType" value="">
+	<input type="hidden" id="ffpNo" name="ffpNo" value="085065916">
+	<input type="hidden" id="userId" name="userId" value="wizkiki0625">
+	<input type="hidden" id="newId" name="newId" value="">
+	<input type="hidden" id="userPassword" name="userPassword" value="">
+	<input type="hidden" id="newPassword" name="newPassword" value="">
+	<input type="hidden" id="korLastName" name="korLastName" value="">
+	<input type="hidden" id="korFirstName" name="korFirstName" value="">
+	<input type="hidden" id="engLastName" name="engLastName" value="">
+	<input type="hidden" id="engFirstName" name="engFirstName" value="">
+	<input type="hidden" id="foreignerYn" name="foreignerYn" value="">
+	<input type="hidden" id="sex" name="sex" value="">
+	<input type="hidden" id="birthDate" name="birthDate" value="">
+	<input type="hidden" id="birthSolarLunar" name="birthSolarLunar" value="">
+	<input type="hidden" id="mobileNo" name="mobileNo" value="">
+	<input type="hidden" id="hidCountryCode" name="hidCountryCode" value="">	
+	<input type="hidden" id="emailAgreeYn" name="emailAgreeYn" value="">
+	<input type="hidden" id="smsAgreeYn" name="smsAgreeYn" value="">
+	<input type="hidden" id="passportNo" name="passportNo" value="">
+	<input type="hidden" id="nationalityCode" name="nationalityCode" value="">
+	<input type="hidden" id="countryCode" name="countryCode" value="">
+	<input type="hidden" id="ciNo" name="ciNo" value="">
+	<input type="hidden" id="parentCiNo" name="parentCiNo" value="">
+	<input type="hidden" id="diNo" name="diNo" value="">
+	<input type="hidden" id="parentConfirmYn" name="parentConfirmYn" value="">
+	<input type="hidden" id="parentName" name="parentName" value="">
+	<input type="hidden" id="requestChannelId" name="requestChannelId" value="HOMEPAGE">
+	<input type="hidden" id="requestUserId" name="requestUserId" value="wizkiki0625">
+	<input type="hidden" id="fmmbrenhs" name="fmmbrenhs" value="">
+	
+	<input type="hidden" id="mobileNoDuplicateYn" name="mobileNoDuplicateYn" value="">
+	<input type="hidden" id="emailDuplicateYn" name="emailDuplicateYn" value="">
+	<input type="hidden" id="auth" name="auth" value="success">
+</form>
+
+
+
+
+<div id="modalLayer01" class="modal modal-full modal-scroll modal--fixed-multi modal-inner_btn">
+    <div class="modal-header">
+      <div class="modal-header__title">인증코드 입력</div>
+    </div>
+    <div class="modal-content">
+      <div class="title">
+        <div class="title__page mobile-only">인증코드가 발송되었어요.</div>
+        <div class="title__page"><span class="text--color-org" id="mobileSpan"></span>인증코드가 발송되었어요.</div>
+      </div>
+
+      <div class="container--default pc-25">
+        <div class="input-wrap input--line">
+          <div class="input-row">
+            <div class="input-item input--error">
+              <div class="input-box">
+                <label for="inp" class="input__label">인증코드 입력 (6자리)<span title="required" class="input__label-asterisk">*</span></label>
+                <div class="input" data-element="form">
+                  <input type="text" class="input__text" data-element="input" id="inpCertify">
+                </div>
+              </div>
+              <!-- 입력 필드 하단 ‘다시받기’ 버튼 선택 시 재발송 텍스트 안내 -->
+              <p class="input__error" tabindex="0" id="txtCertify">인증코드가 다시 발송됐습니다.</p>
+              <!-- //입력 필드 하단 ‘다시받기’ 버튼 선택 시 재발송 텍스트 안내 -->
+  
+              <!-- 잘못된 인증코드 입력 시-->
+              <p class="input__error" tabindex="0" id="txtNoCertify">인증코드를 다시 확인해 주세요.</p>
+              <div class="button-wrap button-wrap--between">
+                <div class="sub-text date__text">유효시간 <span id="txtTimer"></span></div>
+                <button type="button" class="button button--optional"><span class="button__text text" id="btnCertify">다시받기</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div><!--modal-content-->
+    <div class="fixed-wrap fixed-wrap--multi-line border-none ">
+      <div class="button-wrap"><button id="btnPopupNext" type="button" class="button button--primary button--active">
+        <span class="button__text">다음</span></button>
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+
+<input type="hidden" id="modalLayer01Show" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full">
+				</main>
+			</div>
+			
+		</div>
+	</div>
+</html>

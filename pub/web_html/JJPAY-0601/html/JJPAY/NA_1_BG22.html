@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/jjpay.css">
+</head>
+
+<body>
+  <div class="modal open agreement-wrap">
+    <div class="modal-header">
+      <div class="modal-header__title">고유 식별정보 처리 동의</div>
+    </div>
+    <div class="modal-content">
+      <div class="section-wrap agreement">
+        <p class="row">
+          "이동통신3사(에스케이텔레콤㈜, ㈜케이티, ㈜엘지유플러스)(이하 '본인확인기관')가 ㈜케이지모빌리언스 (이하 '회사')을 통해
+          제공하는 휴대폰 본인확인 서비스 관련하여 이용자로부터 수집한 고유식별정보를 이용하거나 타인에게 제공할 때에는 '정보통신망
+          이용촉진 및 정보보호 등에 관한 법률'(이하 '정보통신망법')에 따라 이용자의 동의를 얻어야 합니다.
+        </p>
+        <h2>■ 제 1 조[고유식별정보의 처리 동의]</h2>
+        <p class="row">
+          '본인확인기관'은 정보통신망법 제23조의2 제2항에 따라 인터넷상에서 주민등록번호를 입력하지 않고도 본인임을 확인할 수 있는
+          휴대폰 본인확인서비스를 제공하기 위해 고유식별정보를 처리합니다.
+        </p>
+  
+        <h2>■ 제 2 조[고유식별정보의 제공 동의]</h2>
+        <p class="row">
+          '본인확인기관 지정 등에 관한 기준(방송통신위원회 고시)'에 따라 '회사'와 계약한 정보통신서비스 제공자 의 연계서비스 및
+          중복가입확인을 위해 아래와 같이 본인의 고유식별정보를 '다른 본인확인기관'에 제공하는 것에 동의합니다.
+          <h3>[고유식별정보 제공 동의]</h3>
+          <ul>
+            <li> 1. 제공자(본인확인기관)
+              <span class="inner">에스케이텔레콤㈜. ㈜케이티, ㈜엘지유플러스</span>
+            </li>
+            <li> 2. 제공 받는자(본인확인기관)
+              <span class="inner"> 에스케이텔레콤㈜: NICE신용평가정보㈜, 서울신용평가정보㈜
+                ㈜케이티: 코리아크레딧뷰로㈜, 서울신용평가정보㈜
+                ㈜엘지유플러스: 코리아크레딧뷰로㈜, 서울신용평가정보㈜</span>
+            </li>
+            <li> 3. 제공하는 항목
+              <span class="inner"> 생년월일, 성별 </span>
+            </li>
+            <li> 4. 제공 목적
+              <span class="inner">CI(연계정보), DI(중복가입확인정보)의 생성 및 전달</span>
+            </li>
+            <li> 5. 보유 및 이용기간
+              <span class="inner"> CI(연계정보), DI(중복가입확인정보) 생성 후 즉시 폐기</span>
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div class="fixed-wrap fixed-wrap--multi-line border-none">
+      <!-- checkbox 없는 경우 border-none class 추가 -->
+      <div class="button-wrap">
+        <button type="button" class="button button--active"><span class="button__text">동의</span></button>
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close" onclick="closeWindow ()"><span class="blind">닫기</span></a>
+  </div>
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script>
+    // 창닫기
+    function closeWindow() {
+      window.open('', '_self', '');
+      window.close();
+    }
+  </script>
+</body>
+
+</html>

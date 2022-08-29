@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/jjpay.css">
+</head>
+
+<body>
+  <div class="modal open no-btn">
+    <div class="modal-header">
+      <div class="modal-header__title">결제수단 등록</div>
+    </div>
+    <div class="modal-content">
+      <div class="title">
+        <div class="title__page jjpay_title">빠르고 편리하게 결제하세요</div>
+      </div>
+      <div class="section-wrap jjpay_list">
+        <div class="button-wrap">
+          <a href="#" class="button button--option"><span class="button__text button__icon button__icon--card">카드
+              등록</span></a>
+        </div>
+        <div class="button-wrap">
+          <a href="#" class="button button--option"><span class="button__text button__icon button__icon--account">계좌
+              등록</span></a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" rel="modal:close" class="modal__close" onclick="closeWindow ()"><span class="blind">닫기</span></a>
+  </div>
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script>
+    // 창닫기
+    function closeWindow() {
+      window.open('', '_self', '');
+      window.close();
+    }
+  </script>
+</body>
+
+</html>

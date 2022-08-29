@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- 개발시 삭제: robots -->
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+<title>제주항공</title>
+<link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+<link rel="stylesheet" href="../../assets/css/global.css">
+<link rel="stylesheet" href="../../assets/css/component.css">
+<link rel="stylesheet" href="../../assets/css/page.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+  <div class="air-map-wrap wrap">
+    <div id="airMap" class="air-map"></div>
+    <div class="tab-top">
+      <ul class="tab-top-list">
+        <li class="tab-top-item"><a href="#" class="tab-top-btn on">대한민국</a></li>
+        <li class="tab-top-item"><a href="#" class="tab-top-btn">동북아시아</a></li>
+        <li class="tab-top-item"><a href="#" class="tab-top-btn">동남아시아</a></li>
+        <li class="tab-top-item"><a href="#" class="tab-top-btn">대양주</a></li>
+        <li class="tab-top-item"><a href="#" class="tab-top-btn">러시아</a></li>
+      </ul>
+    </div>
+    <div class="tab-swipe">
+      <div class="tab-swipe-wrapper swiper-wrapper">
+        <a class="tab-swipe-item swiper-slide on">
+          <div class="city-name">서울(인천) <span class="sub">ICN</span></div>
+          <button type="button" class="btn-choose-city js-choose-city">선택</button>  
+          <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+        </a>
+        <a class="tab-swipe-item swiper-slide">
+          <div class="city-name">서울(김포) <span class="sub">GMP</span></div>
+          <button type="button" class="btn-choose-city js-choose-city">선택</button>  
+          <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+        </a>
+        <a class="tab-swipe-item swiper-slide">
+          <div class="city-name">부산 <span class="sub">PUS</span></div>
+          <button type="button" class="btn-choose-city js-choose-city">선택</button>  
+          <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+        </a>
+        <a class="tab-swipe-item swiper-slide">
+          <div class="city-name">제주 <span class="sub">CJU</span></div>
+          <button type="button" class="btn-choose-city js-choose-city">선택</button>  
+          <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+        </a>
+        <a class="tab-swipe-item swiper-slide">
+          <div class="city-name">제주 <span class="sub">CJU</span></div>
+          <button type="button" class="btn-choose-city js-choose-city">선택</button>  
+          <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+        </a>
+        <a class="tab-swipe-item swiper-slide">
+          <div class="city-name">제주 <span class="sub">CJU</span></div>
+          <button type="button" class="btn-choose-city js-choose-city">선택</button>  
+          <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+        </a>
+        <a class="tab-swipe-item swiper-slide">
+          <div class="city-name">제주 <span class="sub">CJU</span></div>
+          <button type="button" class="btn-choose-city js-choose-city">선택</button>  
+          <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+        </a>
+      </div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+
+<script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+<script src="../../assets/js/amcharts.core.js"></script>
+<script src="../../assets/js/maps.js"></script>
+<script src="../../assets/js/worldLow.js"></script>
+
+<script>
+// 출발, 도착 지도 탭
+$.fn.airMapInnerTab = function () {
+  return this.each(function (i) {
+    var flightMap = $(this);
+    var areaBtn = flightMap.find('.tab-top-btn');
+    var tabSwiper = flightMap.find('.tab-swipe');
+    var tabSwiperWrapper = flightMap.find('.tab-swipe-wrapper');
+    var areaBtn02 = flightMap.find('.tab-swipe-item');
+    var btnWish = flightMap.find('.btn-wish');
+    areaBtn.on('click', function (e) {
+      e.preventDefault();
+      areaBtn.removeClass('on');
+      $(this).addClass('on');
+    })
+    areaBtn02.on('click', function (e) {
+      e.preventDefault();
+      areaBtn02.removeClass('on');
+      $(this).addClass('on');
+      console.log('지도 위 하단탭');
+    })
+    // 하단 스와이프
+    var tabSwipe = new Swiper(tabSwiper, {    
+      slidesPerView: 'auto',
+    });
+  })
+}
+
+$('.air-map-wrap').airMapInnerTab();
+
+// am4 map
+function createAm4Map (mapNum) {
+  var chart = am4core.create(mapNum, am4maps.MapChart);
+  chart.geodata = am4geodata_worldLow;
+  chart.homeZoomLevel = 5;
+  chart.homeGeoPoint = {
+    latitude: 30,
+    longitude: 95
+  };
+  chart.projection = new am4maps.projections.Miller();
+  var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+  polygonSeries.useGeodata = true;
+}
+
+createAm4Map ('airMap')
+
+
+// 리스트, 맵 변경 
+function viewArea (target, type) {
+  var type = type;
+  if (target == 'start' && type == 'map')
+  {
+    $('.flight-start').addClass('map')
+  } 
+  else if (target == 'start' && type != 'map') 
+  {
+    $('.flight-start').removeClass('map')
+  } 
+  else if (target == 'target' && type == 'map') 
+  {
+    $('.flight-target').addClass('map')
+    createAm4Map ('map-target')
+  } 
+  else if (target == 'target' && type != 'map') 
+  {
+    $('.flight-target').removeClass('map')
+  }
+}
+
+</script>
+</body>
+</html>

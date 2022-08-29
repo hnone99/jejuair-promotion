@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <!-- header -->
+  <div id="header" class="header">
+     <!-- mobile -->
+     <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">1:1 문의 수정</h2>
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 스크롤시 스티키 상단 -->
+      <div>
+
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <!-- //mobile -->
+
+
+    <!-- pc용 공통 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+            <a href="#" class="header__link">이벤트</a>
+          </div>
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <!-- <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button> -->
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+                    <span class="hidden">검색창 닫기</span>
+                </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+
+          <!-- goto-quick-booking : 스티키 클릭용 -->
+          <div class="goto-quick-booking">
+            <a href="#a">
+              <span>어디로 여행가세요?</span>
+              <div class="goto-btn">
+                <span>항공권 검색</span>
+              </div>
+            </a>
+          </div>
+          <!-- //goto-quick-booking -->
+
+        </div>
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+    <!-- //pc용 공통 헤더 -->
+    <!-- pc용 공통 헤더 -->
+  </div>
+  <!-- //header -->
+
+  <div id="body">
+    <div class="wrap wrap--button MO">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">고객센터</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle" data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>
+            <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor">1:1 문의</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel">
+              <a href="#" class="item">고객센터</a>
+              <a href="#" class="item">1:1문의</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div class="page-title-wrap pc-only">
+            <div class="page-title">1:1 문의 수정</div>
+          </div>
+          <div class="section-wrap">
+            <div class="section-title">문의구분</div>
+            <div class="input-wrap input--line pc-col pc-col-2">
+              <div class="input-row">
+                <div class="input-item">
+                  <div class="input-label label-top">문의 유형<span title="required" class="input__label-asterisk">*</span></div>
+                  <div class="input-box">
+                    <div class="select-wrap select-wrap--line select-half">
+                      <select title="문의유형 선택" class="select-wrap__select" required>
+                        <option value="">선택</option>
+                        <option value="">Q&A</option>
+                        <option value="">항공권 영문 정정</option>
+                        <option value="">수하물 파손</option>
+                        <option value="">유실물</option>
+                        <option value="">기업우대 서비스</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Q&A선택시에만 노출-->
+              <div class="input-row">
+                <div class="input-item">
+                  <div class="input-label label-top">분류<span title="required" class="input__label-asterisk">*</span></div>
+                  <div class="input-box">
+                    <div class="select-wrap select-wrap--line">
+                      <select title="분류 선택" class="select-wrap__select" required>
+                        <option value="">선택</option>
+                        <option value="">항공권예약 발권/변경/취소</option>
+                        <option value="">리프레시 포인트</option>
+                        <option value="">홈페이지 & 모바일 이용</option>
+                        <option value="">공항서비스</option>
+                        <option value="">이벤트</option>
+                        <option value="">칭송</option>
+                        <option value="">기타</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--//Q&A선택시에만 노출-->
+            </div>
+
+            <div class="sub-section">
+              <!--Q&A-->
+              <div class="notice-box">
+                <h5 class="notice-box__title">꼭 확인해 주세요.</h5>
+                <p class="notice-box__text">기존 예약 관련 문의를 남기시는 경우, 반드시 [예약 정보]를 선택한 후 문의하시기 바랍니다.</p>
+                <p class="notice-box__text">다른 사이트 또는 여행사를 통한 예약인 경우, [다른 곳에서 항공권을 예매하셨나요?]에서 선택 할 수 있습니다.</p>
+              </div>
+  
+              <!--항공권 영문 정정-->
+              <div class="notice-box">
+                <h5 class="notice-box__title">꼭 확인해 주세요.</h5>
+                <p class="notice-box__text">변경하실 영문명의 발음이 변경 전과 동일한 경우에만 정정할 수 있습니다.</p>
+                <p class="notice-box__text">정정 가능 여부는 접수 후 문자로 발송해 드립니다.</p>
+                <p class="notice-box__text">여행사에서 구매하신 항공권인 경우 해당 구매처로 문의해 주세요.</p>
+              </div>
+  
+              <!--수하물 파손-->
+              <div class="notice-box">
+                <h5 class="notice-box__title">꼭 확인해 주세요.</h5>
+                <p class="notice-box__text">수하물 파손에 대한 배상은 수하물을 인도받은 날로부터 7일 이내에 신청해야 합니다.</p>
+              </div>
+
+  
+              <!--유실물-->
+              <div class="notice-box">
+                <h5 class="notice-box__title">꼭 확인해 주세요.</h5>
+                <p class="notice-box__text">문의하기 전에 먼저 기내 유실물 센터 서비스를 이용해 주세요.</p><!--20210813 링크삭제(개발요청)-->
+                <p class="notice-box__text">제주항공 규정에 따라 30일 이내에 유실물의 주인이 나타나지 않을 경우 해당 유실물은 폐기됩니다.</p>
+              </div>
+  
+              <!--기업우대 서비스-->
+              <div class="notice-box">
+                <h5 class="notice-box__title">꼭 확인해 주세요.</h5>
+                <p class="notice-box__text">문의하기 전에 <a href="" class="link-wrap__underline link-wrap__underline--gray"><span>기업우대 서비스</span></a> 화면을  먼저 살펴보세요.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 문의작성 -->
+          <div class="section-wrap">
+            <div class="section-title">문의 작성</div>
+
+            <div class="">
+              <div class="section-sub-title">예약정보</div>
+              <div class="section-sub-txt">문의하실 예약 정보를 선택해 주세요.</div>
+  
+              <!--나의 예약조회-->
+              <div class="gray-box boarding-box-in">
+                <!--여정카드-->
+                <div class="boarding-list-pc">
+                  <div class="boarding-wrap">
+                    <div class="boarding-box">     
+                        <div class="boarding">
+                          <div class="boarding__header">
+                            <div class="boarding__header--item1">
+                              <span>예약번호</span> : <span>8GPR4</span>
+                            </div>
+                            <div class="boarding__header--item2">
+                              <button type="button" aria-label="삭제" class="button-delete"></button> 
+                            </div>
+                          </div>
+  
+                          <div class="boarding__info-wrap">
+                            <div class="boarding__info--top">
+                              <div class="boarding__info--top-item1"><span>7C133</span></div>
+                              <div class="boarding__info--top-item2">
+                                <div class="boarding__info-date">2020.10.11 / 12:30</div>
+                                <div class="label label-blue">D-90</div>
+                              </div>
+                            </div>
+  
+                            <div class="boarding__info">
+                              <div class="boarding__info-before">
+                                <div class="boarding__info-title">서울</div>
+                                <div class="boarding__info-text">김포</div>
+                              </div>
+                              <span aria-label="via" class="icon-mark via"></span>
+                              <div class="boarding__info-after">
+                                <div class="boarding__info-title">오사카</div>
+                                <div class="boarding__info-text">간사이</div>
+                              </div>
+                            </div>
+  
+                            <div class="boarding__info--bot line--solid">
+                              <div class="boarding__info--bot-wrap">
+                                <div class="boarding__info--bot-item1 person">
+                                  <div class="person__item"><i aria-label="성인" class="icon adult"></i><span>2</span><span
+                                      class="hidden">명</span></div>
+                                  <div class="person__item"><i aria-label="유아" class="icon child"></i><span>1</span><span
+                                      class="hidden">명</span></div>
+                                  <div class="person__item"><i aria-label="소아" class="icon baby"></i><span>1</span><span
+                                      class="hidden">명</span></div>
+                                </div>
+                                <div class="boarding__info--bot-item2">
+                                  <span class="text c-gray --bold">예약완료</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!--//boarding-->
+                      </div>  
+                      <!--// boarding-box-->
+                  </div>
+                </div>
+                <!--// boarding-wrap-->
+                <!--//여정카드-->
+                <div class="sub-section align-center">
+                  <a href="#" class="button button--optional button--border-org"><span class="button__text">나의 예약 조회</span></a>
+                  <div class="mo-15 pc-15">
+                    <a href="#" class="link-wrap__underline link-wrap__underline--gray"><span>다른 곳에서 항공권을 예매하셨나요?</span></a>
+                  </div>
+                </div>
+              </div>
+              <!--//나의 예약조회-->
+  
+              <!-- // 기본정보 -->
+              <div class="section-wrap">
+                <div class="input-wrap input--line input-flex  pc-col pc-col-2">
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-box label-active">
+                        <label for="inp" class="input__label">성명<span title="required" class="input__label-asterisk">*</span></label>
+                        <div data-element="form" class="input">
+                          <input type="text" data-element="input" id="inp" value="김제주" class="input__text">
+                          <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                        </div>
+                      </div>
+                      <p tabindex="0" class="input__error">에러메세지</p>
+                    </div>
+                  </div>
+  
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-box label-active">
+                        <label for="inputnumber" class="input__label">전화번호<span title="required" class="input__label-asterisk">*</span></label>
+                        <div data-element="form" class="input">
+                          <input type="tel" data-element="input" id="inputnumber" value="010 1234 5678" class="input__text">
+                          <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                        </div>
+                      </div>
+                      <p tabindex="0" class="input__error">에러메세지</p>
+                    </div>
+                  </div>
+  
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-box label-active">
+                        <label for="inputEmail1" class="input__label">이메일<span title="required" class="input__label-asterisk">*</span></label>
+                        <div data-element="form" class="input">
+                          <input type="text" id="inputEmail1" value="kimjeju@naver.com" class="input__text" >
+                          <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                        </div>
+                      </div>
+                      <p tabindex="0" class="input__error">에러메세지</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <div data-element="checkList" class="check-wrap">
+                  <span class="checkbox checkbox--small">
+                    <input type="checkbox" id="inputCheck6" data-element="checkbox" class="checkbox__input" checked >
+                    <label for="inputCheck6" class="checkbox__label">
+                      <i aria-hidden="true" class="checkbox__ico"></i>
+                      <span>이메일로 답변 받기</span>
+                    </label>
+                  </span>
+                </div>
+
+              </div>
+              <!-- // 기본정보 -->
+  
+              <div class="section-wrap">
+                <div class="input-wrap input--line input-flex  pc-col pc-col-2">
+                  <!--항공권 영문 정정-->
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-box">
+                        <label for="inp" class="input__label">예약번호<span title="required" class="input__label-asterisk">*</span></label>
+                        <div data-element="form" class="input">
+                          <input type="text" data-element="input" id="inp" value="" class="input__text">
+                          <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                        </div>
+                      </div>
+                      <p tabindex="0" class="input__error">에러메세지</p>
+                      <p class="input__sub-text">예) A1234</p>
+                    </div>
+                  </div>
+  
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-box">
+                        <label for="inputnumber" class="input__label">탑승자 성명<span title="required" class="input__label-asterisk">*</span></label>
+                        <div data-element="form" class="input">
+                          <input type="text" data-element="input" id="inputnumber" value="" class="input__text">
+                          <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                        </div>
+                      </div>
+                      <p tabindex="0" class="input__error">에러메세지</p>
+                    </div>
+                  </div>
+  
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-box">
+                        <label for="inputEmail1" class="input__label">변경할 영문 이름<span title="required" class="input__label-asterisk">*</span></label>
+                        <div data-element="form" class="input">
+                          <input type="text" id="inputEmail1" value="" class="input__text" >
+                          <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                        </div>
+                      </div>
+                      <p tabindex="0" class="input__error">에러메세지</p>
+                      <p class="input__sub-text">예) GILDONG</p>
+                    </div>
+                  </div>
+  
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-box">
+                        <label for="inputEmail1" class="input__label">변경할 영문 성<span title="required" class="input__label-asterisk">*</span></label>
+                        <div data-element="form" class="input">
+                          <input type="text" id="inputEmail1" value="" class="input__text" >
+                          <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                        </div>
+                      </div>
+                      <p tabindex="0" class="input__error">에러메세지</p>
+                      <p class="input__sub-text">예) HONG</p>
+                    </div>
+                  </div>
+                  <!--//항공권 영문 정정-->
+                </div>
+                <div class="input-wrap input--line input-flex  pc-col pc-col-2">
+                  <!--수하물 파손-->
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-label label-top">출발지<span title="required" class="input__label-asterisk">*</span></div>
+                      <div class="input-box">
+                        <div class="select-wrap select-wrap--line select-half">
+                          <select title="출발지 선택" class="select-wrap__select" required>
+                            <option value="">선택</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-label label-top">도착지<span title="required" class="input__label-asterisk">*</span></div>
+                      <div class="input-box">
+                        <div class="select-wrap select-wrap--line select-half">
+                          <select title="도착지 선택" class="select-wrap__select" required>
+                            <option value="">선택</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-label label-top">탑승일<span title="required" class="input__label-asterisk">*</span></div>
+                      <div class="input-box">
+                        <button type="button" class="picker picker--button" data-element="modal_anchor" data-modal-type="datepicker" data-target="">YYYY.MM.DD</button>
+                      </div>
+                      <p tabindex="0" class="input__error">에러메세지</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrap input--line input-flex  pc-col pc-col-2">
+                  <!--//수하물 파손-->
+                  <!--유실물-->
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-label label-top">출발지<span title="required" class="input__label-asterisk">*</span></div>
+                      <div class="input-box">
+                        <div class="select-wrap select-wrap--line select-half">
+                          <select title="출발지 선택" class="select-wrap__select" required>
+                            <option value="">선택</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-label label-top">도착지<span title="required" class="input__label-asterisk">*</span></div>
+                      <div class="input-box">
+                        <div class="select-wrap select-wrap--line select-half">
+                          <select title="도착지 선택" class="select-wrap__select" required>
+                            <option value="">선택</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-label label-top">탑승일<span title="required" class="input__label-asterisk">*</span></div>
+                      <div class="input-box">
+                        <button type="button" class="picker picker--button" data-element="modal_anchor" data-modal-type="datepicker" data-target="">YYYY.MM.DD</button>
+                      </div>
+                      <p tabindex="0" class="input__error">에러메세지</p>
+                      <p class="input__sub-text">예) GILDONG</p>
+                    </div>
+                  </div>
+  
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-box">
+                        <label for="inputEmail1" class="input__label">좌석번호</label>
+                        <div data-element="form" class="input">
+                          <input type="text" id="inputEmail1" value="" class="input__text" >
+                          <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                        </div>
+                      </div>
+                      <p tabindex="0" class="input__error">에러메세지</p>
+                      <p class="input__sub-text">예) 10A</p>
+                    </div>
+                  </div>
+  
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-box">
+                        <label for="inputEmail1" class="input__label">물품명<span title="required" class="input__label-asterisk">*</span></label>
+                        <div data-element="form" class="input">
+                          <input type="text" id="inputEmail1" value="" class="input__text" >
+                          <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                        </div>
+                      </div>
+                      <p tabindex="0" class="input__error">에러메세지</p>
+                      <p class="input__sub-text">예) 아이폰X</p>
+                    </div>
+                  </div>
+  
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-label label-top">품목<span title="required" class="input__label-asterisk">*</span></div>
+                      <div class="input-box">
+                        <div class="select-wrap select-wrap--line select-half">
+                          <select title="품목 선택" class="select-wrap__select" required>
+                            <option value="">선택</option>
+                            <option value="">전체</option>
+                            <option value="">휴대전화</option>
+                            <option value="">책</option>
+                            <option value="">안경</option>
+                            <option value="">베개</option>
+                            <option value="">의류</option>
+                            <option value="">전자제품</option>
+                            <option value="">지갑</option>
+                            <option value="">서류</option>
+                            <option value="">액세서리</option>
+                            <option value="">가방류</option>
+                            <option value="">기타</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="input-row">
+                    <div class="input-item">
+                      <div class="input-label label-top">색상<span title="required" class="input__label-asterisk">*</span></div>
+                      <div class="input-box">
+                        <div class="select-wrap select-wrap--line select-half">
+                          <select title="색상 선택" class="select-wrap__select" required>
+                            <option value="">선택</option>
+                            <option value="">전체</option>
+                            <option value="">흰색 (화이트)</option>
+                            <option value="">검정색 (블랙)</option>
+                            <option value="">빨간색 (레드)</option>
+                            <option value="">주황색 (오렌지)</option>
+                            <option value="">노란색 (옐로우)</option>
+                            <option value="">초록색 (그린)</option>
+                            <option value="">파란색 (블루)</option>
+                            <option value="">갈색 (브라운)</option>
+                            <option value="">보라색 (바이올렛)</option>
+                            <option value="">분홍색 (핑크)</option>
+                            <option value="">기타</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+                <!--//유실물-->
+              </div>
+            </div>
+          </div>
+          <!-- //문의작성 -->
+
+          <!--문의내용-->
+          <div class="section-wrap">
+            <div class="section-sub-title">문의 내용 <span class="text-asterisk">*</span></div>
+            <div class="section-sub-txt">주민등록번호와 같은 중요한 개인정보는 기재하지 마세요.</div>
+            <div class="textarea-wrap">
+              <div data-element="form" class="textarea">
+                <textarea id="textarea1" cols="30" rows="5" data-element="textarea" class="textarea__input" placeholder=""></textarea>
+              </div>
+            </div>
+          </div>
+          <!--//문의내용-->
+
+          <!--사진 첨부-->
+          <div class="section-wrap">
+            <div class="section-sub-title">사진 첨부</div>
+            <div class="input-row">
+              <div class="file file-scroll" data-element="file__wrap">
+                <label for="inputFile" class="file__label" data-element="file__label" aria-label="사진 첨부"></label>
+                <input type="file" class="file__input" id="inputFile" data-element="file__input" multiple>
+                <div class="file__images" data-element="file__images"></div>
+              </div>
+            </div>
+            <div class="guide-info guide-info--gray">
+              <p class="guide-info__text">사진은 최대 10개/10MB까지 첨부할 수 있습니다. (파일 형식 : JPG, GIF, PNG, PDF)</p>
+            </div>
+          </div>
+          <!--//사진 첨부-->
+          
+          <div class="section-wrap">
+            <div class="check-wrap">
+              <span class="checkbox checkbox--small">
+                <input type="checkbox" class="checkbox__input" id="inputCheck2" data-element="checkbox">
+                <label for="inputCheck2" class="checkbox__label">
+                  <i class="checkbox__ico" aria-hidden="true"></i>
+                  <span>[필수] 문의 정보 저장 동의</span>
+                </label>
+              </span>
+            </div>
+          </div>
+
+          <div class="button-wrap section-wrap" data-element="bottomContent">
+            <button type="button" class="button button--primary button--active"><span class="button__text">수정하기</span></button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+  <!-- // #body -->
+  
+   <!-- FOOTER -->
+     <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+    <div class="footer pc-only">
+      <!-- pc -->
+      <footer class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__top-item">
+            <a href="#" class="footer__top-link">제주항공 소개</a>
+          </div>
+          <div class="footer__top-item">
+            <a href="#" class="footer__top-link">투자정보</a>
+          </div>
+          <div class="footer__top-item">
+            <a href="#" class="footer__top-link">채용안내</a>
+          </div>
+          <div class="footer__top-item">
+            <a href="#" class="footer__top-link">여객운송약관</a>
+          </div>
+          <div class="footer__top-item">
+            <a href="#" class="footer__top-link">홈페이지이용약관</a>
+          </div>
+          <div class="footer__top-item footer__top-item--privacy">
+            <a href="#" class="footer__top-link">개인정보처리방침</a>
+          </div>
+          <div class="footer__top-item">
+            <a href="#" class="footer__top-link">사이트맵</a>
+          </div>
+
+          <div class="footer__top-item footer__top-item--family">
+            <div class="family-wrap" data-element="toggle"
+              data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+              <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+              <div class="family-list" data-element="toggle__panel">
+                <a href="#" class="family-link">㈜애경산업</a>
+                <a href="#" class="family-link">㈜에이텍</a>
+                <a href="#" class="family-link">애경S.T</a>
+                <a href="#" class="family-link">에이케이아이에스㈜</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer__spacer">
+
+        <div class="footer__bottom">
+          <a href="#" class="footer__logo">
+        <img src="../../assets/images/upload/logo_jeju_gray.png" alt="jeju Air"><!--2021-04-13 이미지로 변경-->
+      </a>
+          <div class="footer__bottom-contents">
+            <div class="footer__bottom-info">
+              <div class="info-item">
+                <a href="#" class="link">항공교통이용자 서비스 계획</a>
+              </div>
+              <div class="info-item">
+                <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+              </div>
+              <div class="info-item">
+                <a href="#" class="link">항공위험물안내</a>
+              </div>
+            </div>
+            <div class="footer__bottom-recommand">
+              <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+              <div class="recommand-list">
+                <div class="recommand-item">
+                  <a href="#" class="link">최저 운임 항공권</a>
+                </div>
+                <div class="recommand-item">
+                  <a href="#" class="link">서울 출발 항공권</a>
+                </div>
+                <div class="recommand-item">
+                  <a href="#" class="link">제주 출발 항공권</a>
+                </div>
+                <div class="recommand-item">
+                  <a href="#" class="link">부산 출발 항공권</a>
+                </div>
+                <div class="recommand-item">
+                  <a href="#" class="link">무안 출발 항공권</a>
+                </div>
+                <div class="recommand-item">
+                  <a href="#" class="link">청부 출발 항공권</a>
+                </div>
+                <div class="recommand-item">
+                  <a href="#" class="link">대구 출발 항공권</a>
+                </div>
+                <div class="recommand-item">
+                  <a href="#" class="link">광주 출발 항공</a>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom-util">
+              <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png" alt="VALUE ALLIANCE"></a>
+              <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
+              <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt=""> Android</a>
+            </div>
+            <p class="footer__bottom-address">대표이사 김이배 사업자등록번호 616-81-50527 통신판매업신고 제주 2006-125호 제주특별자치도 제주시 신대로 64
+              3층(연동, 건설공제회관) <br>서울지사 서울시 강서구 하늘길 210 국제화물청사 366</p>
+            <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- //pc -->
+    </div>
+  <!-- //FOOTER -->
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

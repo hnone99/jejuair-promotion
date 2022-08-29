@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+
+      <div class="header__stepper">
+        <ol class="stepper__group_new booking_step">
+          <li>
+            <span class="step">1</span>
+            <span class="text">항공권선택</span>
+          </li>
+          <li>
+            <span class="step">2</span>
+            <span class="text">탑승객 정보 입력</span>
+          </li>
+          <li class="active"><!--활성화 스탭 .active 추가-->
+            <span class="step">3</span>
+            <span class="text">부가서비스 선택
+              <span class="sub-step"><span class="color-org">2</span>/3 <span>수하물 구매</span></span>
+            </span>
+          </li>
+          <li>
+            <span class="step">4</span>
+            <span class="text">확인 및 동의</span>
+          </li>
+          <li>
+            <span class="step">5</span>
+            <span class="text">결제</span>
+          </li>
+        </ol>
+      </div>
+
+      <!-- <div class="header__text">
+        <span class="color-org">2</span>/<span>3</span> <span>수하물 구매</span>
+      </div> -->
+    </header>
+    <!-- 예매 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner header__inner--step pc-only "><!--step 스타일 변경-->
+
+      <div class="sticky-header" data-sticky="">
+        <div class="header__box">
+          <h1 class="header__logo">
+            <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+          </h1>
+          <h2 class="header__page-name">항공권 예매</h2>
+
+          <div class="header__stepper">
+            <ol class="stepper__group_new booking_step">
+              <li>
+                <span class="step">1</span>
+                <span class="text">항공권선택</span>
+              </li>
+              <li>
+                <span class="step">2</span>
+                <span class="text">탑승객 정보 입력</span>
+              </li>
+              <li class="active"><!--활성화 스탭 .active 추가-->
+                <span class="step">3</span>
+                <span class="text">부가서비스 선택
+                  <span class="sub-step"><span class="color-org">2</span>/3 <span>수하물 구매</span></span>
+                </span>
+              </li>
+              <li>
+                <span class="step">4</span>
+                <span class="text">확인 및 동의</span>
+              </li>
+              <li>
+                <span class="step">5</span>
+                <span class="text">결제</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- // 예매 헤더 -->
+  </div>
+
+  <div class="wrap wrap--booking">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <div class="button-wrap button-wrap--center">
+          <button type="button" class="button button--secondary button--active" data-target-open="sheet01"><span
+              class="button__text">수하물 선택시</span></button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- 수하물 선택시 -->
+  <div data-target="sheet01" class="bottom-sheet bottom-sheet-scroll" data-element="bottomSheet" >
+    <div class="bottom-sheet__top">
+      <div class="title">
+        <h2 class="title__main">수하물을 구매할 승객을 <br class="mobile-only">선택해 주세요.</h2>
+      </div>
+    </div>
+    <div class="bottom-sheet__bot bottom-sheet__bot--amount">
+      <div class="add-baggage">
+        <div class="img">
+          <img src="../../assets/images/icon/icon-baggage-mini.png" alt="">
+        </div>
+        <span class="text text--bold">위탁 수하물 20KG</span>
+      </div>
+      <!-- <div class="gray-box gray-box--no-margin">
+        <div class="text">
+          <p class="text__default flex-text">
+            <span>기본 제공</span>
+            <span class="flex-text__additional text--regular">좌석 밑 수납 5KG</span>
+          </p>
+          <p class="text__default text--bold flex-text">
+            <span>추가할 수하물</span>
+            <span class="flex-text__additional">대형수하물 1개 15KG</span>
+          </p>
+        </div>
+      </div> -->
+      <div class="check-wrap check-wrap--round">
+        <div class="check-item checkbox-line-item-wrap">
+          <div class="checkbox-line-item">
+            <span class="checkbox checkbox--small">
+              <input type="checkbox" id="inputCheck1" data-element="checkbox" checked class="checkbox__input">
+              <label for="inputCheck1" class="checkbox__label">
+                <i aria-hidden="true" class="checkbox__ico"></i>
+                <span>KIM/SOA</span>
+              </label>
+            </span>
+          </div>
+        </div>
+        <div class="check-item checkbox-line-item-wrap">
+          <div class="checkbox-line-item">
+            <span class="checkbox checkbox--small">
+              <input type="checkbox" id="inputCheck2" data-element="checkbox" class="checkbox__input">
+              <label for="inputCheck2" class="checkbox__label">
+                <i aria-hidden="true" class="checkbox__ico"></i>
+                <span>KIM/JEJU</span>
+              </label>
+            </span>
+          </div>
+        </div>
+        <div class="check-item checkbox-line-item-wrap">
+          <div class="checkbox-line-item">
+            <span class="checkbox checkbox--small">
+              <input type="checkbox" id="inputCheck3" data-element="checkbox" disabled class="checkbox__input">
+              <label for="inputCheck3" class="checkbox__label">
+                <i aria-hidden="true" class="checkbox__ico"></i>
+                <span>LEE/HANGGONG</span>
+              </label>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-sheet__fixed pc-full">
+      <div class="bottom-sheet__amount">
+        <span class="bottom-sheet__amount-text">추가금액</span>
+        <strong class="bottom-sheet__amount-value"><i aria-label="plus">+</i> <span>120,000</span>원</strong>
+      </div>
+      <div class="button-wrap button-wrap-stick pc-0 pc-radius">
+        
+        <button type="button" class="button button--primary"><span class="button__text">선택 완료</span></button><!-- D : 활성화 클래스 button--active -->
+      </div>
+    </div>
+    <button type="button" class="bottom-sheet__button-close" data-element="bottomSheet__button-close"
+      aria-label="하단시트 닫기"></button>
+  </div>
+  <!-- //수하물 선택시 -->
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+
+      <div class="header__stepper">
+        <ol class="stepper__group_new booking_step">
+          <li>
+            <span class="step">1</span>
+            <span class="text">항공권선택</span>
+          </li>
+          <li>
+            <span class="step">2</span>
+            <span class="text">탑승객 정보 입력</span>
+          </li>
+          <li class="active"><!--활성화 스탭 .active 추가-->
+            <span class="step">3</span>
+            <span class="text">부가서비스 선택
+              <span class="sub-step"><span class="color-org">3</span>/3 <span>상품 담기</span></span>
+            </span>
+          </li>
+          <li>
+            <span class="step">4</span>
+            <span class="text">확인 및 동의</span>
+          </li>
+          <li>
+            <span class="step">5</span>
+            <span class="text">결제</span>
+          </li>
+        </ol>
+      </div>
+    </header>
+    <!-- 예매 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div class="select-wrap select-wrap--line">
+                <select title="국가 선택" class="select-wrap__select">
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div class="select-wrap select-wrap--line">
+                <select class="select-wrap__select" title="언어 선택"> 
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+  
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner header__inner--step pc-only"><!--step 스타일 변경-->
+      <div class="sticky-header" data-sticky="">
+        <div class="header__box">
+          <h1 class="header__logo">
+            <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+          </h1>
+          <h2 class="header__page-name">항공권 예매</h2>
+
+          <div class="header__stepper">
+            <ol class="stepper__group_new booking_step">
+              <li>
+                <span class="step">1</span>
+                <span class="text">항공권선택</span>
+              </li>
+              <li>
+                <span class="step">2</span>
+                <span class="text">탑승객 정보 입력</span>
+              </li>
+              <li class="active"><!--활성화 스탭 .active 추가-->
+                <span class="step">3</span>
+                <span class="text">부가서비스 선택
+                  <span class="sub-step"><span class="color-org">3</span>/3 <span>상품 담기</span></span>
+                </span>
+              </li>
+              <li>
+                <span class="step">4</span>
+                <span class="text">확인 및 동의</span>
+              </li>
+              <li>
+                <span class="step">5</span>
+                <span class="text">결제</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <!-- <div class="header__text">
+          <div class="inner"><span class="color-org">3</span>/<span>3</span> <span>상품 담기</span></div>
+        </div> -->
+      </div>
+    </header>
+    <!-- // 예매 헤더 -->
+  </div>
+  <div id="body">
+    <div class="wrap wrap--booking NA_1_94">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <strong class="breadcrumb__link" aria-current="page">예약</strong>
+          </div>
+          <div class="breadcrumb__item">
+            <strong class="breadcrumb__link breadcrumb__link--current" aria-current="page">항공권 예매</strong>
+          </div>
+          <div class="breadcrumb__item">
+            <strong class="breadcrumb__link breadcrumb__link--current" aria-current="page">부가서비스 선택</strong>
+          </div>
+        </nav>
+      </div>
+      
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div class="page-title-wrap">
+            <div class="page-sub-title">여행에 활기를 더해주는 <br class="mobile-only"> 제주항공 굿즈</div>
+            <div class="default-message default-message--sub" data-default-message>
+              <i class="default-message__arrow" aria-hidden="true" style="left:45px;"></i>
+              <p class="default-message__text">지금 찜하면 10% 할인!</p>
+              <button type="button" class="default-message__close" aria-label="닫기"></button>
+            </div>
+          </div>
+
+          <div class="container--default pc-30">
+            <div class="list-product list-product--type2 pc-col pc-col-3">
+              <div class="list-product__item">
+                <a href="#" class="list-product__inner">
+                  <div class="list-product__image">
+                    <img src="../../assets/images/@temp/@air-cafe-01.png" alt="상품이미지">
+                    <div class="label-wrap">
+                      <span class="label-wrap__item label-wrap__item--new">NEW</span>
+                      <span class="label-wrap__item label-wrap__item--sale">SALE</span>
+                      <span class="label-wrap__item label-wrap__item--best">BEST</span>
+                    </div>
+                  </div>
+                  <div class="list-product__info">
+                    <div class="list-product__title">
+                      <span class="title">제주항공 X 펭수 모형 비행기</span>
+                      <span class="remaining">10개 남음</span>
+                    </div>
+                    <div class="cost-wrap">
+                      <div class="cost-wrap__before">
+                        <span aria-label="할인" class="discount">10%할인</span>
+                        <del class="del">6,000원</del>
+                      </div>
+                      <div class="cost-wrap__after">
+                        <span class="cost">5,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="add-cart">
+                  <button type="button" class="button button--small button--small-cart"><span
+                      class="button__text button__icon icon-cart">담기</span></button>
+                </div>
+              </div>
+
+              <div class="list-product__item">
+                <a href="#" class="list-product__inner">
+                  <div class="list-product__image">
+                    <img src="../../assets/images/@temp/@air-cafe-02.png" alt="상품이미지">
+                  </div>
+                  <div class="list-product__info">
+                    <div class="list-product__title">
+                      <span class="title">기내담요 세트</span>
+                      <span class="remaining">10개 남음</span>
+                    </div>
+                    <div class="cost-wrap">
+                      <div class="cost-wrap__after">
+                        <span class="cost">5,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="add-cart">
+                  <button type="button" class="button button--small button--small-cart"><span
+                      class="button__text button__icon icon-cart">담기</span></button>
+                </div>
+              </div>
+
+              <div class="list-product__item list-product__item--sold-out">
+                <a href="#" class="list-product__inner">
+                  <div class="list-product__image">
+                    <img src="../../assets/images/@temp/@air-cafe-01.png" alt="상품이미지">
+                    <div class="label-wrap">
+                      <span class="label-wrap__item label-wrap__item--new">NEW</span>
+                      <span class="label-wrap__item label-wrap__item--sale">SALE</span>
+                      <span class="label-wrap__item label-wrap__item--best">BEST</span>
+                    </div>
+                  </div>
+                  <div class="list-product__info">
+                    <div class="list-product__title">
+                      <span class="title">제주항공 X 펭수 모형 비행기</span>
+                      <span class="remaining">SOLD OUT</span>
+                    </div>
+                    <div class="cost-wrap">
+                      <div class="cost-wrap__after">
+                        <span class="cost">5,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="add-cart">
+                  <button type="button" class="button button--small button--small-cart"><span
+                      class="button__text button__icon icon-cart">담기</span></button>
+                </div>
+              </div>
+
+              <div class="list-product__item">
+                <a href="#" class="list-product__inner">
+                  <div class="list-product__image">
+                    <img src="../../assets/images/@temp/@air-cafe-02.png" alt="상품이미지">
+                  </div>
+                  <div class="list-product__info">
+                    <div class="list-product__title">
+                      <span class="title">기내담요 세트</span>
+                      <span class="remaining">10개 남음</span>
+                    </div>
+                    <div class="cost-wrap">
+                      <div class="cost-wrap__after">
+                        <span class="cost">5,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="add-cart">
+                  <button type="button" class="button button--small button--small-cart"><span
+                      class="button__text button__icon icon-cart">담기</span></button>
+                </div>
+              </div>
+              <!-- 더보기 -->
+              <div class="more-wrap mobile-only">
+                <button type="button" class="more__button"><span class="more__button-text">더보기</span></button>
+              </div>
+            </div>
+          </div>
+
+          <!--토스트 팝업-->
+          <div class="toast is-active">
+            <div class="toast-box">
+              <p class="toast__text">KIM JEJU 외 2명의 카트에 상품을 담았어요.</p>
+            </div>
+            <div class="toast-box">
+              <p class="toast__text">KIM JEJU 외 2명의 카트에 상품을 담았어요.</p>
+            </div>
+          </div><!--활성화시 .is-active 추가-->
+
+          <div class="only-320 mt50"></div><!--20210608 추가 320 사이즈 하단 여백-->
+
+          <div class="booking-sticky booking-sticky--reservation" data-element="toggle" data-options='{"mode": "slide"}'>
+            <div class="reservation-container">
+              <div class="booking-sticky__top">
+                <div class="toggle-wrap toggle-wrap--button toggle-wrap--height">
+                  <!-- 결제금액에 포인트 내용이 있을 경우 toggle-wrap--height class 추가 -->
+                  <!-- 포인트 결재시 label--point 추가-->
+                  <div class="label label--point">
+                    <span>예상 결제금액</span>
+                    <button type="button" class="icon">
+                      <span class="hidden">예상 결제금액 상세</span>
+                    </button>
+                  </div>
+                  <!-- Point 의 경우 summary--point 클래스 및 추가 -->
+                  <button type="button" class="summary summary--point" data-element="toggle__anchor">
+                    <span class="cost">
+                      <span class="price_txt">1,508,000</span>
+                      <span class="unit">원</span>
+                    </span>
+                    <!-- Point 일 경우 추가 -->
+                    <span class="point">
+                      <span class="cost">
+                        <span class="price_txt">+ 508,000</span>
+                        <span class="unit">P</span>
+                      </span>
+                    </span>
+                    <!-- // Point 일 경우 추가 -->
+                  </button>
+                </div>
+                <button type="button" class="button button--primary button--black pc-only">
+                  <span class="button__text">담은상품 (0)</span>
+                </button>
+                <button type="button" class="button button--primary button--active pc-only">
+                  <span class="button__text">다음</span>
+                </button>
+              </div>
+              <div class="booking-sticky__bottom line -limitH" data-element="toggle__panel">
+                <!-- [수정 : 210223] -limitH class 추가 -->
+                <div class="title">
+                  <h3 class="title__section title__section--small">항목별 운임 상세</h3>
+                </div>
+                <h4 class="text__default text--bold">항공 운송료</h4>
+                <div class="itemize__item">
+                  <div class="flex-text">
+                    <div class="flex-text__title">항공운임 </div>
+                    <div class="flex-text__additional">123,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title">공항시설 사용료</div>
+                    <div class="flex-text__additional">10,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title">유류할증료</div>
+                    <div class="flex-text__additional">10,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title">비동반 소아 서비스 신청</div>
+                    <div class="flex-text__additional">10,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title color-org">신규 가입 할인</div>
+                    <div class="flex-text__additional color-org">- 10,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title color-org">개인 신분 할인</div>
+                    <div class="flex-text__additional color-org">- 10,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title color-org">프로모션 코드 할인</div>
+                    <div class="flex-text__additional color-org">- 10,000원</div>
+                  </div>
+                </div>
+
+                <div class="container--default pc-20">
+                  <h4 class="text__default text--bold">부가서비스</h4>
+                  <div class="itemize__item">
+                    <div class="flex-text">
+                      <div class="flex-text__title">번들 FLY</div>
+                      <div class="flex-text__additional">20,000원</div>
+                    </div>
+                    <div class="flex-text">
+                      <div class="flex-text__title">좌석 선택</div>
+                      <div class="flex-text__additional">10,000원</div>
+                    </div>
+                    <div class="flex-text">
+                      <div class="flex-text__title">수하물</div>
+                      <div class="flex-text__additional">10,000원</div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="guide-info guide-info--gray">
+                  <li class="guide-info__text">한국출발 세금(BP)에는 국제 여객항공이용료(인천/김포공항 17,000원, 기타 12,000원), 출국납부금 10,000원, 국제
+                    빈곤퇴치기여금 1,000원이 포함되어 있습니다.</li>
+                  <li class="guide-info__text">공항이용료의 경우 선택하신 여정 종류(TRANSFER/TRANSIT)에 따라 금액이 변동 될 수 있습니다.</li>
+                </ul>
+              </div>
+              <div class="button-wrap button-wrap--stick mobile-only">
+                <button type="button" class="button button--primary button--black">
+                  <span class="button__text">담은상품 (0)</span>
+                </button>
+                <button type="button" class="button button--primary button--active">
+                  <span class="button__text">다음</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

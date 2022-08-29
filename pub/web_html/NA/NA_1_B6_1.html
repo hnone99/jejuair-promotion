@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only ">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <div class="header__stepper">
+        <ol class="stepper__group_new booking_step">
+          <li>
+            <span class="step">1</span>
+            <span class="text">확인 및 동의</span>
+          </li>
+          <li class="active">
+            <span class="step">2</span>
+            <span class="text">나중에 결제</span>
+          </li>
+        </ol>
+      </div>
+
+    </header>
+    <!-- //mobile -->
+
+    <!-- pc용 예매 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div class="select-wrap select-wrap--line">
+                <select title="국가 선택" class="select-wrap__select">
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div class="select-wrap select-wrap--line">
+                <select class="select-wrap__select" title="언어 선택">
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner header__inner--step pc-only ">
+      <!--step 스타일 변경-->
+
+      <div class="sticky-header" data-sticky="">
+        <div class="header__box">
+          <h1 class="header__logo">
+            <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+          </h1>
+          <h2 class="header__page-name">항공권 예매</h2>
+
+          <div class="header__stepper">
+            <ol class="stepper__group_new booking_step">
+              <li>
+                <span class="step">1</span>
+                <span class="text">확인 및 동의</span>
+              </li>
+              <li class="active">
+                <span class="step">2</span>
+                <span class="text">나중에 결제</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- // pc용 공통 헤더 -->
+  </div>
+  <div id="body">
+    <div class="wrap wrap--booking NA_1_B step-ui">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">2 Depth</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle"
+            data-options="{&quot;mode&quot;: &quot;slide&quot;, &quot;speed&quot;: 100, &quot;clickToClose&quot;: true}">
+            <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor"
+              aria-controls="toggle-1" aria-expanded="false">3
+              Depth</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel" id="toggle-1">
+              <a href="#" class="item">4 Depth</a>
+              <a href="#" class="item">4 DepthDepthDepth</a>
+              <a href="#" class="item">4 DepthDepthDepth</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div class="page-title-wrap pc-only">
+            <div class="page-title">결제</div>
+          </div>
+
+          <!-- 항목별 운임 상세 -->
+          <div class="section-wrap">
+            <div class="pc-pay-layout">
+
+              <div class="layout-right">
+                <div class="text__large text--color-black">나중에 결제 수수료 <span class="text--color-org">
+                  <span class="price_txt">4,000</span>
+                  <span class="unit">원</span></span>을 결제합니다</div>
+                <div class="payment-amount-wrap">
+                  <div class="payment-amount">
+                    <div class="payment-amount__title">총 결제금액(1인)</div>
+                    <p class="payment-amount__sum">
+                      <span class="price_txt">4,000</span>
+                      <span class="unit">원</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="guide-info guide-info--org">
+                  <p class="guide-info__text">나중에 결제 수수료는 환불되지 않으며, 항공권 운임에 포함되지 않습니다. </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- //항목별 운임 상세 -->
+
+
+          <!-- 결제방법 -->
+          <div class="section-wrap">
+            <div class="pc-pay-layout ">
+              <div class="layout-left">
+                <div class="section-title">결제방법</div>
+              </div>
+              <div class="layout-right">
+                <div class="payment-use-wrap bottom2" data-element="inputToggle">
+
+                  <!-- 카드 일반결제 -->
+                  <div class="radio-wrap">
+                    <div class="radio-flex">
+                      <div class="radio-item">
+                        <span class="radio">
+                          <input type="radio" id="inputRadio3" name="inputRadio" class="radio__input"
+                            data-toggle="toggle__anchor">
+                          <label for="inputRadio3" class="radio__label">
+                            <i aria-hidden="true" class="radio__ico"></i>
+                            <span>카드 일반결제</span>
+                          </label>
+                        </span>
+                      </div>
+                      <!-- <div class="radio-item">
+                        <div class="link-wrap--arrow">
+                          <button type="button" class="link__text_arrow"><span>즉시할인안내</span></button>
+                        </div>
+                      </div> -->
+                    </div>
+                    <!-- <div class="gray-box pc-15">
+                      <div class="flex-text">
+                        <div class="flex-text__title">KB국민카드</div>
+                        <div class="flex-text__additional color-org">1만원 즉시할인</div>
+                      </div>
+                    </div> -->
+
+                    <!--카드일반결제 선택시오픈-->
+                    <div class="radio--toggle" data-toggle="toggle__panel">
+                      <div class="card_line_box">
+                        <div class="select-wrap payment_card_wrap">
+                          <div class="select-wrap--line pc-20">
+                            <!-- [수정 : 210215] pc-20 class 추가 -->
+                            <select title="할부개월 선택" class="select-wrap__select">
+                              <option>할부개월 선택</option>
+                              <option value="1" selected>일시불</option>
+                              <option value="2">할부개월 선택</option>
+                              <option value="3">할부개월 선택</option>
+                              <option value="4">할부개월 선택</option>
+                            </select>
+                          </div>
+
+                          <div class="link_btn_wrap"><button type="button"
+                            class="link-wrap__underline link-wrap__underline--gray"><span>무이자 할부</span></button></div>
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <!--//카드일반결제 선택시오픈-->
+                  </div>
+                  <!-- //카드 일반결제 -->
+
+                  <!-- 해외카드 결제 -->
+                  <div class="radio-wrap">
+                    <div class="radio-item">
+                      <span class="radio">
+                        <input type="radio" id="inputRadio4" name="inputRadio" class="radio__input">
+                        <label for="inputRadio4" class="radio__label">
+                          <i aria-hidden="true" class="radio__ico"></i>
+                          <span>해외카드 결제</span>
+                        </label>
+                      </span>
+                    </div>
+                    <!-- 내용이 없더라도 요소를 만들어 놔야 충돌 안생김 -->
+                    <div class="radio--toggle" data-toggle="toggle__panel"></div>
+                    <!-- 내용이 없더라도 요소를 만들어 놔야 충돌 안생김 -->
+                  </div>
+                  <!-- //해외카드 결제 -->
+
+
+                </div>
+                <div class="check-wrap">
+                  <span class="checkbox checkbox--small">
+                    <input type="checkbox" id="inputCheck1" data-element="checkbox" class="checkbox__input">
+                    <label for="inputCheck1" class="checkbox__label">
+                      <i aria-hidden="true" class="checkbox__ico"></i>
+                      <span>이 결제수단을 다음에도 사용합니다.</span>
+                    </label>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //결제방법 -->
+
+
+          <div class="booking-sticky mobile-only">
+            <div class="booking-sticky__top">
+
+              <div class="toggle-wrap">
+                <div class="label">
+                  <span>총 결제금액</span>
+                </div>
+                <div class="summary summary--without-icon">
+                  <span class="cost">
+                    <span class="price_txt">6,000</span>
+                    <span class="unit">원</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="button-wrap button-wrap--stick">
+              <button type="button" class="button button--primary button--active">
+                <span class="button__text">결제하기</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="booking-sticky booking-sticky--reservation pc-only">
+            <div class="reservation-container">
+              <div class="booking-sticky__top payment">
+                <div class="toggle-wrap toggle-wrap--button">
+                  <div class="label no-icon">
+                    <span>총 결제금액</span>
+                  </div>
+                  <div class="summary no-icon">
+                    <span class="cost">
+                      <span class="price_txt">6,000</span>
+                      <span class="unit">원</span>
+                    </span>
+                    <!--포인트 케이스-->
+                    <!-- <span class="cost">
+                      <span class="price_txt">6,000</span>
+                      <span class="unit">P</span>
+                    </span> -->
+                    <!--//포인트 케이스-->
+                  </div>
+                </div>
+                <button type="button" class="button button--primary pc-only">
+                  <span class="button__text">결제하기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <script>
+    $('.card-fav').on('click', function () {
+      $(this).toggleClass('active');
+    });
+
+    cardSwiper = new Swiper('.carousel--paypal', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        observer: true,
+        spaceBetween: 16,
+        observeParents: true,
+        slideToClickedSlide: true,
+        breakpoints: _defineProperty({}, MOBILE_WIDTH, {
+        slidesPerView: 'auto',
+        spaceBetween: 16,
+        centeredSlides: true
+      }),
+      pagination: {
+        el: '.carousel__pagination-number',
+        type: 'fraction'
+      },
+      navigation: {
+        nextEl: '.carousel__button-next',
+        prevEl: '.carousel__button-prev'
+      }
+    });
+    
+    cardSwiper.on('observerUpdate transitionEnd', function () {
+      var cardData = $('.carousel--paypal-wrap .swiper-slide-active').data('card')
+      if (cardData == 'credit') {
+        $('.payment_card_wrap.fare-detail-jjpay').show()
+        $('.pc-cash.fare-detail-jjpay').hide()
+      } else if (cardData == 'bank') {
+        $('.payment_card_wrap.fare-detail-jjpay').hide()
+        $('.pc-cash.fare-detail-jjpay').show()
+      }
+      else {
+        $('.payment_card_wrap.fare-detail-jjpay').hide()
+        $('.pc-cash.fare-detail-jjpay').hide()
+      }
+    })
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- 개발시 삭제: robots -->
+    <meta name="robots" content="noindex" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>제주항공</title>
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/jjpay.css">
+  </head>
+
+<body>
+  <div class="modal open">
+    <div class="modal-header">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <div class="modal-header__title">타이틀</div>
+    </div>
+    <div class="modal-content">
+      <div class="loading">
+        <div class="loading__dots">
+          <span class="loading__dot"></span>
+          <span class="loading__dot"></span>
+          <span class="loading__dot"></span>
+          <span class="loading__dot"></span>
+        </div>
+        <div class="loading__text">잠시만 기다려주세요.</div>
+      </div>
+    </div>
+    
+    <a href="#" rel="modal:close" class="modal__close" onclick="closeWindow ()"><span class="blind">닫기</span></a>
+  </div>
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script>
+    // 창닫기
+    function closeWindow() {
+      window.open('', '_self', '');
+      window.close();
+    }
+
+    // 폼 요소 
+    var formControl = function () {
+      // 셀렉터 목록
+      var defaults = {
+        wrap: '[data-element="form"]',
+        textarea: '[data-element="textarea"]',
+        text: '[data-element="input"]',
+        email: '[data-element="email"]',
+        btn: '[data-element="remove"]',
+        byte: '[data-element="checkByte"]',
+        current: '[data-element="current"]',
+        max: '[data-element="max"]',
+        checkList: '[data-element="checkList"]',
+        checkAll: '[data-element="checkAll"]',
+        checkbox: '[data-element="checkbox"]',
+        num: '[data-element="number__input"]',
+        numBtn: '[data-element="number__button"]',
+        numMinus: '[data-type="decrease"]',
+        numPlus: '[data-type="increase"]',
+        comma: '[data-string-number]',
+        show: '[data-element="toggleShow"]',
+        inpToggleWrap: '[data-element="inputToggle"]',
+        inpToggleAnchor: '[data-toggle="toggle__anchor"]',
+        inpTogglePanel: '[data-toggle="toggle__panel"]',
+        keyCode: 0
+      }; // 바이트 체크(utf-8)
+
+      function checkByte(el) {
+        var $el = $(el);
+        var $current = $el.siblings(defaults.byte).find(defaults.current);
+        var current = encodeURIComponent(el.value).replace(/%[A-F\d]{2}/g, 'U').length;
+        $current.text(current);
+      }
+
+      function getData(data) {
+        var result = {};
+
+        if (typeof data === 'string') {
+          var source = data;
+          $.ajax({
+            url: source,
+            async: false
+          }).done(function (response) {
+            result = response;
+          });
+        } else {
+          result = eval(data);
+        }
+
+        return result;
+      } // 1000 단위 쉼표
+
+      function localString(num) {
+        var $num = typeof num === 'number' ? num : num.split(',').join('');
+        $num *= 1;
+        return $num.toLocaleString(undefined, {
+          maximumFractionDigits: 5
+        });
+      } // 입력 숫자 변경(버튼이벤트)
+
+      function changeNum(cur, ty) {
+        var $value = cur.split(',').join('');
+        $value *= 1;
+
+        if (ty === 'increase') {
+          $value += 1;
+        } else {
+          $value -= 1;
+        }
+
+        return localString($value);
+      } // 입력 숫자 최대값 / 최소값 설정
+
+      function checkNum(result, maximum) {
+        var minimum = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+        var msg = '';
+
+        if (result > maximum || result < minimum) {
+          msg = result > maximum ? 'max' : 'min';
+        } else {
+          msg = 'normal';
+        }
+
+        return msg;
+      } // 일반 텍스트 입력시 삭제버튼 노출
+
+      function input(el) {
+        var $el = $(el);
+        var $parent = $el.closest('[data-element="form"]');
+        var $btn = $(defaults.btn); // 삭제버튼 노출 우선 삭제 (201203)
+
+        if (el.value.length > 0) {
+          $parent.find($btn).addClass('show').removeClass('hide');
+        } else {
+          $parent.find($btn).removeClass('show').addClass('hide');
+        }
+      } // 삭제버튼 클릭
+
+      function del(el, target) {
+        var $el = $(el);
+        var $parent = $el.closest('[data-element="form"]');
+        setTimeout(function () {
+          $parent.find('[data-element="input"], [data-element="email"]').prop('value', '').focus();
+          $el.removeClass('show').addClass('hide');
+        }, 200);
+
+        if ($(target).data('element') === 'textarea') {
+          checkByte(target);
+        }
+      } // 입력 숫자 변경(버튼이벤트)
+
+
+      function numberButton(el) {
+        var $target = $(el);
+        var $input = $target.siblings(defaults.num);
+        var $current = $input.val();
+        var $type = $target.data('type');
+        var $res = changeNum(localString($current), $type);
+        var $max = $input.data('max');
+        var $min = $input.data('min') > 0 ? $input.data('min') : 0;
+        var msg = checkNum($res, $max, $min);
+
+        if (msg === 'normal') {
+          $input.prop('value', $res);
+          $input.siblings(defaults.numBtn).prop('disabled', false);
+        }
+
+        if ($input.val() >= $max) {
+          $input.siblings(defaults.numPlus).prop('disabled', true);
+        }
+
+        if ($input.val() <= $min) {
+          $input.siblings(defaults.numMinus).prop('disabled', true);
+        }
+      } // 입력 숫자 직접 입력시
+
+      function numberInput(el) {
+        var $el = $(el);
+        var $max = $el.data('max');
+        var $min = $el.data('min') > 0 ? $el.data('min') : 0;
+        var $current = $el.val().split(',').join('') * 1;
+        var $returnValue;
+        $el.prop('value', function () {
+          if ($current > $max) {
+            $returnValue = $max;
+          } else if ($current < $min) {
+            $returnValue = $min;
+          } else {
+            $returnValue = $current;
+          }
+
+          return $returnValue;
+        });
+      } // 체크박스 전체 체크(전체체크버튼 변경)
+
+      function checkAll(wrap, $max, $current) {
+        if ($max === $current) {
+          $(wrap).find(defaults.checkAll).prop('checked', true); // eslint-disable-next-line func-names
+
+          $(wrap).find(defaults.inpToggleWrap).each(function () {
+            if ($(this).find(defaults.inpToggleAnchor).prop('checked') === true) {
+              $(this).find(defaults.inpToggleAnchor).attr('aria-expanded', 'true');
+              $(this).find(defaults.inpTogglePanel).stop().slideDown(300);
+            }
+          });
+        } else {
+          $(wrap).find(defaults.checkAll).prop('checked', false); // eslint-disable-next-line func-names
+
+          $(wrap).find(defaults.inpToggleWrap).each(function () {
+            if ($(this).find(defaults.inpToggleAnchor).prop('checked') === false) {
+              $(this).find(defaults.inpToggleAnchor).attr('aria-expanded', 'false');
+              $(this).find(defaults.inpTogglePanel).stop().slideUp(300);
+            }
+          });
+        }
+      } // 체크박스 전체 체크
+
+      function checkbox(wrap, el) {
+        var $max = wrap.find(defaults.checkbox).not(':disabled').length;
+        var $state = el.prop('checked');
+        var $current = 0;
+        var $checkAll = false;
+
+        if (el.data('element') === 'checkAll') {
+          $checkAll = true;
+        } else {
+          $checkAll = false;
+        }
+
+        wrap.find(defaults.checkbox).each(function (i, item) {
+          if ($checkAll) {
+            $(item).not(':disabled').prop('checked', $state);
+
+            if ($state) {
+              $current = $max;
+            } else {
+              $current = 0;
+            }
+          } else {
+            $current = $(item).prop('checked') === true ? $current += 1 : $current += 0;
+          }
+        });
+        checkAll(wrap, $max, $current);
+      }
+
+      function showPassword(btn) {
+        var $btn = $(btn);
+        var $text = $btn.siblings(defaults.$text);
+        var $type = $text.attr('type');
+
+        if ($type === 'password') {
+          $text.attr('type', 'text');
+          $btn // .css({
+          //   'background-image': 'url(../images/icon/icon-password-on.png)',
+          // })
+          .closest('[data-element="form"]').addClass('show-password');
+        } else {
+          $text.attr('type', 'password');
+          $btn // .css({
+          //   'background-image': 'url(../images/icon/icon-password-on.png)',
+          // })
+          .closest('[data-element="form"]').removeClass('show-password');
+        }
+      } 
+  
+      // 폼 요소 이벤트
+      function event() {
+        var $form = $(defaults.wrap);
+        var $check = $(defaults.checkList);
+
+        var checkIsActive = function checkIsActive(targetInput) {
+          var $parent = $(targetInput).closest($form);
+          var $this = $(targetInput);
+          var val = $this.val();
+
+          if (val.trim() === '') {
+            $parent.removeClass('is-active');
+          } else {
+            $parent.addClass('is-active');
+          }
+        };
+
+        var item = '';
+        $form.on('input', defaults.text, function (i) {
+          item = i.target;
+          input(item);
+          checkIsActive(item);
+        });
+        $form.on('input', defaults.email, function (i) {
+          item = i.target;
+          input(item);
+          checkIsActive(item);
+        });
+        $form.on('input', defaults.textarea, function (i) {
+          item = i.target;
+          checkByte(item);
+          input(item);
+          checkIsActive(item);
+        });
+        $form.on('click', defaults.btn, function (b) {
+          //del(b.target, item);
+          $(this).prevAll('.input__text').val('')
+        });
+        $form.on('click', defaults.numBtn, function (e) {
+          numberButton(e.target, defaults);
+        });
+        $form.on('click', defaults.show, function (e) {
+          showPassword(e.target);
+        });
+        $form.on('blur', defaults.num, function (e) {
+          numberInput(e.target);
+        });
+        $form.on({
+          focusin: function focusin(e) {
+            var $parent = $(e.target).closest($form);
+            var $this = $(e.target);
+            setTimeout(function () {
+              var val = '';
+              $parent.addClass('is-focus');
+              $parent.parent('.input-box').addClass('label-active'); // 20210315 form 스타일추가 
+
+              if ($this.is('input, textarea')) {
+                val = $this.val();
+              } else {
+                val = $this.siblings('input, textarea').val();
+              }
+
+              if (val) {
+                $parent.find('[data-element="remove"]').addClass('show').removeClass('hide');
+              }
+            }, 100);
+          },
+          focusout: function focusout(e) {
+            var $this = $(e.target);
+            var $parent = $this.closest($form);
+            var val = '';
+
+            if ($this.is('input, textarea')) {
+              val = $this.val();
+            } else {
+              val = $this.siblings('input, textarea').val();
+            }
+
+            // 20210315 form 스타일추가 - s
+            if (val) {
+              $parent.addClass('is-active');
+              $parent.parent('.input-box').addClass('label-active');
+            } else {
+              $parent.removeClass('is-active');
+              $parent.parent('.input-box').removeClass('label-active');
+            }
+            // 20210315 form 스타일추가 - e 
+
+            setTimeout(function () {
+              if (!$parent.find('[data-element="remove"]').is(':focus')) {
+                $parent.removeClass('is-focus').find('button.show').removeClass('show').addClass('hide');
+              }
+            }, 50);
+          }
+        });
+        $check.on('change', '[type="checkbox"]', function (e) {
+          var $elem = $(e.target);
+          var $wrap = $elem.closest(defaults.checkList);
+          checkbox($wrap, $elem);
+        });
+        $(defaults.comma).each(function (i, v) {
+          var $val = v.value;
+          $(v).prop('value', localString($val));
+        });
+        $form.on('blur', defaults.comma, function (i) {
+          var $i = $(i.target);
+          var $val = $i.prop('value');
+          $i.prop('value', localString($val));
+        });
+        $form.on('focus', defaults.comma, function (i) {
+          var $i = $(i.target);
+          var $val = $i.prop('value');
+          $i.prop('value', $val.split(',').join(''));
+        });
+        $(defaults.email).each(function (i, el) {
+          var $elem = $(el);
+          var domainURL = $elem.data('json');
+          var domainList = getData(domainURL);
+          // $elem.emailautocomplete({
+          //   domains: domainList.domains
+          // });
+        });
+        $('input').each(function (i, dom) {
+          var attrType = dom.getAttribute('type');
+
+          if (attrType === 'text' || attrType === 'email' || attrType === 'textarea') {
+            checkIsActive(dom);
+          }
+        });
+      }
+
+      return {
+        init: function init() {
+          event();
+        }
+      };
+    }(); 
+
+    formControl.init();
+  </script>
+</body>
+
+</html>

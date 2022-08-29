@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+<!-- 개발시 삭제: robots -->
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+<link rel="stylesheet" href="../../assets/css/component.css">
+<link rel="stylesheet" href="../../assets/css/page.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+<style>
+.guide_wrap{max-width: 1004px; margin:50px auto}
+.guide_wrap h2 {font-size: 18px; font-weight: 700;}
+.guide_wrap .guide_box {margin: 10px 0 50px; padding:30px; border:1px solid #ddd; border-radius:5px;}
+</style>
+</head>
+<body>
+    <div class="guide_wrap" style="">
+        <h2>라인 버튼</h2>
+        <div class="guide_box">
+            <button type="button" class="button button--small"><span class="button__text">button--small</span></button>
+
+            <button type="button" class="button button--small button--small-org"><span class="button__text">우편번호검색</span></button>
+
+            
+            
+            <div class="button-wrap button-flex">
+              <button type="button" class="button button--optional"><span class="button__text">보러가기</span></button>
+            </div>
+            
+            <button type="button" class="button button--optional"><span class="button__text text">다시받기</span></button>
+            <button type="button" class="button button--optional button--disabled"><span class="button__text">조회하기</span></button>
+
+        </div>
+        
+        <h2>페이지 하단 버튼</h2>
+        <div class="guide_box">
+            <div class="button-wrap button-flex">
+                <button type="button" class="button button--secondary"><span class="button__text">취소</span></button>
+                <button type="button" class="button button--secondary button--active"><span class="button__text">수정</span></button>
+            </div>
+            
+            <p style="font-size: 18px; margin: 50px 0 20px;">페이지 하단 기본버튼으로 크기에 대한 class: .button--primary</p>
+            <div class="button-wrap">
+              <button type="button" class="button button--primary button--black"><span class="button__text">color: button--submit</span></button>
+              <button type="button" class="button button--primary "><span class="button__text">기본컬러/class 입력X</span></button><!--활성화시 .button--active 추가-->
+              <button type="button" class="button button--primary button--active"><span class="button__text">color: button--active</span></button>
+            </div>
+        </div>
+        <h2>아이콘버튼</h2>
+        <div class="guide_box">
+
+            <button type="button" class="button-favorites on">
+                <span class="hidden">즐겨찾기</span>
+            </button>
+
+            <button type="button" class="button-share2">
+                <span class="hidden">공유하기</span>
+            </button>
+
+            <button type="button" aria-label="초단거리 노선 툴팁 열기" data-element="tooltip__anchor" class="tooltip__button"></button>
+
+            <div class="booking-filter">
+                <button type="button" class="filter-button">
+                  <span class="hidden">검색 필터</span>
+                </button>
+            </div>
+        </div>
+
+        <h2>TABLE</h2>
+        <div class="guide_box">
+            <div class="table-vertical table--center"><!--table--center class추가시 th center정렬됨-->
+                <table>
+                  <caption>시스템 사용료</caption>
+                  <colgroup>
+                    <col span="4">
+                  </colgroup>
+                  <tbody class="table-vertical__tbody">
+                    <tr>
+                      <td class="table-vertical__th">적용서비스</td>
+                      <td class="table-vertical__th">환불채널</td>
+                      <td class="table-vertical__th">요금</td>
+                      <td class="table-vertical__th">부과기준</td>
+                    </tr>
+                    <tr>
+                      <td class="table-vertical__td" rowspan="2">수하물,좌석,에어카페,기내식,JJ 라운지</td>
+                      <td class="table-vertical__td">온라인</td>
+                      <td class="table-vertical__td">1,000원<br>/1 USD</td>
+                      <td class="table-vertical__td" rowspan="2">인당, 구간당</td>
+                    </tr>
+                    <tr>
+                      <td class="table-vertical__td">오프라인</td>
+                      <td class="table-vertical__td">2,000원<br>/1 USD</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+        </div>
+
+        <h2>Title</h2>
+        <div class="guide_box">
+
+        </div>
+
+        <h2>TEXT</h2>
+        <div class="guide_box">
+            <ul class="guide-info guide-info--gray">
+                <li class="guide-info__text">info txt</li>
+                <li class="guide-info__text">info txt</li>
+            </ul>
+
+            <div class="notice-box">
+            <h2 class="notice-box__title">회원 탈퇴 시 유의사항</h2>
+            <p class="notice-box__text">회원 탈퇴가 완료되면 회원님의 개인정보는 즉시 삭제됩니다.</p>
+            <p class="notice-box__text">회원 탈퇴 처리 후에는 회원님의 <span class="notice-box__text--org">개인정보를 복구할 수 없습니다.</span></p>
+            <p class="notice-box__text"><span class="notice-box__text--org">재가입은 탈퇴일로부터 3일 후에</span> 할 수 있습니다.</p>
+            <p class="notice-box__text">
+                탈퇴한 아이디는 <span class="notice-box__text--org">다시 사용할 수 없습니다.</span></p>
+            </div>
+        </div>
+
+        <h2>Radio</h2>
+        <div class="guide_box">
+            <div class="radio-button-wrap">
+                <span class="radio-button">
+                  <input type="radio" id="inputRadio1" name="inputRadio" class="radio-button__input" checked="">
+                  <label for="inputRadio1" class="radio-button__label">
+                    <span>SKT</span>
+                  </label>
+                </span>
+                <span class="radio-button">
+                  <input type="radio" id="inputRadio2" name="inputRadio" class="radio-button__input">
+                  <label for="inputRadio2" class="radio-button__label">
+                    <span>KT</span>
+                  </label>
+                </span>
+                <span class="radio-button">
+                  <input type="radio" id="inputRadio3" name="inputRadio" class="radio-button__input">
+                  <label for="inputRadio3" class="radio-button__label">
+                    <span>LG U+</span>
+                  </label>
+                </span>
+                <span class="radio-button">
+                  <input type="radio" id="inputRadio4" name="inputRadio" class="radio-button__input">
+                  <label for="inputRadio4" class="radio-button__label">
+                    <span>알뜰폰</span>
+                  </label>
+                </span>
+              </div>
+        </div>
+
+        <h2>CHECKBOX</h2>
+        <div class="guide_box">
+          <div class="checkbox checkbox--small">
+            <input type="checkbox" id="inputCheck1" class="checkbox__input" data-toggle="toggle__anchor">
+            <label for="inputCheck1" class="checkbox__label">
+              <i aria-hidden="true" class="checkbox__ico"></i>
+              <span>본인이 탑승하지 않을 경우 체크해 주세요.</span>
+            </label>
+          </div>
+        </div>
+
+    </div> 
+
+<script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

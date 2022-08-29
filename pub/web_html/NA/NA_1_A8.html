@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div class="wrap">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">
+          제주항공 국제선 여객운송 약관
+        </a>
+      </main>
+    </div>
+  </div>
+
+  <!-- 풀팝업 -->
+  <div id="modalLayer01" class="modal modal-full modal-scroll modal--fixed-multi" > 
+    <div class="modal-header">
+      <div class="modal-header__title">제주항공 국제선 여객운송 약관</div>
+    </div>
+    <div class="modal-content">
+      <div class="terms-item">
+        <h2 class="terms-item__title">제 1 장 총칙</h2>
+        <h3 class="terms-item__title-sub">제 1 조 정의</h3>
+        <div class="terms-item__box">
+          <p class="terms-item__text">본 운송약관에서 사용하는 용어의 정의는 다음과 같다</p>
+        </div>
+      </div>
+
+      <div class="terms-item">
+        <h2 class="terms-item__title">제 2 조(정의)</h2>
+        <div class="terms-item__box">
+          <ol class="terms-item__list">
+            <li class="terms-item__list-text indent">1. “제주항공”이란 주식회사 제주항공을 말한다.</li>
+            <li class="terms-item__list-text indent">2. “여객”이란 승무원을 제외하고, 운송인의 동의 하에 항공기로 운송되거나, 운송될 사람을 말한다.</li>
+            <li class="terms-item__list-text indent">3. “운송”이란 수송과 동의어로서 유상 또는 무상으로 행하는 여객 또는 수하물의 항공 운송을 말한다. </li>
+            <li class="terms-item__list-text indent">4. “운송인”이란 항공 운송인을 의미하는 것으로서 항공권을 발행하는 자와 동 항공권에 의거하여 여객 또는 그 수하물을
+              운송하거나 당해 항공 운송에 관련되는 기타 서비스를 이행하거나 이행할 것을 위임 받은 자를 포함한다. </li>
+            <li class="terms-item__list-text indent">5. “항공권”이란 운송인에 의하여 실물로 발행된 “여객 항공권 및 수하물표”또는 전자항공권(e-티켓)"을 의미하며
+              계약조건, 항공권의 일부인 모든 쿠폰을 포함한다.
+              <ul class="terms-item__sub-list">
+                <li class="terms-item__sub-list-item indent">가. 여객용 실물 항공권의 구성
+                  <ul class="terms-item__sub-list">
+                    <li class="terms-item__sub-list-item indent">
+                      1) 탑승용 쿠폰(FLIGHT COUPON) : 항공권의 일부분으로서 여객이 운송될 특정 구간을 명시한 쿠폰을 말하며, 탑승수속(체크인) 시 제출하여 탑승권(보딩패스)과
+                      교환한다.
+                    </li>
+                    <li class="terms-item__sub-list-item">
+                      2) 여객용 쿠폰 / 여객용 영수표(PASSENGER COUPON/PASSENGER RECEIPT) : 항공권의.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+    </div>
+    <div class="fixed-wrap fixed-wrap--multi-line border-none ">
+      <div class="button-wrap">
+        <button type="button" class="button button--primary button--active "><span class="button__text">동의</span></button>
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

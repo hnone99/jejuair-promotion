@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+<title>Component_BottomSheet</title>
+<link rel="stylesheet" href="../../assets/css/global.css">
+<link rel="stylesheet" href="../../assets/css/component.css">
+<link rel="stylesheet" href="../../assets/css/page.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+<link rel="stylesheet" href="../../../index/css/component_guide.css">
+
+<!-- syntaxHighlighter -->
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shCore.js"></script>
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushCss.js"></script>
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+<script>
+//<![CDATA[
+SyntaxHighlighter.defaults['toolbar'] = false; 
+SyntaxHighlighter.all()
+//]]> 
+</script>
+<style>
+/* temp */
+.button--primary { width:100%; font-size:16px; font-weight:700; color:#333; background:#eee; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="content" id="content">
+    <div id="main" class="main">
+      <div class="title__page">
+        BottomSheet
+      </div>
+      <div class="sample-view">
+        <div class="button-wrap">
+          <button type="button" class="button button--primary" data-target-open="sheet01">BottomSheet UI 클릭</button>
+        </div>
+        <!-- bottomSheet -->
+        <div data-target="sheet01" data-element="bottomSheet" class="bottom-sheet GB_0_33">
+          <div class="bottom-sheet__top">
+            <div class="title">
+              <h2 class="title__main">비밀번호 재설정</h2>
+            </div>
+          </div>
+          <div class="bottom-sheet__bot">
+            <div class="list-option-reset">
+              <ul class="list-option list-option--border-b">
+                <li class="list-option__item">
+                  <a href="#none" class="list-card__item">
+                    <div class="list-card__image">
+                      <img src="../../assets/images/icon/icon-email-mono-small.png" alt="">
+                    </div>
+                    <div class="list-card__info">
+                      <div class="list-card__info-vertical">
+                        <strong class="list-card__title">이메일로 링크 받고 재설정</strong>
+                        <p class="list-card__text">je****@gmail.com</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-option__item">
+                  <a href="#none" class="list-card__item">
+                    <div class="list-card__image">
+                      <img src="../../assets/images/icon/icon-phone-mono-small.png" alt="">
+                    </div>
+                    <div class="list-card__info">
+                      <div class="list-card__info-vertical">
+                        <strong class="list-card__title">휴대전화로 인증코드 받고 재설정</strong>
+                        <p class="list-card__text">010-****-1234</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-option__item">
+                  <a href="#none" class="list-card__item">
+                    <div class="list-card__image">
+                      <img src="../../assets/images/icon/icon-phone-mono-small.png" alt="">
+                    </div>
+                    <div class="list-card__info">
+                      <div class="list-card__info-vertical">
+                        <strong class="list-card__title">본인 명의의 휴대전화 인증 후 재설정</strong>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-option__item">
+                  <a href="#none" class="list-card__item">
+                    <div class="list-card__image">
+                      <img src="../../assets/images/icon/icon-ipin-mono-small.png" alt="">
+                    </div>
+                    <div class="list-card__info">
+                      <div class="list-card__info-vertical">
+                        <strong class="list-card__title">아이핀 인증 후 재설정</strong>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="container--large pc-40">
+              <div class="title">
+                <div class="title__section--small pc-text-left">고객센터에 문의하기</div>
+              </div>
+              <div class="customer-inquiry pc-15">
+                <div class="img-box">
+                  <div class="img-box__item">
+                    <a href="#">
+                      <div class="img-box__img">
+                        <img src="../../assets/images/icon/icon-kakao-sms.png" alt="">
+                      </div>
+                      <div class="img-box__text">
+                        <strong>카카오톡 문의</strong>
+                        <p>카카오톡에서 ‘제주항공 고객센터’를<br>검색하시면 상담사에게 문의할 수 있어요.</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="img-box__item">
+                    <div class="img-box__img">
+                      <img src="../../assets/images/icon/icon-phone.png" alt="">
+                    </div>
+                    <div class="img-box__text">
+                      <strong>전화 문의</strong>
+                      <p>고객센터 : 1599-1500<br>운영시간(한국시간) : 09:00 ~ 19:00</p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" data-element="bottomSheet__button-close" aria-label="하단시트 닫기" class="bottom-sheet__button-close"></button>
+        </div>
+        <!-- //bottomSheet -->
+      </div>
+      <pre class="brush:html;">
+        &lt;button type="button" class="button button--primary" data-target-open="sheet01"&gt;BottomSheet UI 클릭&lt;/button&gt;
+
+        &lt;!-- bottomSheet --&gt;
+        &lt;div data-target="sheet01" data-element="bottomSheet" class="bottom-sheet"&gt;
+          &lt;div class="bottom-sheet__top"&gt;
+            &lt;div class="title"&gt;
+              ...
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="bottom-sheet__bot"&gt;
+            ...
+          &lt;/div&gt;
+          &lt;button type="button" data-element="bottomSheet__button-close" aria-label="하단시트 닫기" class="bottom-sheet__button-close"&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;!-- //bottomSheet --&gt;
+      </pre>  
+      <br>
+      <pre class="brush:js;">
+        /* common.js */
+        var bottomSheet = function () {
+          var options = {
+            $fixed: $('.bottom-sheet__fixed')
+          };
+          return {
+            init: function init(el, device) {
+              ...
+              if (device === 'pc') {
+                // PC modal Popup
+                $el.each(function (i, elem) {
+                  var $closeBtn = $elem.find('[data-element="bottomSheet__button-close"]');
+                  $elem.attr('id', dataTarget).removeAttr('data-target data-element').addClass('bottomSheet-modal');
+                  ...
+                  $closeBtn.after('<a href="#" rel="modal:close" class="bottom-sheet__button-close"><span class="blind">닫기</span></a>');
+                  $closeBtn.remove();
+                });
+                modalUI('[data-element="modal_anchor"]');
+              } else {
+        
+                // Mobile bottom Sheet
+                $el.each(function (i, elem) {
+                  var settings = {
+                    btnClose: $elem.find('[data-element="bottomSheet__button-close"]'),
+                  };
+                  ...
+                  function shutdownHandler(e) {
+                    var wrap = e.currentTarget.selectTarget;
+                    var closeBtn = $(wrap).find('[data-element="bottomSheet__button-close"]');
+                    closeBtn.trigger('click'); 
+                  }
+        
+                  options.btnClose.on('click', function (e) {
+                    var dimeds = document.querySelectorAll('.dim');
+                    var dimed = dimeds[dimeds.length - 1];
+        
+                    if (dimed !== null) {
+                      document.body.removeAttribute('style'); // dimed.removeEventListener('touchmove', shutdownHandler);
+        
+                      $(dimed).off('scroll touchmove mousewheel', scrollPrevent);
+                      dimed.removeEventListener('click', shutdownHandler, true);
+                      allScrollPrevent(false);
+                    }
+                    ...            
+                  });
+                });
+              }
+            }
+          };
+        }();
+      </pre>
+      <ul class="list-guide">
+        <li>data-target 지정 및 data-element="bottomSheet" 설정</li>
+        <li>PC버전의 UI는 bottomSheet-modal(modal-layer)로 적용됨</li>
+      </ul>      
+    </div>
+  </div>
+</div> 
+
+<script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

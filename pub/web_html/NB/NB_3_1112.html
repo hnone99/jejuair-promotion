@@ -1,0 +1,2770 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공 온라인(모바일,홈페이지 구매)</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">스케줄 조회 상세</h2>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <div class="gnb" id="gnb">
+        <div class="gnb__header">
+          <div class="gnb__header-top" data-absolute-sticky>
+            <a href="#none" class="button-home" title="홈으로 이동"></a>
+            <div data-element="select" data-select-target="0" class="select-wrap select-wrap--inline">
+              <select data-element="select__select" title="지역 선택" class="select-wrap__select">
+                <option></option>
+                <option value="1" selected>대한민국</option>
+                <option value="2">미국1</option>
+                <option value="3">미국2</option>
+                <option value="4">미국3</option>
+              </select>
+              <select data-element="select__select" title="언어 선택" class="select-wrap__select">
+                <option></option>
+                <option value="1" selected>한국어</option>
+                <option value="2">영어</option>
+              </select>
+            </div>
+            <div class="additional">
+              <!-- D : '웹'일경우 APP다운로드 버튼 -->
+              <button type="button" class="button button--small"><span
+                  class="button__text button__icon">APP</span></button>
+              <a href="#none" class="button-search" title="통합검색이동"></a>
+              <!-- D : '앱'일경우 세팅 버튼 -->
+              <!-- <button type="button" class="button-setting" aria-label="setting"></button> -->
+              <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+            </div>
+          </div>
+          <div class="gnb__header-bot">
+            <!-- 로그인 전 -->
+            <div class="before" style="display: none;">
+              <div class="title">
+                로그인 하시고<br>더 풍부한 혜택을 누리세요.
+              </div>
+              <!-- fixed 영역 -->
+              <div class="sticky-wrap">
+                <div class="button-wrap button-flex sticky__inner gnb-sticky1">
+                  <button type="button" class="button button--secondary"><span class="button__text">회원가입</span></button>
+                  <button type="button" class="button button--secondary button--active"><span
+                      class="button__text">로그인</span></button>
+                  <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                </div>
+              </div>
+              <!-- //fixed 영역 -->
+              <div class="title">
+                <div class="title__section title__section--additional">제주항공에서 예약하지 않으셨다면?
+                  <div class="additional">
+                    <div class="link-wrap">
+                      <a href="#" class="link-wrap__underline"><span>예약조회</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //로그인 전 -->
+            <!-- 로그인 후 -->
+            <div class="after">
+              <!-- fixed 영역 -->
+              <div class="sticky-wrap">
+                <div class="title sticky__inner gnb-sticky2">
+                  <i class="icon vip" aria-label="vip"></i>
+                  <!-- <i class="icon gold" aria-label="gold"></i>
+            <i class="icon sliverplus" aria-label="sliverplus"></i>
+            <i class="icon silver" aria-label="sliver"></i> -->
+                  <div class="text">
+                    <p class="name"><span class="exbold">김제주</span>님</p>
+                    <p class="hide">안녕하세요?</p>
+                  </div>
+                  <div class="additional">
+                    <button type="button" class="button-card" aria-label="card-popup">
+                    <img src="../../assets/images/icon/icon-card.png" alt="알림">
+                  </button>
+                    <button type="button" class="button-alarm" aria-label="alarm-popup"><span>3<span
+                          class="hidden">개</span></span></button>
+                    <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                  </div>
+                </div>
+              </div>
+              <!-- //fixed 영역 -->
+              <div class="gray-box">
+                <div class="flex-text">
+                  회원 번호
+                  <div class="flex-text__additional">080041313</div>
+                </div>
+                <div class="flex-text">
+                  사용 가능한 포인트
+                  <div class="flex-text__additional">10,000P</div>
+                </div>
+              </div>
+              <div class="button-wrap button-flex">
+                <button type="button" class="button button--secondary button--border"><span
+                    class="button__text">리프레시포인트</span></button>
+                <button type="button" class="button button--secondary button--border add--ml-10"><span
+                    class="button__text">마이페이지</span></button>
+              </div>
+            </div>
+            <!-- //로그인 후 -->
+            <div class="icon-link">
+              <a href="#none" class="icon-link__item">
+                <img src="../../assets/images/icon/icon-join-item-04.png" alt="" aria-hidden="true">
+                <span class="icon-link__text">투어&티켓</span>
+              </a>
+              <a href="#none" class="icon-link__item">
+                <img src="../../assets/images/icon/icon-join-item-06.png" alt="" aria-hidden="true">
+                <span class="icon-link__text">출도착조회</span>
+              </a>
+              <a href="#none" class="icon-link__item">
+                <img src="../../assets/images/icon/icon-join-item-07.png" alt="" aria-hidden="true">
+                <span class="icon-link__text">고객센터</span>
+              </a>
+            </div>
+            <!-- //로그인 후 -->
+          </div>
+        </div>
+        <hr class="section-spacer">
+        <div class="gnb-wrap">
+          <div class="gnb__box">
+            <div class="gnb__title">예약</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">항공권 예매</a>
+              <a href="#none" class="gnb__list-item">항공권 추천</a>
+              <a href="#none" class="gnb__list-item">민항공후급증</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">여행준비</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">예약 안내</a>
+              <a href="#none" class="gnb__list-item">운임 안내</a>
+              <a href="#none" class="gnb__list-item">운항 정보</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">회원 혜택</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">리프레시 포인트</a>
+              <a href="#none" class="gnb__list-item">쿠폰 혜택</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">부가서비스 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">사전 수하물</a>
+              <a href="#none" class="gnb__list-item">사전 좌석</a>
+              <a href="#none" class="gnb__list-item">사전 기내식</a>
+              <a href="#none" class="gnb__list-item">보험 상품</a>
+              <a href="#none" class="gnb__list-item">투어&티켓</a>
+              <a href="#none" class="gnb__list-item">프리패스</a>
+              <a href="#none" class="gnb__list-item">기프티켓</a>
+              <a href="#none" class="gnb__list-item">제휴 서비스</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">프리미엄 서비스 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">NEW CLASS</a>
+              <a href="#none" class="gnb__list-item">JJ 라운지</a>
+              <a href="#none" class="gnb__list-item">J PASS</a>
+              <a href="#none" class="gnb__list-item">스포츠멤버십</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">탑승 수속 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">모바일 탑승권</a>
+              <a href="#none" class="gnb__list-item">빠른 수속 안내</a>
+              <a href="#none" class="gnb__list-item">공항 정보</a>
+              <a href="#none" class="gnb__list-item">수하물 안내</a>
+              <a href="#none" class="gnb__list-item">도움이 필요한 승객</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">기내 서비스 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">에어카페</a>
+              <a href="#none" class="gnb__list-item">기내 FUN 서비스</a>
+              <a href="#none" class="gnb__list-item">출입국신고서 <br class="pc-only">작성방법</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">이벤트</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">이벤트</a>
+              <a href="#none" class="gnb__list-item">스탬프 랠리</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">고객센터</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">고객센터</a>
+              <a href="#none" class="gnb__list-item">기내 유실물 센터</a>
+              <a href="#none" class="gnb__list-item">공지사항</a>
+            </div>
+          </div>
+          <div class="gnb__box mobile-only">
+            <div class="gnb__title">우대 프로그램</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">기업우대 서비스</a>
+            </div>
+          </div>
+          <div class="gnb__box mobile-only">
+            <div class="gnb__title">제주항공 소개</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">About 제주항공</a>
+              <a href="#none" class="gnb__list-item">코로나19 종합안내 센터</a>
+            </div>
+          </div>
+
+          <div class="gnb__footer">
+            <div class="gnb__title">SNS</div>
+            <div class="sns-wrap">
+              <a href="https://m.facebook.com/funjejuair" aria-label="facebook" class="sns-wrap__item facebook"></a>
+              <a href="https://instagram.com/jejuair_official?igshid=1r3itj1zo2k6w" aria-label="instagram"
+                class="sns-wrap__item instagram"></a>
+              <a href="https://www.youtube.com/user/funjejuair" aria-label="youtube" class="sns-wrap__item youtube"></a>
+            </div>
+            <div class="button-wrap button-wrap--center">
+              <button type="button" class="button button--secondary button--border"><span
+                  class="button__text">로그아웃</span></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+        <div class="gnb" id="gnb">
+          <div class="gnb__header">
+            <div class="gnb__header-top" data-absolute-sticky>
+              <a href="#none" class="button-home" title="홈으로 이동"></a>
+              <div data-element="select" data-select-target="0" class="select-wrap select-wrap--inline">
+                <select data-element="select__select" title="지역 선택" class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">미국1</option>
+                  <option value="3">미국2</option>
+                  <option value="4">미국3</option>
+                </select>
+                <select data-element="select__select" title="언어 선택" class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">영어</option>
+                </select>
+              </div>
+              <div class="additional">
+                <!-- D : '웹'일경우 APP다운로드 버튼 -->
+                <button type="button" class="button button--small"><span
+                    class="button__text button__icon">APP</span></button>
+                <a href="#none" class="button-search" title="통합검색이동"></a>
+                <!-- D : '앱'일경우 세팅 버튼 -->
+                <!-- <button type="button" class="button-setting" aria-label="setting"></button> -->
+                <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+              </div>
+            </div>
+            <div class="gnb__header-bot">
+              <!-- 로그인 전 -->
+              <div class="before" style="display: none;">
+                <div class="title">
+                  로그인 하시고<br>더 풍부한 혜택을 누리세요.
+                </div>
+                <!-- fixed 영역 -->
+                <div class="sticky-wrap">
+                  <div class="button-wrap button-flex sticky__inner gnb-sticky1">
+                    <button type="button" class="button button--secondary"><span
+                        class="button__text">회원가입</span></button>
+                    <button type="button" class="button button--secondary button--active"><span
+                        class="button__text">로그인</span></button>
+                    <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                  </div>
+                </div>
+                <!-- //fixed 영역 -->
+                <div class="title">
+                  <div class="title__section title__section--additional">제주항공에서 예약하지 않으셨다면?
+                    <div class="additional">
+                      <div class="link-wrap">
+                        <a href="#" class="link-wrap__underline"><span>예약조회</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //로그인 전 -->
+              <!-- 로그인 후 -->
+              <div class="after">
+                <!-- fixed 영역 -->
+                <div class="sticky-wrap">
+                  <div class="title sticky__inner gnb-sticky2">
+                    <i class="icon vip" aria-label="vip"></i>
+                    <!-- <i class="icon gold" aria-label="gold"></i>
+            <i class="icon sliverplus" aria-label="sliverplus"></i>
+            <i class="icon silver" aria-label="sliver"></i> -->
+                    <div class="text">
+                      <p class="name"><span class="exbold">김제주</span>님</p>
+                      <p class="hide">안녕하세요?</p>
+                    </div>
+                    <div class="additional">
+                      <button type="button" class="button-card" aria-label="card-popup">
+                    <img src="../../assets/images/icon/icon-card.png" alt="알림">
+                  </button>
+                      <button type="button" class="button-alarm" aria-label="alarm-popup"><span>3<span
+                            class="hidden">개</span></span></button>
+                      <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- //fixed 영역 -->
+                <div class="gray-box">
+                  <div class="flex-text">
+                    회원 번호
+                    <div class="flex-text__additional">080041313</div>
+                  </div>
+                  <div class="flex-text">
+                    사용 가능한 포인트
+                    <div class="flex-text__additional">10,000P</div>
+                  </div>
+                </div>
+                <div class="button-wrap button-flex">
+                  <button type="button" class="button button--secondary button--border"><span
+                      class="button__text">리프레시포인트</span></button>
+                  <button type="button" class="button button--secondary button--border add--ml-10"><span
+                      class="button__text">마이페이지</span></button>
+                </div>
+              </div>
+              <!-- //로그인 후 -->
+              <div class="icon-link">
+                <a href="#none" class="icon-link__item">
+                  <img src="../../assets/images/icon/icon-join-item-04.png" alt="" aria-hidden="true">
+                  <span class="icon-link__text">투어&티켓</span>
+                </a>
+                <a href="#none" class="icon-link__item">
+                  <img src="../../assets/images/icon/icon-join-item-06.png" alt="" aria-hidden="true">
+                  <span class="icon-link__text">출도착조회</span>
+                </a>
+                <a href="#none" class="icon-link__item">
+                  <img src="../../assets/images/icon/icon-join-item-07.png" alt="" aria-hidden="true">
+                  <span class="icon-link__text">고객센터</span>
+                </a>
+              </div>
+              <!-- //로그인 후 -->
+            </div>
+          </div>
+          <hr class="section-spacer">
+          <div class="gnb-wrap">
+            <div class="gnb__box">
+              <div class="gnb__title">예약</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">항공권 예매</a>
+                <a href="#none" class="gnb__list-item">항공권 추천</a>
+                <a href="#none" class="gnb__list-item">민항공후급증</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">여행준비</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">예약 안내</a>
+                <a href="#none" class="gnb__list-item">운임 안내</a>
+                <a href="#none" class="gnb__list-item">운항 정보</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">회원 혜택</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">리프레시 포인트</a>
+                <a href="#none" class="gnb__list-item">쿠폰 혜택</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">부가서비스 안내</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">사전 수하물</a>
+                <a href="#none" class="gnb__list-item">사전 좌석</a>
+                <a href="#none" class="gnb__list-item">사전 기내식</a>
+                <a href="#none" class="gnb__list-item">보험 상품</a>
+                <a href="#none" class="gnb__list-item">투어&티켓</a>
+                <a href="#none" class="gnb__list-item">프리패스</a>
+                <a href="#none" class="gnb__list-item">기프티켓</a>
+                <a href="#none" class="gnb__list-item">제휴 서비스</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">프리미엄 서비스 안내</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">NEW CLASS</a>
+                <a href="#none" class="gnb__list-item">JJ 라운지</a>
+                <a href="#none" class="gnb__list-item">J PASS</a>
+                <a href="#none" class="gnb__list-item">스포츠멤버십</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">탑승 수속 안내</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">모바일 탑승권</a>
+                <a href="#none" class="gnb__list-item">빠른 수속 안내</a>
+                <a href="#none" class="gnb__list-item">공항 정보</a>
+                <a href="#none" class="gnb__list-item">수하물 안내</a>
+                <a href="#none" class="gnb__list-item">도움이 필요한 승객</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">기내 서비스 안내</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">에어카페</a>
+                <a href="#none" class="gnb__list-item">기내 FUN 서비스</a>
+                <a href="#none" class="gnb__list-item">출입국신고서 <br class="pc-only">작성방법</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">이벤트</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">이벤트</a>
+                <a href="#none" class="gnb__list-item">스탬프 랠리</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">고객센터</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">고객센터</a>
+                <a href="#none" class="gnb__list-item">기내 유실물 센터</a>
+                <a href="#none" class="gnb__list-item">공지사항</a>
+              </div>
+            </div>
+            <div class="gnb__box mobile-only">
+              <div class="gnb__title">우대 프로그램</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">기업우대 서비스</a>
+              </div>
+            </div>
+            <div class="gnb__box mobile-only">
+              <div class="gnb__title">제주항공 소개</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">About 제주항공</a>
+                <a href="#none" class="gnb__list-item">코로나19 종합안내 센터</a>
+              </div>
+            </div>
+
+            <div class="gnb__footer">
+              <div class="gnb__title">SNS</div>
+              <div class="sns-wrap">
+                <a href="https://m.facebook.com/funjejuair" aria-label="facebook" class="sns-wrap__item facebook"></a>
+                <a href="https://instagram.com/jejuair_official?igshid=1r3itj1zo2k6w" aria-label="instagram"
+                  class="sns-wrap__item instagram"></a>
+                <a href="https://www.youtube.com/user/funjejuair" aria-label="youtube"
+                  class="sns-wrap__item youtube"></a>
+              </div>
+              <div class="button-wrap button-wrap--center">
+                <button type="button" class="button button--secondary button--border"><span
+                    class="button__text">로그아웃</span></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+  <div id="body">
+    <div class="wrap NB">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">여행준비</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle"
+            data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>
+            <button type="button" class="breadcrumb__link breadcrumb__link--list"
+              data-element="toggle__anchor">운항정보</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel">
+              <a href="#" class="item">예약안내</a>
+              <a href="#" class="item">운임안내</a>
+              <a href="#" class="item">운항정보</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div class="page-title-wrap pc-only">
+            <div class="page-title">스케줄 조회 상세</div>
+          </div>
+
+          <div class="tab tab--default">
+            <div class="tab__buttons">
+              <div class="tab__button">
+                <button class="tab__anchor" type="button">가는 편</button>
+              </div>
+              <div class="tab__button">
+                <button class="tab__anchor  is-active" type="button" onclick="location.href='NB_3_21.html'">오는 편</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="quick-book-wrap">
+            <div class="quick-book-sch info-search type01">
+
+              <div class="main-ticketing open">
+                <div class="ticketing-in content-guide">
+
+                  <div class="ticketing-row-top">
+                    <div class="ticketing-target">
+                      <button type="button" class="start js-target-pick">
+                        <!-- 선택전 -->
+                        <!-- <span class="txt before-select">출발지</span> -->
+                        <!-- 선택전 -->
+
+                        <!-- 선택후 -->
+                        <span class="txt">블라디보스토크</span>
+                        <!-- 선택후 -->
+                      </button>
+                      <button type="button" class="target js-target-pick">
+                        <!-- 선택전 -->
+                        <!-- <span class="txt before-select">도착지</span> -->
+                        <!-- 선택전 -->
+
+                        <!-- 선택후 -->
+                        <span class="txt">서울 <em class="sub"><span>(</span>인천<span>)</span></em></span>
+                        <!-- 선택후 -->
+                      </button>
+                      <button type="button" class="btn-open js-target-pick"><span class="blind">열기</span></button>
+                    </div>
+                    <div class="ticketing-date">
+                      <!-- <button type="button" class="btn-date "><span class="txt">2020.12.23(수)</span></button> -->
+                      <!--default 금일 날짜-->
+                      <button type="button" class="btn-date is-select"><span class="txt">2020.12.23(수) ~ 2020.12.30(목)</span></button>
+                      <!--날짜 선택 시 .is-select 추가-->
+                    </div>
+                  </div>
+                  <div class="ticketing-row-hidden">
+                    <div class="flight-layer flight-start">
+                      <div class="layer-header">
+                        <!--자동완성기능 : .active-search 추가-->
+                        <div class="header__input-wrap input is-focus" data-element="form">
+                          <button class="header__button">
+                            <span class="hidden">이전으로</span>
+                          </button>
+                          <button type="button" class="header__input-search">
+                            <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+                          </button>
+                          <input type="text" class="header__input" data-element="input" placeholder="어디에서 출발하세요?">
+                          <p class="map-list-txt">어디에서 출발하세요?</p>
+                          <button type="button" data-element="remove" class="input__remove-button"><span
+                              class="hidden">삭제</span></button>
+                        </div>
+                        <!-- 자동완성 -->
+                        <ul class="predictive-search">
+                          <li class="predictive-search__list">
+                            <div class="predictive-search__item">
+                              <span class="name"><span class="match">나</span>고야</span>
+                              <span class="word">NGO</span>
+                            </div>
+                          </li>
+                          <li class="predictive-search__list">
+                            <div class="predictive-search__item">
+                              <span class="name"><span class="match">나</span>야</span>
+                              <span class="word">NGO</span>
+                            </div>
+                          </li>
+                          <li class="predictive-search__list">
+                            <div class="predictive-search__item">
+                              <span class="name">고야<span class="match">나나</span></span>
+                              <span class="word">NGO</span>
+                            </div>
+                          </li>
+                          <li class="predictive-search__list">
+                            <div class="predictive-search__item">
+                              <span class="name">오키<span class="match">나</span>와</span>
+                              <span class="word">NGO</span>
+                            </div>
+                          </li>
+                        </ul>
+                        <!-- // 자동완성 -->
+                      </div>
+                      <div class="txt-list">
+                        <div class="header-sub" data-element="tab">
+                          <div class="tab__buttons">
+                            <div data-element="tab__list" class="tab__button" role="presentation">
+                              <button type="button" class="tab__anchor is-active" id="selectTab01"
+                                data-element="tab__anchor" data-index="0" role="tab" tabindex="" aria-selected="true"
+                                aria-expanded="true">
+                                최근 검색
+                              </button>
+                            </div>
+                            <div data-element="tab__list" class="tab__button" role="presentation">
+                              <button type="button" class="tab__anchor" id="selectTab02" data-element="tab__anchor"
+                                data-index="1" role="tab" tabindex="" aria-selected="false" aria-expanded="false">
+                                즐겨찾기
+                              </button>
+                            </div>
+                            <div data-element="tab__list" class="tab__button" role="presentation">
+                              <button type="button" class="tab__anchor" id="selectTab03" data-element="tab__anchor"
+                                data-index="2" role="tab" tabindex="" aria-selected="false" aria-expanded="false">
+                                프로모션
+                              </button>
+                            </div>
+                          </div>
+                          <div data-element="tab__panel" class="tab__panel is-active" aria-labelledby="selectTab01"
+                            role="tabpanel" tabindex="0">
+                            <div class="tag-list" data-scroll="x">
+                              <div class="tag-list__no-result">
+                                최근 검색 도시(공항)가 없습니다.
+                              </div>
+                            </div>
+                          </div>
+                          <div data-element="tab__panel" class="tab__panel" aria-labelledby="selectTab02" role="tabpanel"
+                            tabindex="0" style="display: none;">
+                            <div data-element="tab">
+                              <div class="tab__button-wrap">
+                                <div class="tag-list" data-scroll="x">
+                                  <!-- 비활성화의 경우 disabled 추가 -->
+                                  <div class="tag-list__item tag-list__item--tag disabled" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text  disabled" disabled="">#최근검색</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#최근검색최근검색</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#최근</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#검색</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#검색1</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#검색2</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#검색3</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#검색4</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#검색5</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#검색6</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div data-element="tab__panel" class="tab__panel" aria-labelledby="selectTab03" role="tabpanel"
+                            tabindex="0" style="display: none;">
+                            <div data-element="tab">
+                              <div class="tab__button-wrap">
+                                <div class="tag-list" data-scroll="x">
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="new">New</span>
+                                    <span class="tag-list__text">김포 - 제주</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="new">New</span>
+                                    <span class="tag-list__text">김포 - 제주 김포 - 제주</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주1</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주2</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주3</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주4</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주5</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주6</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주7</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주8</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주9</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main--destination-select">
+                          <hr class="booking-line">
+                          <div data-element="tab" class="tab tab--vertical tab--booking">
+                            <div class="tab__buttons vertical_scroll_set">
+                              <div data-element="tab__list" class="tab__button" role="presentation">
+                                <button type="button" class="tab__anchor is-active" data-element="tab__anchor"
+                                  data-index="0" id="plugin-tab-2" role="tab" tabindex="" aria-selected="true"
+                                  aria-expanded="true">
+                                  대한민국
+                                </button>
+                              </div>
+                              <div data-element="tab__list" class="tab__button" role="presentation">
+                                <button type="button" class="tab__anchor" data-element="tab__anchor" data-index="1"
+                                  id="plugin-tab-3" role="tab" tabindex="" aria-selected="false" aria-expanded="false">
+                                  동북아시아
+                                </button>
+                              </div>
+                              <div data-element="tab__list" class="tab__button" role="presentation">
+                                <button type="button" class="tab__anchor" data-element="tab__anchor" data-index="2"
+                                  id="plugin-tab-4" role="tab" tabindex="" aria-selected="false" aria-expanded="false">
+                                  동남아시아
+                                </button>
+                              </div>
+                              <div data-element="tab__list" class="tab__button" role="presentation">
+                                <button type="button" class="tab__anchor" data-element="tab__anchor" data-index="3"
+                                  id="plugin-tab-5" role="tab" tabindex="" aria-selected="false" aria-expanded="false">
+                                  대양주
+                                </button>
+                              </div>
+                              <div data-element="tab__list" class="tab__button" role="presentation">
+                                <button type="button" class="tab__anchor" data-element="tab__anchor" data-index="4"
+                                  id="plugin-tab-6" role="tab" tabindex="" aria-selected="false" aria-expanded="false">
+                                  러시아
+                                </button>
+                              </div>
+                            </div>
+                            <div class="tab__panel-wrap scrollbar-inner" data-element="tab__panel-wrap">
+                              <div data-element="tab__panel" class="tab__panel is-active" aria-labelledby="plugin-tab-2"
+                                role="tabpanel" tabindex="0">
+                                <!-- <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">어디든지</span>
+                                  </button>
+                                </div> -->
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div data-element="tab__panel" class="tab__panel" aria-labelledby="plugin-tab-3"
+                                role="tabpanel" tabindex="0" style="display: none;">
+                                <!-- <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">어디든지</span>
+                                  </button>
+                                </div> -->
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div data-element="tab__panel" class="tab__panel" aria-labelledby="plugin-tab-4"
+                                role="tabpanel" tabindex="0" style="display: none;">
+                                <!-- <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">어디든지</span>
+                                  </button>
+                                </div> -->
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">세부</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">세부</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">세부</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">세부</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">세부</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">세부</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div data-element="tab__panel" class="tab__panel" aria-labelledby="plugin-tab-5"
+                                role="tabpanel" tabindex="0" style="display: none;">
+                                <!-- <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">어디든지</span>
+                                  </button>
+                                </div> -->
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">뉴질랜드</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">뉴질랜드</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">뉴질랜드</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">뉴질랜드</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">뉴질랜드</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">뉴질랜드</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div data-element="tab__panel" class="tab__panel" aria-labelledby="plugin-tab-6"
+                                role="tabpanel" tabindex="0" style="display: none;">
+                                <!-- <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">어디든지</span>
+                                  </button>
+                                </div> -->
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">모스크바</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">모스크바</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">모스크바</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">모스크바</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">모스크바</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">모스크바</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="button" class="floating-button btn-map" onclick="viewArea('start','map')">
+                            <span class="hidden">지도보기</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="map-list">
+                        <div class="map-wrap">
+                          <div id="map-start" class="flight-map"></div>
+                          <div class="tab-top">
+                            <ul class="tab-top-list">
+                              <li class="tab-top-item"><a href="#" class="tab-top-btn on">대한민국</a></li>
+                              <li class="tab-top-item"><a href="#" class="tab-top-btn">동북아시아</a></li>
+                              <li class="tab-top-item"><a href="#" class="tab-top-btn">동남아시아</a></li>
+                              <li class="tab-top-item"><a href="#" class="tab-top-btn">대양주</a></li>
+                              <li class="tab-top-item"><a href="#" class="tab-top-btn">러시아</a></li>
+                            </ul>
+                          </div>
+                          <div class="tab-swipe">
+                            <div class="tab-swipe-wrapper swiper-wrapper">
+                              <a class="tab-swipe-item swiper-slide on">
+                                <div class="city-name">서울(인천) <span class="sub">ICN</span></div>
+                                <button type="button" class="btn-choose-city js-choose-city">선택</button>
+                                <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+                              </a>
+                              <a class="tab-swipe-item swiper-slide">
+                                <div class="city-name">서울(김포) <span class="sub">GMP</span></div>
+                                <button type="button" class="btn-choose-city js-choose-city">선택</button>
+                                <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+                              </a>
+                              <a class="tab-swipe-item swiper-slide">
+                                <div class="city-name">부산 <span class="sub">PUS</span></div>
+                                <button type="button" class="btn-choose-city js-choose-city">선택</button>
+                                <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+                              </a>
+                              <a class="tab-swipe-item swiper-slide">
+                                <div class="city-name">제주 <span class="sub">CJU</span></div>
+                                <button type="button" class="btn-choose-city js-choose-city">선택</button>
+                                <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+                              </a>
+                              <a class="tab-swipe-item swiper-slide">
+                                <div class="city-name">제주 <span class="sub">CJU</span></div>
+                                <button type="button" class="btn-choose-city js-choose-city">선택</button>
+                                <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+                              </a>
+                              <a class="tab-swipe-item swiper-slide">
+                                <div class="city-name">제주 <span class="sub">CJU</span></div>
+                                <button type="button" class="btn-choose-city js-choose-city">선택</button>
+                                <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+                              </a>
+                              <a class="tab-swipe-item swiper-slide">
+                                <div class="city-name">제주 <span class="sub">CJU</span></div>
+                                <button type="button" class="btn-choose-city js-choose-city">선택</button>
+                                <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+                              </a>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                          </div>
+                        </div>
+                        <button type="button" class="floating-button btn-list" onclick="viewArea('start', 'list')">
+                          <span class="hidden">리스트보기</span>
+                        </button>
+                      </div>
+                      <a href="#a" class="layer-close"><span class="blind">닫기</span></a>
+                    </div>
+                    <div class="flight-layer flight-target">
+                      <div class="layer-header">
+                        <!--자동완성기능 : .active-search 추가-->
+                        <div class="header__input-wrap input is-focus" data-element="form">
+                          <button class="header__button">
+                            <span class="hidden">이전으로</span>
+                          </button>
+                          <button type="button" class="header__input-search">
+                            <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+                          </button>
+                          <input type="text" class="header__input" data-element="input" placeholder="어디로 여행가세요?">
+                          <p class="map-list-txt">어디로 여행가세요?</p>
+                          <button type="button" data-element="remove" class="input__remove-button"><span
+                              class="hidden">삭제</span></button>
+                        </div>
+                        <!-- 자동완성 -->
+                        <ul class="predictive-search">
+                          <li class="predictive-search__list">
+                            <div class="predictive-search__item">
+                              <span class="name"><span class="match">나</span>고야</span>
+                              <span class="word">NGO</span>
+                            </div>
+                          </li>
+                          <li class="predictive-search__list">
+                            <div class="predictive-search__item">
+                              <span class="name"><span class="match">나</span>야</span>
+                              <span class="word">NGO</span>
+                            </div>
+                          </li>
+                          <li class="predictive-search__list">
+                            <div class="predictive-search__item">
+                              <span class="name">고야<span class="match">나나</span></span>
+                              <span class="word">NGO</span>
+                            </div>
+                          </li>
+                          <li class="predictive-search__list">
+                            <div class="predictive-search__item">
+                              <span class="name">오키<span class="match">나</span>와</span>
+                              <span class="word">NGO</span>
+                            </div>
+                          </li>
+                        </ul>
+                        <!-- // 자동완성 -->
+                      </div>
+                      <div class="txt-list">
+                        <div class="header-sub" data-element="tab">
+                          <div class="tab__buttons">
+                            <div data-element="tab__list" class="tab__button" role="presentation">
+                              <button type="button" class="tab__anchor is-active" id="selectTab01"
+                                data-element="tab__anchor" data-index="0" role="tab" tabindex="" aria-selected="true"
+                                aria-expanded="true">
+                                최근 검색
+                              </button>
+                            </div>
+                            <div data-element="tab__list" class="tab__button" role="presentation">
+                              <button type="button" class="tab__anchor" id="selectTab02" data-element="tab__anchor"
+                                data-index="1" role="tab" tabindex="" aria-selected="false" aria-expanded="false">
+                                즐겨찾기
+                              </button>
+                            </div>
+                            <div data-element="tab__list" class="tab__button" role="presentation">
+                              <button type="button" class="tab__anchor" id="selectTab03" data-element="tab__anchor"
+                                data-index="2" role="tab" tabindex="" aria-selected="false" aria-expanded="false">
+                                프로모션
+                              </button>
+                            </div>
+                          </div>
+                          <div data-element="tab__panel" class="tab__panel is-active" aria-labelledby="selectTab01"
+                            role="tabpanel" tabindex="0">
+                            <div class="tag-list" data-scroll="x">
+                              <div class="tag-list__no-result">
+                                최근 검색 도시(공항)가 없습니다.
+                              </div>
+                            </div>
+                          </div>
+                          <div data-element="tab__panel" class="tab__panel" aria-labelledby="selectTab02" role="tabpanel"
+                            tabindex="0" style="display: none;">
+                            <div data-element="tab">
+                              <div class="tab__button-wrap">
+                                <div class="tag-list" data-scroll="x">
+                                  <!-- 비활성화의 경우 disabled 추가 -->
+                                  <div class="tag-list__item tag-list__item--tag disabled" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text  disabled" disabled="">#최근검색</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#최근검색최근검색</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#최근</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#검색</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#검색1</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#검색2</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#검색3</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#검색4</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#검색5</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                  <div class="tag-list__item tag-list__item--tag" data-element="tab__list"
+                                    role="presentation">
+                                    <button type="button" class="tag-list__text">#검색6</button>
+                                    <button type="button" class="tag-list__remove">
+                                      <span class="hidden">삭제</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div data-element="tab__panel" class="tab__panel" aria-labelledby="selectTab03" role="tabpanel"
+                            tabindex="0" style="display: none;">
+                            <div data-element="tab">
+                              <div class="tab__button-wrap">
+                                <div class="tag-list" data-scroll="x">
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="new">New</span>
+                                    <span class="tag-list__text">김포 - 제주</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="new">New</span>
+                                    <span class="tag-list__text">김포 - 제주 김포 - 제주</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주1</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주2</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주3</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주4</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주5</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주6</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주7</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주8</span>
+                                  </button>
+                                  <button type="button" class="tag-list__item tag-list__item--promo"
+                                    data-element="tab__list" role="presentation">
+                                    <span class="tag-list__text">김포 - 제주9</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main--destination-select">
+                          <hr class="booking-line">
+                          <div data-element="tab" class="tab tab--vertical tab--booking">
+                            <div class="tab__buttons vertical_scroll_set">
+                              <div data-element="tab__list" class="tab__button" role="presentation">
+                                <button type="button" class="tab__anchor is-active" data-element="tab__anchor"
+                                  data-index="0" id="plugin-tab-2" role="tab" tabindex="" aria-selected="true"
+                                  aria-expanded="true">
+                                  대한민국
+                                </button>
+                              </div>
+                              <div data-element="tab__list" class="tab__button" role="presentation">
+                                <button type="button" class="tab__anchor" data-element="tab__anchor" data-index="1"
+                                  id="plugin-tab-3" role="tab" tabindex="" aria-selected="false" aria-expanded="false">
+                                  동북아시아
+                                </button>
+                              </div>
+                              <div data-element="tab__list" class="tab__button" role="presentation">
+                                <button type="button" class="tab__anchor" data-element="tab__anchor" data-index="2"
+                                  id="plugin-tab-4" role="tab" tabindex="" aria-selected="false" aria-expanded="false">
+                                  동남아시아
+                                </button>
+                              </div>
+                              <div data-element="tab__list" class="tab__button" role="presentation">
+                                <button type="button" class="tab__anchor" data-element="tab__anchor" data-index="3"
+                                  id="plugin-tab-5" role="tab" tabindex="" aria-selected="false" aria-expanded="false">
+                                  대양주
+                                </button>
+                              </div>
+                              <div data-element="tab__list" class="tab__button" role="presentation">
+                                <button type="button" class="tab__anchor" data-element="tab__anchor" data-index="4"
+                                  id="plugin-tab-6" role="tab" tabindex="" aria-selected="false" aria-expanded="false">
+                                  러시아
+                                </button>
+                              </div>
+                            </div>
+                            <div class="tab__panel-wrap scrollbar-inner" data-element="tab__panel-wrap">
+                              <div data-element="tab__panel" class="tab__panel is-active" aria-labelledby="plugin-tab-2"
+                                role="tabpanel" tabindex="0">
+                                <!-- <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">어디든지</span>
+                                  </button>
+                                </div> -->
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">서울(인천)</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div data-element="tab__panel" class="tab__panel" aria-labelledby="plugin-tab-3"
+                                role="tabpanel" tabindex="0" style="display: none;">
+                                <!-- <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">어디든지</span>
+                                  </button>
+                                </div> -->
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">나트랑/나짱</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div data-element="tab__panel" class="tab__panel" aria-labelledby="plugin-tab-4"
+                                role="tabpanel" tabindex="0" style="display: none;">
+                                <!-- <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">어디든지</span>
+                                  </button>
+                                </div> -->
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">세부</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">세부</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">세부</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">세부</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">세부</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">세부</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div data-element="tab__panel" class="tab__panel" aria-labelledby="plugin-tab-5"
+                                role="tabpanel" tabindex="0" style="display: none;">
+                                <!-- <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">어디든지</span>
+                                  </button>
+                                </div> -->
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">뉴질랜드</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">뉴질랜드</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">뉴질랜드</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">뉴질랜드</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">뉴질랜드</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">뉴질랜드</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div data-element="tab__panel" class="tab__panel" aria-labelledby="plugin-tab-6"
+                                role="tabpanel" tabindex="0" style="display: none;">
+                                <!-- <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">어디든지</span>
+                                  </button>
+                                </div> -->
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">모스크바</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">모스크바</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">모스크바</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">모스크바</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">모스크바</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="choise">
+                                  <button type="button" class="choise__button">
+                                    <span class="city">모스크바</span>
+                                    <span class="airport">BKK</span>
+                                  </button>
+                                  <div class="fav-check">
+                                    <button type="button" class="button-favorites">
+                                      <span class="hidden">즐겨찾기</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="button" class="floating-button btn-map" onclick="viewArea('target', 'map')">
+                            <span class="hidden">지도보기</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="map-list">
+                        <div class="map-wrap">
+                          <div id="map-target" class="flight-map"></div>
+                          <div class="tab-top">
+                            <ul class="tab-top-list">
+                              <li class="tab-top-item"><a href="#" class="tab-top-btn on">대한민국</a></li>
+                              <li class="tab-top-item"><a href="#" class="tab-top-btn">동북아시아</a></li>
+                              <li class="tab-top-item"><a href="#" class="tab-top-btn">동남아시아</a></li>
+                              <li class="tab-top-item"><a href="#" class="tab-top-btn">대양주</a></li>
+                              <li class="tab-top-item"><a href="#" class="tab-top-btn">러시아</a></li>
+                            </ul>
+                          </div>
+                          <div class="tab-swipe">
+                            <div class="tab-swipe-wrapper swiper-wrapper">
+                              <a class="tab-swipe-item swiper-slide on">
+                                <div class="city-name">서울(인천) <span class="sub">ICN</span></div>
+                                <button type="button" class="btn-choose-city js-choose-city">선택</button>
+                                <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+                              </a>
+                              <a class="tab-swipe-item swiper-slide">
+                                <div class="city-name">서울(김포) <span class="sub">GMP</span></div>
+                                <button type="button" class="btn-choose-city js-choose-city">선택</button>
+                                <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+                              </a>
+                              <a class="tab-swipe-item swiper-slide">
+                                <div class="city-name">부산 <span class="sub">PUS</span></div>
+                                <button type="button" class="btn-choose-city js-choose-city">선택</button>
+                                <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+                              </a>
+                              <a class="tab-swipe-item swiper-slide">
+                                <div class="city-name">제주 <span class="sub">CJU</span></div>
+                                <button type="button" class="btn-choose-city js-choose-city">선택</button>
+                                <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+                              </a>
+                              <a class="tab-swipe-item swiper-slide">
+                                <div class="city-name">제주 <span class="sub">CJU</span></div>
+                                <button type="button" class="btn-choose-city js-choose-city">선택</button>
+                                <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+                              </a>
+                              <a class="tab-swipe-item swiper-slide">
+                                <div class="city-name">제주 <span class="sub">CJU</span></div>
+                                <button type="button" class="btn-choose-city js-choose-city">선택</button>
+                                <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+                              </a>
+                              <a class="tab-swipe-item swiper-slide">
+                                <div class="city-name">제주 <span class="sub">CJU</span></div>
+                                <button type="button" class="btn-choose-city js-choose-city">선택</button>
+                                <button type="button" class="btn-wish"><span class="hidden">즐겨찾기</span></button>
+                              </a>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                          </div>
+                        </div>
+                        <button type="button" class="floating-button btn-list" onclick="viewArea('target', 'list')">
+                          <span class="hidden">리스트보기</span>
+                        </button>
+                      </div>
+                      <a href="#a" class="layer-close"><span class="blind">닫기</span></a>
+                    </div>
+                    <div class="date-layer">
+                      <div class="layer-header">
+                        <h2>날짜를 선택해 주세요.</h2>
+                      </div>
+                      <div class="layer-content">
+                        <div class="booking-trip">
+                          <div class="booking-trip__from">
+                            <span class="location">서울<span>(인천)</span></span>
+                          </div>
+                          <!-- 편도 방향화살표 -->
+                          <!-- <span class="booking-trip__direction one-way"></span> -->
+                          <!-- 편도 방향화살표 -->
+
+                          <!-- 왕복 방향화살표 -->
+                          <span class="booking-trip__direction round-trip"></span>
+                          <!-- 왕복 방향화살표 -->
+
+                          <div class="booking-trip__to">
+                            <span class="location">세부</span>
+                          </div>
+                        </div>
+                        <div class="picker picker--full">
+                          <div class="info-wrap">
+                            <!-- <span class="info">하단 금액은 1인 편도 기준입니다.</span>
+                            <span class="currency">통화 : 원</span> -->
+                          </div>
+                          <input type="text" class="picker__input" id="selectDate" data-picker="range"
+                            data-text="하단 금액은 1인 편도 기준입니다." data-json-id="flightList" data-min-date="today"
+                            data-format="Y.m.d (D)" data-range-text='{"start": "가는 날", "end": "오는 날", "current": "왕복"}'>
+                          <!--
+                            data-text: 상단에 노출할 메시지
+                            data-format: 날짜 형식 Y(year) m(Month), d(day(숫자)), D(day(문자))
+                            data-range-text: start(시작일 표사), end(종료일 표시), current(같은날짜 선택시)
+                            data-defaultDate: YYYY-MM-DD 를 배열로 입력, 2개 일 경우 기간으로 선택'["2021-02-03"]'
+                          -->
+                        </div>
+                        <div class="booking-button cal-button">
+                          <button type="button" class="button button--primary button--black pc-only"
+                            data-reset-date="#selectDate">
+                            <span class="button__text">초기화</span>
+                          </button>
+                          <button type="button" class="button button--primary button--active"
+                            data-select-date="#selectDate" rel="modal:close">
+                            <span class="button__text">왕복 선택</span>
+                            <!-- <span class="button__text">편도 선택</span> -->
+                            <!-- <span class="button__text">구간1 가는 날 선택</span> -->
+                          </button>
+                        </div>
+                      </div>
+                      <a href="#a" class="layer-close"><span class="blind">닫기</span></a>
+                    </div>
+                    <script type="application/json" id="flightList">
+                      {
+                        "price": [],
+                        "disabled": [
+                          {
+                            "date": ["2020-09-25", "2020-09-26", "2020-10-22"],
+                            "class": "best",
+                            "label": "휴가"
+                          },
+                          {
+                            "date": ["2020-09-28", "2020-09-29", "2020-11-29", "2020-12-29"],
+                            "label": "결항일"
+                          }
+                        ]
+                      }
+                    </script>
+
+                  </div>
+
+                </div>
+                <!-- 조회 내역이 없을 경우 노출 -->
+                <!-- <p class="boarding-error">선택하신 조건으로 항공편이 조회되지 않습니다.<br>가는 편 / 오는 편 선택과 날짜를 다시 확인해 주세요.</p> -->
+                <!-- //조회 내역이 없을 경우 노출 -->
+
+                <div class="button-wrap button-wrap--center sub-section">
+                  <button type="button" class="button button--optional button--active"><span
+                      class="button__text">조회</span></button>
+                  <!-- button 활성화시 button--active class 추가 -->
+                </div>
+
+              </div>
+
+            </div>
+
+            <!--조회결과-->
+            <div class="seukejul-acco">
+              <div class="seukejul-title">
+                <div class="time">출도착시간 (비행시간)</div>
+                <div class="number">편명</div>
+              </div>
+              <div class="seukejul_list-resulte" data-element="accordion">
+                <div data-element="accordion__item" class="accordion__item">
+                  <a href="#" data-element="accordion__anchor" class="accordion__anchor">
+                    <div class="time">
+                      <span class="time-num start">09:50</span>
+                      <span class="time-num target">00:30</span>
+                      <span class="moving-time">1시간 10분</span>
+                    </div>
+                    <div class="number">
+                      7C1100
+                    </div>
+                  </a>
+                  <div data-element="accordion__panel" class="accordion__panel">
+                    <ol class="seukejul_list">
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.23</div>
+                          <div class="day">(목)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.24</div>
+                          <div class="day">(금)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.25</div>
+                          <div class="day">(토)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn today">
+                          <div class="date">12.26</div>
+                          <div class="day">(일)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn disabled" disabled><!--스케줄 없을때 .disabled-->
+                          <div class="date">12.27</div>
+                          <div class="day">(월)</div>
+                          <div class="resulte "></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.28</div>
+                          <div class="day">(화)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.29</div>
+                          <div class="day">(수)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                    </ol>
+                  </div>
+
+                </div>
+                <div data-element="accordion__item" class="accordion__item">
+                  <a href="#" data-element="accordion__anchor" class="accordion__anchor">
+                    <div class="time">
+                      <span class="time-num start">09:50</span>
+                      <span class="time-num target">00:30</span>
+                      <span class="moving-time">1시간 10분</span>
+                    </div>
+                    <div class="number">
+                      7C1100
+                    </div>
+                  </a>
+                  <div data-element="accordion__panel" class="accordion__panel">
+                    <ol class="seukejul_list">
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.23</div>
+                          <div class="day">(목)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.24</div>
+                          <div class="day">(금)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.25</div>
+                          <div class="day">(토)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn today">
+                          <div class="date">12.26</div>
+                          <div class="day">(일)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn disabled" disabled><!--스케줄 없을때 .disabled-->
+                          <div class="date">12.27</div>
+                          <div class="day">(월)</div>
+                          <div class="resulte "></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.28</div>
+                          <div class="day">(화)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.29</div>
+                          <div class="day">(수)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                    </ol>
+                  </div>
+
+                </div>
+                <div data-element="accordion__item" class="accordion__item">
+                  <a href="#" data-element="accordion__anchor" class="accordion__anchor">
+                    <div class="time">
+                      <span class="time-num start">09:50</span>
+                      <span class="time-num target">00:30</span>
+                      <span class="moving-time">1시간 10분</span>
+                    </div>
+                    <div class="number">
+                      7C1100
+                    </div>
+                  </a>
+                  <div data-element="accordion__panel" class="accordion__panel">
+                    <ol class="seukejul_list">
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.23</div>
+                          <div class="day">(목)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.24</div>
+                          <div class="day">(금)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.25</div>
+                          <div class="day">(토)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn today">
+                          <div class="date">12.26</div>
+                          <div class="day">(일)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn disabled" disabled><!--스케줄 없을때 .disabled-->
+                          <div class="date">12.27</div>
+                          <div class="day">(월)</div>
+                          <div class="resulte "></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.28</div>
+                          <div class="day">(화)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="seukejul-btn">
+                          <div class="date">12.29</div>
+                          <div class="day">(수)</div>
+                          <div class="resulte"></div>
+                        </button>
+                      </li>
+                    </ol>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="more-wrap">
+              <button type="button" class="more__button"><span class="more__button-text">더보기 (<span class="more__button--color">10</span>/33)</span></button>
+            </div>
+            <!--//조회결과-->
+
+            <div class="section-wrap">
+              <ul class="list-guide list-guide--color-black">
+                <li class="list-guide__item">해당 스케줄은 2021년 하계 정기편 운항 스케줄 계획입니다.</li>
+                <li class="list-guide__item">정기편 이외 스케줄 관련 정보는 홈페이지의 [항공권 예매] 메뉴에서 확인해 주세요.</li>
+                <li class="list-guide__item">결항 및 지연 시간의 경우 반영되지 않을 수 있습니다.</li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+  <div class="footer pc-only">
+    <!-- pc -->
+    <footer class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">제주항공 소개</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">투자정보</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">채용안내</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">여객운송약관</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">홈페이지이용약관</a>
+        </div>
+        <div class="footer__top-item footer__top-item--privacy">
+          <a href="#" class="footer__top-link">개인정보처리방침</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">사이트맵</a>
+        </div>
+
+        <div class="footer__top-item footer__top-item--family">
+          <div class="family-wrap" data-element="toggle"
+            data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+            <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+            <div class="family-list" data-element="toggle__panel">
+              <a href="#" class="family-link">㈜애경산업</a>
+              <a href="#" class="family-link">㈜에이텍</a>
+              <a href="#" class="family-link">애경S.T</a>
+              <a href="#" class="family-link">에이케이아이에스㈜</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer__spacer">
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__logo">
+        <img src="../../assets/images/upload/logo_jeju_gray.png" alt="jeju Air"><!--2021-04-13 이미지로 변경-->
+      </a>
+        <div class="footer__bottom-contents">
+          <div class="footer__bottom-info">
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 서비스 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공위험물안내</a>
+            </div>
+          </div>
+          <div class="footer__bottom-recommand">
+            <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+            <div class="recommand-list">
+              <div class="recommand-item">
+                <a href="#" class="link">최저 운임 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">서울 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">제주 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">부산 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">무안 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">청부 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">대구 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">광주 출발 항공</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-util">
+            <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png" alt="VALUE ALLIANCE"></a>
+            <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
+            <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt=""> Android</a>
+          </div>
+          <p class="footer__bottom-address"><span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br>
+            제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)</p>
+          <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- //pc -->
+  </div>
+  <!-- //FOOTER -->
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <script>
+    // 예매
+    $('.main-ticketing').ticketing();
+
+    // 데이트 레이어 날짜 선택
+    // $('.date-layer button[data-select-date]').on('click', function () {
+    //   var ticketingDate = $('.ticketing-date')
+    //   var startRange = $('.startRange')
+    //   var endRange = $('.endRange')
+    //   var startRef = $('.startRange').attr('aria-label').split(',')
+    //   var startTxt = ''
+    //   var startY = startRef[0]
+    //   var startM = startRef[1].split('월')[0]
+    //   var startDate = startRef[1].split('월')[1].split(' ')[1]
+    //   var startDay = ''
+    //   var endRef = $('.endRange').attr('aria-label').split(',')
+    //   var endTxt = ''
+    //   var endY = endRef[0]
+    //   var endM = endRef[1].split('월')[0].split(' ')[1]
+    //   console.log(endM)
+    //   var endDate = endRef[1].split('월')[1].split(' ')[1]
+    //   var endDay = ''
+    //   if (startRange.hasClass('mon')) {
+    //     startDay = '(월)'
+    //   }
+    //   else if (startRange.hasClass('tue')) {
+    //     startDay = '(화)'
+    //   }
+    //   else if (startRange.hasClass('wed')) {
+    //     startDay = '(수)'
+    //   }
+    //   else if (startRange.hasClass('thu')) {
+    //     startDay = '(목)'
+    //   }
+    //   else if (startRange.hasClass('fri')) {
+    //     startDay = '(금)'
+    //   }
+    //   else if (startRange.hasClass('sat')) {
+    //     startDay = '(토)'
+    //   }
+    //   else if (startRange.hasClass('sun')) {
+    //     startDay = '(일)'
+    //   }
+    //   if (endRange.hasClass('mon')) {
+    //     endDay = '(월)'
+    //   }
+    //   else if (endRange.hasClass('tue')) {
+    //     endDay = '(화)'
+    //   }
+    //   else if (endRange.hasClass('wed')) {
+    //     endDay = '(수)'
+    //   }
+    //   else if (endRange.hasClass('thu')) {
+    //     endDay = '(목)'
+    //   }
+    //   else if (endRange.hasClass('fri')) {
+    //     endDay = '(금)'
+    //   }
+    //   else if (endRange.hasClass('sat')) {
+    //     endDay = '(토)'
+    //   }
+    //   else if (endRange.hasClass('sun')) {
+    //     endDay = '(일)'
+    //   }
+    //   startTxt = startY + '.' + + startM + '.' + startDate + '.' + startDay
+    //   endTxt = endY + '.' + endM + '.' + endDate + '.' + endDay
+    //   ticketingDate.find('.txt').text(startTxt + ' ~ ' + endTxt)
+    //   $('.date-layer').slideUp(200)
+    // })
+
+    // am4 map
+    function createAm4Map(mapNum) {
+      var chart = am4core.create(mapNum, am4maps.MapChart);
+      chart.geodata = am4geodata_worldLow;
+      chart.homeZoomLevel = 5;
+      chart.homeGeoPoint = {
+        latitude: 30,
+        longitude: 95
+      };
+      chart.projection = new am4maps.projections.Miller();
+      var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+      polygonSeries.useGeodata = true;
+    }
+
+    // 리스트, 맵 변경 
+    function viewArea(target, type) {
+      var type = type;
+      if (target == 'start' && type == 'map') {
+        $('.flight-start').addClass('map')
+        createAm4Map('map-start')
+      }
+      else if (target == 'start' && type != 'map') {
+        $('.flight-start').removeClass('map')
+      }
+      else if (target == 'target' && type == 'map') {
+        $('.flight-target').addClass('map')
+        createAm4Map('map-target')
+      }
+      else if (target == 'target' && type != 'map') {
+        $('.flight-target').removeClass('map')
+      }
+    }
+  </script>
+</body>
+
+</html>

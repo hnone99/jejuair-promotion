@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공 온라인(모바일,홈페이지 구매)</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+
+  <div class="wrap wrap--booking">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor"
+          data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">가입플랜 팝업</a>
+      </main>
+    </div>
+  </div>
+  <!-- 풀팝업 -->
+  <div id="modalLayer01" class="modal modal-full modal-scroll modal--fixed-multi">
+    <div class="modal-header">
+      <div class="modal-header__title">현금결제</div><!--20210503 문구 수정-->
+    </div>
+    <div class="modal-content">
+        <ul class="list-guide">
+          <li class="list-guide__item">현금 결제는 편의점, 우체국 ATM, 인터넷 뱅킹 결제에서 선택할 수 있습니다.</li>
+          <li class="list-guide__item">안내된 기간까지 입금이 확인되지 않으면 자동으로 예약이 취소되므로 반드시 결제 기간까지 입금하시기 바랍니다. </li>
+          <li class="list-guide__item">구간, 일정 변경이 있을 경우 다시 예약하셔야 합니다.(공석이 있는 경우에 한함)</li>
+        </ul>
+
+        <div class="gray-box pay_box sub-box">
+            <span>결제금액 JPY <strong class="color--org">33,150</strong></span>
+        </div>
+
+        <div class="check-wrap sub-box">
+          <span class="checkbox checkbox--small">
+            <input type="checkbox" id="inputCheck1" class="checkbox__input">
+            <label for="inputCheck1" class="checkbox__label">
+              <i aria-hidden="true" class="checkbox__ico"></i>
+              <span>위 사항에 동의하셔야 결제할 수 있습니다.</span><!--20210503 문구 수정-->
+            </label>
+          </span>
+        </div>
+    </div>
+
+    <!--하단 버튼영역-->
+    <div class="fixed-wrap fixed-wrap--multi-line border-none "><!-- checkbox 없는 경우 border-none class 추가 -->
+      <div class="button-wrap">
+        <button type="button" class="button button--primary button--active"><span class="button__text">확인</span></button>
+      </div>
+    </div>
+
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

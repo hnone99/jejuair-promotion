@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only ">
+      <div class="header__stepper">
+        <ol class="stepper__group_new booking_step">
+          <li>
+            <span class="step">1</span>
+            <span class="text">항공권선택</span>
+          </li>
+          <li>
+            <span class="step">2</span>
+            <span class="text">탑승객 정보 입력</span>
+          </li>
+          <li class="active">
+            <!--활성화 스탭 .active 추가-->
+            <span class="step">3</span>
+            <span class="text">부가서비스 선택</span>
+          </li>
+          <li>
+            <span class="step">4</span>
+            <span class="text">확인 및 동의</span>
+          </li>
+          <li>
+            <span class="step">5</span>
+            <span class="text">결제</span>
+          </li>
+        </ol>
+      </div>
+      <div class="header__text">
+        <span class="color-org">2</span>/<span>3</span> <span>수하물 구매</span>
+      </div>
+    </header>
+
+    <!-- 예매 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner header__inner--step pc-only step03">
+      <!--step 스타일 변경-->
+
+      <div class="sticky-header" data-sticky="">
+        <div class="header__box">
+          <h1 class="header__logo">
+            <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+          </h1>
+          <h2 class="header__page-name">항공권 예매</h2>
+
+          <div class="header__stepper">
+            <ol class="stepper__group_new booking_step">
+              <li>
+                <span class="step">1</span>
+                <span class="text">항공권선택</span>
+              </li>
+              <li>
+                <span class="step">2</span>
+                <span class="text">탑승객 정보 입력</span>
+              </li>
+              <li class="active">
+                <!--활성화 스탭 .active 추가-->
+                <span class="step">3</span>
+                <span class="text">부가서비스 선택</span>
+              </li>
+              <li>
+                <span class="step">4</span>
+                <span class="text">확인 및 동의</span>
+              </li>
+              <li>
+                <span class="step">5</span>
+                <span class="text">결제</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="header__text">
+          <div class="inner"><span class="color-org">2</span>/<span>3</span> <span>수하물 구매</span></div>
+        </div>
+      </div>
+    </header>
+    <!-- // 예매 헤더 -->
+  </div>
+
+  <div id="body">
+    <div class="wrap wrap--booking NA pc-wide">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <strong class="breadcrumb__link" aria-current="page">예약</strong>
+          </div>
+          <div class="breadcrumb__item">
+            <strong class="breadcrumb__link breadcrumb__link--current" aria-current="page">항공권 예매</strong>
+          </div>
+          <div class="breadcrumb__item">
+            <strong class="breadcrumb__link breadcrumb__link--current" aria-current="page">부가서비스 선택</strong>
+          </div>
+        </nav>
+      </div>
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div class="title">
+            <div class="title__wrap mobile-only pb30">
+              <div class="title__section title__section--small text--bold">추가 수하물로 마음까지 넉넉한 여행</div>
+              <div class="title__additional">사전 수하물은 가는 편 항공기 출발 24시간 전까지만 구매할 수 있어요!</div>
+            </div>
+
+            <div class="title__wrap pc-only">
+              <div class="title__additional only">추가 수하물로 마음까지 넉넉한 여행</div>
+              <div class="text__default pc-25 pc-only pb20">사전 수하물은 가는 편 항공기 출발 24시간 전까지만 구매할 수 있어요!</div>
+            </div>
+            <!-- <div class="default-message" data-default-message style="width:300px">
+              <i class="default-message__arrow" aria-hidden="true" style="left:45px;"></i>
+              <p class="default-message__text">사전 구매 시 <span>10%</span> 할인!</p>
+              <button type="button" class="default-message__close" aria-label="닫기"></button>
+            </div> -->
+          </div>
+
+          <div class="tab tab--scroll tab--icon tab--seat tab__scroll" data-element="tab" data-options='{"tabType": "scroll"}'>
+            <div class="sticky-wrap" >
+              <div class="sticky__inner" data-sticky>
+                <div class="tab__inner">
+                  <button class="button tab__scroll-left" data-tab-direction="prev">
+                    <span class="hidden">왼쪽 탭으로 이동</span>
+                  </button>
+                  <button class="button tab__scroll-right" data-tab-direction="next">
+                    <span class="hidden">오른쪽 탭으로 이동</span>
+                  </button>
+                  <div class="tab__scroll-wrap tab__scroll-wrap--full" data-element="tab__scroll-wrap">
+                    <div class="tab__buttons" data-element="tab__scroll">
+                      <div class="tab__button" data-element="tab__list">
+                        <!-- 좌석 선택 완료 되면 selected  클래스 추가 -->
+                        <button class="tab__anchor selected" type="button" data-element="tab__anchor">
+                          <span class="passenger">
+                            <span class="num">1</span>
+                            <strong class="name">김/제주</strong>
+                            <span class="seat">B08</span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="tab__button" data-element="tab__list">
+                        <button class="tab__anchor" type="button" data-element="tab__anchor">
+                          <span class="passenger">
+                            <span class="passenger">
+                              <span class="num">2</span>
+                              <strong class="name">KIM/ kongkongkkkkkong</strong>
+                            </span>
+                            <span class="seat">B01</span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="tab__button" data-element="tab__list">
+                        <button class="tab__anchor" type="button" data-element="tab__anchor">
+                          <span class="passenger">
+                            <span class="passenger">
+                              <span class="num">3</span>
+                              <strong class="name">KIM/ kongkongkkkkkong</strong>
+                            </span>
+                            <span class="seat"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="tab__button" data-element="tab__list">
+                        <button class="tab__anchor" type="button" data-element="tab__anchor">
+                          <span class="passenger">
+                            <span class="passenger">
+                              <span class="num">4</span>
+                              <strong class="name">KIM/ kongkongkkkkkong</strong>
+                            </span>
+                            <span class="seat"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="tab__button" data-element="tab__list">
+                        <button class="tab__anchor" type="button" data-element="tab__anchor">
+                          <span class="passenger">
+                            <span class="passenger">
+                              <span class="num">4</span>
+                              <strong class="name">KIM/ kongkongkkkkkong</strong>
+                            </span>
+                            <span class="seat"></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="tab__button" data-element="tab__list">
+                        <button class="tab__anchor" type="button" data-element="tab__anchor">
+                          <span class="passenger">
+                            <span class="passenger">
+                              <span class="num">4</span>
+                              <strong class="name">KIM/ kongkongkkkkkong</strong>
+                            </span>
+                            <span class="seat"></span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab__panel" data-element="tab__panel">
+              <div class="sub-tab-wrap">
+                <div class="sub-tab">
+                  <button class="sub-tab-btn on" type="button">가는 편</button>
+                  <button class="sub-tab-btn" type="button">오는 편</button>
+                </div>
+                <div class="sub-tab__panel on">
+                  <!-- 기내 수하물 -->
+                  <div>
+                    <div class="title">
+                      <div class="title__wrap title__first title__icon">
+                        <p class="title__section title__section--small">기내 수하물</p>
+                      </div>
+                    </div>
+                    <div class="container--small pc-15">
+                      <div class="button-list pc-flex pc-row3 pc-row3--baggage">
+                        <!-- 기본 수하물 -->
+                        <div class="button-list__item button-list__item--default" role="button">
+                          <div class="top-area">
+                            <div class="title">
+                              <span class="title__sub weight"><strong>10KG</strong>(좌석 밑 수납)</span>
+                              <span class="title__sub able">기본 제공</span>
+                              <span class="title__sub people"><span>3</span>명</span>
+                            </div>
+                          </div>
+                          <div class="bottom-area">
+                            <div class="price-wrap">
+                              <div class="price">
+                                <span>0</span> 원
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <!-- //기본 수하물 -->
+
+                        <!-- 선택 수하물 -->
+                        <div class="button-list__item" role="button">
+                          <div class="top-area">
+                            <div class="title">
+                              <span class="title__sub weight"><strong>10KG</strong> (좌석 위 수납)</span>
+                            </div>
+                            <div class="labels">
+                              <span class="labels__item labels__item--best">BEST</span>
+                              <span class="labels__item labels__item--recommend">추천</span>
+                            </div>
+                          </div>
+                          <div class="bottom-area">
+                            <div class="price-wrap">
+                              <div class="before">
+                                <span class="dicount"><span>10%</span>할인</span>
+                                <span class="original"><span>30,000</span>원</span>
+                              </div>
+                              <div class="price"><span>30,000</span>원</div>
+                            </div>
+                            <div class="add-cart">
+                              <button type="button" class="button button--small button--small-cart"><span
+                                  class="button__text button__icon icon-cart">담기</span></button>
+                            </div>
+                            <!-- 추가한 승객 인원 표시  -->
+                            <!-- <div class="add-people"><span>3</span>명</div> -->
+                          </div>
+                        </div>
+                        <!-- //선택 수하물 -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //기내 수하물 -->
+
+                  <!-- 위탁 수하물 -->
+                  <div class="container--default pc-60">
+                    <div class="title">
+                      <div class="title__wrap title__first title__icon title__icon--type2">
+                        <p class="title__section title__section--small">위탁 수하물</p>
+                      </div>
+                    </div>
+                    <div class="container--xsmall pc-15">
+                      <div class="button-list pc-flex pc-row3 pc-row3--baggage">
+                        <!-- 기본 수하물 -->
+                        <div class="button-list__item button-list__item--default" role="button">
+                          <div class="top-area">
+                            <div class="title">
+                              <span class="title__sub weight"><strong>0KG</strong></span>
+                              <span class="title__sub able">기본 제공 없음</span>
+                            </div>
+                          </div>
+                          <div class="bottom-area">
+                            <div class="price-wrap">
+                              <div class="price">
+                                <span>0</span> 원
+                              </div>
+                            </div>
+                            <div class="add-cart">
+                              <button type="button" class="button button--small button--small-cart"><span
+                                  class="button__text button__icon icon-cart">담기</span></button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- //기본 수하물 -->
+
+                        <!-- 선택 수하물 -->
+                        <div class="button-list__item" role="button">
+                          <div class="top-area">
+                            <div class="title">
+                              <span class="title__sub weight"><strong>10KG</strong></span>
+                            </div>
+                            <div class="labels">
+                              <span class="labels__item labels__item--best">BEST</span>
+                              <span class="labels__item labels__item--recommend">추천</span>
+                            </div>
+                          </div>
+                          <div class="bottom-area">
+                            <div class="price-wrap">
+                              <div class="before">
+                                <span class="dicount"><span>10%</span>할인</span>
+                                <span class="original"><span>30,000</span>원</span>
+                              </div>
+                              <div class="price"><span>30,000</span>원</div>
+                            </div>
+                            <div class="add-cart">
+                              <button type="button" class="button button--small button--small-cart"><span
+                                  class="button__text button__icon icon-cart">담기</span></button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 담은 상품 표시할 경우 selected class 추가 -->
+                        <div class="button-list__item selected" role="button">
+                          <div class="top-area">
+                            <div class="title">
+                              <span class="title__sub weight"><strong>15KG</strong></span>
+                              <span class="title__sub able">FLYBAG 제공</span>
+                              <span class="title__sub people"><span>3</span>명</span>
+                            </div>
+                            <div class="labels">
+                              <span class="labels__item labels__item--best">BEST</span>
+                              <span class="labels__item labels__item--recommend">추천</span>
+                            </div>
+                          </div>
+                          <div class="bottom-area">
+                            <div class="price-wrap">
+                              <div class="before">
+                                <span class="dicount"><span>10%</span>할인</span>
+                                <span class="original"><span>30,000</span>원</span>
+                              </div>
+                              <div class="price"><span>60,000</span>원</div>
+                            </div>
+                            <div class="add-cart">
+                              <button type="button" class="button button--small button--small-cart"><span
+                                  class="button__text button__icon icon-cart">담기</span></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="button-list__item" role="button">
+                          <div class="top-area">
+                            <div class="title">
+                              <span class="title__sub weight"><strong>20KG</strong></span>
+                              <div class="title__sub people"><span>1</span>명 업그레이드</div>
+                            </div>
+                            <div class="labels">
+                              <span class="labels__item labels__item--best">BEST</span>
+                              <span class="labels__item labels__item--recommend">추천</span>
+                            </div>
+                          </div>
+                          <div class="bottom-area">
+                            <div class="price-wrap">
+                              <div class="before">
+                                <span class="dicount"><span>10%</span>할인</span>
+                                <span class="original"><span>30,000</span>원</span>
+                              </div>
+                              <div class="price"><span>90,000</span>원</div>
+                            </div>
+                            <div class="add-cart">
+                              <button type="button" class="button button--small button--small-cart"><span
+                                  class="button__text button__icon icon-cart">담기</span></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="button-list__item" role="button">
+                          <div class="top-area">
+                            <div class="title">
+                              <span class="title__sub weight"><strong>30KG</strong></span>
+                            </div>
+                            <div class="labels">
+                              <span class="labels__item labels__item--best">BEST</span>
+                              <span class="labels__item labels__item--recommend">추천</span>
+                            </div>
+                          </div>
+                          <div class="bottom-area">
+                            <div class="price-wrap">
+                              <div class="before">
+                                <span class="dicount"><span>10%</span>할인</span>
+                                <span class="original"><span>30,000</span>원</span>
+                              </div>
+                              <div class="price"><span>120,000</span>원</div>
+                            </div>
+                            <div class="add-cart">
+                              <button type="button" class="button button--small button--small-cart"><span
+                                  class="button__text button__icon icon-cart">담기</span></button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- //선택 수하물 -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //위탁 수하물 -->
+
+                  <!-- 스포츠 용품 -->
+                  <div class="container--default pc-60" data-element="inputToggle">
+                    <div class="title title__switch pc-switch">
+                      <div class="title__wrap title__icon title__icon--type3">
+                        <div class="title__section title__section--small">스포츠 용품</div>
+                      </div>
+                      <div class="switch-wrap">
+                        <span class="switch">
+                          <input type="checkbox" id="switchItem1" class="switch__input" data-toggle="toggle__anchor">
+                          <label for="switchItem1" class="switch__label">
+                            <i class="switch__ico"></i>
+                          </label>
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- 대형 수하물 숨김 처리 -->
+                    <div data-toggle="toggle__panel" class="toggle-top">
+                      <p class="sub_gray_text">자전거, 스키, 보드, 서핑모드, 윈드서핑만 적용됩니다.</p>
+                      <div class="container--xsmall pc-15">
+                        <div class="button-list pc-flex pc-row3 pc-row3 pc-row3--baggage">
+                          <div class="button-list__item" role="button">
+                            <div class="top-area">
+                              <div class="title">
+                                <span class="title__sub weight"><strong>스프츠용품 위탁수수료 사전 결제 <br>(수수료만)</strong></span>
+                              </div>
+                            </div>
+                            <div class="bottom-area">
+                              <div class="price-wrap">
+                                <div class="before">
+                                  <span class="dicount"><span>10%</span>할인</span>
+                                  <span class="original"><span>30,000</span>원</span>
+                                </div>
+                                <div class="price"><span>90,000</span>원</div>
+                              </div>
+                              <div class="add-cart">
+                                <button type="button" class="button button--small button--small-cart"><span
+                                    class="button__text button__icon icon-cart">담기</span></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="button-list__item" role="button">
+                            <div class="top-area">
+                              <div class="title">
+                                <span class="title__sub weight"><strong>스프츠용 플러스<br><span>(위탁수수료+10KG 추가
+                                      제공)</span></strong></span>
+                              </div>
+                              <div class="labels">
+                                <span class="labels__item labels__item--best">BEST</span>
+                                <span class="labels__item labels__item--recommend">추천</span>
+                              </div>
+                            </div>
+                            <div class="bottom-area">
+                              <div class="price-wrap">
+                                <div class="before">
+                                  <span class="dicount"><span>10%</span>할인</span>
+                                  <span class="original"><span>30,000</span>원</span>
+                                </div>
+                                <div class="price"><span>120,000</span>원</div>
+                              </div>
+                              <div class="add-cart">
+                                <button type="button" class="button button--small button--small-cart"><span
+                                    class="button__text button__icon icon-cart">담기</span></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container--xsmall pc-20">
+                        <div class="guide-info guide-info--gray">
+                          <p class="guide-info__text">다른 스포츠용품은 일반 수하물과 동일하게 취급됩니다.</p>
+                          <p class="guide-info__text">스포츠플러스 추가 무게는 스포츠용품 위탁 시에만 사용 가능합니다.</p>
+                          <p class="guide-info__text">수하물이 없는 고객은 스포츠용품 위탁 수수료만 구매 가능합니다.</p>
+                          <p class="guide-info__text">무게 초과 시 초과수하물 요금이 발생합니다.</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- //대형 수하물 -->
+                </div>
+                <!--가는편 tab__panel-->
+                <div class="sub-tab__panel">오는편</div>
+                <!-- 오는편 tab__panel-->
+              </div>
+            </div>
+            <div class="tab__panel" data-element="tab__panel">패널2</div>
+            <div class="tab__panel" data-element="tab__panel">패널3</div>
+            <div class="tab__panel" data-element="tab__panel">패널4</div>
+            <div class="tab__panel" data-element="tab__panel">패널5</div>
+            <div class="tab__panel" data-element="tab__panel">패널6</div>
+          </div>
+          <div class="booking-sticky booking-sticky--reservation" data-element="toggle"  data-options='{"mode": "slide"}'>
+            <div class="reservation-container">
+              <div class="booking-sticky__top">
+                <div class="toggle-wrap toggle-wrap--button toggle-wrap--height">
+                  <!-- 결제금액에 포인트 내용이 있을 경우 toggle-wrap--height class 추가 -->
+                  <!-- 포인트 결재시 label--point 추가-->
+                  <div class="label label--point">
+                    <span>예상 결제금액</span>
+                    <button type="button" class="icon">
+                      <span class="hidden">예상 결제금액 상세</span>
+                    </button>
+                  </div>
+                  <!-- Point 의 경우 summary--point 클래스 및 추가 -->
+                  <button type="button" class="summary summary--point" data-element="toggle__anchor">
+                    <span class="cost">
+                      <span class="price_txt">1,508,000</span>
+                      <span class="unit">원</span>
+                    </span>
+                    <!-- Point 일 경우 추가 -->
+                    <span class="point">
+                      <span class="cost">
+                        <span class="price_txt">+ 508,000</span>
+                        <span class="unit">P</span>
+                      </span>
+                    </span>
+                    <!-- // Point 일 경우 추가 -->
+                  </button>
+                </div>
+                <button type="button" class="button button--primary button--black pc-only">
+                  <span class="button__text">담은상품 (0)</span>
+                </button>
+                <button type="button" class="button button--primary button--active pc-only">
+                  <span class="button__text">다음</span>
+                </button>
+              </div>
+              <div class="booking-sticky__bottom line -limitH" data-element="toggle__panel">
+                <!-- [수정 : 210223] -limitH class 추가 -->
+                <div class="title">
+                  <h3 class="title__section title__section--small">항목별 운임 상세</h3>
+                </div>
+                <h4 class="text__default text--bold">항공 운송료</h4>
+                <div class="itemize__item">
+                  <div class="flex-text">
+                    <div class="flex-text__title">항공운임 </div>
+                    <div class="flex-text__additional">123,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title">공항시설 사용료</div>
+                    <div class="flex-text__additional">10,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title">유류할증료</div>
+                    <div class="flex-text__additional">10,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title">비동반 소아 서비스 신청</div>
+                    <div class="flex-text__additional">10,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title color-org">신규 가입 할인</div>
+                    <div class="flex-text__additional color-org">-10,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title color-org">개인 신분 할인</div>
+                    <div class="flex-text__additional color-org">-10,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title color-org">프로모션 코드 할인</div>
+                    <div class="flex-text__additional color-org">-10,000원</div>
+                  </div>
+                </div>
+
+                <div class="container--default pc-20">
+                  <h4 class="text__default text--bold">부가서비스</h4>
+                  <div class="itemize__item">
+                    <div class="flex-text">
+                      <div class="flex-text__title">번들 FLY</div>
+                      <div class="flex-text__additional">20,000원</div>
+                    </div>
+                    <div class="flex-text">
+                      <div class="flex-text__title">좌석 선택</div>
+                      <div class="flex-text__additional">10,000원</div>
+                    </div>
+                    <div class="flex-text">
+                      <div class="flex-text__title">수하물</div>
+                      <div class="flex-text__additional">10,000원</div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="guide-info guide-info--gray">
+                  <li class="guide-info__text">한국출발 세금(BP)에는 국제 여객항공이용료(인천/김포공항 17,000원, 기타 12,000원), 출국납부금 10,000원, 국제
+                    빈곤퇴치기여금 1,000원이 포함되어 있습니다.</li>
+                  <li class="guide-info__text">공항이용료의 경우 선택하신 여정 종류(TRANSFER/TRANSIT)에 따라 금액이 변동 될 수 있습니다.</li>
+                </ul>
+              </div>
+
+              <div class="button-wrap button-wrap--stick mobile-only">
+                <button type="button" class="button button--primary button--black">
+                  <span class="button__text">담은상품 (0)</span>
+                </button>
+                <button type="button" class="button button--primary button--active">
+                  <span class="button__text">다음</span>
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.sub-tab-wrap').subTab()
+  })
+</script>
+</body>
+
+</html>

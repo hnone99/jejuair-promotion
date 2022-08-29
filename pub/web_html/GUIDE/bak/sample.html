@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+<!-- 개발시 삭제: robots -->
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+<link rel="stylesheet" href="../../assets/css/component.css">
+<link rel="stylesheet" href="../../assets/css/page.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+  <style>
+      body{
+          padding: 0 20px;
+      }
+      .comp-title{
+          color: #ec0606;
+          padding-top: 20px;
+      }
+  </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="pc-only">
+            <h2 class="comp-title">PC 기본형 select(select2)</h2>
+            <div class="select-container">
+                <div data-element="select" class="select-wrap select-wrap--line">
+                    <!-- param1: data-select-container = select(2)가 붙어야 하는 container 선택자(누락시 body 최하단에 붙음)-->
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택" class="select-wrap__select" data-select-container=".select-container">
+                    <option></option>
+                    <option value="1" selected>대한민국</option>
+                    <option value="2">중국</option>
+                    <option value="3">일본</option>
+                </select>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-only">
+            <h2 class="comp-title">모바일 기본형 select</h2>
+            <div data-element="select" class="select-wrap select-wrap--inline">
+                <select data-element="select__select" title="지역 선택" class="select-wrap__select">
+                    <option></option>
+                    <option value="1" selected>1월</option>
+                    <option value="2">2월</option>
+                    <option value="3">3월</option>
+                </select>
+            </div>
+            <h2 class="comp-title">모바일 멀티 형 select</h2>
+            <!-- param1: data-select-target = select 버튼의 text 가 몇번째 select option과 동기화 할지 결정(아래는 첫번째로 설정)-->
+            <div data-element="select" data-select-target="0" class="select-wrap select-wrap--inline">
+                <!-- 아래 select 요소가 2개 이상일 경우 좌우로 선택 옵션이 슬라이드 됨 (위의 data-select-target값은 (select 갯수 -1)개를 넘을 수 없다.) -->
+                <select data-element="select__select" title="지역 선택" class="select-wrap__select">
+                    <option></option>
+                    <option value="1" selected>대한민국</option>
+                    <option value="2">미국1</option>
+                    <option value="3">미국2</option>
+                    <option value="4">미국3</option>
+                </select>
+                <select data-element="select__select" title="언어 선택" class="select-wrap__select">
+                    <option></option>
+                    <option value="1" selected>한국어</option>
+                    <option value="2">영어</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <h2 class="comp-title">탭형 좌우 스크롤 드랍 앤 드롭</h2>
+            <!-- 최상위 부모 dom 속성  data-element="tab"-->
+            <div class="tab tab--scroll tab--icon tab--icon-large tab__scroll" data-element="tab" data-options='{"tabType": "scroll"}'>
+                <div class="sticky-wrap">
+                    <div class="sticky__inner" data-sticky>
+                    <div class="tab__inner">
+                        <button class="button tab__scroll-left" data-tab-direction="prev">
+                        <span class="hidden">왼쪽 탭으로 이동</span>
+                        </button>
+                        <button class="button tab__scroll-right" data-tab-direction="next">
+                        <span class="hidden">오른쪽 탭으로 이동</span>
+                        </button>
+                        <!-- 스크롤을 담당하는 돔요소 class="tab__button-wrap"-->
+                        <div class="tab__scroll-wrap--full tab__button-wrap" data-element="tab__scroll-wrap">
+                        <div class="tab__buttons" data-element="tab__scroll">
+                            <!-- 각 요소 클릭시 좌측 끝으로 스크롤 하기 위한 data-element="tab__list"-->
+                            <div class="tab__button" data-element="tab__list">
+                            <!-- 값모두 입력되면  is-checked 클래스 추가-->
+                            <button class="tab__anchor is-checked" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                <span class="type">성인 1</span>
+                                <strong class="name">KIM/ kongkongkong</strong>
+                                </span>
+                            </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                            <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger withbaby">
+                                <span class="type">성인 2</span>
+                                <strong class="name">KIM/ kongkongkong</strong>
+                                </span>
+                            </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                            <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger child">
+                                <span class="type">소아 1</span>
+                                <strong class="name">KIM/ kongkongkong</strong>
+                                </span>
+                            </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                            <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger child">
+                                <span class="type">소아 1</span>
+                                <strong class="name">KIM/ kongkongkong</strong>
+                                </span>
+                            </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                            <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger child">
+                                <span class="type">소아 1</span>
+                                <strong class="name">KIM/ kongkongkong</strong>
+                                </span>
+                            </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                            <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger child">
+                                <span class="type">소아 1</span>
+                                <strong class="name">KIM/ kongkongkong</strong>
+                                </span>
+                            </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                            <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger child">
+                                <span class="type">소아 1</span>
+                                <strong class="name">KIM/ kongkongkong</strong>
+                                </span>
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="tab__panel" data-element="tab__panel">컨텐츠 1</div>
+                <div class="tab__panel" data-element="tab__panel">컨텐츠 2</div>
+                <div class="tab__panel" data-element="tab__panel">컨텐츠 3</div>
+                <div class="tab__panel" data-element="tab__panel">컨텐츠 4</div>
+                <div class="tab__panel" data-element="tab__panel">컨텐츠 5</div>
+                <div class="tab__panel" data-element="tab__panel">컨텐츠 6</div>
+                <div class="tab__panel" data-element="tab__panel">컨텐츠 7</div>
+            </div>
+            <h2 class="comp-title">태그형 좌우 스크롤 드랍 앤 드롭</h2>
+            <!-- 하위 컨텐츠 없이 드래그애 드랍만 되는 케이스 -->
+            <div data-element="tab">
+                <div class="tab__button-wrap">
+                    <!-- 스크롤 요소는 스크롤이 되야 하기 때문에 아래와 같은 css 속성을 가지고 있어야함(아래 인라인 코드는 샘플)  -->
+                    <div style="white-space: nowrap;">
+                        <!-- 비활성화의 경우 disabled 추가 -->
+                        <div class="tag-list__item tag-list__item--tag disabled" data-element="tab__list">
+                        <button type="button" class="tag-list__text  disabled" disabled>#최근검색</button>
+                        <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                        </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                        <button type="button" class="tag-list__text">#최근검색최근검색</button>
+                        <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                        </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                        <button type="button" class="tag-list__text">#최근</button>
+                        <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                        </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                        <button type="button" class="tag-list__text">#검색</button>
+                        <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                        </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                        <button type="button" class="tag-list__text">#검색1</button>
+                        <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                        </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                        <button type="button" class="tag-list__text">#검색2</button>
+                        <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                        </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                        <button type="button" class="tag-list__text">#검색3</button>
+                        <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                        </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                        <button type="button" class="tag-list__text">#검색4</button>
+                        <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                        </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                        <button type="button" class="tag-list__text">#검색5</button>
+                        <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                        </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                        <button type="button" class="tag-list__text">#검색6</button>
+                        <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                        </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                            <button type="button" class="tag-list__text">#검색7</button>
+                            <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                            </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                            <button type="button" class="tag-list__text">#검색8</button>
+                            <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                            </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                            <button type="button" class="tag-list__text">#검색9</button>
+                            <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                            </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                            <button type="button" class="tag-list__text">#검색10</button>
+                            <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                            </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                            <button type="button" class="tag-list__text">#검색11</button>
+                            <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                            </button>
+                        </div>
+                        <div class="tag-list__item tag-list__item--tag" data-element="tab__list">
+                            <button type="button" class="tag-list__text">#검색12</button>
+                            <button type="button" class="tag-list__remove">
+                            <span class="hidden">삭제</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="comp-title">팝업샘플1</h2>
+            <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">max-height 인라인 70% 기본</a>
+            <h2 class="comp-title">팝업샘플2</h2>
+            <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer02" data-modal-type="full" style="color: #fff;">max-height 인라인 100%</a>
+            <h2 class="comp-title">팝업샘플3</h2>
+            <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer03" data-modal-type="full" style="color: #fff;">max-height 인라인 처리X</a>
+        </div>
+        <div class="booking-sticky booking-sticky--reservation" data-element="toggle" data-options='{"mode": "slide"}'>
+            <div class="reservation-container">
+              <div class="booking-sticky__top ">
+                <div class="toggle-wrap toggle-wrap--button toggle-wrap--height">
+                  <!-- 포인트 결재시 label--point 추가-->
+                  <div class="label label--point">
+                    <span>예상 결제금액</span>
+                    <button type="button" class="icon" data-target="#modalLayer11" data-modal-type="default" data-element="modal_anchor">
+                      <span class="hidden">예상 결제금액 상세</span>
+                    </button>
+                  </div>
+                  <!-- 포인트 결재시 summary--point 클래스 및 추가 -->
+                  <button type="button" class="summary summary--point" data-element="toggle__anchor">
+                    <span class="cost">
+                      <span class="price_txt">1,508,000</span>
+                      <span class="unit">원</span>
+                    </span>
+                    <!-- Point 일 경우 추가 -->
+                    <span class="point">
+                      <span class="cost">
+                        <span class="price_txt">+ 508,000</span>
+                        <span class="unit">P</span>
+                      </span>
+                    </span>
+                    <!-- // Point 일 경우 추가 -->
+                  </button>
+                  <!-- D : 체크가 모두 완료 되면 나오는 메세지 on 클래스 추가 -->
+                  <div class="link-wrap">
+                    <div class="link-wrap link-wrap--left">
+                      <a href="#" class="link-wrap__underline"><span>나중에 결제</span></a>
+                    </div>
+                    <div class="after-message on">
+                      <p>수수료만 결제하고 최종 결제는 나중에</p>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="button button--primary pc-only">
+                  <span class="button__text">부가서비스 신청하기</span>
+                </button>
+              </div>
+              <div class="booking-sticky__bottom -limitH" data-element="toggle__panel"> <!-- [수정 : 210223] -limitH class 추가 -->
+                <div class="title">
+                  <h3 class="title__section title__section--small">항목별 운임 상세</h3>
+                </div>
+                <h4 class="text__default text--exbold">항공 운송료</h4>
+                <div class="itemize__item">
+                  <div class="flex-text">
+                    <div class="flex-text__title">항공운임 </div>
+                    <div class="flex-text__additional">123,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title">공항이용료 및 제반시설 </div>
+                    <div class="flex-text__additional">10,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title">유류할증료</div>
+                    <div class="flex-text__additional">3,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title color-org">프로모션 코드 할인</div>
+                    <div class="flex-text__additional color-org">-10,000원</div>
+                  </div>
+                </div>
+                <h4 class="text__default text--exbold pc-60">부가서비스</h4>
+                <div class="itemize__item">
+                  <div class="flex-text">
+                    <div class="flex-text__title">번들 FLY</div>
+                    <div class="flex-text__additional">123,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title">좌석선택</div>
+                    <div class="flex-text__additional">10,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title">수하물</div>
+                    <div class="flex-text__additional">3,000원</div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title color-org">프로모션 코드 할인</div>
+                    <div class="flex-text__additional color-org">-10,000원</div>
+                  </div>
+                </div>
+                <ul class="guide-info guide-info--gray">
+                  <li class="guide-info__text">한국출발 세금(BP)에는 국제 여객항공이용료(인천/김포공항 17,000원, 기타 12,000원), 출국납부금 10,000원, 국제 빈곤퇴치기여금 1,000원이 포함되어 있습니다.</li>
+                  <li class="guide-info__text">공항이용료의 경우 선택하신 여정 종류(TRANSFER/TRANSIT)에 따라 금액이 변동 될 수 있습니다.</li>
+                </ul>
+              </div>
+              <div class="button-wrap mobile-only">
+                <!-- D : 액티브 클래스 button--active -->
+                <button type="button" class="button button--primary">
+                  <span class="button__text">부가서비스 신청하기</span>
+                </button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalLayer11" class="modal modal-default">
+        <div class="modal-content modal-content--alert">
+          <div class="modal-content__title">제휴카드 할인</div>
+          <div class="modal-content__list-title">제휴카드로 결제시 할인이 팡팡!</div>
+    
+          <div class="list-card list-card--small">
+            <div class="list-card__item">
+              <div class="list-card__image">
+                <img src="../../assets/images/@temp/@img-card01.png" alt="이미지">
+              </div>
+              <div class="list-card__info">
+                <p class="list-card__text">제주항공 Refresh Point<br>
+                  신한카드 결제시 <strong>20,000 원 할인</strong></p>
+              </div>
+            </div>
+            <div class="list-card__item">
+              <div class="list-card__image">
+                <img src="../../assets/images/@temp/@img-card02.png" alt="이미지">
+              </div>
+              <div class="list-card__info">
+                <p class="list-card__text">제주항공 Refresh Point<br>
+                  삼성카드 결제시 <strong>20,000 원 할인</strong></p>
+              </div>
+            </div>
+            <div class="list-card__item">
+              <div class="list-card__image">
+                <img src="../../assets/images/@temp/@img-card03.png" alt="이미지">
+              </div>
+              <div class="list-card__info">
+                <p class="list-card__text">국민카드 200,000원 결제시<br>
+                  <strong>5,000 원 할인</strong></p>
+              </div>
+            </div>
+            <div class="list-card__item">
+              <div class="list-card__image">
+                <img src="../../assets/images/@temp/@img-card03.png" alt="이미지">
+              </div>
+              <div class="list-card__info">
+                <p class="list-card__text">국민카드 200,000원 결제시<br>
+                  <strong>5,000 원 할인</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+    </div>
+    <!-- maxheight 인라인 70% 기본 (max-height를 자바스크립트에서 동적으로)--><!-- data-max-rate="80" 이렇게 쓰면 80% 적용됨  -->
+    <div id="modalLayer01" class="modal modal-full modal--fixed-multi modal-scroll">
+        <div  class="modal-header">
+          <div class="modal-header__title">max-height 인라인 70% 기본</div>
+        </div>
+        <div class="modal-content">
+          <ul class="list-guide">
+            <li class="list-guide__item">테스트.</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+          </ul>
+        </div>
+        <div class="fixed-wrap fixed-wrap--multi-line border-none"> <!-- checkbox 없는 경우 border-none class 추가 -->
+          <div class="button-wrap">
+            <button type="button" class="button button--active"><span class="button__text">확인</span></button>
+          </div>
+        </div>
+        <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+    </div>
+    <!-- maxheight 인라인 100% (max-height="auto")  --><!-- class = "h100"  -->
+    <div id="modalLayer02" class="modal modal-full modal--fixed-multi modal-scroll h100" data-width="910">
+        <div  class="modal-header">
+          <h2 class="modal-header__title">max-height 인라인 auto</h2>
+        </div>
+        <div class="modal-content">
+            <ul class="list-guide">
+                <li class="list-guide__item">테스트.</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트.</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+                <li class="list-guide__item">테스트</li>
+            </ul>
+          <div class="fixed-wrap button-wrap pc-center pc-30">
+            <button type="button" class="button button--primary button--black"><span class="button__text">이미지 저장</span></button>
+            <button type="button" class="button button--primary button--active"><span class="button__text">PDF 다운로드</span></button>
+          </div>
+        </div>
+        <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+    </div>
+    <!-- maxheight 인라인 코드 적용 X (max-height 값을 인라인에 작성하지 않음)  --><!-- data-max-rate="none"  -->
+    <div id="modalLayer03" class="modal modal-full modal--fixed-multi modal-scroll" data-max-rate="none">
+        <div  class="modal-header">
+          <div class="modal-header__title">테스트 타이틀</div>
+        </div>
+        <div class="modal-content">
+          <ul class="list-guide">
+            <li class="list-guide__item">테스트.</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+            <li class="list-guide__item">테스트</li>
+          </ul>
+        </div>
+        <div class="fixed-wrap fixed-wrap--multi-line border-none"> <!-- checkbox 없는 경우 border-none class 추가 -->
+          <div class="button-wrap">
+            <button type="button" class="button button--active"><span class="button__text">확인</span></button>
+          </div>
+        </div>
+        <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+    </div>
+    <script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">리프레시 포인트</h2>
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <!-- //mobile -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div id="body">
+    <div class="wrap NC-refresh">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">회원혜택</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle" data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>
+            <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor">리프레시 포인트</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel">
+              <a href="#" class="item">사전 수하물</a>
+              <a href="#" class="item">사전 수하물</a>
+              <a href="#" class="item">사전 수하물 수하물</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div class="page-title-wrap pc-only">
+            <div class="page-title">리프레시 포인트</div>
+          </div>
+
+          <div class="section-wrap new-top-wrap refresh">
+            <div class="link-wrap--arrow link-wrap--right ">
+              <a href="#" class="link-wrap__text icon-refresh-saved"><span>적립안내</span></a>
+              <a href="#" class="link-wrap__text icon-refresh-use"><span>사용안내</span></a>
+            </div>
+            <div class="new-top-box">
+              <!--로그인 전-->
+              <div class="refresh-point__info-item pc-flex">
+                <p class="refresh-point__info-title">나의 <span class="color-org">리프레시 포인트</span>를<br> 이용하려면 로그인 해주세요.</p>
+                <div class="button-wrap mo-25 pc-0">
+                  <button type="button" class="button button--small pc-0"><span class="button__text">로그인</span></button>
+                </div>
+              </div>
+              <!--//로그인 전-->
+            </div>
+
+            <div class="new-top-box">
+              <!--로그인 후-->
+              <div class="new-top-box__inner">
+                <div class="pc-left">
+
+                  <div class="refresh-point">
+                    <p class="point-title"><em>김제주</em>님의 사용 가능 포인트</p>
+                    <p class="point-total"><span>187,300</span>P</p>
+                  </div>
+
+                </div>
+                <div class="pc-right">
+                  <div class="pc-box">
+                    <ul class="point-list">
+                      <li>
+                        <p class="point-list-title">적립</p>
+                        <p class="point-list-num"><span>1,000,000,000</span>P</p>
+                      </li>
+                      <li>
+                        <p class="point-list-title">구매</p>
+                        <p class="point-list-num"><span>1,000,000,000</span>P</p>
+                      </li>
+                      <li>
+                        <p class="point-list-title">소멸예정
+                          <button type="button" class="tooltip__button" data-target="#modalLayer02"
+                            data-modal-type="default" data-element="modal_anchor">
+                            <span class="hidden">소멸예정 포인트 팝업</span>
+                          </button>
+                        </p>
+                        <p class="point-list-num"><span>1,000,000,000</span>P</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="box-link-list mypage__link">
+                    <a href="#none">
+                      <div>포인트 구매</div>
+                    </a>
+                    <a href="#none">
+                      <div>탑승 후 적립</div>
+                    </a>
+                    <a href="#none">
+                      <div>포인트 조회</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!--//로그인 후-->
+            </div>
+
+
+          </div>
+
+          <!-- 제주항공 이벤트 -->
+          <div class="section-wrap">
+            <div class="section-title">제주항공 이벤트</div>
+            <div class="swiper-container illust-banner-wrapper refresh-banner"><!--일러스트 스타일 배너-->
+              <div class="swiper-wrapper refresh-banner-wrapper">
+                <div class="refresh-item swiper-slide">
+                  <a href="">
+                    <div class="illust-banner" style="background-color:#c6e7e8;">
+                      <div class="illust-banner__text">
+                        <p class="illust-banner__title">최대 96%할인 이벤트</p>
+                        <p class="illust-banner__desc"><span class="one-line">제주항공<br>단독 제공 이벤트 제주항공 단독 제공 이벤트 </span></p>
+                      </div>
+                      <span class="illust-img__right">
+                        <img src="../../assets/images/etc/refresh_bn01.png" alt="">
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                  
+                <div class="refresh-item swiper-slide">
+                  <a href="">
+                    <div class="illust-banner" style="background-color:#ffe1b7;">
+                      <div class="illust-banner__text">
+                        <p class="illust-banner__title">할인 쿠폰 이벤트</p>
+                        <p class="illust-banner__desc">단 3일, JJPAY 전용<br>20~30% 쿠폰!</p>
+                      </div>
+                      <span class="illust-img__right">
+                        <img src="../../assets/images/etc/refresh_bn02.png" alt="">
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                <div class="refresh-item swiper-slide">
+                  <a href="">
+                    <div class="illust-banner" style="background-color:#eacaed;">
+                      <div class="illust-banner__text">
+                        <p class="illust-banner__title">롯데인터넷면세점</p>
+                        <p class="illust-banner__desc">다양한 회원 혜택<br>with 롯데면세점!</p>
+                      </div>
+                      <span class="illust-img__right">
+                        <img src="../../assets/images/etc/refresh_bn03.png" alt="">
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel__pagination"></div>
+            </div>
+          </div>
+          <!--// 제주항공 이벤트 -->
+
+          <div class="section-wrap">
+            <div class="arrow-list column-2">
+              <a href="#" class="arrow-list__item">
+                <span class="arrow-list__text">회원가입 보너스 포인트 적립 안내</span>
+              </a>
+              <a href="#" class="arrow-list__item">
+                <span class="arrow-list__text">회원가입 및 탈퇴 안내</span>
+              </a>
+              <a href="#" class="arrow-list__item">
+                <span class="arrow-list__text">회원등급 안내</span>
+              </a>
+              <a href="#" class="arrow-list__item">
+                <span class="arrow-list__text">리프레시 포인트 안내</span>
+              </a>
+            </div>
+          </div>
+      </main>
+    </div>
+
+  </div>
+  </div><!-- // #body -->
+
+  <!-- footer -->
+  <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+  <div class="footer pc-only">
+    <!-- pc -->
+    <footer class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">제주항공 소개</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">투자정보</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">채용안내</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">여객운송약관</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">홈페이지이용약관</a>
+        </div>
+        <div class="footer__top-item footer__top-item--privacy">
+          <a href="#" class="footer__top-link">개인정보처리방침</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">사이트맵</a>
+        </div>
+
+        <div class="footer__top-item footer__top-item--family">
+          <div class="family-wrap"   data-element="toggle" data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>..                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+            <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+            <div class="family-list" data-element="toggle__panel" >
+              <a href="#" class="family-link">㈜애경산업</a>
+              <a href="#" class="family-link">㈜에이텍</a>
+              <a href="#" class="family-link">애경S.T</a>
+              <a href="#" class="family-link">에이케이아이에스㈜</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer__spacer">
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__logo">
+          <img src="../../assets/images/upload/logo_jeju_gray.png" alt="jeju Air">
+          <!--2021-04-13 이미지로 변경-->
+        </a>
+        <div class="footer__bottom-contents">
+          <div class="footer__bottom-info">
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 서비스 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공위험물안내</a>
+            </div>
+          </div>
+          <div class="footer__bottom-recommand">
+            <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+            <div class="recommand-list">
+              <div class="recommand-item">
+                <a href="#" class="link">최저 운임 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">서울 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">제주 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">부산 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">무안 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">청부 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">대구 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">광주 출발 항공</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-util">
+            <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png"
+                alt="VALUE ALLIANCE"></a>
+            <!--2021-04-13 이미지로 변경-->
+            <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
+            <!--2021-04-13 이미지로 변경-->
+            <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt="">
+              Android</a>
+            <!--2021-04-13 이미지로 변경-->
+          </div>
+          <p class="footer__bottom-address"><span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br>
+            제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)</p>
+          <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- //pc -->
+  </div>
+  <!-- //footer -->
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <script>
+    // 슬라이드
+    var refreshB;
+    function initrefreshBSwiper() {
+      var windowW = $(window).width();
+      console.log('initrefreshBSwiper', windowW, refreshB)
+      if (windowW > 1080 && refreshB == undefined)
+      {
+        $('.refresh-banner .swiper-wrapper').removeAttr('style');
+        $('.refresh-banner .swiper-slide').removeAttr('style');
+      }
+      else if (windowW > 1080 && refreshB != undefined)
+      {
+        refreshB.destroy(true)
+        refreshB = undefined;
+        $('.refresh-banner .swiper-wrapper').removeAttr('style');
+        $('.refresh-banner .swiper-slide').removeAttr('style');
+      }
+      else if (windowW < 1080 && refreshB == undefined)
+      {
+        refreshB = new Swiper('.refresh-banner ', {
+          slidesPerView: 'auto',
+          pagination: {
+            el: '.refresh-banner .carousel__pagination',
+          },
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+        });
+      }
+    }
+    $(window).on('load resize', function () {
+      initrefreshBSwiper()
+    });
+  </script>
+</body>
+</html>

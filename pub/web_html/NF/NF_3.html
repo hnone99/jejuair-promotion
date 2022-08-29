@@ -1,0 +1,2535 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">공항정보</h2>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <div class="gnb" id="gnb">
+        <div class="gnb__header">
+          <div class="gnb__header-top" data-absolute-sticky>
+            <a href="#none" class="button-home" title="홈으로 이동"></a>
+            <div data-element="select" data-select-target="0" class="select-wrap select-wrap--inline">
+              <select data-element="select__select" title="지역 선택" class="select-wrap__select">
+                <option></option>
+                <option value="1" selected>대한민국</option>
+                <option value="2">미국1</option>
+                <option value="3">미국2</option>
+                <option value="4">미국3</option>
+              </select>
+              <select data-element="select__select" title="언어 선택" class="select-wrap__select">
+                <option></option>
+                <option value="1" selected>한국어</option>
+                <option value="2">영어</option>
+              </select>
+            </div>
+            <div class="additional">
+              <!-- D : '웹'일경우 APP다운로드 버튼 -->
+              <button type="button" class="button button--small"><span class="button__text button__icon">APP</span></button>
+              <a href="#none" class="button-search" title="통합검색이동"></a>
+              <!-- D : '앱'일경우 세팅 버튼 -->
+              <!-- <button type="button" class="button-setting" aria-label="setting"></button> -->
+              <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+            </div>
+          </div>
+          <div class="gnb__header-bot">
+            <!-- 로그인 전 -->
+            <div class="before" style="display: none;">
+              <div class="title">
+                로그인 하시고<br>더 풍부한 혜택을 누리세요.
+              </div>
+              <!-- fixed 영역 -->
+              <div class="sticky-wrap">
+                <div class="button-wrap button-flex sticky__inner gnb-sticky1">
+                  <button type="button" class="button button--secondary"><span class="button__text">회원가입</span></button>
+                  <button type="button" class="button button--secondary button--active"><span class="button__text">로그인</span></button>
+                  <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                </div>
+              </div>
+              <!-- //fixed 영역 -->
+              <div class="title">
+                <div class="title__section title__section--additional">제주항공에서 예약하지 않으셨다면?
+                <div class="additional">
+                    <div class="link-wrap">
+                      <a href="#" class="link-wrap__underline"><span>예약조회</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //로그인 전 -->
+            <!-- 로그인 후 -->
+            <div class="after">
+              <!-- fixed 영역 -->
+              <div class="sticky-wrap">
+                <div class="title sticky__inner gnb-sticky2">
+                  <i class="icon vip" aria-label="vip"></i>
+                  <!-- <i class="icon gold" aria-label="gold"></i>
+                  <i class="icon sliverplus" aria-label="sliverplus"></i>
+                  <i class="icon silver" aria-label="sliver"></i> -->
+                  <div class="text">
+                    <p class="name"><span class="exbold">김제주</span>님</p>
+                    <p class="hide">안녕하세요?</p>
+                  </div>
+                  <div class="additional">
+                    <button type="button" class="button-card" aria-label="card-popup">
+                    <img src="../../assets/images/icon/icon-card.png" alt="알림">
+                  </button>
+                    <button type="button" class="button-alarm" aria-label="alarm-popup">
+                    <img src="../../assets/images/icon/icon-alarm.png" alt="알림">
+                    <span>3<span class="hidden">개</span></span>
+                  </button>
+                    <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                  </div>
+                </div>
+              </div>
+              <!-- //fixed 영역 -->
+              <div class="gray-box">
+                <div class="flex-text">
+                  회원 번호
+                  <div class="flex-text__additional">080041313</div>
+                </div>
+                <div class="flex-text">
+                  사용 가능한 포인트
+                  <div class="flex-text__additional">10,000P</div>
+                </div>
+              </div>
+              <div class="button-wrap button-flex">
+                <button type="button" class="button button--secondary button--border"><span class="button__text">리프레시포인트</span></button>
+                <button type="button" class="button button--secondary button--border add--ml-10"><span class="button__text">마이페이지</span></button>
+              </div>
+            </div>
+            <!-- //로그인 후 -->
+            <div class="icon-link">
+              <a href="#none" class="icon-link__item">
+                <img src="../../assets/images/icon/icon-join-item-04.png" alt="" aria-hidden="true">
+                <span class="icon-link__text">투어&티켓</span>
+              </a>
+              <a href="#none" class="icon-link__item">
+                <img src="../../assets/images/icon/icon-join-item-06.png" alt="" aria-hidden="true">
+                <span class="icon-link__text">출도착조회</span>
+              </a>
+              <a href="#none" class="icon-link__item">
+                <img src="../../assets/images/icon/icon-join-item-07.png" alt="" aria-hidden="true">
+                <span class="icon-link__text">고객센터</span>
+              </a>
+            </div>
+            <!-- //로그인 후 -->
+          </div>
+        </div>
+        <hr class="section-spacer">
+        <div class="gnb-wrap">
+          <div class="gnb__box">
+            <div class="gnb__title">예약</div> 
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">항공권 예매</a>
+              <a href="#none" class="gnb__list-item">항공권 추천</a>
+              <a href="#none" class="gnb__list-item">민항공후급증</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">여행준비</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">예약 안내</a>
+              <a href="#none" class="gnb__list-item">운임 안내</a>
+              <a href="#none" class="gnb__list-item">운항 정보</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">회원 혜택</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">리프레시 포인트</a>
+              <a href="#none" class="gnb__list-item">쿠폰 혜택</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">부가서비스 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">사전 수하물</a>
+              <a href="#none" class="gnb__list-item">사전 좌석</a>
+              <a href="#none" class="gnb__list-item">사전 기내식</a>
+              <a href="#none" class="gnb__list-item">보험 상품</a>
+              <a href="#none" class="gnb__list-item">투어&티켓</a>
+              <a href="#none" class="gnb__list-item">프리패스</a>
+              <a href="#none" class="gnb__list-item">기프티켓</a>
+              <a href="#none" class="gnb__list-item">제휴 서비스</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">프리미엄 서비스 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">NEW CLASS</a>
+              <a href="#none" class="gnb__list-item">JJ 라운지</a>
+              <a href="#none" class="gnb__list-item">J PASS</a>
+              <a href="#none" class="gnb__list-item">스포츠멤버십</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">탑승 수속 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">모바일 탑승권</a>
+              <a href="#none" class="gnb__list-item">빠른 수속 안내</a>
+              <a href="#none" class="gnb__list-item">공항 정보</a>
+              <a href="#none" class="gnb__list-item">수하물 안내</a>
+              <a href="#none" class="gnb__list-item">도움이 필요한 승객</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">기내 서비스 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">에어카페</a>
+              <a href="#none" class="gnb__list-item">기내 FUN 서비스</a>
+              <a href="#none" class="gnb__list-item">출입국신고서 <br class="pc-only">작성방법</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">이벤트</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">이벤트</a>
+              <a href="#none" class="gnb__list-item">스탬프 랠리</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">고객센터</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">고객센터</a>
+              <a href="#none" class="gnb__list-item">기내 유실물 센터</a>
+              <a href="#none" class="gnb__list-item">공지사항</a>
+            </div>
+          </div>
+          <div class="gnb__box mobile-only">
+            <div class="gnb__title">우대 프로그램</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">기업우대 서비스</a>
+            </div>
+          </div>
+          <div class="gnb__box mobile-only">
+            <div class="gnb__title">제주항공 소개</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">About 제주항공</a>
+              <a href="#none" class="gnb__list-item">코로나19 종합안내 센터</a>
+            </div>
+          </div>
+
+          <div class="gnb__footer">
+            <div class="gnb__title">SNS</div>
+            <div class="sns-wrap">
+              <a href="https://m.facebook.com/funjejuair" aria-label="facebook" class="sns-wrap__item facebook"></a>     
+              <a href="https://instagram.com/jejuair_official?igshid=1r3itj1zo2k6w" aria-label="instagram" class="sns-wrap__item instagram"></a>
+              <a href="https://www.youtube.com/user/funjejuair" aria-label="youtube" class="sns-wrap__item youtube"></a>
+            </div>
+            <div class="button-wrap button-wrap--center">
+              <button type="button" class="button button--secondary button--border"><span class="button__text">로그아웃</span></button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택" class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택" class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box"><!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+                <span class="hidden">검색창 닫기</span>
+              </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+    <div class="gnb" id="gnb">
+      <div class="gnb__header">
+        <div class="gnb__header-top" data-absolute-sticky>
+          <a href="#none" class="button-home" title="홈으로 이동"></a>
+          <div data-element="select" data-select-target="0" class="select-wrap select-wrap--inline">
+            <select data-element="select__select" title="지역 선택" class="select-wrap__select">
+              <option></option>
+              <option value="1" selected>대한민국</option>
+              <option value="2">미국1</option>
+              <option value="3">미국2</option>
+              <option value="4">미국3</option>
+            </select>
+            <select data-element="select__select" title="언어 선택" class="select-wrap__select">
+              <option></option>
+              <option value="1" selected>한국어</option>
+              <option value="2">영어</option>
+            </select>
+          </div>
+          <div class="additional">
+            <!-- D : '웹'일경우 APP다운로드 버튼 -->
+            <button type="button" class="button button--small"><span class="button__text button__icon">APP</span></button>
+            <a href="#none" class="button-search" title="통합검색이동">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="통합 검색 이동">
+            </a>
+            <!-- D : '앱'일경우 세팅 버튼 -->
+            <!-- <button type="button" class="button-setting" aria-label="setting"></button> -->
+            <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+          </div>
+        </div>
+        <div class="gnb__header-bot">
+          <!-- 로그인 전 -->
+          <div class="before" style="display: none;">
+            <div class="title">
+              로그인 하시고<br>더 풍부한 혜택을 누리세요.
+            </div>
+            <!-- fixed 영역 -->
+            <div class="sticky-wrap">
+              <div class="button-wrap button-flex sticky__inner gnb-sticky1">
+                <button type="button" class="button button--secondary"><span class="button__text">회원가입</span></button>
+                <button type="button" class="button button--secondary button--active"><span class="button__text">로그인</span></button>
+                <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+              </div>
+            </div>
+            <!-- //fixed 영역 -->
+            <div class="title">
+              <div class="title__section title__section--additional">제주항공에서 예약하지 않으셨다면?
+              <div class="additional">
+                  <div class="link-wrap">
+                    <a href="#" class="link-wrap__underline"><span>예약조회</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //로그인 전 -->
+          <!-- 로그인 후 -->
+          <div class="after">
+            <!-- fixed 영역 -->
+            <div class="sticky-wrap">
+              <div class="title sticky__inner gnb-sticky2">
+                <i class="icon vip" aria-label="vip"></i>
+                <!-- <i class="icon gold" aria-label="gold"></i>
+                <i class="icon sliverplus" aria-label="sliverplus"></i>
+                <i class="icon silver" aria-label="sliver"></i> -->
+                <div class="text">
+                  <p class="name"><span class="exbold">김제주</span>님</p>
+                  <p class="hide">안녕하세요?</p>
+                </div>
+                <div class="additional">
+                  <button type="button" class="button-card" aria-label="card-popup">
+                    <img src="../../assets/images/icon/icon-card.png" alt="알림">
+                  </button>
+                  <button type="button" class="button-alarm" aria-label="alarm-popup">
+                    <img src="../../assets/images/icon/icon-alarm.png" alt="알림">
+                    <span>3<span class="hidden">개</span></span>
+                  </button>
+                  <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                </div>
+              </div>
+            </div>
+            <!-- //fixed 영역 -->
+            <div class="gray-box">
+              <div class="flex-text">
+                회원 번호
+                <div class="flex-text__additional">080041313</div>
+              </div>
+              <div class="flex-text">
+                사용 가능한 포인트
+                <div class="flex-text__additional">10,000P</div>
+              </div>
+            </div>
+            <div class="button-wrap button-flex">
+              <button type="button" class="button button--secondary button--border"><span class="button__text">리프레시포인트</span></button>
+              <button type="button" class="button button--secondary button--border add--ml-10"><span class="button__text">마이페이지</span></button>
+            </div>
+          </div>
+          <!-- //로그인 후 -->
+          <div class="icon-link">
+            <a href="#none" class="icon-link__item">
+              <img src="../../assets/images/icon/icon-join-item-04.png" alt="" aria-hidden="true">
+              <span class="icon-link__text">투어&티켓</span>
+            </a>
+            <a href="#none" class="icon-link__item">
+              <img src="../../assets/images/icon/icon-join-item-06.png" alt="" aria-hidden="true">
+              <span class="icon-link__text">출도착조회</span>
+            </a>
+            <a href="#none" class="icon-link__item">
+              <img src="../../assets/images/icon/icon-join-item-07.png" alt="" aria-hidden="true">
+              <span class="icon-link__text">고객센터</span>
+            </a>
+          </div>
+          <!-- //로그인 후 -->
+        </div>
+      </div>
+      <hr class="section-spacer">
+      <div class="gnb-wrap">
+        <div class="gnb__box">
+          <div class="gnb__title">예약</div> 
+          <div class="gnb__list">
+            <a href="#none" class="gnb__list-item">항공권 예매</a>
+            <a href="#none" class="gnb__list-item">항공권 추천</a>
+            <a href="#none" class="gnb__list-item">민항공후급증</a>
+          </div>
+        </div>
+        <div class="gnb__box">
+          <div class="gnb__title">여행준비</div>
+          <div class="gnb__list">
+            <a href="#none" class="gnb__list-item">예약 안내</a>
+            <a href="#none" class="gnb__list-item">운임 안내</a>
+            <a href="#none" class="gnb__list-item">운항 정보</a>
+          </div>
+        </div>
+        <div class="gnb__box">
+          <div class="gnb__title">회원 혜택</div>
+          <div class="gnb__list">
+            <a href="#none" class="gnb__list-item">리프레시 포인트</a>
+            <a href="#none" class="gnb__list-item">쿠폰 혜택</a>
+          </div>
+        </div>
+        <div class="gnb__box">
+          <div class="gnb__title">부가서비스 안내</div>
+          <div class="gnb__list">
+            <a href="#none" class="gnb__list-item">사전 수하물</a>
+            <a href="#none" class="gnb__list-item">사전 좌석</a>
+            <a href="#none" class="gnb__list-item">사전 기내식</a>
+            <a href="#none" class="gnb__list-item">보험 상품</a>
+            <a href="#none" class="gnb__list-item">투어&티켓</a>
+            <a href="#none" class="gnb__list-item">프리패스</a>
+            <a href="#none" class="gnb__list-item">기프티켓</a>
+            <a href="#none" class="gnb__list-item">제휴 서비스</a>
+          </div>
+        </div>
+        <div class="gnb__box">
+          <div class="gnb__title">프리미엄 서비스 안내</div>
+          <div class="gnb__list">
+            <a href="#none" class="gnb__list-item">NEW CLASS</a>
+            <a href="#none" class="gnb__list-item">JJ 라운지</a>
+            <a href="#none" class="gnb__list-item">J PASS</a>
+            <a href="#none" class="gnb__list-item">스포츠멤버십</a>
+          </div>
+        </div>
+        <div class="gnb__box">
+          <div class="gnb__title">탑승 수속 안내</div>
+          <div class="gnb__list">
+            <a href="#none" class="gnb__list-item">모바일 탑승권</a>
+            <a href="#none" class="gnb__list-item">빠른 수속 안내</a>
+            <a href="#none" class="gnb__list-item">공항 정보</a>
+            <a href="#none" class="gnb__list-item">수하물 안내</a>
+            <a href="#none" class="gnb__list-item">도움이 필요한 승객</a>
+          </div>
+        </div>
+        <div class="gnb__box">
+          <div class="gnb__title">기내 서비스 안내</div>
+          <div class="gnb__list">
+            <a href="#none" class="gnb__list-item">에어카페</a>
+            <a href="#none" class="gnb__list-item">기내 FUN 서비스</a>
+            <a href="#none" class="gnb__list-item">출입국신고서 <br class="pc-only">작성방법</a>
+          </div>
+        </div>
+        <div class="gnb__box">
+          <div class="gnb__title">이벤트</div>
+          <div class="gnb__list">
+            <a href="#none" class="gnb__list-item">이벤트</a>
+            <a href="#none" class="gnb__list-item">스탬프 랠리</a>
+          </div>
+        </div>
+        <div class="gnb__box">
+          <div class="gnb__title">고객센터</div>
+          <div class="gnb__list">
+            <a href="#none" class="gnb__list-item">고객센터</a>
+            <a href="#none" class="gnb__list-item">기내 유실물 센터</a>
+            <a href="#none" class="gnb__list-item">공지사항</a>
+          </div>
+        </div>
+        <div class="gnb__box mobile-only">
+          <div class="gnb__title">우대 프로그램</div>
+          <div class="gnb__list">
+            <a href="#none" class="gnb__list-item">기업우대 서비스</a>
+          </div>
+        </div>
+        <div class="gnb__box mobile-only">
+          <div class="gnb__title">제주항공 소개</div>
+          <div class="gnb__list">
+            <a href="#none" class="gnb__list-item">About 제주항공</a>
+            <a href="#none" class="gnb__list-item">코로나19 종합안내 센터</a>
+          </div>
+        </div>
+
+        <div class="gnb__footer">
+          <div class="gnb__title">SNS</div>
+          <div class="sns-wrap">
+            <a href="https://m.facebook.com/funjejuair" aria-label="facebook" class="sns-wrap__item facebook"></a>     
+            <a href="https://instagram.com/jejuair_official?igshid=1r3itj1zo2k6w" aria-label="instagram" class="sns-wrap__item instagram"></a>
+            <a href="https://www.youtube.com/user/funjejuair" aria-label="youtube" class="sns-wrap__item youtube"></a>
+          </div>
+          <div class="button-wrap button-wrap--center">
+            <button type="button" class="button button--secondary button--border"><span class="button__text">로그아웃</span></button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div id="body">
+    <div class="wrap">
+      <div class="content" id="content">
+        <main id="main" class="main">
+
+          <div class="page-title-wrap">
+            <div class="page-title">공항정보</div>
+            <div class="page-sub-title">제주항공의 카운터 위치, 탑승구 안내, 공항 서비스를 확인하실 수 있습니다.</div>
+          </div>
+
+          <!--20210804 셀렉트로 수정 -->
+          <div class="section-wrap">
+            <div class="gray-box pc-search pc-search--flex airport-info-search"> <!--20211130 airport-info-search 추가-->
+              <div class="input-wrap input--line">
+                <div class="input-row">
+                  <!-- <div class="input-label label-top">공항선택</div> -->
+                    <div class="select-wrap select-wrap--line airport-search">
+                      <select title="출발지 선택" class="select-wrap__select">
+                        <option>선택해 주세요</option>
+                        <option value="1">서울(김포)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>         
+            </div>
+          </div>
+
+
+
+          <!-- 검색버튼 클릭시 해당 공항 노출 -->
+          <div class="airport-info section-wrap">
+            <div class="table-caption table-caption--result"><span class="text--color-org">서울(인천)</span>의 조회 결과입니다.</div>
+            <!-- 이미지 있을 경우 노출 -->
+            
+              <!--20210804 이미지영역 수정 -->
+              <div class="banner aitport-banner">
+                <div class="banner_single-img" style="background-image: url(../../assets/images/etc/img-airport01.png)"></div>
+              </div> 
+     
+           
+            <!-- //이미지 있을 경우 노출 -->
+
+            <!-- 청주 -->
+            <div class="table-horizontal">
+              <table>
+                <caption>청주국제공항 여객청사 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">청주국제공항 여객청사</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">충청북도 청원군 내수읍 오창대로 980 청주국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">
+                      <p class="table-horizontal__text">수속카운터</p>
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">GATE1 맞은편 국내선 수속카운터(14~38번)</li>
+                        <li class="list-guide__item">GATE1 우측면 청주공항 공용카운터 운영에 따라 수속 전 운항정보 안내판 확인 필요</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.airport.co.kr/mbs/cheongju">http://www.airport.co.kr/mbs/cheongju</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //청주 -->
+
+            <!-- 부산 -->
+            <div class="table-horizontal">
+              <table>
+                <caption>김해국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">김해국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">부산광역시 강서구 공항진입로 108 김해국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">
+                      <p class="table-horizontal__text">국내선</p>
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">A20~A24 </li>
+                      </ul>
+                      <p class="table-horizontal__text">국제선</p>
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">공용 카운터로 2층 C1 - C10 카운터<br>수속 전 운항정보 안내판 확인 필요
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.airport.co.kr/mbs/gimhae">http://www.airport.co.kr/mbs/gimhae</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //부산 -->
+
+            <!-- 대구 -->
+            <div class="table-horizontal">
+              <table>
+                <caption>대구국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">대구국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">대구광역시 동구 공항로 221 대구국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">대구국제공항 여객터미널 1층 카운터 19~22번</li>
+                        <li class="list-guide__item">대구공항 공용카운터 운영에 따라 수속카운터 변동 가능</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.airport.co.kr/mbs/daegu">http://www.airport.co.kr/mbs/daegu</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //대구 -->
+
+            <!-- 광주 -->
+            <div class="table-horizontal">
+              <table>
+                <caption>광주공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">광주공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">광주광역시 광산구 상무대로 420-25 광주공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">여객청사 1층</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.airport.co.kr/gwangju/main.do">http://www.airport.co.kr/gwangju/main.do</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //광주 -->
+
+            <!-- 무안 -->
+            <div class="table-horizontal">
+              <table>
+                <caption>무안국제공항 여객터미널 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">무안국제공항 여객터미널</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">전남 무안군 망운면 공항로 970-260</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">무안국제공항 여객터미널 2층 제주항공 전용카운터</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.airport.co.kr/mbs/muan">http://www.airport.co.kr/mbs/muan</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //무안 -->
+
+            <!-- 여수 -->
+            <div class="table-horizontal">
+              <table>
+                <caption>여수 여객터미널 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">여수 여객터미널</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">전라남도 여수시 율촌면 여순로 386</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">여수공항 터미널 내 제주항공 탑승수속 카운터 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="https://www.airport.co.kr/yeosu/main.do">https://www.airport.co.kr/yeosu/main.do</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //여수 -->
+
+            <!-- 군산 -->
+            <div class="table-horizontal">
+              <table>
+                <caption>군산공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">군산공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">전라북도 군산시 옥서면 산동길 2 군산공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">여객청사 (1층) 가운데 위치</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="https://www.airport.co.kr/gunsan/main.do">https://www.airport.co.kr/gunsan/main.do</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //군산 -->
+
+            <!-- 도쿄(나리타) -->
+            <div class="table-horizontal">
+              <table>
+                <caption>나리타국제공항 제1터미널 South Wing 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">나리타국제공항 제1터미널 South Wing</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">도쿄 중심가에서 북동쪽으로 약 60km</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">Narita International Airport Terminal3, 2층 A,B카운터<br>탑승수속 전 공항 안내판 확인 요망</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">유의사항 : 항공기 출발 1시간 전 탑승수속 마감</li>
+                        <li class="list-guide__item">입국 심사 시, 주소 및 체류지 명확하게 표기</li>
+                        <li class="list-guide__item">현금 100만엔 이상 소지 시 세관신고 필요</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.narita-airport.jp/kr/index.html">http://www.narita-airport.jp/kr/index.html</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //도쿄(나리타) -->
+
+            <!-- 시즈오카(후지산) -->
+            <div class="table-horizontal">
+              <table>
+                <caption>시즈오카 국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">시즈오카 국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">시즈오카 중앙역으로부터 37km </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">시즈오카 국제공항 1층</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">유의사항 : 항공기 출발 1시간 전 탑승수속 마감</li>
+                        <li class="list-guide__item">입국 심사 시, 주소 및 체류지 명확하게 표기</li>
+                        <li class="list-guide__item">현금 100만엔 이상 소지 시 세관신고 필요</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.mtfuji-shizuokaairport.jp/">http://www.mtfuji-shizuokaairport.jp/</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //시즈오카(후지산) -->
+
+            <!-- 옌지 -->
+            <div class="table-horizontal">
+              <table>
+                <caption>옌지 차오양촨 국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">옌지 차오양촨 국제공항(터미널 하나밖에 없음)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">길림성 연길시 장백산서로6666호(공항-시내 7km)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">옌지초양촨국제공항 1층 (국제선/국내선 공용, 1층 도착, 2층 출발)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first"></ul>
+                      <li class="list-guide__item">입국 심사 시, 주소 및 체류지 명확하게 표기</li>
+                      <li class="list-guide__item">CNY 20,000 또는 USD 5,000 해당한 외화 이하의 현찰</li>
+                      <li class="list-guide__item">해외에서 구입한 물품 총액 CNY 5,000 이하</li>
+                      <li class="list-guide__item">주류 : 2병 (1,500ml 미만)</li>
+                      <li class="list-guide__item">담배 : 2보루 (400개비)</li>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.yjairport.com.cn/">http://www.yjairport.com.cn/</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //옌지 -->
+
+            <!-- 도쿄(하네다) -->
+            <div class="table-horizontal">
+              <table>
+                <caption>하네다공항 제3터미널 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">하네다공항 제3터미널</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">도쿄 중심가에서 남동쪽으로 약 20km</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">하네다 공항터미널 3층 L구역 1번~5번</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">입국 심사 시, 주소 및 체류지 명확하게 표기</li>
+                        <li class="list-guide__item">현금 100만엔 이상 소지 시 세관신고 필요</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="www.tokyo-airport-bldg.co.jp">www.tokyo-airport-bldg.co.jp</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //도쿄(하네다) -->
+
+            <!-- 후쿠오카 -->
+            <div class="table-horizontal">
+              <table>
+                <caption>후쿠오카 국제선 터미널 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">후쿠오카 국제선 터미널</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">후쿠오카 시영지하철 후쿠오카 공항역에서 - 하카타역까지 5분<br>
+                      후쿠오카 시영지하철 후쿠오카 공항역에서 - 텐진까지 10분
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">Fukuoka Airport Building 국제선 3층 A카운터</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">입국 심사 시, 주소 및 체류지 명확하게 표기</li>
+                        <li class="list-guide__item">현금 100만엔 이상 소지 시 세관신고 필요</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.fuk-ab.co.jp/korea/">http://www.fuk-ab.co.jp/korea/</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //후쿠오카 -->
+
+            <!-- 나고야(주부) -->
+            <div class="table-horizontal">
+              <table>
+                <caption>중부국제공항 제1 여객터미널 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">중부국제공항 제1 여객터미널</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">일본 아이치현 도코나메시 이세만(<span class="eng">愛知県常滑市伊勢湾</span>)인공섬에 위치한 국제공항<br>나고야시에서 약 40km
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">나고야 주부 국나고야 중부국제공항제2 터미널(TERMINAL 2) 국제선 A카운터 A5~8 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">입국 심사 시, 주소 및 체류지 명확하게 표기</li>
+                        <li class="list-guide__item">현금 100만엔 이상 소지 시 세관신고 필요</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.centrair.jp">hhttp://www.centrair.jp</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //나고야(주부) -->
+
+            <!-- 오사카(간사이) -->
+            <div class="table-horizontal">
+              <table>
+                <caption>간사이 국제 공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">간사이 국제 공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">오사카 주요도시(우메다, 난바, 텐노지) 부터 약 50km</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">간사이 국제공항 제1여객 터미널(T1) 4층(국제선 출발장) , A카운터</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">현재 COVID-19로 인해 무비자로 입국할 수 없으며, 출입국 관련 정보는 미리 확인 후 수속 부탁 드립니다.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.kansai-airport.or.jp/kr/index.asp">http://www.kansai-airport.or.jp/kr/index.asp
+                    </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //오사카(간사이) -->
+
+            <!-- 오키나와(나하)  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>나하공항국제선 터미널 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">나하공항국제선 터미널</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">일본 오키나와현 나하시 카가미즈 150 나하공항국제선 터미널</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">나하공항 국제선터미널 3층 A-B-C 카운터 (C카운터 3/30 오픈)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">입국 심사 시, 주소 및 체류지 명확하게 표기</li>
+                        <li class="list-guide__item">현금 100만엔 이상 소지 시 세관신고 필요</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="www.tokyo-airport-bldg.co.jp">www.tokyo-airport-bldg.co.jp </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //오키나와(나하) -->
+
+            <!-- 삿포로(신치토세)  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>신치토세공항 국제 터미널 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">신치토세공항 국제 터미널</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">066-0012, 치토세시비비 신치토세공항 국제선 터미널 3층</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">신치토세공항 국제선 터미널 3층 A/B 카운터</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">입국 심사 시, 주소 및 체류지 명확하게 표기</li>
+                        <li class="list-guide__item">현금 100만엔 이상 소지 시 세관신고 필요</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.fuk-ab.co.jp/korea/">http://www.fuk-ab.co.jp/korea/</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //삿포로(신치토세) -->
+
+            <!-- 마츠야마  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>마츠야마 공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">마츠야마 공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">에히메현 마츠야마시 미나미요시다마치 2731번지 마츠야마공항 1층</li>
+                        <li class="list-guide__item eng">愛媛県松山市南吉田町2731番地　松山空港ターミナル1階</li>
+                        <li class="list-guide__item">2731 street Minamiyoshida-machi, Matsuyama-shi, Ehime Prefecture 791-8042</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">월/금요일 : 카운터 개시 09:20 카운터 마감 10:20<br>화/목/일요일 : 카운터 개시 13:30 카운터 마감 14:30 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.matsuyama-airport.co.jp">http://www.matsuyama-airport.co.jp</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //마츠야마 -->
+
+            <!-- 베이징  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>베이징 수도 국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">베이징 수도 국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">중국 북경시 순의구 공항서로 베이징 수도 국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">베이징 수도 국제공항 터미널 2, C11-C14</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">중국 입출국 시 입출국 카드 작성 (단, 단체 및 별지 비자 제외)</li>
+                        <li class="list-guide__item">중국 방문에 유효한 사증 필수 소지</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.bcia.com.cn/index.shtml">http://www.bcia.com.cn/index.shtml</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //베이징 -->
+
+            <!-- 칭다오  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>청도류팅국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">청도류팅국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">중국 산동성 청도시 청양구 신정로 4호</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">청도류팅국제공항 국제선 청사 E20 ~ E23</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">중국 입출국 시 입출국 카드 작성 (단, 단체 및 별지 비자 제외)</li>
+                        <li class="list-guide__item">중국 방문에 유효한 사증 필수 소지</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.qdairport.com">http://www.qdairport.com</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //칭다오 -->
+
+            <!-- 웨이하이  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>웨이하이 다쉐이포 국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">웨이하이 다쉐이포 국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">중국 산동성 위해시 문등구 대수박현</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">웨이하이 다쉐이포 국제공항 국제선 청사</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">중국 입출국 시 입출국 카드 작성 (단, 단체 및 별지 비자 제외)</li>
+                        <li class="list-guide__item">중국 방문에 유효한 사증 필수 소지</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.airwh.com/">http://www.airwh.com/</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //웨이하이 -->
+
+            <!-- 스자좡  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>석가장 정정공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">석가장 정정공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">중국 하북성 석가장시 정정현 신성포진 신성포촌 서, 석가장 정정공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">석가장 정정공항 1터미널, 2~4번 카운터</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">중국 입출국 시 입출국 카드 작성 (단, 단체 및 별지 비자 제외)</li>
+                        <li class="list-guide__item">중국 방문에 유효한 사증 필수 소지</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.hebeiairport.cn">http://www.hebeiairport.cn</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //스자좡 -->
+
+            <!-- 옌타이  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>옌타이 펑라이 국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">옌타이 펑라이 국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">중국 산동성 옌타이시 펑라이시 조수진 옌타이 펑라이 국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">석가장 정정공항 1터미널, 2~4번 카운터</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">중국 입출국 시 입출국 카드 작성 (단, 단체 및 별지 비자 제외)</li>
+                        <li class="list-guide__item">중국 방문에 유효한 사증 필수 소지</li>
+                        <li class="list-guide__item">출발 90분 전부터 탑승수속이 시작되며, 체크인 후 빠른 출국심사 권고</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="www.ytairport.com.cn">www.ytairport.com.cn</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //옌타이 -->
+
+            <!-- 가오슝  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>가오슝 시아오강 공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">가오슝 시아오강 공항 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">가오슝 시내에서 남동쪽으로 10km 위치, 가오슝 시아오강 공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">국제선 청사 D12-D15 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">중국 입출국 시 입출국 카드 작성 (단, 단체 및 별지 비자 제외)</li>
+                        <li class="list-guide__item">중국 방문에 유효한 사증 필수 소지</li>
+                        <li class="list-guide__item">출발 90분 전부터 탑승수속이 시작되며, 체크인 후 빠른 출국심사 권고</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.kia.gov.tw">http://www.kia.gov.tw</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //가오슝 -->
+
+            <!-- 홍콩  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>홍콩 제1터미널 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">홍콩 제1터미널</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">Hong Kong 센트럴로부터 약 37km 떨어진 츠례자오(첵랍콕) 섬에 위치</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">2019년 11월 29일 첫 출발편부터 홍콩공항 1터미널 G카운터로 이동</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">홍콩 입국 시 작성한 입국카드를 출국심사 시까지 소지 필수</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.hongkongairport.com">http://www.hongkongairport.com</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //홍콩 -->
+
+            <!-- 마카오  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>마카오 국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">마카오 국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">마카오 시내에서 약 2km 떨어진 곳에 위치</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">마카오 국제공항  2층 출발장 터미널<br>(International Terminal) 공항 안내판 확인 요망</td>
+                  </tr>
+                  <!-- <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">홍콩 입국 시 작성한 입국카드를 출국 심사 시까지 소지 필수 </td>
+                  </tr> -->
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.macau-airport.com">http://www.macau-airport.com</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //마카오 -->
+
+            <!-- 타이베이(타오위안)  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>타오위안 국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">타오위안 국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">타이베이(臺北)와는 약 40km 떨어진 타오위안(桃園)에 위치 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">타오위안 국제공항 1터미널 6카운터</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">중국 입출국 시 입출국 카드 작성 (단, 단체 및 별지 비자 제외)</li>
+                        <li class="list-guide__item">중국 방문에 유효한 사증 필수 소지</li>
+                        <li class="list-guide__item">출발 90분 전부터 탑승수속이 시작되며, 체크인 후 빠른 출국심사 권고</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.taoyuan-airport.com">http://www.taoyuan-airport.com</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //타이베이(타오위안) -->
+
+            <!-- 마닐라  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>마닐라공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">마닐라공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">마닐라와 마카티 시내로부터 약 10km</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">마닐라공항 터미널 1 제주항공 수속카운터</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.miaa.gov.ph">http://www.miaa.gov.ph </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //마닐라 -->
+
+            <!-- 세부  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>홍콩 제1터미널 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">홍콩 제1터미널</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">막탄섬 라푸라푸시티 (세부섬과 30분 거리)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">2018년 7월 2일 부 신규터미널(International Terminal2)로 이동</li>
+                        <li class="list-guide__item">수속 카운터 위치 신규터미널(International Terminal) 공항 안내판 확인 요망</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guilde__item">모자/모녀만 입국 시 영문등본 소지 (한국은 엄마와 자녀의 성이 달라 가족임을 증명해야 함)</li>
+                        <li class="list-guilde__item">비동반 소아(UM)는 15세 미만으로 규정하고 변호사 공증서류 및 영문등본 필요</li>
+                        <li class="list-guilde__item">입국 시  비동반 소아(UM) 서비스 수수료 징수 (3,120페소/부모가 필리핀에서 마중을 나오면 면제/부모임을 증명하는 서류 필요)</li>
+                        <li class="list-guilde__item">무비자 승객은 한국 포함 다른 국가로 돌아가는 리턴 e-티켓을 소지해야 함</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">기타</th>
+                    <td class="table-horizontal__td">
+                      <p class="table-horizontal__text">출국 시 공항이용료 부과 안내</p>
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">금액 : 850 PHP</li>
+                        <li class="list-guide__item">납부통화 : PHP, USD 가능(환율에 따라 변동), 카드결제 불가</li>
+                        <li class="list-guide__item">납부장소 : 탑승수속 후 출국장 입구에 위치한 공항 이용료 부스</li>
+                        <li class="list-guide__item">유의사항 : 공항 이용료 납부 시 영수증을 탑승권 뒷면에 부착하고, 탑승구에서 재확인하며 영수증이 없는 경우 공항 이용료 다시 부과
+                          <ul class="list-guide list-guide--asterisk">
+                            <li class="list-guide__item">2019년 9월 1일 이후 항공권 구매 승객 제외 </li>
+                          </ul>
+                        </li>
+                        <li class="list-guide__item">세관 : 규정된 면세품 외의 초과품에 대해서는 세관 규정에 따라 관세 부과 (입국 시 주의 요망)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.mactan-cebuairport.com.ph">http://www.mactan-cebuairport.com.ph</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //세부 -->
+
+            <!-- 보홀  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>보홀 팡라오 국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">보홀 팡라오 국제공항 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">보홀 팡라오섬 타왈라 지역</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">보홀 팡라오 국제공항 카운터 17~20</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">모자/모녀만 입국 시 영문등본 소지 필수</li>
+                        <li class="list-guide__item">비동반 소아(UM)는 15세 미만으로 규정하고 변호사 공증서류 및 영문등본 필요</li>
+                        <li class="list-guide__item">무비자 승객은 한국 포함 다른 국가로 돌아가는 리턴 e-티켓을 소지해야 함</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">기타</th>
+                    <td class="table-horizontal__td">
+                      <p class="table-horizontal__text">출국 시 공항이용료 부과 안내</p>
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">금액 : 560PHP</li>
+                        <li class="list-guide__item">납부통화 : PHP, USD, 카드결제 불가</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //보홀 -->
+
+            <!-- 방콕(수완나품)  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>타오위안 국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">타오위안 국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">방콕 시내로부터 약 30km</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">
+                      <p class="table-horizontal__text">7C2202 : 탑승수속카운터 N,L</p>
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">운영시간 : 09:30~11:30<br>7C2204,7C2252,7C2206,7C2216: 탑승수속카운터 F6-F23</li>
+                        <li class="list-guide__item">운영시간 : 22:00부터 항공기 출발 60분 전 마감</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">주류, 담배 등 세관 매우 까다로움</li>
+                        <li class="list-guide__item">여권 훼손, 손상 등의 경우 입국 거절 (입국 거절 시 개인벌금 10,000 THB)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.suvarnabhumiairport.com/">http://www.suvarnabhumiairport.com/</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //방콕(수완나품) -->
+
+            <!-- 푸꾸옥  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>마닐라공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">마닐라공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">푸꾸옥 시내 중심으로부터 남쪽으로 7k 떨어진 곳에 위치</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">푸꾸옥공항 2층(출발장) 카운터 20~36번 중 4개 카운터 사용 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">여권 유효기간 6개월 필수</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="https://www.vietnamairport.vn/phuquocairport/en/">https://www.vietnamairport.vn/phuquocairport/en/</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //푸꾸옥 -->
+
+            <!-- 싱가포르  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>싱가포르 창이 국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">싱가포르 창이 국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">싱가포르 중심가에서 약 20km</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">
+                      싱가포르 창이 국제공항 터미널 1, 1열 (2020. 5. 17부터)<br>싱가포르 창이 국제공항 터미널 4, 2구역, 1~4 (2020. 5. 16 중단)
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">주류, 담배 등 세관 매우 까다로움</li>
+                        <li class="list-guide__item">여권 훼손, 손상 등의 경우 입국 거절 (입국 거절 시 개인벌금 10,000 THB)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">입국 심사 시 주소 및 목적 명확히 표기 (목적 불분명으로 한국인 중 입국불허승객(INAD)도 종종 발생함) </li>
+                        <li class="list-guide__item">
+                          SGD 20,000 이상 보유 시 신고 필요
+                          <ul class="list-guide list-guide--asterisk">
+                            <li class="list-guide__item">전자담배, 유사담배, 껌 입국 불가, 담배 1인당 19개피 (4.27센트/1.5g 세금 납부 필요)</li>
+                            <li class="list-guide__item">세관은 본인 자진 신고 형태 (신고 물품 있을 시 RED LINE, 신고 물품 없을 시 GREEN LINE 이용)</li>
+                          </ul>   
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="www.changiairport.com">www.changiairport.com</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //싱가포르 -->
+
+            <!-- 치앙마이  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>치앙마이 공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">치앙마이 공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">치앙마이 시내에서 남서쪽으로 약 4km 떨어진 곳에 위치</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">국내선 청사 44~46번 카운터</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">모자/모녀 입국 시 영문등본 소지 필수</li>
+                        <li class="list-guide__item">비동반 소아(UM)는 15세 미만으로 규정하고 변호사 공증서 류 및 영문등본 필요</li>
+                        <li class="list-guide__item">무비자 승객은 한국 포함 다른 국가로 돌아가는 리턴 e-티켓을 소지해야 함</li>
+                      </ul>   
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://chiangmaiairportthai.com">http://chiangmaiairportthai.com</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //치앙마이 -->
+
+            <!-- 하노이  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>하노이 노이바이 국제공항 터미널 2 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">하노이 노이바이 국제공항 터미널 2</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">방콕 시내로부터 약 30km</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">E01-E04 카운터</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">출발 2시간 30분 전부터 탑승 수속, 출발 50분 전까지 탑승수속을 마쳐야 탑승 가능 (베트남 교통국 항공법 2014년 12월 1일부터 반영)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://en.vietnamairport.vn">http://en.vietnamairport.vn</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //하노이-->
+
+            <!-- 호치민  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>탄손누트국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">탄손누트국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">탄손누트국제공항 국제선 터미널 2F</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">G01-04</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://vietnamairport.vn/en/introduction/airports/tan-son-nhat-international-airport">http://vietnamairport.vn/en/introduction/airports/tan-son-nhat-international-airport</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //호치민-->
+
+            <!-- 나트랑  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>깜라인 국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">깜라인 국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">나트랑 시내 중심으로 부터 30Km 떨어진 곳에 위치</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">나트랑(나짱) 공항 2층 탑승수속카운터 C1~C4, 출발 3시간 전 운항정보 안내판 확인 필요</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="https://www.nhatrangairport.com/flight-status-arrivals-departures/">https://www.nhatrangairport.com/flight-status-arrivals-departures/</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //나트랑-->
+
+            <!-- 다낭  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>치앙마이 공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">치앙마이 공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">다낭 시내 중심부로부터 2km 떨어진 곳에 위치 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">다낭국제공항 터미널(T2) 2층, 출발 3시간 전 수속 시 수속 전 운항정보 안내판 확인 필요</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.danangairportterminal.vn">http://www.danangairportterminal.vn
+                    </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //다낭-->
+
+            <!-- 코타키나발루  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>코타키나발루공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">코타키나발루 공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">코타키나발루 시내 중심에서 남서쪽으로 8km 떨어진 곳에 위치 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">B09~B16</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <p class="table-horizontal__text">출국 시, 총 2번의 보안 검색 필요</p>
+                      <ol class="list-guide list-guide--number">
+                        <li class="list-guide__item">수속 후 법무부 심사 전 1회</li>
+                        <li class="list-guide__item">탑승구 입장 전 1회</li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.kotakinabaluairport.com/">http://www.kotakinabaluairport.com/</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //코타키나발루-->
+
+            <!-- 비엔티엔  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>와타이 국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">와타이 국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">라오스의 수도 비엔티안 도심에서 서쪽으로 약 3km 거리에 위치</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">출발 2시간 전 수속 시 운항정보 안내판 확인 필요</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">여권 유효기간 6개월 필수</li>
+                        <li class="list-guide__item">한국인 30일 무비자 체류 가능</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="https://www.vientianeairport.com">https://www.vientianeairport.com/</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //비엔티엔-->
+
+            <!-- 괌  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>괌국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">괌국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">355 Chalan Pasaheru, Tamuning Guam 96913</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">공항터미널 5~18번 카운터</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">한국인의 경우 괌 비자 면제신청서 작성 시 무비자 최대 45일 체류 가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.guamairport.com">http://www.guamairport.com</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //괌-->
+
+            <!-- 사이판  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>사이판 국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">사이판 국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">Francisco C. Ada / Saipan International Airport GARAPAN 시내로부터 20분 거리</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">한국인의 경우 사이판 비자 면제신청서 작성 시 무비자 최대 45일 체류 가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="www.cpa.gov.mp">www.cpa.gov.mp</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //사이판 -->
+
+            <!-- 블라디보스토크  -->
+            <div class="table-horizontal">
+              <table>
+                <caption>블라디보스토크 공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">블라디보스토크 공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">45, VladimiraSaibelyaStr., Artem city, Primorsky Region, 692707, Russia.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">블라디보스톡 공항 1층 3~10번 수속 카운터</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">러시아 출국 시 1만 달러 미만의 금액은 별도 신고 없이 반출할 수 있으나, 1만 달러 초과 시에는 입국 시 작성한 세관신고서 제출 필요</li>
+                        <li class="list-guide__item">입국 시 받은 출입국증명서는 분실하지 말고 보관하다가 출국 시 제출</li>
+                        <li class="list-guide__item">도착 후 입국심사대에서 여권을 제시하면 공무원이 입국신고서를 전산으로 작성하고 입국자 서명 후 입국자에게 줌</li>
+                        <li class="list-guide__item">여권 훼손 시 입국이 거절될 수 있음</li>
+                        <li class="list-guide__item">여권의 찢김, 이염, 낙서 등으로 입국이 거절될 수 있음</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://www.vvo.aero/en">http://www.vvo.aero/en</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //블라디보스토크 -->
+
+            <!-- 앙헬레스(클락) -->
+            <div class="table-horizontal">
+              <table>
+                <caption>탄손누트국제공항 정보</caption>
+                <colgroup>
+                  <col style="width:30%">
+                  <col>
+                </colgroup>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항명</th>
+                    <td class="table-horizontal__td">탄손누트 국제공항</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">위치</th>
+                    <td class="table-horizontal__td">앙헬레스 시내에서 북서쪽 약 10km </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">키오스크 <br class="mobile-only">이용 가능 <br class="mobile-only">여부(무료)</th>
+                    <td class="table-horizontal__td">불가능</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카운터 <br class="mobile-only">정보</th>
+                    <td class="table-horizontal__td">국제선 14-17번 수속 카운터</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">입국정보</th>
+                    <td class="table-horizontal__td">
+                      <ul class="list-guide list-guide--first">
+                        <li class="list-guide__item">모자/모녀만 입국 시 영문등본 소지 (한국은 엄마와 자녀의 성이 달라 가족임을 증명해야 함)</li>
+                        <li class="list-guide__item">비동반 소아(UM)는 15세 미만으로 규정하고 변호사 공증서 류 및 영문등본 필요</li>
+                        <li class="list-guide__item">무비자 승객은 한국 포함 다른 국가로 돌아가는 리턴 e-티켓을 소지해야 함</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">공항 사이트</th>
+                    <td class="table-horizontal__td"><a href="http://vietnamairport.vn/en/introduction/airports/tan-son-nhat-international-airport">http://vietnamairport.vn/en/introduction/airports/tan-son-nhat-international-airport</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //앙헬레스(클락) -->
+
+          </div>
+          <!-- //검색버튼 클릭시 해당 공항 노출 -->
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+  <div class="footer pc-only">
+    <!-- pc -->
+    <footer class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">제주항공 소개</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">투자정보</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">채용안내</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">여객운송약관</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">홈페이지이용약관</a>
+        </div>
+        <div class="footer__top-item footer__top-item--privacy">
+          <a href="#" class="footer__top-link">개인정보처리방침</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">사이트맵</a>
+        </div>
+  
+        <div class="footer__top-item footer__top-item--family">
+          <div class="family-wrap" data-element="toggle" data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+            <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+            <div class="family-list" data-element="toggle__panel">
+              <a href="#" class="family-link">㈜애경산업</a>
+              <a href="#" class="family-link">㈜에이텍</a>
+              <a href="#" class="family-link">애경S.T</a>
+              <a href="#" class="family-link">에이케이아이에스㈜</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <hr class="footer__spacer">
+  
+      <div class="footer__bottom">
+        <a href="#" class="footer__logo">
+        <img src="../../assets/images/upload/logo_jeju_gray.png" alt="jeju Air"><!--2021-04-13 이미지로 변경-->
+      </a>
+        <div class="footer__bottom-contents">
+          <div class="footer__bottom-info">
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 서비스 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공위험물안내</a>
+            </div>
+          </div>
+          <div class="footer__bottom-recommand">
+            <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+            <div class="recommand-list">
+              <div class="recommand-item">
+                <a href="#" class="link">최저 운임 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">서울 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">제주 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">부산 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">무안 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">청부 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">대구 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">광주 출발 항공</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-util">
+            <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png" alt="VALUE ALLIANCE"></a>
+            <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
+            <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt=""> Android</a>
+          </div>
+          <p class="footer__bottom-address"><span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br>
+            제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)</p>
+          <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- //pc -->
+  </div>
+  <!-- //FOOTER -->
+
+<script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/jjpay.css">
+</head>
+<body>
+
+  <div class="modal-wrap">
+    <div class="modal open agreement-wrap">
+      <div  class="modal-header">
+        <div class="modal-header__title">롯데카드 서비스 이용약관</div>
+      </div>
+      <div class="modal-content">
+        <div class="section-wrap agreement">
+          <p class="row">
+            귀하는 개인(신용)정보 제공 동의에 대해 거부하실 수 있습니다. 다만, 개인(신용)정보 제공에 관한 동의는 상거래관계의 설정, 유지에 필수적이거나, 상거래관계에 따라 귀하에게 제공되는 서비스와 직접적으로 관련된 필수적 사항이므로, 아래의 사항에 동의하셔야만 (금융)거래관계의 설정 및 유지가 가능합니다.
+          </p>
+          <h2>1. 개인(신용)정보 제공에 관한 사항</h2>
+          <ul>
+            <li><strong>- 제공받는 자 : 이니시스</strong></li>
+            <li><strong>- 제공받는 자의 이용 목적 : 빠른결제에 롯데카드 등록 및 관리, 결제 처리, 상담 및 민원 처리</strong></li>
+            <li><strong>- 보유 및 이용기간 : 수집 · 이용일로부터 서비스 해지 시 까지 (단, 관련 법령의 별도 규정이 명시되어 있는 경우 그 기간을 따름)</strong></li>
+          </ul>  
+          <p class="row">
+            제공 항목<br>
+            - 신용거래정보 : 카드 ID, 카드번호
+          </p>   
+          <p class="row">※ 위에 기재한 내용이 변동되는 경우 홈페이지 게시 등을 통해 그 내용을 안내하여 드립니다.</p>    
+        </div>
+      </div>
+      <div class="fixed-wrap fixed-wrap--multi-line border-none"> <!-- checkbox 없는 경우 border-none class 추가 -->
+        <div class="button-wrap">
+          <button type="button" class="button button--active"><span class="button__text">동의</span></button>
+        </div>
+      </div>
+      <a href="#" class="modal__close" onclick="closeWindow ()"><span class="blind">닫기</span></a>
+    </div>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script>
+    // 창닫기
+    function closeWindow () {
+      window.open('', '_self', '');
+      window.close();      
+    }
+  </script>
+
+</body>
+</html>

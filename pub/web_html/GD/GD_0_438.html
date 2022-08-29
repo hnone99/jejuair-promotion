@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+<!-- 개발시 삭제: robots -->
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+<link rel="stylesheet" href="../../assets/css/component.css">
+<link rel="stylesheet" href="../../assets/css/page.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+<!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+  <div class="util__inner">
+    <div class="util__benefit">
+      <a href="#" class="util__link">기업 우대</a>
+      <a href="#" class="util__link">여행사 우대</a>
+    </div>
+
+    <div class="util__link-list" data-custom-toggle="wrap">
+      <!-- 로그인 이후 노출 -->
+      <span class="util__personal">
+        <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+      </span>
+      <!-- // 로그인 이후 노출 -->
+      <!-- 로그인 전 노출 -->
+      <a href="#" class="util__link">로그인</a>
+      <a href="#" class="util__link">회원가입</a>
+      <!-- // 로그인 전 노출 -->
+      <a href="#" class="util__link">리프레시 포인트</a>
+      <a href="#" class="util__link">이벤트</a>
+      <a href="#" class="util__link">고객센터</a>
+      <button type="button" class="util__country" data-custom-toggle="button">
+        <span class="text">대한민국</span>
+      </button>
+      <div class="header-country__layer" data-custom-toggle="panel">
+        <div class="country__title">
+          지역 및 언어 설정
+        </div>
+        <div class="country__input">
+          <div data-element="select" class="select-wrap select-wrap--line">
+            <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택" class="select-wrap__select" data-select-container=".country__input">
+              <option></option>
+              <option value="1" selected>대한민국</option>
+              <option value="2">중국</option>
+              <option value="3">일본</option>
+            </select>
+          </div>
+          <div data-element="select" class="select-wrap select-wrap--line">
+            <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택" class="select-wrap__select" data-select-container=".country__input">
+              <option></option>
+              <option value="1" selected>한국어</option>
+              <option value="2">중국어</option>
+              <option value="3">일본어</option>
+            </select>
+          </div>
+
+          <button class="country__button">확인</button>
+        </div>
+        <button class="button-close" data-custom-toggle="close">
+          <span class="hidden">닫기</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<header class="header__inner pc-only">
+  <div class="sticky-header" data-sticky>
+    <div class="header__box"><!-- header__box 추가 -->
+      <h1 class="header__logo">
+        <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+      </h1>
+
+      <div class="header__link-list">
+        <a href="#" class="header__link">항공권 예매</a>
+        <a href="#" class="header__link header__link--current">마이페이지</a>
+        <a href="#" class="header__link">부가서비스</a>
+        <a href="#" class="header__link">모바일탑승권</a>
+      </div>
+
+      <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+        <button type="button" class="header__button-ticket">
+          <span class="hidden">티켓보기</span>
+        </button>
+        <button type="button" class="header__button-search" data-custom-toggle="button">
+          <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+        </button>
+        <div class="header-search__layer" data-custom-toggle="panel">
+          <div class="header-search__form" data-element="form">
+            <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+            <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+            <div class="search-button">
+              <button class="button" type="button">검색</button>
+            </div>
+          </div>
+          <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+        </div>
+      </div>
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+    </div><!-- //header__box 추가 -->
+
+    <!-- 전체메뉴 --><!-- //전체메뉴 -->
+  </div>
+</header>
+  </div>
+
+  <div class="wrap GD">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">온라인 매출전표</a>
+      </main>
+    </div>
+  </div>
+
+  <!-- 풀팝업 -->
+  <!-- 세로 100% 예외 팝업일 경우, h100 class 추가 -->
+  <div id="modalLayer01" class="modal modal-full modal-small modal-scroll" ><!--사이즈 작게 변경필요시 .modal-small 추가-->
+    <div  class="modal-header">
+      <h2 class="modal-header__title">온라인 매출전표</h2>
+    </div>
+    <div class="modal-content h_bill">
+      <div data-element="tab" class="tab tab--default tab-fixed pdf-tab-fixed mo-pb50">
+        <div class="tab__buttons">
+          <div data-element="tab__list" class="tab__button">
+            <button type="button" data-element="tab__anchor" class="tab__anchor marked--sm is-active">구매내역 1</button>
+          </div>
+          <div data-element="tab__list" class="tab__button">
+            <button type="button" data-element="tab__anchor" class="tab__anchor marked--sm">구매내역 2</button>
+          </div>
+          <div data-element="tab__list" class="tab__button">
+            <button type="button" data-element="tab__anchor" class="tab__anchor marked--sm">구매내역 3</button>
+          </div>
+        </div>
+        <div data-element="tab__panel" class="tab__panel">
+          <div class="pdf-wrap">
+            <div class="table-horizontal ">
+              <table>
+                <caption>거래정보 설명</caption>
+                <colgroup>
+                  <col style="width:40%">
+                  <col>
+                </colgroup>
+                <thead class="table-horizontal__thead">
+                  <tr>
+                    <th scope="col" colspan="2" class="table-horizontal__td align--center">거래정보</th>
+                  </tr>
+                </thead>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">가맹점명</th>
+                    <td class="table-horizontal__td">(주)제주항공</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카드종류</th>
+                    <td class="table-horizontal__td">롯데카드</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">거래유형</th>
+                    <td class="table-horizontal__td">신용거래</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카드번호</th>
+                    <td class="table-horizontal__td">****-****-****-8051</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">승인번호</th>
+                    <td class="table-horizontal__td">33709562</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">유효기간</th>
+                    <td class="table-horizontal__td">****/**</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">거래일자</th>
+                    <td class="table-horizontal__td">2020.09.11 09:33</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">상품명</th>
+                    <td class="table-horizontal__td">국내항공권</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">결제금액</th>
+                    <td class="table-horizontal__td">32,900원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">할부기간</th>
+                    <td class="table-horizontal__td">일시불</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">예약번호</th>
+                    <td class="table-horizontal__td">95622650</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">서명</th>
+                    <td class="table-horizontal__td"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="section-wrap pdf-wrap">
+            <div class="table-horizontal">
+              <table>
+                <caption>사업자 정보 설명</caption>
+                <colgroup>
+                  <col style="width:40%">
+                  <col>
+                </colgroup>
+                <thead class="table-horizontal__thead">
+                  <tr>
+                    <th scope="col" colspan="2" class="table-horizontal__td align--center">사업자 정보</th>
+                  </tr>
+                </thead>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">대표자</th>
+                    <td class="table-horizontal__td">김이배</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">가맹점주소</th>
+                    <td class="table-horizontal__td">제주특별자치도 제주시<br>
+                      신대로 64, 3층 <br>(연동, 건설공제회관)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">가맹점번호</th>
+                    <td class="table-horizontal__td">9105161137</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">사업자등록번호</th>
+                    <td class="table-horizontal__td">616-81-50527</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">문의전화</th>
+                    <td class="table-horizontal__td">1599-1500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div class="fixed-wrap pc-center button-wrap pb0">
+            <button type="button" class="button button--primary button--black"><span class="button__text">이미지 저장</span></button>
+            <button type="button" class="button button--primary button--active"><span class="button__text">PDF 다운로드</span></button>
+          </div>
+        </div>
+        <div data-element="tab__panel" class="tab__panel">
+          <div class="pdf-wrap">
+            <div class="table-horizontal ">
+              <table>
+                <caption>거래정보 설명</caption>
+                <colgroup>
+                  <col style="width:40%">
+                  <col>
+                </colgroup>
+                <thead class="table-horizontal__thead">
+                  <tr>
+                    <th scope="col" colspan="2" class="table-horizontal__td align--center">거래정보</th>
+                  </tr>
+                </thead>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">가맹점명</th>
+                    <td class="table-horizontal__td">(주)제주항공</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카드종류</th>
+                    <td class="table-horizontal__td">롯데카드</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">거래유형</th>
+                    <td class="table-horizontal__td">신용거래</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카드번호</th>
+                    <td class="table-horizontal__td">****-****-****-8051</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">승인번호</th>
+                    <td class="table-horizontal__td">33709562</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">유효기간</th>
+                    <td class="table-horizontal__td">****/**</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">거래일자</th>
+                    <td class="table-horizontal__td">2020.09.11 09:33</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">상품명</th>
+                    <td class="table-horizontal__td">국내항공권</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">결제금액</th>
+                    <td class="table-horizontal__td">32,900원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">할부기간</th>
+                    <td class="table-horizontal__td">일시불</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">예약번호</th>
+                    <td class="table-horizontal__td">95622650</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">서명</th>
+                    <td class="table-horizontal__td"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="section-wrap pdf-wrap">
+            <div class="table-horizontal">
+              <table>
+                <caption>사업자 정보 설명</caption>
+                <colgroup>
+                  <col style="width:40%">
+                  <col>
+                </colgroup>
+                <thead class="table-horizontal__thead">
+                  <tr>
+                    <th scope="col" colspan="2" class="table-horizontal__td align--center">사업자 정보</th>
+                  </tr>
+                </thead>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">대표자</th>
+                    <td class="table-horizontal__td">김이배</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">가맹점주소</th>
+                    <td class="table-horizontal__td">제주특별자치도 제주시<br>
+                      신대로 64, 3층 <br>(연동, 건설공제회관)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">가맹점번호</th>
+                    <td class="table-horizontal__td">9105161137</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">사업자등록번호</th>
+                    <td class="table-horizontal__td">616-81-50527</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">문의전화</th>
+                    <td class="table-horizontal__td">1599-1500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="fixed-wrap button-wrap pc-center pb0 section-wrap">
+            <button type="button" class="button button--primary button--black"><span class="button__text">이미지 저장</span></button>
+            <button type="button" class="button button--primary button--active"><span class="button__text">PDF 다운로드</span></button>
+          </div>
+
+        </div>
+        <div data-element="tab__panel" class="tab__panel">
+          <div class="pdf-wrap">
+            <div class="table-horizontal ">
+              <table>
+                <caption>거래정보 설명</caption>
+                <colgroup>
+                  <col style="width:40%">
+                  <col>
+                </colgroup>
+                <thead class="table-horizontal__thead">
+                  <tr>
+                    <th scope="col" colspan="2" class="table-horizontal__td align--center">거래정보</th>
+                  </tr>
+                </thead>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">가맹점명</th>
+                    <td class="table-horizontal__td">(주)제주항공</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카드종류</th>
+                    <td class="table-horizontal__td">롯데카드</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">거래유형</th>
+                    <td class="table-horizontal__td">신용거래</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">카드번호</th>
+                    <td class="table-horizontal__td">****-****-****-8051</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">승인번호</th>
+                    <td class="table-horizontal__td">33709562</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">유효기간</th>
+                    <td class="table-horizontal__td">****/**</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">거래일자</th>
+                    <td class="table-horizontal__td">2020.09.11 09:33</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">상품명</th>
+                    <td class="table-horizontal__td">국내항공권</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">결제금액</th>
+                    <td class="table-horizontal__td">32,900원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">할부기간</th>
+                    <td class="table-horizontal__td">일시불</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">예약번호</th>
+                    <td class="table-horizontal__td">95622650</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">서명</th>
+                    <td class="table-horizontal__td"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="section-wrap pdf-wrap">
+            <div class="table-horizontal">
+              <table>
+                <caption>사업자 정보 설명</caption>
+                <colgroup>
+                  <col style="width:40%">
+                  <col>
+                </colgroup>
+               
+                <thead class="table-horizontal__thead">
+                  <tr>
+                    <th scope="col" colspan="2" class="table-horizontal__td align--center">사업자 정보</th>
+                  </tr>
+                </thead>
+                <tbody class="table-horizontal__tbody">
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">대표자</th>
+                    <td class="table-horizontal__td">김이배</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">가맹점주소</th>
+                    <td class="table-horizontal__td">제주특별자치도 제주시<br>
+                      신대로 64, 3층 <br>(연동, 건설공제회관)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">가맹점번호</th>
+                    <td class="table-horizontal__td">9105161137</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">사업자등록번호</th>
+                    <td class="table-horizontal__td">616-81-50527</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="table-horizontal__th">문의전화</th>
+                    <td class="table-horizontal__td">1599-1500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+  
+          <div class="fixed-wrap button-wrap pc-center pb0 section-wrap">
+            <button type="button" class="button button--primary button--black"><span class="button__text">이미지 저장</span></button>
+            <button type="button" class="button button--primary button--active"><span class="button__text">PDF 다운로드</span></button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

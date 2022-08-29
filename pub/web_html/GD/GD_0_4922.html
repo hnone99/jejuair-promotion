@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <div class="stepper header__stepper">
+        <ol class="stepper__group_new">
+          <li>
+            <span class="step">1</span>
+            <span class="text">여정 및 탑승객 선택</span>
+          </li>
+          <li class="active">
+            <span class="step">2</span>
+            <span class="text">구간 및 운임 선택</span>
+          </li>
+          <li>
+            <span class="step">3</span>
+            <span class="text">부가서비스 선택</span>
+          </li>
+          <li>
+            <span class="step">4</span>
+            <span class="text">변경정보 확인</span>
+          </li>
+          <li>
+            <span class="step">5</span>
+            <span class="text">결제</span>
+          </li>
+        </ol> 
+     </div><!--// step 스타일 변경 -->
+
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <header class="header__inner header__inner--step pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <h1 class="header__logo">
+            <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+          </h1>
+          <h2 class="header__page-name">예약 변경</h2>
+
+          <div class="stepper header__stepper">
+            <ol class="stepper__group_new">
+              <li>
+                <span class="step">1</span>
+                <span class="text">여정 및 탑승객 선택</span>
+              </li>
+              <li class="active">
+                <span class="step">2</span>
+                <span class="text">구간 및 운임 선택</span>
+              </li>
+              <li>
+                <span class="step">3</span>
+                <span class="text">부가서비스 선택</span>
+              </li>
+              <li>
+                <span class="step">4</span>
+                <span class="text">변경정보 확인</span>
+              </li>
+              <li>
+                <span class="step">5</span>
+                <span class="text">결제</span>
+              </li>
+            </ol> 
+          </div><!--// step 스타일 변경 -->
+
+        </div>
+      </div>      
+    </header>
+
+  </div>
+
+  <div id="body">
+    <div class="wrap NA step-ui wrap--booking">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">마이페이지</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle"
+            data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>
+            <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor">예약 현황</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel">
+              <a href="#" class="item">회원 정보 수정</a>
+              <a href="#" class="item">예약 현황</a>
+              <a href="#" class="item">결제수단 관리</a>
+              <a href="#" class="item">나의 탑승 내역</a>
+              <a href="#" class="item">즐겨찾기</a>
+              <a href="#" class="item">나의 쿠폰함</a>
+              <a href="#" class="item">나의 J pass</a>
+              <a href="#" class="item">나의 기프티켓</a>
+              <a href="#" class="item">나의 JJ 라운지 이용권</a>
+              <a href="#" class="item">나의 프리패스</a>
+              <a href="#" class="item">나의 스포츠 멤버십</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="content" id="content">
+        <main id="main" class="main">
+
+          <div class="page-title-wrap">
+            <div class="page-title">구간 및 운임 선택</div>
+            <div class="page-sub-title">변경하실 구간을 선택해 주세요.</div>
+          </div>
+
+          <div class="section-wrap pc-inner">
+            <div class="section-title">변경 전 여정</div>
+
+            <div class="journeys boarding-list-pc wide">   
+              <div class="boarding-wrap in-boarding-info"><!--항공편변경 안내 내용 노출시 .in-boarding-info 추가-->                
+                <div class="boarding-box">                      
+                  <div class="boarding">
+                    <div class="boarding__header">
+                      <div class="boarding__header--item1">
+                        <span class="">7C147</span>
+                      </div>
+                      <!-- <div class="boarding__header--item2">
+                        <span class="marked--brand">FLYBAG</span>
+                      </div> -->
+                    </div>              
+                    <div class="boarding__info-wrap">
+                      <div class="boarding__info--top">
+                        <div class="boarding__info--top-item1"><span class="">2020.11.23 (금) <em class="mo-br">12:30</em></span></div>
+                        <div class="boarding__info--top-item2">
+                          <div class="boarding__info-date ">2020.10.11 (목) <em class="mo-br">12:30</em></div>
+                        </div>
+                      </div>              
+                      <div class="boarding__info">
+                        <div class="boarding__info-before">
+                          <div class="boarding__info-title">서울</div>
+                          <div class="boarding__info-text">김포</div>
+                        </div>
+                        <div aria-label="one-way" class="icon-mark one-way"></div>
+                        <div class="boarding__info-after">
+                          <div class="boarding__info-title">오사카</div>
+                          <div class="boarding__info-text">간사이</div>
+                        </div>
+                      </div> 
+                      <!-- <div class="boarding-info-txt">항공편 변경</div> -->
+                    </div>              
+                  </div>
+                  <!--//boarding-->
+                </div>
+                <!--// boarding-box-->
+              </div>
+              <!--// boarding-wrap-->  
+
+            </div>
+            <!--// journeys.boarding-list-pc -->
+
+          </div>
+
+          <!-- 변경 여정 선택 -->
+          <div class="sub-section pc-inner">
+            <div class="pc-pay-wrap search-wrap">
+              <div class=" left">
+                <div class="section-title">변경 여정 선택</div>
+                <!-- <div class="section-title">가는 편 선택</div> 이전 단계예서 왕복 여정 모두 선택 시 -->
+                <!-- <div class="section-title">구간 1 선택</div> 이전 단계에서 다구간 여정 복수 선택 시-->
+              </div>
+
+              <div class="right">
+                <div class="input-wrap input--line">
+                  <div class="input-row">
+                    <div class="input-item">
+                      <label class="input-label">여정 선택</label>
+                      <div class="input-box">
+                        <button type="button" class="picker picker--button" data-element="modal_anchor" data-modal-type="datepicker" data-target="#datepicker01">2021.05.10 (월)
+                        </button>
+                      </div>
+                      <p tabindex="0" class="input__error">에러메세지</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-wrap button-wrap--center">
+                  <button type="button" class="button button--optional "><span class="button__text">다시 검색</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-wrap">
+            <!-- 항공편 리스트 -->
+            <div class="radio-button-block radio-boarding pc-flex-radio">
+              <div class="radio-button">
+                <input type="radio" id="inputRadio1" name="inputRadio" class="radio-button__input" checked>
+                <label for="inputRadio1" class="radio-button__label">
+                  <span class="radio-boarding">
+                    <span class="radio-boarding__flight">8GPR4</span>
+                    <span class="radio-boarding__info">
+                      <span class="radio-boarding__title"><span class="time">10:00</span>인천(체험)</span>
+                      <i aria-label="one-way" class="icon"> <span class="radio-boarding__time">1시간 10분</span></i>
+                      <span class="radio-boarding__title align-right"><span class="time">11:32</span>제주</span>
+                    </span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="radio-button">
+                <input type="radio" id="inputRadio1" name="inputRadio" class="radio-button__input">
+                <label for="inputRadio1" class="radio-button__label">
+                  <span class="radio-boarding">
+                    <span class="radio-boarding__flight">7C1100</span>
+                    <span class="radio-boarding__info">
+                      <span class="radio-boarding__title"><span class="time">09:50</span>인천(체험)</span>
+                      <i aria-label="one-way" class="icon"> <span class="radio-boarding__time">4시간 50분</span></i>
+                      <span class="radio-boarding__title  align-right"><span class="time">00:30</span>제주</span>
+                    </span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="radio-button">
+                <input type="radio" id="inputRadio1" name="inputRadio" class="radio-button__input">
+                <label for="inputRadio1" class="radio-button__label">
+                  <span class="radio-boarding">
+                    <span class="radio-boarding__flight">7C1100</span>
+                    <span class="radio-boarding__info">
+                      <span class="radio-boarding__title"><span class="time">09:50</span>인천(체험)</span>
+                      <i aria-label="one-way" class="icon"> <span class="radio-boarding__time">4시간 50분</span></i>
+                      <span class="radio-boarding__title  align-right"><span class="time">00:30</span>제주</span>
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <!-- //항공편 리스트 -->
+          </div>
+
+          <!-- 항공권 결과 없을 경우 -->
+          <div class="finish-item-wrap military">
+            <div class="finish-item nothing">
+              <div class="finish-item__img"><img src="../../assets/images/icon/icon-nodata-02.png" alt=""></div>
+              <p class="finish-item__title pc-size">탑승 가능한 항공편이 없습니다.</p>
+              <!-- <p class="finish-item__text">다시 선택해 주세요.</p> -->
+            </div>
+          </div>
+
+          <div class="section-wrap">
+            <div class="section-title">예약 정보</div>
+
+            <div class="input-wrap input--line">
+              <!--  성, 이름 -->
+              <div class="input-row input-flex">
+                <div class="input-item">
+                  <div class="input-flex">
+                    <div class="input-box label-active">
+                      <label for="inp1-1" class="input__label">성(영문)<span class="input__label-asterisk" title="required">*</span></label>
+                      <div data-element="form" class="input is-active">
+                        <input type="text" data-element="input" id="inp1-1" class="input__text" title="성(영문) 입력" value="KIM" disabled>
+                        <button type="button" data-element="remove" class="input__remove-button hide">삭제</button>
+                      </div>
+                    </div>
+                    <div class="input-box label-active">
+                      <label for="inp1-2" class="input__label">이름(영문)<span class="input__label-asterisk" title="required">*</span></label>
+                      <div data-element="form" class="input is-active">
+                        <input type="text" data-element="input" id="inp1-2" class="input__text" title="이름(영문) 입력" value="JEJU" disabled>
+                        <button type="button" data-element="remove" class="input__remove-button hide">삭제</button>
+                      </div>
+                    </div>
+                  </div>              
+                </div>
+              </div>
+            </div>
+
+            <div class="input-wrap input--line pc-col pc-col-2 input-na">
+              <!-- 성별 -->
+              <div class="input-row">
+                <div class="input-box radio-box label-active">     
+                  <label for="inp1-1" class="input__label">성별<span class="input__label-asterisk" title="required">*</span></label>
+                  <div class="radio-wrapper">
+                    <div class="radio-wrap">
+                      <span class="radio">
+                        <input type="radio" id="inputRadio2" name="inputRadio" class="radio__input" checked disabled>
+                        <label for="inputRadio2" class="radio__label">
+                          <i aria-hidden="true" class="radio__ico"></i>
+                          <span>남자</span>
+                        </label>
+                      </span>
+                      <span class="radio">
+                        <input type="radio" id="inputRadio3" name="inputRadio" class="radio__input" disabled>
+                        <label for="inputRadio3" class="radio__label">
+                          <i aria-hidden="true" class="radio__ico"></i>
+                          <span>여자</span>
+                        </label>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 생년월일 -->
+              <div class="input-row"> <!-- D : 에러시 input--error 클래스 추가 -->
+                <div class="input-item">
+                  <div class="input-label top0">생년월일<span class="input__label-asterisk" title="required">*</span>
+                  </div>
+                  <div class="input-flex">              
+                    <div class="input-box">
+                      <div class="input" data-element="form">
+                        <input type="text" class="input__text input__text--placeholder" data-element="input" title="연도 입력" placeholder="년" value="1988" disabled>
+                        <button type="button" class="input__remove-button" data-element="remove">삭제</button>
+                      </div>
+                    </div>
+                    <div class="input-box">
+                      <div class="select-wrap select-wrap--line">
+                        <select class="select-wrap__select selected" disabled>
+                          <option>월</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option selected>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-box">
+                      <div class="select-wrap select-wrap--line">
+                        <select class="select-wrap__select selected" disabled>
+                          <option>일</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option selected>12</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 생년월일 에러메시지 -->
+                  <p tabindex="0" class="input__error">생년월일을 정확히 입력해 주세요.</p>
+                </div>
+              </div>
+              
+              <!-- 휴대전화번호 -->
+              <div class="input-row input--error"> <!-- D : 에러시 input--error 클래스 추가 -->
+                <div class="input-label label-top">전화번호<span class="input__label-asterisk" stitle="required">*</span></div>
+                <div class="input-item">
+                  <div class="input-flex">
+                    <div class="input-box input-box--tel">
+                      <div class="select-wrap select-wrap--line">
+                        <button class="select-wrap__button active" type="button" data-element="modal_anchor" data-width="910" data-target="#modalLayer01" data-modal-type="full">+82</button>
+                      </div>
+                    </div>
+                    <div class="input-box label-active input--error"> 
+                      <div class="input is-focus" data-element="form">
+                        <input type="tel" class="input__text" data-element="input" title="전화번호입력" value="010-1234-5678">
+                        <button type="button" class="input__remove-button" data-element="remove">삭제</button>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="input__sub-text">예) 010-1234-5678</p>
+                  <p tabindex="0" class="input__error">휴대전화번호를 입력해주세요. 올바른 휴대전화번호가 아닙니다.</p>
+                </div>
+              </div>
+
+              <!-- 이메일 -->
+              <div class="input-row input--error"> <!-- D : 에러시 input--error 클래스 추가 -->
+                <div class="input-item">
+                  <div class="input-box label-active">
+                    <label for="inputEmail1" class="input__label">이메일<span title="required" class="input__label-asterisk">*</span></label>
+                    <div data-element="form" class="input is-focus">
+                      <input type="text" id="inputEmail1" class="input__text" value="kimjeju@jejuair.com">
+                      <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                    </div>
+                  </div>
+                  <p class="input__sub-text">예) kimjeju@jejuair.com</p>
+                  <p tabindex="0" class="input__error">이메일을 입력해 주세요. 올바른 이메일 주소가 아닙니다.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="section-wrap">
+            <div class="container--default">
+              <div class="text__default text--bold">개인정보 수집 동의</div>
+            </div>
+            <div class="container--xsmall mt10">
+              <div class="checkbox checkbox--small">
+                <input type="checkbox" id="inputCheck03122" data-element="checkbox" class="checkbox__input">
+                <label for="inputCheck03122" class="checkbox__label arrow">
+                  <i aria-hidden="true" class="checkbox__ico"></i>
+                  <span>개인정보 수집 이용 동의</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-wrap"> <!-- 20211108 아코디언으로 수정-->
+            <div class="service-information" data-element="toggle" data-options="{&quot;mode&quot;: &quot;move scroll&quot;}">
+              <div class="service-information__title">
+                <button type="button" class="service-information__anchor is-active" data-element="toggle__anchor" aria-controls="toggle-1" aria-expanded="true">꼭 확인해 주세요.</button>
+              </div>
+              <div class="service-information__content" data-element="toggle__panel" id="toggle-1" style="display: block;">
+                <div class="list-wrap">
+                  <ul class="list-guide">
+                    <li class="list-guide__item">예약 완료 후 문자메세지(SMS), 이메일로 예약사항이 발송됩니다.</li>
+                    <li class="list-guide__item">항공기 스케줄은 정부인가 조건으로 예고 없이 변경될 수 있습니다.</li>
+                    <li class="list-guide__item">리프레시포인트가 적립되지 않습니다.</li>
+                    <li class="list-guide__item">예약관련 자세한 사항은 고객센터에 문의해주시기 바랍니다.</li>
+                    <li class="list-guide__item hyphen">고객센터 : 1599 - 1500</li>
+                    <li class="list-guide__item hyphen">고객센터 운영시간 : 09:00~19:00 (주말 및 공휴일 제외)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //선택시 탑승객 정보 영역 노출 -->
+          
+          <!-- 버튼 영역 -->
+          <div class="booking-sticky booking-sticky--reservation military">
+            <div class="reservation-container">
+              <div class="booking-sticky__top">
+                <button type="button" class="button button--primary button--active"><!--활성화시 .button--active-->
+                  <span class="button__text">예약</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- // 버튼 영역 -->
+
+          <!-- ERROR ALERT -->
+          <div id="modalAlert01" class="modal modal--simple" style="display: none;">
+            <div class="modal-content">
+              <h2 class="alert-title"></h2>
+              <!-- 후급증 기사용 알럿 -->
+              <p class="alert-text">입력하신 필수정보를 다시 확인해 주세요.</p>
+              <p class="error-text"></p>
+            </div>
+            <div class="modal__button-area button-wrap">
+              <button type="button" class="button button--secondary button--active" rel="modal:close"><span class="button__text">확인</span></button>
+            </div>
+            <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+          </div>
+          <!-- // ERROR ALERT -->
+
+
+
+        </main>
+      </div>
+    </div>
+  </div>
+  <!--//#body-->
+
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <script>
+    // 항공편
+  $.fn.airFlight = function () {
+    var airFlight = this
+    var swipeContainer = airFlight.find('.swiper-container')
+    var slideTab = airFlight.find('.air-flight-slide')
+    var airSwiper = new Swiper(swipeContainer, {
+      slidesPerView: 7,
+      centeredSlides: true,
+      loop: false,
+      slideActiveClass: 'active',
+      // 초기에 나올 탭
+      initialSlide: null,
+      navigation: {
+        nextEl: '.air-flight-next',
+        prevEl: '.air-flight-prev',
+      },
+      breakpoints: {
+        1080: {
+          slidesPerView: 3,
+        },
+      }
+    });  
+    slideTab.on('click', function (e) {
+      e.preventDefault()
+      var emptyChk = $(this).hasClass('empty')
+      if (!emptyChk) {
+        var currentIndex = $(this).index()
+        airSwiper.clickedIndex = currentIndex
+        airSwiper.slideTo(currentIndex)
+        ticketShow ()
+      } else {
+        return false
+      }
+    });
+
+    function ticketShow () {
+      console.log('티켓 보여주기');
+    }
+  }
+  // 항공편
+  $('.air-flight').airFlight()
+  </script>
+</body>
+
+</html>

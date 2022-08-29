@@ -1,0 +1,2679 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 --><!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 --><!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div class="wrap">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">일반결제 CASE</a>
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer02" data-modal-type="full" style="color: #fff;">포인트결제 CASE</a>
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer03" data-modal-type="full" style="color: #fff;">일반+포인트결제 CASE</a><br><br>
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer04" data-modal-type="full" style="color: #fff;">연결구간 CASE</a><br><br>
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer05" data-modal-type="full" style="color: #fff;">변경완료,부분취소 CASE</a>
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer06" data-modal-type="full" style="color: #fff;">전체취소 CASE</a>
+
+        <!-- //필터 팝업 -->
+      </main>
+    </div>
+  </div>
+
+  <!--일반결제 CASE-->
+  <div id="modalLayer01" class="modal modal-full modal-scroll modal-small">
+    <div class="modal-header">
+      <div class="modal-header__title">탑승객별 운임상세</div>
+    </div>
+
+
+    <div class="modal-content">
+
+      <div class="receipt-style">
+        <dl class="line-list-item">
+          <dt class="title total">
+            <div class="txt-left">총 결제금액</div>
+            <div class="price">1,000,000원</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공 운송료</div>
+                <div class="txt-right">900,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">부가서비스</div>
+                <div class="txt-right">100,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">프로모션 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <!--20210727 추가-->
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <!--//20210727 추가-->
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      
+      <div class="line-list-wrap">
+
+        <!--인원 수-->
+        <div class="passenger-info">
+          <div class="person">
+            <div class="person__item"><i aria-label="성인" class="icon adult"></i><span>2</span><span
+              class="hidden">명</span>
+            </div>
+            <div class="person__item"><i aria-label="유아" class="icon child"></i><span>1</span><span
+              class="hidden">명</span>
+            </div>
+            <div class="person__item"><i aria-label="소아" class="icon baby"></i><span>1</span><span
+              class="hidden">명</span>
+            </div>
+          </div>
+        </div>
+        <!--//인원 수-->
+
+        <!--리스트1 : 일바녈제 편도CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">1. HONG GILDONG</div>
+            <div class="price">100,000원</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공운임</div>
+                <div class="txt-right">100,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">공항시설 사용료</div>
+                <div class="txt-right">20,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">유류할증료</div>
+                <div class="txt-right">10,000원</div>
+              </li>
+              <!--20210727 추가-->
+              <li>
+                <div class="txt-left">프로모션 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <!--//20210727 추가-->
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+            </ul>
+            <p class="sub-title">부가서비스 내역</p>
+            
+            <div class="modal-receipt">
+              <div class="payment-amount">
+                <div class="payment-amount__title"> 가는편</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt">
+               
+                  <tr> <!--20210927 -->
+                    <td class="receipt_title oneline" colspan="2">
+                      <span class="receipt_ti">스포츠 수하물 위탁 수수료 사전결제</span>
+                      <span class="price">10,000원</span>
+                    </td>                    
+                  </tr>
+
+                    <tr>
+                        <td class="receipt_title"><span>번들 FLY</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                  <span class="item"></span>
+                                  <span class="price">10,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>사전 기내식</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item">비빔밥</span>
+                              <span class="price">15,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->
+             
+              <!--20210727 추가-->
+              <div class="modal-receipt">
+                <div class="payment-amount">
+                  <div class="payment-amount__title">추가 구매 내역</div>
+                </div>
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt type01">
+                    <tr>
+                        <td class="receipt_title"><span>우선 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                  <span class="item"></span>
+                                  <span class="price">20,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>초과 수하물</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">40,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>카운터 수속 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>생동물 운반 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->
+               
+              </div>
+              <!--//20210727 추가-->
+            </div>
+          </dd>
+        </dl>
+
+        <!--리스트2 : 일반결제 왕복 CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">2. KIM / JEJUDONG</div>
+            <div class="price">263,000원</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공운임</div>
+                <div class="txt-right">100,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">공항시설 사용료</div>
+                <div class="txt-right">20,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">유류할증료</div>
+                <div class="txt-right">10,000원</div>
+              </li>
+              <!--20210727 추가-->
+              <li>
+                <div class="txt-left">프로모션 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <!--//20210727 추가-->
+            </ul>
+            <p class="sub-title">부가서비스 내역</p>
+            
+              <div class="modal-receipt">
+                <div class="payment-amount">
+                  <div class="payment-amount__title">가는편</div>
+                </div>
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt">
+                      <tr>
+                          <td class="receipt_title"><span>번들 FLY</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                  <span class="item"></span>
+                                  <span class="price">10,000원</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>사전 기내식</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item">비빔밥</span>
+                                <span class="price">15,000원</span>
+                            </li>
+                            </ul>
+                        </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->           
+          
+                <div class="payment-amount">
+                  <div class="payment-amount__title">오는편</div>
+                </div>
+
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt">
+                      <tr>
+                          <td class="receipt_title"><span>번들 프리미엄</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                  <span class="item"></span>
+                                  <span class="price">15,000원</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>사전 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item">10KG</span>
+                                <span class="price">5,000원</span>
+                            </li>
+                            </ul>
+                        </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->
+                <!--20210727 추가-->
+                <div class="modal-receipt">
+                  <div class="payment-amount">
+                    <div class="payment-amount__title">추가 구매 내역</div>
+                  </div>
+                  <div class="payment-amount">                      
+                    <table class="tbl_receipt type01">
+                      <tr>
+                          <td class="receipt_title"><span>우선 수하물</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                    <span class="item"></span>
+                                    <span class="price">20,000원</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>초과 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">40,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>카운터 수속 수수료</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">10,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>생동물 운반 수수료</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">10,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                    </table><!--//tbl_receipt-->
+                  </div><!--//payment-amount-->
+                
+                </div>
+                <!--//20210727 추가-->
+                        
+              </div>
+
+            <p class="sub-title">여행보험</p>
+            <ul>
+              <li>
+                <div class="txt-left">보험료</div>
+                <div class="txt-right">33,000원</div>
+              </li>
+            </ul>
+
+          </dd>
+        </dl>
+
+        <!--리스트3 : 일반결제 다구간 CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">3. KIM / JEJUDONG</div>
+            <div class="price">230,000원</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공운임</div>
+                <div class="txt-right">100,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">공항시설 사용료</div>
+                <div class="txt-right">20,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">유류할증료</div>
+                <div class="txt-right">10,000원</div>
+              </li>
+              <!--20210727 추가-->
+              <li>
+                <div class="txt-left">프로모션 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <!--//20210727 추가-->
+            </ul>
+            <p class="sub-title">부가서비스 내역</p>
+            
+              <div class="modal-receipt">
+                <div class="payment-amount">
+                  <div class="payment-amount__title">구간 1</div>
+                </div>
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt">
+                      <tr>
+                          <td class="receipt_title"><span>번들 FLY</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                  <span class="item"></span>
+                                  <span class="price">10,000원</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>사전 기내식</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item">불고기</span>
+                                <span class="price">10,000원</span>
+                            </li>
+                            </ul>
+                        </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->           
+          
+                <div class="payment-amount">
+                  <div class="payment-amount__title">구간 2</div>
+                </div>
+
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt">
+                      <tr>
+                          <td class="receipt_title"><span>번들 프리미엄</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                  <span class="item"></span>
+                                  <span class="price">15,000원</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>사전 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item">10KG</span>
+                                <span class="price">5,000원</span>
+                            </li>
+                            </ul>
+                        </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->
+                <!--20210727 추가-->
+                <div class="modal-receipt">
+                  <div class="payment-amount">
+                    <div class="payment-amount__title">추가 구매 내역</div>
+                  </div>
+                  <div class="payment-amount">                      
+                    <table class="tbl_receipt type01">
+                      <tr>
+                          <td class="receipt_title"><span>우선 수하물</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                    <span class="item"></span>
+                                    <span class="price">20,000원</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>초과 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">40,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>카운터 수속 수수료</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">10,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>생동물 운반 수수료</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">10,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                    </table><!--//tbl_receipt-->
+                  </div><!--//payment-amount-->
+                
+                </div>
+                <!--//20210727 추가-->
+              </div>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <!--//일반결제 CASE-->
+
+  <!--포인트결제 CASE-->
+  <div id="modalLayer02" class="modal modal-full modal-scroll modal-small">
+    <div class="modal-header">
+      <div class="modal-header__title">탑승객별 운임상세</div>
+    </div>
+
+    <div class="modal-content">
+      <div class="receipt-style">
+        <dl class="line-list-item">
+          <dt class="title total">
+            <div class="txt-left">총 결제금액</div>
+            <div class="price">1,000,000P</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공 운송료</div>
+                <div class="txt-right">900,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">부가서비스</div>
+                <div class="txt-right">100,000P</div>
+              </li>
+              <!--20210727 추가-->
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000P</div>
+              </li>
+              <!--//20210727 추가-->
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      
+      <div class="line-list-wrap">
+
+        <!--인원 수-->
+        <div class="passenger-info">
+          <div class="person">
+            <div class="person__item"><i aria-label="성인" class="icon adult"></i><span>2</span><span
+              class="hidden">명</span>
+            </div>
+            <div class="person__item"><i aria-label="유아" class="icon child"></i><span>1</span><span
+              class="hidden">명</span>
+            </div>
+            <div class="person__item"><i aria-label="소아" class="icon baby"></i><span>1</span><span
+              class="hidden">명</span>
+            </div>
+          </div>
+        </div>
+        <!--//인원 수-->
+
+        <!--리스트1 : 포인트결제 편도CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">1. HONG GILDONG</div>
+            <div class="price">100,000P</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공운임</div>
+                <div class="txt-right">100,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">공항시설 사용료</div>
+                <div class="txt-right">20,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">유류할증료</div>
+                <div class="txt-right">10,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000P</div>
+              </li>
+            </ul>
+            <p class="sub-title">부가서비스 내역</p>
+            
+            <div class="modal-receipt">
+              <div class="payment-amount">
+                <div class="payment-amount__title"> 가는편</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt">
+                    <tr>
+                        <td class="receipt_title"><span>번들 FLY</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                  <span class="item"></span>
+                                  <span class="price">10,000P</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>사전 기내식</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item">비빔밥</span>
+                              <span class="price">15,000P</span>
+                            </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->
+             
+              <!--20210727 추가-->
+              <div class="modal-receipt">
+                <div class="payment-amount">
+                  <div class="payment-amount__title">추가 구매 내역</div>
+                </div>
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt type01">
+                    <tr>
+                        <td class="receipt_title"><span>우선 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                  <span class="item"></span>
+                                  <span class="price">20,000P</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>초과 수하물</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">40,000P</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>카운터 수속 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000P</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>생동물 운반 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000P</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->
+               
+              </div>
+              <!--//20210727 추가-->
+            </div>
+          </dd>
+        </dl>
+
+        <!--리스트2 : 포인트결제 왕복 CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">2. KIM / JEJUDONG</div>
+            <div class="price">263,000P</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공운임</div>
+                <div class="txt-right">100,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">공항시설 사용료</div>
+                <div class="txt-right">20,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">유류할증료</div>
+                <div class="txt-right">10,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000P</div>
+              </li>
+            </ul>
+            <p class="sub-title">부가서비스 내역</p>
+            
+              <div class="modal-receipt">
+                <div class="payment-amount">
+                  <div class="payment-amount__title">가는편</div>
+                </div>
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt">
+                      <tr>
+                          <td class="receipt_title"><span>번들 FLY</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                  <span class="item"></span>
+                                  <span class="price">10,000P</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>사전 기내식</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item">비빔밥</span>
+                                <span class="price">15,000P</span>
+                            </li>
+                            </ul>
+                        </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->           
+          
+                <div class="payment-amount">
+                  <div class="payment-amount__title">오는편</div>
+                </div>
+
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt">
+                      <tr>
+                          <td class="receipt_title"><span>번들 프리미엄</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                  <span class="item"></span>
+                                  <span class="price">15,000P</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>사전 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item">10KG</span>
+                                <span class="price">5,000P</span>
+                            </li>
+                            </ul>
+                        </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->
+                <!--20210727 추가-->
+                <div class="modal-receipt">
+                  <div class="payment-amount">
+                    <div class="payment-amount__title">추가 구매 내역</div>
+                  </div>
+                  <div class="payment-amount">                      
+                    <table class="tbl_receipt type01">
+                      <tr>
+                          <td class="receipt_title"><span>우선 수하물</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                    <span class="item"></span>
+                                    <span class="price">20,000P</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>초과 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">40,000P</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>카운터 수속 수수료</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">10,000P</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>생동물 운반 수수료</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">10,000P</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                    </table><!--//tbl_receipt-->
+                  </div><!--//payment-amount-->
+                
+                </div>
+                <!--//20210727 추가-->
+                        
+              </div>
+
+            <p class="sub-title">여행보험</p>
+            <ul>
+              <li>
+                <div class="txt-left">보험료</div>
+                <div class="txt-right">33,000P</div>
+              </li>
+            </ul>
+
+          </dd>
+        </dl>
+
+        <!--리스트3 : 포인트결제+ 다구간 CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">3. KIM / JEJUDONG</div>
+            <div class="price">215,000P</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공운임</div>
+                <div class="txt-right">100,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">공항시설 사용료</div>
+                <div class="txt-right">20,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">유류할증료</div>
+                <div class="txt-right">10,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000P</div>
+              </li>
+            </ul>
+            <p class="sub-title">부가서비스 내역</p>
+            <div class="modal-receipt">
+              <div class="payment-amount">
+                <div class="payment-amount__title">구간 1</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt">
+                    <tr>
+                      <td class="receipt_title"><span>사전 기내식</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item">불고기</span>
+                              <span class="price">10,000원</span>
+                          </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->           
+        
+              <div class="payment-amount">
+                <div class="payment-amount__title">구간 2</div>
+              </div>
+
+              <div class="payment-amount">                      
+                <table class="tbl_receipt">
+                    <tr>
+                      <td class="receipt_title"><span>사전 수하물</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item">10KG</span>
+                              <span class="price">5,000원</span>
+                          </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->
+              <!--20210727 추가-->
+              <div class="modal-receipt">
+                <div class="payment-amount">
+                  <div class="payment-amount__title">추가 구매 내역</div>
+                </div>
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt type01">
+                    <tr>
+                        <td class="receipt_title"><span>우선 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                  <span class="item"></span>
+                                  <span class="price">20,000P</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>초과 수하물</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">40,000P</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>카운터 수속 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000P</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>생동물 운반 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000P</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->
+              
+              </div>
+              <!--//20210727 추가-->
+                       
+            </div>
+          </dd>
+        </dl>
+
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <!--//포인트결제 CASE-->
+
+  <!--일반+포인트결제 CASE-->
+  <div id="modalLayer03" class="modal modal-full modal-scroll modal-small">
+    <div class="modal-header">
+      <div class="modal-header__title">탑승객별 운임상세</div>
+    </div>
+
+    <div class="modal-content">
+      <div class="receipt-style">
+        <dl class="line-list-item">
+          <dt class="title total">
+            <div class="txt-left">총 결제금액</div>
+            <div class="price">1,000,000원</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공 운송료</div>
+                <div class="txt-right">900,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">부가서비스</div>
+                <div class="txt-right">
+                  <p>100,000원</p>
+                  <p>100,000P</p>
+                </div>
+              </li>
+              <!--20210727 추가-->
+              <li>
+                <div class="txt-left">프로모션 할인</div>
+                <div class="txt-right">- 10,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000P</div>
+              </li>
+              <!--//20210727 추가-->
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      
+      <div class="line-list-wrap">
+
+        <!--인원 수-->
+        <div class="passenger-info">
+          <div class="person">
+            <div class="person__item"><i aria-label="성인" class="icon adult"></i><span>2</span><span
+              class="hidden">명</span>
+            </div>
+            <div class="person__item"><i aria-label="유아" class="icon child"></i><span>1</span><span
+              class="hidden">명</span>
+            </div>
+            <div class="person__item"><i aria-label="소아" class="icon baby"></i><span>1</span><span
+              class="hidden">명</span>
+            </div>
+          </div>
+        </div>
+        <!--//인원 수-->
+
+        <!--리스트1 : 포인트결제 편도CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">1. HONG GILDONG</div>
+            <div class="price">
+              <p>230,000원</p>
+              <p>10,000P</p>
+            </div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공운임</div>
+                <div class="txt-right">100,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">공항시설 사용료</div>
+                <div class="txt-right">20,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">유류할증료</div>
+                <div class="txt-right">10,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">프로모션 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+            </ul>
+            <p class="sub-title">부가서비스 내역</p>
+            
+            <div class="modal-receipt">
+              <div class="payment-amount">
+                <div class="payment-amount__title"> 가는편</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt">
+                    <tr>
+                        <td class="receipt_title"><span>번들 FLY</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                  <span class="item"></span>
+                                  <span class="price">10,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>사전 좌석</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item">2F</span>
+                              <span class="price">10,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>사전 수하물</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item">5KG</span>
+                              <span class="price">10,000원</span>
+                            </li>
+                            <li>
+                              <span class="item">10KG</span>
+                              <span class="price">10,000P</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>사전 기내식</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item">비빔밥</span>
+                              <span class="price">10,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->
+              
+              <!--20210727 추가-->
+              <div class="modal-receipt">
+                <div class="payment-amount">
+                  <div class="payment-amount__title">추가 구매 내역</div>
+                </div>
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt type01">
+                    <tr>
+                        <td class="receipt_title"><span>우선 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                  <span class="item"></span>
+                                  <span class="price">20,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>초과 수하물</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">40,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>카운터 수속 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>생동물 운반 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->
+                
+              </div>
+              <!--//20210727 추가-->
+            </div>
+          </dd>
+        </dl>
+
+        <!--리스트2 : 일반+포인트결제 왕복 CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">2. KIM / JEJUDONG</div>
+            <div class="price">
+              <p>298,000원</p>
+              <p>30,000P</p>
+            </div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공운임</div>
+                <div class="txt-right">100,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">공항시설 사용료</div>
+                <div class="txt-right">20,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">유류할증료</div>
+                <div class="txt-right">10,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">프로모션 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+            </ul>
+            <p class="sub-title">부가서비스 내역</p>
+            
+              <div class="modal-receipt">
+                <div class="payment-amount">
+                  <div class="payment-amount__title">가는편</div>
+                </div>
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt">
+                      <tr>
+                          <td class="receipt_title"><span>번들 FLY</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                  <span class="item"></span>
+                                  <span class="price">10,000원</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>사전 좌석</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item">2F</span>
+                                <span class="price">10,000원</span>
+                            </li>
+                            </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                      <td class="receipt_title"><span>사전 수하물</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item">5KG</span>
+                              <span class="price">10,000원</span>
+                            </li>
+                            <li>
+                              <span class="item">10KG</span>
+                              <span class="price">10,000P</span>
+                            </li>
+                          </ul>
+                      </td>
+                   </tr>
+                   <tr>
+                    <td class="receipt_title"><span>사전 기내식</span></td>
+                    <td class="receipt_conts">
+                        <ul>
+                          <li>
+                            <span class="item">비빔밥</span>
+                            <span class="price">10,000원</span>
+                        </li>
+                        </ul>
+                    </td>
+                 </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->           
+          
+                <div class="payment-amount">
+                  <div class="payment-amount__title">오는편</div>
+                </div>
+
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt">
+                      <tr>
+                          <td class="receipt_title"><span>번들 프리미엄</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                  <span class="item"></span>
+                                  <span class="price">15,000원</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>사전 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item">10KG</span>
+                                <span class="price">10,000P</span>
+                              </li>
+                              <li>
+                                <span class="item">10KG</span>
+                                <span class="price">10,000P</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->
+                <!--20210727 추가-->
+                <div class="modal-receipt">
+                  <div class="payment-amount">
+                    <div class="payment-amount__title">추가 구매 내역</div>
+                  </div>
+                  <div class="payment-amount">                      
+                    <table class="tbl_receipt type01">
+                      <tr>
+                          <td class="receipt_title"><span>우선 수하물</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                    <span class="item"></span>
+                                    <span class="price">20,000원</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>초과 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">40,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>카운터 수속 수수료</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">10,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>생동물 운반 수수료</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">10,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                    </table><!--//tbl_receipt-->
+                  </div><!--//payment-amount-->
+                
+                </div>
+                <!--//20210727 추가-->
+                        
+              </div>
+
+            <p class="sub-title">여행보험</p>
+            <ul>
+              <li>
+                <div class="txt-left">보험료</div>
+                <div class="txt-right">33,000원</div>
+              </li>
+            </ul>
+
+          </dd>
+        </dl>
+
+        <!--리스트3 : 일반+포인트결제 다구간 CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">3. KIM / JEJUDONG</div>
+            <div class="price">
+              <p>240,000원</p>
+              <p>30,000P</p>
+            </div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공운임</div>
+                <div class="txt-right">100,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">공항시설 사용료</div>
+                <div class="txt-right">20,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">유류할증료</div>
+                <div class="txt-right">10,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">프로모션 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+            </ul>
+            <p class="sub-title">부가서비스 내역</p>
+            <div class="modal-receipt">
+              <div class="payment-amount">
+                <div class="payment-amount__title">구간 1</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt">
+                  <tr>
+                    <td class="receipt_title"><span>사전 좌석</span></td>
+                    <td class="receipt_conts">
+                        <ul>
+                          <li>
+                            <span class="item">2F</span>
+                            <span class="price">10,000원</span>
+                        </li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="receipt_title"><span>사전 수하물</span></td>
+                    <td class="receipt_conts">
+                        <ul>
+                          <li>
+                            <span class="item">5KG</span>
+                            <span class="price">10,000원</span>
+                          </li>
+                          <li>
+                            <span class="item">10KG</span>
+                            <span class="price">10,000P</span>
+                          </li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="receipt_title"><span>사전 기내식</span></td>
+                    <td class="receipt_conts">
+                        <ul>
+                          <li>
+                            <span class="item">비빔밥</span>
+                            <span class="price">10,000원</span>
+                          </li>
+                        </ul>
+                    </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->           
+        
+              <div class="payment-amount">
+                <div class="payment-amount__title">구간 2</div>
+              </div>
+
+              <div class="payment-amount">                      
+                <table class="tbl_receipt">
+                  <tr>
+                    <td class="receipt_title"><span>사전 수하물</span></td>
+                    <td class="receipt_conts">
+                        <ul>
+                          <li>
+                            <span class="item">10KG</span>
+                            <span class="price">10,000P</span>
+                          </li>
+                          <li>
+                            <span class="item">10KG</span>
+                            <span class="price">10,000P</span>
+                          </li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="receipt_title"><span>사전 기내식</span></td>
+                    <td class="receipt_conts">
+                        <ul>
+                          <li>
+                            <span class="item">비빔밥</span>
+                            <span class="price">10,000원</span>
+                          </li>
+                        </ul>
+                    </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->
+              <!--20210727 추가-->
+              <div class="modal-receipt">
+                <div class="payment-amount">
+                  <div class="payment-amount__title">추가 구매 내역</div>
+                </div>
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt type01">
+                    <tr>
+                        <td class="receipt_title"><span>우선 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                  <span class="item"></span>
+                                  <span class="price">20,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>초과 수하물</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">40,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>카운터 수속 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>생동물 운반 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->
+              
+              </div>
+              <!--//20210727 추가-->
+                        
+            </div>
+          </dd>
+        </dl>
+
+      </div>
+        
+    </div>
+
+
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <!--//일반+포인트결제 CASE-->
+
+  <!--연결구간CASE-->
+  <div id="modalLayer04" class="modal modal-full modal-scroll modal-small">
+    <div class="modal-header">
+      <div class="modal-header__title">탑승객별 운임상세</div>
+    </div>
+
+    <div class="modal-content">
+      <div class="receipt-style">
+        <dl class="line-list-item">
+          <dt class="title total">
+            <div class="txt-left">총 결제금액</div>
+            <div class="price">1,000,000원</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공 운송료</div>
+                <div class="txt-right">900,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">부가서비스</div>
+                <div class="txt-right">100,000원</div>
+              </li>
+              <!--20210727 추가-->
+              <li>
+                <div class="txt-left">프로모션 할인</div>
+                <div class="txt-right">- 100,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 100,000원</div>
+              </li>
+              <!--//20210727 추가-->
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      
+      <div class="line-list-wrap">
+
+        <!--인원 수-->
+        <div class="passenger-info">
+          <div class="person">
+            <div class="person__item"><i aria-label="성인" class="icon adult"></i><span>2</span><span
+              class="hidden">명</span>
+            </div>
+            <div class="person__item"><i aria-label="유아" class="icon child"></i><span>1</span><span
+              class="hidden">명</span>
+            </div>
+            <div class="person__item"><i aria-label="소아" class="icon baby"></i><span>1</span><span
+              class="hidden">명</span>
+            </div>
+          </div>
+        </div>
+        <!--//인원 수-->
+
+        <!--리스트1 : 일반결제 > 연결구간 편도 CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">1. KIM / JEJUDONG</div>
+            <div class="price">250,000원</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공운임</div>
+                <div class="txt-right">100,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">공항시설 사용료</div>
+                <div class="txt-right">20,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">유류할증료</div>
+                <div class="txt-right">10,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">프로모션 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+            </ul>
+            <p class="sub-title">부가서비스 내역</p>
+            <div class="modal-receipt">
+              <div class="payment-amount">
+                <div class="payment-amount__title">가는편</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt">
+                    <tr>
+                        <td class="receipt_title"><span>사전 좌석</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item">2F (나리타 - 인천)</span>
+                                <span class="price">10,000원</span>
+                              </li>
+                              <li>
+                                <span class="item">3G (인천 - 괌)</span>
+                                <span class="price">10,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="receipt_title"><span>사전 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item">5KG</span>
+                                <span class="price">10,000원</span>
+                              </li>
+                              <li>
+                                <span class="item">10KG</span>
+                                <span class="price">10,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>사전 기내식</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item">비빔밥 (나리타 - 인천)</span>
+                              <span class="price">10,000원</span>
+                            </li>
+                            <li>
+                              <span class="item">불고기 (인천 - 괌)</span>
+                              <span class="price">10,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->           
+        
+              <!--20210727 추가-->
+              <div class="modal-receipt">
+                <div class="payment-amount">
+                  <div class="payment-amount__title">추가 구매 내역</div>
+                </div>
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt type01">
+                    <tr>
+                        <td class="receipt_title"><span>우선 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                  <span class="item"></span>
+                                  <span class="price">20,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>초과 수하물</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">40,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>카운터 수속 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>생동물 운반 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->
+              </div>
+              <!--//20210727 추가-->
+            </div>
+          </dd>
+        </dl>
+
+        <!--리스트2 : 포인트결제 > 연결구간 왕복 CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">2. KIM / JEJUDONG</div>
+            <div class="price">343,000P</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공운임</div>
+                <div class="txt-right">100,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">공항시설 사용료</div>
+                <div class="txt-right">20,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">유류할증료</div>
+                <div class="txt-right">10,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">프로모션 할인</div>
+                <div class="txt-right">- 10,000P</div>
+              </li>
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000P</div>
+              </li>
+            </ul>
+            <p class="sub-title">부가서비스 내역</p>
+            <div class="modal-receipt">
+              <div class="payment-amount">
+                <div class="payment-amount__title">가는편</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt">
+                    <tr>
+                        <td class="receipt_title"><span>사전 좌석</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item">2F (나리타 - 인천)</span>
+                                <span class="price">10,000P</span>
+                              </li>
+                              <li>
+                                <span class="item">3G (인천 - 괌)</span>
+                                <span class="price">10,000P</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="receipt_title"><span>사전 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item">5KG</span>
+                                <span class="price">10,000P</span>
+                              </li>
+                              <li>
+                                <span class="item">10KG</span>
+                                <span class="price">10,000P</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>사전 기내식</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item">비빔밥 (나리타 - 인천)</span>
+                              <span class="price">10,000P</span>
+                            </li>
+                            <li>
+                              <span class="item">불고기 (인천 - 괌)</span>
+                              <span class="price">10,000P</span>
+                            </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->           
+        
+              <div class="payment-amount">
+                <div class="payment-amount__title">오는편</div>
+              </div>
+
+              <div class="payment-amount">                      
+                <table class="tbl_receipt">
+                    <tr>
+                        <td class="receipt_title"><span>번들 FLY</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">10,000P</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>사전 기내식</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item">비빔밥</span>
+                              <span class="price">15,000P</span>
+                          </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->
+              <!--20210727 추가-->
+              <div class="modal-receipt">
+                <div class="payment-amount">
+                  <div class="payment-amount__title">추가 구매 내역</div>
+                </div>
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt type01">
+                    <tr>
+                        <td class="receipt_title"><span>우선 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                  <span class="item"></span>
+                                  <span class="price">20,000P</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>초과 수하물</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">40,000P</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>카운터 수속 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000P</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>생동물 운반 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000P</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->
+              
+              </div>
+              <!--//20210727 추가-->
+
+            </div>
+            <p class="sub-title">여행보험</p>
+            <ul>
+              <li>
+                <div class="txt-left">보험료</div>
+                <div class="txt-right">33,000원</div>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+        
+    </div>
+
+
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <!--//연결구간CASE-->
+
+  <!--일반결제>변경완료, 부분취소 CASE-->
+  <div id="modalLayer05" class="modal modal-full modal-scroll modal-small">
+    <div class="modal-header">
+      <div class="modal-header__title">탑승객별 운임상세</div>
+    </div>
+
+
+    <div class="modal-content">
+
+      <div class="receipt-style">
+        <dl class="line-list-item">
+          <dt class="title total">
+            <div class="txt-left">총 결제금액</div>
+            <div class="price">1,000,000원</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공 운송료</div>
+                <div class="txt-right">900,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">부가서비스</div>
+                <div class="txt-right">100,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">프로모션 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <!--20210727 추가-->
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <!--//20210727 추가-->
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      
+      <div class="line-list-wrap">
+
+        <!--인원 수-->
+        <div class="passenger-info">
+          <div class="person">
+            <div class="person__item"><i aria-label="성인" class="icon adult"></i><span>2</span><span
+              class="hidden">명</span>
+            </div>
+            <div class="person__item"><i aria-label="유아" class="icon child"></i><span>1</span><span
+              class="hidden">명</span>
+            </div>
+            <div class="person__item"><i aria-label="소아" class="icon baby"></i><span>1</span><span
+              class="hidden">명</span>
+            </div>
+          </div>
+        </div>
+        <!--//인원 수-->
+
+        <!--리스트1 : 일바녈제 편도CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">1. HONG GILDONG</div>
+            <div class="price">100,000원</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공운임</div>
+                <div class="txt-right">100,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">공항시설 사용료</div>
+                <div class="txt-right">20,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">유류할증료</div>
+                <div class="txt-right">10,000원</div>
+              </li>
+              <!--20210727 추가-->
+              <li>
+                <div class="txt-left">프로모션 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <!--//20210727 추가-->
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+            </ul>
+            <p class="sub-title">부가서비스 내역</p>
+            
+            <div class="modal-receipt">
+              <div class="payment-amount">
+                <div class="payment-amount__title"> 가는편</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt">
+                    <tr>
+                        <td class="receipt_title"><span>번들 FLY</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                  <span class="item"></span>
+                                  <span class="price">10,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>사전 기내식</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item">비빔밥</span>
+                              <span class="price">15,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->
+             
+              <!--20210727 추가-->
+              <div class="modal-receipt">
+                <div class="payment-amount">
+                  <div class="payment-amount__title">추가 구매 내역</div>
+                </div>
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt type01">
+                    <tr>
+                        <td class="receipt_title"><span>우선 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                  <span class="item"></span>
+                                  <span class="price">20,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>초과 수하물</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">40,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>카운터 수속 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="receipt_title"><span>생동물 운반 수수료</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                              <span class="item"></span>
+                              <span class="price">10,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->
+               
+              </div>
+              <!--//20210727 추가-->
+            </div>
+
+            <p class="sub-title">수수료</p>
+            <div class="modal-receipt">
+              <div class="payment-amount">
+                <div class="payment-amount__title">취소 수수료</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt type01">
+                  <tr>
+                      <td class="receipt_title"><span>변경일(2020.12.01)</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                                <span class="item"></span>
+                                <span class="price">5,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->
+              
+              <div class="payment-amount">
+                <div class="payment-amount__title">부가서비스 취소 수수료</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt type01">
+                  <tr>
+                      <td class="receipt_title"><span>취소일(2020.12.01)</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                                <span class="item"></span>
+                                <span class="price">5,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->
+            </div>
+          </dd>
+        </dl>
+
+        <!--리스트2 : 일반결제>부분취소 CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">2. KIM / JEJUDONG</div>
+            <div class="price">235,000원</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">항공운임</div>
+                <div class="txt-right">100,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">공항시설 사용료</div>
+                <div class="txt-right">20,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">유류할증료</div>
+                <div class="txt-right">10,000원</div>
+              </li>
+              <!--20210727 추가-->
+              <li>
+                <div class="txt-left">프로모션 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">신분 할인</div>
+                <div class="txt-right">- 10,000원</div>
+              </li>
+              <!--//20210727 추가-->
+            </ul>
+            <p class="sub-title">부가서비스 내역</p>
+            
+              <div class="modal-receipt">
+                <div class="payment-amount">
+                  <div class="payment-amount__title">가는편</div>
+                </div>
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt">
+                      <tr>
+                          <td class="receipt_title"><span>번들 FLY</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                  <span class="item"></span>
+                                  <span class="price">10,000원</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>사전 기내식</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item">비빔밥</span>
+                                <span class="price">15,000원</span>
+                            </li>
+                            </ul>
+                        </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->           
+          
+                <div class="payment-amount">
+                  <div class="payment-amount__title">오는편</div>
+                </div>
+
+                <div class="payment-amount">                      
+                  <table class="tbl_receipt">
+                      <tr>
+                          <td class="receipt_title"><span>번들 프리미엄</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                  <span class="item"></span>
+                                  <span class="price">15,000원</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>사전 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item">10KG</span>
+                                <span class="price">5,000원</span>
+                            </li>
+                            </ul>
+                        </td>
+                    </tr>
+                  </table><!--//tbl_receipt-->
+                </div><!--//payment-amount-->
+                <!--20210727 추가-->
+                <div class="modal-receipt">
+                  <div class="payment-amount">
+                    <div class="payment-amount__title">추가 구매 내역</div>
+                  </div>
+                  <div class="payment-amount">                      
+                    <table class="tbl_receipt type01">
+                      <tr>
+                          <td class="receipt_title"><span>우선 수하물</span></td>
+                          <td class="receipt_conts">
+                              <ul>
+                                <li>
+                                    <span class="item"></span>
+                                    <span class="price">20,000원</span>
+                                </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>초과 수하물</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">40,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>카운터 수속 수수료</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">10,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="receipt_title"><span>생동물 운반 수수료</span></td>
+                        <td class="receipt_conts">
+                            <ul>
+                              <li>
+                                <span class="item"></span>
+                                <span class="price">10,000원</span>
+                              </li>
+                            </ul>
+                        </td>
+                      </tr>
+                    </table><!--//tbl_receipt-->
+                  </div><!--//payment-amount-->
+                
+                </div>
+                <!--//20210727 추가-->
+                        
+              </div>
+
+            <!--취소 -->
+            <p class="sub-title">수수료</p>
+            <div class="modal-receipt">
+              <div class="payment-amount">
+                <div class="payment-amount__title">부가서비스 취소 위약금</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt type01">
+                  <tr>
+                      <td class="receipt_title"><span>취소일(2020.12.01)</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                                <span class="item"></span>
+                                <span class="price">5,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->
+            </div>
+            <!--//취소 -->
+          </dd>
+        </dl>
+
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <!--//일반결제>변경완료, 부분취소 CASE-->
+
+  <!--일반결제 > 전체취소 CASE-->
+  <div id="modalLayer06" class="modal modal-full modal-scroll modal-small">
+    <div class="modal-header">
+      <div class="modal-header__title">탑승객별 운임상세</div>
+    </div>
+
+
+    <div class="modal-content">
+
+      <div class="receipt-style">
+        <dl class="line-list-item">
+          <dt class="title total">
+            <div class="txt-left">총 수수료</div>
+            <div class="price">30,000원</div>
+          </dt>
+          <dd class="list">
+            <ul>
+              <li>
+                <div class="txt-left">취소 위약금</div>
+                <div class="txt-right">15,000원</div>
+              </li>
+              <li>
+                <div class="txt-left">부가서비스 취소 위약금</div>
+                <div class="txt-right">15,000원</div>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      
+      <div class="line-list-wrap">
+
+        <!--인원 수-->
+        <div class="passenger-info">
+          <div class="person">
+            <div class="person__item"><i aria-label="성인" class="icon adult"></i><span>1</span><span
+              class="hidden">명</span>
+            </div>
+            <div class="person__item"><i aria-label="유아" class="icon child"></i><span>1</span><span
+              class="hidden">명</span>
+            </div>
+            <div class="person__item"><i aria-label="소아" class="icon baby"></i><span>1</span><span
+              class="hidden">명</span>
+            </div>
+          </div>
+        </div>
+        <!--//인원 수-->
+
+        <!--리스트1 : 일바녈제 편도CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">1. HONG GILDONG</div>
+            <div class="price">10,000원</div>
+          </dt>
+          <dd class="list">
+            <p class="sub-title">수수료</p>
+            <div class="modal-receipt">
+              <div class="payment-amount">
+                <div class="payment-amount__title">취소 위약금</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt type01">
+                  <tr>
+                      <td class="receipt_title"><span>취소일(2020.12.01)</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                                <span class="item"></span>
+                                <span class="price">5,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->
+              
+              <div class="payment-amount">
+                <div class="payment-amount__title">부가서비스 취소 위약금</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt type01">
+                  <tr>
+                      <td class="receipt_title"><span>취소일(2020.12.01)</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                                <span class="item"></span>
+                                <span class="price">5,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->
+            </div>
+          </dd>
+        </dl>
+
+        <!--리스트2 : 일반결제>부분취소 CASE-->
+        <dl class="line-list-item">
+          <dt class="title">
+            <div class="txt-left">2. KIM / JEJUDONG</div>
+            <div class="price">10,000원</div>
+          </dt>
+          <dd class="list">
+            <p class="sub-title">수수료</p>
+            <div class="modal-receipt">
+              <div class="payment-amount">
+                <div class="payment-amount__title">취소 위약금</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt type01">
+                  <tr>
+                      <td class="receipt_title"><span>취소일(2020.12.01)</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                                <span class="item"></span>
+                                <span class="price">5,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->
+              
+              <div class="payment-amount">
+                <div class="payment-amount__title">부가서비스 취소 위약금</div>
+              </div>
+              <div class="payment-amount">                      
+                <table class="tbl_receipt type01">
+                  <tr>
+                      <td class="receipt_title"><span>취소일(2020.12.01)</span></td>
+                      <td class="receipt_conts">
+                          <ul>
+                            <li>
+                                <span class="item"></span>
+                                <span class="price">10,000원</span>
+                            </li>
+                          </ul>
+                      </td>
+                  </tr>
+                </table><!--//tbl_receipt-->
+              </div><!--//payment-amount-->
+            </div>
+          </dd>
+        </dl>
+        </dl>
+
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <!--//일반결제 > 전체취소 CASE-->
+
+
+  
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+
+  <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">인증코드입력</a>
+
+  
+  <div id="modalLayer01" class="modal modal-full modal-scroll modal--fixed-multi">
+    <div  class="modal-header">
+      <div class="modal-header__title">인증코드 입력</div>
+    </div>
+    <div class="modal-content">
+      <div class="title">
+        <div class="title__page "><span class="text--color-org">[010-1234-5678]</span>로<br class="mobile-only"> 인증코드가 발송되었어요.</div>       
+      </div>
+
+      <div class="section-wrap">
+
+        <div class="input-wrap input--line">
+          <div class="input-row">
+            <div class="input-item">
+              <div class="input-box">
+                <label for="inputnumber" class="input__label">인증코드 입력 (6자리)</label>
+                <div class="input" data-element="form">
+                  <input type="tel" class="input__text" data-element="input" id="inputnumber" maxlength="6">
+                  <button type="button" class="input__remove-button" data-element="remove">삭제</button>
+                </div>
+              </div>
+              <p class="input__error" tabindex="0"> 인증코드가 다시 발송됐습니다.</p>
+            </div>
+          </div>
+  
+          <div class="input-item">
+            <div class="button-wrap button-wrap--between"><!--.button-wrap--between class변경-->
+              <div class="sub-text date__text">유효시간 <span>08:12</span></div>
+              <button type="button" class="button button--small mt0"><span class="button__text">다시받기</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="fixed-wrap fixed-wrap--multi-line border-none ">
+      <div class="button-wrap"><button type="button" class="button button--primary button--active">
+        <span class="button__text">새 비밀번호 설정하기</span></button>
+        <!--가입한 아이디 안내 화면에서 호출 시 -->
+        <!-- <span class="button__text">다음</span></button> -->
+        <!--//가입한 아이디 안내 화면에서 호출 시 -->
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

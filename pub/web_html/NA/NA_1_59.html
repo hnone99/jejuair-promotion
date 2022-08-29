@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+
+  <div class="wrap NA">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor"
+          data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">
+          단독 소아 예매 안내
+        </a>
+      </main>
+    </div>
+  </div>
+
+  <!-- 풀팝업 -->
+  <div id="modalLayer01" class="modal modal-full modal--fixed-multi modal-scroll">
+    <div class="modal-header">
+      <div class="modal-header__title">단독 소아 예매 안내</div>
+    </div>
+    <div class="modal-content multi-bottom"><!--class변경-->
+      <div class="terms-item"><!--class추가-->
+        <p class="terms-item__text">출발지 공항 카운터에서 비동반 소아 여행 신청서 및 보호자 서약서 작성이 필요합니다. 비동반 소아 서비스
+          신청 요금(1인 편도 구간당)은 아래와 같습니다.</p><!--20210426 class삭제-->
+        <ul class="list-guide">
+          <li class="list-guide__item">국내선 : 25,000 원 / USD 25</li>
+          <li class="list-guide__item">국제선 : 100,000 원 / USD 100</li>
+        </ul>
+        <div class="guide-info guide-info--gray">
+          <p class="guide-info__text">보호자의 정보가 변경될 경우 고객센터(1599-1500)으로 연락해 주시기 바랍니다.</p>
+        </div>
+      </div>
+
+      <div class="terms-item">
+        <h2 class="terms-item__title">필리핀 입국 시 준비 서류</h2>
+        <ul class="list-guide">
+          <li class="list-guide__item">필리핀 입국 시 공증 받은 영문 부모 동의서, 영문 주민등록등본, 승객 및 보호자 여권사본, 왕복 티켓 확인증이 필요합니다. </li>
+          <li class="list-guide__item">필리핀 입국 서류(입국 시 작성) 및 수수료(PHP 3,120)를 준비하셔야 합니다. </li>
+          <li class="list-guide__item">혼자 여행하는 소아 및 부모 이외의 보호자를 동반한 소아 모두 필리핀 이민국 규정에서 정한 입국 서류를 필수로 지참해야 합니다.</li>
+        </ul>
+      </div>
+      <div class="terms-item">
+        <h2 class="terms-item__title">사이판 입국 시 준비 서류</h2>
+        <ul class="list-guide">
+          <li class="list-guide__item">사이판 입국 시 공증받은 영문 부모 동의서가 필요합니다.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="fixed-wrap fixed-wrap--multi-line">
+      <div class="check-wrap">
+        <span class="checkbox">
+          <input type="checkbox" id="inputCheck1" class="checkbox__input">
+          <label for="inputCheck1" class="checkbox__label">
+            <i aria-hidden="true" class="checkbox__ico"></i>
+            <span>위 내용을 확인했습니다.</span>
+          </label>
+        </span>
+      </div>
+      <div class="button-wrap">
+        <button type="button" class="button button--primary"><span class="button__text">확인</span></button> <!-- button 활성화 시 button--active class 추가 -->
+      </div>
+    </div>
+
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

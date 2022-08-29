@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <!-- HEADER -->
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">사전 기내식</h2>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 --> <!-- //전체메뉴 -->
+    </header>
+    <!-- //mobile -->
+
+    <!-- pc용 공통 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+                      <span class="hidden">검색창 닫기</span>
+                  </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 --><!-- //전체메뉴 -->
+      </div>
+    </header>
+    <!-- //pc용 공통 헤더 -->
+    <!-- pc용 공통 헤더 -->
+  </div>
+  <!-- //HEADER -->
+
+  <div id="body">
+    <div class="wrap wrap--button-fixed ND">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">부가서비스 안내</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle"
+            data-options="{&quot;mode&quot;: &quot;slide&quot;, &quot;speed&quot;: 100, &quot;clickToClose&quot;: true}">
+            <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor"
+              aria-controls="toggle-2" aria-expanded="false">사전 기내식</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel" id="toggle-2">
+              <a href="#" class="item">사전 수하물</a>
+              <a href="#" class="item">사전 수하물</a>
+              <a href="#" class="item">사전 수하물</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+     
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div class="page-title-wrap">
+            <div class="page-title">사전 기내식</div>
+            <div class="page-sub-title">하늘 위에서 즐기는 <br class="mobile-only">한 끼</div>
+          </div>
+
+          <div class="banner">
+            <div class="banner_single-img" style="background-image: url(../../assets/images/@temp/preorderedmeal-image-01.png);"></div>
+          </div>
+                
+          <div class="section-wrap">      
+            <div class="select-chips full help swiper-container">
+              <ul class="chips-group swiper-wrapper">
+                <li class="chip swiper-slide">
+                  <button type="button" class="chip-btn checked" data-index=0>
+                    <span class="txt">전체</span>
+                  </button>
+                </li>
+                <li class="chip swiper-slide">
+                  <button type="button" class="chip-btn" data-index=1>
+                    <span class="txt">괌/사이판</span>
+                  </button>
+                </li>
+                <li class="chip swiper-slide">
+                  <button type="button" class="chip-btn" data-index=2>
+                    <span class="txt">인천/부산</span>
+                  </button>
+                </li>
+                <li class="chip swiper-slide">
+                  <button type="button" class="chip-btn" data-index=3>
+                    <span class="txt">김포</span>
+                  </button>
+                </li>
+                <li class="chip swiper-slide">
+                  <button type="button" class="chip-btn" data-index=4>
+                    <span class="txt">대구</span>
+                  </button>
+                </li>
+                <li class="chip swiper-slide">
+                  <button type="button" class="chip-btn" data-index=5>
+                    <span class="txt">청주</span>
+                  </button>
+                </li>
+                <li class="chip swiper-slide">
+                  <button type="button" class="chip-btn" data-index=6>
+                    <span class="txt">무안</span>
+                  </button>
+                </li>
+                <li class="chip swiper-slide">
+                  <button type="button" class="chip-btn" data-index=7>
+                    <span class="txt">제주</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="guide-info guide-info--gray">
+              <p class="guide-info__text">출발지 기준 서비스 입니다.</p>
+            </div>
+
+
+            <div class="section-wrap">
+              <div class="list-product show" data-chip-show=0>
+                <div class="list-product__item">
+                  <div class="carousel carousel--full swiper-container" data-carousel="productItem">
+                    <div class="carousel__item swiper-wrapper">
+                      <div class="carousel__list swiper-slide">
+                        <div class="carousel__contents">
+                          <div class="list-product__image">
+                            <img src="../../assets/images/@temp/@add-service-01-large.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="label-wrap">
+                      <span class="label-wrap__item label-wrap__item--new">NEW</span>
+                      <span class="label-wrap__item label-wrap__item--sale">SALE</span>
+                      <span class="label-wrap__item label-wrap__item--best">BEST</span>
+                    </div>
+                    <div class="carousel__button carousel__button-prev"></div>
+                    <div class="carousel__button carousel__button-next"></div>
+                    <div class="carousel__pagination-number"></div>
+                  </div>
+                  <div class="list-product__info">
+                    <div class="list-product__sub-text eng">Fried Fish &amp; Rice</div>
+                    <div class="list-product__title">추억의 도시락</div>
+                    <p class="list-dsc">언제 먹어도 익숙한 추억의 반찬들로 구성된 추억의 도시락</p>
+                    <div class="cost-wrap">
+                      <div class="cost-wrap__before">
+                        <span aria-label="할인" class="discount">5%할인</span><!--위치변경-->
+                        <span class="cost">6,000원</span>
+                      </div>
+                      <div class="cost-wrap__after">
+                        <span class="cost">10,000,000원</span>
+                        <div class="currency-wrap eng">
+                          <span>USD 100,000</span>
+                          <span>JPY 1,000,000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-product__detail product-detail" data-element="toggle" data-options='{"mode": "slide"}'
+                    data-text-toggle>
+                    <button type="button" class="product-detail__button" data-element="toggle__anchor" data-text-anchor>
+                      <span class="product-detail__button-text" data-text-label data-open="펼치기" data-close="접기"></span>
+                    </button>
+                    <div class="product-detail__content" data-element="toggle__panel">
+                      <div class="product-detail__info-wrap">
+                        <div class="product-detail__icon__list">
+                          <i class="icon"><img src="../../assets/images/icon/icon-service-detail-01.png" alt=""></i>
+                          <p class="text">뜨거운 음식</p>
+                        </div>
+                        <div class="product-detail__icon__list">
+                          <i class="icon"><img src="../../assets/images/icon/icon-service-detail-02.png" alt=""></i>
+                          <p class="text">조리 시간<br> 소요되는 음식</p>
+                        </div>
+                        <div class="product-detail__icon__list">
+                          <i class="icon"><img src="../../assets/images/icon/icon-service-detail-03.png" alt=""></i>
+                          <p class="text">알레르기<br> 주의 음식</p>
+                        </div>
+                        <div class="product-detail__icon__list">
+                          <i class="icon"><img src="../../assets/images/icon/icon-service-detail-04.png" alt=""></i>
+                          <p class="text">괌/사이판/중국<br>/대만 지역 전용</p>
+                        </div>
+                        <div class="product-detail__icon__list">
+                          <i class="icon"><img src="../../assets/images/icon/icon-service-detail-05.png" alt=""></i>
+                          <p class="text">외국인 전용<br> (Foreigner ONLY)</p>
+                        </div>
+                      </div>
+                      <!--20210818 개발적용 필요 -->
+                        <div class="inner-editor">
+                          <div class="sub-section">
+                            <div class="section-sub-title">유의사항</div>
+                            <div class="section-sub-txt">인천, 김포, 대구, 무안발 국제선 한정판매(중국, 대만 노선 주문불가)</div>
+                          </div>
+                        
+                          <div class="sub-section">
+                            <div class="section-sub-title">구성</div>
+                            <div class="section-sub-txt">추억의 도시락</div>
+                          </div>
+                        
+                          <div class="sub-section">
+                            <div class="section-sub-title">주재료</div>
+                            <div class="section-sub-txt">돈육, 계란, 오징어알러지</div>
+                          </div>
+                        
+                          <div class="sub-section">
+                            <div class="section-sub-title">알러지 유의사항</div>
+                            <div class="section-sub-txt">계란, 대두, 밀, 돼지고기, 오징어</div>
+                          </div>
+                        </div>
+                      <!--//20210818 개발적용 필요 -->
+                    </div>
+                  </div>
+                </div>
+                <div class="list-product__item">
+                  <div class="carousel carousel--full swiper-container" data-carousel="productItem">
+                    <div class="carousel__item swiper-wrapper">
+                      <div class="carousel__list swiper-slide">
+                        <div class="carousel__contents">
+                          <div class="list-product__image">
+                            <img src="../../assets/images/@temp/@product_sample-02.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel__list swiper-slide">
+                        <div class="carousel__contents">
+                          <div class="list-product__image">
+                            <img src="../../assets/images/@temp/@product_sample-02.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="label-wrap">
+                      <span class="label-wrap__item label-wrap__item--new">NEW</span>
+                      <span class="label-wrap__item label-wrap__item--sale">SALE</span>
+                      <span class="label-wrap__item label-wrap__item--best">BEST</span>
+                    </div>
+                    <div class="carousel__button carousel__button-prev"></div>
+                    <div class="carousel__button carousel__button-next"></div>
+                    <div class="carousel__pagination-number"></div>
+                  </div>
+                  <div class="list-product__info">
+                    <div class="list-product__sub-text eng">Fried Fish &amp; Rice</div>
+                    <div class="list-product__title">풍’s JJ(질질)샌드위치</div>
+                    <p class="list-dsc">언제 먹어도 익숙한 추억의 반찬들로 구성된 추억의 도시락</p>
+                    <div class="cost-wrap">
+                      <div class="cost-wrap__before">
+                        <span aria-label="할인" class="discount">5%할인</span><!--위치변경-->
+                        <span class="cost">6,000원</span>
+                      </div>
+                      <div class="cost-wrap__after">
+                        <span class="cost">5,000원</span>
+                        <div class="currency-wrap eng">
+                          <span>USD 25</span>
+                          <span>JPY 2,500</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-product__detail product-detail" data-element="toggle" data-options='{"mode": "slide"}'
+                    data-text-toggle>
+                    <button type="button" class="product-detail__button" data-element="toggle__anchor" data-text-anchor>
+                      <span class="product-detail__button-text" data-text-label data-open="펼치기" data-close="접기"></span>
+                    </button>
+                    <div class="product-detail__content" data-element="toggle__panel">
+                      <div class="product-detail__info-wrap">
+                        <div class="product-detail__icon__list">
+                          <i class="icon"><img src="../../assets/images/icon/icon-service-detail-01.png" alt=""></i>
+                          <p class="text">뜨거운 음식</p>
+                        </div>
+                        <div class="product-detail__icon__list">
+                          <i class="icon"><img src="../../assets/images/icon/icon-service-detail-02.png" alt=""></i>
+                          <p class="text">조리 시간<br> 소요되는 음식</p>
+                        </div>
+                        <div class="product-detail__icon__list">
+                          <i class="icon"><img src="../../assets/images/icon/icon-service-detail-03.png" alt=""></i>
+                          <p class="text">알레르기<br> 주의 음식</p>
+                        </div>
+                        <div class="product-detail__icon__list">
+                          <i class="icon"><img src="../../assets/images/icon/icon-service-detail-04.png" alt=""></i>
+                          <p class="text">괌/사이판/중국<br>/대만 지역 전용</p>
+                        </div>
+                        <div class="product-detail__icon__list">
+                          <i class="icon"><img src="../../assets/images/icon/icon-service-detail-05.png" alt=""></i>
+                          <p class="text">외국인 전용<br> (Foreigner ONLY)</p>
+                        </div>
+                      </div>
+                      <div class="sub-section">
+                        <div class="section-sub-title">유의사항</div>
+                        <div class="section-sub-txt">메뉴는 매일 변경되어 사전공지가 불가합니다. 일부노선에서는 판매되지 않습니다. (청주발, 대구발, 오사카발)</div>
+                        
+                      </div>
+                      <div class="sub-section">
+                        <div class="section-sub-title">알러지 유의사항</div>
+                        <div class="section-sub-txt">알류, 유제품, 땅콩, 콩류, 밀, 게, 새우, 돼지고기, 복숭아, 토마토, 이산화항, 호두, 닭고기, 쇠고기,오징어, 조개류</div>
+                      </div>
+                      <div class="sub-section">
+                        <div class="section-sub-title">주재료</div>
+                        <div class="section-sub-txt">쌀, 소고기, 돼지고기, 오징어, 계란 등</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-product" data-chip-show=1>괌/사이판</div>
+              <div class="list-product" data-chip-show=2>인천/부산</div>
+              <div class="list-product" data-chip-show=3>김포</div>
+              <div class="list-product" data-chip-show=4>대구</div>
+              <div class="list-product" data-chip-show=5>청주</div>
+              <div class="list-product" data-chip-show=6>무안</div>
+              <div class="list-product" data-chip-show=7>제주</div>
+            </div>
+          </div>
+      
+          <div class="section-wrap">
+            <div class="service-information" data-element="toggle" data-options='{"mode": "move scroll"}'>
+              <div class="service-information__title">
+                <button type="button" class="service-information__anchor" data-element="toggle__anchor">사전 기내식 구매 안내</button>
+              </div>
+              <div class="service-information__content" data-element="toggle__panel">
+                <div class="list-wrap">
+                  <div class="section-sub-title">구매 안내</div>
+                  <ul class="list-guide">
+                    <li class="list-guide__item">제주항공 국제선 전 노선의 예약 고객이라면 구매할 수 있습니다.</li>
+                    <li class="list-guide__item">노선별로 수량이 조기 품절될 수 있으며, 이미지는 제공되는 제품과 다를 수 있습니다.</li>
+                  </ul>
+                </div>
+                <div class="list-wrap">
+                  <div class="section-sub-title">식품 섭취 전 주의사항</div>
+                  <ul class="list-guide">
+                    <li class="list-guide__item">특정 식품에 대한 알레르기 또는 유사 증상이 있는 승객께서는 탑승 전 반드시 위 메뉴 설명을 자세히 확인하시기 바랍니다.</li>
+                    <li class="list-guide__item">모든 메뉴에는 견과류, 글루텐, 달걀 또는 유제품이 포함될 수 있습니다.</li>
+                    <li class="list-guide__item"><strong>땅콩 알레르기 승객을 위한 안내</strong><br>제주항공 일부 노선에서는 땅콩 또는 땅콩 성분이 함유된 제품을
+                      제공하고 있으며, 다른 승객의 땅콩 소지 및 취식을 금지할 수 없기 때문에 땅콩의 영향을 받지 않는 기내 환경을 보장할 수 없습니다.<br>따라서 땅콩 알레르기 또는 유사 증상이
+                      의심되는 승객께서는 의사와 여행 계획에 대해 미리 상의하시길 권해 드립니다.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--20210806 위치이동-->
+          <div class="button-wrap left">
+            <button type="button" class="button button--small"><span class="button__text">부가서비스 환불 규정</span></button>
+          </div>
+          <!--//20210806 위치이동-->
+          
+          <div class="button-wrap pc-center fixed-wrap section-wrap">
+            <button type="button" class="button button--primary button--active"><span class="button__text">구매하기</span></button>
+          </div>
+      
+        </main>
+        <!--//main-->
+      
+      </div>
+      <!--//content-->
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+  <div class="footer pc-only">
+    <!-- pc -->
+    <footer class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">제주항공 소개</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">투자정보</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">채용안내</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">여객운송약관</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">홈페이지이용약관</a>
+        </div>
+        <div class="footer__top-item footer__top-item--privacy">
+          <a href="#" class="footer__top-link">개인정보처리방침</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">사이트맵</a>
+        </div>
+
+        <div class="footer__top-item footer__top-item--family">
+          <div class="family-wrap" data-element="toggle"
+            data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+            <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+            <div class="family-list" data-element="toggle__panel">
+              <a href="#" class="family-link">㈜애경산업</a>
+              <a href="#" class="family-link">㈜에이텍</a>
+              <a href="#" class="family-link">애경S.T</a>
+              <a href="#" class="family-link">에이케이아이에스㈜</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer__spacer">
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__logo">
+        <img src="../../assets/images/upload/logo_jeju_gray.png" alt="jeju Air"><!--2021-04-13 이미지로 변경-->
+      </a>
+        <div class="footer__bottom-contents">
+          <div class="footer__bottom-info">
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 서비스 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공위험물안내</a>
+            </div>
+          </div>
+          <div class="footer__bottom-recommand">
+            <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+            <div class="recommand-list">
+              <div class="recommand-item">
+                <a href="#" class="link">최저 운임 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">서울 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">제주 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">부산 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">무안 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">청부 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">대구 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">광주 출발 항공</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-util">
+            <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png" alt="VALUE ALLIANCE"></a>
+            <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
+            <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt=""> Android</a>
+          </div>
+          <p class="footer__bottom-address"><span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br>
+            제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)</p>
+          <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- //pc -->
+  </div>
+  <!-- //FOOTER -->
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <script>
+    // 칩셀렉트 plugin.js
+    $('.select-chips').selectChips()
+  </script>
+</body>
+
+</html>

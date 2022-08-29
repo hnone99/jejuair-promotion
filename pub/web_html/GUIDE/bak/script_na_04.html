@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Component_Accordion_Toggle</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" href="../../../index/css/script_guide.css">
+
+  <!-- syntaxHighlighter -->
+  <script src="../../../index/js/plugins/syntaxhighlighter/scripts/shCore.js"></script>
+  <script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushCss.js"></script>
+  <script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
+  <script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+  <script>
+  //<![CDATA[
+  SyntaxHighlighter.defaults['toolbar'] = false; 
+  SyntaxHighlighter.all()
+  //]]> 
+  </script>
+</head>
+<body>
+<div class="wrap">
+  <div class="content" id="content">
+    <div id="main" class="main">
+      <div class="title__page">예매 수하물선택</div>
+      <!-- <h3 class="g-title"></h3> -->
+      <!-- 위탁 수하물 -->
+      <div class="sub-section">
+        <div class="section-title"><span class="icon icon-bag"></span>위탁 수하물</div>
+        <div class="button-list pc-flex pc-row3 pc-row3--baggage">
+          <!-- 기본 제공 0kg인 경우 -->
+          <a  href="#" class="button-list__item button-list__item--default selected" role="button">
+            <div class="top-area">
+              <div class="title">
+                <span class="title__sub weight"><strong>0KG</strong></span>
+                <span class="title__sub able">기본제공 없음</span>
+              </div>
+              <!-- <div class="labels">
+                <span class="labels__item labels__item--best">BEST</span>
+                <span class="labels__item labels__item--recommend">추천</span>
+              </div> -->
+            </div>
+            <div class="bottom-area">
+              <div class="price-wrap">
+                <!-- <div class="before">
+                  <span class="original"><span>30,000</span>원</span>
+                  <span class="dicount"><span>10%</span>할인</span>
+                </div> -->
+                <div class="price"><span>0</span>원</div>
+              </div>
+              <!-- <div class="add-cart">
+                <button type="button" class="button button--small button--small-cart"><span
+                    class="button__text button__icon icon-cart">담기</span></button>
+              </div> -->
+            </div>
+          </a>
+          <!-- //기본 제공 0kg인 경우 -->
+
+          <!-- 기본 제공 0kg보다 많은 경우 -->
+          <a href="#" class="button-list__item selected" role="button">
+            <div class="top-area">
+              <div class="title">
+                <span class="title__sub weight"><strong>15KG</strong></span>
+                <span class="title__sub able">번들에 포함</span>
+              </div>
+              <div class="labels">
+                <span class="labels__item labels__item--best">BEST</span>
+                <span class="labels__item labels__item--recommend">추천</span>
+              </div>
+            </div>
+            <div class="bottom-area">
+              <div class="price-wrap">
+                <!-- <div class="before">
+                  <span class="original"><span>30,000</span>원</span>
+                  <span class="dicount"><span>10%</span>할인</span>
+                </div> -->
+                <div class="price"><span>0</span>원</div>
+              </div>
+              <!-- <div class="add-cart">
+                <button type="button" class="button button--small button--small-cart"><span
+                    class="button__text button__icon icon-cart">담기</span></button>
+              </div> -->
+            </div>
+          </a>
+          <!-- //기본 제공 0kg보다 많은 경우 -->
+
+
+          <!-- 기본 제공 옵션보다 무게가 많은 옵션-->
+          <a href="#" class="button-list__item" role="button">
+            <div class="top-area">
+              <div class="title">
+                <span class="title__sub weight"><strong>5KG</strong></span>
+              </div>
+              <div class="labels">
+                <span class="labels__item labels__item--best">BEST</span>
+                <span class="labels__item labels__item--recommend">추천</span>
+              </div>
+            </div>
+            <div class="bottom-area">
+              <div class="price-wrap">
+                <div class="before">
+                  <span class="original"><span>90,000</span>원</span>
+                  <span class="dicount"><span>10%</span>할인</span>
+                </div>
+                <div class="price"><span>0</span>원</div>
+              </div>
+              <!-- <div class="add-cart">
+                <button type="button" class="button button--small button--small-cart"><span
+                    class="button__text button__icon icon-cart">담기</span></button>
+              </div> -->
+            </div>
+          </a>
+          <!--// 기본 제공 옵션보다 무게가 많은 옵션-->
+
+
+
+          <a href="#" class="button-list__item" role="button">
+            <div class="top-area">
+              <div class="title">
+                <span class="title__sub weight"><strong>20KG</strong></span>
+                <!-- <div class="title__sub people"><span>1</span>명 업그레이드</div> -->
+              </div>
+              <div class="labels">
+                <span class="labels__item labels__item--best">BEST</span>
+                <span class="labels__item labels__item--recommend">추천</span>
+              </div>
+            </div>
+            <div class="bottom-area">
+              <div class="price-wrap">
+                <div class="before">
+                  <span class="original"><span>60,000</span>원</span>
+                  <span class="dicount"><span>10%</span>할인</span>
+                </div>
+                <div class="price"><span>60,000</span>원</div>
+              </div>
+              <!-- <div class="add-cart">
+                <button type="button" class="button button--small button--small-cart"><span
+                    class="button__text button__icon icon-cart">담기</span></button>
+              </div> -->
+            </div>
+          </a>
+
+            
+          <!-- 기본 제공 옵션보다 무게가 적은 옵션 -->
+          <a href="#" class="button-list__item button-list__item--default" role="button">
+            <div class="top-area">
+              <div class="title">
+                <span class="title__sub weight"><strong>5KG</strong></span>
+              </div>
+              <div class="labels">
+                <span class="labels__item labels__item--best">BEST</span>
+                <span class="labels__item labels__item--recommend">추천</span>
+              </div>
+            </div>
+          </a>
+          <!-- //기본 제공 옵션보다 무게가 적은 옵션 -->
+
+
+        </div>
+      </div>
+      <!-- //위탁 수하물 -->
+
+      <ul class="list-guide">
+        <li>페이지 하단 작성</li>
+      </ul>
+
+      <div class="script-code">
+        <pre class="brush:html;">
+          &lt;script&gt;
+          // 수하물 버튼 활성화
+          $.fn.buttonList = function () {
+            return this.each(function (i) {
+              var btnBody = $(this);
+              var btnItem = btnBody.find('.button-list__item');
+              btnItem.on('click', function (e) {
+                e.preventDefault();
+                var checkDisabled = $(this).hasClass('button-list__item--default');
+                var checkActive = $(this).hasClass('selected');
+                if (!checkDisabled) {
+                  if (!checkActive)
+                  {
+                    btnItem.removeClass('selected');
+                    $(this).addClass('selected');
+                  }
+                  else
+                  {
+                    $(this).removeClass('selected');
+                  }
+                }
+              });    
+            });
+          }
+         
+          $('.button-list').buttonList();
+        </pre> 
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+
+<script>
+  // 수하물 버튼 활성화
+  $.fn.buttonList = function () {
+    return this.each(function (i) {
+      var btnBody = $(this);
+      var btnItem = btnBody.find('.button-list__item');
+      btnItem.on('click', function (e) {
+        e.preventDefault();
+        var checkDisabled = $(this).hasClass('button-list__item--default');
+        var checkActive = $(this).hasClass('selected');
+        if (!checkDisabled) {
+          if (!checkActive)
+          {
+            btnItem.removeClass('selected');
+            $(this).addClass('selected');
+          }
+          else
+          {
+            $(this).removeClass('selected');
+          }
+        }
+      });    
+    });
+  }
+  $('.button-list').buttonList();
+</script>
+</body>
+</html>

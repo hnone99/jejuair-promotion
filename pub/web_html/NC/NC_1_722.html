@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div id="body">
+    <div class="wrap">
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <a href="#" class="button button--primary button--active" data-element="modal_anchor"
+            data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">포인트 구매 통한 적립</a>
+        </main>
+      </div>
+    </div>
+
+    <!-- 풀팝업 -->
+    <div id="modalLayer01" class="modal modal-full modal-scroll">
+      <div class="modal-header">
+        <div class="modal-header__title">포인트 구매·선물 적립 안내</div>
+      </div>
+      <div class="modal-content">
+        <ul class="list-guide">
+          <li class="list-guide__item">구매·선물한 포인트의 가격은 1P당 1원으로 부가가치세가 포함된 금액입니다.</li>
+          <li class="list-guide__item">포인트 구매는 최소 1만 ~ 최대 4백만 포인트까지 가능합니다. </li>
+          <li class="list-guide__item">포인트 구매·선물 목적으로 결제한 금액에 대해서는 추가 포인트가 적립되지 않습니다.</li>
+          <li class="list-guide__item">구매·선물 포인트의 구매나 환불은 제주항공 홈페이지, 모바일(웹/앱)에서만 가능합니다. </li>
+          <li class="list-guide__item">구매·선물 포인트의 유효기간은 5년입니다.</li>
+          <li class="list-guide__item">구매·선물 포인트를 사용하지 않을 경우에는  60일 이내 환불을 신청하실 수 있습니다</li>
+          <li class="list-guide__item">구매·선물 포인트 중 일부를 사용한 경우에는 환불되지 않으며, 적립 포인트로만 사용하실 수 있습니다.</li>
+          <!--20210609 문구 추가-->
+          <li class="list-guide__item">신용카드 결제 시 각 카드사의 결제제한 정책에 따라 건당 결제한도가 상이할 수 있으며, 상세사항은 카드사에 확인바랍니다.</li>
+          <li class="list-guide__item">신용카드 결제 시 카드사별 리프레시 포인트 결제 제한 : KB국민 월 누적 100만원 이하, 삼성카드 월 누적 50만원 이하, 롯데카드 1회 10만원/1일 30만원 이하, NH농협카드 1회 5만원 이하</li>
+        </ul>
+        <div class="sub-section">
+          <div class="section-title">환불 안내</div>
+          <ul class="list-guide">
+            <li class="list-guide__item">구매하신 포인트 전액환불은 포인트를 사용하지 않은 상태에서 60일 이내 신청가능 하며, 60% 이상 사용 시 잔여 포인트에 대해 사용 유효기간 이내 부분환불 신청이 가능합니다.</li>
+            <li class="list-guide__item">구매 포인트 부분 환불시 구매포인트 잔액을 합산하여 환불할 수 없으며 구매포인트 각각 건별 신청 가능합니다.</li>
+            <li class="list-guide__item">구매 포인트 부분 환불 신청 후 10일 이내에 본인이 지정한 본인 계좌로 입금 됩니다.</li>
+            <li class="list-guide__item">구매 포인트 부분 환불시 원거래 일로부터 카드결제 1년, 계좌이체 60일 이내 환불을 요청한 경우 최초 결제수단으로 환불 처리 되며 기간 경과 시 계좌이체로 환불 됩니다.</li>
+            <li class="list-guide__item">구매 포인트 환불 신청 방법 : 리프레시 포인트 > 포인트 조회 > 환불 탭에서 신청</li>
+            <li class="list-guide__item">구매 포인트 부분 환불 신청 방법 : 리프레시 포인트 > 포인트 조회 > 환불 탭에서 신청</li>
+          </ul>
+        </div>
+        <!--//20210609 문구 추가-->
+      </div>
+      <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+    </div>
+
+  </div>
+  <!--#body-->
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

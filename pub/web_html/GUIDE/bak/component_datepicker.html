@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+<title>Component_Datepicker</title>
+<link rel="stylesheet" href="../../assets/css/global.css">
+<link rel="stylesheet" href="../../assets/css/component.css">
+<link rel="stylesheet" href="../../assets/css/page.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+<link rel="stylesheet" href="../../../index/css/component_guide.css">
+
+<!-- syntaxHighlighter -->
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shCore.js"></script>
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushCss.js"></script>
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+<script>
+//<![CDATA[
+SyntaxHighlighter.defaults['toolbar'] = false; 
+SyntaxHighlighter.all()
+//]]> 
+</script>
+<style>
+/* temp */
+.picker-inline { padding:20px 30px; border:1px solid #ddd; }
+.picker-inline:after { display:none; }
+.picker-inline .picker__input { display:none; }
+.picker-inline .flatpickr-innerContainer { text-align:center; }
+
+@media all and (min-width: 1080px){
+  .picker-inline .flatpickr-rContainer { display:inline-block; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="content" id="content">
+    <div id="main" class="main">
+      <div class="title__page">
+        Datepicker (레이어타입)
+      </div>
+      <div class="sample-view">
+        <div style="width:300px;">
+          <!-- date-layer-button 클릭시 date-layer 생성 -->
+          <button type="button" class="picker picker--button button-input type1 date-layer-button">
+          </button>
+        </div>
+        <!-- date-layer -->
+        <div class="date-layer type2" style="top:60px;">
+          <div class="layer-header">
+            <h2>날짜를 선택해 주세요.</h2>
+          </div>
+          <div class="layer-content">
+            <div class="picker picker--full">
+              <div class="info-wrap">
+                <span class="info">하단 금액은 1인 편도 기준입니다.</span>
+                <span class="currency">통화 : 원</span>
+              </div>
+              <input
+                type="text"
+                class="picker__input"
+                id=""
+                data-picker="range"
+                data-text="하단 금액은 1인 편도 기준입니다."
+                data-json-id=""
+                data-min-date="today"
+                data-format="Y.m.d (D)"
+                data-range-text='{"start": "시작", "end": "종료", "current": "왕복"}'
+              >
+              <!--
+                data-text: 상단에 노출할 메시지
+                data-format: 날짜 형식 Y(year) m(Month), d(day(숫자)), D(day(문자))
+                data-range-text: start(시작일 표사), end(종료일 표시), current(같은날짜 선택시)
+                data-defaultDate: YYYY-MM-DD 를 배열로 입력, 2개 일 경우 기간으로 선택'["2021-02-03"]'
+              -->
+            </div>
+            <div class="booking-button cal-button">
+              <button type="button" class="button button--primary button--black pc-only" data-reset-date="#selectDate">
+                <span class="button__text">초기화</span>
+              </button>
+              <button type="button" class="button button--primary button--active" data-select-date="#selectDate">
+                <span class="button__text">선택</span>
+              </button>
+            </div>
+          </div>
+          <a href="#a" class="layer-close"><span class="blind">닫기</span></a>
+        </div>
+        <!-- //date-layer -->        
+      </div>
+      <pre class="brush:html;">
+        &lt;!-- date-layer-button 클릭시 date-layer 생성 --&gt;
+        &lt;button type="button" class="picker picker--button button-input type1 date-layer-button"&gt;
+        &lt;/button&gt;
+
+        &lt;!-- date-layer --&gt;
+        &lt;div class="date-layer type2"&gt;
+          ...
+        &lt;/div&gt;
+        &lt;!-- //date-layer --&gt;
+      </pre>  
+
+      <div class="title__page">
+        Datepicker (모달팝업 타입)
+      </div>
+      <h3 class="g-title">data-picker="single"</h3>
+      <div class="sample-view">
+        <div style="width:300px;">
+          <button type="button" class="picker picker--button button-input type1" data-element="modal_anchor" data-modal-type="datepicker" data-target="#datepicker01">
+          </button>
+        </div>
+      </div>
+      <pre class="brush:html;">
+        &lt;button type="button" class="picker picker--button button-input type1" 
+            data-element="modal_anchor" data-modal-type="datepicker" data-target="#datepicker01"&gt;
+        &lt;/button&gt;
+      </pre>  
+
+      <h3 class="g-title">data-picker="range"</h3>
+      <div class="sample-view">
+        <div style="width:300px;">
+          <button type="button" class="picker picker--button button-input type1" data-element="modal_anchor" data-modal-type="datepicker" data-target="#datepicker02">
+          </button>
+        </div>
+      </div>
+      <pre class="brush:html;">
+        &lt;button type="button" class="picker picker--button button-input type1" 
+            data-element="modal_anchor" data-modal-type="datepicker" data-target="#datepicker02"&gt;
+        &lt;/button&gt;
+      </pre>  
+      <br>
+      <pre class="brush:html;">
+        &lt;!-- datepicker input type --&gt;
+        &lt;div class="picker picker--full"&gt;
+          &lt;input
+            type="text"
+            class="picker__input"
+            id="selectDate2"
+            data-picker="range"
+            data-text="하단 금액은 1인 편도 기준입니다."
+            data-json-id="flightList2"
+            data-min-date="today"
+            data-format="Y.m.d (D)"
+            data-range-text='{"start": "시작", "end": "종료", "current": "왕복"}'
+          &gt;
+        &lt;/div&gt;
+      </pre> 
+      <br>
+      <pre class="brush:js;">
+        // Json 형태
+          - price: 배열로 입력하며 date 는 날짜, class 는 날짜에 해당하는 class명 입력
+          - disabled: 배열로 입력하며 date 는 날짜, label 은 날짜에 해당하는 텍스트 입력
+          - price 와 disabled는 모두 필수이며 없을경우 비어있는 배열([])로 입력
+
+        {
+          "price": [
+            {
+              "date": ["2020-09-15"],
+              "class": "best",  // 날짜에 추가될 class
+              "label": "333,333"
+            },
+            {
+              "date": ["2020-09-18"],
+              "class": "better",  // 날짜에 추가될 class
+              "label": "333,333"
+            },
+            {
+              "date": ["2020-09-20", "2020-09-21"],
+              "class": "good"
+            }
+          ],
+          "disabled": [
+            {
+              "date": ["2020-09-25", "2020-09-26"],
+            },
+            {
+              "date": ["2020-09-28", "2020-09-29"],
+            }
+          ]
+        }
+      </pre>
+      <ul class="list-guide">
+        <li>기능은 기본 Datepicker와 동일</li>
+        <li>특정일 강조를 위한 데이터는 json 형태로 받아오기 때문에 json 파일오류 일 경우 datepicker가 그려지지 않음</li>
+      </ul>
+
+      <div class="title__page">
+        Datepicker (inline)
+      </div>
+      <div class="sample-view">
+        <div class="picker picker-inline">
+          <input type="text" class="picker__input" data-picker="inline" data-min-date="2021-04-25">
+        </div>
+      </div>
+      
+      <h3 class="g-title ex-bold border">data option 목록</h3>
+      <ul class="list-guide">
+        <li>data-picker : datepicker 형태(inline, layer)</li>
+        <li>data-min-date : 선택가능한 시작 날짜 (YYYY-MM-DD)</li>
+        <li>data-defaultDate : 기본 선택 날짜, 배열로 입력([YYYY-MM-DD])</li>
+      </ul>
+      <h3 class="g-title ex-bold">Localization(L10N)</h3>
+      <ul class="list-guide">
+        <li>data-locale : 언어 코드 입력(기본: ko)(cn, ja, ko, ru, th, vn, zh)</li>
+        <li>date-date-format : 날짜 표시 형식(기본: Y-m-d, 위치 및 형식은 변경 가능)(Y: year, m: month, d: day)</li>
+        <li>data-header-first: header 의 월 선택 박스 위치(기본: year)</li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+<!-- datepicker01 -->
+<div id="datepicker01" class="modal modal-full modal-full--picker" data-max-rate="none"s>
+  <div  class="modal-header">
+    <h2 class="header__page-name">날짜를 선택해 주세요.</h2>
+  </div>
+  <div class="modal-content">
+    <div class="picker picker--full">
+      <input
+        type="text"
+        class="picker__input"
+        id="selectDate"
+        data-min-date="today"
+        data-text="하단 금액은 1인 편도 기준입니다."
+        data-default-date='["2021-02-10"]'
+        data-json-id="flightList"
+        data-picker="single"
+      >
+    </div>
+    <div class="booking-button cal-button">
+      <button type="button" class="button button--primary button--black pc-only" data-reset-date="#selectDate">
+        <span class="button__text">초기화</span>
+      </button>
+      <!-- <button type="button" class="button button--primary button--black" id="resetDate">
+        <span class="button__text">초기화 테스트(개발 테스트 후 삭제 요망)</span>
+      </button> -->
+      <button type="button" class="button button--primary button--active" data-select-date="#selectDate" rel="modal:close">
+        <span class="button__text">선택</span>
+      </button>
+    </div>
+  </div>
+  <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+</div>
+<!-- // datepicker01 -->
+<script type="application/json" id="flightList">
+  {
+    "price": [
+      {
+        "date": ["2020-09-15"],
+        "class": "best",
+        "label": "156,000"
+      },
+      {
+        "date": ["2020-09-18"],
+        "class": "better"
+      },
+      {
+        "date": ["2020-11-18"],
+        "class": "better",
+        "label": "156,000"
+      },
+      {
+        "date": ["2020-12-18"],
+        "class": "better",
+        "label": "333,333"
+      },
+      {
+        "date": ["2020-12-30"],
+        "class": "better",
+        "label": "333,333"
+      },
+      {
+        "date": ["2021-01-18"],
+        "class": "better",
+        "label": "333,333"
+      },
+      {
+        "date": ["2021-01-11"],
+        "label": "333,333"
+      },
+      {
+        "date": ["2021-01-20", "2021-01-21", "2021-02-21", "2021-01-23"],
+        "label": "999,000"
+      }
+    ],
+    "disabled": [
+      {
+        "date": ["2020-09-25", "2020-09-26", "2020-10-22"],
+        "label": "휴가"
+      },
+      {
+        "date": ["2020-09-28", "2020-09-29", "2020-11-29", "2020-12-29"],
+        "label": "결항일"
+      }
+    ]
+  }
+</script>
+
+<!-- datepicker02 -->
+<div id="datepicker02" class="modal modal-full modal-full--picker">
+  <div  class="modal-header">
+    <h2 class="header__page-name">날짜를 선택해 주세요.</h2>
+  </div>
+
+  <div class="modal-content">
+    <div class="picker picker--full">
+      <input
+        type="text"
+        class="picker__input"
+        id="selectDate2"
+        data-picker="range"
+        data-text="하단 금액은 1인 편도 기준입니다."
+        data-json-id="flightList2"
+        data-min-date="today"
+        data-format="Y.m.d (D)"
+        data-range-text='{"start": "시작", "end": "종료", "current": "왕복"}'
+      >
+      <!--
+        data-text: 상단에 노출할 메시지
+        data-format: 날짜 형식 Y(year) m(Month), d(day(숫자)), D(day(문자))
+        data-range-text: start(시작일 표사), end(종료일 표시), current(같은날짜 선택시)
+        data-defaultDate: YYYY-MM-DD 를 배열로 입력, 2개 일 경우 기간으로 선택'["2021-02-03"]'
+      -->
+    </div>
+
+    <div class="booking-button cal-button">
+      <button type="button" class="button button--primary button--black pc-only" data-reset-date="#selectDate2">
+        <span class="button__text">초기화</span>
+      </button>
+      <button type="button" class="button button--primary button--active" data-select-date="#selectDate2">
+        <span class="button__text">선택</span>
+      </button>
+    </div>
+  </div>
+  <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+</div>
+<!-- date picker 의 data-json-id 와 매칭 -->
+<script type="application/json" id="flightList2">
+  {
+    "price": [
+      {
+        "date": ["2020-09-15"],
+        "class": "best",
+        "label": "156,000"
+      },
+      {
+        "date": ["2020-09-18"],
+        "class": "better"
+      },
+      {
+        "date": ["2020-11-18"],
+        "class": "better",
+        "label": "156,000"
+      },
+      {
+        "date": ["2020-12-18"],
+        "class": "better",
+        "label": "333,333"
+      },
+      {
+        "date": ["2020-12-30"],
+        "class": "better",
+        "label": "333,333"
+      },
+      {
+        "date": ["2021-01-18"],
+        "class": "better",
+        "label": "333,333"
+      },
+      {
+        "date": ["2021-01-11"],
+        "label": "333,333"
+      },
+      {
+        "date": ["2021-01-20", "2021-01-21", "2021-02-21", "2021-01-23"],
+        "label": "999,000"
+      }
+    ],
+    "disabled": [
+      {
+        "date": ["2020-09-25", "2020-09-26", "2020-10-22"],
+        "label": "휴가"
+      },
+      {
+        "date": ["2020-09-28", "2020-09-29", "2020-11-29", "2020-12-29"],
+        "label": "결항일"
+      }
+    ]
+  }
+</script>
+<!-- // date picker 의 data-json-id 와 매칭 -->
+<!-- // datepicker02 -->
+
+<script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+<script>
+  /**
+   * 선택된 날짜를 입력하는 기능
+   * @param {String} element - 대상 버튼 ID 입력
+   */
+  function setDateValue(element) {
+    $(element).addClass('is-select').text(dataVal);
+  }
+
+  /**
+   * 초기화 기능
+   */
+  // $('#resetDate').on('click', function(event) {
+  //   datepicker.resetPicker();
+  // })
+
+  /**
+   * datepicker용 모달 호출
+   */
+  $('#testButton').on('click', function(e) {
+    var dateVal =
+    $('#datepicker01')
+      .modal({
+        showClose: false,
+        clickClose: false,
+      }, function(){
+      })
+      .on('modal:close', function() {
+        $('html').removeClass('open-modal open-modal--full');
+        $('.jquery-modal').removeClass('jquery-modal--full jquery-modal--picker');
+        setDateValue('#testButton');
+      });
+
+    $('html').addClass('open-modal open-modal--picker');
+    $('.jquery-modal').addClass('jquery-modal--picker jquery-modal--full');
+
+    /**
+     * 선택된 날짜의 데이터를 받아옴
+     * #selectDate 는 datepicker 를 만드는 ID
+     */
+    $('#selectDate').on('change', function(e) {
+      dataVal = e.target.value;
+    });
+  });
+
+  // 달력 버튼 클릭시 label-active 생성
+  $('.picker-label-wrap').on('click', function () {
+    $(this).addClass('label-active');
+  });
+
+</script>
+</body>
+</html>

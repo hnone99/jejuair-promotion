@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <style>
+    .tl_s2 {font-weight: 600; font-size:14px}
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only">
+      <h2 class="header__page-name">
+        Action button - primary</h2>
+      
+  </div>
+  <!-- //header -->
+
+
+  <div id="body">
+    <div class="wrap">
+
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div>
+            <div class="fixed-wrap button-wrap pc-center">
+                <button type="button" class="button button--primary button--active" onclick="window.open('button_ex1.html','pagename','resizable, width=360, height=740'); return false"><span class="button__text">모바일보기</span></button>
+              </div>
+          </div>
+
+
+          <div class="tl_s2" style=" position: absolute; top:60px">[Nomal-Action]</div>
+
+          <div class="button-wrap pc-60" data-element="bottomContent"  style="margin-bottom: 370px;">
+            <button type="button" class="button button--primary button--active"><span class="button__text">Nomal-Action</span></button><!-- D : 버튼 활성화 클래스 button--active -->
+          </div>
+
+          <div class="button-wrap pc-60" data-element="bottomContent"  style="margin-bottom: 300px;">
+            <button type="button" class="button button--primary"><span class="button__text">Nomal-Action</span></button><!-- D : 버튼 활성화 클래스 button--active -->
+          </div>
+      
+          <div class="tl_s2" style=" position: absolute; top:300px">[Floating-Action]</div>
+
+          <div class="fixed-wrap fixed-wrap--multi-line border-none" style="margin-bottom: 140px;">
+            <div class="button-wrap pc-center">
+              <button type="button" class="button button--primary button--black"><span class="button__text">다른 좌석 선택</span></button>
+              <button type="button" class="button button--primary button--active width_155"><span class="button__text">선택</span></button>
+            </div>
+          </div>
+         
+          <div class="fixed-wrap button-wrap pc-center" style="margin-bottom: 70px;">                   
+            <button type="button" class="button button--primary"
+              onclick="window.open('button_ex1.html','pagename','resizable, width=360, height=600'); return false"><span
+                class="button__text">Disable</span></button>
+          </div>
+
+
+          <div class="fixed-wrap button-wrap pc-center">   
+            <button type="button" class="button button--primary button--active"
+              onclick="window.open('button_ex1.html','pagename','resizable, width=360, height=600'); return false"><span
+                class="button__text">Floating-Action Normal/Active</span></button>
+          </div>
+
+
+
+          <div class="button-wrap button-wrap--center pc-15">
+            <button type="button" class="button button--small"><span class="button__text button__icon icon-minus">삭제</span></button>
+            <button type="button" class="button button--small"><span class="button__text button__icon icon-plus">추가</span></button>
+            <button type="button" class="button button--small" disabled=""><span class="button__text button__icon icon-plus">추가</span></button>
+          </div>
+
+   
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+
+</body>
+
+</html>

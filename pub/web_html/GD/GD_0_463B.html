@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <div class="gnb" id="gnb">
+        <div class="gnb__header">
+          <div class="gnb__header-top" data-absolute-sticky>
+            <a href="#none" class="button-home" title="홈으로 이동"></a>
+            <div data-element="select" data-select-target="0" class="select-wrap select-wrap--inline">
+              <select title="지역 선택" class="select-wrap__select">
+                <option></option>
+                <option value="1" selected>대한민국</option>
+                <option value="2">미국1</option>
+                <option value="3">미국2</option>
+                <option value="4">미국3</option>
+              </select>
+              <select title="언어 선택" class="select-wrap__select">
+                <option></option>
+                <option value="1" selected>한국어</option>
+                <option value="2">영어</option>
+              </select>
+            </div>
+            <div class="additional">
+              <!-- D : '웹'일경우 APP다운로드 버튼 -->
+              <button type="button" class="button button--small"><span class="button__text button__icon">APP</span></button>
+              <a href="#none" class="button-search" title="통합검색이동"></a>
+              <!-- D : '앱'일경우 세팅 버튼 -->
+              <!-- <button type="button" class="button-setting" aria-label="setting"></button> -->
+              <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+            </div>
+          </div>
+          <div class="gnb__header-bot">
+            <!-- 로그인 전 -->
+            <div class="before" style="display: none;">
+              <div class="title">
+                로그인 하시고<br>더 풍부한 혜택을 누리세요.
+              </div>
+              <!-- fixed 영역 -->
+              <div class="sticky-wrap">
+                <div class="button-wrap button-flex sticky__inner gnb-sticky1">
+                  <button type="button" class="button button--secondary"><span class="button__text">회원가입</span></button>
+                  <button type="button" class="button button--secondary button--active"><span
+                      class="button__text">로그인</span></button>
+                  <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                </div>
+              </div>
+              <!-- //fixed 영역 -->
+              <div class="title">
+                <div class="title__section title__section--additional">제주항공에서 예약하지 않으셨다면?
+                  <div class="additional">
+                    <div class="link-wrap">
+                      <a href="#" class="link-wrap__underline"><span>예약조회</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //로그인 전 -->
+            <!-- 로그인 후 -->
+            <div class="after">
+              <!-- fixed 영역 -->
+              <div class="sticky-wrap">
+                <div class="title sticky__inner gnb-sticky2">
+                  <i class="icon vip" aria-label="vip"></i>
+                  <!-- <i class="icon gold" aria-label="gold"></i>
+            <i class="icon sliverplus" aria-label="sliverplus"></i>
+            <i class="icon silver" aria-label="sliver"></i> -->
+                  <div class="text">
+                    <p class="name"><span class="exbold">김제주</span>님</p>
+                    <p class="hide">안녕하세요?</p>
+                  </div>
+                  <div class="additional">
+                    <button type="button" class="button-card" aria-label="card-popup">
+                    <img src="../../assets/images/icon/icon-card.png" alt="알림">
+                  </button>
+                    <button type="button" class="button-alarm" aria-label="alarm-popup"><span>3<span
+                          class="hidden">개</span></span></button>
+                    <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                  </div>
+                </div>
+              </div>
+              <!-- //fixed 영역 -->
+              <div class="gray-box">
+                <div class="flex-text">
+                  회원 번호
+                  <div class="flex-text__additional">080041313</div>
+                </div>
+                <div class="flex-text">
+                  사용 가능한 포인트
+                  <div class="flex-text__additional">10,000P</div>
+                </div>
+              </div>
+              <div class="button-wrap button-flex">
+                <button type="button" class="button button--secondary button--border"><span
+                    class="button__text">리프레시포인트</span></button>
+                <button type="button" class="button button--secondary button--border add--ml-10"><span
+                    class="button__text">마이페이지</span></button>
+              </div>
+            </div>
+            <!-- //로그인 후 -->
+            <div class="icon-link">
+              <a href="#none" class="icon-link__item">
+                <img src="../../assets/images/icon/icon-join-item-04.png" alt="" aria-hidden="true">
+                <span class="icon-link__text">투어&티켓</span>
+              </a>
+              <a href="#none" class="icon-link__item">
+                <img src="../../assets/images/icon/icon-join-item-06.png" alt="" aria-hidden="true">
+                <span class="icon-link__text">출도착조회</span>
+              </a>
+              <a href="#none" class="icon-link__item">
+                <img src="../../assets/images/icon/icon-join-item-07.png" alt="" aria-hidden="true">
+                <span class="icon-link__text">고객센터</span>
+              </a>
+            </div>
+            <!-- //로그인 후 -->
+          </div>
+        </div>
+        <hr class="section-spacer">
+        <div class="gnb-wrap">
+          <div class="gnb__box">
+            <div class="gnb__title">예약</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">항공권 예매</a>
+              <a href="#none" class="gnb__list-item">항공권 추천</a>
+              <a href="#none" class="gnb__list-item">민항공후급증</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">여행준비</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">예약 안내</a>
+              <a href="#none" class="gnb__list-item">운임 안내</a>
+              <a href="#none" class="gnb__list-item">운항 정보</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">회원 혜택</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">리프레시 포인트</a>
+              <a href="#none" class="gnb__list-item">쿠폰 혜택</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">부가서비스 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">사전 수하물</a>
+              <a href="#none" class="gnb__list-item">사전 좌석</a>
+              <a href="#none" class="gnb__list-item">사전 기내식</a>
+              <a href="#none" class="gnb__list-item">보험 상품</a>
+              <a href="#none" class="gnb__list-item">투어&티켓</a>
+              <a href="#none" class="gnb__list-item">프리패스</a>
+              <a href="#none" class="gnb__list-item">기프티켓</a>
+              <a href="#none" class="gnb__list-item">제휴 서비스</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">프리미엄 서비스 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">NEW CLASS</a>
+              <a href="#none" class="gnb__list-item">JJ 라운지</a>
+              <a href="#none" class="gnb__list-item">J PASS</a>
+              <a href="#none" class="gnb__list-item">스포츠멤버십</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">탑승 수속 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">모바일 탑승권</a>
+              <a href="#none" class="gnb__list-item">빠른 수속 안내</a>
+              <a href="#none" class="gnb__list-item">공항 정보</a>
+              <a href="#none" class="gnb__list-item">수하물 안내</a>
+              <a href="#none" class="gnb__list-item">도움이 필요한 승객</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">기내 서비스 안내</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">에어카페</a>
+              <a href="#none" class="gnb__list-item">기내 FUN 서비스</a>
+              <a href="#none" class="gnb__list-item">출입국신고서 <br class="pc-only">작성방법</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">이벤트</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">이벤트</a>
+              <a href="#none" class="gnb__list-item">스탬프 랠리</a>
+            </div>
+          </div>
+          <div class="gnb__box">
+            <div class="gnb__title">고객센터</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">고객센터</a>
+              <a href="#none" class="gnb__list-item">기내 유실물 센터</a>
+              <a href="#none" class="gnb__list-item">공지사항</a>
+            </div>
+          </div>
+          <div class="gnb__box mobile-only">
+            <div class="gnb__title">우대 프로그램</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">기업우대 서비스</a>
+            </div>
+          </div>
+          <div class="gnb__box mobile-only">
+            <div class="gnb__title">제주항공 소개</div>
+            <div class="gnb__list">
+              <a href="#none" class="gnb__list-item">About 제주항공</a>
+              <a href="#none" class="gnb__list-item">코로나19 종합안내 센터</a>
+            </div>
+          </div>
+
+          <div class="gnb__footer">
+            <div class="gnb__title">SNS</div>
+            <div class="sns-wrap">
+              <a href="https://m.facebook.com/funjejuair" aria-label="facebook" class="sns-wrap__item facebook"></a>
+              <a href="https://instagram.com/jejuair_official?igshid=1r3itj1zo2k6w" aria-label="instagram"
+                class="sns-wrap__item instagram"></a>
+              <a href="https://www.youtube.com/user/funjejuair" aria-label="youtube" class="sns-wrap__item youtube"></a>
+            </div>
+            <div class="button-wrap button-wrap--center">
+              <button type="button" class="button button--secondary button--border"><span
+                  class="button__text">로그아웃</span></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div class="select-wrap select-wrap--line">
+                <select title="국가 선택" class="select-wrap__select">
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div class="select-wrap select-wrap--line">
+                <select class="select-wrap__select" title="언어 선택"> 
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+  
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+        <div class="gnb" id="gnb">
+          <div class="gnb__header">
+            <div class="gnb__header-top" data-absolute-sticky>
+              <a href="#none" class="button-home" title="홈으로 이동"></a>
+              <div data-element="select" data-select-target="0" class="select-wrap select-wrap--inline">
+                <select title="지역 선택" class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">미국1</option>
+                  <option value="3">미국2</option>
+                  <option value="4">미국3</option>
+                </select>
+                <select title="언어 선택" class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">영어</option>
+                </select>
+              </div>
+              <div class="additional">
+                <!-- D : '웹'일경우 APP다운로드 버튼 -->
+                <button type="button" class="button button--small"><span
+                    class="button__text button__icon">APP</span></button>
+                <a href="#none" class="button-search" title="통합검색이동"></a>
+                <!-- D : '앱'일경우 세팅 버튼 -->
+                <!-- <button type="button" class="button-setting" aria-label="setting"></button> -->
+                <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+              </div>
+            </div>
+            <div class="gnb__header-bot">
+              <!-- 로그인 전 -->
+              <div class="before" style="display: none;">
+                <div class="title">
+                  로그인 하시고<br>더 풍부한 혜택을 누리세요.
+                </div>
+                <!-- fixed 영역 -->
+                <div class="sticky-wrap">
+                  <div class="button-wrap button-flex sticky__inner gnb-sticky1">
+                    <button type="button" class="button button--secondary"><span
+                        class="button__text">회원가입</span></button>
+                    <button type="button" class="button button--secondary button--active"><span
+                        class="button__text">로그인</span></button>
+                    <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                  </div>
+                </div>
+                <!-- //fixed 영역 -->
+                <div class="title">
+                  <div class="title__section title__section--additional">제주항공에서 예약하지 않으셨다면?
+                    <div class="additional">
+                      <div class="link-wrap">
+                        <a href="#" class="link-wrap__underline"><span>예약조회</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //로그인 전 -->
+              <!-- 로그인 후 -->
+              <div class="after">
+                <!-- fixed 영역 -->
+                <div class="sticky-wrap">
+                  <div class="title sticky__inner gnb-sticky2">
+                    <i class="icon vip" aria-label="vip"></i>
+                    <!-- <i class="icon gold" aria-label="gold"></i>
+            <i class="icon sliverplus" aria-label="sliverplus"></i>
+            <i class="icon silver" aria-label="sliver"></i> -->
+                    <div class="text">
+                      <p class="name"><span class="exbold">김제주</span>님</p>
+                      <p class="hide">안녕하세요?</p>
+                    </div>
+                    <div class="additional">
+                      <button type="button" class="button-card" aria-label="card-popup">
+                    <img src="../../assets/images/icon/icon-card.png" alt="알림">
+                  </button>
+                      <button type="button" class="button-alarm" aria-label="alarm-popup"><span>3<span
+                            class="hidden">개</span></span></button>
+                      <a href="#none" class="gnb-close" aria-label="닫기"><img src="../../assets/images/icon/icon-header-gnb-close.png" alt="전체메뉴 닫기" class="close"></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- //fixed 영역 -->
+                <div class="gray-box">
+                  <div class="flex-text">
+                    회원 번호
+                    <div class="flex-text__additional">080041313</div>
+                  </div>
+                  <div class="flex-text">
+                    사용 가능한 포인트
+                    <div class="flex-text__additional">10,000P</div>
+                  </div>
+                </div>
+                <div class="button-wrap button-flex">
+                  <button type="button" class="button button--secondary button--border"><span
+                      class="button__text">리프레시포인트</span></button>
+                  <button type="button" class="button button--secondary button--border add--ml-10"><span
+                      class="button__text">마이페이지</span></button>
+                </div>
+              </div>
+              <!-- //로그인 후 -->
+              <div class="icon-link">
+                <a href="#none" class="icon-link__item">
+                  <img src="../../assets/images/icon/icon-join-item-04.png" alt="" aria-hidden="true">
+                  <span class="icon-link__text">투어&티켓</span>
+                </a>
+                <a href="#none" class="icon-link__item">
+                  <img src="../../assets/images/icon/icon-join-item-06.png" alt="" aria-hidden="true">
+                  <span class="icon-link__text">출도착조회</span>
+                </a>
+                <a href="#none" class="icon-link__item">
+                  <img src="../../assets/images/icon/icon-join-item-07.png" alt="" aria-hidden="true">
+                  <span class="icon-link__text">고객센터</span>
+                </a>
+              </div>
+              <!-- //로그인 후 -->
+            </div>
+          </div>
+          <hr class="section-spacer">
+          <div class="gnb-wrap">
+            <div class="gnb__box">
+              <div class="gnb__title">예약</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">항공권 예매</a>
+                <a href="#none" class="gnb__list-item">항공권 추천</a>
+                <a href="#none" class="gnb__list-item">민항공후급증</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">여행준비</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">예약 안내</a>
+                <a href="#none" class="gnb__list-item">운임 안내</a>
+                <a href="#none" class="gnb__list-item">운항 정보</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">회원 혜택</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">리프레시 포인트</a>
+                <a href="#none" class="gnb__list-item">쿠폰 혜택</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">부가서비스 안내</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">사전 수하물</a>
+                <a href="#none" class="gnb__list-item">사전 좌석</a>
+                <a href="#none" class="gnb__list-item">사전 기내식</a>
+                <a href="#none" class="gnb__list-item">보험 상품</a>
+                <a href="#none" class="gnb__list-item">투어&티켓</a>
+                <a href="#none" class="gnb__list-item">프리패스</a>
+                <a href="#none" class="gnb__list-item">기프티켓</a>
+                <a href="#none" class="gnb__list-item">제휴 서비스</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">프리미엄 서비스 안내</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">NEW CLASS</a>
+                <a href="#none" class="gnb__list-item">JJ 라운지</a>
+                <a href="#none" class="gnb__list-item">J PASS</a>
+                <a href="#none" class="gnb__list-item">스포츠멤버십</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">탑승 수속 안내</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">모바일 탑승권</a>
+                <a href="#none" class="gnb__list-item">빠른 수속 안내</a>
+                <a href="#none" class="gnb__list-item">공항 정보</a>
+                <a href="#none" class="gnb__list-item">수하물 안내</a>
+                <a href="#none" class="gnb__list-item">도움이 필요한 승객</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">기내 서비스 안내</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">에어카페</a>
+                <a href="#none" class="gnb__list-item">기내 FUN 서비스</a>
+                <a href="#none" class="gnb__list-item">출입국신고서 <br class="pc-only">작성방법</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">이벤트</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">이벤트</a>
+                <a href="#none" class="gnb__list-item">스탬프 랠리</a>
+              </div>
+            </div>
+            <div class="gnb__box">
+              <div class="gnb__title">고객센터</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">고객센터</a>
+                <a href="#none" class="gnb__list-item">기내 유실물 센터</a>
+                <a href="#none" class="gnb__list-item">공지사항</a>
+              </div>
+            </div>
+            <div class="gnb__box mobile-only">
+              <div class="gnb__title">우대 프로그램</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">기업우대 서비스</a>
+              </div>
+            </div>
+            <div class="gnb__box mobile-only">
+              <div class="gnb__title">제주항공 소개</div>
+              <div class="gnb__list">
+                <a href="#none" class="gnb__list-item">About 제주항공</a>
+                <a href="#none" class="gnb__list-item">코로나19 종합안내 센터</a>
+              </div>
+            </div>
+
+            <div class="gnb__footer">
+              <div class="gnb__title">SNS</div>
+              <div class="sns-wrap">
+                <a href="https://m.facebook.com/funjejuair" aria-label="facebook" class="sns-wrap__item facebook"></a>
+                <a href="https://instagram.com/jejuair_official?igshid=1r3itj1zo2k6w" aria-label="instagram"
+                  class="sns-wrap__item instagram"></a>
+                <a href="https://www.youtube.com/user/funjejuair" aria-label="youtube"
+                  class="sns-wrap__item youtube"></a>
+              </div>
+              <div class="button-wrap button-wrap--center">
+                <button type="button" class="button button--secondary button--border"><span
+                    class="button__text">로그아웃</span></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div class="wrap NA">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <div class="button-wrap button-wrap--center">
+          <button type="button" class="button button--secondary button--active" data-target-open="sheet01"><span
+              class="button__text">기내식 상세</span></button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- 기내식 상세 -->
+  <div data-target="sheet01" class="bottom-sheet bottom-sheet-scroll" data-element="bottomSheet">
+    <div class="bottom-sheet__top">
+      <div class="title">
+        <h2 class="title__main">담을 승객을 선택해 주세요.</h2>
+      </div>
+    </div>
+    <div class="bottom-sheet__bot bottom-sheet__tab bottom-sheet__bot--amount">
+      <div data-element="tab" class="tab tab--default tab--fixed">
+        <div class="tab__buttons">
+          <div data-element="tab__list" class="tab__button">
+            <button type="button" data-element="tab__anchor" class="tab__anchor">가는 편1</button>
+          </div>
+          <div data-element="tab__list" class="tab__button">
+            <button type="button" data-element="tab__anchor" class="tab__anchor">가는 편2</button>
+          </div>
+        </div>
+        <!-- 가는 편 -->
+        <div data-element="tab__panel" class="tab__panel">
+          <!--경유 노선 호출-->
+          <!-- <div class="title__section-service">
+            <div class="trip">
+              <span class="from">서울(인천)</span>
+              <span class="mark oneway" aria-label="oneway"></span>
+              <span class="to">괌</span>
+            </div>
+          </div> -->
+          <!--//경유 노선 호출-->
+          <!-- 승객 선택 전 -->
+          <div class="list-card list-card--basket basket-thum">
+            <div class="list-card__item">
+              <div class="list-card__item-inner">
+                <div class="list-card__image">
+                  <img src="../../assets/images/@temp/@add-service-03.png" alt="">
+                </div>
+                <div class="list-card__info no-price">
+                  <strong class="list-card__title">음료/간식 추가</strong>
+                  <span class="list-card__sub_text">이미 기내식을 구매했으면 사이드메뉴도 살펴보세요!</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="sub-section">
+              <div class="check-wrap">
+                <div class="checkbox-line-item-wrap">
+                  <!--
+                      선택 시 'is-active' 클래스 추가
+                  -->
+                  <div class="checkbox-line-item">
+                    <span class="checkbox checkbox--small">
+                      <input type="checkbox" id="inputCheck1" data-element="checkbox" class="checkbox__input">
+                      <label for="inputCheck1" class="checkbox__label">
+                        <i aria-hidden="true" class="checkbox__ico"></i>
+                        <span>KIM/JEJU </span>
+                        <!-- <span>KIM/JEJU  (담은 기내식 1개)</span> : 삭제-->
+                      </label>
+                    </span>
+                  </div>
+                  <!-- 20210430 마크업 수정 // 승객 선택 시 노출 -->
+                  <div class="input-row input-row--label select-box input--line mt-30" style="display: none;">
+                    
+                    <div class="input-box label-active">
+                        <div class="input__label">음료/간식 추가</div>
+                        <div class="select-wrap select-wrap--line ">
+                          <select title="음료/간식추가 선택" class="select-wrap__select">
+                            <option>선택 안 함</option><!--20210426 띄어쓰기-->
+                            <option value="1">콜라 +2,000  (정상가 2,500)</option>
+                            <option value="2">메리앤콩 아메리카노 HOT +2,000</option>
+                            <option value="3">오레오 화이트 크림 +2,000  (정상가 2,500)</option>
+                          </select>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- //승객 선택 시 노출 -->
+
+                  <!-- 옵션 선택 시 노출 -->
+                  <div class="option-select gray-box" style="display: none;">
+                    <p class="option-select__text">콜라 +2,000<button type="button" class="option-select__close" aria-label="닫기"></button></p>
+                    <p class="option-select__text">메리앤콩 아메리카노 HOT +2,000<button type="button"
+                        class="option-select__close" aria-label="닫기"></button></p>
+                    <p class="option-select__text">오레오 화이트 크림 +2,000<button type="button" class="option-select__close"
+                        aria-label="닫기"></button></p>
+                  </div>
+                  <!-- //옵션 선택 시 노출 -->
+                </div>
+
+                <div class="checkbox-line-item-wrap">
+                  <div class="checkbox-line-item">
+                    <span class="checkbox checkbox--small">
+                      <input type="checkbox" id="inputCheck2" data-element="checkbox" class="checkbox__input">
+                      <label for="inputCheck2" class="checkbox__label">
+                        <i aria-hidden="true" class="checkbox__ico"></i>
+                        <span>LEE/HANGGONG</span>
+                      </label>
+                    </span>
+                  </div>
+
+                  <!-- 20210430 마크업 수정 // 승객 선택 시 노출 -->
+                  <div class="input-row input-row--label select-box input--line mt-30" style="display: none;">
+                    
+                    <div class="input-box label-active">
+                        <div class="input__label">음료/간식 추가</div>
+                        <div class="select-wrap select-wrap--line ">
+                          <select title="음료/간식추가 선택" class="select-wrap__select">
+                            <option>선택 안 함</option><!--20210426 띄어쓰기-->
+                            <option value="1">콜라 +2,000  (정상가 2,500)</option>
+                            <option value="2">메리앤콩 아메리카노 HOT +2,000</option>
+                            <option value="3">오레오 화이트 크림 +2,000  (정상가 2,500)</option>
+                          </select>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- //승객 선택 시 노출 -->
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- //승객 선택 전 -->
+
+          <!-- 탑승일이 3일보다 덜 남았을 경우 (가는 편) -->
+          <div class="finish-item-wrap">
+            <div class="finish-item">
+              <div class="finish-item__img"><img src="../../assets/images/icon/icon-nodata-03.png" alt=""></div>
+              <p class="finish-item__title">기내식 구매 가능한 시간이 아닙니다.</p>
+              <p class="finish-item__text">오는 편 기내식을 선택해 주세요.</p>
+            </div>
+          </div>
+          <!-- //탑승일이 3일보다 덜 남았을 경우 (가는 편) -->
+        </div>
+        <!-- //가는 편 -->
+
+        <!-- 오는 편 -->
+        <div data-element="tab__panel" class="tab__panel">
+          <!-- 탑승일이 3일보다 덜 남았을 경우 (오는 편) -->
+          <div class="finish-item-wrap">
+            <div class="finish-item">
+              <div class="finish-item__img"><img src="../../assets/images/icon/icon-nodata-03.png" alt=""></div>
+              <p class="finish-item__title">기내식 구매 가능한 시간이 아닙니다.</p>
+              
+            </div>
+          </div>
+          <!-- //탑승일이 3일보다 덜 남았을 경우 (오는 편) -->
+        </div>
+        <!-- //오는 편 -->
+      </div>
+    </div>
+    <div class="bottom-sheet__fixed pc-full">
+      <div class="bottom-sheet__amount">
+        <span class="bottom-sheet__amount-text">추가 금액</span>
+        <strong class="bottom-sheet__amount-value">
+          <span class="price_txt">+ 120,000</span>
+        <span class="unit">원</span>
+        </strong>
+        
+      </div>
+      <div class="button-wrap button-wrap-stick pc-0 pc-radius">
+        <button type="button" class="button button--primary button--active"><span class="button__text">선택 완료</span></button>
+      </div>
+    </div>
+
+    <button type="button" class="bottom-sheet__button-close" data-element="bottomSheet__button-close"
+      aria-label="하단시트 닫기"></button>
+  </div>
+  <!-- //기내식 상세 -->
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <script>
+    $('.option-select__close').on('click', function (e) {
+      e.preventDefault()
+
+      if ($(this).closest('.option-select.gray-box').find('.option-select__text').length <= 1) {
+        // alert()
+        $(this).closest('.option-select.gray-box').hide()
+      }
+      $(this).parents('.option-select__text').remove()
+    })
+
+    $('.check-wrap').each(function () {
+      const checkItem = $(this).find('.checkbox-line-item');
+      const checkInput = checkItem.find('.checkbox__input');
+      checkItem.on('click', function (e) {
+        const _this = $(this);
+        const checkInput = _this.find('.checkbox__input');
+
+        if (!_this.hasClass('is-active') && !_this.find('input').is(':disabled')) {
+          _this.addClass('is-active');
+          checkInput.prop('checked', true);
+          $(this).next('.select-box').show();
+          $(this).siblings('.option-select').show();
+        } else {
+          _this.removeClass('is-active')
+          checkInput.prop('checked', false);
+          $(this).next('.select-box').hide();
+          $(this).siblings('.option-select').hide();
+        }
+        e.preventDefault();
+      });
+    });
+
+  </script>
+</body>
+
+</html>

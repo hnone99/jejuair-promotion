@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" href="../../assets/css/lang.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">나의 탑승 내역</h2>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 --><!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+
+            <!-- <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <button type="button" class="search__close" data-custom-toggle="button">
+              <span class="hidden">검색창 닫기</span>
+             </button>
+            </div> -->
+
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 --><!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div id="body">
+    <div class="wrap wrap--no-pab GD">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">마이페이지</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle"
+            data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>
+            <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor">나의 탑승
+              내역</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel">
+              <a href="#" class="item">회원 정보 수정</a>
+              <a href="#" class="item">예약 현황</a>
+              <a href="#" class="item">결제수단 관리</a>
+              <a href="#" class="item">나의 탑승 내역</a>
+              <a href="#" class="item">즐겨찾기</a>
+              <a href="#" class="item">친구 관리</a>
+              <a href="#" class="item">나의 쿠폰함</a>
+              <a href="#" class="item">나의 J PASS</a>
+              <a href="#" class="item">나의 기프티켓</a>
+              <a href="#" class="item">나의 JJ 라운지 이용권</a>
+              <a href="#" class="item">나의 프리패스</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="content" id="content">
+        <main id="main" class="main ">
+					
+					<input type="hidden" name="fromDate" id="fromDate" value="20210901">
+	<input type="hidden" name="toDate" id="toDate" value="20211101">
+	<input type="hidden" name="firstDate" id="firstDate" value="20201101">
+	
+	
+	
+
+	<div class="page-title-wrap">
+		<div class="page-title">My Boarding History</div>
+		<div class="page-sub-title">Enter a <br class="mobile-only">search period.</div>
+	</div>
+
+	<div class="sub-section">
+		<!-- [수정 : 210215] pc-30 class 추가 -->
+		<div class="gray-box pc-search pc-search--flex pc-search--number">
+			<div class="input-wrap input--line">
+				<div class="input-row input-row--number" id="monthsNumberChanger">
+					<label for="inputNumber" class="input__label">Select Period</label>
+					<div data-element="form" class="input input--number is-active">
+						<button type="button" data-action="numCount" data-element="number__button" data-type="decrease" aria-label="빼기" class="input__number input__number-minus"></button>
+						<input type="text" id="inputNumber" data-element="number__input" value="3" data-max="12" data-min="1" data-string-number="" class="input__number" disabled="">
+						<span class="text">month(s)</span>
+						<button type="button" data-action="numCount" data-element="number__button" data-type="increase" aria-label="더하기" class="input__number input__number-plus"></button>
+					</div>
+				</div>
+				<div class="input-row input-row--label">
+					<!-- <div class="input-label mobile-only">직접입력</div> -->
+					<div class="input-item">
+						<!-- 에러메세지 있을 경우 input--error class 추가-->
+						<div class="input-box label-active">
+							<label class="input__label">Boarding date</label>
+							<button type="button" class="picker picker--button is-select" data-element="modal_anchor" data-modal-type="datepicker" data-target="#datepicker01" id="flightCalBtn">
+								2021.09.01(Wed) ~ 2021.11.01(Mon)
+							</button><!-- default : 오늘날짜 기준 이전 3개월 노출-->
+						</div>
+						<p tabindex="0" class="input__error">Only the last 12-month period can be searched.</p>
+					</div>
+				</div>
+			</div>
+			<div class="button-wrap button-wrap--center">
+				<button type="button" class="button button--optional" data-action="flightSearch"><span class="button__text">Search</span></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="searchResultBox">
+		<div class="finish-item-wrap">
+			<div class="finish-item">
+				<div class="finish-item__img"><img src="https://dstatic.jejuair.net/hpgg/resources/images/icon/icon-result-none.png" alt=""></div>
+				<p class="finish-item__title">No search results.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- 탑승 내역 조회 안내 -->
+	<div class="section-wrap">
+		<div class="service-information" data-action="info-toggle" data-toggle-id="0000000079" data-options="{&quot;mode&quot;: &quot;move scroll&quot;}">
+			<div class="service-information__title">
+				<button type="button" class="service-information__anchor" data-element="toggle__anchor" aria-controls="toggle-3" aria-expanded="false">About Boarding History Search</button>
+			</div>
+			<div class="service-information__content" data-element="toggle__panel" id="toggle-3">
+<div class="list-wrap"> 
+ <ul class="list-guide"> 
+  <li class="list-guide__item">항공권 구매 시, 회원번호를 입력하지 않고 구매하고 탑승한 내역은 조회하실 수 없습니다.</li> 
+  <li class="list-guide__item">제주항공 홈페이지에서 예매한 탑승 내역에 대한 결제 정보만 조회하실 수 있습니다.</li> 
+  <li class="list-guide__item">회원가입 이후의 탑승 내역만 조회하실 수 있습니다.</li> 
+  <li class="list-guide__item">최근 3년 이내 본인이 탑승했던 내역만 조회하실 수 있습니다.</li> 
+  <li class="list-guide__item">‘적립 예정‘은 항공권 구매 후 적립에 필요한 기간 내에서 처리 중임을 뜻하며, 처리 완료 후 포인트 및 탑승 횟수가 적립됩니다. </li> 
+ </ul> 
+</div>
+</div>
+		</div>
+	</div>
+
+	<!-- datepicker -->
+	<div id="datepicker01" class="modal modal-full modal-full--picker">
+		<div class="modal-header">
+			<!-- <button class="header__button">
+			<span class="hidden">이전으로</span>
+		</button> -->
+			<h2 class="modal-header__title">Enter a search period</h2>
+			<!-- <div class="header__button-wrap">
+			<button class="header__close">
+			<span class="blind">닫기</span>
+			</button>
+		</div> -->
+		</div>
+
+		<div class="modal-content">
+			<div class="picker picker--full">
+				<div class="flatpickr-wrapper"><input type="text" class="picker__input flatpickr-input" id="selectBookingDate" data-locale="en" data-min-date="2020-11-01" data-max-date="today" data-defaultdate="2021-11-01" data-picker="range" data-range-text="{&quot;start&quot;: &quot;시작일&quot;, &quot;end&quot;: &quot;종료일&quot;, &quot;current&quot;: &quot;동일&quot;}" readonly="readonly"><div class="flatpickr-calendar rangeMode animate multiMonth inline" tabindex="-1" style=""><div class="flatpickr-months"><span class="flatpickr-prev-month"></span><div class="flatpickr-month"><div class="flatpickr-current-month"><div class="numInputWrapper"><input class="numInput cur-year" type="number" tabindex="-1" aria-label="Year" min="2020" max="2021"><span class="arrowUp"></span><span class="arrowDown"></span></div><span class="cur-month">November </span></div></div><div class="flatpickr-month"><div class="flatpickr-current-month"><div class="numInputWrapper"><input class="numInput cur-year" type="number" tabindex="-1" aria-label="Year" min="2020" max="2021"><span class="arrowUp"></span><span class="arrowDown"></span></div><span class="cur-month">December </span></div></div><span class="flatpickr-next-month"></span></div><div class="flatpickr-innerContainer"><div class="flatpickr-rContainer"><div class="flatpickr-weekdays"><div class="flatpickr-weekdaycontainer">
+    <span class="flatpickr-weekday">
+    Sun</span><span class="flatpickr-weekday">Mon</span><span class="flatpickr-weekday">Tue</span><span class="flatpickr-weekday">Wed</span><span class="flatpickr-weekday">Thu</span><span class="flatpickr-weekday">Fri</span><span class="flatpickr-weekday">Sat
+    </span>
+    </div><div class="flatpickr-weekdaycontainer">
+    <span class="flatpickr-weekday">
+    Sun</span><span class="flatpickr-weekday">Mon</span><span class="flatpickr-weekday">Tue</span><span class="flatpickr-weekday">Wed</span><span class="flatpickr-weekday">Thu</span><span class="flatpickr-weekday">Fri</span><span class="flatpickr-weekday">Sat
+    </span>
+    </div></div><div class="flatpickr-days" tabindex="-1"><div class="dayContainer"><span class="flatpickr-day prevMonthDay hidden sun" aria-label="20211031" tabindex="-1">31<span class="date" aria-hidden="true">31</span></span><span class="flatpickr-day today selected startRange mon" aria-label="20211101" aria-current="date" tabindex="-1">1<span class="date" aria-hidden="true">1</span><strong class="sub">시작일</strong></span><span class="flatpickr-day flatpickr-disabled tue" aria-label="20211102">2<span class="date" aria-hidden="true">2</span></span><span class="flatpickr-day flatpickr-disabled wed" aria-label="20211103">3<span class="date" aria-hidden="true">3</span></span><span class="flatpickr-day flatpickr-disabled thu" aria-label="20211104">4<span class="date" aria-hidden="true">4</span></span><span class="flatpickr-day flatpickr-disabled fri" aria-label="20211105">5<span class="date" aria-hidden="true">5</span></span><span class="flatpickr-day flatpickr-disabled sat" aria-label="20211106">6<span class="date" aria-hidden="true">6</span></span><span class="flatpickr-day flatpickr-disabled sun" aria-label="20211107">7<span class="date" aria-hidden="true">7</span></span><span class="flatpickr-day flatpickr-disabled mon" aria-label="20211108">8<span class="date" aria-hidden="true">8</span></span><span class="flatpickr-day flatpickr-disabled tue" aria-label="20211109">9<span class="date" aria-hidden="true">9</span></span><span class="flatpickr-day flatpickr-disabled wed" aria-label="20211110">10<span class="date" aria-hidden="true">10</span></span><span class="flatpickr-day flatpickr-disabled thu" aria-label="20211111">11<span class="date" aria-hidden="true">11</span></span><span class="flatpickr-day flatpickr-disabled fri" aria-label="20211112">12<span class="date" aria-hidden="true">12</span></span><span class="flatpickr-day flatpickr-disabled sat" aria-label="20211113">13<span class="date" aria-hidden="true">13</span></span><span class="flatpickr-day flatpickr-disabled sun" aria-label="20211114">14<span class="date" aria-hidden="true">14</span></span><span class="flatpickr-day flatpickr-disabled mon" aria-label="20211115">15<span class="date" aria-hidden="true">15</span></span><span class="flatpickr-day flatpickr-disabled tue" aria-label="20211116">16<span class="date" aria-hidden="true">16</span></span><span class="flatpickr-day flatpickr-disabled wed" aria-label="20211117">17<span class="date" aria-hidden="true">17</span></span><span class="flatpickr-day flatpickr-disabled thu" aria-label="20211118">18<span class="date" aria-hidden="true">18</span></span><span class="flatpickr-day flatpickr-disabled fri" aria-label="20211119">19<span class="date" aria-hidden="true">19</span></span><span class="flatpickr-day flatpickr-disabled sat" aria-label="20211120">20<span class="date" aria-hidden="true">20</span></span><span class="flatpickr-day flatpickr-disabled sun" aria-label="20211121">21<span class="date" aria-hidden="true">21</span></span><span class="flatpickr-day flatpickr-disabled mon" aria-label="20211122">22<span class="date" aria-hidden="true">22</span></span><span class="flatpickr-day flatpickr-disabled tue" aria-label="20211123">23<span class="date" aria-hidden="true">23</span></span><span class="flatpickr-day flatpickr-disabled wed" aria-label="20211124">24<span class="date" aria-hidden="true">24</span></span><span class="flatpickr-day flatpickr-disabled thu" aria-label="20211125">25<span class="date" aria-hidden="true">25</span></span><span class="flatpickr-day flatpickr-disabled fri" aria-label="20211126">26<span class="date" aria-hidden="true">26</span></span><span class="flatpickr-day flatpickr-disabled sat" aria-label="20211127">27<span class="date" aria-hidden="true">27</span></span><span class="flatpickr-day flatpickr-disabled sun" aria-label="20211128">28<span class="date" aria-hidden="true">28</span></span><span class="flatpickr-day flatpickr-disabled mon" aria-label="20211129">29<span class="date" aria-hidden="true">29</span></span><span class="flatpickr-day flatpickr-disabled tue" aria-label="20211130">30<span class="date" aria-hidden="true">30</span></span><span class="flatpickr-day nextMonthDay hidden flatpickr-disabled wed" aria-label="20211201">1<span class="date" aria-hidden="true">1</span></span><span class="flatpickr-day nextMonthDay hidden flatpickr-disabled thu" aria-label="20211202">2<span class="date" aria-hidden="true">2</span></span><span class="flatpickr-day nextMonthDay hidden flatpickr-disabled fri" aria-label="20211203">3<span class="date" aria-hidden="true">3</span></span><span class="flatpickr-day nextMonthDay hidden flatpickr-disabled sat" aria-label="20211204">4<span class="date" aria-hidden="true">4</span></span><div class="yearMonthContainer"><span class="year">2021</span><span class="sepherator">.</span><span class="month">11</span></div></div><div class="dayContainer"><span class="flatpickr-day prevMonthDay hidden flatpickr-disabled sun" aria-label="20211128">28<span class="date" aria-hidden="true">28</span></span><span class="flatpickr-day prevMonthDay hidden flatpickr-disabled mon" aria-label="20211129">29<span class="date" aria-hidden="true">29</span></span><span class="flatpickr-day prevMonthDay hidden flatpickr-disabled tue" aria-label="20211130">30<span class="date" aria-hidden="true">30</span></span><span class="flatpickr-day flatpickr-disabled wed" aria-label="20211201">1<span class="date" aria-hidden="true">1</span></span><span class="flatpickr-day flatpickr-disabled thu" aria-label="20211202">2<span class="date" aria-hidden="true">2</span></span><span class="flatpickr-day flatpickr-disabled fri" aria-label="20211203">3<span class="date" aria-hidden="true">3</span></span><span class="flatpickr-day flatpickr-disabled sat" aria-label="20211204">4<span class="date" aria-hidden="true">4</span></span><span class="flatpickr-day flatpickr-disabled sun" aria-label="20211205">5<span class="date" aria-hidden="true">5</span></span><span class="flatpickr-day flatpickr-disabled mon" aria-label="20211206">6<span class="date" aria-hidden="true">6</span></span><span class="flatpickr-day flatpickr-disabled tue" aria-label="20211207">7<span class="date" aria-hidden="true">7</span></span><span class="flatpickr-day flatpickr-disabled wed" aria-label="20211208">8<span class="date" aria-hidden="true">8</span></span><span class="flatpickr-day flatpickr-disabled thu" aria-label="20211209">9<span class="date" aria-hidden="true">9</span></span><span class="flatpickr-day flatpickr-disabled fri" aria-label="20211210">10<span class="date" aria-hidden="true">10</span></span><span class="flatpickr-day flatpickr-disabled sat" aria-label="20211211">11<span class="date" aria-hidden="true">11</span></span><span class="flatpickr-day flatpickr-disabled sun" aria-label="20211212">12<span class="date" aria-hidden="true">12</span></span><span class="flatpickr-day flatpickr-disabled mon" aria-label="20211213">13<span class="date" aria-hidden="true">13</span></span><span class="flatpickr-day flatpickr-disabled tue" aria-label="20211214">14<span class="date" aria-hidden="true">14</span></span><span class="flatpickr-day flatpickr-disabled wed" aria-label="20211215">15<span class="date" aria-hidden="true">15</span></span><span class="flatpickr-day flatpickr-disabled thu" aria-label="20211216">16<span class="date" aria-hidden="true">16</span></span><span class="flatpickr-day flatpickr-disabled fri" aria-label="20211217">17<span class="date" aria-hidden="true">17</span></span><span class="flatpickr-day flatpickr-disabled sat" aria-label="20211218">18<span class="date" aria-hidden="true">18</span></span><span class="flatpickr-day flatpickr-disabled sun" aria-label="20211219">19<span class="date" aria-hidden="true">19</span></span><span class="flatpickr-day flatpickr-disabled mon" aria-label="20211220">20<span class="date" aria-hidden="true">20</span></span><span class="flatpickr-day flatpickr-disabled tue" aria-label="20211221">21<span class="date" aria-hidden="true">21</span></span><span class="flatpickr-day flatpickr-disabled wed" aria-label="20211222">22<span class="date" aria-hidden="true">22</span></span><span class="flatpickr-day flatpickr-disabled thu" aria-label="20211223">23<span class="date" aria-hidden="true">23</span></span><span class="flatpickr-day flatpickr-disabled fri" aria-label="20211224">24<span class="date" aria-hidden="true">24</span></span><span class="flatpickr-day flatpickr-disabled sat" aria-label="20211225">25<span class="date" aria-hidden="true">25</span></span><span class="flatpickr-day flatpickr-disabled sun" aria-label="20211226">26<span class="date" aria-hidden="true">26</span></span><span class="flatpickr-day flatpickr-disabled mon" aria-label="20211227">27<span class="date" aria-hidden="true">27</span></span><span class="flatpickr-day flatpickr-disabled tue" aria-label="20211228">28<span class="date" aria-hidden="true">28</span></span><span class="flatpickr-day flatpickr-disabled wed" aria-label="20211229">29<span class="date" aria-hidden="true">29</span></span><span class="flatpickr-day flatpickr-disabled thu" aria-label="20211230">30<span class="date" aria-hidden="true">30</span></span><span class="flatpickr-day flatpickr-disabled fri" aria-label="20211231">31<span class="date" aria-hidden="true">31</span></span><span class="flatpickr-day nextMonthDay hidden flatpickr-disabled sat" aria-label="20220101">1<span class="date" aria-hidden="true">1</span></span><div class="yearMonthContainer"><span class="year">2021</span><span class="sepherator">.</span><span class="month">12</span></div></div></div></div></div></div></div>
+			</div>
+			<div class="booking-button">
+				<button type="button" class="button button--primary button--active" data-select-date="#selectBookingDate">
+					<span class="button__text">Select</span>
+				</button>
+			</div>
+		</div>
+		<a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+	</div>
+	<!-- // datepicker -->
+
+	
+
+	<script id="noDataTemplate" type="text/x-handlebars-template">
+		<div class="finish-item-wrap">
+			<div class="finish-item">
+				<div class="finish-item__img"><img src="https://dstatic.jejuair.net/hpgg/resources/images/icon/icon-result-none.png" alt=""></div>
+				<p class="finish-item__title">No search results.</p>
+			</div>
+		</div>
+	</script>
+
+	<script id="searchDataTemplate" type="text/x-handlebars-template">
+		<div class="section-wrap">
+			<div class="search-result">
+				<div class="search-result__header">
+					<span class="search-result__total search-result__total--right">Total <strong>{{data.mtxCt}}</strong>results</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="pc-flex1 pc-flex--boarding1 boarding-list-pc pc-10">
+			{{#each data.mtxTt}}
+				<div class="boarding-wrap">
+					<div class="boarding-box">
+						<div class="boarding">
+							<div class="boarding__header">
+								<div class="boarding__header--item1">
+									<span>Booking Ref.</span> : <span>{{pnrNo}}</span>
+								</div>
+							</div>
+							<div class="boarding__info-wrap">
+								<div class="boarding__info--top">
+									<div class="boarding__info--top-item1"><span>Passenger name:{{paxname}}</span></div>
+									<div class="boarding__info--top-item2">
+										<div class="boarding__info-date">{{fltdateFmt}}</div>
+									</div>
+								</div>
+								<div class="boarding__info">
+									<div class="boarding__info-before">
+										<div class="boarding__info-title">{{depstnName}}</div>
+										<div class="boarding__info-text">{{depstn}}</div>
+									</div>
+									<div aria-label="one-way" class="icon-mark one-way"></div>
+									<div class="boarding__info-after">
+										<div class="boarding__info-title">{{arrstnName}}</div>
+										<div class="boarding__info-text">{{arrstn}}</div>
+									</div>
+								</div>
+								<div class="gray-box-term price">
+									<span class="gray-box__text">{{dataFormat fareAmount}}KRW({{dataFormat point}}P Issued)</span>
+								</div>
+								<div class="button-wrap3-row download">
+									<div class="button-wrap">
+										<button type="button" class="button" data-action="pdfDownload" data-param-paxname="{{paxname}}" data-param-pnrno="{{pnrNo}}" data-param-depstn="{{depstn}}" data-param-depstnname="{{depstnName}}" data-param-arrstn="{{arrstn}}" data-param-arrstnname="{{arrstnName}}" data-param-fltdate="{{fltdate}}"><span class="ico-down">PDF</span></button>
+										<button type="button" class="button" data-action="pngDownload" data-param-paxname="{{paxname}}" data-param-pnrno="{{pnrNo}}" data-param-depstn="{{depstn}}" data-param-depstnname="{{depstnName}}" data-param-arrstn="{{arrstn}}" data-param-arrstnname="{{arrstnName}}" data-param-fltdate="{{fltdate}}"><span class="ico-down">PNG</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--//boarding-->
+						<div class="boarding_end"></div>
+					</div>
+					<!--// boarding-box-->
+				</div>
+				<!--// boarding-wrap-->
+			{{/each}}
+		</div>
+	</script>
+
+	<form name="frmFileDownload" id="frmFileDownload">
+		<input type="hidden" name="paxname" id="paxname" value="">
+		<input type="hidden" name="pnrNo" id="pnrNo" value="">
+		<input type="hidden" name="depstn" id="depstn" value="">
+		<input type="hidden" name="depstnName" id="depstnName" value="">
+		<input type="hidden" name="arrstn" id="arrstn" value="">
+		<input type="hidden" name="arrstnName" id="arrstnName" value="">
+		<input type="hidden" name="fltdate" id="fltdate" value="">
+	</form>
+				</main>
+      </div>
+    </div>
+  </div>
+  <!--//#body-->
+
+  <!-- FOOTER -->
+  <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+  <div class="footer pc-only">
+    <!-- pc -->
+    <footer class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">제주항공 소개</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">투자정보</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">채용안내</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">여객운송약관</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">홈페이지이용약관</a>
+        </div>
+        <div class="footer__top-item footer__top-item--privacy">
+          <a href="#" class="footer__top-link">개인정보처리방침</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">사이트맵</a>
+        </div>
+
+        <div class="footer__top-item footer__top-item--family">
+          <div class="family-wrap" data-element="toggle"
+            data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+            <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+            <div class="family-list" data-element="toggle__panel">
+              <a href="#" class="family-link">㈜애경산업</a>
+              <a href="#" class="family-link">㈜에이텍</a>
+              <a href="#" class="family-link">애경S.T</a>
+              <a href="#" class="family-link">에이케이아이에스㈜</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer__spacer">
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__logo">
+          <img src="../../assets/images/upload/logo_jeju_gray.png" alt="JEJU air">
+        </a>
+        <div class="footer__bottom-contents">
+          <div class="footer__bottom-info">
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 서비스 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공위험물안내</a>
+            </div>
+          </div>
+          <div class="footer__bottom-recommand">
+            <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+            <div class="recommand-list">
+              <div class="recommand-item">
+                <a href="#" class="link">최저 운임 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">서울 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">제주 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">부산 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">무안 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">청부 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">대구 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">광주 출발 항공</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-util">
+            <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png" alt="VALUE ALLIANCE"></a>
+            <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
+            <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt=""> Android</a>
+          </div>
+          <p class="footer__bottom-address"><span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br>
+            제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)</p>
+          <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- //pc -->
+  </div>
+  <!-- //FOOTER -->
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

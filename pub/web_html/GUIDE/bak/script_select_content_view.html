@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Component_Accordion_Toggle</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" href="../../../index/css/script_guide.css">
+
+  <!-- syntaxHighlighter -->
+  <script src="../../../index/js/plugins/syntaxhighlighter/scripts/shCore.js"></script>
+  <script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushCss.js"></script>
+  <script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
+  <script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+  <script>
+  //<![CDATA[
+  SyntaxHighlighter.defaults['toolbar'] = false; 
+  SyntaxHighlighter.all()
+  //]]> 
+  </script>
+</head>
+<body>
+<div class="wrap">
+  <div class="content" id="content">
+    <div id="main" class="main">
+      <div class="list-product show" data-chip-show=0>
+        <div class="sub-section">
+          <p class="text__default">발권 수수료 없이 매일 23시 54분까지 항공권을 구입하실 수 있습니다.</p>
+          
+          <div class="container--small pc-30">
+            <div class="select-wrap select-wrap--line select-wrap--top pc-w350 select-tab">
+              <select title="예매방법 선택" class="select-wrap__select sel_tab">
+                <option value="1-1">신용카드</option>
+                <option value="1-2">간편결제</option>
+                <option value="1-3">실시간 계좌 이체</option>
+                <option value="1-4">JJPAY</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- 신용카드 -->
+        <div class="sel_tab_cont show" data-select-tab-content="1-1" first>
+          <div class="section-wrap">
+            <div class="list-wrap">
+              <div class="section-title">신용/체크카드</div>
+              <ul class="list-guide">
+                <li class="list-guide__item">은행에서 발행된 체크카드는 사용이 가능합니다.(한국 기준)</li>
+                <li class="list-guide__item">해외카드 결제의 경우 VISA、MASTER、JCB、AMEX 이용이 가능합니다.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-wrap">
+            <div class="list-wrap">
+              <div class="section-title">법인카드</div>
+              <ul class="list-guide">
+                <li class="list-guide__item">기명식(개인성명 표기) 법인카드 중 비씨, 국민, 외환, 삼성, 하나, 아멕스, 한미카드는 주민등록번호로
+                  인증절차를 거치시고, 그 외의 경우에는
+                  사업자 등록 번호로 인증 받으시기 바랍니다.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-wrap">
+            <div class="list-wrap">
+              <div class="section-title">직불/선불/기프트카드</div>
+              <ul class="list-guide">
+                <li class="list-guide__item">직불카드는 신용카드 인증이 불가하며, 선불/기프트카드는 부분 환불 불가로 결제가 불가합니다.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-wrap">
+            <div class="section-title">신용카드 인증 서비스 안내</div>
+            <div class="section-sub-txt">홈페이지에서 항공권을 구매하시는 경우 안전한 전자상거래를 위하여 안전결제(ISP), 안심클릭(MPI)을 통한 신용카드 인증 서비스를 실시하고 있습니다.</div>
+            
+            <div class="sub-section">
+              <div class="section-title">안전결제(ISP)</div>
+              <div class="section-sub-txt">BC카드(하나BC카드 포함), KB국민카드, 우리카드, 저축은행카드</div>
+              <div class="cards cards--bullet">
+                <div class="cards__list">
+                  <div class="cards__item">
+                    <div class="cards__title">개인카드 (일반/체크)</div>
+                    <div class="card">
+                      <ul class="card__list">
+                        <li class="card__item">
+                          <div class="card__title">카드사</div>
+                          <span class="card__data">
+                            <span class="card__value">KB국민, BC</span>
+                          </span>
+                        </li>
+                        <li class="card__item">
+                          <div class="card__title">결제방법</div>
+                          <div class="card__data">
+                            <div class="card__key">30만원 미만</div>
+                            <div class="card__value">안전결제</div>
+                          </div>
+                          <div class="card__data">
+                            <div class="card__key">30만원 이상</div>
+                            <div class="card__value">안전결제 + 공인인증서</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cards__item">
+                    <div class="cards__title">법인카드 (일반/체크)</div>
+                    <div class="card">
+                      <ul class="card__list">
+                        <li class="card__item">
+                          <div class="card__title">카드사</div>
+                          <span class="card__data">
+                            <span class="card__value">KB국민 ,BC</span>
+                          </span>
+                        </li>
+                        <li class="card__item">
+                          <div class="card__title">개별 카드 결제방법</div>
+                          <span class="card__data">
+                            <span class="card__key">30만원 미만</span>
+                            <span class="card__value">안전결제</span>
+                          </span>
+                          <span class="card__data">
+                            <span class="card__key">30만원 이상</span>
+                            <span class="card__value">안전결제 + 공인인증서</span>
+                          </span>
+                        </li>
+                        <li class="card__item">
+                          <div class="card__title">공용 카드 결제방법</div>
+                          <span class="card__data">
+                            <span class="card__key">30만원 미만</span>
+                            <span class="card__value">안전결제</span>
+                          </span>
+                          <span class="card__data">
+                            <span class="card__key">30만원 이상</span>
+                            <span class="card__value">안전결제</span>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sub-section">
+              <div class="section-title">안심클릭(MPI)</div>
+              <div class="section-sub-txt">그 외 모든 신용카드</div>
+              
+              <div class="cards cards--bullet">
+                <div class="cards__list">
+                  <div class="cards__item">
+                    <div class="cards__title">개인카드 (일반/체크)</div>
+                    <div class="card">
+                      <ul class="card__list">
+                        <li class="card__item">
+                          <div class="card__title">카드사</div>
+                          <span class="card__data">
+                            <span class="card__value">삼성, 신한, 현대, 롯데, 하나</span>
+                          </span>
+                        </li>
+                        <li class="card__item">
+                          <div class="card__title">결제방법</div>
+                          <span class="card__data">
+                            <span class="card__key">30만원 미만</span>
+                            <span class="card__value">안심클릭 또는 공인인증서</span>
+                          </span>
+                          <span class="card__data">
+                            <span class="card__key">30만원 이상</span>
+                            <span class="card__value">공인인증서 필수</span>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cards__item">
+                    <div class="cards__title">법인카드 (일반/체크)</div>
+                    <div class="cards__group">
+                      <div class="card">
+                        <ul class="card__list">
+                          <li class="card__item">
+                            <div class="card__title">카드사</div>
+                            <span class="card__data">
+                              <span class="card__value">삼성, 신한, 현대, 롯데, 하나</span>
+                            </span>
+                          </li>
+                          <li class="card__item">
+                            <div class="card__title">개별 카드 결제방법</div>
+                            <span class="card__data">
+                              <span class="card__key">30만원 미만</span>
+                              <span class="card__value">안심클릭 또는 공인인증서</span>
+                            </span>
+                            <span class="card__data">
+                              <span class="card__key">30만원 이상</span>
+                              <span class="card__value">공인인증서 필수</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card">
+                        <ul class="card__list">
+                          <li class="card__item">
+                            <div class="card__title">카드사</div>
+                            <span class="card__data">
+                              <span class="card__value">삼성, 신한, 하나, 롯데</span>
+                            </span>
+                          </li>
+                          <li class="card__item">
+                            <div class="card__title">공용 카드 결제방법</div>
+                            <span class="card__data">
+                              <span class="card__key">30만원 미만</span>
+                              <span class="card__value">안심클릭</span>
+                            </span>
+                            <span class="card__data">
+                              <span class="card__key">30만원 이상</span>
+                              <span class="card__value">안심클릭 또는 공인인증서</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!--//sel_tab_cont-->
+        <!-- // 신용카드 -->
+
+        <!-- 간편결제 -->
+        <div class="sel_tab_cont hide" data-select-tab-content="1-2">
+          <div class="section-wrap">
+            <div class="list-wrap">
+              <div class="section-title">네이버 페이 결제안내</div>
+              <ul class="list-guide">
+                <li class="list-guide__item">국내 발행 카드만 해당하며, 할부 무이자 제휴 카드는 네이버페이 규정에 따릅니다.</li>
+                <li class="list-guide__item">항공권 취소시 카드 환불의 경우 카드사의 사정에 따라 7~10일 정도 소요될 수 있습니다.</li>
+              </ul>
+              <ul class="list-guide list-guide--asterisk">
+                <li class="list-guide__item">
+                  결제 문의 : 네이버페이 고객센터 (1588-3819. helpcustomer@naver.com)
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-wrap">
+            <div class="list-wrap">
+              <div class="section-title">네이버페이 포인트 적립 시점</div>
+              <ul class="list-guide">
+                <li class="list-guide__item">고객의 탑승 시간이 오후 2시 이전인 경우 탑승일 +2일 뒤에 네이버페이 포인트 적립 완료</li>
+                <li class="list-guide__item">고객의 탑승 시간이 오후 2시 이후인 경우 탑승일 +3일 뒤에 네이버페이 포인트 적립 완료</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-wrap">
+            <div class="list-wrap">
+              <div class="section-title">삼성페이 결제 안내</div>
+              <ul class="list-guide">
+                <li class="list-guide__item">국내 발행 카드만 해당하며, 할부 무이자 및 제휴 카드는 삼성페이 규정에 따릅니다.</li>
+                <li class="list-guide__item">항공권 취소시 카드 환불의 경우 카드사의 사정에 따라 7~10일 정도 소요될 수 있습니다.</li>
+              </ul>
+              <ul class="list-guide list-guide--asterisk">
+                <li class="list-guide__item">
+                  결제 문의 : 삼성페이 고객센터 (1588-7456. 평일 9시 ~ 18시 / 토요일 9시 ~ 13시 / 공휴일 휴무)
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-wrap">
+            <div class="list-wrap">
+              <div class="section-title">카카오페이 결제 안내</div>
+              <ul class="list-guide">
+                <li class="list-guide__item">국내 발행 카드만 해당하며, 할부 무이자 및 제휴 카드는 카카오페이 규정에 따릅니다.</li>
+                <li class="list-guide__item">항공권 취소시 카드 환불의 경우 카드사의 사정에 따라 7~10일 정도 소요될 수 있습니다.</li>
+                <li class="list-guide__item">IOS의 경우, 30만원 이상 결제 시 카카오페이에서 제공하는 고객 비밀번호 설정 후 결제할 수 있습니다</li>
+              </ul>
+              <ul class="list-guide list-guide--asterisk">
+                <li class="list-guide__item">
+                  결제 문의 : 카카오페이 고객센터 (1644-7405. 운영시간 : 한국시간 평일 09:00~18:00)
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-wrap">
+            <div class="list-wrap">
+              <div class="section-title">Paypal 결제안내</div>
+              <ul class="list-guide">
+                <li class="list-guide__item">한국에 등록된 PayPal 계정 간에는 결제대금을 보내거나 받는 것이 허용되지 않습니다.</li>
+                <li class="list-guide__item">PayPal 한국 계정은 해외 결제대금을 받거나, 해외 판매자로부터 상품이나 서비스를 구매하고 이를 결제하는
+                  데에만 사용할 수 있습니다.</li>
+                <li class="list-guide__item">Paypal로 결제하신 항공권 예약/구간 변경 시 반드시 기존 항공권을 환불 후 재 결제하셔야합니다.</li>
+                <li class="list-guide__item">Paypal로 결제하신 항공권의 환불 시 수수료가 발생됩니다.</li>
+                <li class="list-guide__item">고객님의 계정내 신용카드 결제 후 환불 시 카드사의 사정에 따라 7~10일 정도 소요 될 수 있습니다.</li>
+                <li class="list-guide__item">고객님의 계정내 Balance 결제 후 환불 시 2~3일 정도 소요될 수 있습니다.</li>
+              </ul>
+              <ul class="list-guide list-guide--asterisk">
+                <li class="list-guide__item">
+                  고객센터 문의 : Paypal 계정내 Contact Customer Service 에서 확인 가능
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--//sel_tab_cont-->
+        <!-- // 간편결제 -->
+
+        <!-- 실시간 계좌이체 -->
+        <div class="sel_tab_cont section-wrap hide" data-select-tab-content="1-3">
+          <div class="section-title">실시간 계좌이체 구매</div>
+          <div class="section-sub-txt"><span class="text--color-gray">(이용가능시간 : 01:30 ~ 23:30)</span></div>
+
+          <div class="list-wrap sub-section">
+              <ul class="list-guide">
+              <li class="list-guide__item">고객님의 은행계좌에서 실시간으로 항공권 구매금액을 이체하는 서비스 입니다.</li>
+              <li class="list-guide__item"><span class="point">회원 로그인 후에만 이용 가능합니다.</span></li>
+              <li class="list-guide__item">제주항공의 실시간 계좌이체 서비스는 금융결제원의 Bank Pay 서비스를 이용하고 있으며 기존 은행/증권사 등의
+                  공인인증서를 소지하고 있는 모든 고객
+                  분은 서비스를 이용하실 수 있습니다.</li>
+              <li class="list-guide__item">단, 실시간 예약상황에 따라 운임이 변동되므로 주의하여 주시기 바랍니다.</li>
+              <li class="list-guide__item">수수료는 별도로 발생하지 않으며, 계좌당 1일 한도 금액은 1천만원입니다. (단, 외환은행의 경우 은행자체
+                  정책으로 인해 1회 50만원, 1일
+                  100만원을 초과할 수 없습니다.)</li>
+              <li class="list-guide__item">실시간 계좌이체의 서비스 이용 가능시간은 각 금융기관의 사정에 따라 다소 변동될 수 있습니다.</li>
+              <li class="list-guide__item"><span class="point">매일 23:30 ~ 익일 01:30 에는 시스템 작업으로 인하여 계좌이체
+                  서비스가 일시적으로
+                  중단됩니다.</span></li>
+              </ul>
+          </div>
+        </div>
+        <!--//sel_tab_cont-->
+        <!-- // 실시간 계좌이체 -->
+
+        <!-- JJPAY -->
+        <div class="sel_tab_cont section-wrap hide" data-select-tab-content="1-4">
+          jjpay 내용
+        </div>
+        <!--//sel_tab_cont-->
+        <!-- // JJPAY -->
+      </div>
+
+      <ul class="list-guide">
+        <li>plugin.js</li>
+      </ul>
+
+      <div class="script-code">
+        <pre class="brush:html;">
+          &lt;script&gt;
+          //셀렉트 탭 plugin.js
+          $('.select-tab').selectTab();
+                
+        </pre> 
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+
+<script>
+  //셀렉트 탭 plugin.js
+  $('.select-tab').selectTab();
+</script>
+</body>
+</html>

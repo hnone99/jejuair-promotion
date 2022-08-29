@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Component_Accordion_Toggle</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" href="../../../index/css/script_guide.css">
+
+  <!-- syntaxHighlighter -->
+  <script src="../../../index/js/plugins/syntaxhighlighter/scripts/shCore.js"></script>
+  <script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushCss.js"></script>
+  <script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
+  <script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+  <script>
+  //<![CDATA[
+  SyntaxHighlighter.defaults['toolbar'] = false; 
+  SyntaxHighlighter.all()
+  //]]> 
+  </script>
+</head>
+<body>
+<div class="wrap">
+  <div class="content" id="content">
+    <div id="main" class="main">
+      <div class="select-chips full help swiper-container">
+        <ul class="chips-group swiper-wrapper">
+          <li class="chip swiper-slide">
+            <button type="button" class="chip-btn checked" data-index=0>
+              <span class="txt">제주항공 온라인(모바일, 홈페이지)구매</span>
+            </button>
+          </li>
+          <li class="chip swiper-slide">
+            <button type="button" class="chip-btn" data-index=1>
+              <span class="txt">공항 지점, 고객센터 구매</span>
+            </button>
+          </li>
+          <li class="chip swiper-slide">
+            <button type="button" class="chip-btn" data-index=2>
+              <span class="txt">여행사 구매</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sub-section">
+        <div class="list-product show" data-chip-show=0>
+          <div class="list-wrap">
+            <div class="section-title">온라인 환불 안내</div>
+            <ul class="list-guide list-guide--small">
+              <li class="list-guide__item">홈페이지에서 환불을 신청할 수 있습니다.</li>
+              <li class="list-guide__item">결제 당일(온라인 구매 시점~23:54까지, 한국시간 기준)에 예약 취소 시 위약금이 면제됩니다.</li>
+              <li class="list-guide__item"><strong>왕복/다구간 항공권 예매의 경우, 처음 구간 이용 후 남은 구간에 대한 항공권은 홈페이지에서 취소할 수
+                  없으므로</strong> 고객센터로 문의해 주세요. </li>
+              <li class="list-guide__item"><strong>실시간 계좌이체로 구매한 항공권은 구매일로부터 최장 180일 이내에만 인터넷에서 환불할 수 있습니다.
+                </strong><br>유효기간이 지난 항공권은 제주항공 고객센터를 통해 환불을 신청해 주세요.</li>
+              <li class="list-guide__item">JJ PAY 의 경우 계좌 환불가능 기간은 1년 입니다.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="list-product" data-chip-show=1>
+          <div class="list-wrap">
+            <div class="section-title">공항 지점, 고객센터 환불 안내</div>
+            <ul class="list-guide list-guide--small">
+              <li class="list-guide__item">지점 및 고객센터 운영시간 내에 환불 신청을 할 수 있습니다. </li>
+              <li class="list-guide__item">환불금은 항공권의 명의인 또는 위임장을 받은 대리인에게만 지급됩니다.</li>
+              <li class="list-guide__item">지점에 방문하여 환불금을 직접 현금으로 수령할 수 있습니다. </li>
+            </ul>
+          </div>
+          <div class="list-wrap">
+            <div class="section-title">환불 신청 시 준비서류</div>
+            <div class="section-sub-title">지점 방문 환불신청</div>
+            <ul class="list-guide list-guide--small">
+              <li class="list-guide__item">e-티켓 확인증(e-Ticket Itinerary & Receipt)</li>
+              <li class="list-guide__item">결제에 사용한 신용카드</li>
+              <li class="list-guide__item">사진이 부착된 승객의 신분증</li>
+            </ul>
+          </div>
+          <div class="list-wrap">
+            <div class="section-sub-title">대리인 신청</div>
+            <ul class="list-guide list-guide--small">
+              <li class="list-guide__item">승객 본인이 직접 작성한 위임장</li>
+              <li class="list-guide__item">대리인의 신분증
+                <div class="button-wrap">
+                  <button type="button" class="button button--small"><span class="button__text button__icon">환불
+                      위임장</span></button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="list-product" data-chip-show=2>
+          <div class="list-wrap">
+            <div class="section-title">여행사 환불 안내</div>
+            <ul class="list-guide list-guide--small">
+              <li class="list-guide__item">여행사에서 구매하신 항공권은 해당 여행사로 환불을 신청하셔야 합니다.</li>
+              <li class="list-guide__item">여행사에서 구매한 항공권을 환불할 경우, 여행사의 위약금을 공제한 금액이 환불될 수도 있습니다. </li>
+            </ul>
+          </div>
+          <div class="list-wrap">
+            <div class="section-title">환불금 수령 시</div>
+            <div class="section-sub-title">신용카드 환불 유의사항</div>
+            <ul class="list-guide list-guide--small">
+              <li class="list-guide__item">신용카드로 구매한 항공권은 환불 신청 후 일정 기간(최소 3영업일~4주)이 지난 후에 카드사로 접수되므로, 해당 시점 이후
+                카드사로 문의해 주세요.</li>
+              <li class="list-guide__item">신용카드로 구매한 항공권은 환불금을 현금으로 직접 수령할 수는 없습니다.  </li>
+              <li class="list-guide__item">구매 시 사용한 신용카드를 해지했다 해도 카드사를 통해 이전에 사용하던 카드 결제계좌로 환불금이 입금됩니다. </li>
+              <li class="list-guide__item">부득이 환불금을 현금으로 직접 받기를 원하는 경우, 카드사 또는 거래 은행에서 ’가맹점(제주항공)이 현금으로 환불해도
+                무방하다’는 내용이 기재된 카드 해지 확인 서류를 발급받은 후 제출해 주세요.</li>
+            </ul>
+          </div>
+          <div class="list-wrap">
+            <div class="section-sub-title">환불금 지급통화</div>
+            <ul class="list-guide list-guide--small">
+              <li class="list-guide__item">항공권 구매 시 처음 결제한 통화나 환불금을 지급하는 국가의 통화로 환불받을 수 있습니다.</li>
+              <li class="list-guide__item">한국에서 환불 신청 시 외화(USD, JPY, THB, HKD)로 구입한 항공권도 한국 원화로 환불금을 지급합니다.(환불
+                신청 시의 환율 적용) </li>
+            </ul>
+          </div>
+          <div class="list-wrap">
+            <div class="section-sub-title">취소 위약금 규정</div>
+            <ul class="list-guide list-guide--small">
+              <li class="list-guide__item">구매하신 항공권에 적용된 운임 종류에 따라 취소위약금이 따로 부과됩니다.</li>
+            </ul>
+          </div>
+          <div class="button-wrap">
+            <button type="button" class="button button--small"><span class="button__text">국제선 취소 위약금
+                안내</span></button>
+            <button type="button" class="button button--small"><span class="button__text">국내선 취소 위약금
+                안내</span></button>
+          </div>
+        </div>
+      </div>
+
+      <ul class="list-guide">
+        <li>plugin.js</li>
+      </ul>
+
+      <div class="script-code">
+        <pre class="brush:html;">
+          &lt;script&gt;
+          // 칩셀렉트 plugin.js
+          $('.select-chips').selectChips()
+        </pre> 
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+
+<script>
+  // 칩셀렉트 plugin.js
+  $('.select-chips').selectChips()
+</script>
+</body>
+</html>

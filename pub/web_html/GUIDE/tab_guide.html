@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" href="../../../index/css/style-guide.css">
+
+
+
+</head>
+
+<body class="style_guide tab">
+  <div class="wrap guide_wrap">
+
+    <h1 class="guide_main_title">Tab</h1>
+    <div class="guide_section">
+      <!-- Search Box Guide 설명 -->
+      <div class="guide_infor">
+        <p class="guide_infor_title">Tab Guide</p>
+        <p class="guide_infor_text">- 하나의 페이지에 여러가지 탭이 사용될 때,</p>
+        <p class="guide_infor_text">1) 가장 상위에는 한줄 노출형 탭을 사용 (단, 메뉴가 4개 이하일 때) 메뉴가 4개를 초과하면 다량 노출형 탭 사용</p>
+        <p class="guide_infor_text">2) 한줄 노출형 탭 or 다량 노출형탭 슬라이드형 탭 아래로 슬라이드형 탭</p>
+        <p class="guide_infor_text">3) 라인형 탭 사용 (    탭명   ㅣ   탭명   ㅣ   탭명   )</p>
+        <p class="guide_infor_text">** 항공권 예매는 예외케이스로 라인형 탭 사용</p>
+      </div>
+      <!-- // Search Box Guide 설명 -->
+
+      <!-- 한줄 노출형 탭 -->
+      <div class="guide_infor">
+        <p class="guide_sub_title">한줄 노출형 탭</p>
+        <p class="guide_infor_text">메뉴가 전체 노출되어야 하며, 탭명이 간결하고, 탭 수가 많지 않을때(최대 4단) / 팝업 내 탭이 사용될 경우</p>
+      </div>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">높이값 - 50px<br>활성화 : 폰트색상 - #333 / 하단바 - #333<br>비활성화 : 폰트색상 - #888 / 하단바 - #ddd</td>
+              <td class="table-vertical__td"></td>
+            </tr>
+            <tr>
+              <td class="table-vertical__td">폰트크기 - 16px</td>
+              <td class="table-vertical__td">폰트크기 - 14px</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 한줄 노출형 탭 영역 -->
+                <div class="pc-30">
+                  <!-- 2단 -->
+                  <div data-element="tab" class="tab tab--default mb40">
+                    <div class="tab__buttons">
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor is-active">Tab1</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab2</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // 2단 -->
+                  <!-- 3단 -->
+                  <div data-element="tab" class="tab tab--default mb40">
+                    <div class="tab__buttons">
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor is-active">Tab1</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab2</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab3</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // 3단 -->
+                  <!-- 4단_컨텐츠포함 -->
+                  <div data-element="tab" class="tab tab--default">
+                    <div class="tab__buttons">
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor is-active">Tab1</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab2</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab3</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab4</button>
+                      </div>
+                    </div>
+                    <div data-element="tab__panel" class="tab__panel">Tab1 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab2 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab3 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab4 Contets</div>             
+                  </div>            
+                  <!-- 4단_컨텐츠포함 -->
+                </div>
+                <!-- // 한줄 노출형 탭 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../FT/FT_2_41.html" target="_blank">FT_2_41</a> : 푸터메뉴>투자정보>(탭)공지사항<br>
+        <a href="../NB/NB_1_11.html" target="_blank">NB_1_11</a> : 예약안내>(탭)예매>(탭)제주항공온라인(모바일,홈페이지구매<br>
+        <a href="../NB/NB_1_21.html" target="_blank">NB_1_21</a> : 예약안내>(탭)예매>(탭)제주항공온라인(모바일,홈페이지구매<br>
+      </div>
+      <!-- // 한줄 노출형 탭 -->
+
+      <!-- 슬라이드형 탭 -->
+      <div class="guide_infor">
+        <p class="guide_sub_title">슬라이드형 탭</p>
+        <p class="guide_infor_text">메뉴가 많지만 한꺼번에 노출이 되지 않아도 될때 사용</p>
+      </div>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">높이값 - 32px<br>활성화 : 폰트색상 - #fff / 배경색 - #ff5000<br>비활성화 : 폰트색상 - #888 / 배경색 - #f2f2f2<br>폰트크기 - 14px</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 슬라이드형 탭 영역 -->
+                <div class="select-chips full help swiper-container">
+                  <ul class="chips-group swiper-wrapper">
+                    <li class="chip swiper-slide">
+                      <button type="button" class="chip-btn checked" data-index=0>
+                        <span class="txt">RoundChip1</span>
+                      </button>
+                    </li>
+                    <li class="chip swiper-slide">
+                      <button type="button" class="chip-btn" data-index=2>
+                        <span class="txt">RoundChip2</span>
+                      </button>
+                    </li>
+                    <li class="chip swiper-slide">
+                      <button type="button" class="chip-btn" data-index=3>
+                        <span class="txt">RoundChip3</span>
+                      </button>
+                    </li>
+                    <li class="chip swiper-slide">
+                      <button type="button" class="chip-btn" data-index=4>
+                        <span class="txt">RoundChip4</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <!-- // 슬라이드형 탭 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NB/NB_1_11.html" target="_blank">NB_1_11</a> : 예약안내>(탭)예매>(탭)제주항공온라인(모바일,홈페이지구매<br>
+        <a href="../NB/NB_1_21.html" target="_blank">NB_1_21</a> : 예약안내>(탭)예매>(탭)제주항공온라인(모바일,홈페이지구매
+      </div>
+      <!-- // 슬라이드형 탭 -->
+
+      <!-- 슬라이드형 탭_컨텐츠  -->
+      <div class="guide_infor">
+        <p class="guide_sub_title">슬라이드형 탭_컨텐츠</p>
+        <p class="guide_infor_text">메뉴가 많지만 한꺼번에 노출이 되지 않아도 될때 사용</p>
+        <p class="guide_infor_text">탭 + 컨텐츠 영역 노출</p>
+      </div>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">높이값 - 32px<br>활성화 : 폰트색상 - #fff / 배경색 - #ff5000<br>비활성화 : 폰트색상 - #888 / 배경색 - #f2f2f2<br>폰트크기 - 14px</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 슬라이드형 탭_컨텐츠 영역 -->
+                <div class="select-chips full swiper-container">
+                  <ul class="chips-group swiper-wrapper">
+                    <li class="chip swiper-slide">
+                      <button type="button" class="chip-btn checked" data-index=0>
+                        <span class="txt">전체</span>
+                      </button>
+                    </li>
+                    <li class="chip swiper-slide">
+                      <button type="button" class="chip-btn" data-index=1>
+                        <span class="txt">호텔/숙박</span>
+                      </button>
+                    </li>
+                    <li class="chip swiper-slide">
+                      <button type="button" class="chip-btn" data-index=2>
+                        <span class="txt">렌터카</span>
+                      </button>
+                    </li>
+                    <li class="chip swiper-slide">
+                      <button type="button" class="chip-btn" data-index=3>
+                        <span class="txt">WI-FI</span>
+                      </button>
+                    </li>
+                    <li class="chip swiper-slide">
+                      <button type="button" class="chip-btn" data-index=4>
+                        <span class="txt">공항현장 할인</span>
+                      </button>
+                    </li>
+                    <li class="chip swiper-slide">
+                      <button type="button" class="chip-btn" data-index=5>
+                        <span class="txt">식사</span>
+                      </button>
+                    </li>
+                    <li class="chip swiper-slide">
+                      <button type="button" class="chip-btn" data-index=6>
+                        <span class="txt">입장권</span>
+                      </button>
+                    </li>
+                    <li class="chip swiper-slide">
+                      <button type="button" class="chip-btn" data-index=6>
+                        <span class="txt">기타편의</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="show" data-chip-show=0>전체</div>
+                <div class="" data-chip-show=1>탭 내용 2 : 호텔/숙박 </div>
+                <div class="" data-chip-show=2>탭 내용 3 : 렌터카</div>
+                <div class="" data-chip-show=3>탭 내용 4 : WI-FI</div>
+                <div class="" data-chip-show=4>탭 내용 5 : 공항현장 할인</div>
+                <div class="" data-chip-show=5>탭 내용 6 : 식사</div>
+                <div class="" data-chip-show=6>탭 내용 7 : 입장권</div>
+                <div class="" data-chip-show=7>탭 내용 8 : 기타편의</div>
+                <!-- // 슬라이드형 탭_컨텐츠 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../ND/ND_8.html" target="_blank">ND_8</a> : 부가서비스 안내 > 제휴서비스
+      </div>
+      <!-- // 슬라이드형 탭_컨텐츠 -->
+
+      <!-- 다량노출형 탭 -->
+      <div class="guide_infor">
+        <p class="guide_sub_title">다량노출형 탭</p>
+        <p class="guide_infor_text">메뉴가 많지만 한꺼번에 노출이 되지 않아도 될때 사용</p>
+        <p class="guide_infor_text">탭 + 컨텐츠 영역 노출</p>
+      </div>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">높이값 - 50px<br>활성화 : 폰트색상 - #fff / 배경색 - #ff5000<br>비활성화 : 폰트색상 - #666 / 배경색 - #fff<br>폰트크기 - 14px</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 다량노출형 탭 영역 -->
+                <div class="pc-30">
+                  <div data-element="tab" class="tab tab--customer tab--square tab--square-cols4 tab--cols4">
+                    <div class="tab__buttons">
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor is-active">Tab1</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab2</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab3</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab4</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab5</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab6</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab7</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab8</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab9</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab10</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab11</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab12</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab13</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab14</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab15</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab16</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab17</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab18</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab19</button>
+                      </div>
+                      <div data-element="tab__list" class="tab__button">
+                        <button type="button" data-element="tab__anchor" class="tab__anchor">Tab20</button>
+                      </div>
+                    </div>
+                
+                    <div data-element="tab__panel" class="tab__panel">Tab1 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab2 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab3 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab4 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab5 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab6 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab7 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab8 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab9 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab10 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab11 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab12 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab13 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab14 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab15 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab16 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab17 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab18 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab19 Contets</div>
+                    <div data-element="tab__panel" class="tab__panel">Tab20 Contets</div>
+                  </div>
+                </div>
+                <!-- // 다량노출형 탭 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page"><a href="../NI/NI_1.html" target="_blank">NI_1</a> :	고객센터<br>
+        <a href="../FT/FT_1_11.html" target="_blank">FT_1_11</a> : 푸터메뉴>제주항공 소개>About 제주항공>(탭)About > 윤리경영<br>
+        <a href="../NB/NB_2_26.html" target="_blank">NB_2_26</a> : 운임안내>국제선 운임안내>(탭)국제선 운임 혜택 > 포인트결제<br>
+      </div>
+      <!-- // 다량노출형 탭 -->
+
+      <!-- 텍스트 탭 -->
+      <p class="guide_sub_title">텍스트 탭</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">활성화 : 폰트색상 - #ff5000<br>비활성화 : 폰트색상 - #888<br>폰트크기 - 14px<br>사이간격바 높이값 - 18px<br>사이간격바 색상 - #ddd</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 텍스트 탭 영역 -->
+                <div id="linkedTab" data-element="tab__link" class="linked-tab">
+                  <div data-element="tab__panel" class="tab__panel tab__panel--pat20">
+                    <div data-element="tab" class="tab tab--2depth">
+                      <div class="tab__buttons">
+                        <div data-element="tab__list" class="tab__button">
+                          <button type="button" data-element="tab__anchor" class="tab__anchor is-active">전체</button>
+                        </div>
+                        <div data-element="tab__list" class="tab__button">
+                          <button type="button" data-element="tab__anchor" class="tab__anchor">적립</button>
+                        </div>
+                        <div data-element="tab__list" class="tab__button">
+                          <button type="button" data-element="tab__anchor" class="tab__anchor">차감</button>
+                        </div>
+                        <div data-element="tab__list" class="tab__button">
+                          <button type="button" data-element="tab__anchor" class="tab__anchor">사용</button>
+                        </div>
+                      </div>
+                      <!-- 전체 -->
+                      <div data-element="tab__panel" class="tab__panel">
+                        전체
+                      </div>
+          
+                      <!-- 적립 -->
+                      <div data-element="tab__panel" class="tab__panel">적립</div>
+                      <!-- //적립 -->
+          
+                      <!-- 구매 -->
+                      <div data-element="tab__panel" class="tab__panel">구매</div>
+                      <!-- //구매 -->
+          
+                      <!-- 사용 -->
+                      <div data-element="tab__panel" class="tab__panel">사용</div>
+                      <!-- //사용 -->
+                    </div>
+                  </div>
+                </div>
+                <!-- // 텍스트 탭 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../NC/NC_1_91.html" target="_blank">NC_1_91</a> : 리프레시포인트>포인트조회>(탭)내역<br>
+        <a href="../NF/NF_2_11.html" target="_blank">NF_2_11</a> : 빠른수속안내>(탭)셀프체크인>(탭)모바일발권안내<br>
+        <a href="../ND/ND_5_1.html" target="_blank">ND_5_1</a> :	부가서비스 안내 > 번들 안내<br>
+      </div>
+      <!-- // 텍스트 탭 -->
+
+      <!-- 해시태그 탭 -->
+      <p class="guide_sub_title">해시태그 탭</p>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">활성화 : 폰트색상 - #ff5000<br>비활성화 : 폰트색상 - #666<br>폰트크기 - 13px<br>테두리 - 1px<br>테두리 색상 - #ddd<br>좌우여백 - 20px<br>상하여백 3px<br>해시태그 사이간격 8px</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 해시태그 탭 영역 -->
+                <div class="hashtag wideScroll">
+                  <div class="hashtag__list wideScroll-list">
+                    <!-- D : 선택시 on 클래스 추가 -->
+                    <button type="button" class="hashtag__item wideScroll-item on">#수하물</button>
+                    <button type="button" class="hashtag__item wideScroll-item">#항공권 취소</button>
+                    <button type="button" class="hashtag__item wideScroll-item on">#환불</button>
+                    <button type="button" class="hashtag__item wideScroll-item">#모바일 탑승권</button>
+                    <button type="button" class="hashtag__item wideScroll-item">#수하물1</button>
+                    <button type="button" class="hashtag__item wideScroll-item">#항공권2</button>
+                    <button type="button" class="hashtag__item wideScroll-item">#환불3</button>
+                  </div>
+                </div>
+                <!-- // 해시태그 탭 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+      </div>
+      <!-- // 해시태그 탭 -->
+
+      <!-- 팝업 호출 탭 - 탑승수속 안내 -->
+      <div class="guide_infor">
+        <p class="guide_sub_title">팝업 호출 탭 - 탑승수속 안내</p>
+        <p class="guide_infor_text"></p>
+      </div>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">높이값 - 30px<br>활성화 : 배경색 #f2f2f2<br>비활성화 : 배경색 #fff<br>폰트크기(font-size) - 14px<br>폰트색상(font-color) - #666<br>테두리(border) - 1px<br>테두리 색상(border-color) - #ddd<br>테두리곡선(border-radius) - 2px</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 팝업 호출 탭 - 탑승수속 안내 영역 -->
+                <div class="tag-list__btn sub-box">
+                  <div class="tag-list__item">
+                    <a href="/ko/linkService/airport/info.do#0000000048" class="tag-list__text">김포(국내)</a>
+                  </div>
+                  <div class="tag-list__item">
+                    <a href="/ko/linkService/airport/info.do#0000000003" class="tag-list__text">인천</a>
+                  </div>
+                  <div class="tag-list__item">
+                    <a href="/ko/linkService/airport/info.do#0000000004" class="tag-list__text">부산</a>
+                  </div>
+                  <div class="tag-list__item">
+                    <a href="/ko/linkService/airport/info.do#0000000048" class="tag-list__text">김포(국제)</a>
+                  </div>
+                  <div class="tag-list__item">
+                    <a href="/ko/linkService/airport/info.do#0000000030" class="tag-list__text">오사카</a>
+                  </div>
+                  <div class="tag-list__item">
+                    <a href="/ko/linkService/airport/info.do#0000000028" class="tag-list__text">후쿠오카</a>
+                  </div>
+                  <div class="tag-list__item">
+                    <a href="/ko/linkService/airport/info.do#0000000032" class="tag-list__text">삿포로</a>
+                  </div>
+                  <div class="tag-list__item">
+                    <a href="/ko/linkService/airport/info.do#0000000045" class="tag-list__text">세부</a>
+                  </div>
+                </div>
+                <!-- // 팝업 호출 탭 - 탑승수속 안내 영역 -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+      </div>
+      <!-- // 팝업 호출 탭 - 탑승수속 안내 -->
+
+      <!-- 항공권 예매 스탭에서 사용되는 탭 -->
+      <div class="guide_infor">
+        <p class="guide_sub_title">항공권 예매 스탭에서 사용되는 TAB</p>
+        <p class="guide_infor_text">항공권 예매 스탭에서만 사용되는 탭, case별로 참고해서 사용</p>
+      </div>
+      <div class="table-vertical">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:40%">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr class="table-vertical__thead">
+              <th class="table-vertical__th">PC</th>
+              <th class="table-vertical__th">모바일</th>
+              <th class="table-vertical__th">버튼</th>
+            </tr>
+          </thead>
+          <tbody class="table-verticalbody">
+            <tr>
+              <td colspan="2" class="table-vertical__td">높이값 - 64px<br>활성화 : 테두리 색상 #ff5000<br>비활성화 : 테두리 색상 #ddd<br>모서리곡선(border-radius) - 4px<br>라인두께(border) - 2px</td>
+              <td class="table-vertical__td">
+                <!-- <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="table-vertical__col">
+                <!-- 디폴트 -->
+                <div class="guide_infor">
+                  <p class="guide_infor_text">디폴트</p>
+                </div>
+                <div class="tab tab--scroll tab--icon tab--icon-large tab__scroll" data-element="tab"
+                  data-options='{"tabType": "scroll"}'>
+                  <div class="sticky-wrap">
+                    <div class="sticky__inner" data-sticky> <!-- data-sticky 추가시 영역 상단 고정 -->
+                      <div class="tab__inner">
+                        <button class="button tab__scroll-left" data-tab-direction="prev">
+                          <span class="hidden">왼쪽 탭으로 이동</span>
+                        </button>
+                        <button class="button tab__scroll-right" data-tab-direction="next">
+                          <span class="hidden">오른쪽 탭으로 이동</span>
+                        </button>
+                        <div class="tab__scroll-wrap tab__scroll-wrap--full" data-element="tab__scroll-wrap">
+                          <div class="tab__buttons" data-element="tab__scroll">
+                            <div class="tab__button" data-element="tab__list">
+                              <!-- 값모두 입력되면  is-checked 클래스 추가-->
+                              <button class="tab__anchor is-checked" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="type">성인 1</span>
+                                  <strong class="name">KIM/ JEJUHANGGONG</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger child">
+                                  <span class="type">소아 1</span>
+                                  <strong class="name">KIM/ JEJUHANGGONG</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger baby">
+                                  <span class="type">유아 1</span>
+                                  <strong class="name">KIM/ JEJUHANGGONG</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger withbaby">
+                                  <span class="type">성인 1</span>
+                                  <strong class="name">KIM/ JEJUHANGGONG</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="type">성인 1</span>
+                                  <strong class="name">KIM/ JEJUHANGGONG</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="type">성인 1</span>
+                                  <strong class="name">KIM/ JEJUHANGGONG</strong>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel">
+                    탭 패널1
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel">
+                    탭 패널2
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel">
+                    탭 패널3
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel">
+                    탭 패널4
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel">
+                    탭 패널5
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel">
+                    탭 패널6
+                  </div>
+                </div>
+                <!-- // 디폴트 -->
+
+                <!-- 두줄 말줄임 -->
+                <div class="guide_infor">
+                  <p class="guide_infor_text">두줄 말줄임 </p>
+                </div>
+                <div class="tab tab--scroll tab--icon tab--icon-large tab__scroll" data-element="tab"
+                  data-options='{"tabType": "scroll"}'>
+                  <div class="sticky-wrap">
+                    <div class="sticky__inner"> <!-- data-sticky 추가시 영역 상단 고정 -->
+                      <div class="tab__inner">
+                        <button class="button tab__scroll-left" data-tab-direction="prev">
+                          <span class="hidden">왼쪽 탭으로 이동</span>
+                        </button>
+                        <button class="button tab__scroll-right" data-tab-direction="next">
+                          <span class="hidden">오른쪽 탭으로 이동</span>
+                        </button>
+                        <div class="tab__scroll-wrap tab__scroll-wrap--full" data-element="tab__scroll-wrap">
+                          <div class="tab__buttons" data-element="tab__scroll">
+                            <div class="tab__button" data-element="tab__list">
+                              <!-- 값모두 입력되면  is-checked 클래스 추가-->
+                              <button class="tab__anchor is-checked" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="type">성인 1</span>
+                                  <strong class="name">KIM/ JEJUHANGGONGKIM/ JEJUHANGGONGKIM/ JEJUHANGGONGKIM/ JEJUHANGGONGKIM/ JEJUHANGGONG</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger child">
+                                  <span class="type">소아 1</span>
+                                  <strong class="name">KIM/ JEJUHANGGONG</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger baby">
+                                  <span class="type">유아 1</span>
+                                  <strong class="name">KIM/ JEJUHANGGONG</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger withbaby">
+                                  <span class="type">성인 1</span>
+                                  <strong class="name">KIM/ JEJUHANGGONG</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="type">성인 1</span>
+                                  <strong class="name">KIM/ JEJUHANGGONG</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="type">성인 1</span>
+                                  <strong class="name">KIM/ JEJUHANGGONG</strong>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel">
+                    탭 패널1
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel">
+                    탭 패널2
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel">
+                    탭 패널3
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel">
+                    탭 패널4
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel">
+                    탭 패널5
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel">
+                    탭 패널6
+                  </div>
+                </div>
+                <!-- // 두줄 말줄임 -->
+
+                <!-- 한줄 케이스 -->
+                <div class="guide_infor">
+                  <p class="guide_infor_text">한줄 케이스</p>
+                </div>
+                <div class="tab tab--scroll tab--icon tab--seat tab__scroll line2" data-element="tab" data-options='{"tabType": "scroll"}'>
+                  <div class="sticky-wrap" >
+                    <div class="sticky__inner"> <!-- data-sticky 추가시 영역 상단 고정 -->
+                      <div class="tab__inner">
+                        <button class="button tab__scroll-left" data-tab-direction="prev">
+                          <span class="hidden">왼쪽 탭으로 이동</span>
+                        </button>
+                        <button class="button tab__scroll-right" data-tab-direction="next">
+                          <span class="hidden">오른쪽 탭으로 이동</span>
+                        </button>
+                        <div class="tab__scroll-wrap tab__scroll-wrap--full line2" data-element="tab__scroll-wrap"><!--20210430 line2 class추가-->
+                          <div class="tab__buttons" data-element="tab__scroll">
+                            <div class="tab__button" data-element="tab__list">
+                              <!-- 좌석 선택 완료 되면 selected  클래스 추가 -->
+                              <button class="tab__anchor selected" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">1</span>
+                                  <strong class="name">김/제주</strong>
+                                  <!-- <span class="seat">B08</span> --><!--20210430 삭제-->
+                                </span>
+                              </button>
+                              
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                    <span class="num">2</span>
+                                    <strong class="name">KIM/kong</strong>
+                                  <!-- <span class="seat">B01</span> --><!--20210430 삭제-->
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">3</span>
+                                  <strong class="name">KIM/kongkong</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">4</span>
+                                  <strong class="name">KIM/JEJU</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">4</span>
+                                  <strong class="name">KIM/JEJU</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">4</span>
+                                  <strong class="name">KIM/ kongkong</strong>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel"></div>
+                  <div class="tab__panel" data-element="tab__panel"></div>
+                  <div class="tab__panel" data-element="tab__panel"></div>
+                </div>
+                <!-- 한줄 케이스 -->
+
+                <!-- 한줄케이스 - 모바일탑승권 -->
+                <div class="tab tab--scroll tab--icon tab__scroll " data-element="tab" data-options='{"tabType": "scroll"}'>
+                  <div class="sticky-wrap">
+                    <div class="sticky__inner">                
+                      <div class="tab__inner boarding-pass">
+                        <button class="button tab__scroll-left" data-tab-direction="prev">
+                          <span class="hidden">왼쪽 탭으로 이동</span>
+                        </button>
+                        <button class="button tab__scroll-right" data-tab-direction="next">
+                          <span class="hidden">오른쪽 탭으로 이동</span>
+                        </button>
+                        <div class="tab__scroll-wrap" data-element="tab__scroll-wrap">
+                          <div class="tab__buttons" data-element="tab__scroll">
+                            <div class="tab__button" data-element="tab__list">
+                              <!-- D : 내용 입력 다 되면 is-checked 클래스 추가 -->
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <!-- <span class="type pc-only">성인 1</span> -->
+                                  <strong class="name">KIM/kong</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger child">
+                                  <!-- <span class="type pc-only">소아 1</span> -->
+                                  <strong class="name">KIM/kongkongkong</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger baby">
+                                  <!-- <span class="type pc-only">유아 1</span> -->
+                                  <strong class="name">KIM/kongkongkong</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger withbaby">
+                                  <!-- <span class="type pc-only">유아 1</span> -->
+                                  <strong class="name">KIM/kongkongkong</strong>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 한줄 케이스 - 모바일탑승권 -->
+
+                <!-- 한줄 케이스 - 좌석 -->
+                <div class="tab tab--scroll tab--icon tab--seat tab__scroll line2" data-element="tab" data-options='{"tabType": "scroll"}'>
+                  <div class="sticky-wrap" >
+                    <div class="sticky__inner"> <!-- data-sticky 추가시 영역 상단 고정 -->
+                      <div class="tab__inner">
+                        <button class="button tab__scroll-left" data-tab-direction="prev">
+                          <span class="hidden">왼쪽 탭으로 이동</span>
+                        </button>
+                        <button class="button tab__scroll-right" data-tab-direction="next">
+                          <span class="hidden">오른쪽 탭으로 이동</span>
+                        </button>
+                        <div class="tab__scroll-wrap tab__scroll-wrap--full line2" data-element="tab__scroll-wrap"><!--20210430 line2 class추가-->
+                          <div class="tab__buttons" data-element="tab__scroll">
+                            <div class="tab__button" data-element="tab__list">
+                              <!-- 좌석 선택 완료 되면 selected  클래스 추가 -->
+                              <button class="tab__anchor selected" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">1</span>
+                                  <strong class="name">김/제주</strong>
+                                  <span class="seat">B08</span>
+                                </span>
+                              </button>
+                              
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                    <span class="num">2</span>
+                                    <strong class="name">KIM/kong</strong>
+                                    <span class="seat">B01</span>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">3</span>
+                                  <strong class="name">KIM/kongkong</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">4</span>
+                                  <strong class="name">KIM/JEJU</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">4</span>
+                                  <strong class="name">KIM/JEJU</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">4</span>
+                                  <strong class="name">KIM/ kongkong</strong>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel"></div>
+                  <div class="tab__panel" data-element="tab__panel"></div>
+                  <div class="tab__panel" data-element="tab__panel"></div>
+                </div>
+                <!-- // 한줄 케이스 - 좌석 -->
+
+                <!-- 두줄말줄임 케이스 -->
+                <div class="guide_infor">
+                  <p class="guide_infor_text">두줄말줄임 케이스</p>
+                </div>
+                <div class="tab tab--scroll tab--icon tab--seat tab__scroll line2" data-element="tab" data-options='{"tabType": "scroll"}'>
+                  <div class="sticky-wrap">
+                    <div class="sticky__inner"> <!-- data-sticky 추가시 영역 상단 고정 -->
+                      <div class="tab__inner">
+                        <button class="button tab__scroll-left" data-tab-direction="prev">
+                          <span class="hidden">왼쪽 탭으로 이동</span>
+                        </button>
+                        <button class="button tab__scroll-right" data-tab-direction="next">
+                          <span class="hidden">오른쪽 탭으로 이동</span>
+                        </button>
+                        <div class="tab__scroll-wrap tab__scroll-wrap--full line2" data-element="tab__scroll-wrap"><!--20210430 line2 class추가-->
+                          <div class="tab__buttons" data-element="tab__scroll">
+                            <div class="tab__button" data-element="tab__list">
+                              <!-- 좌석 선택 완료 되면 selected  클래스 추가 -->
+                              <button class="tab__anchor selected" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">1</span>
+                                  <strong class="name">김/제주</strong>
+                                </span>
+                              </button>
+                              
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                    <span class="num">2</span>
+                                    <strong class="name">KIM/kong</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">3</span>
+                                  <strong class="name">KIM/kongkongKIM/kongkongKIM/kongkongKIM/kongkong</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">4</span>
+                                  <strong class="name">KIM/JEJUKIM/JEJUKIM/JEJUKIM/JEJUKIM/JEJUKIM/JEJUKIM/JEJUKIM/JEJU</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">4</span>
+                                  <strong class="name">KIM/JEJU</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">4</span>
+                                  <strong class="name">KIM/ kongkong</strong>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel"></div>
+                  <div class="tab__panel" data-element="tab__panel"></div>
+                  <div class="tab__panel" data-element="tab__panel"></div>
+                </div>
+                <!-- 두줄말줄임 케이스 -->
+
+                <!-- 두줄말줄임 케이스 - 좌석 -->
+                <div class="tab tab--scroll tab--icon tab--seat tab__scroll line2" data-element="tab" data-options='{"tabType": "scroll"}'>
+                  <div class="sticky-wrap" >
+                    <div class="sticky__inner"> <!-- data-sticky 추가시 영역 상단 고정 -->
+                      <div class="tab__inner">
+                        <button class="button tab__scroll-left" data-tab-direction="prev">
+                          <span class="hidden">왼쪽 탭으로 이동</span>
+                        </button>
+                        <button class="button tab__scroll-right" data-tab-direction="next">
+                          <span class="hidden">오른쪽 탭으로 이동</span>
+                        </button>
+                        <div class="tab__scroll-wrap tab__scroll-wrap--full line2" data-element="tab__scroll-wrap"><!--20210430 line2 class추가-->
+                          <div class="tab__buttons" data-element="tab__scroll">
+                            <div class="tab__button" data-element="tab__list">
+                              <!-- 좌석 선택 완료 되면 selected  클래스 추가 -->
+                              <button class="tab__anchor selected" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">1</span>
+                                  <strong class="name">김/제주</strong>
+                                  <span class="seat">B08</span>
+                                </span>
+                              </button>
+                              
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                    <span class="num">2</span>
+                                    <strong class="name">KIM/kong</strong>
+                                    <span class="seat">B01</span>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">3</span>
+                                  <strong class="name">KIM/kongkongKIM/kongkong</strong>
+                                  <span class="seat">B01</span>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">4</span>
+                                  <strong class="name">KIM/JEJUKIM/JEJUKIM/JEJUKIM/JEJUKIM/JEJUKIM/JEJUKIM/JEJU</strong>
+                                  <span class="seat">B01</span>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">4</span>
+                                  <strong class="name">KIM/JEJU</strong>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="tab__button" data-element="tab__list">
+                              <button class="tab__anchor" type="button" data-element="tab__anchor">
+                                <span class="passenger">
+                                  <span class="num">4</span>
+                                  <strong class="name">KIM/ kongkong</strong>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab__panel" data-element="tab__panel"></div>
+                  <div class="tab__panel" data-element="tab__panel"></div>
+                  <div class="tab__panel" data-element="tab__panel"></div>
+                </div>
+                <!-- // 두줄말줄임 케이스 - 좌석 -->
+
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guide_page">
+        <a href="../GD/GD_0_461.html" target="_blank">GD_0_461</a> : 마이페이지&gt;예약현황&gt;부가서비스 구매(좌석선택)<br>
+        <a href="../GD/GD_0_462.html" target="_blank">GD_0_462</a> : 마이페이지&gt;예약현황&gt;부가서비스 구매(위탁수하물/스포츠용품)<br>
+        <a href="../GD/GD_0_471.html" target="_blank">GD_0_471</a> : 마이페이지&gt;예약현황&gt;부가서비스 취소<br>
+        <a href="../GD/GD_0_482.html" target="_blank">GD_0_482</a> : 마이페이지&gt;예약현황&gt;모바일 탑승권 자동발급 신청<br>
+        <a href="../GD/GD_0_483.html" target="_blank">GD_0_483</a> : 마이페이지&gt;예약현황&gt;모바일 탑승권 자동발급 신청/취소<br>
+        <a href="../NA/NA_1_6.html" target="_blank">NA_1_6</a> : 항공권 예매&gt;부가서비스 선택(스탭3_가는편)<br>
+        <a href="../NA/NA_1_7.html" target="_blank">NA_1_7</a> : 항공권 예매&gt;부가서비스 선택(스탭3_오는편)<br>
+        <a href="../NA/NA_1_8.html" target="_blank">NA_1_8</a> : 항공권 예매&gt;부가서비스 선택(스탭2)<br>
+        <a href="../NA/NA_1_9C1.html" target="_blank">NA_1_9C1</a> : 보장내용팝업<br>
+        <a href="../NF/NF_1_2.html" target="_blank">NF_1_2</a> : 탑승수속안내&gt;모바일탑승권&gt;승객정보입력(스탭1)<br>
+        <a href="../NF/NF_1_3.html" target="_blank">NF_1_3</a> : 탑승수속안내&gt;모바일탑승권&gt;좌석선택(스탭2)<br>
+        <a href="../NF/NF_1_5.html" target="_blank">NF_1_5</a> : 모바일탑승권&gt;모바일 탑승권 보기<br>
+        <a href="../NF/NF_1_5_1.html" target="_blank">NF_1_5_1</a> : 모바일탑승권&gt;모바일 탑승권 보기<br>
+      </div>
+      <!-- // 항공권 예매 스탭에서 사용되는 탭 -->
+
+
+  </div>
+  <!-- // guide_wrap -->
+
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+
+  
+  <script>
+    // 칩셀렉트 plugin.js
+    $('.select-chips').selectChips()
+  </script> 
+
+  
+</body>
+
+</html>

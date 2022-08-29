@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <!-- <link rel="stylesheet" href="../../assets/css/global.css"> -->
+  <!-- <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css"> -->
+
+  <style>
+    /*탑승확인서*/
+    @font-face { font-family: 'SpoqaHanSansNeo'; font-weight: 400; src: url( ../../assets/font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.eot), 
+    url( ../../assets/font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.eot?#iefix) format("embedded-opentype"), 
+    url( ../../assets/font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff) format("woff"), 
+    url( ../../assets/font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff2) format("woff2"); }
+
+    html, body, div, h1 { margin: 0; padding: 0; border: 0;  font-family: 'SpoqaHanSansNeo', 'roboto', sans-serif, Arial; font-weight: 400; }
+    table { width: 100%; border-collapse: collapse; border-spacing: 0; table-layout: fixed; font-family: 'SpoqaHanSansNeo', 'roboto', sans-serif, Arial; font-weight: 400;}
+    caption { position: absolute; clip: rect(1px, 1px, 1px, 1px); -webkit-clip-path: inset(0px 0px 99.9% 99.9%); clip-path: inset(0px 0px 99.9% 99.9%); overflow: hidden; height: 1px; width: 1px; padding: 0; border: 0; }
+    .window-pop { max-width: 800px; margin: 0 auto; }
+    .window-pop .pop-header { padding:18px 30px; text-align:right;}
+    .window-pop .pop-header img { width:102px; height:20px; }
+    .window-pop .pop-content { padding:30px; } 
+    .window-pop h1 {text-align:center;  }
+    .window-pop .title { font-size:24px; font-weight:800; color: #000; }
+    .window-pop .sub-title { font-size:16px; color: #888; } 
+    .window-pop .table-horizontal__td { text-align:center; }
+    .stamp_wrap { margin-top:80px; text-align:center; }
+    .stamp_wrap img { width:120px; height:120px; }
+    .table-horizontal {margin-top:10px; border-top:1px solid #000; }
+    .table-horizontal__th {padding:12px; background:#eee; font-size:14px; font-weight:400;text-align:left; border-bottom:1px solid #dddddd; box-sizing:border-box;}
+    .table-horizontal__td {padding:12px; background:#fff; font-size:14px; color:#333;border-bottom:1px solid #dddddd; word-break:break-all; box-sizing:border-box;}
+    .table-horizontal__td + .table-horizontal__td {border-left:1px solid #dddddd;}
+    .section-wrap { margin-top: 40px;}
+    .text__default { font-weight: 600; font-size: 16px;}
+    .sub-section { margin-top:20px; }
+    .section-sub-txt {margin-bottom:6px; font-size:14px; color:#333;}
+    .section-sub-txt.color--gray {color:#888;}
+  </style>
+</head>
+
+<body>
+
+
+  <div class="window-pop">
+    <div class="pop-header">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+    </div>
+    <div class="pop-content">
+      <h1>
+        <div class="title">탑승확인서</div>
+        <div class="sub-title">(Boarding data Confirmation)</div>
+      </h1>
+      <div class="section-wrap">
+        <div class="table-horizontal">
+          <table>
+            <caption>탑승확인서- 탑승자명, 여정, 날짜, 항공권 번호</caption>
+            <colgroup>
+              <col style="width: 40% !important;">
+              <col>
+            </colgroup>
+            <tbody class="table-horizontal__tbody">
+              <tr>
+                <th scope="row" class="table-horizontal__th">탑승자명 (Passenger Name)</th>
+                <td class="table-horizontal__td"><strong>김 제주 </strong></td>
+              </tr>
+              <tr>
+                <th scope="row" class="table-horizontal__th">여정 (Itinerary)</th>
+                <td class="table-horizontal__td"><strong>블라디보스토크 - 서울(인천)</strong></td>
+              </tr>
+              <tr>
+                <th scope="row" class="table-horizontal__th">편명 (Flight)</th>
+                <td class="table-horizontal__td"><strong>7C123</strong></td>
+              </tr>
+              <tr>
+                <th scope="row" class="table-horizontal__th">날짜 (Date)</th>
+                <td class="table-horizontal__td"><strong>2019-04-01</strong></td>
+              </tr>
+              <!-- <tr>
+                <th scope="row" class="table-horizontal__th">항공권번호 (Ticket No.)</th>
+                <td class="table-horizontal__td"><strong>0000000000000</strong></td>
+              </tr> -->
+              <tr>
+                <th scope="row" class="table-horizontal__th">예약번호 (Booking reference)
+                  </th>
+                <td class="table-horizontal__td"><strong>0000000000000</strong></td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-wrap">
+        <div class="section-sub-txt">상기와 같이 탑승하였음을 확인하여 드립니다.</div>
+        <div class="section-sub-txt color--gray">This is boarding Confirmation as above mentioned.</div>
+      </div>
+      <div class="sub-section">
+        <div class="section-sub-txt">본 자료는 해당 항공편의 탑승사실 확인으로만 유효하며, 어떠한 법적 효력도 없습니다.</div>
+        <div class="section-sub-txt color--gray">This is only boarding Confirmation and does not have any legal force.</div>
+      </div>
+
+      <div class="stamp_wrap">
+        <!-- <img src="../../assets/images/etc/jejuair_stamp.png" alt="jejuair stamp"> 20211202 삭제-->
+        <div class="text">
+          <p class="text__default">2020년 10월 01일</p>
+        </div>
+      </div> 
+
+      <!-- <div class="stamp_wrap2">
+        <div class="text">
+          <p class="text__default right">2020년 10월 01일</p>
+        </div>
+        <div class="text text-seal">
+          <div class="text__large text--bold">제주항공 <span>인</span></div>
+          <div class="text-seal__image">
+            <img src="../../assets/images/@temp/@jeju-seal.png" alt="직인">
+          </div>
+        </div> 20211202 삭제- -->
+      </div>
+      
+    </div>
+  </div>
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

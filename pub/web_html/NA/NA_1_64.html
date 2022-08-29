@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공 온라인(모바일,홈페이지 구매)</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body class="is-">
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+
+  <div id="body">
+    <div class="wrap wrap--button NA">
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">
+            이 좌석을 선택 하시겠어요?
+          </a>
+          <div id="modalLayer01" class="modal modal-full modal-scroll modal--fixed-multi"><!--20210430 class변경-->
+            <div class="modal-header">
+              <div class="modal-header__title">이 좌석을 선택하시겠어요?</div>
+            </div>
+            <div class="modal-content">
+                <div class="select-seat select-seat--layer seat-align mt0">
+                  <div class="select-seat__tag">
+                    <i class="select-seat__seat seat-diamond">
+                      A01
+                    </i>
+                    <span class="select-seat__tag-price">더 넓고 안락해요.</span>
+                  </div>
+                </div>
+              <div class="select-text small mt-15"><span class="strong text--bold">+ 20,000원</span> 추가요금이 발생합니다.  (1인 기준)</div>
+            </div>
+            <!--20210430 버튼영역 전체변경-->
+            <div class="fixed-wrap fixed-wrap--multi-line border-none ">
+              <div class="button-wrap pc-center">
+                <button type="button" class="button button--primary button--black width_155"><span class="button__text">다른 좌석 선택</span></button>
+                <button type="button" class="button button--primary button--active width_155"><span class="button__text">선택</span></button>
+              </div>
+            </div>
+            <!--//20210430 버튼영역변경-->
+            
+            
+            <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+          </div>
+
+
+        </main>
+      </div>
+    </div>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

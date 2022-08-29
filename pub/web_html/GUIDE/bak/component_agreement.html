@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+
+  <link rel="stylesheet" href="../../../index/css/style-guide.css">
+
+
+</head>
+
+<body class="style-guide">
+
+
+  
+
+ 
+  <div class="wrap">
+    <div class="content" id="content">
+      <div id="main" class="main">       
+        <h1 class="guide_title add--mt-40">Componet - Agreement</h1>
+        <div class="section-wrap">
+          <!-- 약관 동의 -->
+          <div class="agree-wrap"><!--20210428 class추가-->
+            <div class="check-wrap" data-element="checkList">
+              <div class="check-wrap__all-check">
+                <span class="checkbox">
+                  <input type="checkbox" class="checkbox__input" id="inpAgreeAll" data-element="checkAll">
+                  <label for="inpAgreeAll" class="checkbox__label">
+                    <i class="checkbox__ico" aria-hidden="true"></i>
+                    <span>전체 동의</span>
+                  </label>
+                </span>
+              </div>
+              <ul class="check-wrap__list">
+                <li class="agree-wrap__item">
+                  <span class="checkbox checkbox--small">
+                    <input type="checkbox" class="checkbox__input" id="inpAgree-01" data-element="checkbox">
+                    <label for="inpAgree-01" class="checkbox__label">
+                      <i class="checkbox__ico" aria-hidden="true"></i>
+                      <span>(필수) 서비스 약관</span>
+                    </label>
+                  </span>
+                  <button type="button" class="agree-wrap__button" aria-label="(필수) 서비스 약관 보기"></button>
+                </li>
+                <li class="agree-wrap__item">
+                  <span class="checkbox checkbox--small">
+                    <input type="checkbox" class="checkbox__input" id="inpAgree-02" data-element="checkbox">
+                    <label for="inpAgree-02" class="checkbox__label">
+                      <i class="checkbox__ico" aria-hidden="true"></i>
+                      <span>(필수) 개인정보 수집, 이용 동의</span>
+                    </label>
+                  </span>
+                  <button type="button" class="agree-wrap__button" aria-label="(필수) 개인정보 수집, 이용 동의 보기"></button>
+                </li>
+                <li class="agree-wrap__item">
+                  <span class="checkbox checkbox--small">
+                    <input type="checkbox" class="checkbox__input" id="inpAgree-03" data-element="checkbox">
+                    <label for="inpAgree-03" class="checkbox__label">
+                      <i class="checkbox__ico" aria-hidden="true"></i>
+                      <span>(필수) 고유식별정보의 수집, 이용 동의</span>
+                    </label>
+                  </span>
+                  <button type="button" class="agree-wrap__button" aria-label="(필수) 고유식별정보의 수집, 이용 동의 보기"></button>
+                </li>
+                <li class="agree-wrap__item">
+                  <span class="checkbox checkbox--small">
+                    <input type="checkbox" class="checkbox__input" id="inpAgree-04" data-element="checkbox">
+                    <label for="inpAgree-04" class="checkbox__label">
+                      <i class="checkbox__ico" aria-hidden="true"></i>
+                      <span>(선택) 개인정보 유효기간 규정</span>
+                    </label>
+                  </span>
+                  <button type="button" class="agree-wrap__button" aria-label="(선택) 개인정보 유효기간 규정 보기"></button>
+                </li>
+                <!-- 간편 회원가입 -->
+                <!-- [수정 : 210216] agree-wrap--toggle 추가 -->
+                <li data-element="inputToggle" class="agree-wrap--toggle">
+                  <div class="agree-wrap__item">
+                    <span class="checkbox checkbox--small">
+                      <input type="checkbox" class="checkbox__input" id="inpAgree-06" data-element="checkbox"
+                        data-toggle="toggle__anchor">
+                      <label for="inpAgree-06" class="checkbox__label">
+                        <i class="checkbox__ico" aria-hidden="true"></i>
+                        <span>(선택) 마케팅 정보 수신 동의</span>
+                      </label>
+                    </span>
+                    <button type="button" class="agree-wrap__button" aria-label="(선택) 마케팅 정보 수신 동의 보기"></button>
+                  </div>
+                  <div data-toggle="toggle__panel" id="inpAgree-06-0">
+                    <div class="gray-box cancel--mt">
+                      <div class="check-wrap">
+                        <span class="checkbox checkbox--line mobile-only">
+                          <input type="checkbox" id="inputCheck5-1" data-element="checkbox" class="checkbox__input" data-target-depth="sub">
+                          <label for="inputCheck5-1" class="checkbox__label">
+                            <span>앱</span>
+                            <i aria-hidden="true" class="checkbox__ico"></i>
+                          </label>
+                        </span>
+                        <span class="checkbox checkbox--line">
+                          <input type="checkbox" id="inputCheck5-2" data-element="checkbox" class="checkbox__input" data-target-depth="sub">
+                          <label for="inputCheck5-2" class="checkbox__label">
+                            <span>문자</span>
+                            <i aria-hidden="true" class="checkbox__ico"></i>
+                          </label>
+                        </span>
+                        <span class="checkbox checkbox--line">
+                          <input type="checkbox" id="inputCheck5-3" data-element="checkbox" class="checkbox__input" data-target-depth="sub">
+                          <label for="inputCheck5-3" class="checkbox__label">
+                            <span>이메일</span>
+                            <i aria-hidden="true" class="checkbox__ico"></i>
+                          </label>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- (국외) 이메일 인증 가입, 간편 회원가입 -->
+                  <div class="guide-info guide-info--gray">
+                    <p class="guide-info__text">마케팅 정보 수신에 동의하시면 이벤트, 프로모션 등 특가 정보를 발송해 드립니다. </p>
+                  </div>
+                  <!-- //(국외) 이메일 인증 가입, 간편 회원가입 -->
+                </li>
+                <li>
+                  <div class="agree-wrap__item">
+                    <span class="checkbox checkbox--small">
+                      <input type="checkbox" class="checkbox__input" id="inpAgree-07" data-element="checkbox">
+                      <label for="inpAgree-07" class="checkbox__label">
+                        <i class="checkbox__ico" aria-hidden="true"></i>
+                        <span>(필수) 14세 이상입니다</span>
+                      </label>
+                    </span>
+                  </div>
+                </li>
+                <!-- //간편 회원가입 -->
+                <!-- (국외) 이메일 인증 가입 -->
+                <li>
+                  <div data-element="inputToggle">
+                    <div class="agree-wrap__item">
+                      <span class="checkbox checkbox--small">
+                        <input type="checkbox" class="checkbox__input" id="inpAgree-08" data-toggle="toggle__anchor"
+                          data-element="checkbox">
+                        <label for="inpAgree-08" class="checkbox__label">
+                          <i class="checkbox__ico" aria-hidden="true"></i>
+                          <span>14세 미만입니다</span>
+                        </label>
+                      </span>
+                    </div>
+                    <div class="gray-box" data-toggle="toggle__panel">
+                      <div class="input-wrap input--line">
+                        <div class="input-row">
+                          <div class="input-item">
+                            <div class="input-box">
+                              <label for="inp" class="input__label">법정대리인 성명</label>
+                              <div data-element="form" class="input">
+                                <input type="text" data-element="input" id="inp" class="input__text">
+                                <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                              </div>
+                            </div>
+                            <p tabindex="0" class="input__error">에러메세지</p>
+                          </div>
+                        </div>
+                        <!--20210428 법정대리인 직접입력 추가, 20214015 select수정-->
+                        <div class="input-row input-row--label">
+                          <div class="input-label label-top">가입자와의 관계</div>
+                          <div class="input-box">
+                            <div class="select-wrap select-wrap--line">
+                              <select title="가입자와의 관계 선택" class="select-wrap__select select_agent_js">
+                                <option>선택</option>
+                                <option value="1">부</option>
+                                <option value="2">모</option>
+                                <option value="other">직접입력</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <!--가입자와의 관계 직접 입력시 노출-->
+                        <div class="input-row mt0 select_agent_other" style="display: none;">
+                          <div class="input-item">
+                            <div class="input-box">
+                              <div data-element="form" class="input">
+                                <input type="text" data-element="input" id="inp" class="input__text">
+                                <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--//가입자와의 관계 직접 입력시 노출-->
+                        <!--//20210428 법정대리인 직접입력 추가-->
+                      </div>
+                      <div class="container--xsmall pc-15">
+                        <div class="checkbox checkbox--line cancel--bt">
+                          <!-- [수정 : 210216] cancel class 추가 -->
+                          <input type="checkbox" class="checkbox__input" id="inpAgree-09">
+                          <label for="inpAgree-09" class="checkbox__label">
+                            <span>법정대리인으로서 가입에 동의합니다.</span>
+                            <i class="checkbox__ico" aria-hidden="true"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- //(국외) 이메일 인증 가입 -->
+              </ul>
+            </div>
+
+          </div>
+          <!-- //약관 동의 -->
+        </div>
+        <div class="page">
+          GC_0_5 / GD_0_23 / CO_1_G / GD_0_23 / GD_0_443 / GD_0_452 / GD_0_467 / GD_0_472 / GD_0_482 / GD_0_483 / GD_0_4674 / NA_1_BG1  / NA_1_BG2 / NA_1_BG12 / NA_1_9C / NA_1_A / NA_1_BG1 / NA_1_BG2 / NF_1_4
+        </div>
+        <div class="section-wrap agreement">
+          <h2>제1조 (목적)</h2>
+          <p class="row">
+            이 약관은 “가입고객”이 특정 온라인 쇼핑몰에서 “대상카드”를 이용하여 전자상거래를 하는 경우 신한카드 주식회사(이하 ”회사”) 가 “가입고객”에게 제공하는 본인인증서비스인 제휴형 간편결제 서비스(이하 “간편결제서비스”)의 이용조건 및 절차에 관한 기본사항을 정함을 목적으로 합니다.
+          </p>
+          <h2>제 2조 (용어의 정의)</h2>
+          <ul>
+            <li>① “간편결제서비스”라 함은 카드소지 없이도 편리하게 온라인으로 쇼핑할 수 있는 서비스로서 한번 등록만으로 본인이 지정한 정보를 통해 결제가 가능한 수단입니다.</li>
+            <li>② “대상카드”란 간편결제서비스”를 적용하고자 하는 카드로서, “회사”가 발급한 VISA, MASTER, JCB, AMEX, URS, LOCAL 신용카드 및 기프트카드를 말합니다.</li>
+            <li>③ “가입고객” 이란 이 약관에 동의하고, “간편결제서비스”를 적용하고자 하는 “대상카드”의 카드번호, 주민등록번호, 카드비밀번호, 카드 CVC번호, 휴대폰번호(이하 “카드번호 등”) 를 등록하여 “간편결제서비스” 이용을 신청하고 “회사”의 인증 및 승낙을 받아 “회사”와 “간편결제서비스” 이용 계약을 체결한 고객을 말합니다.</li>
+            <li>④ “특정온라인쇼핑몰” 이란 “회사”와 제휴하여 “대상카드”에 의한 거래에 “간편결제서비스”를 도입한 온라인 쇼핑몰을 의미합니다.</li>
+            <li>⑤ “신용카드인증”이란 “가입고객”이 입력한 “카드번호 등”과 “회사”에 등록되어 있는 기존 “카드번호 등” 간의 일치 여부를 확인하는 방식으로 “가입고객”의 본인확인을 하는 인증 절차를 말합니다.</li>
+            <li>⑥ “휴대폰인증”이란 “가입고객”이 본인 명의로 가입한 휴대전화로 수신 받은 인증번호를 입력하도록 하는 방식으로 “가입고객”의 본인확인을 하는 인증절차를 말합니다.</li>
+          </ul>
+        </div>
+        <div class="page">
+          NA_1_BGA6_신한약관
+        </div>
+      
+
+   
+
+      </div><!--// main-->
+    </div>
+  </div>
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

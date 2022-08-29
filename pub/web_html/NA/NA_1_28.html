@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+
+  <div class="wrap">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" data-element="modal_anchor" data-target="#modalInforLayer01" data-modal-type="full" class="button button--primary button--active">
+          서비스 옵션 안내 팝업
+        </a>
+        <!-- <a href="#" data-element="modal_anchor" data-target="#modalLayer02" data-modal-type="full" class="button button--primary ">
+          운임별비교 수정
+        </a> -->
+        <!-- 서비스 옵션 안내 팝업  작업 시 style 값 삭제 -->
+        <div class="open-modal">
+          <div id="modalInforLayer01" class="modal modal-full modal-scroll">
+            <div class="modal-header">
+              <div class="modal-header__title">운임 안내</div><!--20210527 title 변경-->
+            </div>
+            <div class="modal-content h_70_type02">
+              <!--20210527 tab으로 변경 NA_1_28 + NA_1_2D 합쳐짐-->
+              <div data-element="tab" class="tab tab--default pc-tab-full tab-fixed fare">
+                <div class="tab__buttons">
+                  <div data-element="tab__list" class="tab__button">
+                    <button type="button" data-element="tab__anchor" class="tab__anchor is-active">운임 내 제공 서비스</button>
+                  </div>
+                  <div data-element="tab__list" class="tab__button">
+                    <button type="button" data-element="tab__anchor" class="tab__anchor" data-btn="btnFare">운임별 비교</button>
+                  </div>
+                </div>
+                <!-- 운임 내 제공 서비스 -->
+                <div data-element="tab__panel" class="tab__panel">
+                  <!-- 비지니스 라이트 좌석  -->
+                  <div>
+                    <div class="section-title">
+                      <i class="icon icon--img" aria-hidden="true"><img src="../../assets/images/icon/icon-service-option01.png" alt=""></i>
+                      비지니스 라이트 좌석<!--20210527 문구 변경-->
+                    </div>
+                    <p class="section-sub-txt">일반석에 비해 1.5배 넓어진 좌석에서 편안하게 여행해 보세요.</p>
+                  </div>
+                  <!-- //비지니스 라이트 좌석  -->
+  
+                  <!-- 공항 라운지  20211025 미운영-->
+                  <!-- <div class="section-wrap">
+                    <div class="section-title">
+                      <i class="icon icon--img" aria-hidden="true">
+                        <img src="../../assets/images/icon/icon-service-option02.png" alt="">
+                      </i>
+                      공항 라운지
+                    </div>
+                    <p class="section-sub-txt">공항 라운지는 인천공항 출발편에만 제공(운영시간 06:00 ~ 22:00)되며, 다른 공항 출발편에는 제공되지 않습니다.</p>
+                  </div> -->
+                  <!-- //공항 라운지  -->
+  
+                  <!-- 위탁 수하물 -->
+                  <div class="section-wrap">
+                    <div class="section-title">
+                      <i class="icon icon--img" aria-hidden="true">
+                        <img src="../../assets/images/icon/icon-service-option03.png" alt="">
+                      </i>
+                      위탁 수하물
+                    </div>
+                    <p class="section-sub-txt">각 서비스별로 무료 수하물 허용량이 별도 제공됩니다. 항공권 예매와 별도로 수하물 추가 구매 시에는 별도 요금이 부과됩니다.</p>
+                  </div>
+                  <!-- //위탁 수하물 -->
+  
+                  <!-- 기내식 -->
+                  <div class="section-wrap">
+                    <div class="section-title">
+                      <i class="icon icon--img" aria-hidden="true">
+                        <img src="../../assets/images/icon/icon-service-option04.png" alt="">
+                      </i>
+                      기내식
+                    </div>
+                    <p class="section-sub-txt">각 서비스별로 무료 식사가 제공될 수 있습니다. 무료 제공되는 음식 이외의 기내식을 구매하실 경우 별도 요금이 부과됩니다.</p>
+                    <div class="guide-info guide-info--gray">
+                      <p class="guide-info__text">젯스타 공동운항은 출발 시간 기준 24 ~ 84시간 사이에 예매하는 경우 기내식 대신 기내에서 사용할 수 있는 바우처가 제공됩니다. 
+                        이후에 항공권 예매 또는 여정 변경 시점이 출발일 기준 2일 이내일 경우 웰컴 스낵은 제공되지 않습니다.</p>
+                    </div>
+                  </div>
+                  <!-- //기내식 -->
+  
+                  <!-- 좌석 선택 -->
+                  <div class="section-wrap">
+                    <div class="section-title">
+                      <i class="icon icon--img" aria-hidden="true">
+                        <img src="../../assets/images/icon/icon-service-option05.png" alt="">
+                      </i>
+                      좌석 선택
+                    </div>
+                    <p class="section-sub-txt">각 서비스별로 예약과 동시에 좌석을 선택할 수 있습니다. 해당 좌석은 서비스별로 지정 가능 범위가 한정될 수 있습니다.</p>
+                  </div>
+                  <!-- //좌석 선택 -->
+  
+                  <!-- 우선 탑승 -->
+                  <div class="section-wrap">
+                    <div class="section-title">
+                      <i class="icon icon--img" aria-hidden="true">
+                        <img src="../../assets/images/icon/icon-service-option06.png" alt="">
+                      </i>
+                      우선 탑승
+                    </div>
+                    <p class="section-sub-txt">항공기 탑승 시, 별도의 순서에 따라 먼저 탑승을 안내합니다.(단, 일반 탑승 진행 시작 이후에는 별도 우선 탑승은 제한됨)</p>
+                  </div>
+                  <!-- //우선 탑승 -->
+  
+                  <!-- 우선 수하물 처리 -->
+                  <div class="section-wrap">
+                    <div class="section-title">
+                      <i class="icon icon--img" aria-hidden="true">
+                        <img src="../../assets/images/icon/icon-service-option07.png" alt="">
+                      </i>
+                      우선 수하물 처리
+                    </div>
+                    <p class="section-sub-txt">우선 수하물은 위탁 수하물을 다른 승객보다 먼저 받을 수 있는 서비스입니다.
+                      단, 공항설비 및 사정, 수하물 검사 등의 사유로 수하물 처리 순서는 바뀔 수 있으며, 반드시 우선 처리를 보장하지는 않습니다.</p>
+                  </div>
+                  <!-- //우선 수하물 처리 -->
+  
+                  <!-- 여정 변경 수수료 -->
+                  <!-- <div class="section-wrap" 20211012 삭제 - 통테변경>
+                    <div class="section-title">
+                      <i class="icon icon--img" aria-hidden="true">
+                        <img src="../../assets/images/icon/icon-service-option08.png" alt="">
+                      </i>
+                      여정 변경 수수료
+                    </div>
+                    <p class="section-sub-txt">항공편 일정을 변경하는 경우, 이에 대한 변경 수수료가 면제됩니다. 
+                          (단, 운임 및 유류할증료, 각종 세금, 서비스수수료 등 차액이 발생하는 경우에는 수수료가 부과될 수 있음)</p>
+                  </div> -->
+                  <!-- //여정 변경 수수료 -->
+                </div>
+                <!--운임별 비고-->
+                <div data-element="tab__panel" class="tab__panel fare">
+                  <div class="tab__button-wrap tab-bundle-wrap swiper-container" data-carousel="FareServiceSlide">
+                    <div class="pop_bundle_box_wrap swiper-wrapper">
+                      <div class="bundle_dl-box list03 swiper-slide">
+                        <dl class="bundle_dl type_fly">
+                          <dt>FLY</dt>
+                          <dd>
+                            <ul class="bundle_ico_list txt_in">
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_point.png" alt="">리프레시 포인트 적립</li>
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_baggage01.png" alt="">기내 수하물 10kg 제공</li>
+                              <!-- <li><em class="bundle_ico ico_point"></em> <strong>리프레시 포인트 적립</strong></li>
+                              <li><em class="bundle_ico ico_bag"></em> <strong>기내 수하물 10kg 제공</strong></li> -->
+                            </ul>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="bundle_dl-box swiper-slide">
+                        <dl class="bundle_dl type_flybag">
+                          <dt>FLYBAG</dt>
+                          <dd>
+                            <ul class="bundle_ico_list txt_in">
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_point.png" alt="">리프레시 포인트 적립</li>
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_baggage01.png" alt="">기내 수하물 10kg 제공</li>
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_baggage01.png" alt="">위탁 수하물 15kg 제공</li>
+                              <!-- <li><em class="bundle_ico ico_point"></em> <strong>리프레시 포인트 적립</strong></li>
+                              <li><em class="bundle_ico ico_bag"></em> <strong>기내 수하물 10kg 제공</strong></li>
+                              <li><em class="bundle_ico ico_bag"></em> <strong>위탁 수하물 15kg 제공</strong></li> -->
+                            </ul>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="bundle_dl-box swiper-slide">
+                        <dl class="bundle_dl type_flybag_y">
+                          <dt>FLEX</dt><!--20210527 운임명칭변경-->
+                          <dd>
+                            <ul class="bundle_ico_list txt_in">
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_point.png" alt="">리프레시 포인트 적립</li>
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_baggage01.png" alt="">기내 수하물 10kg 제공</li>
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_baggage01.png" alt="">위탁 수하물 15kg 제공</li>
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_discount.png" alt="">신분할인 적용 가능</li>
+                              <!-- <li><em class="bundle_ico ico_point"></em> <strong>리프레시 포인트 적립</strong></li>
+                              <li><em class="bundle_ico ico_bag"></em> <strong>기내 수하물 10kg 제공</strong></li>
+                              <li><em class="bundle_ico ico_bag"></em> <strong>위탁 수하물 15kg 제공</strong></li>
+                              <li><em class="bundle_ico ico_sale"></em> <strong>신분할인 적용 가능</strong></li> -->
+                            </ul>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="bundle_dl-box swiper-slide">
+                        <dl class="bundle_dl type_newclass">
+                          <dt>BIZ LITE</dt><!--20210527 운임명칭변경-->
+                          <dd>
+                            <ul class="bundle_ico_list txt_in">
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_point.png" alt="">리프레시 포인트 적립</li>
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_baggage01.png" alt="">기내 수하물 10kg 제공</li>
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_baggage01.png" alt="">위탁 수하물 30kg 제공</li>
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_priority.png" alt="">공항 현장 우선 탑승</li>
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_discount.png" alt="">여정 변경 수수료 무료</li>
+                              <li class="benefit-list-item"><img src="../../assets/images/ticketing/icon_premium.png" alt="">넓은 비지니스 라이트 좌석 제공</li>
+  
+                              <!-- <li><em class="bundle_ico ico_point"></em> <strong>리프레시 포인트 적립</strong></li>
+                              <li><em class="bundle_ico ico_bag"></em> <strong>기내 수하물 10kg 제공</strong></li>
+                              <li><em class="bundle_ico ico_bag"></em> <strong>위탁 수하물 30kg 제공</strong></li>
+                              <li><em class="bundle_ico ico_first"></em> <strong>공항 현장 우선 탑승</strong></li>
+                              <li><em class="bundle_ico ico_sale"></em> <strong>여정 변경 수수료 무료</strong></li>
+                              <li><em class="bundle_ico ico_premium"></em> <strong>넓은 비지니스 라이트 좌석 제공</strong></li> -->
+                            </ul>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <a href="#none" class="carousel__button carousel__button-prev button__page button__page-prev"><span class="hidden">이전</span></a>
+                    <a href="#none" class="carousel__button carousel__button-next button__page button__page-next"><span class="hidden">다음</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+          </div>
+        </div>
+        <!-- //서비스 옵션 안내 팝업 -->
+
+
+        <div id="modalLayer02" class="modal modal-full modal-scroll">
+          <div class="modal-header">
+            <div class="modal-header__title">운임 안내</div><!--20210527 title 변경-->
+          </div>
+          <div class="modal-content h_70">
+            <!--20210527 tab으로 변경 NA_1_28 + NA_1_2D 합쳐짐-->
+            <div data-element="tab" class="tab tab--default pc-tab-full tab-fixed">
+              <div class="tab__buttons">
+                <div data-element="tab__list" class="tab__button">
+                  <button type="button" data-element="tab__anchor" class="tab__anchor is-active">운임 내 제공 서비스</button>
+                </div>
+                <div data-element="tab__list" class="tab__button">
+                  <button type="button" data-element="tab__anchor" class="tab__anchor">운임별 비교</button>
+                </div>
+              </div>
+              <!-- 운임 내 제공 서비스 -->
+              <div data-element="tab__panel" class="tab__panel">
+                <!-- 비지니스 라이트 좌석  -->
+                <div>
+                  <div class="section-title">
+                    <i class="icon icon--img" aria-hidden="true"><img src="../../assets/images/icon/icon-service-option01.png" alt=""></i>
+                    비지니스 라이트 좌석<!--20210527 문구 변경-->
+                  </div>
+                  <p class="section-sub-txt">일반석에 비해 1.5배 넓어진 좌석에서 편안하게 여행해 보세요.</p>
+                </div>
+                <!-- //비지니스 라이트 좌석  -->
+
+                <!-- 공항 라운지  -->
+                <div class="section-wrap">
+                  <div class="section-title">
+                    <i class="icon icon--img" aria-hidden="true">
+                      <img src="../../assets/images/icon/icon-service-option02.png" alt="">
+                    </i>
+                    공항 라운지
+                  </div>
+                  <p class="section-sub-txt">공항 라운지는 인천공항 출발편에만 제공(운영시간 06:00 ~ 22:00)되며, 다른 공항 출발편에는 제공되지 않습니다.</p>
+                </div>
+                <!-- //공항 라운지  -->
+
+                <!-- 위탁 수하물 -->
+                <div class="section-wrap">
+                  <div class="section-title">
+                    <i class="icon icon--img" aria-hidden="true">
+                      <img src="../../assets/images/icon/icon-service-option03.png" alt="">
+                    </i>
+                    위탁 수하물
+                  </div>
+                  <p class="section-sub-txt">각 서비스별로 무료 수하물 허용량이 별도 제공됩니다. 항공권 예매와 별도로 수하물 추가 구매 시에는 별도 요금이 부과됩니다.</p>
+                </div>
+                <!-- //위탁 수하물 -->
+
+                <!-- 기내식 -->
+                <div class="section-wrap">
+                  <div class="section-title">
+                    <i class="icon icon--img" aria-hidden="true">
+                      <img src="../../assets/images/icon/icon-service-option04.png" alt="">
+                    </i>
+                    기내식
+                  </div>
+                  <p class="section-sub-txt">각 서비스별로 무료 식사가 제공될 수 있습니다. 무료 제공되는 음식 이외의 기내식을 구매하실 경우 별도 요금이 부과됩니다.</p>
+                  <div class="guide-info guide-info--gray">
+                    <p class="guide-info__text">젯스타 공동운항은 출발 시간 기준 24 ~ 84시간 사이에 예매하는 경우 기내식 대신 기내에서 사용할 수 있는 바우처가 제공됩니다. 
+                      이후에 항공권 예매 또는 여정 변경 시점이 출발일 기준 2일 이내일 경우 웰컴 스낵은 제공되지 않습니다.</p>
+                  </div>
+                </div>
+                <!-- //기내식 -->
+
+                <!-- 좌석 선택 -->
+                <div class="section-wrap">
+                  <div class="section-title">
+                    <i class="icon icon--img" aria-hidden="true">
+                      <img src="../../assets/images/icon/icon-service-option05.png" alt="">
+                    </i>
+                    좌석 선택
+                  </div>
+                  <p class="section-sub-txt">각 서비스별로 예약과 동시에 좌석을 선택할 수 있습니다. 해당 좌석은 서비스별로 지정 가능 범위가 한정될 수 있습니다.</p>
+                </div>
+                <!-- //좌석 선택 -->
+
+                <!-- 우선 탑승 -->
+                <div class="section-wrap">
+                  <div class="section-title">
+                    <i class="icon icon--img" aria-hidden="true">
+                      <img src="../../assets/images/icon/icon-service-option06.png" alt="">
+                    </i>
+                    우선 탑승
+                  </div>
+                  <p class="section-sub-txt">항공기 탑승 시, 별도의 순서에 따라 먼저 탑승을 안내합니다.(단, 일반 탑승 진행 시작 이후에는 별도 우선 탑승은 제한됨)</p>
+                </div>
+                <!-- //우선 탑승 -->
+
+                <!-- 우선 수하물 처리 -->
+                <div class="section-wrap">
+                  <div class="section-title">
+                    <i class="icon icon--img" aria-hidden="true">
+                      <img src="../../assets/images/icon/icon-service-option07.png" alt="">
+                    </i>
+                    우선 수하물 처리
+                  </div>
+                  <p class="section-sub-txt">우선 수하물은 위탁 수하물을 다른 승객보다 먼저 받을 수 있는 서비스입니다.
+                    단, 공항설비 및 사정, 수하물 검사 등의 사유로 수하물 처리 순서는 바뀔 수 있으며, 반드시 우선 처리를 보장하지는 않습니다.</p>
+                </div>
+                <!-- //우선 수하물 처리 -->
+
+                <!-- 여정 변경 수수료 20211021 삭제 - 통테변경 -->
+                <!-- <div class="section-wrap">
+                  <div class="section-title">
+                    <i class="icon icon--img" aria-hidden="true">
+                      <img src="../../assets/images/icon/icon-service-option08.png" alt="">
+                    </i>
+                    여정 변경 수수료
+                  </div>
+                  <p class="section-sub-txt">항공편 일정을 변경하는 경우, 이에 대한 변경 수수료가 면제됩니다. 
+                        (단, 운임 및 유류할증료, 각종 세금, 서비스수수료 등 차액이 발생하는 경우에는 수수료가 부과될 수 있음)</p>
+                </div> -->
+                <!-- //여정 변경 수수료 -->
+              </div>
+              <!--운임별 비고-->
+              <div data-element="tab__panel" class="tab__panel">
+                <!--20210906 스타일 수정-->
+                <div class="tab-bundle-wrap">
+                  
+                  <div class="swiper-full">
+                    <div class="swiper-full-in">
+                      <div class="package__items" data-carousel="FareInforSlide">
+                        <div class="swiper-wrapper">
+                          <div class="package__item swiper-slide">
+                            <div class="package__item-inner">
+                              <div class="package-pad">
+                                <div class="package__top">
+                                  <strong class="name">FLY</strong>
+                                </div>
+                                <div class="package__info">
+                                  <ul class="bundle_ico_list txt_in">
+                                    <li><em class="bundle_ico ico_point"></em> <strong>리프레시 포인트 적립</strong></li>
+                                    <li><em class="bundle_ico ico_bag"></em> <strong>기내 수하물 10kg 제공</strong></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="package__item swiper-slide">
+                            <div class="package__item-inner">
+                              <div class="package-pad">
+                              <div class="package__top">
+                                <strong class="name">FLYBAG</strong>
+                              </div>
+                              <div class="package__info">
+                                <ul class="bundle_ico_list txt_in">
+                                  <li><em class="bundle_ico ico_point"></em> <strong>리프레시 포인트 적립</strong></li>
+                                  <li><em class="bundle_ico ico_bag"></em> <strong>기내 수하물 10kg 제공</strong></li>
+                                  <li><em class="bundle_ico ico_bag"></em> <strong>위탁 수하물 15kg 제공</strong></li>
+                                </ul>
+                              </div>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="package__item swiper-slide">
+                            <div class="package__item-inner">
+                              <div class="package-pad">
+                                <div class="package__top">
+                                  <strong class="name">FLEX</strong>
+                                </div>
+                                <div class="package__info">
+                                  <ul class="bundle_ico_list txt_in">
+                                    <li><em class="bundle_ico ico_point"></em> <strong>리프레시 포인트 적립</strong></li>
+                                    <li><em class="bundle_ico ico_bag"></em> <strong>기내 수하물 10kg 제공</strong></li>
+                                    <li><em class="bundle_ico ico_bag"></em> <strong>위탁 수하물 15kg 제공</strong></li>
+                                    <li><em class="bundle_ico ico_sale"></em> <strong>신분할인 적용 가능</strong></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="package__item swiper-slide">
+                            <div class="package__item-inner">
+                              <div class="package-pad">
+                                <div class="package__top">
+                                  <strong class="name">BIZ LITE</strong>
+                                </div>
+                                <div class="package__info">
+                                  <ul class="bundle_ico_list txt_in">
+                                    <li><em class="bundle_ico ico_point"></em> <strong>리프레시 포인트 적립</strong></li>
+                                    <li><em class="bundle_ico ico_bag"></em> <strong>기내 수하물 10kg 제공</strong></li>
+                                    <li><em class="bundle_ico ico_bag"></em> <strong>위탁 수하물 30kg 제공</strong></li>
+                                    <li><em class="bundle_ico ico_first"></em> <strong>공항 현장 우선 탑승</strong></li>
+                                    <li><em class="bundle_ico ico_sale"></em> <strong>여정 변경 수수료 무료</strong></li>
+                                    <li><em class="bundle_ico ico_premium"></em> <strong>넓은 비지니스 라이트 좌석 제공</strong></li><!--20210429 문구 수정-->
+                                  </ul>
+                                </div>
+                                </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+                <!--//20210906 스타일 수정-->
+                
+
+              </div>
+            </div>
+
+
+
+            
+          </div>
+          <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+        </div>
+
+
+
+      </main>
+    </div>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <script>
+    // 운임안내 슬라이드
+    var premiumServiceSlide = new Swiper('[data-carousel="FareServiceSlide"]', {
+      slidesPerView: 'auto',
+      spaceBetween: 0,
+      centeredSlides: false,
+      navigation: {
+        nextEl: ".carousel__button-next",
+        prevEl: ".carousel__button-prev",
+      },
+      breakpoints: {
+        1079: {
+          slidesPerView: 'auto',
+        },
+      }
+    });
+
+    // 운임안내 슬라이드 팝업 호출시 슬라이드 업데이트
+    $('[data-btn="btnFare"]').on('click',function(){
+      premiumServiceSlide.update();
+    });
+  </script>
+</body>
+
+</html>

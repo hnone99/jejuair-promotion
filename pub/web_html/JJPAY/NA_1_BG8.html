@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/jjpay.css">
+</head>
+
+<body>
+  <div class="modal">
+    <div  class=" modal-header">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <div class="modal-header__title">카드 선택</div>
+    </div>
+    <div class="modal-content">
+      <div class="section-wrap">
+        <div class="card-select-wrap">
+          <div class="card-select">
+            <input type="radio" class="card-select__item" id="cardSelect" name="cardSelect" checked>
+            <label for="cardSelect" class="card-select__button">
+              <img src="../../assets/images/icon/icon-bank-wr.png" alt="우리카드">
+              <span class="name">우리카드</span>
+            </label>
+          </div>
+          <div class="card-select">
+            <input type="radio" class="card-select__item" id="cardSelect02" name="cardSelect">
+            <label for="cardSelect02" class="card-select__button">
+              <img src="../../assets/images/icon/icon-bank-kb.png" alt="국민카드">
+              <span class="name">국민카드</span>
+            </label>
+          </div>
+          <div class="card-select">
+            <input type="radio" class="card-select__item" id="cardSelect03" name="cardSelect">
+            <label for="cardSelect03" class="card-select__button">
+              <img src="../../assets/images/icon/icon-bank-ss.png" alt="삼성카드">
+              <span class="name">삼성카드</span>
+            </label>
+          </div>
+          <div class="card-select">
+            <input type="radio" class="card-select__item" id="cardSelect04" name="cardSelect">
+            <label for="cardSelect04" class="card-select__button">
+              <img src="../../assets/images/icon/icon-bank-hy.png" alt="현대카드">
+              <span class="name">현대카드</span>
+            </label>
+          </div>
+          <div class="card-select">
+            <input type="radio" class="card-select__item" id="cardSelect05" name="cardSelect">
+            <label for="cardSelect05" class="card-select__button">
+              <img src="../../assets/images/icon/icon-bank-bc.png" alt="BC카드">
+              <span class="name">BC카드</span>
+              <span class="promotion">5% 청구할인</span>
+            </label>
+          </div>ㅡ
+          <div class="card-select">
+            <input type="radio" class="card-select__item" id="cardSelect06" name="cardSelect">
+            <label for="cardSelect06" class="card-select__button">
+              <img src="../../assets/images/icon/icon-bank-shinhan.png" alt="신한카드">
+              <span class="name">신한카드</span>
+            </label>
+          </div>
+          <div class="card-select">
+            <input type="radio" class="card-select__item" id="cardSelect07" name="cardSelect">
+            <label for="cardSelect07" class="card-select__button">
+              <img src="../../assets/images/icon/icon-bank-lo.png" alt="롯데카드">
+              <span class="name">롯데카드</span>
+              <span class="promotion">5% 즉시할인</span>
+            </label>
+          </div>
+          <div class="card-select">
+            <input type="radio" class="card-select__item" id="cardSelect08" name="cardSelect">
+            <label for="cardSelect08" class="card-select__button">
+              <img src="../../assets/images/icon/icon-bank-nh.png" alt="NH카드">
+              <span class="name">NH카드</span>
+            </label>
+          </div>
+          <div class="card-select">
+            <input type="radio" class="card-select__item" id="cardSelect09" name="cardSelect">
+            <label for="cardSelect09" class="card-select__button">
+              <img src="../../assets/images/icon/icon-bank-industry.png" alt="수협카드">
+              <span class="name">수협카드</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="guide-info guide-info--gray">
+        <p class="guide-info__text">본인 명의의 신용/체크카드만 이용할 수 있습니다.</p>
+      </div>
+    </div>
+    <div class="fixed-wrap fixed-wrap--multi-line border-none">
+      <!-- checkbox 없는 경우 border-none class 추가 -->
+      <div class="button-wrap">
+        <button type="button" class="button button--active"><span class="button__text">선택 완료</span></button>
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close" onclick="closeWindow ()"><span class="blind">닫기</span></a>
+  </div>
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script>
+    // 창닫기
+    function closeWindow() {
+      window.open('', '_self', '');
+      window.close();
+    }
+  </script>
+</body>
+
+</html>

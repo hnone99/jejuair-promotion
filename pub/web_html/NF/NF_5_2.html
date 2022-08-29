@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">위탁 수하물</h2>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 --><!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택" class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택" class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box"><!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+                <span class="hidden">검색창 닫기</span>
+              </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 --><!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div id="body">
+    <div class="wrap wrap--button">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">탑승수속안내</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">수하물 안내</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle" data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>
+            <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor">위탁 수하물</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel">
+              <a href="#" class="item">위탁 수하물</a>
+              <a href="#" class="item">위탁 수하물</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="content" id="content">
+        <main id="main" class="main">
+
+
+          <div class="page-title-wrap">
+            <div class="page-title">위탁 수하물</div>
+            <div class="page-sub-title">기내용 수하물을 <br class="mobile-only">꼭 확인해 주세요.</div>
+          </div>  
+
+          <div class="section-wrap">
+            <div class="section-title">무료 수하물 허용 규격</div>
+            <div class="baggage-img">
+              <p class="baggage-img__area"><img src="../../assets/images/etc/baggage-01.png" alt=""></p>
+              <div class="baggage-img__text">
+                <p class="baggage-img__text-title">세 변의 합(cm)
+                </p>
+                <p class="baggage-img__text-desc">
+                  <spa class="baggage-img__text-desc-org">A+B+C = 203cm이내</spa>
+                </p>
+                <ul class="list-guide list-guide--asterisk list-guide--asterisk-gray">
+                  <li class="list-guide__item">
+                    국내선,국제선 (괌/사이판 제외)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul class="list-guide">
+              <li class="list-guide__item">괌/사이판 : 무료 수하물 2개 이상 위탁 시, 2개의 수하물을 합한 세 변의 합이 273cm 이내</li>
+            </ul>
+          </div>
+          
+
+          <div class="section-wrap">
+            <div data-element="tab" class="tab tab--default">
+              <div class="tab__buttons">
+                <div data-element="tab__list" class="tab__button">
+                  <button type="button" data-element="tab__anchor" class="tab__anchor is-active">국내선</button>
+                </div>
+                <div data-element="tab__list" class="tab__button">
+                  <button type="button" data-element="tab__anchor" class="tab__anchor">국제선</button>
+                </div>
+              </div>
+              <!-- 국내선 -->
+              <div data-element="tab__panel" class="tab__panel">
+                <div class="table-horizontal table-horizontal--narrow pc-15">
+                  <table>
+                    <caption>수하물 정보</caption>
+                    <colgroup>
+                      <col style="width:30%">
+                      <col>
+                      <col>
+                    </colgroup>
+                    <thead class="table-horizontal__thead">
+                      <tr>
+                        <th scope="col" class="table-horizontal__th">구분</th>
+                        <th scope="col" class="table-horizontal__td">성인/소아</th>
+                        <th scope="col" class="table-horizontal__td">유아</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-horizontal__tbody">
+                      <tr>
+                        <th scope="row" class="table-horizontal__th align--center">BIZ LITE</th>
+                        <td class="table-horizontal__td align--center">30kg</td>
+                        <td class="table-horizontal__td align--center">10kg</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="table-horizontal__th align--center">FLYBAG</th>
+                        <td class="table-horizontal__td align--center">15kg</td>
+                        <td class="table-horizontal__td align--center">무료 수하물 없음</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="table-horizontal__th align--center">FLY</th>
+                        <td colspan="2" class="table-horizontal__td align--center">무료 수하물 없음</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="sub-box">
+                  <ul class="list-guide">
+                    <li class="list-guide__item">무료 허용량 외 추가 수하물에는 무게요금이 따로 적용됩니다.</li>
+                    <li class="list-guide__item">추가 금액 지불 시 최대 32kg 가능합니다.</li>
+                    <li class="list-guide__item">다른 사람의 짐을 본인의 짐으로 위탁하는 것은 항공기 보안 및 안전상의 문제로 금지되어 있으니, 짐의 무게를 합산할 수는 없습니다.</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- //국내선 -->
+
+              <!-- 국제선 -->
+              <div data-element="tab__panel" class="tab__panel">
+
+                <div class="flex-table">
+                  <div>
+                    <div class="title">
+                      <div class="title__wrap title__first">
+                        <h2 class="title__section title__section--small">국제선(괌/사이판 제외)</h2>
+                      </div>
+                    </div>
+                    <div class="table-horizontal table-horizontal--narrow">
+                      <table>
+                        <caption>국제선(괌/사이판 제외) 수하물 정보</caption>
+                        <colgroup>
+                          <col style="width:30%">
+                          <col>
+                          <col>
+                        </colgroup>
+                        <thead class="table-horizontal__thead">
+                          <tr>
+                            <th scope="col" class="table-horizontal__th">구분</th>
+                            <th scope="col" class="table-horizontal__td">성인/소아</th>
+                            <th scope="col" class="table-horizontal__td">유아</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-horizontal__tbody">
+                          <tr>
+                            <th scope="row" class="table-horizontal__th align--center">BIZ LITE</th>
+                            <td class="table-horizontal__td align--center">30kg</td>
+                            <td class="table-horizontal__td align--center" rowspan="2">10kg</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="table-horizontal__th align--center">FLYBAG</th>
+                            <td class="table-horizontal__td align--center">15kg</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="table-horizontal__th align--center">Fly</th>
+                            <td class="table-horizontal__td align--center" colspan="2">무료 수하물 없음</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="section-wrap">
+                    <div class="title">
+                      <div class="title__wrap">
+                        <h2 class="title__section title__section--small">국제선(괌/사이판)</h2>
+                      </div>
+                    </div>
+                    <div class="table-horizontal table-horizontal--narrow">
+                      <table>
+                        <caption>국제선(괌/사이판) 수하물 정보</caption>
+                        <colgroup>
+                          <col style="width:30%">
+                          <col>
+                          <col>
+                        </colgroup>
+                        <thead class="table-horizontal__thead">
+                          <tr>
+                            <th scope="col" class="table-horizontal__th">구분</th>
+                            <th scope="col" class="table-horizontal__td">성인/소아</th>
+                            <th scope="col" class="table-horizontal__td">유아</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-horizontal__tbody">
+                          <tr>
+                            <th scope="row" class="table-horizontal__th align--center">BIZ LITE</th>
+                            <td class="table-horizontal__td align--center" colspan="2">2개*23kg</td>  
+                          </tr>
+                          <tr>
+                            <th scope="row" class="table-horizontal__th align--center">FLYBAG</th>
+                            <td class="table-horizontal__td align--center">1개*23kg</td>
+                            <td class="table-horizontal__td align--center">1개 10kg*10kg</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="table-horizontal__th align--center">Fly</th>
+                            <td class="table-horizontal__td align--center" colspan="2">무료 수하물 없음</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>               
+
+                <div class="section-wrap">
+                  <div class="section-title">추가허용</div>
+                  <div class="baggage-img2">
+                    <img src="../../assets/images/etc/baggage-02.png" alt="">
+                  </div>
+                  <ul class="list-guide">
+                    <li class="list-guide__item">휴대용 유모차, 보행기, 카 시트, 유아 운반용 요람 등 추가 허용 가능</li>
+                    <li class="list-guide__item">휠체어 추가 허용 가능 (전동 휠체어의 경우 국제항공협회의 배터리 운송 규정에 의거, 항공사의 별도 사전승인이 필요합니다)</li>
+                  </ul>
+                </div>
+
+              </div>
+              <!-- //국제선 -->
+
+              <div class="tab__panel">
+
+                <div class="section-wrap">
+                  <div class="section-title">빠른 짐 찾기 서비스 (도어사이드 서비스) 
+                     <span data-element="tooltip" role="tooltip" class="tooltip" data-set='{"width": "320", "left":"-150", "arrow" : "150"}'>
+                          <button type="button" aria-label="서비스 운임 (인당/편도 구간당) 툴팁 열기" data-element="tooltip__anchor" class="tooltip__button"></button>
+                          <span data-element="tooltip__panel" class="tooltip__panel">
+                            <span aria-hidden="true" class="tooltip-arrow"></span>
+                            <div class="tooltip-title">빠른 짐 찾기 서비스란? </div>
+                            <span class="tooltip-desc">빠른 짐 찾기 서비스는 목적지 공항에서 빠른 수하물 수취를 제공합니다.</span>
+                          </span>
+                        </span>
+                  </div>
+                  
+                  <div class="table-horizontal table-horizontal--narrow pc-15">
+                    <table>
+                      <caption>수하물 정보</caption>
+                      <colgroup>
+                        <col style="width:30%">
+                        <col>
+                      </colgroup>
+                      <thead class="table-horizontal__thead">
+                        <tr>
+                          <th scope="col" class="table-horizontal__th">구분</th>
+                          <th scope="col" class="table-horizontal__td">요금</th>
+                        </tr>
+                      </thead>
+                      <tbody class="table-horizontal__tbody">
+                        <tr>
+                          <th scope="row" class="table-horizontal__th align--center">국내선</th>
+                          <td class="table-horizontal__td align--center">3,000원 / USD 3 (1개당)</td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="table-horizontal__th align--center">국제선</th>
+                          <td class="table-horizontal__td align--center">5,000원 / USD 5 (PC)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+  
+  <!-- FOOTER -->
+  <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+  <div class="footer pc-only">
+    <!-- pc -->
+    <footer class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">제주항공 소개</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">투자정보</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">채용안내</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">여객운송약관</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">홈페이지이용약관</a>
+        </div>
+        <div class="footer__top-item footer__top-item--privacy">
+          <a href="#" class="footer__top-link">개인정보처리방침</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">사이트맵</a>
+        </div>
+  
+        <div class="footer__top-item footer__top-item--family">
+          <div class="family-wrap" data-element="toggle" data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+            <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+            <div class="family-list" data-element="toggle__panel">
+              <a href="#" class="family-link">㈜애경산업</a>
+              <a href="#" class="family-link">㈜에이텍</a>
+              <a href="#" class="family-link">애경S.T</a>
+              <a href="#" class="family-link">에이케이아이에스㈜</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <hr class="footer__spacer">
+  
+      <div class="footer__bottom">
+        <a href="#" class="footer__logo">
+        <img src="../../assets/images/upload/logo_jeju_gray.png" alt="jeju Air"><!--2021-04-13 이미지로 변경-->
+      </a>
+        <div class="footer__bottom-contents">
+          <div class="footer__bottom-info">
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 서비스 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공위험물안내</a>
+            </div>
+          </div>
+          <div class="footer__bottom-recommand">
+            <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+            <div class="recommand-list">
+              <div class="recommand-item">
+                <a href="#" class="link">최저 운임 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">서울 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">제주 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">부산 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">무안 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">청부 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">대구 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">광주 출발 항공</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-util">
+            <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png" alt="VALUE ALLIANCE"></a>
+            <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
+            <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt=""> Android</a>
+          </div>
+          <p class="footer__bottom-address"><span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br>
+            제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)</p>
+          <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- //pc -->
+  </div>
+  <!-- //FOOTER -->
+
+<script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

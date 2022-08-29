@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+<title>Component_Sticky</title>
+<link rel="stylesheet" href="../../assets/css/global.css">
+<link rel="stylesheet" href="../../assets/css/component.css">
+<link rel="stylesheet" href="../../assets/css/page.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+<link rel="stylesheet" href="../../../index/css/component_guide.css">
+
+<!-- syntaxHighlighter -->
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shCore.js"></script>
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushCss.js"></script>
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
+<script src="../../../index/js/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+<script>
+//<![CDATA[
+SyntaxHighlighter.defaults['toolbar'] = false; 
+SyntaxHighlighter.all()
+//]]> 
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="content" id="content">
+    <div id="main" class="main">
+      <div class="title__page">
+        Sticky (Header&amp;Quick Booking)
+      </div>
+      <div class="sample-view">
+        <div id="header" class="header header--main">
+          <header class="header__inner pc-only">
+            <div class="sticky-header" data-sticky>
+              <div class="header__box">
+                <h1 class="header__logo">
+                  <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+                </h1>
+                <div class="header__link-list">
+                  <a href="#" class="header__link">항공권 예매</a>
+                  <a href="#" class="header__link header__link--current">마이페이지</a>
+                  <a href="#" class="header__link">부가서비스</a>
+                  <a href="#" class="header__link">모바일탑승권</a>
+                  <a href="#" class="header__link">이벤트</a>
+                </div>
+                <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+                  <button type="button" class="header__button-search" data-custom-toggle="button">
+                    <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+                  </button>
+                </div>
+                <div class="header__button-wrap">
+                  <button type="button" class="gnb__button">
+                    <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+                  </button>
+                </div>
+                <!-- goto-quick-booking : 스티키 클릭용 -->
+                <div class="goto-quick-booking">
+                  <a href="#a">
+                    <span>어디로 여행가세요?</span>
+                    <div class="goto-btn">
+                      <span>항공권 검색</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- //goto-quick-booking -->              
+              </div>
+            </div>
+          </header>
+        </div>
+        <div id="body">
+          <div class="wrap wrap--main GA" style="min-height:inherit;"> <!-- 모바일 별도. 가이드용 임의처리 -->
+            <div class="content" id="content" style="min-height:inherit;">
+              <main id="main" class="main">
+                <!-- quick-booking : pc-only -->
+                <div class="quick-booking pc-only quick-sticky-controller">
+                  <div class="dimmed"></div>
+                  <div class="inner">
+                    <div class="bg"></div>
+                    <div class="fixed-block">
+                      <div class="quick-box-wrap">
+                        <ul class="quick-booking-top">
+                          <li class="booking-type1 active"><a href="#a">왕복</a></li>
+                          <li class="booking-type2"><a href="#a">편도</a></li>
+                          <li><a href="#a">다구간</a></li>
+                        </ul>
+                        <div class="booking-cont type1 active" style="width:993px; height:50px;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pc-wrap" style="min-height:inherit;">
+                  <div class="pc-only" style="margin:50px 0; font-size:16px; color:#777; transform: matrix(1, 0, 0.0005, 1, 0, 0); ">Next Contents Area</div>
+                </div>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+      <pre class="brush:js;">
+        if ((window.scrollY || window.pageYOffset) >= $('.quick-sticky-controller').next().offset().top - 50) {
+          $('html').addClass('sticky-booking');
+        } else {
+          $('html').removeClass('sticky-booking','sticky-booking-active');
+        }
+      </pre>  
+      <ul class="list-guide">
+        <li>스크롤시 class="header"에 sticky class가 추가되며 position:fixed 처리</li>
+        <li>quick-sticky-controller : 퀵부킹 영역으로써 해당 영역을 벗어나면 html 최상단에 sticky-booking가 추가됨</li>
+        <li>quick-sticky-controller 다음 블럭에 div display:none 이나 mobile-only에 해당하는 div를 배치하면 dom 요소를 인식 못할 수 있으니 주의</li>
+        <li>sticky-booking-active : sticky-booking이 추가되었을 때 '어디로 여행가세요' 클릭시 생성됨</li>
+      </ul>      
+
+      <div class="title__page">
+        Sticky (Element)
+      </div>
+      <div class="sample-view">
+        <div class="tab tab--scroll tab--icon tab--icon-large tab__scroll" data-element="tab" data-options='{"tabType": "scroll"}'>
+          <div class="sticky-wrap">
+            <div class="sticky__inner" data-sticky>
+              <div class="tab__inner">
+                <button class="button tab__scroll-left" data-tab-direction="prev">
+                  <span class="hidden">왼쪽 탭으로 이동</span>
+                </button>
+                <button class="button tab__scroll-right" data-tab-direction="next">
+                  <span class="hidden">오른쪽 탭으로 이동</span>
+                </button>
+                <div class="tab__scroll-wrap--full tab__button-wrap" data-element="tab__scroll-wrap">
+                  <div class="tab__buttons" data-element="tab__scroll">
+                    <div class="tab__button" data-element="tab__list">
+                      <button class="tab__anchor is-checked" type="button" data-element="tab__anchor">
+                        <span class="passenger">
+                        <span class="type">성인 1</span>
+                          <strong class="name">KIM/ kongkongkong</strong>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="tab__button" data-element="tab__list">
+                      <button class="tab__anchor" type="button" data-element="tab__anchor">
+                        <span class="passenger withbaby">
+                        <span class="type">성인 2</span>
+                          <strong class="name">KIM/ kongkongkong</strong>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="tab__button" data-element="tab__list">
+                      <button class="tab__anchor" type="button" data-element="tab__anchor">
+                        <span class="passenger child">
+                        <span class="type">소아 1</span>
+                          <strong class="name">KIM/ kongkongkong</strong>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="tab__button" data-element="tab__list">
+                      <button class="tab__anchor" type="button" data-element="tab__anchor">
+                        <span class="passenger child">
+                        <span class="type">소아 1</span>
+                          <strong class="name">KIM/ kongkongkong</strong>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="tab__button" data-element="tab__list">
+                      <button class="tab__anchor" type="button" data-element="tab__anchor">
+                        <span class="passenger child">
+                        <span class="type">소아 1</span>
+                          <strong class="name">KIM/ kongkongkong</strong>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="tab__button" data-element="tab__list">
+                      <button class="tab__anchor" type="button" data-element="tab__anchor">
+                        <span class="passenger child">
+                        <span class="type">소아 1</span>
+                          <strong class="name">KIM/ kongkongkong</strong>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="tab__button" data-element="tab__list">
+                      <button class="tab__anchor" type="button" data-element="tab__anchor">
+                        <span class="passenger child">
+                        <span class="type">소아 1</span>
+                          <strong class="name">KIM/ kongkongkong</strong>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab__panel" data-element="tab__panel">컨텐츠 1</div>
+          <div class="tab__panel" data-element="tab__panel">컨텐츠 2</div>
+          <div class="tab__panel" data-element="tab__panel">컨텐츠 3</div>
+          <div class="tab__panel" data-element="tab__panel">컨텐츠 4</div>
+          <div class="tab__panel" data-element="tab__panel">컨텐츠 5</div>
+          <div class="tab__panel" data-element="tab__panel">컨텐츠 6</div>
+          <div class="tab__panel" data-element="tab__panel">컨텐츠 7</div>
+        </div>
+      </div>
+      <pre class="brush:html;">
+        &lt;div class="tab tab--scroll"&gt;
+          &lt;div class="sticky-wrap"&gt;
+            &lt;div class="sticky__inner" data-sticky&gt;
+              &lt;div class="tab__inner"&gt;
+                ...
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      </pre>  
+      <br>
+      <pre class="brush:js;">
+        function scrollEvent(position) {
+          ...
+          $('.is-sticky:visible').each(function (i, e) {
+            elementHeight += $(e).closest('.sticky-wrap').outerHeight(true);
+          });
+          ...
+              if (yv < 0 && window.stickyBanMode !== true && pcBan === false) {
+                $(options.element[i]).addClass('is-sticky');
+                $(options.element[i]).closest('.sticky-wrap').css({
+                  'padding-top': paddingSize
+                });
+              } else {
+                $(options.element[i]).closest('.sticky-wrap').css({
+                  'padding-top': 0
+                });
+                options.element[i].style.removeProperty('margin-top');
+                $(options.element[i]).removeClass('is-sticky');
+              }
+            });
+          };
+        }
+      </pre>  
+      <ul class="list-guide">
+        <li>스크롤시 sticky-wrap에 모바일/PC버전 각각 해당 padding-top 값 생성</li>
+        <li>sticky__inner 영역에 is-sticky class 추가되며 margin 값 생성</li>
+      </ul>            
+      <div style="height:700px;"></div>
+    </div>
+  </div>
+</div> 
+
+<script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+<script>
+$(document).ready(function () {
+  $('.goto-quick-booking > a').on('click', function () {
+    $('.sticky-booking').addClass('sticky-booking-active');
+  });
+  $('.quick-booking .dimmed').on('click', function () { 
+    $('html').removeClass('sticky-booking-active');
+    // $dateLayer.slideUp(300);
+  });
+});
+</script>
+</body>
+</html>

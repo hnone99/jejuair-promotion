@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/jjpay.css">
+</head>
+
+<body>
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-header__title">개인정보 수집 및 이용동의</div>
+    </div>
+    <div class="modal-content">
+      <div class="section-wrap agreement">
+        <p class="row">
+          케이지이니시스(이하 ‘회사’라 한다)는 전자지급결제서비스(이하 ‘OO페이’라고 한다)를 제공하기 위해서 필요한 회원님의 필수 정보를 아래와 같이 수집, 이용하고자 하오니, 이에
+          동의하여 주시기를 부탁 드립니다.
+        </p>
+        <h2>제1조 (수집・이용하는 개인정보)</h2>
+        <ul>
+          <li>1. 이름, 주민번호 앞7자리, 휴대전화번호, 통신사, 카드정보(카드번호, 유효기간, CVC코드, 비밀번호 앞2자리)</li>
+        </ul>
+        <h2>제2조 (수집・이용 목적)</h2>
+        <ul>
+          <li>1. 본인인증, OO페이 서비스 제공을 위한 결제정보 등록</li>
+        </ul>
+        <h2>제3조 (수집·이용 기간)</h2>
+        <ul>
+          <li>1. 수집, 이용 동의 일로부터 OO페이 서비스 탈퇴 시까지</li>
+        </ul>
+        <p class="row">
+          ※ 위 사항에 대한 동의를 거부할 수 있으나, 이에 대한 동의가 없을 경우 OO페이 서비스이용에 제한을 받으실 수 있음을 알려 드립니다. </p>
+      </div>
+    </div>
+    <div class="fixed-wrap fixed-wrap--multi-line border-none">
+      <div class="button-wrap">
+        <button type="button" class="button button--active"><span class="button__text">동의</span></button>
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close" onclick="closeWindow ()"><span class="blind">닫기</span></a>
+  </div>
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script>
+    // 창닫기
+    function closeWindow() {
+      window.open('', '_self', '');
+      window.close();
+    }
+  </script>
+</body>
+
+</html>

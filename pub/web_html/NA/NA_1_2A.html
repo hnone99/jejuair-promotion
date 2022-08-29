@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <!-- HEADER -->
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only ">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <div class="header__stepper">
+        <ol class="stepper__group_new booking_step">
+          <li class="active">
+            <!--활성화 스탭.active 추가-->
+            <span class="step">1</span>
+            <span class="text">항공권선택</span>
+          </li>
+          <li>
+            <span class="step">2</span>
+            <span class="text">탑승객 정보 입력</span>
+          </li>
+          <li>
+            <span class="step">3</span>
+            <span class="text">부가서비스 선택</span>
+          </li>
+          <li>
+            <span class="step">4</span>
+            <span class="text">확인 및 동의</span>
+          </li>
+          <li>
+            <span class="step">5</span>
+            <span class="text">결제</span>
+          </li>
+        </ol>
+      </div>
+
+    </header>
+    <!-- //mobile -->
+
+    <!-- pc용 예매 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div class="select-wrap select-wrap--line">
+                <select title="국가 선택" class="select-wrap__select">
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div class="select-wrap select-wrap--line">
+                <select class="select-wrap__select" title="언어 선택"> 
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner header__inner--step pc-only ">
+      <!--step 스타일 변경-->
+
+      <div class="sticky-header" data-sticky="">
+        <div class="header__box">
+          <h1 class="header__logo">
+            <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+          </h1>
+          <h2 class="header__page-name">항공권 예매</h2>
+
+          <div class="header__stepper">
+            <ol class="stepper__group_new booking_step">
+              <li class="active">
+                <!--활성화 스탭 .active 추가-->
+                <span class="step">1</span>
+                <span class="text">항공권선택</span>
+              </li>
+              <li>
+                <span class="step">2</span>
+                <span class="text">탑승객 정보 입력</span>
+              </li>
+              <li>
+                <span class="step">3</span>
+                <span class="text">부가서비스 선택</span>
+              </li>
+              <li>
+                <span class="step">4</span>
+                <span class="text">확인 및 동의</span>
+              </li>
+              <li>
+                <span class="step">5</span>
+                <span class="text">결제</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- // pc용 공통 헤더 -->
+  </div>
+  <!-- //HEADER -->
+
+  <div id="body">
+    <div class="wrap wrap--booking NA NA_1">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <strong class="breadcrumb__link" aria-current="page">예약</strong>
+          </div>
+          <div class="breadcrumb__item">
+            <strong class="breadcrumb__link breadcrumb__link--current" aria-current="page">항공권 예매</strong>
+          </div>
+        </nav>
+      </div>
+
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <!--가는편 - s -->
+          <div class="bundle_wrap on-the-way">
+            <div class="title booking-title">
+              <div class="title__box">
+                <div class="selected-bundle">
+                  <div class="flex-text">
+                    <span class="text">가는 편</span>
+                    <strong class="selected">FLY</strong>
+                    <span data-element="tooltip" role="tooltip" class="tooltip"
+                      data-set='{"width": "200", "left":"-80", "arrow" : "80", "hover": true}'>
+                      <button type="button" aria-label="$title 툴팁 열기" data-element="tooltip__anchor"
+                        class="tooltip__button"></button>
+                      <span data-element="tooltip__panel" class="tooltip__panel">
+                        <span aria-hidden="true" class="tooltip-arrow"></span>
+                        <span class="tooltip-desc tooltip-desc--icon">기내 수하물 10kg</span>
+                        <span class="tooltip-desc tooltip-desc--icon">위탁 수하물 10kg</span>
+                        <span class="tooltip-desc tooltip-desc--icon">1위탁 수하물 10kg</span>
+                        <span class="tooltip-desc tooltip-desc--icon">2위탁 수하물 10kg</span>
+                        <span class="tooltip-desc tooltip-desc--icon">3위탁 수하물 10kg</span>
+                        <span class="tooltip-desc tooltip-desc--icon">4위탁 수하물 10kg</span>
+                      </span>
+                    </span>
+
+                    <div class="booking-title__info">
+                      <span class="to">
+                        <span class="time">09:50</span>
+                        <span class="place">서울</span>
+                      </span>
+                      <span></span><span class="icon-to"></span>
+                      <span class="from">
+                        <!--공항명 추가 위치 이동-->
+                        <span class="time">10:50</span>
+                        <span class="place">타이베이</span>
+                        <span class="day">(+1일)</span>
+                      </span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="bundle_name_wrap pc-only">
+                  <p class="bundle_name_title">선택한 번들 : </p>
+                  <p class="bundle_name ">번들FLY</p>
+                  <!--번들명 입력-->
+                </div>
+              </div>
+            </div>
+            <!--가는편 title-->
+
+            <div class="bundle_cont_inner">
+              <div class="title_wrap">
+                <div class="title">실속만점 번들은 어떠세요?</div>
+              </div>
+
+              <!--번들 목록 - s-->
+              <div data-element="tab">
+                <div class="bundle_box_wrap tab__button-wrap">
+                  <div class="bundle_scroll">
+                    <!--번들 fly -->
+                    <div class="bundle_item">
+                      <div class="bundle_box" data-element="toggle" data-options='{"mode": "slide"}'>
+
+                        <div class="bundle_box__btn_wrap">
+                          <input type="checkbox" id="way01">
+                          <label for="way01">
+                            <dl>
+                              <dt class="bundle_name">번들 FLY</dt>
+                              <dd class="bundle__price">
+                                <div class="before">
+                                  <div class="discount">30% 할인</div>
+                                  <div class="del">
+                                    <span class="price_txt">12,000</span>
+                                    <span class="unit">원</span>
+                                  </div>
+                                </div>
+                                <div class="after">
+                                  <span class="price_txt">+ 12,000</span>
+                                  <span class="unit">원</span>
+                                </div>
+                              </dd>
+                            </dl>
+                            <div class="bundle_ico_list">
+                              <div class="text">포인트 추가 적립 외 6개 서비스 포함</div>
+                            </div>
+                            <div class="bundle_box__content" data-element="toggle__panel">
+                              <div class="bundle_ico_list txt_in">
+                                <ul>
+                                  <li>포인트 <strong>추가 적립</strong></li>
+                                  <li>위탁 수하물 <strong>20kg</strong></li>
+                                  <li>좌석 선택 <strong>일반석 무료</strong></li>
+                                  <li>사전 수하물 <strong>할인</strong></li>
+                                  <li>기내식 <strong>할인</strong></li>
+                                  <li><strong>우선</strong> 탑승&<strong>우선</strong> 수하물</li>
+                                  <li>에어카페 <strong>할인</strong></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <button type="button" class="bundle_box__anchor" data-element="toggle__anchor"><span>자세히
+                            보기</span></button>
+                      </div>
+                    </div>
+
+                    <!--번들 프리미엄 -->
+                    <div class="bundle_item">
+                      <div class="bundle_box" data-element="toggle" data-options='{"mode": "slide"}'
+                        data-element="tab__scroll">
+
+                        <div class="bundle_box__btn_wrap">
+                          <input type="checkbox" id="way02">
+                          <label for="way02">
+                            <dl>
+                              <dt class="bundle_name">번들 프리미엄</dt>
+                              <dd class="bundle__price">
+                                <div class="before">
+                                  <div class="discount">30% 할인</div>
+                                  <div class="del">
+                                    <span class="price_txt">12,000</span>
+                                    <span class="unit">원</span>
+                                  </div>
+                                </div>
+                                <div class="after">
+                                  <span class="price_txt">+ 12,000</span>
+                                  <span class="unit">원</span>
+                                </div>
+                              </dd>
+                            </dl>
+                            <div class="bundle_ico_list">
+                              <div class="text">포인트 추가 적립 외 11개 서비스 포함</div>
+                            </div>
+                            <div class="bundle_box__content" data-element="toggle__panel">
+                              <div class="bundle_ico_list txt_in">
+                                <ul>
+                                  <li>포인트 <strong>추가 적립</strong></li>
+                                  <li>위탁 수하물 <strong>30kg</strong></li><!--20210429 문구 수정-->
+                                  <li>좌석 선택 <strong>전 좌석 무료</strong></li>
+                                  <li>사전 수하물 <strong>할인</strong></li>
+                                  <li>기내식 <strong>할인</strong></li>
+                                  <li>JJ 라운지 이용 <strong>무료</strong></li><!--20210429 위치이동--><!--jj 라운지 띄어쓰기 수정-->
+                                  <li>변경 수수료 <strong>1회 무료</strong></li><!--20210429 위치이동-->
+                                  <li><strong>우선</strong> 탑승&<strong>우선</strong> 수하물</li>
+                                  <li>에어카페 <strong>할인</strong></li>
+                                  <li>웰컴 스낵 <strong>무료</strong></li>
+                                  <li><strong>프리미엄 전용</strong> 수속 카운터</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <button type="button" class="bundle_box__anchor" data-element="toggle__anchor"><span>자세히
+                            보기</span></button>
+                      </div>
+                    </div>
+                    <!--번들 프리미엄 -->
+                    <div class="bundle_item">
+                      <div class="bundle_box" data-element="toggle" data-options='{"mode": "slide"}'
+                        data-element="tab__scroll">
+
+                        <div class="bundle_box__btn_wrap">
+                          <input type="checkbox" id="way03">
+                          <label for="way03">
+                            <dl>
+                              <dt class="bundle_name">번들 프리미엄</dt>
+                              <dd class="bundle__price">
+                                <div class="before">
+                                  <div class="discount">30% 할인</div>
+                                  <div class="del">
+                                    <span class="price_txt">12,000</span>
+                                    <span class="unit">원</span>
+                                  </div>
+                                </div>
+                                <div class="after">
+                                  <span class="price_txt">+ 12,000</span>
+                                  <span class="unit">원</span>
+                                </div>
+                              </dd>
+                            </dl>
+                            <div class="bundle_ico_list">
+                              <div class="text">포인트 추가 적립 외 11개 서비스 포함</div>
+                            </div>
+                            <div class="bundle_box__content" data-element="toggle__panel">
+                              <div class="bundle_ico_list txt_in">
+                                <ul>
+                                  <li>포인트 <strong>추가 적립</strong></li>
+                                  <li>위탁 수하물 <strong>30kg</strong></li><!--20210429 문구 수정-->
+                                  <li>좌석 선택 <strong>전 좌석 무료</strong></li>
+                                  <li>사전 수하물 <strong>할인</strong></li>
+                                  <li>기내식 <strong>할인</strong></li>
+                                  <li>JJ 라운지 이용 <strong>무료</strong></li><!--20210429 위치이동--><!--jj 라운지 띄어쓰기 수정-->
+                                  <li>변경 수수료 <strong>1회 무료</strong></li><!--20210429 위치이동-->
+                                  <li><strong>우선</strong> 탑승&<strong>우선</strong> 수하물</li>
+                                  <li>에어카페 <strong>할인</strong></li>
+                                  <li>웰컴 스낵 <strong>무료</strong></li>
+                                  <li><strong>프리미엄 전용</strong> 수속 카운터</li>
+                                </ul> 
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <button type="button" class="bundle_box__anchor" data-element="toggle__anchor"><span>자세히
+                            보기</span></button>
+                      </div>
+                    </div>
+                    <!--번들 프리미엄 -->
+                    <div class="bundle_item">
+                      <div class="bundle_box" data-element="toggle" data-options='{"mode": "slide"}'
+                        data-element="tab__scroll">
+
+                        <div class="bundle_box__btn_wrap">
+                          <input type="checkbox" id="way04">
+                          <label for="way04">
+                            <dl>
+                              <dt class="bundle_name">번들 프리미엄</dt>
+                              <dd class="bundle__price">
+                                <div class="before">
+                                  <div class="discount">30% 할인</div>
+                                  <div class="del">
+                                    <span class="price_txt">12,000</span>
+                                    <span class="unit">원</span>
+                                  </div>
+                                </div>
+                                <div class="after">
+                                  <span class="price_txt">+ 12,000</span>
+                                  <span class="unit">원</span>
+                                </div>
+                              </dd>
+                            </dl>
+                            <div class="bundle_ico_list">
+                              <div class="text">포인트 추가 적립 외 6개 서비스 포함</div>
+                            </div>
+                            <div class="bundle_box__content" data-element="toggle__panel">
+                              <div class="bundle_ico_list txt_in">
+                                <ul>
+                                  <li>포인트 <strong>추가 적립</strong></li>
+                                  <li>위탁 수하물 <strong>30kg</strong></li><!--20210429 문구 수정-->
+                                  <li>좌석 선택 <strong>전 좌석 무료</strong></li>
+                                  <li>사전 수하물 <strong>할인</strong></li>
+                                  <li>기내식 <strong>할인</strong></li>
+                                  <li>JJ 라운지 이용 <strong>무료</strong></li><!--20210429 위치이동--><!--jj 라운지 띄어쓰기 수정-->
+                                  <li>변경 수수료 <strong>1회 무료</strong></li><!--20210429 위치이동-->
+                                  <li><strong>우선</strong> 탑승&<strong>우선</strong> 수하물</li>
+                                  <li>에어카페 <strong>할인</strong></li>
+                                  <li>웰컴 스낵 <strong>무료</strong></li>
+                                  <li><strong>프리미엄 전용</strong> 수속 카운터</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <button type="button" class="bundle_box__anchor" data-element="toggle__anchor"><span>자세히 보기</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--번들 목록 - e-->
+            </div>
+
+          </div>
+          <!--가는편 - e -->
+
+          <!--오는편 - s -->
+          <div class="bundle_wrap come-way sub-section">
+            <div class="title booking-title">
+              <div class="title__box">
+                <div class="selected-bundle">
+                  <div class="flex-text">
+                    <span class="text">오는 편</span>
+                    <strong class="selected">FLY</strong>
+                    <span data-element="tooltip" role="tooltip" class="tooltip"
+                      data-set='{"width": "200", "left":"-80", "arrow" : "80", "hover": true}'>
+                      <button type="button" aria-label="$title 툴팁 열기" data-element="tooltip__anchor" class="tooltip__button"></button>
+                      <span data-element="tooltip__panel" class="tooltip__panel">
+                        <span aria-hidden="true" class="tooltip-arrow"></span>
+                        <span class="tooltip-desc tooltip-desc--icon">기내 수하물 10kg</span>
+                        <span class="tooltip-desc tooltip-desc--icon">위탁 수하물 10kg</span>
+                      </span>
+                    </span>
+
+                    <div class="booking-title__info">
+                      <span class="to">
+                        <span class="time">09:50</span>
+                        <span class="place">서울</span>
+                      </span>
+                      <span></span><span class="icon-to"></span>
+                      <span class="from">
+                        <!--공항명 추가 위치 이동-->
+                        <span class="time">10:50</span>
+                        <span class="place">타이베이</span>
+                        <span class="day">(+1일)</span>
+                      </span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="bundle_name_wrap pc-only">
+                  <p class="bundle_name_title">선택한 번들 : </p>
+                  <p class="bundle_name"></p>
+                  <!--선택한 번들명-->
+                </div>
+              </div>
+            </div>
+            <!--오는편 title-->
+
+            <div class="bundle_cont_inner">
+              <!--선택 불가능한 번들일 경우 - s -->
+              <div class="title_wrap">
+                <div class="title pt10">이번 구간은 번들 선택이 불가능합니다.</div>
+                <div class="sub_txt">탑승자 정보 입력 후 부가서비스 구매를 이용해 주세요.</div><!--20210429 문구 수정-->
+              </div>
+
+              <!--선택 불가능한 번들일 경우 - e -->
+              <div class="title_wrap">
+                <div class="title">실속만점 번들은 어떠세요?</div>
+              </div>
+              <!--번들 목록 - s-->
+              <div data-element="tab">
+                <div class="bundle_box_wrap tab__button-wrap">
+                  <div class="bundle_scroll">
+                    <!--번들 fly -->
+                    <div class="bundle_item">
+                      <div class="bundle_box" data-element="toggle" data-options='{"mode": "slide"}'>
+
+                        <div class="bundle_box__btn_wrap">
+                          <input type="checkbox" id="come01">
+                          <label for="come01">
+                            <dl>
+                              <dt class="bundle_name">번들 FLY</dt>
+                              <dd class="bundle__price">
+                                <div class="before">
+                                  <div class="discount">30% 할인</div>
+                                  <div class="del">
+                                    <span class="price_txt">12,000</span>
+                                    <span class="unit">원</span>
+                                  </div>
+                                </div>
+                                <div class="after">
+                                  <!--금액적용-->
+                                  <span class="price_txt">+ 12,000</span>
+                                  <span class="unit">원</span>
+                                  <!--//금액적용-->
+                                </div>
+                              </dd>
+                            </dl>
+                            <div class="bundle_ico_list">
+                              <div class="text">포인트 추가 적립 외 6개 서비스 포함</div>
+                            </div>
+                            <!--20210407 위치 이동-->
+                            <div class="bundle_box__content" data-element="toggle__panel">
+                              <div class="bundle_ico_list txt_in">
+                                <ul>
+                                  <li>포인트 <strong>추가 적립</strong></li>
+                                  <li>위탁 수하물 <strong>20kg</strong></li>
+                                  <li>좌석 선택 <strong>일반석 무료</strong></li>
+                                  <li>사전 수하물 <strong>할인</strong></li>
+                                  <li>기내식 <strong>할인</strong></li>
+                                  <li><strong>우선</strong> 탑승&<strong>우선</strong> 수하물</li>
+                                  <li>에어카페 <strong>할인</strong></li>
+                                </ul>
+                                <P class="info_txt">* 가는 편과 같은 번들</P><!--20210407 문구 추가 // 오는편번들 선택시 가는편에 동일한 번들 자동선택후 노출되는 문구-->
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        
+                        <button type="button" class="bundle_box__anchor" data-element="toggle__anchor"><span>자세히 보기</span></button>
+                      </div>
+                    </div>
+
+                    <!--번들 프리미엄 -->
+                    <div class="bundle_item">
+                      <div class="bundle_box" data-element="toggle" data-options='{"mode": "slide"}'
+                        data-element="tab__scroll">
+
+                        <div class="bundle_box__btn_wrap">
+                          <input type="checkbox" id="come02">
+                          <label for="come02">
+                            <dl>
+                              <dt class="bundle_name">번들 프리미엄</dt>
+                              <dd class="bundle__price">
+                                <div class="before">
+                                  <div class="discount">30% 할인</div>
+                                  <div class="del">
+                                    <span class="price_txt">12,000</span>
+                                    <span class="unit">원</span>
+                                  </div>
+                                </div>
+                                <div class="after">
+                                  <span class="price_txt">+ 12,000</span>
+                                  <span class="unit">원</span>
+                                </div>
+                              </dd>
+                            </dl>
+                            <div class="bundle_ico_list">
+                              <div class="text">포인트 추가 적립 외 11개 서비스 포함</div>
+                            </div>
+                            <div class="bundle_box__content" data-element="toggle__panel">
+                              <div class="bundle_ico_list txt_in">
+                                <ul>
+                                  <li>포인트 <strong>추가 적립</strong></li>
+                                  <li>위탁 수하물 <strong>20kg</strong></li>
+                                  <li>좌석 선택 <strong>일반석 무료</strong></li>
+                                  <li>사전 수하물 <strong>할인</strong></li>
+                                  <li>기내식 <strong>할인</strong></li>
+                                  <li><strong>우선</strong> 탑승&<strong>우선</strong> 수하물
+                                  </li>
+                                  <li>에어카페 <strong>할인</strong></li>
+                                  <li>변경 수수료 <strong>1회 무료</strong></li>
+                                  <li>JJ 라운지 이용 <strong>무료</strong></li><!--jj 라운지 띄어쓰기 수정-->
+                                  <li>웰컴 스낵 <strong>무료</strong></li>
+                                  <li><strong>프리미엄 전용</strong> 수속 카운터</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <button type="button" class="bundle_box__anchor" data-element="toggle__anchor"><span>자세히 보기</span></button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <!--번들 목록 - e-->
+            </div>
+          </div>
+          <!--오는편 - e -->
+          
+          <!--하단 예상 결제 금액 영역-->
+          <div class="booking-sticky booking-sticky--reservation" data-element="toggle" data-options='{"mode": "slide"}'>
+            <div class="reservation-container">
+              <div class="booking-sticky__top ">
+                <div class="toggle-wrap toggle-wrap--button toggle-wrap--height">
+                  <!-- 포인트 결재시 label--point 추가-->
+                  <div class="label label--point">
+                    <span>예상 결제금액</span>
+                    <button type="button" class="icon" data-target="#modalLayer02" data-modal-type="default" data-element="modal_anchor">
+                      <span class="hidden">예상 결제금액 상세</span>
+                    </button>
+                  </div>
+                  <!-- 포인트 결재시 summary--point 클래스 및 추가 -->
+                  <button type="button" class="summary summary--point" data-element="toggle__anchor">
+
+                    <span class="cost">
+                      <!--요금단위공통-->
+                      <span class="price_txt">1,508,000</span>
+                      <span class="unit">원</span>
+                      <!--//요금단위공통-->
+                    </span>
+
+                    <!-- Point 일 경우 추가 -->
+                    <span class="point">
+                      <span class="price_txt">+ 508,000</span>
+                      <span class="unit">P</span>
+                    </span>
+                    <!-- // Point 일 경우 추가 -->
+                  </button>
+
+                </div>
+                <button type="button" class="button button--primary pc-only button--active">
+                  <span class="button__text">탑승객 정보 입력하기</span>
+                </button>
+              </div>
+              <div class="booking-sticky__bottom -limitH" data-element="toggle__panel">
+                <!-- [수정 : 210223] -limitH class 추가 -->
+                <div class="title">
+                  <h3 class="title__section title__section--small">항목별 운임 상세</h3>
+                </div>
+                <h4 class="text__default text--exbold">항공 운송료</h4>
+                <div class="itemize__item">
+                  <div class="flex-text">
+                    <div class="flex-text__title">항공운임 </div>
+                    <div class="flex-text__additional">
+                      <span class="price_txt">123,000</span>
+                      <span class="unit">원</span>
+                    </div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title">공항이용료 및 제반시설 </div>
+                    <div class="flex-text__additional">
+                      <span class="price_txt">10,000</span>
+                      <span class="unit">원</span>
+                    </div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title">유류할증료</div>
+                    <div class="flex-text__additional">
+                      <span class="price_txt">3,000</span>
+                      <span class="unit">원</span>
+                    </div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title color-org">프로모션 코드 할인</div>
+                    <div class="flex-text__additional color-org">
+                      <span class="price_txt">- 10,000</span>
+                      <span class="unit">원</span>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="text__default text--exbold sub-box">부가서비스</h4>
+                <div class="itemize__item">
+                  <div class="flex-text">
+                    <div class="flex-text__title">번들 FLY</div>
+                    <div class="flex-text__additional">
+                        <span class="price_txt">123,000</span>
+                        <span class="unit">원</span>
+                    </div>
+                  </div>
+                  <div class="flex-text">
+                    <div class="flex-text__title color-org">프로모션 코드 할인</div>
+                    <div class="flex-text__additional color-org">
+                      <span class="price_txt">- 10,000</span>
+                      <span class="unit">원</span>
+                    </div>
+                  </div>
+                </div>
+                <ul class="guide-info guide-info--gray">
+                  <li class="guide-info__text">한국출발 세금(BP)에는 국제 여객항공이용료(인천/김포공항 17,000원, 기타 12,000원), 출국납부금 10,000원, 국제
+                    빈곤퇴치기여금 1,000원이 포함되어 있습니다.</li>
+                  <li class="guide-info__text">공항이용료의 경우 선택하신 여정 종류(TRANSFER/TRANSIT)에 따라 금액이 변동 될 수 있습니다.</li>
+                </ul>
+              </div>
+              <div class="button-wrap mobile-only">
+                <!-- D : 액티브 클래스 button--active -->
+                <button type="button" class="button button--primary button--active">
+                  <span class="button__text">탑승객 정보 입력하기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // 아이템 포커스 이동
+      $('.bundle_item input[type="checkbox"]').on('change', function () {
+        var currendCheckbox = $(this);
+        var checkProp = currendCheckbox.prop('checked');
+        console.log(checkProp);
+        if ($(this).parents('.bundle_wrap').hasClass('on-the-way'))
+        {
+          $('.on-the-way .bundle_item input[type="checkbox"]').prop('checked', false);
+          if (checkProp)
+          {
+            currendCheckbox.prop('checked', true);
+            var topVal = $('.bundle_wrap').eq(1).offset().top
+            console.log(topVal);
+            $('html,body').animate({
+              scrollTop: topVal
+            })
+          }
+          else
+          {
+            currendCheckbox.prop('checked', false);
+          }
+        }
+        else
+        {
+          $('.come-way .bundle_item input[type="checkbox"]').prop('checked', false);
+          if (checkProp)
+          {
+            currendCheckbox.prop('checked', true);
+          }
+          else
+          {
+            currendCheckbox.prop('checked', false);
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

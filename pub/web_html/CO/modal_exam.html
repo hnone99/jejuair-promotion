@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <!-- header -->
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <!-- 예매전 노출 -->
+        <button type="button" class="header__button-ticket">
+          <span class="hidden">티켓보기</span>
+        </button>
+        <!-- // 예매전 노출 -->
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 스크롤시 스티키 상단 -->
+      <div>
+
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <!-- //mobile -->
+
+    <!-- pc용 공통 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+            <a href="#" class="header__link">이벤트</a>
+          </div>
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <!-- <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button> -->
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+                    <span class="hidden">검색창 닫기</span>
+                </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+
+          <!-- goto-quick-booking : 스티키 클릭용 -->
+          <div class="goto-quick-booking">
+            <a href="#a">
+              <span>어디로 여행가세요?</span>
+              <div class="goto-btn">
+                <span>항공권 검색</span>
+              </div>
+            </a>
+          </div>
+          <!-- //goto-quick-booking -->
+
+        </div>
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+    <!-- //pc용 공통 헤더 -->
+    <!-- pc용 공통 헤더 -->
+  </div>
+  <!-- //header -->
+
+  <div class="wrap">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <div style="margin-top: 50px;font-weight: 800;font-size: 20px;">
+          모달 관련 plugin.js 참고
+        </div>
+        <!-- <ul class="list-guide">
+          <li class="list-guide__item"></li>
+        </ul> -->
+        <div class="code">
+          <pre style="margin-top: 30px; background: #eaeaea;">
+            <code class="exam" style="font-size: 12px;">
+              모달 열기
+              <span style="font-size: 18px">function fullPopOpen (popId)</span>
+              호출할 모달 아이디를 문자열 매개변수로 입력 
+              예) 
+              <span style="font-size: 18px">fullPopOpen ('modalLayer01')</span>
+              <div>
+                <a href="#" class="button button--primary button--active" onclick="fullPopOpen('modalLayer02')" style="color: #fff;">fullPopOpen ('modalLayer02')</a>
+              </div>
+
+              아이디로 열려있는 모달창 닫기
+              <span style="font-size: 18px">function closeModal (popId)</span>
+              창을 닫을 모달 아이디를 문자열 매개변수로 입력 
+              예) 
+              <span style="font-size: 18px">closeModal ('modalLayer01')</span>
+              여러 창을 동시에 닫아야 할 경우
+              예) 
+              <span style="font-size: 18px">closeModal ('modalLayer01 modalLayer02 modalLayer03')</span>
+
+              현재 열려있는 모달창 닫기(현재창을 클릭해서 닫을 경우에만 사용)
+              <span style="font-size: 18px">function closeCurrentModal (obj)</span>
+              예) 
+              <span style="font-size: 18px">closeCurrentModal (this)</span>
+            </code>
+          </pre>
+        </div>
+
+      </main>
+    </div>
+    <div id="modalLayer02" class="modal modal-full modal-scroll">
+      <div  class="modal-header">
+        <div class="modal-header__title">전체 댓글 보기</div>
+      </div>
+      <div class="modal-content">
+        <div class="container--small">
+          <div class="reply">
+            <!-- 댓글쓰기 -->
+            <div class="reply__write">
+              <div class="textarea-wrap">
+                <label for="textarea1" class="textarea__label">댓글쓰기</label>
+                <div data-element="form" class="textarea">
+                  <textarea id="textarea1" cols="30" rows="5" data-element="textarea" class="textarea__input" placeholder="댓글을 남겨주세요."></textarea>
+                  <div class="textarea__info">
+                    <span data-element="checkByte" class="textarea__byte">
+                      <span data-element="current" class="textarea__byte-current">0</span>
+                      <span class="textarea__byte-sepherator">/</span>
+                      <span data-element="max" class="textarea__byte-max">300</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="button-wrap button-wrap--center add--mt-5">
+                <button type="button" class="button button--optional button--border-org"><span class="button__text">등록</span></button>
+              </div>
+            </div>
+            
+            <!-- //댓글쓰기 -->
+            <div class="reply-wrap">
+              <div class="reply-header">
+                <p class="title">댓글(<span>000</span>)</p>           
+                <div class="switch_toggle my_reply">
+                  <div class="switch-wrap">
+                    <span class="switch">
+                      <input type="checkbox" id="switchItem1" class="switch__input">
+                      <label for="switchItem1" class="switch__label">
+                        <span>내 글 보기</span>
+                        <i class="switch__ico"></i>
+                      </label>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="reply-contents">
+                <!-- 공지 사항 있을때 -->
+                <div class="reply__notify">
+                  <div class="reply__notify-header">
+                    <strong class="title">제주항공 공지</strong>
+                    <span class="date">2020.11.01 12:32:36</span>
+                  </div>
+                  <div class="reply__notify-contents">
+                    글요일까지 달릿 댓글만 이벤트에 참여 됩니다.
+                  </div>
+                </div>
+                <!-- //공지 사항 있을때 -->
+                <div class="reply__list">
+                  <div class="reply__list-box">
+                    <div class="reply__list-item">
+                      <div class="reply__list-header">
+                        <span class="name">Jejuair_Jeju</span>
+                        <span class="date">2020.11.01 12:32:36</span>
+                      </div>
+                      <div class="reply__list-text">제주항공 덕분에 저렴하게 여행하네요. 다음번 여행도 꼭 제주항공을 이용하고 싶습니다.</div>
+                      <div class="reply__list-footer">
+                        <button type="button" class="reply__button-line"><span>답글 쓰기</span></button>
+                        <button type="button" class="reply__button-text">
+                          <span>답글 <em>2</em>개</span>
+                        </button>
+                        <div class="button-wrap">
+                          <button type="button" class="button-wrap__button"><span>수정</span></button>
+                          <button type="button" class="button-wrap__button"><span>삭제</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reply__list-box">
+                    <div class="reply__list-item">
+                      <div class="reply__list-header">
+                        <span class="name">Jejuair_Jeju</span>
+                        <span class="date">2020.11.01 12:32:36</span>
+                      </div>
+                      <div class="reply__list-text">제주항공 특가가 젤 좋아요 ㅎㅎ<br>
+                        저번에 신청했을 때는 아슬아슬하게 떨어진 것 같아<br>
+                        재도전 합니다!</div>
+                      <div class="reply__list-footer">
+                        <button type="button" class="reply__button-line"><span>답글 쓰기</span></button>
+                        <button type="button" class="reply__button-text">
+                          <span>답글 <em>2</em>개</span>
+                        </button>
+                        <div class="button-wrap">
+                          <button type="button" class="button-wrap__button icon"><span>신고</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="reply__list-box">
+                    <div class="reply__list-item">
+                      <div class="reply__list-header">
+                        <span class="name">Jejuair_Jeju</span>
+                        <span class="date">2020.11.01 12:32:36</span>
+                      </div>
+                      <div class="reply__list-text">제주항공 특가가 젤 좋아요 ㅎㅎ<br>
+                        저번에 신청했을 때는 아슬아슬하게 떨어진 것 같아<br>
+                        재도전 합니다!</div>
+                      <div class="reply__list-footer">
+                        <button type="button" class="reply__button-line"><span>답글 쓰기</span></button>
+                        <button type="button" class="reply__button-text">
+                          <!--
+                            D : case 3개
+                            <span>답글 <em>x</em>개</span>
+                            <span>답글 숨기기</span>
+                            태그숨김처리
+                          -->
+                          <span>답글 숨기기</span>
+                        </button>
+                        <div class="button-wrap">
+                          <button type="button" class="button-wrap__button icon"><span>신고</span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 답글 영역 -->
+                    <div class="reply__answer-wrap">
+                      <div class="reply__list-item">
+                        <i class="icon-answer" aria-label="답변"></i>
+                        <div class="reply__list-header">
+                          <span class="name">Jejuair_Jeju</span>
+                          <span class="date">2020.11.01 12:32:36</span>
+                        </div>
+                        <div class="reply__list-text">제주항공 특가가 젤 좋아요 ㅎㅎ
+                          저번에 신청했을 때는 아슬아슬하게 떨어진 것 같아
+                          재도전 합니다!
+                        </div>
+                        <div class="reply__list-footer">
+                          <div class="button-wrap">
+                            <button type="button" class="button-wrap__button icon"><span>신고</span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reply__list-item reply__list-item--textarea">
+                        <i class="icon-answer" aria-label="답변"></i>
+                        <div class="reply__list-header">
+                          <span class="name">Jejuair_Jeju</span>
+                        </div>
+                        <div class="textarea-wrap">
+                          <div data-element="form" class="textarea">
+                            <textarea id="textarea2" cols="30" rows="5" data-element="textarea" class="textarea__input" placeholder="댓글을 남겨주세요."></textarea>
+                            <div class="textarea__info">
+                              <span data-element="checkByte" class="textarea__byte">
+                                <span data-element="current" class="textarea__byte-current">0</span>
+                                <span class="textarea__byte-sepherator">/</span>
+                                <span data-element="max" class="textarea__byte-max">100</span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="button-wrap button-wrap--center">
+                          <button type="button" class="button button--optional"><span class="button__text">취소</span></button>
+                          <button type="button" class="button button--optional button--border-org"><span class="button__text">등록</span></button>
+                        </div>
+                      </div>
+                      <div class="reply__list-item">
+                        <i class="icon-answer" aria-label="답변"></i>
+                        <div class="reply__list-header">
+                          <span class="name">Jejuair_Jeju</span>
+                          <span class="date">2020.11.01 12:32:36</span>
+                        </div>
+                        <div class="reply__list-text">제주항공 특가가 젤 좋아요 ㅎㅎ
+                          저번에 신청했을 때는 아슬아슬하게 떨어진 것 같아
+                          재도전 합니다!
+                        </div>
+                        <div class="reply__list-footer">
+                          <div class="button-wrap">
+                            <button type="button" class="button-wrap__button icon"><span>신고</span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 더보기 -->
+                      <div class="more-wrap">
+                        <button type="button" class="more__button"><span class="more__button-text">더보기 (<span class="more__button--color">10</span>/33)</span></button>
+                      </div>
+                    </div>
+                    <!-- //답글 영역 -->
+                  </div>
+  
+                  <div class="reply__list-box">
+                    <div class="reply__list-item">
+                      <div class="reply__list-header">
+                        <span class="name">Jejuair_Jeju</span>
+                        <span class="date">2020.11.01 12:32:36</span>
+                      </div>
+                      <div class="reply__list-text">제주항공 특가가 젤 좋아요 ㅎㅎ<br>
+                        저번에 신청했을 때는 아슬아슬하게 떨어진 것 같아<br>
+                        재도전 합니다!</div>
+                      <div class="reply__list-footer">
+                        <button type="button" class="reply__button-line"><span>답글 쓰기</span></button>
+                        <button type="button" class="reply__button-text">
+                          <span>답글 <em>2</em>개</span>
+                        </button>
+                        <div class="button-wrap">
+                          <button type="button" class="button-wrap__button" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full"><span>수정</span></button>
+                          <button type="button" class="button-wrap__button"><span>삭제</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="modal__close" onclick="closeModal('modalLayer02')"><span class="blind">닫기</span></a>
+    </div>
+  
+    <div id="modalLayer03" class="modal modal-full modal-scroll">
+      <div class="modal-header">
+        <div class="modal-header__title">우편번호 검색</div>
+      </div>
+      <div class="modal-content" style="max-height: 575px; height: initial;">
+        <div class="gray-box gray-box--result pc-search">
+          <div class="section-sub-title">검색할 주소를 입력해 주세요.</div>
+          <div class="input-wrap input--line">
+            <div class="input-row">
+              <div class="input-item">
+                <div class="input-box">
+                  <!-- <label for="inp" class="input__label">주소 입력</label> -->
+                  <div data-element="form" class="input">
+                    <input type="text" data-element="input" id="inp" class="input__text">
+                    <button type="button" data-element="remove" class="input__remove-button"><span class="hidden">삭제</span></button>
+                  </div>
+                </div>
+                <p class="input__sub-text">예) 제주 첨단로 242</p>
+                <p tabindex="0" class="input__error">에러메세지</p>
+              </div>
+            </div>
+          </div>
+          <div class="button-wrap button-wrap--center">
+            <!-- D : 활성화 클래스  button--active -->
+            <button type="button" class="button button--optional "><span class="button__text">조회</span></button>
+          </div>
+        </div>
+
+        <!-- 최초 진입 시 (Default) -->
+        <div class="section-wrap">
+          <div class="result-box">
+            <div class="text">
+              <p class="text__default text--bold">이렇게 검색해 보세요!</p>
+            </div>
+            <ul class="list-guide">
+              <li class="list-guide__item">도로명+건물번호<br><span class="colored">예) 송파대로 570</span></li>
+              <li class="list-guide__item">지역명(동/읍/면/리)+번지<br><span class="colored">예) 신천동 7-30</span></li>
+              <li class="list-guide__item">지역명(동/읍/면/리)+건물명(아파트명) <br><span class="colored">예) 반포자이아파트</span></li>
+            </ul>
+          </div>
+        </div>
+        <!-- //최초 진입 시 (Default) -->
+  
+        <div class="section-wrap">
+          <!-- 조회 후 선택한 경우 -->
+          <div class="result-box">
+            <div class="result-box-item">
+              <div class="result-box__header">
+                <p class="result-box__header-title">02037</p>
+                <div class="check-wrap">
+                  <span class="checkbox">
+                    <input type="checkbox" id="inputCheck3" data-element="checkbox" class="checkbox__input">
+                    <label for="inputCheck3" class="checkbox__label">
+                      <i aria-hidden="true" class="checkbox__ico"></i>
+                    </label>
+                  </span>
+                </div>
+              </div>
+              <div class="result-box__content">
+                <dl>
+                  <dt class="result-box__name">도로명</dt>
+                  <dd class="result-box__text">제주특별자치도 제주시 516로 5961-20 (용강동, 제주산림항공관리소)</dd>
+                  <dt class="result-box__name">지번</dt>
+                  <dd class="result-box__text">제주특별자치도시 제주시 용강동 산 14-1</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="result-box-item">
+              <div class="result-box__header">
+                <p class="result-box__header-title">02037</p>
+                <div class="check-wrap">
+                  <span class="checkbox">
+                    <input type="checkbox" id="inputCheck2" data-element="checkbox" class="checkbox__input">
+                    <label for="inputCheck2" class="checkbox__label">
+                      <i aria-hidden="true" class="checkbox__ico"></i>
+                    </label>
+                  </span>
+                </div>
+              </div>
+              <div class="result-box__content">
+                <dl>
+                  <dt class="result-box__name">도로명</dt>
+                  <dd class="result-box__text">제주특별자치도 제주시 516로 5961-20 (용강동, 제주산림항공관리소)</dd>
+                  <dt class="result-box__name">지번</dt>
+                  <dd class="result-box__text">제주특별자치도시 제주시 용강동 산 14-1</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="result-box-item">
+              <div class="result-box__header">
+                <p class="result-box__header-title">02037</p>
+                <div class="check-wrap">
+                  <span class="checkbox">
+                    <input type="checkbox" id="inputCheck1" data-element="checkbox" class="checkbox__input">
+                    <label for="inputCheck1" class="checkbox__label">
+                      <i aria-hidden="true" class="checkbox__ico"></i>
+                    </label>
+                  </span>
+                </div>
+              </div>
+              <div class="result-box__content">
+                <dl>
+                  <dt class="result-box__name">도로명</dt>
+                  <dd class="result-box__text">제주특별자치도 제주시 516로 5961-20 (용강동, 제주산림항공관리소)</dd>
+                  <dt class="result-box__name">지번</dt>
+                  <dd class="result-box__text">제주특별자치도시 제주시 용강동 산 14-1</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <!-- //조회 후 선택한 경우 -->
+          
+          <!-- 조회 결과 없는 경우 -->
+          <div class="finish-item-wrap">
+            <div class="finish-item">
+              <div class="finish-item__img"><img src="../../assets/images/icon/icon-result-none.png" alt=""></div>
+              <p class="finish-item__title">조회결과가 없습니다.</p>
+              <p class="finish-item__text">정확한 주소를 입력해 주세요.</p>
+            </div>
+          </div>
+          <!--// 조회 결과 없는 경우 -->
+        </div>
+      </div>
+      <a href="#" class="modal__close" onclick="closeModal('modalLayer03')"><span class="blind">닫기</span></a>
+    </div>
+
+  </div>
+
+  
+  <!-- FOOTER -->
+  <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+  <div class="footer pc-only">
+    <!-- pc -->
+    <footer class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">제주항공 소개</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">투자정보</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">채용안내</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">여객운송약관</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">홈페이지이용약관</a>
+        </div>
+        <div class="footer__top-item footer__top-item--privacy">
+          <a href="#" class="footer__top-link">개인정보처리방침</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">사이트맵</a>
+        </div>
+
+        <div class="footer__top-item footer__top-item--family">
+          <div class="family-wrap" data-element="toggle"
+            data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+            <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+            <div class="family-list" data-element="toggle__panel">
+              <a href="#" class="family-link">㈜애경산업</a>
+              <a href="#" class="family-link">㈜에이텍</a>
+              <a href="#" class="family-link">애경S.T</a>
+              <a href="#" class="family-link">에이케이아이에스㈜</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer__spacer">
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__logo">
+        <img src="../../assets/images/upload/logo_jeju_gray.png" alt="jeju Air"><!--2021-04-13 이미지로 변경-->
+      </a>
+        <div class="footer__bottom-contents">
+          <div class="footer__bottom-info">
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 서비스 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공위험물안내</a>
+            </div>
+          </div>
+          <div class="footer__bottom-recommand">
+            <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+            <div class="recommand-list">
+              <div class="recommand-item">
+                <a href="#" class="link">최저 운임 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">서울 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">제주 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">부산 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">무안 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">청부 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">대구 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">광주 출발 항공</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-util">
+            <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png" alt="VALUE ALLIANCE"></a>
+            <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
+            <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt=""> Android</a>
+          </div>
+          <p class="footer__bottom-address"><span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br>
+            제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)</p>
+          <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- //pc -->
+  </div>
+  <!-- //FOOTER -->
+
+
+  
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <script>
+    
+  </script>
+</body>
+</html>

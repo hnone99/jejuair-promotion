@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" href="../../../index/css/style-guide.css">
+
+</head>
+
+<body class="style_guide alert">
+  <div class="wrap guide_wrap">
+
+      <h1 class="guide_main_title">Alert</h1>
+      <div class="guide_section">
+        <!-- Alert Style Guide 설명 -->
+        <div class="guide_infor">
+          <p class="guide_infor_title">Alert Style Guide (얼럿 스타일 가이드)</p>
+          <p class="guide_infor_text">- 공통 최소 넓이 310 / 최소 높이 190</p>
+          <p class="guide_infor_text">- 버튼 스타일 : 컨텐츠 버튼 사용</p>
+          <p class="guide_infor_text">- 상하좌우 여백 20 / 컨텐츠와 버튼 간격 40 / 텍스트 컬러 ; #333</p>
+          <p class="guide_infor_text">- 팝업 뒤 배경 색상(dim) rgba(0, 0, 0, 0.4)</p>
+        </div>
+        <!-- // Alert Style Guide 설명 -->
+
+        <!-- DEFAULT -->
+        <p class="guide_sub_title">DEFAULT</p>
+        <div class="table-vertical">
+          <table>
+            <caption></caption>
+            <colgroup>
+              <col style="width:40%">
+              <col style="width:40%">
+              <col style="width:auto">
+            </colgroup>
+            <thead>
+              <tr class="table-vertical__thead">
+                <th class="table-vertical__th">PC</th>
+                <th class="table-vertical__th">모바일</th>
+                <th class="table-vertical__th">버튼</th>
+              </tr>
+            </thead>
+            <tbody class="table-verticalbody">
+              <tr>
+                <td colspan="2" class="table-vertical__td">최소넓이 310px / 최소높이 190px ( PC, 모바일 공통 )</td>
+                <td class="table-vertical__td">
+                  <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer01" style="color: #fff;">버튼</a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="table-vertical__col">
+                  <!-- DEFAULT ALERT -->
+                  <div class="modal modal--simple" style="display: block;">
+                    <div class="modal-content">
+                      <h2 class="alert-title">얼럿 타이틀 18px / Medium</h2>
+                      <p class="alert-text">얼럿 내용 / 스포카한산스</p>
+                      <p class="alert-text">폰트사이즈 16px</p>
+                      <p class="alert-text">폰트컬러 #333</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary"><span class="button__text">버튼</span></button>
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">버튼</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- // DEFAULT ALERT -->
+                  <!-- 모달창 띄우기-->
+                  <div id="modalLayer01" class="modal modal--simple" style="display: none;">
+                    <div class="modal-content">
+                      <h2 class="alert-title">얼럿 타이틀 18px / Medium</h2>
+                      <p class="alert-text">얼럿 내용 / 스포카한산스</p>
+                      <p class="alert-text">폰트사이즈 16px</p>
+                      <p class="alert-text">폰트컬러 #333</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary"><span class="button__text">버튼</span></button>
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">버튼</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- //모달창 띄우기-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- // DEFAULT -->
+
+        <!-- ERROR -->
+        <p class="guide_sub_title">ERROR</p>
+        <div class="table-vertical">
+          <table>
+            <caption></caption>
+            <colgroup>
+              <col style="width:40%">
+              <col style="width:40%">
+              <col style="width:auto">
+            </colgroup>
+            <thead>
+              <tr class="table-vertical__thead">
+                <th class="table-vertical__th">PC</th>
+                <th class="table-vertical__th">모바일</th>
+                <th class="table-vertical__th">버튼</th>
+              </tr>
+            </thead>
+            <tbody class="table-verticalbody">
+              <tr>
+                <td colspan="2" class="table-vertical__td">최소넓이 310px / 최소높이 190px ( PC, 모바일 공통 )</td>
+                <td class="table-vertical__td">
+                  <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer02" style="color: #fff;">버튼</a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="table-vertical__col">
+                  <!-- ERROR ALERT -->
+                  <div class="modal modal--simple" style="display: block;">
+                    <div class="modal-content">
+                      <h2 class="alert-title"></h2>
+                      <p class="alert-text">얼럿 텍스트</p>
+                      <p class="error-text">Code : ER123456</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary"><span class="button__text">버튼</span></button>
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">버튼</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- // ERROR ALERT -->
+                  <!-- 모달창 띄우기-->
+                  <div id="modalLayer02" class="modal modal--simple" style="display: none;">
+                    <div class="modal-content">
+                      <h2 class="alert-title"></h2>
+                      <p class="alert-text">얼럿 텍스트</p>
+                      <p class="error-text">Code : ER123456</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary"><span class="button__text">버튼</span></button>
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">버튼</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- //모달창 띄우기-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- // ERROR -->
+
+        <!-- TITLE + TEXT -->
+        <p class="guide_sub_title">TITLE + TEXT</p>
+        <div class="table-vertical">
+          <table>
+            <caption></caption>
+            <colgroup>
+              <col style="width:40%">
+              <col style="width:40%">
+              <col style="width:auto">
+            </colgroup>
+            <thead>
+              <tr class="table-vertical__thead">
+                <th class="table-vertical__th">PC</th>
+                <th class="table-vertical__th">모바일</th>
+                <th class="table-vertical__th">버튼</th>
+              </tr>
+            </thead>
+            <tbody class="table-verticalbody">
+              <tr>
+                <td colspan="2" class="table-vertical__td">최소넓이 310px / 최소높이 190px ( PC, 모바일 공통 )</td>
+                <td class="table-vertical__td">
+                  <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer03" style="color: #fff;">버튼</a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="table-vertical__col">
+                  <!-- TITLE + TEXT ALERT -->
+                  <div class="modal modal--simple" style="display: block;">
+                    <div class="modal-content">
+                      <h2 class="alert-title">얼럿 타이틀</h2>
+                      <p class="alert-text">얼럿 텍스트</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary"><span class="button__text">버튼</span></button>
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">버튼</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- // TITLE + TEXT ALERT -->
+                  <!-- 모달창 띄우기-->
+                  <div id="modalLayer03" class="modal modal--simple" style="display: none;">
+                    <div class="modal-content">
+                      <h2 class="alert-title">얼럿 타이틀</h2>
+                      <p class="alert-text">얼럿 텍스트</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary"><span class="button__text">버튼</span></button>
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">버튼</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- //모달창 띄우기-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- // TITLE + TEXT -->
+
+        <!-- LONT TITLE + LONG TEXT -->
+        <p class="guide_sub_title">LONT TITLE + LONG TEXT</p>
+        <div class="table-vertical">
+          <table>
+            <caption></caption>
+            <colgroup>
+              <col style="width:40%">
+              <col style="width:40%">
+              <col style="width:auto">
+            </colgroup>
+            <thead>
+              <tr class="table-vertical__thead">
+                <th class="table-vertical__th">PC</th>
+                <th class="table-vertical__th">모바일</th>
+                <th class="table-vertical__th">버튼</th>
+              </tr>
+            </thead>
+            <tbody class="table-verticalbody">
+              <tr>
+                <td colspan="2" class="table-vertical__td">최소넓이 310px / 최소높이 190px ( PC, 모바일 공통 )</td>
+                <td class="table-vertical__td">
+                  <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer04" style="color: #fff;">버튼</a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="table-vertical__col">
+                  <!-- LONT TITLE + LONG TEXT ALERT -->
+                  <div class="modal modal--simple" style="display: block;">
+                    <div class="modal-content">
+                      <h2 class="alert-title">얼럿 타이틀 두줄 작성<br>얼럿 타이틀 두줄 작성</h2>
+                      <p class="alert-text">얼럿 텍스트</p>
+                      <p class="alert-text">얼럿 텍스트</p>
+                      <p class="alert-text">얼럿 텍스트</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary"><span class="button__text">버튼</span></button>
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">버튼</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- // LONT TITLE + LONG TEXT ALERT -->
+                  <!-- 모달창 띄우기-->
+                  <div id="modalLayer04" class="modal modal--simple" style="display: none;">
+                    <div class="modal-content">
+                      <h2 class="alert-title">얼럿 타이틀 두줄 작성<br>얼럿 타이틀 두줄 작성</h2>
+                      <p class="alert-text">얼럿 텍스트</p>
+                      <p class="alert-text">얼럿 텍스트</p>
+                      <p class="alert-text">얼럿 텍스트</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary"><span class="button__text">버튼</span></button>
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">버튼</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- //모달창 띄우기-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- // LONT TITLE + LONG TEXT -->
+      </div>
+      <!-- // Alert Style Guide (MO/PC 동일) -->
+
+      <!-- Alert Case -->
+      <div class="guide_section">
+        <div class="guide_infor">
+          <p class="guide_infor_title">Alert Case Guide (얼럿 유형 가이드)</p>
+          <p class="guide_infor_text">- 얼럿 케이스별 유형</p>
+        </div>
+
+        <!-- 자동 초기화 안내 CASE -->
+        <p class="guide_sub_title">자동 초기화 안내 CASE</p>
+        <div class="table-vertical">
+          <table>
+            <caption></caption>
+            <colgroup>
+              <col style="width:40%">
+              <col style="width:40%">
+              <col style="width:auto">
+            </colgroup>
+            <thead>
+              <tr class="table-vertical__thead">
+                <th class="table-vertical__th">PC</th>
+                <th class="table-vertical__th">모바일</th>
+                <th class="table-vertical__th">버튼</th>
+              </tr>
+            </thead>
+            <tbody class="table-verticalbody">
+              <tr>
+                <td colspan="2" class="table-vertical__td">최소넓이 310px / 최소높이 190px ( PC, 모바일 공통 )</td>
+                <td class="table-vertical__td">
+                  <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer05" style="color: #fff;">버튼</a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="table-vertical__col">
+                  <!-- 자동 초기화 안내 -->
+                  <div class="modal modal--simple modal-layer NA_1_23" style="display: block;">
+                    <div class="modal-content">
+                      <p class="alert-title">자동 초기화 안내</p>
+                      <p class="alert-text">개인정보 보호와 보안상의 이유로<br>
+                        예매 가능한 시간이 지나면 진행 중인<br>
+                        예매가 자동 취소됩니다.<br>
+                        예매 가능 시간을 연장하시겠습니까?
+                        </p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary"><span class="button__text">아니요</span></button>
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">예</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- // 자동 초기화 안내 -->
+                  <!-- 모달창 띄우기-->
+                  <div id="modalLayer05" class="modal modal--simple modal-layer NA_1_23">
+                    <div class="modal-content">
+                      <p class="alert-title">자동 초기화 안내</p>
+                      <p class="alert-text size_small">개인정보 보호와 보안상의 이유로<br>
+                        예매 가능한 시간이 지나면 진행 중인<br>
+                        예매가 자동 취소됩니다.<br>
+                        예매 가능 시간을 연장하시겠습니까?
+                        </p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary"><span class="button__text">아니요</span></button>
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">예</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- //모달창 띄우기-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- // 자동 초기화 안내 CASE -->
+
+        <!-- 예매 유효기간 소요시 CASE -->
+        <p class="guide_sub_title">예매 유효기간 소요시 CASE</p>
+        <div class="table-vertical">
+          <table>
+            <caption></caption>
+            <colgroup>
+              <col style="width:40%">
+              <col style="width:40%">
+              <col style="width:auto">
+            </colgroup>
+            <thead>
+              <tr class="table-vertical__thead">
+                <th class="table-vertical__th">PC</th>
+                <th class="table-vertical__th">모바일</th>
+                <th class="table-vertical__th">버튼</th>
+              </tr>
+            </thead>
+            <tbody class="table-verticalbody">
+              <tr>
+                <td colspan="2" class="table-vertical__td">최소넓이 310px / 최소높이 190px ( PC, 모바일 공통 )</td>
+                <td class="table-vertical__td">
+                  <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer06" style="color: #fff;">버튼</a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="table-vertical__col">
+                  <!-- 예매 유효기간 소요시 -->
+                  <div class="modal modal--simple" style="display: block;">
+                    <div class="modal-content">
+                      <h2 class="alert-title"></h2>
+                      <p class="alert-text">예매 가능한 시간이 지나 진행하시던 예매가 자동 취소되었습니다.</p>
+                      <p class="alert-text">제주항공 메인 화면으로 이동합니다.</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">확인</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- // 예매 유효기간 소요시 -->
+                  <!-- 모달창 띄우기-->
+                  <div id="modalLayer06" class="modal modal--simple">
+                    <div class="modal-content">
+                      <h2 class="alert-title"></h2>
+                      <p class="alert-text">예매 가능한 시간이 지나 진행하시던 예매가 자동 취소되었습니다.</p>
+                      <p class="alert-text">제주항공 메인 화면으로 이동합니다.</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">확인</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- //모달창 띄우기-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- // 예매 유효기간 소요시 CASE -->
+
+        <!-- 프로모션 적용 후 진입 CASE -->
+        <p class="guide_sub_title">프로모션 적용 후 진입 CASE</p>
+        <div class="table-vertical">
+          <table>
+            <caption></caption>
+            <colgroup>
+              <col style="width:40%">
+              <col style="width:40%">
+              <col style="width:auto">
+            </colgroup>
+            <thead>
+              <tr class="table-vertical__thead">
+                <th class="table-vertical__th">PC</th>
+                <th class="table-vertical__th">모바일</th>
+                <th class="table-vertical__th">버튼</th>
+              </tr>
+            </thead>
+            <tbody class="table-verticalbody">
+              <tr>
+                <td colspan="2" class="table-vertical__td">최소넓이 310px / 최소높이 190px ( PC, 모바일 공통 )</td>
+                <td class="table-vertical__td">
+                  <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer07" style="color: #fff;">버튼</a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="table-vertical__col">
+                  <!-- 프로모션 적용 후 진입 -->
+                  <div class="modal modal--simple" style="display: block;">
+                    <div class="modal-content">
+                      <h2 class="alert-title"></h2>
+                      <p class="alert-text">해당 여정은 선택한 프로모션 코드를 사용 할 수 없습니다. 검색 조건을 바꿔서 다시 검색해 주세요.</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">확인</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- // 프로모션 적용 후 진입 -->
+                  <!-- 모달창 띄우기-->
+                  <div id="modalLayer07" class="modal modal--simple">
+                    <div class="modal-content">
+                      <h2 class="alert-title"></h2>
+                      <p class="alert-text">해당 여정은 선택한 프로모션 코드를 사용 할 수 없습니다. 검색 조건을 바꿔서 다시 검색해 주세요.</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">확인</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- //모달창 띄우기-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- // 프로모션 적용 후 진입 CASE -->
+
+        <!-- 구간 다시선택 버튼 선택시 호출 CASE -->
+        <p class="guide_sub_title">구간 다시선택 버튼 선택시 호출 CASE</p>
+        <div class="table-vertical">
+          <table>
+            <caption></caption>
+            <colgroup>
+              <col style="width:40%">
+              <col style="width:40%">
+              <col style="width:auto">
+            </colgroup>
+            <thead>
+              <tr class="table-vertical__thead">
+                <th class="table-vertical__th">PC</th>
+                <th class="table-vertical__th">모바일</th>
+                <th class="table-vertical__th">버튼</th>
+              </tr>
+            </thead>
+            <tbody class="table-verticalbody">
+              <tr>
+                <td colspan="2" class="table-vertical__td">최소넓이 310px / 최소높이 190px ( PC, 모바일 공통 )</td>
+                <td class="table-vertical__td">
+                  <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer08" style="color: #fff;">버튼</a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="table-vertical__col">
+                  <!-- 구간 다시선택 버튼 선택시 호출 -->
+                  <div class="modal modal--simple" style="display: block;">
+                    <div class="modal-content">
+                      <h2 class="alert-title"></h2>
+                      <p class="alert-text">구간을 다시 선택하면 이후 구간도 다시 선택해야 합니다. 구간을 다시 선택하시겠습니까?</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary"><span class="button__text">아니요</span></button>
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">예</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- // 구간 다시선택 버튼 선택시 호출 -->
+                  <!-- 모달창 띄우기-->
+                  <div id="modalLayer08" class="modal modal--simple">
+                    <div class="modal-content">
+                      <h2 class="alert-title"></h2>
+                      <p class="alert-text">구간을 다시 선택하면 이후 구간도 다시 선택해야 합니다. 구간을 다시 선택하시겠습니까?</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary"><span class="button__text">아니요</span></button>
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">예</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- //모달창 띄우기-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- // 구간 다시선택 버튼 선택시 호출 CASE -->
+
+        <!-- 바우처 적용 후 진입 CASE -->
+        <p class="guide_sub_title">바우처 적용 후 진입 CASE</p>
+        <div class="table-vertical">
+          <table>
+            <caption></caption>
+            <colgroup>
+              <col style="width:40%">
+              <col style="width:40%">
+              <col style="width:auto">
+            </colgroup>
+            <thead>
+              <tr class="table-vertical__thead">
+                <th class="table-vertical__th">PC</th>
+                <th class="table-vertical__th">모바일</th>
+                <th class="table-vertical__th">버튼</th>
+              </tr>
+            </thead>
+            <tbody class="table-verticalbody">
+              <tr>
+                <td colspan="2" class="table-vertical__td">최소넓이 310px / 최소높이 190px ( PC, 모바일 공통 )</td>
+                <td class="table-vertical__td">
+                  <a href="#" class="button button--secondary button--active" data-element="modal_anchor" data-target="#modalLayer09" style="color: #fff;">버튼</a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="table-vertical__col">
+                  <!-- 바우처 적용 후 진입 -->
+                  <div class="modal modal--simple" style="display: block;">
+                    <div class="modal-content">
+                      <h2 class="alert-title"></h2>
+                      <p class="alert-text">해당 여정은 선택한 기프티켓을 사용할 수 없습니다. 검색 조건을 바꿔서 다시 검색해주세요.</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">확인</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- // 바우처 적용 후 진입 -->
+                  <!-- 모달창 띄우기-->
+                  <div id="modalLayer09" class="modal modal--simple">
+                    <div class="modal-content">
+                      <h2 class="alert-title"></h2>
+                      <p class="alert-text">해당 여정은 선택한 기프티켓을 사용할 수 없습니다. 검색 조건을 바꿔서 다시 검색해주세요.</p>
+                    </div>
+                    <div class="modal__button-area button-wrap">
+                      <button type="button" class="button button--secondary button--active"><span class="button__text">확인</span></button>
+                    </div>
+                    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+                  </div>
+                  <!-- //모달창 띄우기-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- // 바우처 적용 후 진입 CASE -->
+      </div>
+      <!-- // Alert Case -->
+
+  </div>
+  <!-- // guide_wrap -->
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

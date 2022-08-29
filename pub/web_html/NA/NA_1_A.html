@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only ">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <div class="header__stepper">
+        <ol class="stepper__group_new booking_step">
+            <li>
+              <span class="step">1</span>
+              <span class="text">항공권선택</span>
+            </li>
+            <li>
+              <span class="step">2</span>
+              <span class="text">탑승객 정보 입력</span>
+            </li>
+            <li>
+              <span class="step">3</span>
+              <span class="text">부가서비스 선택</span>
+            </li>
+            <li class="active">
+              <span class="step">4</span>
+              <span class="text">확인 및 동의</span>
+            </li>
+            <li >
+              <span class="step">5</span>
+              <span class="text">결제</span>
+            </li>
+          </ol>
+      </div>
+
+    </header>
+    <!-- //mobile -->
+
+    <!-- pc용 예매 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div class="select-wrap select-wrap--line">
+                <select title="국가 선택" class="select-wrap__select">
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div class="select-wrap select-wrap--line">
+                <select class="select-wrap__select" title="언어 선택"> 
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+  
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner header__inner--step pc-only ">
+      <!--step 스타일 변경-->
+
+      <div class="sticky-header" data-sticky="">
+        <div class="header__box">
+          <h1 class="header__logo">
+            <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+          </h1>
+          <h2 class="header__page-name">항공권 예매</h2>
+
+          <div class="header__stepper">
+            <ol class="stepper__group_new booking_step">
+              <li>
+                <span class="step">1</span>
+                <span class="text">항공권선택</span>
+              </li>
+              <li>
+                <span class="step">2</span>
+                <span class="text">탑승객 정보 입력</span>
+              </li>
+              <li>
+                <span class="step">3</span>
+                <span class="text">부가서비스 선택</span>
+              </li>
+              <li class="active">
+                <span class="step">4</span>
+                <span class="text">확인 및 동의</span>
+              </li>
+              <li>
+                <span class="step">5</span>
+                <span class="text">결제</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- // pc용 공통 헤더 -->
+  </div>
+  <div id="body">
+    <div class="wrap wrap--button NA NA_1_A step-ui">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">2 Depth</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle" data-options="{&quot;mode&quot;: &quot;slide&quot;, &quot;speed&quot;: 100, &quot;clickToClose&quot;: true}">
+            <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor" aria-controls="toggle-1" aria-expanded="false">3
+              Depth</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel" id="toggle-1">
+              <a href="#" class="item">4 Depth</a>
+              <a href="#" class="item">4 DepthDepthDepth</a>
+              <a href="#" class="item">4 DepthDepthDepth</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="content" id="content">
+        <main id="main" class="main">
+
+          <div class="page-title-wrap pc-only">
+            <div class="page-title">확인 및 동의</div>
+          </div>
+          
+          <div class="section-wrap">
+            <div class="pc-pay-wrap">
+              <div class="left">
+                <div class="section-title">여정 상세</div>
+              </div>
+              <div class="right">
+                <!--20210502 여정카드 디자인 협의중-->
+                <div class="journeys__title">
+                  <div class="journeys__heading">가는 편</div>  
+                  <div class="journeys__passengers">
+                    <div class="person">
+                      <div class="person__item">
+                        <i aria-label="성인" class="icon adult"></i>
+                        <span>2</span><span class="hidden">명</span>
+                      </div>
+                      <div class="person__item">
+                        <i aria-label="유아" class="icon child"></i>
+                        <span>1</span><span class="hidden">명</span>
+                      </div>
+                      <div class="person__item">
+                        <i aria-label="소아" class="icon baby"></i>
+                        <span>1</span><span class="hidden">명</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+                <!--가는 편 여정카드-->         
+                <div class="journeys boarding-list-pc">   
+                  <div class="boarding-wrap reserve">                    
+                    <div class="boarding-box">                      
+                      <div class="boarding">
+                        <div class="boarding__header">
+                          <div class="boarding__header--item1">
+                            <span>7C147</span>
+                          </div>
+                          <div class="boarding__header--item2">
+                            <span class="marked--brand">FLYBAG</span>
+                          </div>
+                        </div>              
+                        <div class="boarding__info-wrap">
+                          <div class="boarding__info--top">
+                            <div class="boarding__info--top-item"><span>2020.06.30(금)</span> <span>19:00 ~  21:00</span></div>
+                          </div>              
+                          <div class="boarding__info">
+                            <div class="boarding__info-before">
+                              <div class="boarding__info-title">서울</div>
+                              <div class="boarding__info-text">김포</div>
+                            </div>
+                            <div aria-label="one-way" class="icon-mark one-way"></div>
+                            <div class="boarding__info-after">
+                              <div class="boarding__info-title">오사카</div>
+                              <div class="boarding__info-text">간사이</div>
+                            </div>
+                          </div> 
+                          
+                        </div>              
+                      </div>
+                      <!--//boarding-->
+                    </div>
+                    
+                  </div>
+                  <!--// boarding-wrap-->  
+                  
+                </div>
+                <!--//가는 편 여정카드-->     
+                
+                <div class="journeys__title mt-30">
+                  <div class="journeys__heading">오는 편</div>  
+                </div>  
+                <!--오는 편 여정카드-->         
+                <div class="journeys boarding-list-pc">   
+                  <div class="boarding-wrap reserve">                    
+                    <div class="boarding-box">                      
+                      <div class="boarding">
+                        <div class="boarding__header">
+                          <div class="boarding__header--item1">
+                            <span>7C147</span>
+                          </div>
+                          <div class="boarding__header--item2">
+                            <span class="marked--brand">FLYBAG</span>
+                          </div>
+                        </div>              
+                        <div class="boarding__info-wrap">
+                          <div class="boarding__info--top">
+                            <div class="boarding__info--top-item"><span>2020.06.30(금)</span> <span>19:00 ~  21:00</span></div>
+                          </div>              
+                          <div class="boarding__info">
+                            <div class="boarding__info-before">
+                              <div class="boarding__info-title">서울</div>
+                              <div class="boarding__info-text">김포</div>
+                            </div>
+                            <div aria-label="one-way" class="icon-mark one-way"></div>
+                            <div class="boarding__info-after">
+                              <div class="boarding__info-title">오사카</div>
+                              <div class="boarding__info-text">간사이</div>
+                            </div>
+                          </div> 
+                          
+                        </div>              
+                      </div>
+                      <!--//boarding-->
+                    </div>
+                    
+                  </div>
+                  <!--// boarding-wrap-->  
+                  
+                </div>
+                <!--//오는 편 여정카드-->  
+
+                <div class="journeys__title mt-30">
+                  <div class="journeys__heading">구간 1</div>  
+                </div>  
+                <!--구간1 여정카드-->         
+                <div class="journeys boarding-list-pc">   
+                  <div class="boarding-wrap reserve">                    
+                    <div class="boarding-box">                      
+                      <div class="boarding">
+                        <div class="boarding__header">
+                          <div class="boarding__header--item1">
+                            <span>7C147</span>
+                          </div>
+                          <div class="boarding__header--item2">
+                            <span class="marked--brand">BIZ LITE</span>
+                          </div>
+                        </div>              
+                        <div class="boarding__info-wrap">
+                          <div class="boarding__info--top">
+                            <div class="boarding__info--top-item"><span>2020.06.30(금)</span> <span>19:00 ~  21:00</span></div>
+                          </div>              
+                          <div class="boarding__info">
+                            <div class="boarding__info-before">
+                              <div class="boarding__info-title">서울</div>
+                              <div class="boarding__info-text">김포</div>
+                            </div>
+                            <div aria-label="one-way" class="icon-mark one-way"></div>
+                            <div class="boarding__info-after">
+                              <div class="boarding__info-title">오사카</div>
+                              <div class="boarding__info-text">간사이</div>
+                            </div>
+                          </div> 
+                          
+                        </div>              
+                      </div>
+                      <!--//boarding-->
+                    </div>
+                    
+                  </div>
+                  <!--// boarding-wrap-->  
+                  
+                </div>
+                <!--//구간1 여정카드-->  
+                
+                <div class="journeys__title mt-30">
+                  <div class="journeys__heading">구간1</div>  
+                  <div class="journeys__passengers">
+                    <div class="person">
+                      <div class="person__item">
+                        <i aria-label="성인" class="icon adult"></i>
+                        <span>2</span><span class="hidden">명</span>
+                      </div>
+                      <div class="person__item">
+                        <i aria-label="유아" class="icon child"></i>
+                        <span>1</span><span class="hidden">명</span>
+                      </div>
+                      <div class="person__item">
+                        <i aria-label="소아" class="icon baby"></i>
+                        <span>1</span><span class="hidden">명</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+                
+                <!--경유 여정카드-->         
+                <div class="journeys boarding-list-pc via-list">   
+                  <div class="boarding-wrap reserve">                    
+                    <div class="boarding-box">                      
+                      <div class="boarding">
+                        <div class="boarding__header">
+                          <div class="boarding__header--item1">
+                            <span>7C147</span>
+                            <span> / 7C148</span>
+                          </div>
+                          <div class="boarding__header--item2">
+                            <span class="marked--brand">BIZ LITE</span>
+                          </div>
+                        </div>               
+                        <div class="boarding__info-wrap">
+                          <div class="boarding__info--top">
+                            <div class="boarding__info--top-item"><span>2020.06.30(금)</span> <span>19:00 ~  21:00</span></div>
+                          </div>              
+                          <div class="boarding__info">
+                            <div class="boarding__info-before">
+                              <div class="boarding__info-title">서울</div>
+                              <div class="boarding__info-text">김포</div>
+                            </div>
+                            <div aria-label="via" class="icon-mark via"></div>
+                            <div class="boarding__info-after">
+                              <div class="boarding__info-title">오사카</div>
+                              <div class="boarding__info-text">간사이</div>
+                            </div>
+                          </div> 
+                          <div class="boarding__info-etc">
+                            <!-- <span class="fl">김제주 외 2명</span> -->
+                            <span class="fr"> 1회 경유</span>
+                          </div>                          
+                        </div>              
+                      </div>
+                      <!--//boarding-->
+                    </div>
+                    
+                  </div>
+                  <!--// boarding-wrap-->  
+                  
+                </div>
+                <!--//구간1 여정카드-->  
+
+
+              </div>
+            </div>
+          </div>
+
+          <!--항목별 운임 상세-->
+          <div class="section-wrap pc-pay-wrap2">
+            <div data-element="toggle" class="toggle-item pc-pay-wrap" data-options='{"mode": "slide"}'>
+              <div class="toggle-item__title left">
+                <button type="button" data-element="toggle__anchor" data-open="true" class="toggle-item__anchor"><span class="section-title">항목별 운임 상세</span></button>
+              </div>
+              <div data-element="toggle__panel" class="toggle-item__content pdt-none pdb-none right">
+                <div class="itemize itemize--line">
+                  <!-- 항공 운송료  -->
+                  <div class="itemize__item">
+                    <h4 class="itemize__title">항공 운송료</h4>
+                    <div class="flex-text">
+                      <div class="flex-text__title">항공운임</div>
+                      <div class="flex-text__additional">
+                        <span class="price_txt">2,000,000</span>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                    <div class="flex-text">
+                      <div class="flex-text__title">
+                        <div class="link-wrap--left">
+                          <a href="#" class="link-wrap__underline link-wrap__underline--gray"><span>공항시설 사용료</span></a>
+                        </div>
+                      </div>
+                      <div class="flex-text__additional">
+                        <span class="price_txt">100,000</span>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                    <div class="flex-text">
+                      <div class="flex-text__title">유류할증료</div>
+                      <div class="flex-text__additional">
+                        <span class="price_txt">0</span>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //항공 운송료  -->
+
+                  <!-- 할인  -->
+                  <div class="itemize__item">
+                    <h4 class="itemize__title ">할인</h4>
+                    <div class="flex-text">
+                      <div class="flex-text__title">신분할인</div>
+                      <div class="flex-text__additional">
+                        <span class="price_txt">- 10,000</span>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                    <div class="flex-text">
+                      <div class="flex-text__title">신규가입 할인</div>
+                      <div class="flex-text__additional">
+                        <span class="price_txt">- 10,000</span>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                    <div class="flex-text">
+                      <div class="flex-text__title">프로모션 할인 </div>
+                      <div class="flex-text__additional">
+                        <span class="price_txt">- 80,000</span>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //할인  -->
+                  <!-- 부가서비스  -->
+                  <div class="itemize__item">
+                    <h4 class="itemize__title">부가서비스</h4>
+                    <div class="flex-text">
+                      <div class="flex-text__title">번들 FLY</div>
+                      <div class="flex-text__additional">
+                        <span class="price_txt">20,000</span>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                    <div class="flex-text">
+                      <div class="flex-text__title">번들 프리미엄</div>
+                      <div class="flex-text__additional">
+                        <span class="price_txt">40,000</span>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                    <div class="flex-text">
+                      <div class="flex-text__title">사전 수하물 </div>
+                      <div class="flex-text__additional">
+                        <span class="price_txt">10,000</span>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //부가서비스  -->
+                  <!-- 여행 보험  -->
+                  <div class="itemize__item">
+                    <h4 class="itemize__title">여행 보험</h4>
+                    <div class="flex-text">
+                      <div class="flex-text__title">보험료</div>
+                      <div class="flex-text__additional">
+                        <span class="price_txt">100,000</span>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //여행 보험  -->
+                </div>
+              </div>
+            </div>
+            <!-- 예상 결제 금액 -->
+            <div class="arrow-list arrow-list--payment only-right">
+              <div class="arrow-list__item">
+                <div class="payment-amount">
+                  <div class="payment-amount__title">예상 결제 금액
+                    <span data-element="tooltip" role="tooltip" class="tooltip" data-set='{"width": "300", "left":"-100", "arrow" : "100"}'>
+                      <button type="button" aria-label="$title 툴팁 열기" data-element="tooltip__anchor" class="tooltip__button"></button>
+                      <span data-element="tooltip__panel" class="tooltip__panel">
+                        <span aria-hidden="true" class="tooltip-arrow"></span>
+                        <span class="tooltip-desc">KB국민카드로 결제 시, 최대 1만원 할인 혜택!</span>
+                      </span>
+                    </span>
+                  </div>
+                  <p class="payment-amount__sum">
+                    <a href="#none">
+                      <span class="price_txt">1,980,000</span>
+                      <span class="unit">원</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- //예상 결제 금액 -->
+          </div>
+          <!--//항목별 운임 상세-->
+
+          <!-- 약관 및 규정 동의 -->
+          <div class="section-wrap pc-pay-wrap section-wrap">
+            <div class="left">
+              <div class="section-title">약관 및 규정 동의</div>
+            </div>
+            <div class="right">
+              <!-- 약관 동의 -->
+              <div class="agree-wrap pc-0">
+                <div class="check-wrap" data-element="checkList">
+                  <div class="check-wrap__all-check">
+                    <span class="checkbox checkbox--small">
+                      <input type="checkbox" class="checkbox__input" id="inpAgreeAll" data-element="checkAll">
+                      <label for="inpAgreeAll" class="checkbox__label">
+                        <i class="checkbox__ico" aria-hidden="true"></i>
+                        <span>전체 동의</span>
+                      </label>
+                    </span>
+                  </div>
+                  <ul class="check-wrap__list">
+                    <li class="agree-wrap__item">
+                        <span class="checkbox checkbox--small">
+                          <input type="checkbox" class="checkbox__input" id="inpAgree-01" data-element="checkbox">
+                          <label for="inpAgree-01" class="checkbox__label">
+                            <i class="checkbox__ico" aria-hidden="true"></i>
+                            <span>항공권 운임 규정 동의</span>
+                          </label>
+                        </span>
+                        <button type="button" class="agree-wrap__button" aria-label="항공권 운임 규정 동의"></button>
+                    </li>
+                    <li class="agree-wrap__item">
+                      <span class="checkbox checkbox--small">
+                        <input type="checkbox" class="checkbox__input" id="inpAgree-02" data-element="checkbox">
+                        <label for="inpAgree-02" class="checkbox__label">
+                          <i class="checkbox__ico" aria-hidden="true"></i>
+                          <span>국내선 여객운송 약관 동의</span>
+                        </label>
+                      </span>
+                      <button type="button" class="agree-wrap__button" aria-label="국내선 여객운송 약관 동의"></button>
+                    </li>
+                    <li class="agree-wrap__item">
+                      <span class="checkbox checkbox--small">
+                        <input type="checkbox" class="checkbox__input" id="inpAgree-03" data-element="checkbox">
+                        <label for="inpAgree-03" class="checkbox__label">
+                          <i class="checkbox__ico" aria-hidden="true"></i>
+                          <span>항공기 반입금지 위험물 확인</span>
+                        </label>
+                      </span>
+                      <button type="button" class="agree-wrap__button" aria-label="항공기 반입금지 위험물 확인"></button>
+                    </li>
+                    <li class="agree-wrap__item">
+                      <span class="checkbox checkbox--small">
+                        <input type="checkbox" class="checkbox__input" id="inpAgree-04" data-element="checkbox">
+                        <label for="inpAgree-04" class="checkbox__label">
+                          <i class="checkbox__ico" aria-hidden="true"></i>
+                          <span>부가서비스 환불 규정 동의</span>
+                        </label>
+                      </span>
+                      <button type="button" class="agree-wrap__button" aria-label="부가서비스 환불 규정 동의"></button>
+                    </li>
+                    <li class="agree-wrap__item">
+                      <span class="checkbox checkbox--small">
+                        <input type="checkbox" class="checkbox__input" id="inpAgree-05" data-element="checkbox">
+                        <label for="inpAgree-05" class="checkbox__label">
+                          <i class="checkbox__ico" aria-hidden="true"></i>
+                          <span>노선별 주의사항 확인 동의</span>
+                        </label>
+                      </span>
+                      <button type="button" class="agree-wrap__button" aria-label="노선별 주의사항 확인 동의"></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- //약관 동의 -->
+            </div>
+          </div>
+          <!-- //약관 및 규정 동의 -->
+
+          <div class="section-wrap">
+            <div class="fixed-wrap button-wrap pc-center pc-type01">
+              <!-- 버튼 활성화 클래스 button--active -->
+              <button type="button" class="button button--primary"><span class="button__text">다음</span></button>
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- FOOTER -->
+    </div>
+  </div>
+  <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+  <div class="footer pc-only">
+    <!-- pc -->
+    <footer class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">제주항공 소개</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">투자정보</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">채용안내</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">여객운송약관</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">홈페이지이용약관</a>
+        </div>
+        <div class="footer__top-item footer__top-item--privacy">
+          <a href="#" class="footer__top-link">개인정보처리방침</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">사이트맵</a>
+        </div>
+  
+        <div class="footer__top-item footer__top-item--family">
+          <div class="family-wrap" data-element="toggle" data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+            <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+            <div class="family-list" data-element="toggle__panel">
+              <a href="#" class="family-link">㈜애경산업</a>
+              <a href="#" class="family-link">㈜에이텍</a>
+              <a href="#" class="family-link">애경S.T</a>
+              <a href="#" class="family-link">에이케이아이에스㈜</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <hr class="footer__spacer">
+  
+      <div class="footer__bottom">
+        <a href="#" class="footer__logo">
+          <img src="../../assets/images/upload/logo_jeju_gray.png" alt="JEJU air">
+        </a>
+        <div class="footer__bottom-contents">
+          <div class="footer__bottom-info">
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 서비스 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공위험물안내</a>
+            </div>
+          </div>
+          <div class="footer__bottom-recommand">
+            <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+            <div class="recommand-list">
+              <div class="recommand-item">
+                <a href="#" class="link">최저 운임 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">서울 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">제주 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">부산 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">무안 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">청부 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">대구 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">광주 출발 항공</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-util">
+            <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png" alt="VALUE ALLIANCE"></a>
+            <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
+            <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt=""> Android</a>
+          </div>
+          <p class="footer__bottom-address"><span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br>
+            제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)</p>
+          <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- //pc -->
+  </div>
+  <!-- //FOOTER -->
+  <script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

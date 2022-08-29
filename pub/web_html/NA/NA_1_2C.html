@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+
+  <div class="wrap">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">
+          여정 상세
+        </a>
+      </main>
+    </div>
+  </div>
+  <div id="modalLayer01" class="modal modal-full modal-scroll">
+    <!-- [수정 : 210222] modal-scroll class 추가 -->
+    <div class="modal-header">
+      <div class="modal-header__title">여정 상세</div>
+    </div>
+    <div class="modal-content">
+      <div class="gray-box gray-box--full extend gray-box--boarding mt0">
+        <div class="from">
+          <div class="title">세부</div>
+          <!-- <div class="text">CEB</div> --><!--20210429 삭제-->
+        </div>
+        <i class="icon one-way" aria-label="one-way"></i>
+        <div class="to">
+          <div class="title">사이판</div>
+          <!-- <div class="text">SPN</div> --><!--20210429 삭제-->
+        </div>
+      </div>
+      <div class="flight-time">
+        <div class="flight-time__title">
+          <div class="text-wrap">
+            <strong class="text-wrap__title">7C2405</strong>
+            <span class="text-wrap__text">1회 경유</span>
+          </div>
+          <div class="text-wrap__additional">
+            <strong class="text-wrap__text color-org">총 4시간 40분 소요 (+1일)</strong>
+          </div>
+        </div>
+        <ul class="flight-time__list">
+          <li class="flight-time__list-item">
+            <div class="title">세부 <span class="title-code">CEB</span></div>
+            <div class="info"><span>2020년 10월 02일 (금)19:50</span><span>7C2406</span></div>
+            <div class="time">3시간 00분 소요</div>
+          </li>
+          <li class="flight-time__list-item via-line">
+            <div class="title">서울(인천) <span class="title-code">ICN</span></div>
+            <div class="info"><span>2020년 10월 02일 (금) 19:50</span></div>
+          </li>
+          <li class="flight-time__list-item via-line via"><strong>환승</strong><span>2시간 50분 대기 예정</span></li>
+          <li class="flight-time__list-item">
+            <div class="title">서울(인천) <span class="title-code">ICN</span></div>
+            <div class="info"><span>2020년 10월 03일 (토) 00:40</span><span>7C2410</span></div>
+            <div class="time">1시간 50분 소요</div>
+          </li>
+          <li class="flight-time__list-item">
+            <div class="title">사이판 <span class="title-code">CEB</span></div>
+            <div class="info"><span>2020년 10월 03일 (토) 02:20</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" href="../../assets/css/lang.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <div class="stepper header__stepper">
+        <ol class="stepper__group_new">
+          <li class="active">
+            <span class="step">1</span>
+            <span class="text">여정 및 탑승객 선택</span>
+          </li>
+          <li>
+            <span class="step">2</span>
+            <span class="text">구간 및 운임 선택</span>
+          </li>
+          <li>
+            <span class="step">3</span>
+            <span class="text">부가서비스 선택</span>
+          </li>
+          <li>
+            <span class="step">4</span>
+            <span class="text">변경정보 확인</span>
+          </li>
+          <li>
+            <span class="step">5</span>
+            <span class="text">결제</span>
+          </li>
+        </ol>
+      </div>
+
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header__inner header__inner--step pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <h1 class="header__logo">
+            <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+          </h1>
+          <h2 class="header__page-name">예약 변경</h2>
+
+          <div class="stepper header__stepper">
+            <ol class="stepper__group_new">
+              <li class="active">
+                <span class="step">1</span>
+                <span class="text">여정 및 탑승객 선택</span>
+              </li>
+              <li>
+                <span class="step">2</span>
+                <span class="text">구간 및 운임 선택</span>
+              </li>
+              <li>
+                <span class="step">3</span>
+                <span class="text">부가서비스 선택</span>
+              </li>
+              <li>
+                <span class="step">4</span>
+                <span class="text">변경정보 확인</span>
+              </li>
+              <li>
+                <span class="step">5</span>
+                <span class="text">결제</span>
+              </li>
+            </ol>
+          </div><!--// step 스타일 변경 -->
+
+        </div>
+      </div>      
+    </header>
+
+  </div>
+
+  <div id="body">
+    <div class="wrap wrap--button-fixed GD step-ui">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">2 Depth</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle" data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>
+            <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor">3 Depth</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel">
+              <a href="#" class="item">4 Depth</a>
+              <a href="#" class="item">4 DepthDepthDepth</a>
+              <a href="#" class="item">4 DepthDepthDepth</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
+      <div class="content" id="content">
+        <main id="main" class="main">
+
+          <div class="page-title-wrap">
+            <div class="page-title">여정 및 탑승객 선택</div>
+            <div class="page-sub-title">변경하실 여정 및 탑승객을 선택해 주세요.</div>
+            <div class="page-title-add ">선택하신 탑승객의 전체 여정에 새로운 예약번호가 부여됩니다. </div>
+          </div>
+
+          <div class="section-wrap">
+            <div class="frame">
+              <div class="frame__head">
+                <div class="frame__heading">여정 선택</div>
+              </div>
+              <div class="frame__body">
+
+                <span class="checkbox checkbox--small section-title">
+                  <input type="checkbox" class="checkbox__input" id="inputCheck" data-element="checkbox">
+                  <label for="inputCheck" class="checkbox__label">
+                    <i class="checkbox__ico" aria-hidden="true"></i>
+                    <span class="text__default text--color-black">가는 편</span>
+                  </label>
+                </span>
+                <div class="journeys boarding-list-pc">   
+                  <div class="boarding-wrap">                    
+                    <div class="boarding-box">                      
+                      <div class="boarding">
+                        <div class="boarding__header">
+                          <div class="boarding__header--item1">
+                            <span>7C147</span>
+                          </div>
+                          <div class="boarding__header--item2">
+                            <span class="marked--brand">FLYBAG</span>
+                          </div>
+                        </div>              
+                        <div class="boarding__info-wrap">
+                          <div class="boarding__info--top">
+                            <div class="boarding__info--top-item1"><span>2020.10.11 (목) <em class="mo-br">12:30</em></span></div>
+                            <div class="boarding__info--top-item2">
+                              <div class="boarding__info-date">2020.10.11 (목) <em class="mo-br">12:30</em></div>
+                            </div>
+                          </div>              
+                          <div class="boarding__info">
+                            <div class="boarding__info-before">
+                              <div class="boarding__info-title">서울</div>
+                              <div class="boarding__info-text">김포</div>
+                            </div>
+                            <div aria-label="one-way" class="icon-mark one-way"></div>
+                            <div class="boarding__info-after">
+                              <div class="boarding__info-title">오사카</div>
+                              <div class="boarding__info-text">간사이</div>
+                            </div>
+                          </div>              
+          
+                        </div>              
+                      </div>
+                      <!--//boarding-->
+                    </div>
+                    <!--// boarding-box-->
+                  </div>
+                  <!--// boarding-wrap-->  
+    
+                </div>
+                <!--// journeys.boarding-list-pc -->
+                   
+
+                <div class="sub-section">
+                  <span class="checkbox checkbox--small section-title">
+                    <input type="checkbox" class="checkbox__input" id="inputCheck2" data-element="checkbox">
+                    <label for="inputCheck2" class="checkbox__label">
+                      <i class="checkbox__ico" aria-hidden="true"></i>
+                      <span class="text__default text--color-black">오는 편</span>
+                    </label>
+                  </span>
+               
+                  <div class="journeys boarding-list-pc">   
+                    <div class="boarding-wrap">                    
+                      <div class="boarding-box">                      
+                        <div class="boarding">
+                          <div class="boarding__header">
+                            <div class="boarding__header--item1">
+                              <span>7C147</span>
+                            </div>
+                            <div class="boarding__header--item2">
+                              <span class="marked--brand">FLYBAG</span>
+                            </div>
+                          </div>              
+                          <div class="boarding__info-wrap">
+                            <div class="boarding__info--top">
+                              <div class="boarding__info--top-item1"><span>2020.10.11 (목) <em class="mo-br">12:30</em></span></div>
+                              <div class="boarding__info--top-item2">
+                                <div class="boarding__info-date">2020.10.11 (목) <em class="mo-br">12:30</em></div>
+                              </div>
+                            </div>              
+                            <div class="boarding__info">
+                              <div class="boarding__info-before">
+                                <div class="boarding__info-title">서울</div>
+                                <div class="boarding__info-text">김포</div>
+                              </div>
+                              <div aria-label="one-way" class="icon-mark one-way"></div>
+                              <div class="boarding__info-after">
+                                <div class="boarding__info-title">오사카</div>
+                                <div class="boarding__info-text">간사이</div>
+                              </div>
+                            </div>              
+            
+                          </div>              
+                        </div>
+                        <!--//boarding-->
+                      </div>
+                      <!--// boarding-box-->
+                    </div>
+                    <!--// boarding-wrap-->  
+      
+                  </div>
+                  <!--// journeys.boarding-list-pc -->
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="section-wrap" data-element="checkList">
+            <div class="frame">
+              <div class="frame__head">
+                <!-- <div class="frame__heading">탑승객 선택</div> -->
+                <div class="frame__heading">Select Passengers</div>
+                <div class="frame__util">
+                  <span class="checkbox checkbox--small checkbox--left">
+                    <input type="checkbox" class="checkbox__input" id="checkall" data-element="checkAll">
+                    <label for="checkall" class="checkbox__label">
+                      <i class="checkbox__ico" aria-hidden="true"></i>
+                      <!-- <span class="text__default text--color-black">전체 선택</span> -->
+                      <span class="text__default text--color-black">Select All</span>
+                    </label>
+                  </span>
+                </div>
+              </div>
+              <div class="frame__body">
+
+                <!-- 기본상태 -->
+                <div class="checkbox-list open-toggle checkbox-list--pc cancel--mt" data-element="inputToggle">
+                  <input type="checkbox" class="checkbox-list__input" id="check1" data-element="checkbox">
+                  <label for="check1" class="checkbox-list__label">
+                    <span class="info-text">
+                      <span class="info-text__item">
+                        <!-- <span>성인 1</span> -->
+                        <span>Adult 1</span>
+                        <span class="bold">정/부산</span>
+                      </span>
+                      <!-- <span class="info-text__item">
+                        <span>총 결제금액</span>
+                        <span>1,000,000원</span>
+                      </span> -->
+                      <span class="info-text__item">
+                        <span>Total Payment</span>
+                        <span>KRW 63,000</span>
+                      </span>
+                    </span>
+                  </label>
+                </div>
+                <!-- // 기본상태 -->
+
+                <!-- 신분할인 적용 -->
+                <div class="checkbox-list open-toggle checkbox-list--pc" data-element="inputToggle">
+                  <input type="checkbox" class="checkbox-list__input" id="check2" data-element="checkbox">
+                  <label for="check2" class="checkbox-list__label">
+                    <span class="info-text">
+                      <span class="info-text__item">
+                        <span>성인 2</span>
+                        <span class="bold">정/부산</span>
+                      </span>
+                      <span class="info-text__item">
+                        <span>총 결제금액</span><!--20210906 통테 수정사항 현행화-->
+                        <span>1,000,000원</span>
+                      </span>
+                    </span>
+                    <span class="gray-box-info">
+                      <span class="gray-box cancel--mt">
+                        <span class="flex-text"><strong>신분 할인</strong></span>
+                        <!-- <span class="flex-text"><strong>신규회원 할인</strong></span>
+                        <span class="flex-text"><strong>유료멤버십 할인</strong></span>
+                        <span class="flex-text"><strong>기업우대 할인</strong></span> -->
+                      </span>
+                    </span>
+                  </label>
+                </div>
+                <!-- // 신분할인 적용 -->
+
+                <!-- 국내선 유아동반 -->
+                <div class="checkbox-list open-toggle checkbox-list--pc" data-element="inputToggle">
+                  <input type="checkbox" class="checkbox-list__input" id="check3" data-element="checkbox">
+                  <label for="check3" class="checkbox-list__label">
+                    <span class="info-text">
+                      <span class="info-text__item">
+                        <span>성인 1</span>
+                        <span class="bold">김/제주</span>
+                      </span>
+                      <span class="info-text__item">
+                        <span>총 결제금액</span><!--20210906 통테 수정사항 현행화-->
+                        <span>1,000,000원</span>
+                      </span>
+                    </span>
+                    <span class="gray-box-info">
+                      <span class="gray-box cancel--mt">
+                        <span class="flex-text">
+                          동반유아1
+                          <span class="flex-text__additional">김/유아</span>
+                        </span>
+                      </span>
+                    </span>
+                  </label>
+                </div>
+                <!-- // 국내선 유아동반 -->
+
+                <!-- 국내선 유아동반 + 신분할인 -->
+                <div class="checkbox-list open-toggle checkbox-list--pc" data-element="inputToggle">
+                  <input type="checkbox" class="checkbox-list__input" id="check4" data-element="checkbox">
+                  <label for="check4" class="checkbox-list__label">
+                    <span class="info-text">
+                      <span class="info-text__item">
+                        <span>성인 1</span>
+                        <span class="bold">김/제주</span>
+                      </span>
+                      <span class="info-text__item">
+                        <span>총 결제금액</span><!--20210906 통테 수정사항 현행화-->
+                        <span>1,000,000원</span>
+                      </span>
+                      <span class="info-text__item">
+                        <span>회원번호</span>
+                        <span>006533921658</span>
+                      </span>
+                    </span>
+                    <span class="gray-box-info">
+                      <span class="gray-box cancel--mt">
+                        <span class="flex-text">
+                          동반유아1
+                          <span class="flex-text__additional">김/유아</span>
+                        </span>
+                      </span>
+                      <span class="gray-box">
+                        <span class="flex-text"><strong>신분 할인</strong></span>
+                      </span>
+                    </span>
+                  </label>
+                </div>
+                <!-- // 국내선 유아동반 + 신분할인 -->
+
+                <!-- 국제선 유아동반 -->
+                <div class="checkbox-list open-toggle checkbox-list--pc" data-element="inputToggle">
+                  <input type="checkbox" class="checkbox-list__input" id="check5" data-element="checkbox">
+                  <label for="check5" class="checkbox-list__label">
+                    <span class="info-text">
+                      <span class="info-text__item">
+                        <span>성인 1</span>
+                        <span class="bold">KIM/JEJU</span>
+                      </span>
+                      <span class="info-text__item">
+                        <span>총 결제금액</span><!--20210906 통테 수정사항 현행화-->
+                        <span>1,000,000원</span>
+                      </span>
+                    </span>
+                    <span class="gray-box-info">
+                      <span class="gray-box cancel--mt">
+                        <span class="flex-text">
+                          동반유아1
+                          <span class="flex-text__additional">KIM/YUA</span>
+                        </span>
+                        <span class="flex-text">
+                          총 결제금액<!--20210906 통테 수정사항 현행화-->
+                          <span class="flex-text__additional">100,000원</span>
+                        </span>
+                      </span>
+                    </span>
+                  </label>
+                </div>
+                <!-- // 국제선 유아동반 -->
+
+                <!-- 포인트 결제 -->
+                <div class="checkbox-list open-toggle checkbox-list--pc" data-element="inputToggle">
+                  <input type="checkbox" class="checkbox-list__input" id="check6" data-element="checkbox">
+                  <label for="check6" class="checkbox-list__label">
+                    <span class="info-text">
+                      <span class="info-text__item">
+                        <span>성인 2</span>
+                        <span class="bold">정/부산</span>
+                      </span>
+                      <span class="info-text__item">
+                        <span>총 결제금액</span><!--20210906 통테 수정사항 현행화-->
+                        <span>44,000원 + 996,000P</span>
+                      </span>
+                    </span>
+                  </label>
+                </div>
+                <!-- // 포인트 결제 -->
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-box pc-15-170-90"> <!-- 20211007 class변경 -->
+            <div class="check-wrap">
+              <span class="checkbox checkbox--small">
+                <input type="checkbox" class="checkbox__input" id="agree" data-element="checkbox">
+                <label for="agree" class="checkbox__label">
+                  <i class="checkbox__ico" aria-hidden="true"></i>
+                  <span class="text__default text--color-black">예약변경에 따른 내용을 이해했으며 동의합니다.</span><!--20210611 문구 변경-->
+                </label>
+              </span>
+            </div>
+          </div>
+
+
+
+            <!-- 20211007 다음 버튼 sticky로 변경 -->
+            <div class="booking-sticky booking-sticky--reservation no-radius">
+              <div class="reservation-container">
+            
+                <div class="pc-only">
+                  <button type="button" class="button button--primary button--active">
+                    <span class="button__text">다음</span>
+                  </button>
+                </div>
+              </div>
+              <div class="button-wrap mobile-only">
+                <!-- D : 액티브 클래스 button--active -->
+                <button type="button" class="button button--primary button--active">
+                  <span class="button__text">다음</span>
+                </button>
+              </div>
+            </div>
+
+     
+
+        </main>
+      </div>
+
+    </div>
+  </div>
+  <!--//#body-->
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

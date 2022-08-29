@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- 개발시 삭제: robots -->
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+<title>제주항공</title>
+<link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+<link rel="stylesheet" href="../../assets/css/global.css">
+<link rel="stylesheet" href="../../assets/css/component.css">
+<link rel="stylesheet" href="../../assets/css/page.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <!-- header -->
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <!-- 예매전 노출 -->
+        <button type="button" class="header__button-ticket">
+          <span class="hidden">티켓보기</span>
+        </button>
+        <!-- // 예매전 노출 -->
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 스크롤시 스티키 상단 -->
+      <div>
+
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <!-- //mobile -->
+
+    <!-- pc용 공통 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+            <a href="#" class="header__link">이벤트</a>
+          </div>
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <!-- <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button> -->
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+                    <span class="hidden">검색창 닫기</span>
+                </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+
+          <!-- goto-quick-booking : 스티키 클릭용 -->
+          <div class="goto-quick-booking">
+            <a href="#a">
+              <span>어디로 여행가세요?</span>
+              <div class="goto-btn">
+                <span>항공권 검색</span>
+              </div>
+            </a>
+          </div>
+          <!-- //goto-quick-booking -->
+
+        </div>
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+    <!-- //pc용 공통 헤더 -->
+    <!-- pc용 공통 헤더 -->
+  </div>
+  <!-- //header -->
+
+  <div class="wrap">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" data-element="modal_anchor" data-target="#modalLayer01" data-modal-type="full" class="button button--primary button--active" data-width="480">
+          <span class="button__text">나의 알림함</span>
+        </a>
+      </main>
+    </div>
+  </div>
+
+  <div id="modalLayer01" class="modal modal-full pc-480 CO_1_6 modal-scroll">
+    <div  class="modal-header">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">나의 알림함</h2>
+    </div>
+    <div class="modal-content modal-content--alarm">
+      <div class="accordion">
+        <div data-element="accordion" class="accordion__group" data-options='{"initIndex": 1}'>
+          <div data-element="accordion__item" class="accordion__item">
+            <!-- 비활성화시 disabled 클래스 추가 및 속성 추가 -->
+            <a href="#" data-element="accordion__anchor" class="accordion__anchor disabled" disabled>
+              <div class="accordion__text">
+                <div class="accordion__text-sentence">
+                  <strong class="title">모바일탑승권 신청가능</strong>
+                  <span class="new">NEW</span>
+                  <div class="alarm-date">
+                    알림일 <span class="date">2020.09.23</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div data-element="accordion__panel" class="accordion__panel">
+              <div class="accordion__text">
+                <div class="accordion__text-item">
+                  모바일탑승권 신청가능 비활성화
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-element="accordion__item" class="accordion__item">
+            <a href="#" data-element="accordion__anchor" class="accordion__anchor">
+              <div class="accordion__text">
+                <div class="accordion__text-sentence">
+                  <strong class="title">제주항공 예매완료</strong>
+                  <div class="alarm-date">
+                    알림일 <span class="date">2020.09.23</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div data-element="accordion__panel" class="accordion__panel">
+              <div class="accordion__text">
+                <div class="accordion__text-item">
+                  <div class="text__default text--bold">제주항공 예매 완료</div>
+                  <div class="table-horizontal">
+                    <table>
+                      <caption>제주항공 예매 정보 - 예약번호, 가는편, 오는편</caption>
+                      <colgroup>
+                        <col style="width: 28%;">
+                        <col>
+                      </colgroup>
+                      <tbody class="table-horizontal__tbody">
+                        <tr>
+                          <th scope="row" class="table-horizontal__th">예약번호</th>
+                          <td class="table-horizontal__td">H14k</td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="table-horizontal__th">가는편</th>
+                          <td class="table-horizontal__td">
+                            서울(인천) - 오사카(간사이)<br>
+                            2020.09.14 (월) 19시 55분
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="table-horizontal__th">오는편</th>
+                          <td class="table-horizontal__td">
+                            서울(인천) - 오사카(간사이)<br>
+                            2020.09.14 (월) 19시 55분
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="container--default">
+                    <div class="text__default text--bold">이용안내</div>
+                    <ul class="list-guide">
+                      <li class="list-guide__item">모바일 탑승권은 항공기 출발 24시간 전부터 국내선 1시간 전, 국제선 1시간 30분 전까지 이용 가능합니다.</li>
+                      <li class="list-guide__item">발급 받으신 모바일 탑승권으로 빠르고 간편하게 탑승하실 수 있습니다.</li>
+                    </ul>
+                  </div>
+
+                  <div class="button-wrap button-wrap--center container--default">
+                    <button type="button" class="button button--middle"><span class="button__text">모바일 탑승권 바로가기</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-element="accordion__item" class="accordion__item">
+            <a href="#" data-element="accordion__anchor" class="accordion__anchor">
+              <div class="accordion__text">
+                <div class="accordion__text-sentence">
+                  <strong class="title">모바일탑승권 신청가능</strong>
+                  <div class="alarm-date">
+                    알림일 <span class="date">2020.09.23</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div data-element="accordion__panel" class="accordion__panel">
+              <div class="accordion__text">
+                <div class="accordion__text-item">
+                  <div class="text__default text--bold">제주항공 예매 완료</div>
+                  <div class="table-horizontal">
+                    <table>
+                      <caption>제주항공 예매 정보 - 예약번호, 가는편, 오는편</caption>
+                      <colgroup>
+                        <col style="width: 28%;">
+                        <col>
+                      </colgroup>
+                      <tbody class="table-horizontal__tbody">
+                        <tr>
+                          <th scope="row" class="table-horizontal__th">예약번호</th>
+                          <td class="table-horizontal__td">H14k</td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="table-horizontal__th">가는편</th>
+                          <td class="table-horizontal__td">
+                            서울(인천) - 오사카(간사이)<br>
+                            2020.09.14 (월) 19시 55분
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="table-horizontal__th">오는편</th>
+                          <td class="table-horizontal__td">
+                            서울(인천) - 오사카(간사이)<br>
+                            2020.09.14 (월) 19시 55분
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="container--default">
+                    <div class="text__default text--bold">이용안내</div>
+                    <ul class="list-guide">
+                      <li class="list-guide__item">모바일 탑승권은 항공기 출발 24시간 전부터 국내선 1시간 전, 국제선 1시간 30분 전까지 이용 가능합니다.</li>
+                      <li class="list-guide__item">발급 받으신 모바일 탑승권으로 빠르고 간편하게 탑승하실 수 있습니다.</li>
+                    </ul>
+                  </div>
+
+                  <div class="button-wrap button-wrap--center container--default">
+                    <button type="button" class="button button--middle"><span class="button__text">모바일 탑승권 바로가기</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="more-wrap">
+        <button type="button" class="more__button"><span class="more__button-text">더보기 (<span class="more__button--color">10</span>/33)</span></button>
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+<script src="../../assets/js/plugin.js"></script>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

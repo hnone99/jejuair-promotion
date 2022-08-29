@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <!-- header -->
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <!-- 예매전 노출 -->
+        <button type="button" class="header__button-ticket">
+          <span class="hidden">티켓보기</span>
+        </button>
+        <!-- // 예매전 노출 -->
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 스크롤시 스티키 상단 -->
+      <div>
+
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <!-- //mobile -->
+
+    <!-- pc용 공통 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+            <a href="#" class="header__link">이벤트</a>
+          </div>
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <!-- <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button> -->
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+                    <span class="hidden">검색창 닫기</span>
+                </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+
+          <!-- goto-quick-booking : 스티키 클릭용 -->
+          <div class="goto-quick-booking">
+            <a href="#a">
+              <span>어디로 여행가세요?</span>
+              <div class="goto-btn">
+                <span>항공권 검색</span>
+              </div>
+            </a>
+          </div>
+          <!-- //goto-quick-booking -->
+
+        </div>
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+    <!-- //pc용 공통 헤더 -->
+    <!-- pc용 공통 헤더 -->
+  </div>
+  <!-- //header -->
+
+  <div id="body">
+    <div class="wrap">
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div class="section-wrap pc-pay-wrap section-wrap">
+            <div class="left">
+              <div class="section-title">약관 및 규정 동의</div>
+            </div>
+            <div class="right">
+              <!-- 약관 동의 -->
+              <div class="agree-wrap pc-0">
+                <div class="check-wrap">
+                  <div class="check-wrap__all-check">
+                    <span class="checkbox">
+                      <input type="checkbox" class="checkbox__input" id="inpAgreeAll">
+                      <label for="inpAgreeAll" class="checkbox__label">
+                        <i class="checkbox__ico" aria-hidden="true"></i>
+                        <span>전체 동의</span>
+                      </label>
+                    </span>
+                  </div>
+                  <ul class="check-wrap__list">
+                    <li class="agree-wrap__item required">
+                      <div class="item-inner">
+                        <span class="checkbox checkbox--small">
+                          <input type="checkbox" class="checkbox__input" id="inpAgree-01">
+                          <label for="inpAgree-01" class="checkbox__label">
+                            <i class="checkbox__ico" aria-hidden="true"></i>
+                            <span>항공권 운임 규정 동의</span>
+                          </label>
+                        </span>
+                        <button type="button" class="agree-wrap__button" aria-label="항공권 운임 규정 동의"></button>
+                      </div>
+                    </li>
+                    <li class="agree-wrap__item required">
+                      <div class="item-inner">
+                        <span class="checkbox checkbox--small">
+                          <input type="checkbox" class="checkbox__input" id="inpAgree-02">
+                          <label for="inpAgree-02" class="checkbox__label">
+                            <i class="checkbox__ico" aria-hidden="true"></i>
+                            <span>국내선 여객운송 약관 동의</span>
+                          </label>
+                        </span>
+                        <button type="button" class="agree-wrap__button" aria-label="국내선 여객운송 약관 동의"></button>
+                      </div>
+                    </li>
+                    <li class="agree-wrap__item required">
+                      <div class="item-inner">
+                        <span class="checkbox checkbox--small">
+                          <input type="checkbox" class="checkbox__input" id="inpAgree-03">
+                          <label for="inpAgree-03" class="checkbox__label">
+                            <i class="checkbox__ico" aria-hidden="true"></i>
+                            <span>항공기 반입금지 위험물 확인</span>
+                          </label>
+                        </span>
+                        <button type="button" class="agree-wrap__button" aria-label="항공기 반입금지 위험물 확인"></button>
+                      </div>
+                    </li>
+                    <li class="agree-wrap__item required">
+                      <div class="item-inner">
+                        <span class="checkbox checkbox--small">
+                          <input type="checkbox" class="checkbox__input" id="inpAgree-04">
+                          <label for="inpAgree-04" class="checkbox__label">
+                            <i class="checkbox__ico" aria-hidden="true"></i>
+                            <span>부가서비스 환불 규정 동의</span>
+                          </label>
+                        </span>
+                        <button type="button" class="agree-wrap__button" aria-label="부가서비스 환불 규정 동의"></button>
+                      </div>
+                    </li>
+                    <li class="agree-wrap__item selection">
+                      <div class="item-inner">
+                        <span class="checkbox checkbox--small">
+                          <input type="checkbox" class="checkbox__input" id="inpAgree-05">
+                          <label for="inpAgree-05" class="checkbox__label">
+                            <i class="checkbox__ico" aria-hidden="true"></i>
+                            <span>[선택] 노선별 주의사항 확인 동의</span>
+                          </label>
+                        </span>
+                        <button type="button" class="agree-wrap__button" aria-label="노선별 주의사항 확인 동의"></button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- //약관 동의 -->
+            </div>
+          </div>
+
+          <!-- 약관 보기 -->
+          <div class="button-wrap hidden">
+            <button type="button" class="button button--primary button--active open-modal" data-element="modal_anchor"
+              data-target="#modalLayer01" data-modal-type="full"><span class="button__text">약관 보기</span></button>
+          </div>
+          <!-- 약관 보기 -->
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+  <div class="footer pc-only">
+    <!-- pc -->
+    <footer class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">제주항공 소개</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">투자정보</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">채용안내</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">여객운송약관</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">홈페이지이용약관</a>
+        </div>
+        <div class="footer__top-item footer__top-item--privacy">
+          <a href="#" class="footer__top-link">개인정보처리방침</a>
+        </div>
+        <div class="footer__top-item">
+          <a href="#" class="footer__top-link">사이트맵</a>
+        </div>
+
+        <div class="footer__top-item footer__top-item--family">
+          <div class="family-wrap" data-element="toggle"
+            data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+            <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+            <div class="family-list" data-element="toggle__panel">
+              <a href="#" class="family-link">㈜애경산업</a>
+              <a href="#" class="family-link">㈜에이텍</a>
+              <a href="#" class="family-link">애경S.T</a>
+              <a href="#" class="family-link">에이케이아이에스㈜</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer__spacer">
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__logo">
+          <img src="../../assets/images/upload/logo_jeju_gray.png" alt="jeju Air">
+          <!--2021-04-13 이미지로 변경-->
+        </a>
+        <div class="footer__bottom-contents">
+          <div class="footer__bottom-info">
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 서비스 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+            </div>
+            <div class="info-item">
+              <a href="#" class="link">항공위험물안내</a>
+            </div>
+          </div>
+          <div class="footer__bottom-recommand">
+            <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+            <div class="recommand-list">
+              <div class="recommand-item">
+                <a href="#" class="link">최저 운임 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">서울 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">제주 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">부산 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">무안 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">청부 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">대구 출발 항공권</a>
+              </div>
+              <div class="recommand-item">
+                <a href="#" class="link">광주 출발 항공</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-util">
+            <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png"
+                alt="VALUE ALLIANCE"></a>
+            <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
+            <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt="">
+              Android</a>
+          </div>
+          <p class="footer__bottom-address"><span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br>
+            제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)</p>
+          <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- //pc -->
+  </div>
+  <!-- //FOOTER -->
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <!-- 풀팝업 -->
+  <div id="modalLayer01" class="modal modal-full modal-scroll modal--fixed-multi agree">
+      <!--약관1-->
+      <div class="modal-header">
+        <div class="modal-header__title"></div>
+      </div>
+      <div class="modal-content"></div>
+      <!--//약관1-->
+      <a href="#none" class="agree-move agree-prev"><span class="hidden">이전</span></a>
+      <a href="#none" class="agree-move agree-next"><span class="hidden">다음</span></a>
+      <div class="fixed-wrap fixed-wrap--multi-line border-none">
+        <div class="button-wrap">
+          <button type="button" class="button button--primary button--active js-check-all">
+            <span class="button__text">모두 동의</span>
+          </button>
+          <!-- button 활성화 시 button--active class 추가 -->
+        </div>
+      </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">Close</span></a>
+  </div>
+<script>
+  // 약관 및 규정 동의 내용
+  var agreeData = [
+    {
+      title: '항공권 운임 규정 동의',
+      content: '<div class=""><div data-element="tab" class="tab tab--default pc-tab-full tab-fixed"><div class="tab__buttons"><div data-element="tab__list" class="tab__button" role="presentation"><button type="button" data-element="tab__anchor" class="tab__anchor is-active" data-index="0" id="plugin-tab-1" role="tab" tabindex="" aria-selected="true" aria-expanded="true">운임 및 수수료</button></div><div data-element="tab__list" class="tab__button" role="presentation"><button type="button" data-element="tab__anchor" class="tab__anchor" data-index="1" id="plugin-tab-2" role="tab" tabindex="" aria-selected="false" aria-expanded="false">일반규정</button></div></div><!-- 운임 및 수수료 --><div data-element="tab__panel" class="tab__panel info-text is-active" aria-labelledby="plugin-tab-1" role="tabpanel" tabindex="0" style="height: 498px;"><!-- 가는 편 :  서울(김포)  - 제주 --><div class="sub-section mt0"><div class="section-title">가는 편 : 서울(김포) - 제주</div><div class="table-horizontal"><table><caption>가는편 - 운임종류, 구간당 변경 수수료, 구간당 취소 위약금</caption><colgroup><col style="width: 34%;"><col></colgroup><tbody class="table-horizontal__tbody"><tr><th scope="row" class="table-horizontal__th">운임종류</th><td class="table-horizontal__td">FLYBAG</td></tr><tr><th scope="row" class="table-horizontal__th">구간당<br>변경 수수료</th><td class="table-horizontal__td">구매 다음날 ~<br>출발 당일 : 0원</td></tr><tr><th scope="row" class="table-horizontal__th">구간당<br>취소 위약금</th><td class="table-horizontal__td"><ul class="list-guide large list-guide--pt0"><li class="list-guide__item">구매 다음날 ~ 출발 91일 전<br>: 0원</li><li class="list-guide__item">출발 90일 ~ 61일전<br>: 10,000원</li><li class="list-guide__item">출발 60일 ~ 31일전<br>: 20,000원</li><li class="list-guide__item">출발 30일 ~ 출발 당일<br>: 30,000원</li></ul></td></tr></tbody></table></div></div><!-- //가는 편 :  서울(김포)  - 제주< --><!-- 오는 편 :  제주  - 서울(김포) --><div class="sub-section"><div class="section-title">오는 편 : 제주 - 서울(김포)</div><div class="table-horizontal"><table><caption>오는편 - 운임종류, 구간당 변경 수수료, 구간당 취소 위약금</caption><colgroup><col style="width: 34%;"><col></colgroup><tbody class="table-horizontal__tbody"><tr><th scope="row" class="table-horizontal__th">운임종류</th><td class="table-horizontal__td">FLYBAG</td></tr><tr><th scope="row" class="table-horizontal__th">구간당<br>변경 수수료</th><td class="table-horizontal__td">구매 다음날 ~<br>출발 당일 : 0원</td></tr><tr><th scope="row" class="table-horizontal__th">구간당<br>취소 위약금</th><td class="table-horizontal__td"><ul class="list-guide large list-guide--pt0"><li class="list-guide__item">구매 다음날 ~ 출발 91일 전<br>: 0원</li><li class="list-guide__item">출발 90일 ~ 61일전<br>: 10,000원</li><li class="list-guide__item">출발 60일 ~ 31일전<br>: 20,000원</li><li class="list-guide__item">출발 30일 ~ 출발 당일<br>: 30,000원</li></ul></td></tr></tbody></table></div></div><!-- //오는 편 :  제주  - 서울(김포) --></div><!-- //운임 및 수수료 --><!-- 일반규정--><div data-element="tab__panel" class="tab__panel info-text" aria-labelledby="plugin-tab-2" role="tabpanel" tabindex="0" style="height: 498px; display: none;"><!-- 국내선 CASE : NA_1_A5--><div class="sub-section mt0"><div class="section-title">운임 규정</div><ul class="list-guide large list-guide--narrow"><li class="list-guide__item">신분 할인 : 소아는 성인 운임의 75% 부과, 유아는 성인 운임의 10% 부과</li><li class="list-guide__item">공시 운임의 80% 이상 할인되거나 프로모션 운임인 경우 변경/환불 요청 시점과 관계없이 15,000원의 위약금이 부과됩니다. </li><li class="list-guide__item">‘항공권 변경/취소 위약금’이란, 구매 다음날부터 여정변경, 여정 취소, 신분 할인, 결제방법 변경 등 항공권의 상태가 변경되는 모든 경우에 적용됩니다.</li><li class="list-guide__item">결제 당일(온라인 구매 시~23:54, 한국시간 기준) 예약을 취소하는 경우, 위약금이 면제되며, 오프라인 구매 항공권일 경우 고객센터 및 공항 현장에서 운영시간 안에 접수하면 환불/취소 가능합니다. (단, 항공기 출발 시각 전까지만 면제 가능)</li><li class="list-guide__item">국내선 항공권의 여정이나 결제방법을 변경하는 경우,  항공권은 환불 후 새로 결제를 완료하여야 합니다. 환불되는 항공권에는 변경/취소 위약금이 부과됩니다.</li><li class="list-guide__item">항공권 결제완료 후에는 신분 할인을 적용할 수 없으며, 신분 할인이 잘못 적용되었거나 할인율이 잘못 적용된 경우에도 환불 후 새로 결제해야 합니다. 환불되는 항공권에는 수수료 및 위약금이 동일하게 적용되니, 결제 전에 신중히 선택하시기 바랍니다.</li><li class="list-guide__item">항공기 운항스케줄 변경 및 운항취소 등 고객 사정에 의한 변경이 아닌 경우, 고객센터(1599-1500)을 통하여 변경 신청하시면 위약금이 면제됩니다. </li></ul></div><div class="sub-section"><div class="section-title">일반 규정</div><ul class="list-guide large list-guide--narrow"><li class="list-guide__item">항공권은 타인에게 양도할 수 없습니다.</li><li class="list-guide__item">항공권 예매 후 탑승자명을 변경할 수 없으니 성명을 정확히 입력해 주세요. 탑승자 성명이 다를 경우 기존 항공권 환불에 따른 취소 위약금이 부과됩니다.</li><li class="list-guide__item">항공기 출발 예정시각 20분 전까지 탑승수속을 마치지 못한 여객과 항공기 출발 예정시각 5분 전까지 탑승하지 못한 여객은 탑승이 거절될 수 있습니다. 해당 여객에 대하여 제주항공은 위약금 부과 후 환불 이외에 어떠한 책임도 부담하지 않습니다.</li><li class="list-guide__item">사용하지 않은 항공권을 환불하는 경우 제주항공 환불 규정에 따릅니다.</li></ul></div><!-- //국내선 CASE --></div><!-- //일반규정 --></div></div>',
+    },
+    {
+      title: '국내선 여객운송 약관 동의',
+      content: '국내선 여객운송 약관 동의내용',
+    },
+    {
+      title: '항공기 반입금지 위험물 확인',
+      content: '항공기 반입금지 위험물 확인내용',
+    },
+    {
+      title: '부가서비스 환불 규정 동의',
+      content: '부가서비스 환불 규정 동의내용',
+    },
+    {
+      title: '노선별 주의사항 확인 동의',
+      content: '노선별 주의사항 확인 동의<br><br>이미지가 들어갈 경우<br><br><img src="../../assets/images/@temp/@006-213-02.png">',
+    },
+  ]
+  // 약관 및 규정 동의
+  $.fn.checkAgree = function (agreeData) {
+    var agreeData = agreeData;
+    var chkAgrWrap = this;
+    var checkAllBtn = chkAgrWrap.find('#inpAgreeAll');
+    var checkBtn = chkAgrWrap.find('.agree-wrap__item .item-inner');
+    var checkkItemLeng = $('.agree-wrap__item').length;
+    var agreeViewBtn = $('.agree-wrap__button');
+    var allAgree = $('.js-check-all');
+    var title = $('.modal-header__title');
+    var content = $('.modal-content');
+    var modalCheckAll = $('.js-check-all');
+    var prevBtn = $('.agree-prev');
+    var nextBtn = $('.agree-next');
+    checkAllBtn.on('click', function () {
+      console.log('전체체크');
+      var checkProp = $(this).prop('checked');
+      if (checkProp) {
+        $(this).prop('checked', false);
+        openAgree ('all');
+      } else {
+        console.log('전체 동의중');
+      }
+    });
+    checkBtn.on('click', function () {
+      var checkRequired = $(this).parents('.agree-wrap__item').hasClass('required');
+      var checkIndex = $(this).parents('.agree-wrap__item').index();
+      var checkCnt = $('.check-wrap__list input[type="checkbox"]:checked').length;
+      console.log('개별체크', checkIndex, checkkItemLeng, checkCnt);
+      // 필수일 경우
+      if (checkRequired) {
+        var checkedProp = $(this).find('.checkbox__input').prop('checked')
+        if (checkedProp) {
+          console.log('checkedProp', checkedProp)
+          openAgree (checkIndex);
+        } else {
+          console.log('checkedProp', checkedProp)
+        }
+      } 
+      // 선택일 경우
+      else {
+        console.log('선택');
+      }
+      if (checkkItemLeng <= checkCnt) {
+        checkAllBtn.prop('checked', true);
+      } else {
+        checkAllBtn.prop('checked', false);
+      }
+    });
+    agreeViewBtn.on('click', function () {
+      var checkIndex = $(this).parents('.agree-wrap__item').index();
+      $(this).parents('.agree-wrap__item').find('.checkbox__input').prop('checked', true);
+      openAgree (checkIndex);
+    });
+    allAgree.on('click', function () {
+      var checkBtn = chkAgrWrap.find('.agree-wrap__item .checkbox__input');
+    });
+    modalCheckAll.on('click', function () {
+      $('.agree-wrap .checkbox__input').prop('checked', true);
+      $('.modal__close').click();
+    });
+    function openAgree (index) {
+      var index = index;
+      if (index == 'all') {
+        title.html(agreeData[0].title);
+        content.html(agreeData[0].content);
+        modalCheckAll.show();
+        prevBtn.show();
+        nextBtn.show();
+        chkAgrWrap.attr('data-agree', 1)
+      } else {
+        title.html(agreeData[index].title);
+        content.html(agreeData[index].content);
+        modalCheckAll.hide();
+        prevBtn.hide();
+        nextBtn.hide();
+      }
+      $('.open-modal').click();
+      afterInnerHtml ()
+    }
+    prevBtn.on('click', function () {
+      var current = chkAgrWrap.attr('data-agree');
+      var newIdx = current - 1;
+      if (newIdx === 0) {
+        title.html(agreeData[checkkItemLeng - 1].title);
+        content.html(agreeData[checkkItemLeng - 1].content);
+        chkAgrWrap.attr('data-agree', checkkItemLeng);
+      } else {
+        title.html(agreeData[newIdx - 1].title);
+        content.html(agreeData[newIdx - 1].content);
+        chkAgrWrap.attr('data-agree', newIdx);
+      }
+      afterInnerHtml ()
+    })
+    nextBtn.on('click', function () {
+      var current = parseInt(chkAgrWrap.attr('data-agree'));
+      var newIdx = current + 1;
+      console.log(current, newIdx)
+      if (newIdx - 1 === checkkItemLeng) {
+        title.html(agreeData[0].title);
+        content.html(agreeData[0].content);
+        chkAgrWrap.attr('data-agree', 1);
+      } else {
+        title.html(agreeData[newIdx - 1].title);
+        content.html(agreeData[newIdx - 1].content);
+        chkAgrWrap.attr('data-agree', newIdx);
+      }
+      afterInnerHtml ()
+    });
+    function afterInnerHtml () {
+      $('[data-element="tab"]').tab();      
+    }
+  }
+  $('.agree-wrap').checkAgree(agreeData);
+</script>
+</body>
+
+</html>

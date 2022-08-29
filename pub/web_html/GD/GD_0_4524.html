@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+    <div class="wrap GD">
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <a href="#" class="button button--primary button--active" onclick="fullPopOpen('modalLayer01')" style="color: #fff;">
+            편의점 결제 취소
+          </a>
+        </main>
+      </div>
+    </div>
+
+    <!-- 풀팝업 -->
+    <div id="modalLayer01" class="modal modal-full modal-scroll">
+      <div  class=" modal-header">
+        <div class="modal-header__title">환불 정보 입력</div>
+      </div>
+      <div class="modal-content h_70_type01">
+        <div class=" first-margin">
+          <div class="section-sub-txt">환불 받으실 정보를 정확히 입력해 주세요.</div>
+        </div>
+
+        <div class="sub-section">
+          <div class="input-wrap input--line pc-col pc-col-2">
+            <div class="input-row">
+              <div class="input-item">
+                <div class="input-box readonly-box on_load">
+                  <label for="inp" class="input__label">예약번호</label>
+                  <div class="input" data-element="form">
+                    <input type="text" class="input__text marked--bold" data-element="input" id="inp" value="JJDIVJ(31231543654)" readonly >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="input-item">
+                <div class="input-box readonly-box on_load">
+                  <label for="inp" class="input__label">환불금액</label>
+                  <div class="input" data-element="form">
+                    <input type="text" class="input__text marked--bold" data-element="input" id="inp" value="100,000원" readonly >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="input-item">
+                <div class="input-box">
+                  <label for="form1" class="input__label">이메일<span title="required"
+                      class="input__label-asterisk">*</span></label>
+                  <div data-element="form" class="input">
+                    <input type="text" data-element="input" id="form1" placeholder="" required="required"
+                      class="input__text">
+                    <button type="button" data-element="remove" class="input__remove-button"><span
+                        class="hidden">삭제</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="input-row">
+              <div class="input-item">
+                <div class="input-box">
+                  <label for="form2" class="input__label">전화번호<span title="required"
+                      class="input__label-asterisk">*</span></label>
+                  <div data-element="form" class="input">
+                    <input type="text" data-element="input" id="form2" placeholder="" required="required"
+                      class="input__text">
+                    <button type="button" data-element="remove" class="input__remove-button"><span
+                        class="hidden">삭제</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-row input-row--label">
+              <div class="input-label label-top">은행<span title="required" class="input__label-asterisk">*</span></div>
+              <div class="input-box">
+                <div class="select-wrap select-wrap--line">
+                  <button class="select-wrap__button active" type="button" onclick="fullPopOpen('modalLayer02')">입금받을 은행 선택</button>
+                </div>
+              </div>
+            </div>
+            <div class="input-row pc-only"></div>
+            <div class="input-row">
+              <div class="input-item">
+                <div class="input-box">
+                  <label for="form4" class="input__label">계좌번호<span title="required"
+                      class="input__label-asterisk">*</span></label>
+                  <div data-element="form" class="input">
+                    <input type="text" data-element="input" id="form4" required="required"
+                      class="input__text">
+                    <button type="button" data-element="remove" class="input__remove-button"><span
+                        class="hidden">삭제</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-row">
+            <div class="input-item">
+                <div class="input-box">
+                  <label for="form5" class="input__label">예금주<span title="required"
+                      class="input__label-asterisk">*</span></label>
+                  <div data-element="form" class="input">
+                    <input type="text" data-element="input" id="form5" placeholder="" required="required"
+                      class="input__text">
+                    <button type="button" data-element="remove" class="input__remove-button"><span
+                        class="hidden">삭제</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>        
+        </div>
+
+        <!-- 개인정보 수집 -->
+        <div class="section-wrap ">
+          <div class="section-title">꼭 확인해 주세요.</div>
+          <div class="service-information" data-element="toggle" data-options='{"mode": "modal move scroll"}'>
+            <div class="service-information__title">
+              <button type="button" class="service-information__anchor" data-element="toggle__anchor">개인정보 수집</button>
+            </div>
+            <div class="service-information__content" data-element="toggle__panel">
+              <div class="list-wrap">
+                <div class="list-wrap">
+                  <p class="list-wrap__title">수집이용목적</p>
+                  <ul class="list-guide">
+                    <li class="list-guide__item">
+                      제주항공 회원 확인 및 구매 포인트 환불, 환불결과 알림 및 오류 발생 시 처리를 위한 연락
+                    </li>
+                  </ul>
+                </div>
+                <div class="list-wrap">
+                  <p class="list-wrap__title">수집항목</p>
+                  <ul class="list-guide">
+                    <li class="list-guide__item">
+                      성명, 이메일, 휴대전화번호, 계좌번호
+                    </li>
+                    
+                  </ul>
+                </div>
+                <div class="list-wrap">
+                  <p class="list-wrap__title">보유/이용기간</p>
+                  <ul class="list-guide">
+                    <li class="list-guide__item">
+                      환불 완료 후 고객민원 처리 및 거래내역 조회를 위해 3년간 보관
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub-box">
+          <div class="check-wrap">
+            <span class="checkbox">
+              <input type="checkbox" id="inputCheck4" data-element="checkbox" class="checkbox__input">
+              <label for="inputCheck4" class="checkbox__label">
+                <i aria-hidden="true" class="checkbox__ico"></i>
+                <span class="text__default">개인정보 수집·이용에 동의하시겠습니까?</span>
+              </label>
+            </span>
+          </div>
+        </div>
+        <!-- //개인정보 수집 -->
+
+      </div>
+      <div class="fixed-wrap fixed-wrap--multi-line border-none">
+        <!-- checkbox 없는 경우 border-none class 추가 -->
+        <div class="button-wrap">
+          <button type="button" class="button button--active"><span class="button__text">확인</span></button>
+        </div>
+      </div>
+      <a href="#" onclick="closeCurrentModal(this)" class="modal__close"><span class="blind">닫기</span></a>
+    </div>
+
+    <!--은행정보-->
+    <div id="modalLayer02" class="modal modal-full modal-scroll">
+      <div  class=" modal-header">
+        <div class="modal-header__title">은행 선택</div>
+      </div>
+      <div class="modal-content h_70">
+        <div data-element="tab" class="tab tab--default tab-bank tab-fixed">
+          <div class="tab__buttons">
+            <div data-element="tab__list" class="tab__button">
+              <button type="button" data-element="tab__anchor" class="tab__anchor is-active">은행</button>
+            </div>
+            <div data-element="tab__list" class="tab__button">
+              <button type="button" data-element="tab__anchor" class="tab__anchor">증권사</button>
+            </div>
+          </div>
+          <div data-element="tab__panel" class="tab__panel add--pb-40">
+            <div class="select-bank">
+              <div class="select-bank__item">
+                <button class="select-bank__button selected">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-004.png" alt=""></div>
+                  <div class="select-bank__text">국민은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-088.png" alt=""></div>
+                  <div class="select-bank__text">신한은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-020.png" alt=""></div>
+                  <div class="select-bank__text">우리은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-005.png" alt=""></div>
+                  <div class="select-bank__text">하나은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-003.png" alt=""></div>
+                  <div class="select-bank__text">기업은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-023.png" alt=""></div>
+                  <div class="select-bank__text">SC제일은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-011.png" alt=""></div>
+                  <div class="select-bank__text">농협</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-012.png" alt=""></div>
+                  <div class="select-bank__text">회원농협</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-002.png" alt=""></div>
+                  <div class="select-bank__text">산업은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-043.png" alt=""></div>
+                  <div class="select-bank__text">새마을금고</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-031.png" alt=""></div>
+                  <div class="select-bank__text">대구은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-034.png" alt=""></div>
+                  <div class="select-bank__text">광주은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-071.png" alt=""></div>
+                  <div class="select-bank__text">우체국</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-027.png" alt=""></div>
+                  <div class="select-bank__text">씨티은행</div>
+                </button>
+              </div>
+              <!-- <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-048.png" alt=""></div>
+                  <div class="select-bank__text">신협은행</div>
+                </button>
+              </div> -->
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-048.png" alt=""></div>
+                  <div class="select-bank__text">신협중앙회</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-032.png" alt=""></div>
+                  <div class="select-bank__text">부산은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-039.png" alt=""></div>
+                  <div class="select-bank__text">경남은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-007.png" alt=""></div>
+                  <div class="select-bank__text">수협</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-090.png" alt=""></div>
+                  <div class="select-bank__text">카카오뱅크</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-089.png" alt=""></div>
+                  <div class="select-bank__text">케이뱅크</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-037.png" alt=""></div>
+                  <div class="select-bank__text">전북은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-035.png" alt=""></div>
+                  <div class="select-bank__text">제주은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-055.png" alt=""></div>
+                  <div class="select-bank__text">도이치은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-050.png" alt=""></div>
+                  <div class="select-bank__text">저축은행</div>
+                </button>
+              </div>
+              <!-- <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-china3.png" alt=""></div>
+                  <div class="select-bank__text">중국건설은행</div>
+                </button>
+              </div> -->
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-062.png" alt=""></div>
+                  <div class="select-bank__text">중국공상은행</div>
+                </button>
+              </div>
+
+
+
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-054.png" alt=""></div>
+                  <div class="select-bank__text">HSCB</div>
+                </button>
+              </div>
+
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-058.png" alt=""></div>
+                  <div class="select-bank__text">미즈호은행</div>
+                </button>
+              </div>
+
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-059.png" alt=""></div>
+                  <div class="select-bank__text">미쓰비시도쿄UFJ</div>
+                </button>
+              </div>
+
+
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-060.png" alt=""></div>
+                  <div class="select-bank__text">BOA</div>
+                </button>
+              </div>
+
+
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-064.png" alt=""></div>
+                  <div class="select-bank__text">산림조합</div>
+                </button>
+              </div>
+
+
+
+
+              <!-- <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-china1.png" alt=""></div>
+                  <div class="select-bank__text">중국은행</div>
+                </button>
+              </div> -->
+              <!-- <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-hsbc.png" alt=""></div>
+                  <div class="select-bank__text">HSBK은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-jp.png" alt=""></div>
+                  <div class="select-bank__text">JP모간</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-bnp.png" alt=""></div>
+                  <div class="select-bank__text">BNP파리바은행</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-boa.png" alt=""></div>
+                  <div class="select-bank__text">뱅크오브아메리카</div>
+                </button>
+              </div> -->
+            </div>
+          </div>
+          <div data-element="tab__panel" class="tab__panel add--pb-40">
+            <div class="select-bank">
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-261.png" alt=""></div>
+                  <div class="select-bank__text">교보증권</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-267.png" alt=""></div>
+                  <div class="select-bank__text">대신증권</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-279.png" alt=""></div>
+                  <div class="select-bank__text">DB금융투자</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-287.png" alt=""></div>
+                  <div class="select-bank__text">메리츠증권</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-238.png" alt=""></div>
+                  <div class="select-bank__text">미래에셋대우</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-240.png" alt=""></div>
+                  <div class="select-bank__text">삼성증권</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-291.png" alt=""></div>
+                  <div class="select-bank__text">신영증권</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-278.png" alt=""></div>
+                  <div class="select-bank__text">신한금융투자</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-266.png" alt=""></div>
+                  <div class="select-bank__text">SK증권</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-263.png" alt=""></div>
+                  <div class="select-bank__text">현대차증권</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-209.png" alt=""></div>
+                  <div class="select-bank__text">유안타증권</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-280.png" alt=""></div>
+                  <div class="select-bank__text">유진투자증권</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-265.png" alt=""></div>
+                  <div class="select-bank__text">이베스트투자증권</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-270.png" alt=""></div>
+                  <div class="select-bank__text">하나금융투자</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-262.png" alt=""></div>
+                  <div class="select-bank__text">하이증권</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-234.png" alt=""></div>
+                  <div class="select-bank__text">한국투자증권</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-269.png" alt=""></div>
+                  <div class="select-bank__text">한화투자증권</div>
+                </button>
+              </div>
+              <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-218.png" alt=""></div>
+                  <div class="select-bank__text">KB증권</div>
+                </button>
+              </div>
+            <div class="select-bank__item">
+                <button class="select-bank__button">
+                  <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-247.png" alt=""></div>
+                  <div class="select-bank__text">NH투자증권</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" onclick="closeCurrentModal(this)" class="modal__close"><span class="blind">닫기</span></a>
+    </div>
+    <!--//은행정보-->
+
+  <!--은행정보-->
+  <!-- <div data-target="sheet01" class="bottom-sheet bottom-sheet--bank bottom-sheet-scroll" data-element="bottomSheet">
+    <div class="bottom-sheet__top">
+      <div class="title">
+        <h2 class="title__main">은행 선택</h2>
+      </div>
+    </div>
+    <div class="bottom-sheet__bot">
+      <div data-element="tab" class="tab tab--default tab-bank tab-fixed">
+        <div class="tab__buttons">
+          <div data-element="tab__list" class="tab__button">
+            <button type="button" data-element="tab__anchor" class="tab__anchor is-active">은행</button>
+          </div>
+          <div data-element="tab__list" class="tab__button">
+            <button type="button" data-element="tab__anchor" class="tab__anchor">증권사</button>
+          </div>
+        </div>
+        <div data-element="tab__panel" class="tab__panel add--pb-40">
+          <div class="select-bank">
+            <div class="select-bank__item">
+              <button class="select-bank__button selected">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-004.png" alt=""></div>
+                <div class="select-bank__text">국민은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-088.png" alt=""></div>
+                <div class="select-bank__text">신한은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-020.png" alt=""></div>
+                <div class="select-bank__text">우리은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-005.png" alt=""></div>
+                <div class="select-bank__text">하나은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-003.png" alt=""></div>
+                <div class="select-bank__text">기업은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-023.png" alt=""></div>
+                <div class="select-bank__text">SC제일은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-011.png" alt=""></div>
+                <div class="select-bank__text">농협</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-012.png" alt=""></div>
+                <div class="select-bank__text">회원농협</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-002.png" alt=""></div>
+                <div class="select-bank__text">산업은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-043.png" alt=""></div>
+                <div class="select-bank__text">새마을금고</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-031.png" alt=""></div>
+                <div class="select-bank__text">대구은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-034.png" alt=""></div>
+                <div class="select-bank__text">광주은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-071.png" alt=""></div>
+                <div class="select-bank__text">우체국</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-027.png" alt=""></div>
+                <div class="select-bank__text">씨티은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-048.png" alt=""></div>
+                <div class="select-bank__text">신협중앙회</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-032.png" alt=""></div>
+                <div class="select-bank__text">부산은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-039.png" alt=""></div>
+                <div class="select-bank__text">경남은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-007.png" alt=""></div>
+                <div class="select-bank__text">수협</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-090.png" alt=""></div>
+                <div class="select-bank__text">카카오뱅크</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-089.png" alt=""></div>
+                <div class="select-bank__text">케이뱅크</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-037.png" alt=""></div>
+                <div class="select-bank__text">전북은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-035.png" alt=""></div>
+                <div class="select-bank__text">제주은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-055.png" alt=""></div>
+                <div class="select-bank__text">도이치은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-050.png" alt=""></div>
+                <div class="select-bank__text">저축은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-062.png" alt=""></div>
+                <div class="select-bank__text">중국공상은행</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-054.png" alt=""></div>
+                <div class="select-bank__text">HSCB</div>
+              </button>
+            </div>
+
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-058.png" alt=""></div>
+                <div class="select-bank__text">미즈호은행</div>
+              </button>
+            </div>
+
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-059.png" alt=""></div>
+                <div class="select-bank__text">미쓰비시도쿄UFJ</div>
+              </button>
+            </div>
+
+
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-060.png" alt=""></div>
+                <div class="select-bank__text">BOA</div>
+              </button>
+            </div>
+
+
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-064.png" alt=""></div>
+                <div class="select-bank__text">산림조합</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div data-element="tab__panel" class="tab__panel add--pb-40">
+          <div class="select-bank">
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-261.png" alt=""></div>
+                <div class="select-bank__text">교보증권</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-267.png" alt=""></div>
+                <div class="select-bank__text">대신증권</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-279.png" alt=""></div>
+                <div class="select-bank__text">DB금융투자</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-287.png" alt=""></div>
+                <div class="select-bank__text">메리츠증권</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-238.png" alt=""></div>
+                <div class="select-bank__text">미래에셋대우</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-240.png" alt=""></div>
+                <div class="select-bank__text">삼성증권</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-291.png" alt=""></div>
+                <div class="select-bank__text">신영증권</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-278.png" alt=""></div>
+                <div class="select-bank__text">신한금융투자</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-266.png" alt=""></div>
+                <div class="select-bank__text">SK증권</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-263.png" alt=""></div>
+                <div class="select-bank__text">현대차증권</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-209.png" alt=""></div>
+                <div class="select-bank__text">유안타증권</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-280.png" alt=""></div>
+                <div class="select-bank__text">유진투자증권</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-265.png" alt=""></div>
+                <div class="select-bank__text">이베스트투자증권</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-270.png" alt=""></div>
+                <div class="select-bank__text">하나금융투자</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-262.png" alt=""></div>
+                <div class="select-bank__text">하이증권</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-234.png" alt=""></div>
+                <div class="select-bank__text">한국투자증권</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-269.png" alt=""></div>
+                <div class="select-bank__text">한화투자증권</div>
+              </button>
+            </div>
+            <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-218.png" alt=""></div>
+                <div class="select-bank__text">KB증권</div>
+              </button>
+            </div>
+           <div class="select-bank__item">
+              <button class="select-bank__button">
+                <div class="select-bank__image"><img src="../../assets/images/icon/icon-bank-247.png" alt=""></div>
+                <div class="select-bank__text">NH투자증권</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="bottom-sheet__button-close" data-element="bottomSheet__button-close"
+      aria-label="하단시트 닫기"></button>
+  </div> -->
+  <!--//은행정보-->
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

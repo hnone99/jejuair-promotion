@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+    <header class="header__inner mobile-only">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <h2 class="header__page-name">여정 취소하기</h2>
+
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select" data-select-container=".country__input">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+          </div>
+
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button>
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+            <span class="hidden">검색창 닫기</span>
+          </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+        </div><!-- //header__box 추가 -->
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+  </div>
+
+  <div id="body">
+    <div class="wrap wrap--button">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">마이페이지</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">예약현황</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">항공권 스케줄 변경 안내</a>
+          </div>
+        </nav>
+      </div>
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <a href="#" class="button button--primary button--active" data-element="modal_anchor"
+            data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">
+            중요안내사항 확인
+          </a>
+        </main>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 풀팝업 -->
+  <div id="modalLayer01" class="modal modal-full modal--fixed-multi modal-scroll NA_1_9C2">
+    <a href="javascript: move('prev', 0)" class="button__page button__page-prev disabled terms01_btn"><span class="hidden"></span></a>
+    <a href="javascript: move('next', 1)" class="button__page button__page-next terms02_btn"><span class="hidden">유의사항 확인으로 이동</span></a>
+    <div class="terms01">
+      <div class="modal-header">
+        <div class="modal-header__title">중요안내사항 확인</div>
+      </div>
+      
+      <div class="modal-content pb30 h_70_type03"> 
+        <section class="terms">
+          <div class="terms__item">
+            <div class="terms__title">청약의 철회에 관한 사항</div>
+            <div class="terms__text-wrap">
+              <ul class="list-guide">
+                <li class="list-guide__item">보험계약자는 보험증권을 받은 날부터 15일 이내(청약을 한 날부터 30일 이내에 한함)에 청약을 철회할 수 있으며, 이 경우 3일 이내에
+                  보험료를 돌려 드립니다.</li>
+                <li class="list-guide__item">다만, 진단계약, 보험기간이 1년 미만인 계약, 또는 전문보험계약자가 체결한 계약은 청약을 철회할 수 없습니다. 청약철회 기간 내에
+                  청약철회를 하실 경우 납입한 보험료 전액을 돌려받으실 수 있습니다. 청약을 철회한 때에 이미 보험금 지급사유가 발생하였으나 계약자가 그 보험금 지급사유가 발생한 사실을 알지 못한 경우에는
+                  청약철회의 효력은 발생하지 않습니다.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="terms__item">
+            <div class="terms__title">보험금을 지급하지 아니하는 사유</div>
+            <div class="terms__text-wrap">
+              <p class="terms__text">계약자, 피보험자, 보험수익자의 고의, 피보험자의 임신, 출산(제왕절개 포함), 산후기 전쟁, 외국의 무력행사, 혁명, 내란, 사변, 폭동, 전문등반,
+                글라이더 조종, 스카이다이빙, 스쿠버다이빙, 행글라이딩, 수상보트, 패러글라이딩, 모터보트, 자동차 또는 오토바이에 의한 경기, 시범, 흥행 또는 시운전 등 선박승무원, 어부, 사공, 그
+                밖에 선박에 탑승하는 것을 직무로 하는 사람이 직무상 선박에 탑승하고 있는 동안 기타 세부 담보별 보험금을 지급하지 않는 사유는 반드시 약관을 참조하시기 바랍니다.</p>
+            </div>
+          </div>
+          <div class="terms__item">
+            <div class="terms__title">고지의무 및 통지의무 위반의 효과</div>
+  
+            <div class="terms__title-sub">계약 전 알릴 의무(고지의무)</div>
+            <div class="terms__text-wrap">
+              <p class="terms__text">보험계약자 또는 피보험자(보험대상자)는 청약서에 질문하는 중요한 사항에 대하여 사실대로 기재하고 자필서명(전자서명포함)을 하셔야 합니다.</p>
+              <div class="guide-info guide-info--gray">
+                <p class="guide-info__text">중요한 사항이라 함은 회사가 그 사실을 알았더라면 계약의 청약을 거절하거나 보험가입금액 한도제한, 일부 보장 제외, 보험금 삭감, 보험료
+                  할증과 같이 조건부로 인수하는 등 계약인수에 영향을 미칠 수 있는 사항을 말합니다. </p>
+              </div>
+            </div>
+  
+            <div class="terms__title-sub">고지의무 위반 효과</div>
+            <div class="terms__text-wrap">
+              <p class="terms__text">만일 고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우 보험사는 별도로 정한 방법에 따라 보험계약자 또는 보험대상자(피보험자)의
+                의사와 관계없이 계약을 해지하거나 보장을 제한할 수 있습니다. </p>
+            </div>
+  
+            <div class="terms__title-sub">계약 후 알릴 의무(통지의무)및 위반에 따른 불이익(상해보험)</div>
+            <div class="terms__text-wrap">
+              <p class="terms__text">보험계약자 또는 피보험자는 계약을 맺은 후 피보험자가 직업 또는 직무를 변경(자가용운전자가 영업용운전자로 직업 또는 직무 변경 포함)하거나 이륜자동차
+                또는 원동기장치 자전거를 계속적으로 사용하게 된 경우에는 즉시 회사에 알려야 하며, 그렇지 않은 경우 보험사고가 발생한 경우에도 보험금지급이 제한될 수 있습니다. 다만, 변경된 직업 또는
+                직무와 관계없이 발생한 보험금 지급사유에 관해서는 그러하지 아니합니다.</p>
+            </div>
+          </div>
+          <div class="terms__item">
+            <div class="terms__title">계약의 취소 및 무효에 관한 사항</div>
+            <div class="terms__text-wrap">
+              <ul class="list-guide">
+                <li class="list-guide__item">보험계약자는 다음의 경우 청약일로부터 3개월 이내에 계약을 취소할 수 있습니다.</li>
+                <li class="list-guide__item">이 경우 이미 납입한 보험료를 돌려드리며, 보험료를 받은 기간에 대하여 보험개발원이 공시하는 정기예금 이율로 계산한 금액을 더하여
+                  지급합니다.
+                  <ul class="list-guide list-guide--number">
+                    <li class="list-guide__item">보험계약 청약 시 약관과 계약자 보관용 청약서(청약서 부본)를 전달받지 못한 경우</li>
+                    <li class="list-guide__item">약관의 중요한 내용을 설명 받지 못한 경우</li>
+                    <li class="list-guide__item">청약서에 자필서명(음성녹음 또는 전자서명을 포함)을 하지 아니한 경우</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="terms__item">
+            <div class="terms__title">해약환급금에 관한 사항</div>
+            <div class="terms__text-wrap">
+              <p class="terms__text">
+                이 상품은 소멸성 순수보장성보험이므로 만기 시 환급금이 없으며, 중도에 해지한 경우에는 보험사고가 발생하여 보험금이 지급된 사실이 없는 경우에 한해 경과하지 않은 기간에 대한 보험료를
+                돌려드립니다.
+              </p>
+            </div>
+          </div>
+  
+          <div class="terms__item">
+            <div class="terms__title">분쟁조정절차에 관한 사항</div>
+            <div class="terms__text-wrap">
+              <p class="terms__text">
+                이 보험계약과 관련하여 의문사항 또는 불만(민원)이 있을 경우 해당 모집자나 에이스손해보험 (전화 : 1566-5800, www.chubb.com/kr/) 또는 손해보험협회
+                상담센터(02-3702-8500)에 문의할 수 있습니다. 또한 분쟁이 발생한 경우 금융감독원(국번 없이 1332, www.fss.or.kr), 한국소비자원(국번 없이 1372) 등에 도움을
+                요청할 수 있고, 다만 분쟁조정의 신청 이후 또는 조정신청 사건의 처리절차 진행 중에 일방 당사자가 소를 제기한 경우에는 그 조정의 처리를 중지하고 이를 당사자 쌍방에게 통보합니다.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="sub-box">
+          <p class="notice-text notice-text--type3"> 개별적으로 계약체결을 원하는 고객은 에이스손해보험 다이렉트 홈페이지(<a href="www.acedirect.co.kr"
+              class="link link--black" target="_blank" title="새창열기">www.acedirect.co.kr</a>)를 확인해 주세요.</p>
+        </div>
+      </div>
+      <div class="fixed-wrap fixed-wrap--multi-line type03">
+        <div class="check-wrap">
+          <span class="checkbox checkbox--small">
+            <input type="checkbox" id="inputCheck1" class="checkbox__input">
+            <label for="inputCheck1" class="checkbox__label">
+              <i aria-hidden="true" class="checkbox__ico"></i>
+              <span>가입 전 보험계약 중요안내사항을 확인하였습니다.</span>
+            </label>
+          </span>
+        </div>
+        <div class="button-wrap">
+          <button type="button" class="button button--primary button--active" onclick="agreeChk('term01')" ><span class="button__text">다음</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!--유의사항 확인 NA_1_9C3 -->
+    <div style="display: none;" class="terms02">
+      <div class="modal-header">
+        <div class="modal-header__title">유의사항 확인</div>
+      </div>
+      <div class="modal-content pb30 mo-pb100 h_70_type04">
+        <section class="terms">
+          <div class="terms__item">
+            <div class="terms__text-wrap">
+              <ul class="list-guide">
+                <li class="list-guide__item">기존 보험계약을 해지하고 새로운 보험계약을 체결하는 경우 보험인수가 거절되거나, 보험료가 인상될 수 있으며, 보장내용 (면책기간 재적용 등)이 달라질 수 있습니다.</li>
+                <li class="list-guide__item">계약체결 전 약관 및 상품설명서를 반드시 참고하여 주시기 바랍니다.</li>
+                <li class="list-guide__item">이 보험계약은 예금자보호법에 따라 예금보험공사가 보호하되, 보호한도는 본 보험회사에 있는 귀하의 모든 예금 보호대상 금융상품의 
+                  해지환급금(또는 만기 시 보험금이나 사고보험금)에 기타지급금을 합하여 1인당 최고 5천만원이며, 5천만원을 초과하는 나머지 금액은 보호하지 않습니다. 
+                  다만, 보험계약자 및 보험료 납부자가 법인인 보험계약은 예금자보호법에 따라 예금보험공사가 보호하지 않습니다.</li>
+                <li class="list-guide__item">지급한도, 면책사항 등에 따라 보험금 지급이 제한될 수 있습니다.</li>
+                <li class="list-guide__item">여행보험 관련문의는 Chubb여행보험 콜센터 (1666-5075)에 문의하시기 바랍니다. (업무시간 : 평일 09:00 ~ 18:00 / 주말, 공휴일 제외)</li>
+                <li class="list-guide__item">항공권 환불 및 일정 변경 시 여행보험은 별도로 취소를 진행하셔야 합니다.</li>
+                <li class="list-guide__item">가입 완료 시 대표가입자 이메일로 약관 및 가입내역이 발송됩니다.</li>
+                <li class="list-guide__item">보상에 대한 자세한 사항은 가입확인서와 약관을 참조해 주세요.  
+                  <a href="https://www.acedirect.co.kr/jsp/pdf/OTA/OTA_P.pdf" class="link link--black" target="_blank" title="새창열기">약관 다운로드</a>
+                </li>
+                <li class="list-guide__item">당사는 원칙적으로 여행보험의 다수 가입을 허용하고 있지 않습니다. 다른 경로를 통해 당사의 여행보험을 중복으로 가입하는 일이 없도록 유의하여 주시기 바랍니다.</li>
+                <li class="list-guide__item">여행보험의 실손 담보는 다수 보험의 경우 보상대상 의료비 및 책임액에 대하여 각 계약의 비례분담액만을 지급하며 중복으로 보상하지 않습니다.</li>
+
+              </ul>
+            </div>
+          </div>
+          <!-- <span class="checkbox checkbox--small sub-section">
+            <input type="checkbox" id="inputCheck2" class="checkbox__input">
+            <label for="inputCheck2" class="checkbox__label">
+              <i aria-hidden="true" class="checkbox__ico"></i>
+              <span>본인은 본 보험계약의 피보험자로 되는 것에 동의하며, 만일 본인이 다른 여행객을 대신하여 보험 가입절차를 이행하는 경우 본인은 여행계약 체결에 대하여 
+                그 여행객으로부터 적법하게 대리권을 수여받았음을 확인합니다. 
+                만약 대리권이 존재하지 않는 경우, 그 범위 내에서 단체보험계약이 일부 무효로 되거나 보험사고 시 보험금 지급이 거절될 수 있다는 점을 충분히 이해하였습니다.</span>
+            </label>
+          </span> -->
+
+        </section>
+
+      </div>
+
+
+      <div class="fixed-wrap fixed-wrap--multi-line type04">
+        <div class="check-wrap">
+          <span class="checkbox checkbox--small">
+            <input type="checkbox" id="inputCheck2" class="checkbox__input">
+            <label for="inputCheck1" class="checkbox__label">
+              <i aria-hidden="true" class="checkbox__ico"></i>
+              <span>본인은 본 보험계약의 피보험자로 되는 것에 동의하며, 만일 본인이 다른 여행객을 대신하여 보험 가입절차를 이행하는 경우 본인은 여행계약 체결에 대하여 
+                그 여행객으로부터 적법하게 대리권을 수여받았음을 확인합니다. 
+                만약 대리권이 존재하지 않는 경우, 그 범위 내에서 단체보험계약이 일부 무효로 되거나 보험사고 시 보험금 지급이 거절될 수 있다는 점을 충분히 이해하였습니다.</span>
+            </label>
+          </span>
+        </div>
+        <div class="button-wrap">
+          <button type="button" class="button button--primary button--active" onclick="agreeChk('term01')"><span class="button__text">다음</span></button>
+        </div>
+      </div>
+
+
+      <!-- <div class="fixed-wrap fixed-wrap--multi-line border-none" style="border:1px solid #000;">
+        
+        <div class="button-wrap">
+          <button type="button" class="button button--primary button--active" onclick="agreeChk('term02')"><span class="button__text">다음</span></button>
+        </div>
+      </div> -->
+      <!--유의사항 확인 NA_1_9C3 //-->
+    </div>
+    
+
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">Close</span></a>
+  </div>
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+<script>
+    // 이전 다음
+    function move (direction, pageNum) {
+      var direction = direction
+      var pageNum = pageNum
+      if (pageNum == 0)
+      {
+        $('.terms01').show()
+        $('.terms02').hide()
+        $('.button__page').removeClass('disabled').eq(0).addClass('disabled')
+      }
+      else
+      {
+        $('.terms01').hide()
+        $('.terms02').show()
+        $('.button__page').removeClass('disabled').eq(1).addClass('disabled')
+      }
+    }
+
+    function agreeChk (termNum) {
+      var termNum = termNum
+      if (termNum == 'term01')
+      {
+        if($('#inputCheck1').prop('checked') == true)
+        {
+          move ('next', 1)
+        }
+        else
+        {
+          alert('중요 안내사항에 체크해 주세요')
+        }
+      }
+      else
+      {
+        if($('#inputCheck2').prop('checked') == true)
+        {
+          move ('next', 1)
+        }
+        else
+        {
+          alert('유의사항에 체크해 주세요')
+        }
+      }
+    }
+</script>
+</body>
+
+</html>

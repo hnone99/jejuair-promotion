@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공 온라인(모바일,홈페이지 구매)</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+
+
+
+  <div class="wrap wrap--button">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <a href="#" class="button button--primary button--active" data-element="modal_anchor"
+          data-target="#modalLayer01" data-modal-type="full">
+          <span class="button__text">체류지 주소 수정 입력</span>
+        </a>
+        <div id="modalLayer01" class="modal modal-full modal--fixed-multi modal-scroll">
+          <div class="modal-header">
+            <h2 class="modal-header__title">체류지 주소 수정</h2>
+          </div>
+          <div class="modal-content modal-content h_70">
+            <p class="modal-content__text">예약 시 입력한 체류지 주소 수정이 가능합니다.</p>
+
+
+
+            <div class="section-wrap">
+              <!-- 2021115 추가 체류지 주소추가 -->
+              <div class="input-wrap input--line pc-col">
+                <!--체류지 주소 입력필드-->
+                <div class="input-row">
+                  <div class="input-box label-active">
+                    <label for="inp1-3" class="input__label">체류지 주소<span class="input__label-asterisk"
+                        title="required">*</span></label>
+                    <!--직접입력 선택시 display:none-->
+                    <div class="select-wrap select-wrap--line w100">
+                      <select title="주소 선택" class="select-wrap__select js-select-addr">
+                        <option>선택</option>
+                        <option>DUSIT THANI GUAM RESORT</option>
+                        <option value="direct">직접 입력</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-wrap input--line pc-col pc-col-2 input-branch">
+                <div class="input-row direct hide">
+                  <div class="input-box">
+                    <label for="inp1-3" class="input__label">주소 직접 입력<span class="input__label-asterisk"
+                        title="required">*</span></label>
+                    <div data-element="form" class="input">
+                      <input type="text" data-element="input" id="inp1-3" class="input__text" title="주소 직접 입력">
+                      <button type="button" data-element="remove" class="input__remove-button hide">삭제</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-row  direct hide">
+                  <div class="input-box">
+                    <label for="inp1-3" class="input__label">도시<span class="input__label-asterisk"
+                        title="required">*</span></label>
+                    <div data-element="form" class="input">
+                      <input type="text" data-element="input" id="inp1-4" class="input__text" title="도시 입력">
+                      <button type="button" data-element="remove" class="input__remove-button hide">삭제</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-row  direct hide">
+                  <div class="input-box">
+                    <label for="inp1-4" class="input__label">주<span class="input__label-asterisk"
+                        title="required">*</span></label>
+                    <div data-element="form" class="input">
+                      <input type="text" data-element="input" id="inp1-5" class="input__text" title="주 입력">
+                      <button type="button" data-element="remove" class="input__remove-button hide">삭제</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-row  direct hide">
+                  <div class="input-item">
+                    <div class="input-box">
+                      <label for="inp1-5" class="input__label">우편번호<span class="input__label-asterisk"
+                          title="required">*</span></label>
+                      <div data-element="form" class="input">
+                        <input type="tel" data-element="input" id="inp1-6" class="input__text" title="우편번호 입력">
+                        <button type="button" data-element="remove" class="input__remove-button hide">삭제</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--//체류지 주소 입력필드-->
+
+
+
+              </div>
+              <!--// 2021115 추가 체류지 주소추가 -->
+            </div>
+
+
+          </div>
+          <div class="fixed-wrap fixed-wrap--multi-line border-none">
+            <!-- checkbox 없는 경우 border-none class 추가 -->
+            <div class="button-wrap">
+              <button type="button" class="button button--active"><span class="button__text">수정</span></button>
+            </div>
+          </div>
+          <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+
+  <script>
+    // 주소 직접입력
+    $('.js-select-addr').on('change', function () {
+      var thisVal = $(this).val();
+      if (thisVal == 'direct') {
+        $('.input-row.direct').removeClass('hide');
+      }
+      else {
+        $('.input-row.direct').addClass('hide');
+      }
+      console.log(thisVal);
+    });
+  </script>
+
+
+
+</body>
+
+</html>

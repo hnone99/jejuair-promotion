@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="73" height="73" viewBox="0 0 73 73">
+    <path d="M31.748 63.318A31.659 31.659 0 1 0 0 31.659a31.7 31.7 0 0 0 31.748 31.659zm0-4.871a26.789 26.789 0 1 1 26.864-26.788 26.826 26.826 0 0 1-26.864 26.789z" style="fill:#67d6ff" transform="translate(.5 .5)"/>
+    <path d="M0 2.028V22.31a2.028 2.028 0 1 0 4.056 0V2.028a2.028 2.028 0 0 0-4.056 0z" transform="rotate(-45 41.872 -14.476)" style="fill:#ff801b"/>
+    <path data-name="Line" d="M0 22.31V2.028a2.028 2.028 0 0 1 4.056 0V22.31a2.028 2.028 0 1 1-4.056 0z" transform="rotate(-135 21.502 16.035)" style="fill:#ff801b"/>
+    <path data-name="Rectangle" d="M0 0h4.056v20.282a2.028 2.028 0 0 1-2.028 2.028A2.028 2.028 0 0 1 0 20.282z" transform="rotate(-45 93.961 -37.244)" style="fill-rule:evenodd;fill:#67d6ff"/>
+</svg>

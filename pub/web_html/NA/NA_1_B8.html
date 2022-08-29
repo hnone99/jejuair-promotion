@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <!-- HEADER -->
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only ">
+      <button class="header__button">
+        <span class="hidden">이전으로</span>
+      </button>
+      <div class="header__stepper">
+        <ol class="stepper__group_new booking_step">
+            <li>
+              <span class="step">1</span>
+              <span class="text">항공권선택</span>
+            </li>
+            <li>
+              <span class="step">2</span>
+              <span class="text">탑승객 정보 입력</span>
+            </li>
+            <li>
+              <span class="step">3</span>
+              <span class="text">부가서비스 선택</span>
+            </li>
+            <li>
+              <span class="step">4</span>
+              <span class="text">확인 및 동의</span>
+            </li>
+            <li class="active">
+              <span class="step">5</span>
+              <span class="text">결제</span>
+            </li>
+          </ol>
+      </div>
+
+    </header>
+    <!-- //mobile -->
+
+    <!-- pc용 예매 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel" style="">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택" class="select-wrap__select select2-hidden-accessible" data-select-container=".country__input" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-1-chks">
+                  <option></option>
+                  <option value="1" selected="" data-select2-id="select2-data-3-atgh">대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-2-al8u" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" title="국적 (여권) 선택" tabindex="-1" aria-disabled="false" aria-labelledby="select2-m6zo-container"><span class="select2-selection__rendered" id="select2-m6zo-container" role="textbox" aria-readonly="true" title="대한민국">대한민국</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              
+    </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택" class="select-wrap__select select2-hidden-accessible" data-select-container=".country__input" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-4-zml3">
+                  <option></option>
+                  <option value="1" selected="" data-select2-id="select2-data-6-oerl">한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-5-odrs" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" title="국적 (여권) 선택" tabindex="-1" aria-disabled="false" aria-labelledby="select2-t7zc-container"><span class="select2-selection__rendered" id="select2-t7zc-container" role="textbox" aria-readonly="true" title="한국어">한국어</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              
+    </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner header__inner--step pc-only ">
+      <!--step 스타일 변경-->
+
+      <div class="sticky-header" data-sticky="">
+        <div class="header__box">
+          <h1 class="header__logo">
+            <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+          </h1>
+          <h2 class="header__page-name">항공권 예매</h2>
+
+          <div class="header__stepper">
+            <ol class="stepper__group_new booking_step">
+              <li>
+                <span class="step">1</span>
+                <span class="text">항공권선택</span>
+              </li>
+              <li>
+                <span class="step">2</span>
+                <span class="text">탑승객 정보 입력</span>
+              </li>
+              <li>
+                <span class="step">3</span>
+                <span class="text">부가서비스 선택</span>
+              </li>
+              <li>
+                <span class="step">4</span>
+                <span class="text">확인 및 동의</span>
+              </li>
+              <li class="active">
+                <span class="step">5</span>
+                <span class="text">결제</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- // pc용 공통 헤더 -->
+  </div>
+  <!-- //HEADER -->
+
+  <div id="body">
+    <div class="wrap wrap--booking NA NA_1">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">2 Depth</a>
+          </div>
+          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle"
+            data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>
+            <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor">3
+              Depth</button>
+            <div class="breadcrumb__siblings-list" data-element="toggle__panel">
+              <a href="#" class="item">4 Depth</a>
+              <a href="#" class="item">4 DepthDepthDepth</a>
+              <a href="#" class="item">4 DepthDepthDepth</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="content" id="content">
+        
+        <main id="main" class="main">
+          <div style="text-align: center;padding-top:20px;">
+            <a href="#" class="button button--primary button--active" data-element="modal_anchor"
+              data-target="#modalLayer01" data-modal-type="full" style="color: #fff;">
+              제휴카드 안내
+            </a>
+          </div>
+        </main>
+    
+      </div>
+    </div>
+
+
+  </div>
+
+
+  
+  <div id="modalLayer01" class="modal modal-full modal-scroll">
+    <div class="modal-header">
+      <h2 class="modal-header__title">제휴카드 안내</h2>
+    </div>
+
+    <div class="modal-content h_70">
+      <div class="first-margin">
+        <div class="carousel--paypal-wrap card-info">
+          <!-- [수정 : 210215] add class 추가 -->
+          <div class="carousel carousel--paypal swiper-container">
+            <div class="carousel__item swiper-wrapper">
+
+              <div class="carousel__list swiper-slide" data-card="credit">
+                <div class="carousel__contents">
+                  <div class="card-register-wrap">
+                    <!--card-->
+                    <div class="card-register">
+                      <div class="card-register__img type12">
+                        <div class="card-register__logo"><i class="check"></i><span class="item">삼성카드</span></div>                  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel__list swiper-slide" data-card="credit">
+                <div class="carousel__contents">
+                  <div class="card-register-wrap">
+                    <div class="card-register">
+                      <div class="card-register__img type01">
+                        <div class="card-register__logo"><i class="check"></i><span class="item">하나카드</span></div>     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="carousel__list swiper-slide" data-card="credit">
+                <div class="carousel__contents">
+                  <div class="card-register-wrap">
+                    <!--card-->
+                    <div class="card-register">
+                      <div class="card-register__img type06">
+                        <div class="card-register__logo"><i class="check"></i><span class="item">국민카드</span></div>
+      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+            </div>
+            <div class="carousel__button carousel__button-prev"></div>
+            <div class="carousel__button carousel__button-next"></div>
+            <div class="carousel__pagination-number"></div> 
+          </div>
+        </div>
+      </div>
+
+      <div class="container--small pc-20">
+        <!-- [수정 : 210215] pc-20 class 추가 -->
+          
+      
+
+          <!--//제주항공 Refresh Point 카드 IBK기업은행-->
+          <!-- <div style=" margin-bottom:20px">[제주항공 Refresh Point 카드 IBK기업은행]</div> -->
+
+          <div class="inner-editor">
+            <div class="list-wrap">
+              <div class="section-title">리프레시 포인트 적립</div>
+              <ul class="list-guide">
+                <li class="list-guide__item">[기본적립] 일반 구매시 1,000원당 10포인트 적립</li>
+                <li class="list-guide__item">[Doulbe 적립] 해외 가맹점 1,000원당 20포인트 적립 (전월실적 30만원 이상)</li>
+                <li class="list-guide__item">[Triple 적립] 국내 가맹점 1,000원당 30포인트 적립(전월실적 50만원 이상)</li>
+                <li class="list-guide__item">※Double , Triple 적립 시 적립한도는 상품안내서를 참조바랍니다.</li>                
+              </ul>
+            </div>
+            <div class="section-title">제주항공 기내 에어카페 청구할인 (월 1회 / 최대 3천원)</div>
+            <div class="list-wrap">
+              <div class="section-title">공항 라운지 서비스</div>
+              <ul class="list-guide">
+                <li class="list-guide__item">국내 공항 라운지 연 2회 무료이용 (전월실적 30만원 이상)</li>  
+              </ul>
+            </div>
+            <div class="list-wrap">
+              <div class="section-title">공항 발렛파킹 서비스</div>
+              <ul class="list-guide">
+                <li class="list-guide__item">인천/김포공항 발렛파킹 서비스 연 2회 제공 (전월실적 30만원 이상)</li>  
+              </ul>
+            </div>
+            <div class="section-title">연회비 BC클로벌(2만) UnionPay(2만 2천원), Master(2만 2천원)</div>     
+            <div class="list-wrap">
+              <div class="section-title">유의사항</div>
+              <ul class="list-guide">
+                <li class="list-guide__item">연체이자율: 회원별, 이용상품별 약정금리+최대3%(법정최고금리24%이내)</li> 
+                <li class="list-guide__item">※ 단, 연체 발생 시점에 약정금리가 없는 경우는 아래와 같이 적용합니다.</li> 
+                <li class="list-guide__item">일시불 거래 연체 시: 거래발생 시점의 최소기간(2개월) 유이자 할부금리</li> 
+                <li class="list-guide__item">무이자 할부 거래 연체 시: 거래발생 시점의 최소기간(2개월) 유이자 할부금리</li> 
+                <li class="list-guide__item">그 외의 경우: 약정금리는 상법상 상사법정이율과 상호금융 가계자금 대출금리 중 높은 금리 적용</li> 
+                <li class="list-guide__item">※ 한국은행에서 매월 발표하는 가장 최근의 비은행 금융기관 가중평균 대출금리(신규대출 기준)</li> 
+                <li class="list-guide__item">여신금융상품 이용 시 귀하의 신용등급 또는 개인신용평점이 하락할 수 있습니다.</li> 
+                <li class="list-guide__item">상품의 상세헤택 및 이용조건 등은 카드신청 시 상품설명서 및 약관을 반드시 확인 바랍니다. </li> 
+                <li class="list-guide__item">신용카드 남용은 가계경제에 위협이 됩니다.</li> 
+                <li class="list-guide__item">과도한 빚, 고통의 시작입니다.</li> 
+                <li class="list-guide__item">여신금융협회 심의필 제2020-C1h-04369호(2020.05.18~2021.05.15)</li> 
+                <li class="list-guide__item">준법감시인 심의필 제2020-2172호(2020.05.18)</li>          
+              </ul>
+            </div>
+          </div>
+
+
+          <br><br><br>
+
+             <!--//국민카드-->
+              <div style="background: #fffeac; margin-bottom:20px">[국민카드]</div>
+             <div class="inner-editor">
+               <div class="list-wrap">
+                 <div class="section-title">제주항공 리프레시포인트 적립</div>
+                 <ul class="list-guide">
+                   <li class="list-guide__item">일시불, 할부 이용금액 1,200원당 10포인트 적립</li>  
+                   <li class="list-guide__item">제주항공 이용금액 1,200원당 10포인트 추가 적립</li>                
+                 </ul>
+               </div>
+               <div class="list-wrap">
+                <div class="section-title">공항 라운지 무료 이용 서비스</div>
+                <ul class="list-guide">
+                  <li class="list-guide__item">공항라운지 연 2회(1일/1회) 무료이용(단, 전월 이용실적 30만원 이상 시, 본인 회원에 한함)</li>
+                  <li class="list-guide__item">인천공항 : SKY HUB, MARTINA </li>
+                  <li class="list-guide__item"> 김포공항 : SKY HUB</li>                
+                </ul>
+              </div>
+              <div class="section-title">연회비 2만원 : K-WORLD (JCB타입)</div>    
+               <div class="list-wrap">
+                 <div class="section-title">유의사항</div>
+                 <ul class="list-guide">
+                   <li class="list-guide__item">※ 연체이자율: 회원별/이용상품별 정상이자율 + 3%p, 최고 20%</li> 
+                   <li class="list-guide__item">단, 연체발생시점에 정상이자율이 없는 경우 아래와 같이 적용</li> 
+                   <li class="list-guide__item">일시불 거래 연체시 : 거래발생 시점의 최소기간(2개월) 유이자 할부수수료 적용</li> 
+                   <li class="list-guide__item">무이자할부 거래 연체시 : 거래발생 시점의 동일한 할부 계약기간의 유이자 할부수수료율 적용</li> 
+                   <li class="list-guide__item">카드 신청 시 상품 설명서 및 약관을 반드시 확인하시기 바랍니다.</li> 
+                   <li class="list-guide__item">필요이상의 신용카드 발급 및 사용은 개인신용평점 이나 이용한도 등에 영향을 미칠 수가 있습니다.</li> 
+                   <li class="list-guide__item">금융소비자는 금소법 제19조1항에 따라 해당상품 또는 서비스에 대하여 설명을 받을권리가 있으며, 그 설명을 듣고 내용을 충분히 이해한 후 거래하시기 바랍니다.</li> 
+                   <li class="list-guide__item">신용카드 발급이 부적정한 경우 카드발급이 제한될 수 있습니다.</li> 
+                   <li class="list-guide__item">카드이용대금과  이에 수반되는 모든 수수료를 지정된 결제일에 상환합니다.</li> 
+                   <li class="list-guide__item">상품관련 세부사항은 홈페이지(www.kbcard.com) 를 참조 또는 고객센터(☎1588-1688)로 문의하여 주시기 바랍니다.</li> 
+                   <li class="list-guide__item">상환능력예 비해 신용카드 사용액이 과도할 경우 귀하의 개인신용평점이 하락할 수 있습니다.</li> 
+                   <li class="list-guide__item">개인신용평점 하락시 금융거래 관련된 불이익이 발생할 수 있습니다.</li> 
+                   <li class="list-guide__item">일정기간 원리금을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.</li> 
+                   <li class="list-guide__item">여신금융협회 심의번호 제2020-C1h-09852호(2020.11.04)</li>          
+                 </ul>
+               </div>
+             </div>
+   
+
+
+
+        <br><br><br>
+        <!--//신한카드(리프레시포인트)-->
+        <div style="background: #fffeac; margin-bottom:20px">신한카드(리프레시포인트)]</div>
+        <div class="inner-editor">
+          <div class="list-wrap">
+            <div class="section-title">리프레시 포인트 적립</div>
+            <ul class="list-guide">
+              <li class="list-guide__item">일반 구매시 1,200원당 10포인트 적립</li>
+              <li class="list-guide__item">제주항공 서비스 구매시 1,200원당 20포인트 적립 (※간편결제 제외)</li>
+            </ul>
+          </div>
+          <div class="tbl-wrap">
+            <div class="section-title">JDC면세점 8% 결제일 할인</div>
+            <table>
+              <tr>
+                <th scope="col" class="table-vertical__th">전월 이용 실적</th>
+                <th scope="col" class="table-vertical__th">할인금액	</th>
+              </tr>
+              <tr>
+                <td class="table-vertical__td">30만원 이상 ~ 60만원 미만</td>
+                <td class="table-vertical__td">최대 8천원</td>
+              </tr>
+              <tr>
+                <td class="table-vertical__td">60만원 이상</td>
+                <td class="table-vertical__td">최대 3만2천원</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="section-title">가입 전용 ARS 제공 (080-700-7035)</div>
+
+          <div class="section-title">연회비 URS 1만3천원, URS 플래티넘 2만3천원</div>
+            
+          <div class="list-wrap">
+            <div class="section-title">계약체결전 이용조건등에 관한 상세사항은 상품설명서,약관 및 홈페이지 참조</div>
+            <ul class="list-guide">
+              <li class="list-guide__item">연체이자율: 회원별, 이용상품별 약정금리 +최대3% 법정최고금리(24%)이내</li>
+              <li class="list-guide__item">단, 연체 발생 시점에 약정금리가 없는 경우 아래와 같이 적용함.</li>
+              <li class="list-guide__item">일시불 거래 연체 시 : 거래 발생 시점의 최소기간(2개월) 유이자 할부금리</li>
+              <li class="list-guide__item">무이자 할부 거래 연체 시: 거래 발생 시점의 동일한 할부 계약기간의 유이자 할부금리</li>
+              <li class="list-guide__item">그외의 경우 : 약정금리는 상법상 상사법정이율과 상호금융가계자금대출금*중 높음 금리적용</li>
+              <li class="list-guide__item"> 한국은행에서 매월 발표하는 가장 최근의 비은행 금융기관 가중평균대출금리(신규대출 기준)</li>
+              <li class="list-guide__item"> ※신용카드 남용은 가계경제에 위협이 됩니다. </li>
+              <li class="list-guide__item"> ※여신금융상품 이용 시 귀하의 신용등급 또는 개인 신용평점이 하락할 수 있습니다.</li>
+              <li class="list-guide__item"> ※여신금융협회 심의필 제2021-C1h-01229호(2021.02.17)</li>          
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <script>
+    $('.card-fav').on('click', function () {
+      $(this).toggleClass('active');
+    });
+
+    cardSwiper = new Swiper('.carousel--paypal', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        observer: true,
+        spaceBetween: 16,
+        observeParents: true,
+        slideToClickedSlide: true,
+        breakpoints: _defineProperty({}, MOBILE_WIDTH, {
+        slidesPerView: 'auto',
+        spaceBetween: 16,
+        centeredSlides: true
+      }),
+      pagination: {
+        el: '.carousel__pagination-number',
+        type: 'fraction'
+      },
+      navigation: {
+        nextEl: '.carousel__button-next',
+        prevEl: '.carousel__button-prev'
+      }
+    });
+    
+    cardSwiper.on('observerUpdate transitionEnd', function () {
+      var cardData = $('.carousel--paypal-wrap .swiper-slide-active').data('card')
+      if (cardData == 'credit') {
+        $('.payment_card_wrap.fare-detail-jjpay').show()
+        $('.pc-cash.fare-detail-jjpay').hide()
+      } else if (cardData == 'bank') {
+        $('.payment_card_wrap.fare-detail-jjpay').hide()
+        $('.pc-cash.fare-detail-jjpay').show()
+      }
+      else {
+        $('.payment_card_wrap.fare-detail-jjpay').hide()
+        $('.pc-cash.fare-detail-jjpay').hide()
+      }
+    })
+
+  </script>
+
+</body>
+
+</html>

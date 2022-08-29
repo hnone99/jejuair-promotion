@@ -37,7 +37,7 @@ input[type="radio"] { opacity: 0; margin: 0; position: absolute; cursor: pointer
 .radio__input[type="radio"] {width: 0; height: 0;}
 sup { vertical-align: super; font-size: 0.5em; }
 a,
-a:hover, a:focus { text-decoration: none; }
+a:hover, a:focus { color: inherit; text-decoration: none; }
 input::-webkit-search-cancel-button { display: none; }
 /* input:-webkit-autofill { box-shadow: 0 0 0 1000px white inset; } */
 /* html { font-size: 16px; } */
@@ -79,34 +79,34 @@ input[type="password"] { font-family:'Dotum', sans-serif; } */
 }
 
 /*20210526 고객요청 폰트 변경*/
-@font-face { font-family: 'SpoqaHanSansNeo'; font-weight: 300; src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.eot), 
-    url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.eot?#iefix) format("embedded-opentype"), 
-    url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff) format("woff"), 
+@font-face { font-family: 'SpoqaHanSansNeo'; font-weight: 300; src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.eot),
+    url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.eot?#iefix) format("embedded-opentype"),
+    url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff) format("woff"),
     url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff2) format("woff2"); }
-@font-face { font-family: 'SpoqaHanSansNeo'; font-weight: 400; src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.eot), 
-    url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.eot?#iefix) format("embedded-opentype"), 
-    url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff) format("woff"), 
+@font-face { font-family: 'SpoqaHanSansNeo'; font-weight: 400; src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.eot),
+    url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.eot?#iefix) format("embedded-opentype"),
+    url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff) format("woff"),
     url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff2) format("woff2"); }
-@font-face { font-family: 'SpoqaHanSansNeo'; font-weight: 700; src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.eot), 
+@font-face { font-family: 'SpoqaHanSansNeo'; font-weight: 700; src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.eot),
     url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.eot?#iefix) format("embedded-opentype"),
-    url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff) format("woff"), 
+    url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff) format("woff"),
     url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff2) format("woff2"); }
-@font-face { font-family: 'SpoqaHanSansNeo'; font-weight: 800; src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.eot), 
-    url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.eot?#iefix) format("embedded-opentype"), 
-    url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff) format("woff"), 
+@font-face { font-family: 'SpoqaHanSansNeo'; font-weight: 800; src: url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.eot),
+    url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.eot?#iefix) format("embedded-opentype"),
+    url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff) format("woff"),
     url(../font/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff2) format("woff2"); }
 
-@font-face { font-family: 'roboto'; font-weight: 300; src: url(../font/Roboto/Roboto-Light-webfont.eot), 
-    url(../font/Roboto/Roboto-Light-webfont.eot?#iefix) format("embedded-opentype"), 
-    url(../font/Roboto/Roboto-Light-webfont.woff) format("woff"), 
+@font-face { font-family: 'roboto'; font-weight: 300; src: url(../font/Roboto/Roboto-Light-webfont.eot),
+    url(../font/Roboto/Roboto-Light-webfont.eot?#iefix) format("embedded-opentype"),
+    url(../font/Roboto/Roboto-Light-webfont.woff) format("woff"),
     url(../font/Roboto/Roboto-Light-webfont.woff2) format("woff2"); }
 @font-face { font-family: 'roboto'; font-weight: 400; src: url(../font/Roboto/Roboto-Regular-webfont.eot),
-     url(../font/Roboto/Roboto-Regular-webfont.eot?#iefix) format("embedded-opentype"), 
-     url(../font/Roboto/Roboto-Regular-webfont.woff) format("woff"), 
+     url(../font/Roboto/Roboto-Regular-webfont.eot?#iefix) format("embedded-opentype"),
+     url(../font/Roboto/Roboto-Regular-webfont.woff) format("woff"),
      url(../font/Roboto/Roboto-Regular-webfont.woff2) format("woff2"); }
-@font-face { font-family: 'roboto'; font-weight: 700; src: url(../font/Roboto/Roboto-Medium-webfont.eot), 
-    url(../font/Roboto/Roboto-Medium-webfont.eot?#iefix) format("embedded-opentype"), 
-    url(../font/Roboto/Roboto-Medium-webfont.woff) format("woff"), 
+@font-face { font-family: 'roboto'; font-weight: 700; src: url(../font/Roboto/Roboto-Medium-webfont.eot),
+    url(../font/Roboto/Roboto-Medium-webfont.eot?#iefix) format("embedded-opentype"),
+    url(../font/Roboto/Roboto-Medium-webfont.woff) format("woff"),
     url(../font/Roboto/Roboto-Medium-webfont.woff2) format("woff2"); }
 
 caption,
@@ -197,20 +197,20 @@ caption,
 .bgw { background: #fff !important; }
 
 @media all and (max-width: 1079px){
-    .mo-0 { margin-top: 0 !important; } 
-    .mo-5 { margin-top: 5px !important; } 
-    .mo-10 { margin-top: 10px !important; } 
-    .mo-15 { margin-top: 15px !important; } 
-    .mo-20 { margin-top: 20px !important; } 
-    .mo-25 { margin-top: 25px !important; } 
-    .mo-30 { margin-top: 30px !important; } 
-    .mo-35 { margin-top: 35px !important; } 
-    .mo-40 { margin-top: 40px !important; } 
-    .mo-45 { margin-top: 45px !important; } 
-    .mo-50 { margin-top: 50px !important; } 
-    .mo-55 { margin-top: 55px !important; } 
-    .mo-60 { margin-top: 60px !important; } 
-    .mo-100 { margin-top: 100px !important; } 
+    .mo-0 { margin-top: 0 !important; }
+    .mo-5 { margin-top: 5px !important; }
+    .mo-10 { margin-top: 10px !important; }
+    .mo-15 { margin-top: 15px !important; }
+    .mo-20 { margin-top: 20px !important; }
+    .mo-25 { margin-top: 25px !important; }
+    .mo-30 { margin-top: 30px !important; }
+    .mo-35 { margin-top: 35px !important; }
+    .mo-40 { margin-top: 40px !important; }
+    .mo-45 { margin-top: 45px !important; }
+    .mo-50 { margin-top: 50px !important; }
+    .mo-55 { margin-top: 55px !important; }
+    .mo-60 { margin-top: 60px !important; }
+    .mo-100 { margin-top: 100px !important; }
     .mo-pb100 { padding-bottom:100px !important;}
     .mo-pb15 { padding-bottom:15px !important;}
     .mo-pb30 { padding-bottom:30px !important;}
@@ -223,16 +223,16 @@ caption,
 }
  /*위치이동 */
 @media all and (max-width: 1079px) {
-    .mobile-only { display: block; } 
-    .pc-only { display: none !important; } 
+    .mobile-only { display: block; }
+    .pc-only { display: none !important; }
 }
 
 @media all and (min-width: 1080px) {
-    .pc-only { display: block; } 
-    .mobile-only { display: none !important; } 
-    .active-gnb { overflow: auto; } 
+    .pc-only { display: block; }
+    .mobile-only { display: none !important; }
+    .active-gnb { overflow: auto; }
 }
-   
+
 .content-guide { width: 1004px; margin: 0 auto; }
 .content-guide:after { content: ''; display: block; clear: both; }
 
@@ -257,8 +257,8 @@ caption,
 
 .error { color: #ff0000 !important; }
 
-.header { position: relative; transform: none; z-index: 120; } 
-.header.active-header { z-index: 20; } 
+.header { position: relative; transform: none; z-index: 120; }
+.header.active-header { z-index: 20; }
 .header.sticky { z-index: 99; }
 .header--darken .button--optional { margin-left: auto; height: 28px; padding: 0 12px; min-width: auto; }
 .header__inner { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; height: 60px; padding: 0 20px; }
@@ -370,7 +370,7 @@ caption,
 #body .wrap.main-nd {  padding-bottom:73px; }
 #body .wrap.pd0 { padding:60px 0 0 !important; }
 .wrap.main-gd { padding-bottom:73px; }
-.NC_1_85.wrap--button-fixed { padding-bottom:56px; } 
+.NC_1_85.wrap--button-fixed { padding-bottom:56px; }
 .active-search .wrap { position: fixed; }
 .container--xxsmall { margin-top: 5px; }
 .container--xsmall { margin-top: 10px; }
@@ -516,14 +516,14 @@ caption,
     .header--main .img_sticky { display:none; }
     .wrap { overflow-x: hidden; }
     .header--main { z-index: 5; }
-    .gnb__footer .sns-wrap { height: auto; background: 0; } 
+    .gnb__footer .sns-wrap { height: auto; background: 0; }
     .gnb__footer .gnb__title { display: none; }
 }
 
 
- /* 20211104 결함번호1271285626 포커스삭제됨 */ 
-  button:focus, a:focus, input:focus + label, select:focus { outline:none; outline-offset: 0;}  
- /* button:focus {outline: 1px dotted #333;} */ 
+ /* 20211104 결함번호1271285626 포커스삭제됨 */
+  button:focus, a:focus, input:focus + label, select:focus { outline:none; outline-offset: 0;}
+ /* button:focus {outline: 1px dotted #333;} */
 .family-wrap {border:1px solid #f2f2f2}
 
 @media screen and (max-width: 320px) {

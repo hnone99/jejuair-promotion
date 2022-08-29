@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+
+  <link rel="stylesheet" href="../../../index/css/style-guide.css">
+
+
+</head>
+
+<body class="style-guide">
+
+
+  
+
+ 
+  <div class="wrap">
+    <div class="content" id="content">
+      <div id="main" class="main">       
+
+        <h1 class="guide_title add--mt-40">Componet - Form</h1>
+      
+      
+
+      <div class="section-wrap">
+
+        
+        <div class="tab__panel" data-element="tab__panel">
+          <!-- 국제선 -->
+          <div class="button-wrap mobile-only passport-btn">
+            <button type="button" class="button button--small button--mt0"><span class="button__text">여권스캔하기</span></button>
+          </div>
+
+          <!-- 이름 -->
+          <div class="input-wrap input--line">
+            <!--  pc-col pc-col-2 -->
+            <div class="input-row input-flex">
+              <div class="input-item">
+                <div class="input-flex">
+                  <div class="input-box label-active">
+                    <label for="inp1-1" class="input__label">성(영문)<span class="input__label-asterisk"
+                        title="required">*</span></label>
+                    <div data-element="form" class="input">
+                      <input type="text" data-element="input" id="inp1-1" class="input__text" title="성(영문) 입력"
+                        value="KIM">
+                      <button type="button" data-element="remove" class="input__remove-button hide">삭제</button>
+                    </div>
+                  </div>
+                  <div class="input-box label-active">
+                    <label for="inp1-2" class="input__label">이름(영문)<span class="input__label-asterisk"
+                        title="required">*</span></label>
+                    <div data-element="form" class="input">
+                      <input type="text" data-element="input" id="inp1-2" class="input__text" title="이름(영문) 입력"
+                        value="JEJU">
+                      <button type="button" data-element="remove" class="input__remove-button hide">삭제</button>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+            </div>
+          </div>
+          <div class="input-wrap input--line pc-col pc-col-2">
+
+            <!-- 성별, 생년월일 -->
+            <div class="input-row">
+              <div class="input-box radio-box label-active ">
+                <label for="inp1-1" class="input__label">성별<span class="input__label-asterisk" title="required">*</span></label>
+                <div class="radio-wrapper">
+                  <!-- <p class="radio__text">성별<span class="input__label-asterisk" title="required">*</span></p> -->
+                  <div class="radio-wrap">
+                    <span class="radio">
+                      <input type="radio" id="inputRadio2" name="inputRadio" class="radio__input" checked>
+                      <label for="inputRadio2" class="radio__label">
+                        <i aria-hidden="true" class="radio__ico"></i>
+                        <span>남자</span>
+                      </label>
+                    </span>
+                    <span class="radio">
+                      <input type="radio" id="inputRadio3" name="inputRadio" class="radio__input">
+                      <label for="inputRadio3" class="radio__label">
+                        <i aria-hidden="true" class="radio__ico"></i>
+                        <span>여자</span>
+                      </label>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+
+            <!-- 입력값이 있는 경우-->
+            <div class="input-row input-row--label">
+              <div class="input-item">
+                <div class="input-label top0">생년월일<span class="input__label-asterisk" title="required">*</span>
+                </div>
+                <div class="input-flex">              
+                  <div class="input-box">
+                    <div class="input" data-element="form">
+                      <input type="text" class="input__text input__text--placeholder" data-element="input"
+                        title="연도 입력" placeholder="년" value="1988">
+                      <button type="button" class="input__remove-button" data-element="remove">삭제</button>
+                    </div>
+                  </div>
+                  <div class="input-box">
+                    <div class="select-wrap select-wrap--line">
+                      <select class="select-wrap__select selected">
+                        <option>월</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option selected>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="input-box">
+                    <div class="select-wrap select-wrap--line">
+                      <select title="일 선택" class="select-wrap__select selected">
+                        <option>일</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option selected>12</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <p tabindex="0" class="input__error" style="display: block;">생년월일을 정확히 입력해 주세요.</p>
+              </div>
+            </div>
+              <!--// 입력값이 있는 경우-->
+
+            <!-- 여권 -->
+            <div class="input-row">
+              <div class="input-item">
+                <div class="input-box label-active">
+                  <label for="passport" class="input__label">여권번호<span class="input__label-asterisk"
+                      title="required">*</span></label>
+                  <div class="input" data-element="form">
+                    <input type="text" class="input__text" data-element="input" id="passport" title="여권번호 입력"
+                      value="M12345678">
+                    <button type="button" data-element="remove" class="input__remove-button hide">삭제</button>
+                  </div>
+                </div>
+                <p tabindex="0" class="input__error" style="display: block;">여권번호를 정확히 입력해 주세요.</p>
+                <p class="input__sub-text">예) M12345678 </p>
+              </div>
+            </div>
+
+              <!-- 입력값이 없는 경우 -->
+            <div class="input-row input-row--label">
+              <div class="input-item">
+                <div class="input-label top0">여권만료일<span class="input__label-asterisk" title="required">*</span>
+                </div>
+                <div class="input-flex">
+
+                  <div class="input-box">
+                    <div class="input" data-element="form">
+                      <input type="text" class="input__text input__text--placeholder" data-element="input"
+                        title="연도 입력" placeholder="년">
+                      <button type="button" class="input__remove-button" data-element="remove">삭제</button>
+                    </div>
+                  </div>
+
+                  <div class="input-box">
+                    <div class="select-wrap select-wrap--line">
+                      <select title="월 선택" class="select-wrap__select">
+                        <option>월</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="input-box">
+                    <div class="select-wrap select-wrap--line">
+                      <select title="일 선택" class="select-wrap__select">
+                        <option>일</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                      </select>
+                    </div>
+                  </div>
+
+                </div>
+                <p tabindex="0" class="input__error" style="display: block;">여권만료일을 정확히 입력해 주세요.</p>
+              </div>
+            </div>
+            <!--// 입력값이 없는 경우 -->
+
+            <!-- 국적, 여권발행국가 -->
+            <div class="input-row">
+              <div class="input-item">
+                <label for="inp2" class="input-label">국적(여권)<span class="input__label-asterisk"
+                    Stitle="required">*</span></label>
+                <div class="input-box label-active">
+                  <div class="select-wrap  select-wrap--line">
+                    <!-- '국적(여권)' 선택 시 팝업 호출 -->
+                    <button type="button" class="select-wrap__button active">대한민국</button><!-- 입력값이 없는 경우 -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="input-item">
+                <label for="inp2" class="input-label">여권발행국가/지역<span class="input__label-asterisk"
+                    Stitle="required">*</span></label>
+                <div class="input-box label-active">
+                  <div class="select-wrap  select-wrap--line">
+                    <!-- '여권발행국가/지역' 선택 시 팝업 호출 -->
+                    <button type="button" class="select-wrap__button active">대한민국</button><!-- 입력값이 없는 경우 -->
+                  </div>
+                </div>
+                <p class="input__sub-text">예) kimjeju@jejuair.com</p>
+              </div>
+            </div>
+
+            <!--체류 주소 입력필드-->
+            <div class="input-row">
+              <div class="input-box label-active">
+                <label for="inp1-3" class="input__label">주소<span class="input__label-asterisk" title="required">*</span></label>
+                <!--직접입력 선택시 display:none-->
+                <div class="select-wrap select-wrap--line w100">
+                  <select title="주소 선택" class="select-wrap__select js-select-addr">
+                    <option>선택</option>
+                    <option>DUSIT THANI GUAM RESORT</option>
+                    <option value="direct">직접 입력</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="input-row fake"></div>
+            <div class="input-row direct hide">
+              <div class="input-box">
+                <label for="inp1-3" class="input__label">주소 직접 입력<span class="input__label-asterisk" title="required">*</span></label>
+                <div data-element="form" class="input">
+                  <input type="text" data-element="input" id="inp1-3" class="input__text" title="주소 직접 입력" >
+                  <button type="button" data-element="remove" class="input__remove-button hide">삭제</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="input-box">
+                <label for="inp1-3" class="input__label">도시<span class="input__label-asterisk" title="required">*</span></label>
+                <div data-element="form" class="input">
+                  <input type="text" data-element="input" id="inp1-4" class="input__text" title="도시 입력" >
+                  <button type="button" data-element="remove" class="input__remove-button hide">삭제</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="input-box">
+                <label for="inp1-4" class="input__label">주<span class="input__label-asterisk" title="required">*</span></label>
+                <div data-element="form" class="input">
+                  <input type="text" data-element="input" id="inp1-5" class="input__text" title="주 입력" >
+                  <button type="button" data-element="remove" class="input__remove-button hide">삭제</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="input-item">
+                <div class="input-box">
+                  <label for="inp1-5" class="input__label">우편번호<span class="input__label-asterisk" title="required">*</span></label>
+                  <div data-element="form" class="input">
+                    <input type="tel" data-element="input" id="inp1-6" class="input__text" title="우편번호 입력" >
+                    <button type="button" data-element="remove" class="input__remove-button hide">삭제</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--//체류 주소 입력필드-->
+
+          </div>
+          <!-- //국제선 -->
+
+        </div>
+
+
+      </div>
+
+      <div class="page">
+        <a href="../NF/NF_1_2.html" target="_blank">NF_1_2</a> / 
+        <a href="../GC/GC_0_7.html" target="_blank">GC_0_7</a> / 
+      </div>
+
+
+
+
+      <div class="page">
+        <a href="../NA/NA_1_53.html" target="_blank">NA_1_53</a> /
+      </div>
+   
+      <div class="section-wrap modal" style="display: block;">
+        <div class="result-box result-box--company">
+          <div class="result-box-item">
+            <div class="result-box__header">
+              <p class="result-box__header-title">제주항공</p>
+              <div class="check-wrap">
+                <span class="checkbox">
+                  <input type="checkbox" id="inputCheck1" data-element="checkbox" class="checkbox__input">
+                  <label for="inputCheck1" class="checkbox__label">
+                    <i aria-hidden="true" class="checkbox__ico"></i>
+                  </label>
+                </span>
+              </div>
+            </div>
+            <div class="result-box__content">
+              <div>
+                <div class="result-box__sub-title">
+                  <span>제주</span><span>운수업</span>
+                </div>
+                <dl>
+                  <div class="item-small">
+                    <dt class="result-box__name">대표자 성명</dt>
+                    <dd class="result-box__text">김이배</dd>
+                  </div>
+                  <div class="item-small">
+                    <dt class="result-box__name">담당자 이메일</dt>
+                    <dd class="result-box__text">jeju@jejuair.net</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="result-box-item">
+            <div class="result-box__header">
+              <p class="result-box__header-title">제주렌트카㈜</p>
+              <div class="check-wrap">
+                <span class="checkbox">
+                  <input type="checkbox" id="inputCheck2" data-element="checkbox" class="checkbox__input">
+                  <label for="inputCheck2" class="checkbox__label">
+                    <i aria-hidden="true" class="checkbox__ico"></i>
+                  </label>
+                </span>
+              </div>
+            </div>
+            <div class="result-box__content">
+              <div>
+                <div class="result-box__sub-title">
+                  <span>제주</span><span>운수업</span>
+                </div>
+                <dl>
+                  <div class="item-small">
+                    <dt class="result-box__name">대표자 성명</dt>
+                    <dd class="result-box__text">김이배</dd>
+                  </div>
+                  <div class="item-small">
+                    <dt class="result-box__name">담당자 이메일</dt>
+                    <dd class="result-box__text">jeju@jejuair.net</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="page">
+        <a href="../NF/NJ_1_31.html" target="_blank">NJ_1_31 </a> checkbox + checkbox 여백 16px 
+      </div>
+
+
+
+
+      <div class="gray-box">
+        <div class="radio-wrap">
+          <span class="radio">
+            <input type="radio" id="inputRadio1" name="inputRadio" checked="checked" class="radio__input">
+            <label for="inputRadio1" class="radio__label">
+              <i aria-hidden="true" class="radio__ico"></i>
+              <span>일반결제</span>
+            </label>
+          </span>
+          <span class="radio">
+            <input type="radio" id="inputRadio2" name="inputRadio" class="radio__input">
+            <label for="inputRadio2" class="radio__label">
+              <i aria-hidden="true" class="radio__ico"></i>
+              <span>포인트결제</span>
+            </label>
+           
+          </span>
+           <!--tootip-->
+           <span data-element="tooltip" role="tooltip" class="tooltip" data-set='{"width": "400", "left":"-180", "arrow" : "180"}'>
+            <button type="button" aria-label="포인트결제 툴팁 열기" data-element="tooltip__anchor" class="tooltip__button"></button>
+            <span data-element="tooltip__panel" class="tooltip__panel">
+              <span class="tooltip-title">포인트 결제 기준</span>
+              <span aria-hidden="true" class="tooltip-arrow"></span>
+              <span class="tooltip-desc">
+                <span class="tooltip-desc">
+                  <span class="tooltip-desc--text">좌석 선택 등의 부가서비스도 포인트로 결제됩니다.</span>
+                  <span class="tooltip-desc--text">부족한 포인트는 구매 후 사용하실 수 있습니다.</span>
+                  <span class="tooltip-desc--text">유류할증료 및 공항이용료는 포인트로 결제하실 수 없습니다.</span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <!--tootip-->
+          
+        </div>
+      </div>
+
+
+      <div class="page">
+        <a href="../GD/GD_0_46.html" target="_blank">GD_0_46 </a> 
+      </div>
+
+
+
+      <div class="gray-box">
+        <div class="radio-wrap btn_in"><!--20210716 .btn_in 추가-->
+          <span class="radio">
+            <input type="radio" id="radio111211" name="radio11" class="radio__input" data-toggle="toggle__anchor" checked="" aria-controls="radio111211-0" aria-expanded="true">
+            <label for="radio111211" class="radio__label">
+              <i aria-hidden="true" class="radio__ico"></i>
+              <span>회원할인</span>
+            </label>
+          </span>
+          <span class="radio">
+            <input type="radio" id="radio223111" name="radio11" class="radio__input" data-toggle="toggle__anchor" aria-controls="radio111211-1" aria-expanded="false">
+            <label for="radio223111" class="radio__label">
+              <i aria-hidden="true" class="radio__ico"></i>
+              <span>개인 신분 할인</span>
+            </label> 
+          </span>
+        </div>
+      </div>
+
+      <div class="sub-section">
+        <div class="checkbox checkbox--small">
+          <input type="checkbox" id="inputCheck03" data-element="checkbox" class="checkbox__input" checked="">
+          <label for="inputCheck03" class="checkbox__label">
+            <i aria-hidden="true" class="checkbox__ico"></i>
+            <span>탑승객 정보 저장</span>
+          </label>
+        </div>
+        <span data-element="tooltip" role="tooltip" class="tooltip" data-set="{&quot;width&quot;: &quot;300&quot;, &quot;left&quot;:&quot;-100&quot;, &quot;arrow&quot; : &quot;100&quot;}">
+          <button type="button" class="tooltip__button" aria-label="탑승객 정보 저장 툴팁 열기" data-element="tooltip__anchor"></button>
+          <span class="tooltip__panel" data-element="tooltip__panel" style="margin-left: -348px;">
+            <span class="tooltip-arrow" aria-hidden="true" style="left: 348px;"></span>
+            <span class="tooltip-desc">박스에 체크하시면 다음 예매할 때 따로 입력하지 않아도 정보를 불러올 수 있어요!</span>
+          </span>
+        </span>
+      </div>
+
+      <div class="page">
+        <a href="../NA/NA_1_53.html" target="_blank">NA_1_53</a> 
+      </div>
+      
+
+
+
+      
+   
+
+      </div><!--// main-->
+    </div>
+  </div>
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

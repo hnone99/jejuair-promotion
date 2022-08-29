@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/jjpay.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <div class="container--small">
+          <a href="#" data-element="modal_anchor" data-target="#modalLayer01"
+            class="button button--primary button--active">
+            <span class="button__text">공통 얼럿</span>
+          </a>
+        </div>
+        <div class="container--small">
+          <a href="#" data-element="modal_anchor" data-target="#modalLayer02"
+            class="button button--primary button--active">
+            <span class="button__text">공통 컨펌(타이틀 + 내용)</span>
+          </a>
+        </div>
+        <div class="container--small">
+          <a href="#" data-element="modal_anchor" data-target="#modalLayer03"
+            class="button button--primary button--active">
+            <span class="button__text">공통 컨펌(내용)</span>
+          </a>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- 공통 얼럿 -->
+  <div id="modalLayer01" class="modal modal--simple">
+    <div class="modal-content">
+      <h2 class="alert-title"></h2>
+      <p class="alert-text">
+        유아를 동반하는 성인이<br>
+        2명 이상인 경우 해당 좌석을2명 이상인 경우 해당 좌석을2명 이상인 경우 해당 좌석을<br>
+        선택할 수 없습니다.<br>
+        다시 선택해 주세요.
+      </p>
+    </div>
+    <div class="modal__button-area button-wrap">
+      <button type="button" class="button button--secondary button--active" rel="modal:close"><span
+          class="button__text">확인</span></button>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <!-- // 공통 얼럿 -->
+
+  <!-- 공통 컨펌(타이틀 + 내용) -->
+  <div id="modalLayer02" class="modal modal--simple">
+    <div class="modal-content">
+      <h2 class="alert-title">지금 로그인 <br>하시겠습니까?</h2>
+      <p class="alert-text">
+        로그인 후 1:1 문의를 할 수 있습니다.
+      </p>
+    </div>
+    <div class="modal__button-area button-wrap">
+      <button type="button" class="button button--secondary"><span class="button__text">아니요</span></button>
+      <button type="button" class="button button--secondary button--active add--ml-10"><span
+          class="button__text">예</span></button>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <!-- // 공통 컨펌(타이틀 + 내용) -->
+
+  <!-- 공통 컨펌(내용) -->
+  <div id="modalLayer03" class="modal modal--simple">
+    <div class="modal-content">
+      <h2 class="alert-title">지금 로그인 <br>하시겠습니까?</h2>
+    </div>
+    <div class="modal__button-area button-wrap">
+      <button type="button" class="button button--secondary"><span class="button__text">아니요</span></button>
+      <button type="button" class="button button--secondary button--active add--ml-10"><span
+          class="button__text">예</span></button>
+    </div>
+    <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+  </div>
+  <!-- // 공통 컨펌(내용) -->
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

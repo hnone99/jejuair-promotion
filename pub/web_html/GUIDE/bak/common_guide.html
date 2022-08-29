@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <style>
+    .tbl_st1 {background: #fff;}
+    .tbl_st2 {background: #fff;}
+    h1.title1 {background: #313131;font-family: "맑은 고딕", malgun-gothic, san-serif;color: #fff;font-weight:400;margin-bottom: 40px;font-size: 16px; padding:5px 15px;}
+    h2.title2 {color: #fff;padding: 0px; display: block;font-size: 14px; margin-bottom: -10px;font-family: "맑은 고딕", malgun-gothic, san-serif;}
+    .list_st2 {display: flex;margin-top: 20px;position: relative;}
+    .list_st2 li {flex: 1;padding-left:15px;}
+    img {width: auto}
+    .history {font-size: 13px;line-height: 13px;font-family: "맑은 고딕", malgun-gothic, san-serif;}
+    .history dt {float: left;width: 400px;}
+    .history dd {float: left;text-align: left;color: #83feff;padding: 10px;/* background: #313131;*/width: calc(100% - 400px);}
+    .history dd span {padding-left: 0px;display: block; position: relative;margin-left: 80px}
+    .history dd span strong {position: absolute; top: 0;font-weight: 400 !important; left: -80px}
+    .history:after {content: '';display: block;clear: both;}
+    .row {margin-top:100px;}
+  </style>
+
+</head>
+
+<body style="background: #575757;">
+  <div class="wrap">
+    <div class="content" id="content">
+      <div id="main" class="main">
+
+        <div class="row" style="margin-top:40px;">
+          <h1 class="title1">MO/PC Alert (모바일과 동일)</h1>        
+          <!-- <dl class="history">
+            <dt><img src="../../web_html/GUIDE/img/alert_img.png"></dt>
+            <dd>
+              <span><strong>[2021-05-07]</strong>얼랏 전체 최소 높이 : min-height 186px</span>
+            </dd>
+          </dl>-->
+          <img src="../../web_html/GUIDE/img/alert_img.png">
+        
+          <ul class="list_st2">
+            <div
+              style="height:186px; width:100%; background:#000; position: absolute;z-index: 1; right:0; top:26px; opacity: 0.5;">
+            </div>
+            <li>
+              <h2 class="title2">공통 얼럿</h2>
+
+              <!-- 공통 얼럿 -->
+              <div id="modalLayer05" class="modal modal--simple" style="display: block;">
+                <div class="modal-content">
+                  <h2 class="alert-title"></h2>
+                  <p class="alert-text">
+                    oooo을 하시겠습니까?
+                  </p>
+                </div>
+                <div class="modal__button-area button-wrap">
+                  <button type="button" class="button button--secondary button--active" rel="modal:close"><span
+                      class="button__text">확인</span></button>
+                </div>
+                <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+              </div>
+              <!-- // 공통 얼럿 -->
+
+            </li>
+            <li>
+              <h2 class="title2">공통 컨펌(타이틀 + 내용)</h2>
+
+              <!-- 공통 컨펌(타이틀 + 내용) -->
+              <div id="modalLayer06" class="modal modal--simple" style="display: block;">
+                <div class="modal-content">
+                  <h2 class="alert-title" style="background: #c6eef9;">두줄 타이틀 두줄 타이틀 두줄 타이틀 두줄 타이틀</h2>
+                  <p class="alert-text" style="background: #c6eef9;">
+                    텍스트 영역 확인  텍스트 영역 확인 텍스트 영역 확인 텍스트 영역 확인 텍스트 영역 확인
+                  </p>
+                </div>
+                <div class="modal__button-area button-wrap">
+                  <button type="button" class="button button--secondary"><span class="button__text">아니요</span></button>
+                  <button type="button" class="button button--secondary button--active add--ml-10"><span
+                      class="button__text">예</span></button>
+                </div>
+                <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+              </div>
+              <!-- // 공통 컨펌(타이틀 + 내용) -->
+
+            </li>
+            <li>
+              <h2 class="title2">공통 컨펌(내용)</h2>
+
+              <!-- 공통 컨펌(내용) -->
+              <div id="modalLayer07" class="modal modal--simple" style="display: block;">
+                <div class="modal-content">
+                  <h2 class="alert-title">지금 로그인 하시겠습니까?</h2>
+                  <p class="alert-text">
+                    로그인 후 1:1 문의를 할 수 있습니다.
+                  </p>
+                </div>
+                <div class="modal__button-area button-wrap">
+                  <button type="button" class="button button--secondary"><span class="button__text">아니요</span></button>
+                  <button type="button" class="button button--secondary button--active add--ml-10"><span
+                      class="button__text">예</span></button>
+                </div>
+                <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+              </div>
+              <!-- // 공통 컨펌(내용) -->
+            </li>
+          </ul>    
+        </div>
+        <!--// row-->
+
+        <div class="row" style="margin-top:40px;">
+         
+        
+          <ul class="list_st2">        
+            <li>            
+            </li>
+            <li>  
+            </li>
+            <li>
+            </li>
+          </ul>    
+        </div>
+        <!--// row-->
+
+        
+      </div><!--// main-->
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <clipPath id="fpdsk5vv9a">
+            <path data-name="사각형 2899" transform="translate(0 -54)" style="fill:none" d="M0 0h56v56H0z"/>
+        </clipPath>
+        <clipPath id="xa30mywjeb">
+            <path data-name="패스 11952" d="M13-13h30v-28H13z" style="fill:none"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 15754" transform="translate(-822 -1510)">
+        <circle data-name="타원 665" cx="40" cy="40" r="40" transform="translate(822 1510)" style="fill:#f8f8f8"/>
+        <g data-name="그룹 12609">
+            <g data-name="그룹 31927" transform="translate(831.75 1571.243)">
+                <path d="m29.923 17.384 3.42-3.42a2.073 2.073 0 0 1 2.932 2.936l-4.886 4.886a2.073 2.073 0 0 1-2.931 0L23.572 16.9a2.073 2.073 0 0 1 2.928-2.936z" transform="translate(.306 -53.5)" style="fill-rule:evenodd;fill:#00a7e1"/>
+                <rect width="35.929" height="26.256" rx="2" transform="translate(12.264 -28.199)" style="fill:#ffc42d"/>
+                <rect width="41.457" height="6.91" rx="2" transform="translate(9.5 -32.345)" style="fill:#ffc42d"/>
+                <path data-name="Rectangle" transform="translate(12.264 -25.436)" style="fill:#00a7e1" d="M0 0h35.929v4.146H0z"/>
+                <path data-name="Rectangle" transform="translate(28.156 -32.345)" style="fill:#00a7e1" d="M0 0h4.146v30.402H0z"/>
+            </g>
+        </g>
+    </g>
+</svg>

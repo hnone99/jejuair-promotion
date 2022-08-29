@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/jjpay.css">
+</head>
+
+<body>
+  <div class="modal no-btn">
+    <div  class="modal-header">
+      <div class="modal-header__title">결제비밀번호 설정</div>
+    </div>
+    <div class="modal-content">
+      
+      <div class="jjpay-password-wrap">
+        <div class="pin-password-wrap">
+          <div class="pin-password-item">
+            <div class="pin-password__title">결제 비밀번호 6자리를 입력해 주세요.</div>
+            <div class="pin-password__desc">
+              연속되거나 같은 숫자 3자리, 개인정보와<br>관련된 숫자는 제외하고 입력해 주세요.
+            </div>
+            <div class="pin-password" aria-label="결제 비밀번호 6자리를 입력해 주세요.">
+              <i aria-hidden="true" class="circle circle--active"></i>
+              <i aria-hidden="true" class="circle"></i>
+              <i aria-hidden="true" class="circle"></i>
+              <i aria-hidden="true" class="circle"></i>
+              <i aria-hidden="true" class="circle"></i>
+              <i aria-hidden="true" class="circle"></i>
+            </div>
+          </div>
+        </div>
+
+        <!--PIN 번호 설정-->
+        <div class="custom-keypad-wrap">
+          <div class="custom-keypad">
+            <button type="button" class="custom-keypad__button">0</button>
+            <button type="button" class="custom-keypad__button">2</button>
+            <button type="button" class="custom-keypad__button"></button>
+            <button type="button" class="custom-keypad__button">8</button>
+            <button type="button" class="custom-keypad__button">9</button>
+            <button type="button" class="custom-keypad__button">1</button>
+            <button type="button" class="custom-keypad__button">5</button>
+            <button type="button" class="custom-keypad__button">6</button>
+            <button type="button" class="custom-keypad__button">7</button>
+            <button type="button" class="custom-keypad__button">3</button>
+            <button type="button" class="custom-keypad__button"></button>
+            <button type="button" class="custom-keypad__button">4</button>
+            <button type="button" class="custom-keypad__button custom-btn custom-keypad__button--back"><span class="hidden">삭제</span></button>
+            <button type="button" class="custom-keypad__button custom-btn custom-keypad__button--del">전체삭제</button>
+          </div>
+        </div>
+        <!--//PIN 번호 설정-->
+      </div>
+
+    </div>
+
+    <a href="#" rel="modal:close" class="modal__close" onclick="closeWindow ()"><span class="blind">닫기</span></a>
+  </div>
+
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script>
+    // 창닫기
+    function closeWindow() {
+      window.open('', '_self', '');
+      window.close();
+    }
+  </script>
+</body>
+
+</html>

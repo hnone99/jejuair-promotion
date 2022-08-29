@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- 개발시 삭제: robots -->
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+<title>제주항공</title>
+<link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+<link rel="stylesheet" href="../../assets/css/global.css">
+<link rel="stylesheet" href="../../assets/css/component.css">
+<link rel="stylesheet" href="../../assets/css/page.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <!-- header -->
+  <div id="header" class="header">
+    <!-- mobile -->
+    <header class="header__inner mobile-only">
+      <div class="header__logo">
+        <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+      </div>
+      <div class="header__button-wrap" data-element="gnbToggle">
+        <!-- 예매전 노출 -->
+        <button type="button" class="header__button-ticket">
+          <span class="hidden">티켓보기</span>
+        </button>
+        <!-- // 예매전 노출 -->
+        <button type="button" class="gnb__button">
+          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+        </button>
+      </div>
+      <!-- 스크롤시 스티키 상단 -->
+      <div>
+
+      </div>
+      <!-- 전체메뉴 -->
+      <!-- //전체메뉴 -->
+    </header>
+    <!-- //mobile -->
+
+    <!-- pc용 공통 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div data-element="select" class="select-wrap select-wrap--line">
+                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
+                  class="select-wrap__select">
+                  <option></option>
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner pc-only">
+      <div class="sticky-header" data-sticky>
+        <div class="header__box">
+          <!-- header__box 추가 -->
+          <h1 class="header__logo">
+            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
+          </h1>
+          <div class="header__link-list">
+            <a href="#" class="header__link">항공권 예매</a>
+            <a href="#" class="header__link header__link--current">마이페이지</a>
+            <a href="#" class="header__link">부가서비스</a>
+            <a href="#" class="header__link">모바일탑승권</a>
+            <a href="#" class="header__link">이벤트</a>
+          </div>
+          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+            <!-- <button type="button" class="header__button-ticket">
+              <span class="hidden">티켓보기</span>
+            </button> -->
+            <button type="button" class="header__button-search" data-custom-toggle="button">
+              <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
+            </button>
+            <div class="header-search__layer" data-custom-toggle="panel">
+              <div class="header-search__form" data-element="form">
+                <input type="search" class="search__text" placeholder="검색어를 입력해 주세요" data-element="input">
+                <button type="button" data-element="remove" class="input__remove-button">삭제</button>
+                <div class="search-button">
+                  <button class="button" type="button">검색</button>
+                </div>
+              </div>
+              <!-- <button type="button" class="search__close" data-custom-toggle="button">
+                    <span class="hidden">검색창 닫기</span>
+                </button> -->
+            </div>
+          </div>
+          <div class="header__button-wrap" data-element="gnbToggle">
+            <button type="button" class="gnb__button">
+              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
+            </button>
+          </div>
+
+          <!-- goto-quick-booking : 스티키 클릭용 -->
+          <div class="goto-quick-booking">
+            <a href="#a">
+              <span>어디로 여행가세요?</span>
+              <div class="goto-btn">
+                <span>항공권 검색</span>
+              </div>
+            </a>
+          </div>
+          <!-- //goto-quick-booking -->
+
+        </div>
+
+        <!-- 전체메뉴 -->
+        <!-- //전체메뉴 -->
+      </div>
+    </header>
+    <!-- //pc용 공통 헤더 -->
+    <!-- pc용 공통 헤더 -->
+  </div>
+  <!-- //header -->
+
+  <div class="wrap">
+    <div class="content" id="content">
+      <main id="main" class="main">
+        <button
+          type="button"
+          class="picker picker--button"
+          data-element="modal_anchor"
+          data-modal-type="datepicker"
+          data-target="#datepicker01"
+        >
+          달력 호출
+        </button>
+
+        <button
+          type="button"
+          class="picker picker--button"
+          id="testButton"
+        >
+          달력 호출
+        </button>
+
+        <div style="margin-top: 50px;font-weight: 800;font-size: 20px;">
+          data option 목록
+        </div>
+        <ul class="list-guide">
+          <li class="list-guide__item">data-picker : datepicker 형태(inline, layer)</li>
+          <li class="list-guide__item">data-default-date : 기본 날짜 선택(배열 형태로 입력)</li>
+          <li class="list-guide__item">data-min-date : 선택가능한 시작 날짜 (YYYY-MM-DD)</li>
+        </ul>
+        <div style="margin-top: 50px;font-weight: 800;font-size: 20px;">
+          Localization(L10N)
+        </div>
+        <ul class="list-guide">
+          <li class="list-guide__item">data-locale : 언어 코드 입력(기본: ko)(cn, ja, ko, ru, th, vn, zh)</li>
+          <li class="list-guide__item">date-date-format : 날짜 표시 형식(기본: Y-m-d, 위치 및 형식은 변경 가능)(Y: year, m: month, d: day)</li>
+          <li class="list-guide__item">data-header-first: header 의 월 선택 박스 위치(기본: year)</li>
+        </ul>
+
+        <div style="margin-top: 50px;font-weight: 800;font-size: 20px;">
+          Json 형태
+        </div>
+        <ul class="list-guide">
+            <li class="list-guide__item">price: 배열로 입력하며 date 는 날짜, class 는 날짜에 해당하는 class명 입력</li>
+            <li class="list-guide__item">disabled: 배열로 입력하며 date 는 날짜, label 은 날짜에 해당하는 텍스트 입력</li>
+            <li class="list-guide__item">price 와 disabled는 모두 필수이며 없을경우 비어있는 배열([])로 입력</li>
+        </ul>
+        <div class="code">
+          <pre style="background: #eaeaea;"><code style="font-size: 12px;">
+            {
+              "price": [
+                {
+                  "date": ["2020-09-15"],
+                  "class": "best",  // 날짜에 추가될 class
+                  "label": "333,333"
+                },
+                {
+                  "date": ["2020-09-18"],
+                  "class": "better",  // 날짜에 추가될 class
+                  "label": "333,333"
+                },
+                {
+                  "date": ["2020-09-20", "2020-09-21"],
+                  "class": "good"
+                }
+              ],
+              "disabled": [
+                {
+                  "date": ["2020-09-25", "2020-09-26"],
+                },
+                {
+                  "date": ["2020-09-28", "2020-09-29"],
+                }
+              ]
+            }
+          </code></pre>
+        </div>
+      </main>
+
+      <!-- 날짜선택 -->
+      <div id="datepicker01" class="modal modal-full modal-full--picker" data-max-rate="none" >
+        <div  class="modal-header">
+          <h2 class="header__page-name">날짜를 선택해 주세요.</h2>
+        </div>
+
+        <div class="modal-content">
+          <div class="picker picker--full">
+            <input
+              type="text"
+              class="picker__input"
+              id="selectDate"
+              data-text="하단 금액은 1인 편도 기준입니다."
+              data-json-id="flightList"
+              data-picker="single"
+            >
+          </div>
+          <div class="booking-button cal-button">
+            <button type="button" class="button button--primary button--black pc-only" data-reset-date="#selectDate">
+              <span class="button__text">초기화</span>
+            </button>
+            <!-- <button type="button" class="button button--primary button--black" id="resetDate">
+              <span class="button__text">초기화 테스트(개발 테스트 후 삭제 요망)</span>
+            </button> -->
+            <button type="button" class="button button--primary button--active" data-select-date="#selectDate" rel="modal:close">
+              <span class="button__text">선택</span>
+            </button>
+          </div>
+        </div>
+        <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
+      </div>
+      <!-- // 날짜선택 -->
+    </div>
+    <script type="application/json" id="flightList">
+      {
+        "price": [
+          {
+            "date": ["2020-09-15"],
+            "class": "best",
+            "label": "156,000"
+          },
+          {
+            "date": ["2020-09-18"],
+            "class": "better"
+          },
+          {
+            "date": ["2020-11-18"],
+            "class": "better",
+            "label": "156,000"
+          },
+          {
+            "date": ["2020-12-18"],
+            "class": "better",
+            "label": "333,333"
+          },
+          {
+            "date": ["2020-12-30"],
+            "class": "better",
+            "label": "333,333"
+          },
+          {
+            "date": ["2021-01-18"],
+            "class": "better",
+            "label": "333,333"
+          },
+          {
+            "date": ["2021-01-11"],
+            "label": "333,333"
+          },
+          {
+            "date": ["2021-01-20", "2021-01-21", "2021-02-21", "2021-01-23"],
+            "label": "999,000"
+          }
+        ],
+        "disabled": [
+          {
+            "date": ["2020-09-25", "2020-09-26", "2020-10-22"],
+            "label": "휴가"
+          },
+          {
+            "date": ["2020-09-28", "2020-09-29", "2020-11-29", "2020-12-29"],
+            "label": "결항일"
+          }
+        ]
+      }
+    </script>
+
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
+  <script>
+    /**
+     * 선택된 날짜를 입력하는 기능
+     * @param {String} element - 대상 버튼 ID 입력
+     */
+    function setDateValue(element) {
+      $(element).addClass('is-select').text(dataVal);
+    }
+
+    /**
+     * 초기화 기능
+     */
+    // $('#resetDate').on('click', function(event) {
+    //   datepicker.resetPicker();
+    // })
+
+    /**
+     * datepicker용 모달 호출
+     */
+    $('#testButton').on('click', function(e) {
+      var dateVal =
+      $('#datepicker01')
+        .modal({
+          showClose: false,
+          clickClose: false,
+        }, function(){
+        })
+        .on('modal:close', function() {
+          $('html').removeClass('open-modal open-modal--full');
+          $('.jquery-modal').removeClass('jquery-modal--full jquery-modal--picker');
+          setDateValue('#testButton');
+        });
+
+      $('html').addClass('open-modal open-modal--picker');
+      $('.jquery-modal').addClass('jquery-modal--picker jquery-modal--full');
+
+      /**
+       * 선택된 날짜의 데이터를 받아옴
+       * #selectDate 는 datepicker 를 만드는 ID
+       */
+      $('#selectDate').on('change', function(e) {
+        dataVal = e.target.value;
+      });
+    });
+
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* front_global.css 추가 요망 */
+.justify-content-between { justify-content: space-between !important; }
+
+.align-items-center { align-items: center !important; }
+
+/* 이벤트 당첨 결과 */
+[class^=icon-event-result] { background-repeat: no-repeat; background-position: 0 0; width: 80px; height: 80px; background-size: contain; display: inline-block; }
+
+.icon-event-result-point { background-image: url(../images/icon/icon-event-result-point.svg); }
+
+.icon-event-result-coupon { background-image: url(../images/icon/icon-event-result-coupon.svg); }
+
+.icon-event-result-gift-ticket { background-image: url(../images/icon/icon-event-result-gift-ticket.svg); }
+
+.icon-event-result-gift { background-image: url(../images/icon/icon-event-result-gift.svg); }
+
+.icon-event-result-air-ticket { background-image: url(../images/icon/icon-event-result-air-ticket.svg); }
+
+.event-detail__results.in-mypage { padding-bottom: 40px; }
+
+.event-detail__results-item { margin-top: 20px; }
+
+.event-detail__results-item:first-of-type { margin-top: 9px; }
+
+.event-result-card { border: 1px solid #ddd; border-radius: 6px; }
+
+.event-result-header { border-bottom: 1px solid #ddd; padding: 16px 20px; }
+
+.event-result-name { font-size: 14px; }
+
+.event-result-body { padding: 20px; }
+
+.event-result-body i { flex: 0 0 auto; }
+
+.event-result-body .inner { display: flex; justify-content: space-between; }
+
+.event-result-info { text-align: right; }
+
+.event-result-info .date { display: flex; align-items: center; font-size: 13px; }
+
+.event-result-info .date span { margin-left: 6px; }
+
+.event-result-info .desc { color: #888; font-size: 13px; margin-top: 13px; }
+
+.event-result-info .gift { font-size: 14px; margin-top: 6px; }
+
+.event-result-info .gift a { color: #ff5000; text-decoration: underline; }
+
+.event-result-info .gift strong { display: inline-block; font-size: 18px; font-family: 'SpoqaHanSansNeo', 'roboto', sans-serif, Arial; margin-top: -4px; }
+
+.event-result-title { border-top: 1px solid #ddd; margin-top: 20px; padding: 16px 0; margin-bottom: -20px; }
+
+.event-result-title > a { display: flex; align-items: center; }
+
+.event-result-title > a span { font-size: 14px; flex-grow: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 3em; }
+
+.event-result-title > a::after { content: ''; display: block; width: 20px; height: 20px; background: url(../images/arrow/arrow-20x20-black.png) 0 0 no-repeat; background-size: 100% auto; flex: 0 0 20px; margin-left: 20px; }
+
+.finish-item-wrap.in-box { padding: 40px 10px; background-color: #f9f9f9; margin: 0; }
+
+.event-result-confirm { text-align: center; }
+
+.event-result-confirm i { margin-bottom: 30px; }
+
+.event-result-confirm .name { font-size: 16px; font-weight: 500; }
+
+.event-result-confirm .period { font-size: 14px; display: flex; align-items: center; justify-content: center; margin-top: 10px; }
+
+.event-result-confirm .period span { margin-left: 10px; }
+
+.event-code-form { text-align: center; margin-top: 40px; }
+
+.event-code-form .input__text { height: 40px; text-align: center; margin-bottom: 16px; }
+
+.event-code-guide { background: #f2f2f2; padding: 20px; margin-top: 40px; }
+
+.event-code-guide strong { display: block; font-weight: 500; font-size: 14px; margin-bottom: 16px; }
+
+.event-code-guide ul li { color: #666; font-size: 14px; position: relative; padding-left: 8px; }
+
+.event-code-guide ul li::before { content: ''; display: inline-block; width: 2px; height: 2px; border-radius: 2px; background: #888; position: absolute; left: 0; top: 8px; }
+
+.event-code-guide ul li + li { margin-top: 8px; }
+
+.event-code-guide ul li a { color: #ff5000; text-decoration: underline; }
+
+/* responsive.css 추가 요망 */
+@media all and (min-width: 1080px) { .event-detail__results { margin: -10px; display: flex; flex-wrap: wrap; }
+  .event-detail__results.in-mypage { padding-bottom: 0; margin-left: 0; margin-right: 0; display: block; }
+  .event-detail__results.in-mypage .event-detail__results-item { width: 100%; padding-left: 0; padding-right: 0; }
+  .event-detail__results.in-mypage .event-result-header { flex: 0 0 230px; }
+  .event-detail__results.in-mypage .event-result-body { display: flex; align-items: center; padding: 0 40px; }
+  .event-detail__results.in-mypage .event-result-body .inner { flex-grow: 1; border-right: 1px solid #ddd; padding-right: 40px; margin-right: 40px; padding: 30px 40px 30px 0; }
+  .event-detail__results.in-mypage .event-result-body .event-result-title { flex: 0 0 238px; margin: 0; border: 0; }
+  .event-detail__results-item { padding: 10px; margin: 0 !important; width: 50%; flex: 0 0 50%; }
+  .event-result-card { display: flex; height: 100%; }
+  .event-result-header { border-bottom: 0; border-right: 1px solid #ddd; padding: 30px 25px 30px 30px; display: flex; align-items: center; flex: 0 0 150px; }
+  .event-result-body { flex-grow: 1; padding: 30px; } }
+/*# sourceMappingURL=promotion.css.map */

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 개발시 삭제: robots -->
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>제주항공</title>
+  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body class="loading-body">
+  <div id="skipNav" class="skip-nav">
+    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
+    <a href="#content" class="skip-nav__item">본문 바로가기</a>
+  </div>
+
+  <div id="header" class="header">
+
+    <!-- 예매 헤더 -->
+    <div class="header__util util pc-only">
+      <div class="util__inner">
+        <div class="util__benefit">
+          <a href="#" class="util__link">기업 우대</a>
+          <a href="#" class="util__link">여행사 우대</a>
+        </div>
+
+        <div class="util__link-list" data-custom-toggle="wrap">
+          <!-- 로그인 이후 노출 -->
+          <span class="util__personal">
+            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+          </span>
+          <!-- // 로그인 이후 노출 -->
+          <!-- 로그인 전 노출 -->
+          <a href="#" class="util__link">로그인</a>
+          <a href="#" class="util__link">회원가입</a>
+          <!-- // 로그인 전 노출 -->
+          <a href="#" class="util__link">리프레시 포인트</a>
+          <a href="#" class="util__link">이벤트</a>
+          <a href="#" class="util__link">고객센터</a>
+          <button type="button" class="util__country" data-custom-toggle="button">
+            <span class="text">대한민국</span>
+          </button>
+          <div class="header-country__layer" data-custom-toggle="panel">
+            <div class="country__title">
+              지역 및 언어 설정
+            </div>
+            <div class="country__input">
+              <div class="select-wrap select-wrap--line">
+                <select title="국가 선택" class="select-wrap__select">
+                  <option value="1" selected>대한민국</option>
+                  <option value="2">중국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+              <div class="select-wrap select-wrap--line">
+                <select class="select-wrap__select" title="언어 선택"> 
+                  <option value="1" selected>한국어</option>
+                  <option value="2">중국어</option>
+                  <option value="3">일본어</option>
+                </select>
+              </div>
+
+              <button class="country__button">확인</button>
+            </div>
+            <button class="button-close" data-custom-toggle="close">
+              <span class="hidden">닫기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header__inner header__inner--step pc-only "><!--step 스타일 변경-->
+      <div class="sticky-header" data-sticky="">
+        <div class="header__box">
+          <h1 class="header__logo">
+            <img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air">
+          </h1>
+          <h2 class="header__page-name">항공권 예매</h2>
+
+          <div class="header__stepper">
+            <ol class="stepper__group_new booking_step">
+              <li class="active">
+                <span class="step">1</span>
+                <span class="text">항공권선택</span>
+              </li>
+              <li>
+                <span class="step">2</span>
+                <span class="text">탑승객 정보 입력</span>
+              </li>
+              <li><!--활성화 스탭 .active 추가-->
+                <span class="step">3</span>
+                <span class="text">부가서비스 선택</span>
+              </li>
+              <li>
+                <span class="step">4</span>
+                <span class="text">확인 및 동의</span>
+              </li>
+              <li>
+                <span class="step">5</span>
+                <span class="text">결제</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- // 예매 헤더 -->
+  </div>
+  <div id="body">
+    <div class="wrap NA NA_1">
+      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+        <nav class="breadcrumb__inner">
+          <div class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">홈</a>
+          </div>
+          <div class="breadcrumb__item">
+            <strong class="breadcrumb__link" aria-current="page">예약</strong>
+          </div>
+          <div class="breadcrumb__item">
+            <strong class="breadcrumb__link breadcrumb__link--current" aria-current="page">항공권 예매</strong>
+          </div>
+          <div class="breadcrumb__item">
+            <strong class="breadcrumb__link breadcrumb__link--current" aria-current="page">부가서비스 선택</strong>
+          </div>
+        </nav>
+      </div>
+      <div class="content" id="content">
+        <main id="main" class="main">
+          <div class="booking-loading loading">
+            <div class="booking-loading_box">
+              <div class="loading__title">
+                <!-- case 1 -->
+                김제주 님을 위한<br>항공편을 찾고 있는 중입니다.
+                <!-- // case 1 -->
+                <!-- case 2 -->
+                <!-- 최적의 항공편을<br>찾고 있는 중입니다. -->
+                <!-- // case 2 -->
+              </div>
+              <!-- <p class="loading__text mobile-only">약 7~10초 소요</p> -->
+
+              <div class="loading__object">
+                <div class="object">
+                  <img src="../../assets/images/icon/loading_air.gif" alt="">
+                </div>
+              </div>
+
+              <div class="carousel carousel--loading swiper-container" data-carousel="spaceItem">
+                <div class="carousel__item swiper-wrapper">
+                  <div class="carousel__list swiper-slide">
+                    <div class="carousel__contents carousel">
+                      <div class="img">
+                        <img src="../../assets/images/icon/icon-loading-baggage.png" alt="">
+                      </div>
+                      <strong class="info-title">사전 수하물</strong>
+                      <p class="info-desc">지금 구매해야<br>가장 저렴해요!</p>
+                    </div>
+                  </div>
+                  <div class="carousel__list swiper-slide">
+                    <div class="carousel__contents carousel">
+                      <div class="img">
+                        <img src="../../assets/images/icon/icon-loading-meal.png" alt="">
+                      </div>
+                      <strong class="info-title">기내식</strong>
+                      <p class="info-desc">하늘 위에서 즐기는<br>한끼</p>
+                    </div>
+                  </div>
+                  <!-- <div class="carousel__list swiper-slide">
+                    <div class="carousel__contents carousel">
+                      <div class="img">
+                        <img src="../../assets/images/icon/icon-loading-goods.png" alt="">
+                      </div>
+                      <strong class="info-title">에어카페 굿즈</strong>
+                      <p class="info-desc">여행의 풍족함을<br>두배 더!</p>
+                    </div>
+                  </div> -->
+                  <div class="carousel__list swiper-slide">
+                    <div class="carousel__contents carousel">
+                      <div class="img">
+                        <img src="../../assets/images/icon/icon-loading-insu.png" alt="">
+                      </div>
+                      <strong class="info-title">여행자 보험</strong>
+                      <p class="info-desc">더욱 안전한<br>여행을 위한 준비</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>
