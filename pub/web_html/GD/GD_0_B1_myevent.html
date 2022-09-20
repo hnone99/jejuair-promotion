@@ -1,120 +1,114 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 개발시 삭제: robots -->
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>제주항공</title>
+    <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico" />
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="../../assets/css/component.css" />
+    <link rel="stylesheet" href="../../assets/css/page.css" />
+    <link rel="stylesheet" href="../../assets/css/responsive.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <!-- 개발시 삭제: robots -->
-  <meta name="robots" content="noindex" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="-1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="format-detection" content="telephone=no">
-  <title>제주항공</title>
-  <link rel="icon" type="image/png" href="../../assets/images/icon/favicon.ico">
-  <link rel="stylesheet" href="../../assets/css/global.css">
-  <link rel="stylesheet" href="../../assets/css/component.css">
-  <link rel="stylesheet" href="../../assets/css/page.css">
-  <link rel="stylesheet" href="../../assets/css/responsive.css">
-</head>
-
-<body>
-  <div id="skipNav" class="skip-nav">
-    <a href="#content" class="skip-nav__item">본문 바로가기</a>
-  </div>
-
-  <div id="header" class="header">
-    <header class="header__inner mobile-only">
-      <button class="header__button">
-        <span class="hidden">이전으로</span>
-      </button>
-      <h2 class="header__page-name">나의 이벤트</h2>
-
-      <div class="header__button-wrap" data-element="gnbToggle">
-        <button type="button" class="gnb__button">
-          <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
-        </button>
-      </div>
-      <!-- 전체메뉴 --><!-- //전체메뉴 -->
-    </header>
-    <div class="header__util util pc-only">
-      <div class="util__inner">
-        <div class="util__benefit">
-          <a href="#" class="util__link">기업 우대</a>
-          <a href="#" class="util__link">여행사 우대</a>
-        </div>
-
-        <div class="util__link-list" data-custom-toggle="wrap">
-          <!-- 로그인 이후 노출 -->
-          <span class="util__personal">
-            <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
-          </span>
-          <!-- // 로그인 이후 노출 -->
-          <!-- 로그인 전 노출 -->
-          <a href="#" class="util__link">로그인</a>
-          <a href="#" class="util__link">회원가입</a>
-          <!-- // 로그인 전 노출 -->
-          <a href="#" class="util__link">리프레시 포인트</a>
-          <a href="#" class="util__link">이벤트</a>
-          <a href="#" class="util__link">고객센터</a>
-          <button type="button" class="util__country" data-custom-toggle="button">
-            <span class="text">대한민국</span>
-          </button>
-          <div class="header-country__layer" data-custom-toggle="panel">
-            <div class="country__title">
-              지역 및 언어 설정
-            </div>
-            <div class="country__input">
-              <div data-element="select" class="select-wrap select-wrap--line">
-                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
-                  class="select-wrap__select" data-select-container=".country__input">
-                  <option></option>
-                  <option value="1" selected>대한민국</option>
-                  <option value="2">중국</option>
-                  <option value="3">일본</option>
-                </select>
-              </div>
-              <div data-element="select" class="select-wrap select-wrap--line">
-                <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택"
-                  class="select-wrap__select" data-select-container=".country__input">
-                  <option></option>
-                  <option value="1" selected>한국어</option>
-                  <option value="2">중국어</option>
-                  <option value="3">일본어</option>
-                </select>
-              </div>
-
-              <button class="country__button">확인</button>
-            </div>
-            <button class="button-close" data-custom-toggle="close">
-              <span class="hidden">닫기</span>
-            </button>
-          </div>
-        </div>
-      </div>
+  <body>
+    <div id="skipNav" class="skip-nav">
+      <a href="#content" class="skip-nav__item">본문 바로가기</a>
     </div>
-    <header class="header__inner pc-only">
-      <div class="sticky-header" data-sticky>
-        <div class="header__box">
-          <!-- header__box 추가 -->
-          <h1 class="header__logo">
-            <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air"></a>
-          </h1>
 
-          <div class="header__link-list">
-            <a href="#" class="header__link">항공권 예매</a>
-            <a href="#" class="header__link header__link--current">마이페이지</a>
-            <a href="#" class="header__link">부가서비스</a>
-            <a href="#" class="header__link">모바일탑승권</a>
+    <div id="header" class="header">
+      <header class="header__inner mobile-only">
+        <button class="header__button">
+          <span class="hidden">이전으로</span>
+        </button>
+        <h2 class="header__page-name">나의 이벤트</h2>
+
+        <div class="header__button-wrap" data-element="gnbToggle">
+          <button type="button" class="gnb__button">
+            <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky" />
+          </button>
+        </div>
+        <!-- 전체메뉴 --><!-- //전체메뉴 -->
+      </header>
+      <div class="header__util util pc-only">
+        <div class="util__inner">
+          <div class="util__benefit">
+            <a href="#" class="util__link">기업 우대</a>
+            <a href="#" class="util__link">여행사 우대</a>
           </div>
 
-          <div class="header__search-wrap header-search" data-custom-toggle="wrap">
-            <button type="button" class="header__button-ticket">
-              <span class="hidden">티켓보기</span>
+          <div class="util__link-list" data-custom-toggle="wrap">
+            <!-- 로그인 이후 노출 -->
+            <span class="util__personal">
+              <a href="#"><span class="text">나의포인트</span> <strong class="point">15,000P</strong></a>
+            </span>
+            <!-- // 로그인 이후 노출 -->
+            <!-- 로그인 전 노출 -->
+            <a href="#" class="util__link">로그인</a>
+            <a href="#" class="util__link">회원가입</a>
+            <!-- // 로그인 전 노출 -->
+            <a href="#" class="util__link">리프레시 포인트</a>
+            <a href="#" class="util__link">이벤트</a>
+            <a href="#" class="util__link">고객센터</a>
+            <button type="button" class="util__country" data-custom-toggle="button">
+              <span class="text">대한민국</span>
             </button>
+            <div class="header-country__layer" data-custom-toggle="panel">
+              <div class="country__title">지역 및 언어 설정</div>
+              <div class="country__input">
+                <div data-element="select" class="select-wrap select-wrap--line">
+                  <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택" class="select-wrap__select" data-select-container=".country__input">
+                    <option></option>
+                    <option value="1" selected>대한민국</option>
+                    <option value="2">중국</option>
+                    <option value="3">일본</option>
+                  </select>
+                </div>
+                <div data-element="select" class="select-wrap select-wrap--line">
+                  <select data-element="select__select" data-placeholder="국적(여권)" title="국적 (여권) 선택" class="select-wrap__select" data-select-container=".country__input">
+                    <option></option>
+                    <option value="1" selected>한국어</option>
+                    <option value="2">중국어</option>
+                    <option value="3">일본어</option>
+                  </select>
+                </div>
 
-            <!-- <button type="button" class="header__button-search" data-custom-toggle="button">
+                <button class="country__button">확인</button>
+              </div>
+              <button class="button-close" data-custom-toggle="close">
+                <span class="hidden">닫기</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="header__inner pc-only">
+        <div class="sticky-header" data-sticky>
+          <div class="header__box">
+            <!-- header__box 추가 -->
+            <h1 class="header__logo">
+              <a href="#"><img src="../../assets/images/upload/logo_jeju_org.png" alt="JEJU air" /></a>
+            </h1>
+
+            <div class="header__link-list">
+              <a href="#" class="header__link">항공권 예매</a>
+              <a href="#" class="header__link header__link--current">마이페이지</a>
+              <a href="#" class="header__link">부가서비스</a>
+              <a href="#" class="header__link">모바일탑승권</a>
+            </div>
+
+            <div class="header__search-wrap header-search" data-custom-toggle="wrap">
+              <button type="button" class="header__button-ticket">
+                <span class="hidden">티켓보기</span>
+              </button>
+
+              <!-- <button type="button" class="header__button-search" data-custom-toggle="button">
               <img src="../../assets/images/icon/icon-header-search.png" alt="검색">
             </button>
             <div class="header-search__layer" data-custom-toggle="panel">
@@ -129,389 +123,380 @@
               <span class="hidden">검색창 닫기</span>
              </button>
             </div> -->
-
-          </div>
-          <div class="header__button-wrap" data-element="gnbToggle">
-            <button type="button" class="gnb__button">
-              <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky">
-            </button>
-          </div>
-        </div><!-- //header__box 추가 -->
-
-        <!-- 전체메뉴 --><!-- //전체메뉴 -->
-      </div>
-    </header>
-  </div>
-
-  <div id="body">
-    <div class="wrap wrap--no-pab GD">
-      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
-        <nav class="breadcrumb__inner">
-          <div class="breadcrumb__item">
-            <a href="#" class="breadcrumb__link">홈</a>
-          </div>
-          <div class="breadcrumb__item">
-            <a href="#" class="breadcrumb__link">마이페이지</a>
-          </div>
-          <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle"
-            data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>
-            <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor">나의 이벤트</button>
-            <div class="breadcrumb__siblings-list" data-element="toggle__panel">
-              <a href="#" class="item">회원 정보 수정</a>
-              <a href="#" class="item">예약 현황</a>
-              <a href="#" class="item">결제수단 관리</a>
-              <a href="#" class="item">나의 탑승 내역</a>
-              <a href="#" class="item">즐겨찾기</a>
-              <a href="#" class="item">친구 관리</a>
-              <a href="#" class="item">나의 쿠폰함</a>
-              <a href="#" class="item">나의 J PASS</a>
-              <a href="#" class="item">나의 기프티켓</a>
-              <a href="#" class="item">나의 JJ 라운지 이용권</a>
-              <a href="#" class="item">나의 프리패스</a>
             </div>
-          </div>
-        </nav>
-      </div>
-      <div class="content" id="content">
-        <main id="main" class="main">
-
-          <!-- 2022-08 김하나 추가 -->
-          <div class="page-title-wrap">
-            <div class="page-title">나의 이벤트</div>
-            <div class="page-sub-title">제주항공 이벤트로 <br class="mobile-only">더 많은 혜택을 챙기세요!</div>
-          </div>
-
-          <div class="sub-section">
-            <div class="gray-box pc-search pc-search--flex pc-search--number">
-              <div class="input-wrap input--line">
-                <div class="input-row input-row--number">
-                  <label for="inputNumber" class="input__label">기간선택</label>
-                  <div data-element="form" class="input input--number">
-                    <button type="button" data-element="number__button" data-type="decrease" aria-label="빼기"
-                      class="input__number input__number-minus"></button>
-                    <input type="text" id="inputNumber" data-element="number__input" value="3" data-max="12" data-min="1"
-                      data-string-number="" class="input__number" disabled>
-                    <span class="text">개월</span>
-                    <button type="button" data-element="number__button" data-type="increase" aria-label="더하기"
-                      class="input__number input__number-plus"></button>
-                  </div>
-                </div>
-                <div class="input-row input-row--label">
-                  <!-- <div class="input-label mobile-only">직접입력</div> -->
-                  <div class="input-item">
-                    <!-- 에러메세지 있을 경우 input--error class 추가-->
-                    <div class="input-box label-active">
-                      <label class="input__label">날짜선택</label>
-                      <button type="button" class="picker picker--button is-select" data-element="modal_anchor" data-modal-type="datepicker" data-target="">
-                        2021.02.05(금) ~ 2021.05.04(화)
-                      </button><!-- default : 오늘날짜 기준 이전 3개월 노출-->
-                    </div>
-                    <!-- <p class="input__sub-text">최근 6개월만 조회할 수 있습니다.</p> -->
-                    <p tabindex="0" class="input__error">에러메세지</p>
-                  </div>
-                </div>
-              </div>
-              <div class="button-wrap button-wrap--center">
-                <button type="button" class="button button--optional"><span
-                    class="button__text">조회</span></button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 조회결과 있을 경우 -->
-          <div class="section-wrap">
-            <div class="search-result">
-              <div class="search-result__header">
-                <span class="search-result__total search-result__total--right">총 <strong>3</strong>건</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="event-detail__results in-mypage pb0">
-            <div class="event-detail__results-item">
-              <div class="event-result-card">
-                <div class="event-result-header">
-                  <div class="event-result-name">리프레시 포인트</div>
-                </div>
-                <div class="event-result-body">
-                  <div class="inner">
-                    <i class="icon-event-result-point"></i>
-                    <div class="event-result-info">
-                      <div class="date">당첨일 <span>2020.10.11</span></div>
-                      <div class="desc">즉시적립</div>
-                      <div class="gift"><strong>100,000P</strong></div>
-                    </div>
-                  </div>
-                  <div class="event-result-title">
-                    <a href="#none">
-                      <span>이벤트 이름 이벤트 이름 이벤트 이름이벤트 이름 이벤트 이름 이벤트 이름 이벤트 이···</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="event-detail__results-item">
-              <div class="event-result-card">
-                <div class="event-result-header">
-                  <div class="event-result-name">쿠폰 이름</div>
-                </div>
-                <div class="event-result-body">
-                  <div class="inner">
-                    <i class="icon-event-result-coupon"></i>
-                    <div class="event-result-info">
-                      <div class="date">당첨일 <span>2020.10.11</span></div>
-                      <div class="desc">1장</div>
-                      <div class="gift"><a href="javascript:;">쿠폰 번호 보기</a></div>
-                    </div>
-                  </div>
-                  <div class="event-result-title">
-                    <a href="#none">
-                      <span>이벤트 이름 이벤트 이름</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="event-detail__results-item">
-              <div class="event-result-card">
-                <div class="event-result-header">
-                  <div class="event-result-name">기프티켓 이름</div>
-                </div>
-                <div class="event-result-body">
-                  <div class="inner">
-                    <i class="icon-event-result-gift-ticket"></i>
-                    <div class="event-result-info">
-                      <div class="date">당첨일 <span>2020.10.11</span></div>
-                      <div class="desc">1장</div>
-                      <div class="gift"><a href="javascript:;">기프티켓 PIN 보기</a></div>
-                    </div>
-                  </div>
-                  <div class="event-result-title">
-                    <a href="#none">
-                      <span>이벤트 이름 이벤트 이름 이벤트 이름이벤트 이름 이벤트 이름 이벤트 이름 이벤트 이···</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="event-detail__results-item">
-              <div class="event-result-card">
-                <div class="event-result-header">
-                  <div class="event-result-name">등록한 경품 이름</div>
-                </div>
-                <div class="event-result-body">
-                  <div class="inner">
-                    <i class="icon-event-result-gift"></i>
-                    <div class="event-result-info">
-                      <div class="date">당첨일 <span>2020.10.11</span></div>
-                    </div>
-                  </div>
-                  <div class="event-result-title">
-                    <a href="#none">
-                      <span>이벤트 이름 이벤트 이름 이벤트 이름이벤트 이름 이벤트 이름 이벤트 이름 이벤트 이···</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="event-detail__results-item">
-              <div class="event-result-card">
-                <div class="event-result-header">
-                  <div class="event-result-name">항공권 이름</div>
-                </div>
-                <div class="event-result-body">
-                  <div class="inner">
-                    <i class="icon-event-result-air-ticket"></i>
-                    <div class="event-result-info">
-                      <div class="date">당첨일 <span>2020.10.11</span></div>
-                      <div class="desc">1장</div>
-                      <div class="gift"><a href="javascript:;">항공권 코드 보기</a></div>
-                    </div>
-                  </div>
-                  <div class="event-result-title">
-                    <a href="#none">
-                      <span>이벤트 이름 이벤트 이름 이벤트 이름이벤트 이름 이벤트 이름 이벤트 이름 이벤트 이···</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="more-wrap">
-            <button type="button" class="more__button"><span class="more__button-text">더보기</span></button>
-          </div>
-          <!-- //조회결과 있을 경우 -->
-
-          <!-- 조회결과 없을 경우 -->
-          <div class="finish-item-wrap">
-            <div class="finish-item">
-              <div class="finish-item__img"><img src="../../assets/images/icon/icon-nodata-03.png" alt=""></div>
-              <p class="finish-item__title">이런! 아직 당첨된 상품이 없어요. :(</p><!--아이콘 변경-->
-            </div>
-          </div>
-          <!-- //조회결과 없을 경우 -->
-
-          <div class="section-wrap">
-            <div class="button-wrap button-wrap--center">
-              <button type="button" class="button button--secondary button--active">
-                <span class="button__text">이벤트 보러가기</span>
+            <div class="header__button-wrap" data-element="gnbToggle">
+              <button type="button" class="gnb__button">
+                <img src="../../assets/images/icon/icon-hamburger-header.png" alt="전체메뉴 열기" class="img_sticky" />
               </button>
             </div>
           </div>
+          <!-- //header__box 추가 -->
 
-          <div class="section-wrap">
-            <div class="notice-box">
-              <h5 class="section-sub-title">이벤트 당첨결과 안내</h5>
-              <p class="notice-box__text">이벤트 당첨 내역은 3년 간 유지됩니다.</p>
-              <p class="notice-box__text">조회 기한이 지난 후에는 이벤트 당첨 내역을 확인할 수 없습니다.</p>
+          <!-- 전체메뉴 --><!-- //전체메뉴 -->
+        </div>
+      </header>
+    </div>
+
+    <div id="body">
+      <div class="wrap wrap--no-pab GD">
+        <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
+          <nav class="breadcrumb__inner">
+            <div class="breadcrumb__item">
+              <a href="#" class="breadcrumb__link">홈</a>
             </div>
-          </div>
+            <div class="breadcrumb__item">
+              <a href="#" class="breadcrumb__link">마이페이지</a>
+            </div>
+            <div class="breadcrumb__item breadcrumb__item--current" aria-current="page" data-element="toggle" data-options='{"mode": "slide", "speed": 100, "clickToClose": true}'>
+              <button type="button" class="breadcrumb__link breadcrumb__link--list" data-element="toggle__anchor">나의 이벤트</button>
+              <div class="breadcrumb__siblings-list" data-element="toggle__panel">
+                <a href="#" class="item">회원 정보 수정</a>
+                <a href="#" class="item">예약 현황</a>
+                <a href="#" class="item">결제수단 관리</a>
+                <a href="#" class="item">나의 탑승 내역</a>
+                <a href="#" class="item">즐겨찾기</a>
+                <a href="#" class="item">친구 관리</a>
+                <a href="#" class="item">나의 쿠폰함</a>
+                <a href="#" class="item">나의 J PASS</a>
+                <a href="#" class="item">나의 기프티켓</a>
+                <a href="#" class="item">나의 JJ 라운지 이용권</a>
+                <a href="#" class="item">나의 프리패스</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="content" id="content">
+          <main id="main" class="main">
+            <!-- 2022-08 김하나 추가 -->
+            <div class="page-title-wrap">
+              <div class="page-title">나의 이벤트</div>
+              <div class="page-sub-title">제주항공 이벤트로 <br class="mobile-only" />더 많은 혜택을 챙기세요!</div>
+            </div>
 
-          <!-- datepicker -->
-          <div id="datepicker01" class="modal modal-full modal-full--picker">
-            <div class="modal-header">
-              <!-- <button class="header__button">
+            <div class="sub-section">
+              <div class="gray-box pc-search pc-search--flex pc-search--number">
+                <div class="input-wrap input--line">
+                  <div class="input-row input-row--number">
+                    <label for="inputNumber" class="input__label">기간선택</label>
+                    <div data-element="form" class="input input--number">
+                      <button type="button" data-element="number__button" data-type="decrease" aria-label="빼기" class="input__number input__number-minus"></button>
+                      <input type="text" id="inputNumber" data-element="number__input" value="3" data-max="12" data-min="1" data-string-number="" class="input__number" disabled />
+                      <span class="text">개월</span>
+                      <button type="button" data-element="number__button" data-type="increase" aria-label="더하기" class="input__number input__number-plus"></button>
+                    </div>
+                  </div>
+                  <div class="input-row input-row--label">
+                    <!-- <div class="input-label mobile-only">직접입력</div> -->
+                    <div class="input-item">
+                      <!-- 에러메세지 있을 경우 input--error class 추가-->
+                      <div class="input-box label-active">
+                        <label class="input__label">날짜선택</label>
+                        <button type="button" class="picker picker--button is-select" data-element="modal_anchor" data-modal-type="datepicker" data-target="">2021.02.05(금) ~ 2021.05.04(화)</button
+                        ><!-- default : 오늘날짜 기준 이전 3개월 노출-->
+                      </div>
+                      <!-- <p class="input__sub-text">최근 6개월만 조회할 수 있습니다.</p> -->
+                      <p tabindex="0" class="input__error">에러메세지</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-wrap button-wrap--center">
+                  <button type="button" class="button button--optional"><span class="button__text">조회</span></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 조회결과 있을 경우 -->
+            <div class="section-wrap">
+              <div class="search-result">
+                <div class="search-result__header">
+                  <span class="search-result__total search-result__total--right">총 <strong>3</strong>건</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="event-detail__results in-mypage pb0">
+              <div class="event-detail__results-item">
+                <div class="event-result-card">
+                  <div class="event-result-header">
+                    <div class="event-result-name">리프레시 포인트</div>
+                  </div>
+                  <div class="event-result-body">
+                    <div class="inner">
+                      <i class="icon-event-result-point"></i>
+                      <div class="event-result-info">
+                        <div class="date">당첨일 <span>2020.10.11</span></div>
+                        <div class="desc">즉시적립</div>
+                        <div class="gift"><strong>100,000P</strong></div>
+                      </div>
+                    </div>
+                    <div class="event-result-title">
+                      <a href="#none">
+                        <span>이벤트 이름 이벤트 이름 이벤트 이름이벤트 이름 이벤트 이름 이벤트 이름 이벤트 이···</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="event-detail__results-item">
+                <div class="event-result-card">
+                  <div class="event-result-header">
+                    <div class="event-result-name">쿠폰 이름</div>
+                  </div>
+                  <div class="event-result-body">
+                    <div class="inner">
+                      <i class="icon-event-result-coupon"></i>
+                      <div class="event-result-info">
+                        <div class="date">당첨일 <span>2020.10.11</span></div>
+                        <div class="desc">1장</div>
+                        <div class="gift"><a href="javascript:;">쿠폰 번호 보기</a></div>
+                      </div>
+                    </div>
+                    <div class="event-result-title">
+                      <a href="#none">
+                        <span>이벤트 이름 이벤트 이름</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="event-detail__results-item">
+                <div class="event-result-card">
+                  <div class="event-result-header">
+                    <div class="event-result-name">기프티켓 이름</div>
+                  </div>
+                  <div class="event-result-body">
+                    <div class="inner">
+                      <i class="icon-event-result-gift-ticket"></i>
+                      <div class="event-result-info">
+                        <div class="date">당첨일 <span>2020.10.11</span></div>
+                        <div class="desc">1장</div>
+                        <div class="gift"><a href="javascript:;">기프티켓 PIN 보기</a></div>
+                      </div>
+                    </div>
+                    <div class="event-result-title">
+                      <a href="#none">
+                        <span>이벤트 이름 이벤트 이름 이벤트 이름이벤트 이름 이벤트 이름 이벤트 이름 이벤트 이···</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="event-detail__results-item">
+                <div class="event-result-card">
+                  <div class="event-result-header">
+                    <div class="event-result-name">등록한 경품 이름</div>
+                  </div>
+                  <div class="event-result-body">
+                    <div class="inner">
+                      <i class="icon-event-result-gift"></i>
+                      <div class="event-result-info">
+                        <div class="date">당첨일 <span>2020.10.11</span></div>
+                      </div>
+                    </div>
+                    <div class="event-result-title">
+                      <a href="#none">
+                        <span>이벤트 이름 이벤트 이름 이벤트 이름이벤트 이름 이벤트 이름 이벤트 이름 이벤트 이···</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="event-detail__results-item">
+                <div class="event-result-card">
+                  <div class="event-result-header">
+                    <div class="event-result-name">항공권 이름</div>
+                  </div>
+                  <div class="event-result-body">
+                    <div class="inner">
+                      <i class="icon-event-result-air-ticket"></i>
+                      <div class="event-result-info">
+                        <div class="date">당첨일 <span>2020.10.11</span></div>
+                        <div class="desc">1장</div>
+                        <div class="gift"><a href="javascript:;">항공권 코드 보기</a></div>
+                      </div>
+                    </div>
+                    <div class="event-result-title">
+                      <a href="#none">
+                        <span>이벤트 이름 이벤트 이름 이벤트 이름이벤트 이름 이벤트 이름 이벤트 이름 이벤트 이···</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="more-wrap">
+              <button type="button" class="more__button"><span class="more__button-text">더보기</span></button>
+            </div>
+            <!-- //조회결과 있을 경우 -->
+
+            <!-- 조회결과 없을 경우 -->
+            <div class="finish-item-wrap">
+              <div class="finish-item">
+                <div class="finish-item__img"><img src="../../assets/images/icon/icon-result-check.svg" alt="" /></div>
+                <p class="finish-item__title">이런! 아직 당첨된 상품이 없어요. :(</p>
+                <!--아이콘 변경-->
+                <div class="container--large pc-40">
+                  <div class="button-wrap--center">
+                    <button type="button" class="button button--secondary button--active">
+                      <span class="button__text">이벤트 보러가기</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //조회결과 없을 경우 -->
+
+            <div class="section-wrap">
+              <div class="notice-box">
+                <h5 class="section-sub-title">이벤트 당첨결과 안내</h5>
+                <p class="notice-box__text">이벤트 당첨 내역은 3년 간 유지됩니다.</p>
+                <p class="notice-box__text">조회 기한이 지난 후에는 이벤트 당첨 내역을 확인할 수 없습니다.</p>
+              </div>
+            </div>
+
+            <!-- datepicker -->
+            <div id="datepicker01" class="modal modal-full modal-full--picker">
+              <div class="modal-header">
+                <!-- <button class="header__button">
                 <span class="hidden">이전으로</span>
               </button> -->
-              <h2 class="modal-header__title">조회 기간 입력</h2>
-              <!-- <div class="header__button-wrap">
+                <h2 class="modal-header__title">조회 기간 입력</h2>
+                <!-- <div class="header__button-wrap">
                 <button class="header__close">
                   <span class="blind">닫기</span>
                 </button>
               </div> -->
-            </div>
-
-            <div class="modal-content">
-              <div class="picker picker--full">
-                <input type="text" class="picker__input" id="selectBookingDate" data-picker="range"
-                  data-range-text='{"start": "시작일", "end": "종료일"}'>
               </div>
-              <div class="booking-button">
-                <button type="button" class="button button--primary button--active" data-select-date="#selectBookingDate">
-                  <span class="button__text">선택</span>
-                </button>
+
+              <div class="modal-content">
+                <div class="picker picker--full">
+                  <input type="text" class="picker__input" id="selectBookingDate" data-picker="range" data-range-text='{"start": "시작일", "end": "종료일"}' />
+                </div>
+                <div class="booking-button">
+                  <button type="button" class="button button--primary button--active" data-select-date="#selectBookingDate">
+                    <span class="button__text">선택</span>
+                  </button>
+                </div>
               </div>
+              <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
             </div>
-            <a href="#" rel="modal:close" class="modal__close"><span class="blind">닫기</span></a>
-          </div>
-          <!-- // datepicker -->
+            <!-- // datepicker -->
 
-          <!-- //2022-08 김하나 추가 -->
-
-        </main>
+            <!-- //2022-08 김하나 추가 -->
+          </main>
+        </div>
       </div>
     </div>
-  </div>
-  <!--//#body-->
+    <!--//#body-->
 
-  <!-- FOOTER -->
-  <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
-  <div class="footer pc-only">
-    <!-- pc -->
-    <footer class="footer__inner">
-      <div class="footer__top">
-        <div class="footer__top-item">
-          <a href="#" class="footer__top-link">제주항공 소개</a>
-        </div>
-        <div class="footer__top-item">
-          <a href="#" class="footer__top-link">투자정보</a>
-        </div>
-        <div class="footer__top-item">
-          <a href="#" class="footer__top-link">채용안내</a>
-        </div>
-        <div class="footer__top-item">
-          <a href="#" class="footer__top-link">여객운송약관</a>
-        </div>
-        <div class="footer__top-item">
-          <a href="#" class="footer__top-link">홈페이지이용약관</a>
-        </div>
-        <div class="footer__top-item footer__top-item--privacy">
-          <a href="#" class="footer__top-link">개인정보처리방침</a>
-        </div>
-        <div class="footer__top-item">
-          <a href="#" class="footer__top-link">사이트맵</a>
-        </div>
+    <!-- FOOTER -->
+    <!-- mobile footer는 대표 메인에서만 사용하므로 해당 페이지에 있음 -->
+    <div class="footer pc-only">
+      <!-- pc -->
+      <footer class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__top-item">
+            <a href="#" class="footer__top-link">제주항공 소개</a>
+          </div>
+          <div class="footer__top-item">
+            <a href="#" class="footer__top-link">투자정보</a>
+          </div>
+          <div class="footer__top-item">
+            <a href="#" class="footer__top-link">채용안내</a>
+          </div>
+          <div class="footer__top-item">
+            <a href="#" class="footer__top-link">여객운송약관</a>
+          </div>
+          <div class="footer__top-item">
+            <a href="#" class="footer__top-link">홈페이지이용약관</a>
+          </div>
+          <div class="footer__top-item footer__top-item--privacy">
+            <a href="#" class="footer__top-link">개인정보처리방침</a>
+          </div>
+          <div class="footer__top-item">
+            <a href="#" class="footer__top-link">사이트맵</a>
+          </div>
 
-        <div class="footer__top-item footer__top-item--family">
-          <div class="family-wrap" data-element="toggle"
-            data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
-            <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
-            <div class="family-list" data-element="toggle__panel">
-              <a href="#" class="family-link">㈜애경산업</a>
-              <a href="#" class="family-link">㈜에이텍</a>
-              <a href="#" class="family-link">애경S.T</a>
-              <a href="#" class="family-link">에이케이아이에스㈜</a>
+          <div class="footer__top-item footer__top-item--family">
+            <div class="family-wrap" data-element="toggle" data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+              <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
+              <div class="family-list" data-element="toggle__panel">
+                <a href="#" class="family-link">㈜애경산업</a>
+                <a href="#" class="family-link">㈜에이텍</a>
+                <a href="#" class="family-link">애경S.T</a>
+                <a href="#" class="family-link">에이케이아이에스㈜</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <hr class="footer__spacer">
+        <hr class="footer__spacer" />
 
-      <div class="footer__bottom">
-        <a href="#" class="footer__logo">
-          <img src="../../assets/images/upload/logo_jeju_gray.png" alt="JEJU air">
-        </a>
-        <div class="footer__bottom-contents">
-          <div class="footer__bottom-info">
-            <div class="info-item">
-              <a href="#" class="link">항공교통이용자 서비스 계획</a>
+        <div class="footer__bottom">
+          <a href="#" class="footer__logo">
+            <img src="../../assets/images/upload/logo_jeju_gray.png" alt="JEJU air" />
+          </a>
+          <div class="footer__bottom-contents">
+            <div class="footer__bottom-info">
+              <div class="info-item">
+                <a href="#" class="link">항공교통이용자 서비스 계획</a>
+              </div>
+              <div class="info-item">
+                <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+              </div>
+              <div class="info-item">
+                <a href="#" class="link">항공위험물안내</a>
+              </div>
             </div>
-            <div class="info-item">
-              <a href="#" class="link">항공교통이용자 피해구제 계획</a>
+            <div class="footer__bottom-recommand">
+              <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
+              <div class="recommand-list">
+                <div class="recommand-item">
+                  <a href="#" class="link">최저 운임 항공권</a>
+                </div>
+                <div class="recommand-item">
+                  <a href="#" class="link">서울 출발 항공권</a>
+                </div>
+                <div class="recommand-item">
+                  <a href="#" class="link">제주 출발 항공권</a>
+                </div>
+                <div class="recommand-item">
+                  <a href="#" class="link">부산 출발 항공권</a>
+                </div>
+                <div class="recommand-item">
+                  <a href="#" class="link">무안 출발 항공권</a>
+                </div>
+                <div class="recommand-item">
+                  <a href="#" class="link">청부 출발 항공권</a>
+                </div>
+                <div class="recommand-item">
+                  <a href="#" class="link">대구 출발 항공권</a>
+                </div>
+                <div class="recommand-item">
+                  <a href="#" class="link">광주 출발 항공</a>
+                </div>
+              </div>
             </div>
-            <div class="info-item">
-              <a href="#" class="link">항공위험물안내</a>
+            <div class="footer__bottom-util">
+              <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png" alt="VALUE ALLIANCE" /></a>
+              <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt="" /> IOS</a>
+              <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt="" /> Android</a>
             </div>
+            <p class="footer__bottom-address">
+              <span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br />
+              제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)
+            </p>
+            <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
           </div>
-          <div class="footer__bottom-recommand">
-            <h5 class="recommand-title">제주항공이 추천하는 최저가 여행</h5>
-            <div class="recommand-list">
-              <div class="recommand-item">
-                <a href="#" class="link">최저 운임 항공권</a>
-              </div>
-              <div class="recommand-item">
-                <a href="#" class="link">서울 출발 항공권</a>
-              </div>
-              <div class="recommand-item">
-                <a href="#" class="link">제주 출발 항공권</a>
-              </div>
-              <div class="recommand-item">
-                <a href="#" class="link">부산 출발 항공권</a>
-              </div>
-              <div class="recommand-item">
-                <a href="#" class="link">무안 출발 항공권</a>
-              </div>
-              <div class="recommand-item">
-                <a href="#" class="link">청부 출발 항공권</a>
-              </div>
-              <div class="recommand-item">
-                <a href="#" class="link">대구 출발 항공권</a>
-              </div>
-              <div class="recommand-item">
-                <a href="#" class="link">광주 출발 항공</a>
-              </div>
-            </div>
-          </div>
-          <div class="footer__bottom-util">
-            <a href="#" class="util-va"><img src="../../assets/images/icon/icon-value-alliance.png" alt="VALUE ALLIANCE"></a>
-            <a href="#" class="util-app-ios"><img src="../../assets/images/icon/icon-footer-app-ios.png" alt=""> IOS</a>
-            <a href="#" class="util-app-aos"><img src="../../assets/images/icon/icon-footer-app-aos.png" alt=""> Android</a>
-          </div>
-          <p class="footer__bottom-address"><span>사업자등록번호 : 616-81-50527</span><span>대표이사 : 김이배</span><br>
-            제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)</p>
-          <p class="footer__bottom-copy">Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
         </div>
-      </div>
-    </footer>
-    <!-- //pc -->
-  </div>
-  <!-- //FOOTER -->
+      </footer>
+      <!-- //pc -->
+    </div>
+    <!-- //FOOTER -->
 
-  <script src="../../assets/js/lib/lib.min.js"></script>
-  <script src="../../assets/js/plugin.js"></script>
-  <script src="../../assets/js/common.js"></script>
-</body>
-
+    <script src="../../assets/js/lib/lib.min.js"></script>
+    <script src="../../assets/js/plugin.js"></script>
+    <script src="../../assets/js/common.js"></script>
+  </body>
 </html>
