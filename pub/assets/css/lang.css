@@ -81,10 +81,12 @@
 
 
 @media (min-width: 1080px) {
+  /* :lang(ja) .main-ticketing .ticketing-row-bot .promotion .inp-txt {padding: 0px 0 0 176px} */
   :lang(ja) .footer__top-item { position: relative; font-size: 13px;} /* ja 갯수가 많아져서 13으로 줄임 */
   :lang(ja) .footer__top-item ~ .footer__top-item { margin-left:10px; padding-left:10px; } 
   :lang(ja) .flatpickr-day.inRange.mon::after {content: '';position: absolute;top:15px;left:0;z-index: -1; transform: translateY(-50%); height: 30px; width: 110%; background: #f2f2f2;}
   :lang(ja) .flatpickr-day.inRange.sun:after{content: ''; position: absolute; top: 0; right: -4px; left: -4px; z-index: -1; height: 30px; width: auto; background: #f2f2f2;transform: none;}
+  /* :lang(ja) .picker--button {padding:0 0px 0 10px; letter-spacing: -.5px; font-size:13px !important;} */ /*#1271286578 : 삭제 */
   :lang(ja) .flatpickr-day.endRange.sun:after {left: -8px;width: 80%; left:-10px;}
   :lang(ja) .flatpickr-day.endRange.mon:after {left: -10px; width: 50%;}
 }

@@ -413,6 +413,8 @@ html {overflow-x: hidden;}
 .flight-schedule .schedule__hot-deal:before { content: ""; width: 16px; height: 16px; margin-right: 6px; background: url(../images/icon/icon-time-sale-clock.png) 0 0 no-repeat; background-size: 100% auto;}
 .flight-schedule__no-result { padding-top: 80px; text-align: center;}
 .flight-schedule__no-result:before { content: ""; display: block; width: 72px; height: 72px; margin: 0 auto; background: url(../images/icon/icon-nodata-02.png) 0 0 no-repeat; background-size: 100% auto;}
+/* 잔망루피 23년 5월 경 삭제 (국내만 적용) */
+:lang(ko) .flight-schedule__no-result:before { background: none; }
 .flight-schedule__no-result .no-result__title { margin-top: 25px; font-size: 18px; line-height: 1.44; font-weight: 800;}
 .flight-schedule__no-result .no-result__text { margin-top: 15px; font-size: 14px; font-weight: 700;}
 .flight-schedule__no-result .button-wrap { margin-top: 30px; -ms-flex-pack: center; justify-content: center;}
@@ -872,6 +874,8 @@ html {overflow-x: hidden;}
 .boarding--main.boarding--nodata .boarding__contents { height: 176px;}
 .boarding--main.boarding--nodata .nodata { display: block; background: #fff; text-align: center;}
 .boarding--main.boarding--nodata .nodata .icon { display: inline-block; width: 56px; height: 56px; margin: 25px 0 5px; background: url(../images/icon/icon-nodata-03.png) no-repeat 0 0; background-size: 100% auto;}
+/* 잔망루피 23년 5월 경 삭제 (국내만 적용) */
+:lang(ko) .boarding--main.boarding--nodata .nodata .icon { background: none; }
 .boarding--main.boarding--nodata .nodata .title__section { display: block; margin-top: 0; text-align: center;}
 .boarding--main.boarding--nodata .nodata .title__additional {margin-top: 5px;}
 .boarding--line { box-shadow: none; margin-bottom: 0;}
@@ -2497,9 +2501,9 @@ html {overflow-x: hidden;}
 .event-cupon-wrap .event-cupon-price .sub-small:first-child {margin-left: 0;}
 .event-cupon-wrap .event-cupon-txt { width: calc(100% - 106px); margin-left: 4px; color: #888; font-size: 13px; line-height: 20px; position: absolute; bottom: 36px;}
 .event-cupon-wrap .event-cupon .badge { position: absolute; top: 10px; right: 10px; padding: 0 12px; font-weight: normal; font-size: 13px; line-height: 30px; background-color: #fff; border-radius: 15px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);}
-.event-cupon-wrap .event-cupon .badge.sale { color: #ff5000; }
-.event-cupon-wrap .event-cupon .badge.accumulate { color: #00a7e1; }
-.event-cupon-wrap .event-cupon .badge.service { color: #f9a11b; }
+.event-cupon-wrap .event-cupon .badge.sale { color: #ff5000;}
+.event-cupon-wrap .event-cupon .badge.accumulate { color: #00a7e1;}
+.event-cupon-wrap .event-cupon .badge.service { color: #f9a11b;}
 .event-cupon-wrap .event-cupon-bot { padding: 20px; color: #333; border-top: 1px solid #ddd;}
 .event-cupon-wrap .event-cupon-bot .list-item { font-weight: 400; font-size: 14px; line-height: 21px;}
 .event-cupon-wrap .event-cupon-bot .copy-coupon { width: 100%; margin-top: 15px; color: #666; font-weight: 700; font-size: 14px; line-height: 41px; text-align: center; border: 1px solid #ddd; border-radius:2px; }
@@ -4870,9 +4874,9 @@ html {overflow-x: hidden;}
 .main-modal-notice .swiper-slide-active { z-index: 1; }
 .main-modal-notice .swiper-container{margin-bottom:0}
 /*약관*/
-.agreement .row, .agreement h2, .agreement h3, .agreement li, .agreement span {color: #333333;}
+.agreement .row, .agreement h2, .agreement h3, .agreement li, .agreement span {color:#333333; line-height:1.6em; font-size: 14px; display: block;}
 .agreement h1 {font-weight: 700; padding:20px 0px 10px 0px; font-size: 20px;}
-.agreement h2 { padding:40px 0px 10px 0px; }
+.agreement h2 {font-weight: 700; padding:40px 0px 10px 0px; font-size: 16px;}
 .agreement h3 {padding:20px 0px 10px 0px}
 .agreement li {padding:0px 0px 10px 0px}
 .agreement li ul {padding-top:10px}
@@ -4946,6 +4950,8 @@ html {overflow-x: hidden;}
 /* 임직원 가입 완료 */
 .result-registered { padding: 30px 0 0;}
 .result-registered .registered-icon { width: 72px; height: 72px; margin: 0 auto; background: url(../images/icon/icon-check-completion.png) no-repeat 0 0; background-size: 100% auto;}
+/* 잔망루피 23년 5월 경 삭제 (국내만 적용) */
+:lang(ko) .result-registered .registered-icon { background: none; }
 .result-registered .registered__title { margin-top: 25px; font-weight: 900; font-size: 18px; line-height: 26px; text-align: center;}
 .result-registered .registered__text { margin-top: 10px; font-weight: 700; font-size: 14px; line-height: 22px; text-align: center;}
 .gray-box__toral .join-info__row .link-wrap { position: absolute; right: 0; top: 0px; margin-top: -3px;}

@@ -23,7 +23,7 @@
 .main-ticketing.flight-info { overflow: hidden; height: 0; }
 .main-ticketing .ticket-path { display: none; }
 .main-ticketing .ticketing-in { position: relative; padding: 20px 20px 30px; background: #fff; box-sizing: border-box; border-radius:8px; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12); }
-.main-ticketing .ticketing-type { overflow: hidden; margin-bottom: 22px; }
+.main-ticketing .ticketing-type { overflow: hidden; margin-bottom:23px; }
 .isPc .main-ticketing .ticketing-type { display: block !important; }
 .main-ticketing .ticketing-type .item { float: left; margin-right: 20px; }
 .main-ticketing .ticketing-type .item-btn { display: block; padding-bottom:4px; color: #888; font-weight: 700; font-size: 14px; }
@@ -33,17 +33,17 @@
 .main-ticketing .flight-layer { display:none; position:absolute; top:60px; left:0; right:0; background:#fff; box-shadow:0 0 8px 0 rgba(0, 0, 0, 0.16); border:0; z-index:101; border-radius:4px; }
 .main-ticketing .flight-layer:before { content:""; position:absolute; top:-7px; left:50%; margin-left:-6px; width:12px; height:12px; border:0; background:#fff;transform: rotate(45deg); box-shadow:0 0 7px 0 rgba(0, 0, 0, 0.16);  }
 .main-ticketing .flight-layer:after {content:""; position:absolute; top:0; left:130px;  width:30px; height:20px; background:#fff;  }
-.main-ticketing .flight-layer .layer-header { height: 80px; padding: 10px 30px; border-bottom:1px solid #f2f2f2; }
+.main-ticketing .flight-layer .layer-header { height:78px; padding:9px 40px 9px 12px; border-bottom:1px solid #ddd; }
+.main-ticketing .flight-layer .layer-header .header__input-wrap { padding-left:14px; }
 .main-ticketing .flight-layer .layer-header h2 { line-height:78px; font-size:18px; font-weight:700; }
-.main-ticketing .flight-layer .layer-header .header__input-search { margin:0 10px 0 0; }
-.main-ticketing .flight-layer .layer-header .header__input-wrap { padding: 0; }
+.main-ticketing .flight-layer .layer-header .header__input-search { margin:0 15px 0 0; }
 .main-ticketing .flight-layer .layer-header .header__button { display:none; }
 .main-ticketing .flight-layer.map .layer-header .header__input-search { display: none; }
 .main-ticketing .flight-layer .map-list-txt { display: none; color: #000; font-weight: bold; font-size: 18px; }
 .main-ticketing .flight-layer.map .map-list-txt { display: block; }
-.main-ticketing .flight-layer .header-sub { position: relative; height:100px; z-index:10; background: #fff; }
+.main-ticketing .flight-layer .header-sub { position:relative; height:100px; z-index:10; }
 .main-ticketing .flight-layer .header-sub .tab__buttons { padding: 0 4px; overflow: hidden; }
-.main-ticketing .flight-layer .layer-close { position:absolute; top: 25px; right: 28px; width: 26px; height: 26px; background:url(../images/icon/icon-close-full-popup.png) 0 0 no-repeat; background-size:100% auto; }
+.main-ticketing .flight-layer .layer-close { position:absolute; top:25px; right:25px; width:27px; height:27px; background:url(../images/icon/icon-close-full-popup.png) 0 0 no-repeat; background-size:26px; }
 .main-ticketing .flight-layer .predictive-search { position:absolute; top:77px; overflow-y: auto; scrollbar-arrow-color: #ddd; scrollbar-track-color: #fff; scrollbar-face-color: #ddd; scrollbar-3dlight-color: #fff; scrollbar-darkshadow-color: #fff; scrollbar-highlight-color: #fff; scrollbar-shadow-color: #fff; }
 .main-ticketing .flight-layer .predictive-search::-webkit-scrollbar { width: 6px; margin: 0 10px; } 
 .main-ticketing .flight-layer .predictive-search::-webkit-scrollbar-thumb { background: #ddd; border-radius: 6px; } 
@@ -56,14 +56,13 @@
 .main-ticketing .flight-layer .scrollbar-inner::-webkit-scrollbar-thumb { background:#ddd; border-radius:6px; }
 .main-ticketing .flight-layer .scrollbar-inner::-webkit-scrollbar-track { background:#fff; }
 .modal-full.modal__startArrive .modal-header .tab__buttons { position:absolute; top:60px; left:0; width:100%; padding:0 20px 0 20px; border-top:1px solid #f2f2f2; }
-.main-ticketing .flight-layer .header-sub .tab__buttons .tab__button { float: left; margin-top:20px; background:#fff; }
+.main-ticketing .flight-layer .header-sub .tab__buttons .tab__button { float:left; margin-top:25px; background:#fff; }
 .main-ticketing .flight-layer .header-sub .tab__buttons .tab__button:first-child .tab__anchor { padding-left:0; border-left:none; }
-.main-ticketing .flight-layer .header-sub .tab__buttons .tab__button .tab__anchor { position: relative; font-size:14px; color:#888; padding:0 20px; }
-.main-ticketing .flight-layer .header-sub .tab__buttons .tab__button .tab__anchor:before { content: ""; position: absolute; top: 50%; left: -1px; transform: translateY(-50%); width: 1px; height: 14px; background: #aaa; }
-.main-ticketing .flight-layer .header-sub .tab__buttons .tab__button:first-child .tab__anchor:before { display: none; }
+.main-ticketing .flight-layer .header-sub .tab__buttons .tab__button .tab__anchor { font-size:14px; color:#888; border-left:1px solid #ddd; padding:0 15px; line-height:17px; }
 .main-ticketing .flight-layer .header-sub .tab__buttons .tab__button .tab__anchor.is-active { color:#ff5000; }
 .main-ticketing .flight-layer .header-sub .tab__panel { position:absolute; width:100%; top:45px; left:0; right:0; padding:0; }
-.main-ticketing .flight-layer .header-sub .tab__panel .tag-list { margin: 20px 0; padding:0 30px; font-size: 0; }
+.main-ticketing .flight-layer .header-sub .tab__panel .tag-list { margin:14px 0 16px; padding:0 24px; font-size: 0; }
+.main-ticketing .flight-layer .header-sub .tag-list { min-height:37px; }
 .main-ticketing .flight-layer .main--destination-select .tab--vertical .vertical_scroll_set { min-width:234px; }
 .main-ticketing .flight-layer .main--destination-select .tab--vertical .tab__anchor { width:234px; padding-left:24px; }
 .main-ticketing .flight-layer.map .header__input-wrap .header__input { display: none; }
@@ -93,7 +92,9 @@
 .main-ticketing .flight-layer .city-name .sub { min-width: 161px; color: #aaa; font-weight: normal; font-size: 1em; }
 .main-ticketing .flight-layer .floating-button.btn-map { position: absolute; right:30px; bottom: 30px; }
 .main-ticketing .flight-layer .floating-button.btn-list { position: absolute; right: 60px; bottom: 106px; }
-.main-ticketing .flight-layer .tag-list__item--tag .tag-list__text { padding: 6px 34px 6px 12px; }
+/* .main-ticketing .flight-layer .choise:last-child { margin-bottom: 40px; } */
+.main-ticketing .flight-layer .tag-list__item--tag { height:32px; }
+.main-ticketing .flight-layer .tag-list__item--tag .tag-list__text { padding:3px 32px 3px 12px }
 
 
 .main-ticketing .date-layer { display:none; position:absolute; top:60px; left:0; right:0; background:#fff; box-shadow:0 0 8px 0 rgba(0, 0, 0, 0.16); border:0; z-index:101; border-radius:4px; }
@@ -106,7 +107,7 @@
 .main-ticketing .date-layer .layer-content .booking-button { position:relative; padding:20px 0 40px; margin-bottom:0; left:inherit; bottom:inherit; text-align:center; }
 .main-ticketing .date-layer .layer-close { position:absolute; top:25px; right:25px; width:27px; height:27px; background:url(../images/icon/icon-close-full-popup.png) 0 0 no-repeat; background-size:26px; }
 .main-ticketing .date-layer .flatpickr-rContainer { margin:0; padding:95px 73px 0; }
-.main-ticketing .date-layer .picker .info-wrap { position:relative; width:auto; margin:14px 52px -43px; }
+.main-ticketing .date-layer .picker .info-wrap { position:relative; width:auto; margin:17px 52px -43px; }
 .main-ticketing .date-layer .flatpickr-calendar .flatpickr-prev-month { left:57px; }
 .main-ticketing .date-layer .flatpickr-calendar .flatpickr-next-month { right:57px; }
 .main-ticketing .date-layer.type2 { top:105px; max-width:955px; }
@@ -142,22 +143,24 @@
 .main-ticketing .customer-layer { top: 80px; }
 .main-ticketing .customer-layer:before:before { right: 50px; }
 
+.main-ticketing .ticketing-row-top { height:50px; }
 .main-ticketing .ticketing-row-hidden + .ticketing-row-top { margin-top: 20px; }
-.isPc .main-ticketing .ticketing-row-top { display: block; overflow: hidden; }
+.isPc .main-ticketing .ticketing-row-top { display: block; }
 .isPc .main-ticketing .ticketing-row-top.route2 { display: none; }
 .main-ticketing .ticketing-row-top.multi { display: none; }
 .main-ticketing.multi .ticketing-row-top.multi { display: block; }
 .main-ticketing.open .ticketing-row-top.route2 { display: block; }
-.main-ticketing .ticketing-target { display: flex;  flex-wrap: wrap; justify-content: space-between; float: left; width: 664px; }
+.main-ticketing .ticketing-target { display: flex;  flex-wrap: wrap; justify-content: space-between; float: left; width: 636px; padding-top:6px  }
+.main-ticketing .ticketing-target .start { position: relative; order: 1; width: 290px; height:44px; border-bottom: 1px solid #ddd; box-sizing: border-box; }
+.main-ticketing .ticketing-target .target { position: relative; order: 3; width: 290px; height:44px; border-bottom: 1px solid #ddd; box-sizing: border-box; }
 .main-ticketing .ticketing-target .js-target-pick:after { content: ''; position: absolute; bottom: -1px; left: 0; width: 0; height: 1px; background: #333; transition: .3s; }
 .main-ticketing .ticketing-target .js-target-pick.on:after { width: 100%; }
-.main-ticketing .ticketing-target .start { position: relative; order: 1; width: 290px; height: 50px; border-bottom: 1px solid #ddd; box-sizing: border-box; }
-.main-ticketing .ticketing-target .start .txt { text-align: left; }
-.main-ticketing .ticketing-target .target { position: relative; order: 3; width: 290px; height: 50px; border-bottom: 1px solid #ddd; box-sizing: border-box; }
-.main-ticketing .ticketing-target .target .txt { text-align: right; }
-.main-ticketing .ticketing-target .txt { display: block; padding: 10px 0; color: #000; font-weight:800; font-size: 24px; height: 50px; line-height: 30px; text-align: center; }
+.main-ticketing .ticketing-target .txt { display: block; padding-bottom:7px; color: #000; font-weight:800; font-size: 24px; line-height: 34px; text-align: center; }
 .main-ticketing .ticketing-target .txt.before-select { color: #aaa; }
-.main-ticketing .ticketing-target .btn-open { position: relative; order: 2; width: 36px; height: 36px; margin-top: 11px; }
+.main-ticketing .ticketing-target .start .txt { text-align: left; }
+.main-ticketing .ticketing-target .target .txt { text-align: right; }
+.main-ticketing .ticketing-target .btn-open { position: relative; order: 2; width: 36px; height: 36px; }
+/* .main-ticketing .ticketing-target .btn-open img { height:100%; width:auto; } */
 .main-ticketing .ticketing-target .btn-open:before { content: ''; position: absolute; top: 0; left: 0; width: 36px; height: 36px; background-repeat: no-repeat; background-position: 0 -88px; background-image: url(../images/ticketing/reserve_step1_icon.png); background-size: 605px; }
 .main-ticketing .ticketing-target .btn-open:hover:before { background-position: -122px -88px; }
 .main-ticketing .ticketing-target .btn-open.single:before { background-position: -61px -88px;}
@@ -170,20 +173,20 @@
 .main-ticketing.one-way .ticketing-target .btn-open.single:before,
 .main-ticketing.multi .ticketing-target .btn-open.single:before
  { background-position: 0 -72px;}
-.main-ticketing .ticketing-date { float: left; width: 280px; height: 50px; margin-left: 20px; padding: 13px 0; border-bottom: 1px solid #ddd; box-sizing: border-box; }
-.main-ticketing .ticketing-date .btn-date { position: relative; width: 100%; padding: 8px 0; text-align: left; }
+.main-ticketing .ticketing-date { float: left; width: 300px; height:50px; margin-left: 28px; border-bottom: 1px solid #ddd; box-sizing: border-box; }
+.main-ticketing .ticketing-date .btn-date { position: relative; width: 100%; height:50px; text-align: left; }
 .main-ticketing .ticketing-date .btn-date:after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background: #333; transition: .3s; }
 .main-ticketing .ticketing-date .btn-date.on:after { width: 100%; }
-.main-ticketing .ticketing-date .txt { position: relative; padding-left: 30px; font-weight: 700; font-size: 14px; }
-.main-ticketing .ticketing-date .txt:before { content:''; position: absolute; top: 50%; left:0; width: 21px; height: 21px; margin-top: -11px; background:url(../images/icon/icon-calendar-black.png) 0 0 no-repeat; background-size: 100% auto; }
-.main-ticketing .ticketing-date .txt em { color: #888; }
+.main-ticketing .ticketing-date .txt { display: inline-block; position: relative; padding-left:34px; padding-top:1px; height:20px; line-height:20px; font-weight: 700; font-size: 14px; vertical-align: top; }
+.main-ticketing .ticketing-date .txt:before { content: ''; position: absolute; top:2px; left: 4px; width: 20px; height: 20px; background-repeat: no-repeat; background-position: 0 -201px; background-image: url(../images/ticketing/reserve_step1_icon.png); background-size: 605px; }
+.main-ticketing .ticketing-date .txt em { color: #aaa; }
 .main-ticketing .ticketing-date .is-select .txt { color:#000; font-size:14px;}
 .main-ticketing .ticketing-people { float: left; width: 290px; height: 50px; border-bottom: 1px solid #ddd; box-sizing: border-box; }
 .main-ticketing .ticketing-people .btn-passengers { position: relative; width: 100%; height: 49px; }
 .main-ticketing .ticketing-people .btn-passengers:after { content: ''; position: absolute; bottom: -1px; left: 0; width: 0; height: 1px; background: #333; transition: .3s; }
 .main-ticketing .ticketing-people .btn-passengers.on:after { width: 100%; }
 
-.main-ticketing .ticketing-people .txt { display: block; position: relative; padding-left: 30px; height:20px;  font-weight: 700; font-size: 14px; line-height: 20px; text-align: left; }
+.main-ticketing .ticketing-people .txt { display: block; position: relative; padding-left: 34px; height:20px;  font-weight: 700; font-size: 14px; line-height: 20px; text-align: left; }
 .main-ticketing .ticketing-people .txt:before { content: ''; position: absolute; top: 0; left: 4px; width: 20px; height: 20px; background-repeat: no-repeat; background-position: -46px -200px; background-image: url(../images/ticketing/reserve_step1_icon.png); background-size: 605px; }
 .main-ticketing .ticketing-row-top .btn-wish { position: relative; float: right; width: 20px; height: 20px; margin-top: 10px; }
 .main-ticketing .ticketing-row-top .btn-wish:before { content: ''; position: absolute; top: 0; left: 0; width: 20px; height: 20px; background-repeat: no-repeat; background-image: url(../images/ticketing/icon_wish.png); background-size: 20px; }
@@ -347,8 +350,8 @@
 .wrap--main .promotion-list .swiper-container { overflow:hidden; margin-left:4px}
 .wrap--main .promotion-list .swiper-container .swiper-slide { display:block; margin:2px 6px; min-width:239px; /*height:310px;*/ }
 .wrap--main .promotion-list .swiper-container .carousel_bg { width:238px; height:238px; margin:0 auto; border-radius:50%; overflow:hidden; background-repeat: no-repeat; background-size: cover; background-position: 50%; }
-.wrap--main .promotion-list .carousel__button-prev2 { display: none; position:absolute; top:154px; left:-30px; width:60px; height:60px; background:url(../images/arrow/arrow_circle_white_left.png) 0 0 no-repeat; background-size: 60px auto; z-index:2; }
-.wrap--main .promotion-list .carousel__button-next2 { display: none; position:absolute; top:154px; right:-30px; width:60px; height:60px; background:url(../images/arrow/arrow_circle_white_right.png) 0 0 no-repeat; background-size: 60px auto; z-index:2; }
+.wrap--main .promotion-list .carousel__button-prev2 { display: none; position:absolute; top:154px; left:-30px; width:60px; height:60px; background:url(../images/main/arrow_carousel_prev_02.png) 0 0 no-repeat; z-index:2; }
+.wrap--main .promotion-list .carousel__button-next2 { display: none; position:absolute; top:154px; right:-30px; width:60px; height:60px; background:url(../images/main/arrow_carousel_next_02.png) 0 0 no-repeat; z-index:2; }
 .wrap--main .promotion-list .carousel__button-prev2.show { display: block; }
 .wrap--main .promotion-list .carousel__button-next2.show { display: block; }
 
@@ -423,13 +426,16 @@
 .main-banner__text--white .banner-text,
 .main-banner__text--white .banner-title { color:#fff; }
 .main-banner.tour .main-banner__text { top:35px; }
-.main-banner .main-banner-next { position: absolute; top: 50%; right: 0; z-index: 1; transform: translateY(-50%); width: 24px; height: 20px; background: url(../images/arrow/icon-rolling-next.png) center left no-repeat; background-size: 8px auto; }
-.main-banner .main-banner-prev { position: absolute; top: 50%; left: 0; z-index: 1; transform: translateY(-50%); width: 24px; height: 20px; background: url(../images/arrow/icon-rolling-prev.png) center right no-repeat; background-size: 8px auto; }
+.main-banner .main-banner-next { display: none; position: absolute; top: 50%; right: 16px; z-index: 1; width: 38px; height: 38px; margin-top: -19px; background: url(../images/icon/icon_main_banner_next.png) 0 0/100%; }
+.main-banner .main-banner-prev { display: none; position: absolute; top: 50%; left: 16px; z-index: 1; width: 38px; height: 38px; margin-top: -19px; background: url(../images/icon/icon_main_banner_prev.png) 0 0/100%; }
+.main-banner:hover .swiper-container .main-banner-prev,
+.main-banner:hover .swiper-container .main-banner-next { display: block; }
+.main-banner:hover .swiper-container .swiper-button-disabled { opacity: 0.4; }
 .wrap--main .premium-service-wrap { margin:80px auto; }
 .wrap--main .premium-service-wrap > .title { margin:0 0 30px; }
 .wrap--main .premium-service { font-size:0; }
 .wrap--main .premium-service__wrapper { margin-top:15px; font-size:0; white-space:nowrap; }
-.wrap--main .premium-service__item { position:relative; display:inline-block; vertical-align:top; overflow:hidden; width:324px; flex-shrink: 0; }
+.wrap--main .premium-service__item { position:relative; display:inline-block; margin-left:16px; vertical-align:top; overflow:hidden; width:324px; }
 .wrap--main .premium-service__item:first-child { margin-left:0; }
 .wrap--main .premium-service__text { position:relative; margin-top:18px; text-align:left; }
 .wrap--main .premium-service__text .title { margin-top:0; font-size:18px; font-weight:700; color:#222; }
@@ -442,7 +448,7 @@
 .wrap--main .premium-service__button:after { content:""; position:absolute; bottom:0; left:50%; margin-left:-2px; width:4px; height:4px; border-radius:100%; }
 .wrap--main .premium-service__buttons { font-size:0; width:100%; padding:0 10px; }
 .wrap--main .premium-service__list { display:inline-block; margin:0 10px; }
-.wrap--main .premium-service__image { border-radius:5px; overflow:hidden; }
+.wrap--main .premium-service__image { width:324px; height:300px; border-radius:5px; overflow:hidden; }
 .wrap--main .premium-service__image > img { width:100%; height:100%; object-fit:cover; }
 
 .benefit-wrap { margin:80px auto; }
@@ -464,7 +470,7 @@
 .benefit-wrap .link-wrap--arrow .link-wrap__text span { white-space: nowrap; }
 .wrap--main .main-carousel__bg { width:100%; height:480px; background-size:cover; background-position:0% 100%; position: relative}
 .wrap--main .main-carousel__bg .inner { position:absolute; top:308px; left:20px; right:20px; height:210px; background-size:cover; background-position:50% 50%; 
-  border-radius:10px; object-fit:cover; /*box-shadow:0 5px 5px rgba(0,0,0,0.1);*/} /*1206*/
+  border-radius:8px; object-fit:cover; /*box-shadow:0 5px 5px rgba(0,0,0,0.1);*/} /*1206*/
 
 
 /*메인 스와이프*/
@@ -537,11 +543,10 @@
     .main-ticketing .flight-start { display: block; }
     .main-ticketing .flight-layer { position: fixed; top: 0; bottom: 0; left: 0; right: 0; border:0; border-radius:0; box-shadow:0; }
     .main-ticketing .flight-layer .layer-header { height: 60px; } 
-    .main-ticketing .flight-layer .layer-header { height: 60px; padding: 10px 20px; }
     .main-ticketing .flight-layer .layer-header .header__button { display:inline-block; }
     .main-ticketing .flight-layer .header__input-wrap { height: 42px; }
-    .main-ticketing .flight-layer .header__input { width: calc(100% - 50px); }
-    .main-ticketing .flight-layer .header__input-search { position: absolute; top: 7px; right: 30px; transform: translateY(0); }
+    .main-ticketing .flight-layer .header__input { width: calc(100% - 30px); }
+    .main-ticketing .flight-layer .header__input-search { position: absolute; top: 10px; right: 15px; transform: translateY(0); }
     .main-ticketing .flight-layer .header-sub { height: auto; }
     .main-ticketing .flight-layer .header-sub .tab__buttons:after { content: ''; display: block; clear: both; }
     .main-ticketing .flight-layer .header-sub .tab__buttons .tab__button { margin-top: 15px; }
@@ -552,7 +557,7 @@
     .main-ticketing .flight-layer .main--destination-select .tab--vertical { height:100% }
     .main-ticketing .flight-layer .main--destination-select .tab--vertical .vertical_scroll_set { width: 132px; min-width: auto; flex-shrink:0; }
     .main-ticketing .flight-layer .main--destination-select .tab--vertical .tab__anchor { width: 132px; padding-left: 20px; }
-    .main-ticketing .flight-layer .layer-close { top: 17px; right: 20px; }
+    .main-ticketing .flight-layer .layer-close { top: 17px; right: 25px; }
     .main-ticketing .flight-layer .txt-list { height: calc(100% - 60px) }
     .main-ticketing .flight-layer .map-list { height: calc(100% - 60px); }
     .main-ticketing .flight-layer .map-wrap { position: relative; height: 100%; }
@@ -607,6 +612,8 @@
     .main-ticketing .ticketing-row-bot .radio-wrap { display: flex; width: 100%; margin-top: 15px; }
     .main-ticketing .ticketing-row-top.route2 ~ .ticketing-row-bot .radio-wrap { justify-content:flex-start;   }
     .main-ticketing .ticketing-row-top.route2 ~ .ticketing-row-bot .radio-wrap .radio + .radio { margin-left:51px  }
+    /* .main-ticketing .ticketing-row-bot .payment .radio-wrap .radio__label .radio__ico:before { width:22px; height:22px; }
+    .main-ticketing .ticketing-row-bot .payment .radio-wrap .radio__label .radio__ico:after { top:6px; left:6px; } */
     .main-ticketing .ticketing-row-bot .promotion { display: block; width: 100%; margin: 16px 0 0 0; }
     .main-ticketing .ticketing-row-bot .promotion-top { display: block; padding:0 ; height:54px; }
     .main-ticketing .ticketing-row-bot .promotion-head { display: flex; flex-wrap: wrap; top:21px;}
@@ -624,7 +631,8 @@
     .main-ticketing .flight-layer .predictive-search { top:59px; }
     .main-ticketing .flight-layer .header-sub .tab__panel .tag-list { padding-left:20px; }
     .main-ticketing .flight-layer .header-sub .tab__buttons { padding-left:20px; }
-    .main-ticketing .flight-layer .layer-header .header__input-wrap { padding-left:6px; padding-right:80px;}
+    .main-ticketing .flight-layer .layer-header .header__input-wrap { padding-left:6px; padding-right:70px;}
+    /* .main-ticketing .flight-layer.flight-start .layer-header .header__input-wrap { padding-right:43px } */
     .main-ticketing .flight-layer .floating-button.btn-map { right:40px; bottom:40px; }
     .main-ticketing .customer-layer .header__button { display:block; }
     .main-ticketing .customer-layer .booking-trip .location { padding-top:0; font-size:14px; }
@@ -676,7 +684,9 @@
     .main-banner .main-banner-prev { display: none; }
     .wrap--main .premium-service-wrap { margin:50px -20px; }
     .wrap--main .premium-service-wrap > .title { margin:0 0 16px 20px; }
-    .wrap--main .premium-service { margin:0 20px 10px; }
+    .wrap--main .premium-service { padding:0 20px 10px; }
+    .wrap--main .premium-service__item { width:264px; min-width: 264px; }
+    .wrap--main .premium-service__image { width:264px; height:247px; }
     .wrap--main .premium-service__text { margin-top:16px; }
     .wrap--main .premium-service__text .title { font-size:14px; }
 

@@ -70,7 +70,7 @@ $(document).ready(function () {
     $('.roulette').attr('data-roulette-ended', false); //돌림판 색칠 삭제
     $('.roulette-start').attr('disabled', false); //START 활성
     $('.roulette-board').removeAttr('style'); //돌림판 재정렬
-    $('.bomb').removeClass('active'); //돌림판 재정렬
+    $('.bomb').removeClass('active'); //폭탄 이미지 리셋
   })
 });
 

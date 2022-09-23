@@ -416,7 +416,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
         if (plugin.options.linkedTab) {
           plugin.$panel = $(plugin.options.linkedTab).children(plugin.options.panel);
         } else {
-          plugin.$panel = plugin.$element.children(plugin.options.panel);
+          plugin.$panel = plugin.$element.find(plugin.options.panel);
         }
 
         plugin.$anchor.each(function (idx, el) {
@@ -1657,8 +1657,7 @@ $.fn.ticketing = function (type) {
     }
     else
     {
-      rowTop.next().find('.date-layer').show();      
-      //$('.isMobile').css('overflow', 'hidden') // 20211104 NA_1_2
+      rowTop.next().find('.date-layer').show();
     }
     console.log('curIdx', curIdx)
   });

@@ -748,13 +748,9 @@ var modalUI = function () {
         });
     } else if (bool === false) {
       modalContent[0].style.removeProperty('max-height');
-      var windowH = window.innerHeight;
-      var modalHeaderHeight = modalHeader.height();
-      var modalFixedHeight = modal.find('.fixed-wrap').height();
-      var modalBottomPadding = 40; // 팝업 컨텐츠 하단여백 고정 간격 40
-      var popupContentHeight = windowH - ( modalHeaderHeight + modalFixedHeight + modalBottomPadding ) // 팝업 구조상 스크린 전체 높이에서 헤더영역 + 하단고정버튼 + 하단여백하여 컨텐츠 영역 설정
+      var modalHeaderH = modalHeader.height();
       $('.modal-full .modal-content').css({
-        'height': popupContentHeight
+        'height': 'calc(100% - ' + modalHeaderH + 'px)',
       });
       // modalContent.css({
       //   'height': 'calc(100vh - ' + modalHeaderH + 'px)',
@@ -767,10 +763,7 @@ var modalUI = function () {
         var maxHeight = Math.floor(window.innerHeight * heightV);
         var contentSize = maxHeight - modalHeader[0].offsetHeight;
         if (modalBottom.length > 0) contentSize -= modalBottom[0].offsetHeight + 30;
-        modalContent.css({
-          'max-height': contentSize,
-          //'height': 'initial',
-        });
+        modalContent.css({ 'height': contentSize }); // 220317 탭 선택시 높이값 동일하게 맞추기 위해 max-height에서 height로 수정
       }
     }
   };
@@ -1565,13 +1558,48 @@ var uiCarousel = function () {
           });
           break;
         }
-
+	  case 'premiumList':
+		{
+			var premiumListSize = document.querySelector('[data-carousel="premiumList"] .swiper-wrapper').children.length // 프리미엄 서비스 배너 갯수
+			var isPc = $(dom).hasClass('premiumList-pc');
+			
+			if (isPc) {
+				if(premiumListSize > 3) {
+					carousel = new Swiper(dom, {
+	                slidesPerView: 3,
+	                observer: true,
+	                observeParents: true,
+	                navigation: {
+	                  nextEl: '.carousel__button-next3',
+	                  prevEl: '.carousel__button-prev3'
+	                },
+	                breakpoints:  {
+	                  1080: {
+	                    width: 224,
+	                    slidesPerView: 'auto',
+	                    centeredSlides: false
+	                  }
+	                },
+	                slidesOffsetBefore: 0,
+	                autoplay: false,
+	                loop: true,
+	              });
+				}
+				
+				if (premiumListSize > 3) {
+		            $('.carousel__button-next3, .carousel__button-prev3').addClass('show');
+		        } else {
+		            $('.carousel__button-next3, .carousel__button-prev3').removeClass('show');
+		        }
+			}
+			
+			break;	
+		}
       case 'recommendTicket':
         {
           // data-carousel="recommendTicket" 로 검색
           var recommTcktSize = document.querySelector('[data-carousel="recommendTicket"] .swiper-wrapper').children.length // 추천 항공권 갯수
           var isPc = $(dom).hasClass('recommendTicket-pc')
-
           // 추천항공 pc
           if(isPc) {
             if(recommTcktSize > 4) {
@@ -1809,33 +1837,13 @@ var uiCarousel = function () {
       case 'fullItem':
         {
           // data-carousel="scrollItem" 로 검색
-          var items = $(dom).find('.main-carousel__item.swiper-slide')
-          if(items.length > 1) {
-            var fullItem = new Swiper(dom, {
-              spaceBetween: 30,
-              effect: 'fade',
-              observer: true,
-              observeParents: true,
-              pagination: {
-                el: '.carousel__pagination',
-                clickable: true
-              },
-              navigation: {
-                nextEl: '.carousel__button-next',
-                prevEl: '.carousel__button-prev'
-              },
-            });
-          } else {
-            $('[data-carousel="fullItem"] .carousel__pagination.swiper-pagination').hide() // hide pagination
+          var items = $(dom).find('.swiper-slide')
+          if(items.length < 2) {
+            $('[data-carousel="fullItem"] .carousel__pagination').hide() // hide pagination
+            $('[data-carousel="fullItem"] .carousel__button-next, [data-carousel="fullItem"] .carousel__button-prev').hide() // hide navigation
           }
-          break;
-        }
 
-      case 'fullItemAuto':
-        {
-          // data-carousel="scrollItem" 로 검색
-          var fullItem = new Swiper('[data-carousel="fullItemAuto"]', {
-            loop: true,
+          var fullItem = new Swiper(dom, {
             spaceBetween: 30,
             effect: 'fade',
             observer: true,
@@ -1852,17 +1860,19 @@ var uiCarousel = function () {
               delay: 4000,
               disableOnInteraction: false,
             },
+            // autoplay: true,
+            // loop: true,
           });
+          
           break;
         }
 
-        // 텍스트 관리형 슬라이드 배너 (결제)
-        case 'PartialSlideBanner':
+      case 'fullItemAuto':
         {
-          var fullItem = new Swiper('[data-carousel="PartialSlideBanner"]', {
+          // data-carousel="scrollItem" 로 검색
+          var fullItem = new Swiper('[data-carousel="fullItemAuto"]', {
             spaceBetween: 30,
             effect: 'fade',
-            loop: true,
             observer: true,
             observeParents: true,
             pagination: {
@@ -2403,6 +2413,10 @@ var datepicker = function () {
 	if ($el.data('max-date')) {
       setting.maxDate = $el.data('max-date') || new Date();
     }
+	if ($el.data('air-max-date')) {
+		setting.maxDate = dUtil.termDate('D', 362, 'ymd', setting.minDate);
+		setting.maxDate = setting.maxDate.substring(0,4)+"-"+setting.maxDate.substring(4,6)+"-"+setting.maxDate.substring(6,8);
+    }
 
     pickerOptions = setting;
 
@@ -2686,7 +2700,128 @@ var datepicker = function () {
 		if(type ==='multi'){
 			$el = $el.eq(1)
 		}
+
       $el.each(function (i, elem) {
+        var $elem = $(elem);
+        var setting = $.extend({}, optionDefault, setDay); // locale set
+
+		setting.locale = $elem.data('locale') || 'ko';
+		//flatpickr 은 zh 로 들어가야함
+		setting.locale = setting.locale.substring(0,2);
+		setting.dateFormat = $elem.data('date-format') || setting.dateFormat;
+
+		if ($elem.data('ajax')) {
+          var ajaxData = getData($elem.data('ajax'));
+          var date = ajaxData === 'error' ? {} : setDate(ajaxData);
+          $.extend(setting, setPeriodText(), date);
+        } else {
+          var setPeriod = setPeriodText();
+          $.extend(setting, setPeriod);
+        } // if ($elem.data('defaultDate')) {
+		
+		// ja시 요일 별도 처리
+		if (setting.locale == 'ja') {
+			optionDefault.locale =  {
+		      weekdays: {
+		        shorthand: ["日", "月", "火", "水", "木", "金", "土"]
+		      }
+		    }
+		}
+
+        if ($elem.attr('data-defaultDate')) {
+          var dateDate = $elem.attr('data-defaultDate');
+			$.extend(setting, {
+            	defaultDate: dateDate
+			});
+        } // }
+        //화면 열릴때 초기화
+		if(type =='' || type=='Flight'){
+				var setPeriod = setPeriodText();
+		       	$.extend(setting, setPeriod);  
+		        setPicker(elem, setting);
+        }
+		if(useReset == '' || typeof(useReset) == "undefined"){
+		    pickerOptions.mode = $(elem).data('picker');
+		    var mon = $(elem).flatpickr(pickerOptions).currentMonth;
+        $(document).on('click', '[data-reset-date]', function (event) {
+          pickerOptions.mode = $(elem).data('picker'); 
+          $(elem).flatpickr(pickerOptions).clear();
+          $(elem).flatpickr(pickerOptions).changeMonth(0);
+        }); //20211008 에어소프트 수정
+		}
+      });
+    },
+    responsive: function responsive(device) {
+      if ($('[data-picker]').length) {
+        if (device === 'pc') {
+          pickerOptions.showMonths = 2;
+          $('[data-picker]').each(function (i, elem) {
+            pickerOptions.mode = $(elem).data('picker');
+            $(elem).flatpickr(pickerOptions).redraw();
+          });
+        } else {
+          pickerOptions.showMonths = 12;
+          $('[data-picker]').each(function (i, elem) {
+        	var tempDate = new Date();
+        	var getMonth = tempDate.getMonth();
+        	var getYear = tempDate.getFullYear();
+            $(elem).flatpickr(pickerOptions).redraw();
+            $(elem).flatpickr(pickerOptions).changeMonth(getMonth,false);
+            $(elem).flatpickr(pickerOptions).changeYear(getYear);
+          });
+        } 
+        // const text = calendarElem.data('text');
+        // if (text) {
+        //   const subText = `<span class="info">${text}</span>`;
+        //   $('.flatpickr-rContainer').prepend(subText);
+        // }
+      }
+    },
+    
+    // mobile화면에서 datepicker를 minDate부터 maxDate까지 표시하도록 변경
+    redrawShowMonthsFromMinDateToMaxDate: function redrawShowMonthsFromMinDateToMaxDate(device) {
+	if ($('[data-picker]').length) {
+        if (device === 'pc') {
+			pickerOptions.showMonths = 2;
+			$('[data-picker]').each(function (i, elem) {
+            	pickerOptions.mode = $(elem).data('picker');
+	            $(elem).flatpickr(pickerOptions).redraw();
+          	});
+        } else { 
+          var minDate = new Date(pickerOptions.minDate);
+          var maxDate = pickerOptions.maxDate === 'today' ? new Date() : new Date(pickerOptions.maxDate)
+          var period = getDifMonth(minDate, maxDate) + 1; // 표시할 기간
+          
+          var defaultDate;
+          if(pickerOptions.defaultDate) {
+            var defaultDateStr = pickerOptions.defaultDate.toString().replace(/[^0-9]/g,'')
+            defaultDate = new Date(defaultDateStr.substring(0,4), defaultDateStr.substring(4,6) - 1, defaultDateStr.substring(6,8));
+          } else {
+            defaultDate = new Date();
+          }
+          var changeMonth = getDifMonthRound(minDate, defaultDate); // 기본달에서 앞으로 이동할 달
+
+          pickerOptions.showMonths = period;
+          $('[data-picker]').each(function (i, elem) {
+            $(elem).flatpickr(pickerOptions).redraw();
+            $(elem).flatpickr(pickerOptions).changeMonth(-changeMonth);
+          });
+        }
+      }
+    },
+
+	initPointDatepicker: function initPointDatepicker(el , type , useReset) { // 211224 포인트조회 페이지 날짜 선택의 datepicker init
+      var $el = $(el);	
+		if(type !='multi'){
+			$el = $el.eq(0)
+		}
+		if(type ==='multi'){
+			$el = $el.eq(1)
+		}
+		
+		var $selectDate = $el.find('[id=selectDate]').prevObject.prevObject;
+		
+      $selectDate.each(function (i, elem) {
         var $elem = $(elem);
         var setting = $.extend({}, optionDefault, setDay); // locale set
 
@@ -2724,63 +2859,10 @@ var datepicker = function () {
           pickerOptions.mode = $(elem).data('picker'); 
           $(elem).flatpickr(pickerOptions).clear();
           $(elem).flatpickr(pickerOptions).changeMonth(0);
-        }); //20211008 에어소프트 수정
+        }); 
 		}
       });
     },
-    responsive: function responsive(device) {
-      if ($('[data-picker]').length) {
-        if (device === 'pc') {
-          pickerOptions.showMonths = 2;
-          $('[data-picker]').each(function (i, elem) {
-            pickerOptions.mode = $(elem).data('picker');
-            $(elem).flatpickr(pickerOptions).redraw();
-          });
-        } else {
-          pickerOptions.showMonths = 12;
-          $('[data-picker]').each(function (i, elem) {
-            $(elem).flatpickr(pickerOptions).redraw();
-          });
-        } 
-        // const text = calendarElem.data('text');
-        // if (text) {
-        //   const subText = `<span class="info">${text}</span>`;
-        //   $('.flatpickr-rContainer').prepend(subText);
-        // }
-      }
-    },
-    
-    // mobile화면에서 datepicker를 minDate부터 maxDate까지 표시하도록 변경
-    redrawShowMonthsFromMinDateToMaxDate: function redrawShowMonthsFromMinDateToMaxDate(device) {
-	if ($('[data-picker]').length) {
-        if (device === 'pc') {
-			pickerOptions.showMonths = 2;
-			$('[data-picker]').each(function (i, elem) {
-            	pickerOptions.mode = $(elem).data('picker');
-	            $(elem).flatpickr(pickerOptions).redraw();
-          	});
-        } else { 
-          var minDate = new Date(pickerOptions.minDate);
-          var maxDate = pickerOptions.maxDate === 'today' ? new Date() : new Date(pickerOptions.maxDate)
-          var period = getDifMonth(minDate, maxDate) + 1; // 표시할 기간
-          
-          var defaultDate;
-          if(pickerOptions.defaultDate) {
-            var defaultDateStr = pickerOptions.defaultDate.toString().replace(/[^0-9]/g,'')
-            defaultDate = new Date(defaultDateStr.substring(0,4), defaultDateStr.substring(4,6) - 1, defaultDateStr.substring(6,8));
-          } else {
-            defaultDate = new Date();
-          }
-          var changeMonth = getDifMonth(minDate, defaultDate); // 기본달에서 앞으로 이동할 달
-
-          pickerOptions.showMonths = period;
-          $('[data-picker]').each(function (i, elem) {
-            $(elem).flatpickr(pickerOptions).redraw();
-            $(elem).flatpickr(pickerOptions).changeMonth(-changeMonth);
-          });
-        }
-      }
-    }
   };
 }(); 
 
@@ -4378,9 +4460,9 @@ function labelActAfterModalClose (labelInpBox) {
 
 // 데이트피커 표시 날짜 변경
 function datePickerDefaultDateSet (selectorId, defDate) {
-  $("#" + selectorId).flatpickr().destroy();
-  $("#" + selectorId).attr('data-default-date', defDate);
-  datepicker.init('[data-picker]');
+	$("#" + selectorId).flatpickr().destroy();
+	$("#" + selectorId).attr('data-default-date', defDate);
+	datepicker.initPointDatepicker('[data-picker]');
 }
 
 // 퀵부킹 모바일 달력 스크롤
@@ -4442,6 +4524,14 @@ function getDifMonth(fromDate, toDate) {
   var cDay = 24 * 60 * 60 * 1000; // 시 * 분 * 초 * 밀리세컨
   var cMonth = cDay * 30;
   return parseInt(dif / cMonth);
+}
+
+//두 날짜 사이 월 차이 계산_반올림
+function getDifMonthRound(fromDate, toDate) {
+  var dif = toDate - fromDate;
+  var cDay = 24 * 60 * 60 * 1000; // 시 * 분 * 초 * 밀리세컨
+  var cMonth = cDay * 30;
+  return Math.round(dif / cMonth);
 }
 
 // 모바일화면에서 datepicker를 miDate부터 maxDate까지 표시하도록 변경
@@ -4631,26 +4721,38 @@ function getBrowserVersion() {
 	return version;
 }
 
-function getShortUrl(encData) {
+function getShortUrl(type, encData) {
+	let absoulteUrl = '';
+	
+	if (type === 'booking') {
+		absoulteUrl = '/ibe/booking/AvailSearch.do?availSearchData=';
+	} else if (type === 'mypage') {
+		absoulteUrl = '/ibe/mypage/viewOnOffReservationList.do?resvDetailData=';		
+	}
+	
 	$.ajax({
-			url: '../../ibe/booking/getShortUrl.json',
-			type: 'post',
-			beforeSend: function(request) {
-	            request.setRequestHeader('User-Id', JSON.parse(USER_INFO.get()).userId !== undefined ? JSON.parse(USER_INFO.get()).userId : '');
-				request.setRequestHeader('User-Name', JSON.parse(USER_INFO.get()).name !== undefined ? encodeURIComponent(JSON.parse(USER_INFO.get()).name) : '');			
-	        },
-			data: {
-				longUrl : window.location.origin + '/' + I18N.language + '/ibe/booking/AvailSearch.do?availSearchData=' + encData,
-				mbrId: JSON.parse(USER_INFO.get()).userId !== undefined ? JSON.parse(USER_INFO.get()).userId : 'SYSTEM'
-			},
-			success: function(data) {
-				if (data.code === '0000') {
-					$('.sns-share__link').val(window.location.origin + '/' + I18N.language + '/ibe/booking/' + data.data.shortUrl);
-					$('.sns-share__copy').attr('data-clipboard-text', window.location.origin + '/' + I18N.language + '/ibe/booking/' + data.data.shortUrl);
-				}
-			},
-			error: function(request, status, error) {
-				$.JJAlert('code: ' + request.status + ' message: ' + request.responseText);
+		async: false,
+		url: '../../ibe/booking/getShortUrl.json',
+		type: 'post',
+		beforeSend: function(request) {
+            request.setRequestHeader('User-Id', JSON.parse(USER_INFO.get()).userId !== undefined ? JSON.parse(USER_INFO.get()).userId : '');
+			request.setRequestHeader('User-Name', JSON.parse(USER_INFO.get()).name !== undefined ? encodeURIComponent(JSON.parse(USER_INFO.get()).name) : '');			
+        },
+		data: {
+			type: type,
+			longUrl : window.location.origin + '/' + I18N.language + absoulteUrl + encData,
+			mbrId: JSON.parse(USER_INFO.get()).userId !== undefined ? JSON.parse(USER_INFO.get()).userId : 'SYSTEM'
+		},
+		success: function(data) {
+			if (data.code === '0000') {
+				APP_DATA.shortUrl = window.location.origin + '/' + I18N.language + '/share/' + type + '/' + data.data.shortUrl;
+				
+				$('.sns-share__link').val(APP_DATA.shortUrl);
+				$('.sns-share__copy').attr('data-clipboard-text', APP_DATA.shortUrl);
 			}
-		});
+		},
+		error: function(request, status, error) {
+			$.JJAlert('code: ' + request.status + ' message: ' + request.responseText);
+		}
+	});
 }
