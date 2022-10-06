@@ -7,6 +7,7 @@ $orange: #ff5000;
 .flex-column{flex-direction: column !important;}
 .align-items-center {align-items: center !important;}
 .bt0{border-top: 0 !important;}
+.text-muted{color: #888 !important;}
 /* //front_global.css 추가 요망 */
 
 /* 이벤트 당첨 결과 */
@@ -238,6 +239,27 @@ $orange: #ff5000;
   .txt{flex: 1 1 auto;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;max-height: 3em;font-size: 16px;font-weight: 500;padding-right: 1rem;}
 }
 
+.sports-pop-box{
+  .icon-inner-box .icon-items .red-badge{border-radius: 2px;transform: translateY(7px);font-size: 12px !important;padding: 1px 7px 0px !important;}
+}
+
+.premium__sports-icon-size-5{justify-content: flex-start !important;}
+.premium__sports-icon-size-2{justify-content: center !important;}
+
+.NE{
+  .step-text--icon.sports{
+    .step-text__item{margin-bottom: 30px !important;}
+    .step-text__item:last-child{margin-bottom: 0 !important;}
+  }
+}
+
+.radio-wrap{
+  .radio.radio__block{display: block;
+    & + .radio__block{margin-top: 16px;margin-left: 0;}
+  }
+}
+.my-survice__label-label03,
+.anchor-list__label-label03{background: $orange !important;}
 
 /* responsive.css 추가 요망 */
 @media all and (min-width: 1080px) {
@@ -343,6 +365,22 @@ $orange: #ff5000;
 
   .is-jj-members{
     &::after{top: 40px;width: 137px;height: 137px;}
+  }
+
+  .main-nd{
+    .box-list__img .box-list__item, .ND .box-list__img .box-list__item{
+      width: 33.3333% !important;
+    }
+  }
+
+  .premium__sports-icon-size-5{justify-content: center !important;gap: 45px;}
+  .premium__sports-icon-size-2{justify-content: center !important;gap: 45px}
+
+  .NE{
+    .step-text--icon.sports{
+      align-items: center;
+      .step-text__item{flex: 1;margin-bottom: 0 !important;}
+    }
   }
 }
 /* //responsive.css 추가 요망 */

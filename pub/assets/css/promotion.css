@@ -8,6 +8,8 @@
 
 .bt0 { border-top: 0 !important; }
 
+.text-muted { color: #888 !important; }
+
 /* //front_global.css 추가 요망 */
 /* 이벤트 당첨 결과 */
 [class^=icon-event-result] { background-repeat: no-repeat; background-position: 0 0; width: 80px; height: 80px; background-size: contain; display: inline-block; }
@@ -218,6 +220,22 @@
 
 .jj-members-banner .txt { flex: 1 1 auto; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 3em; font-size: 16px; font-weight: 500; padding-right: 1rem; }
 
+.sports-pop-box .icon-inner-box .icon-items .red-badge { border-radius: 2px; transform: translateY(7px); font-size: 12px !important; padding: 1px 7px 0px !important; }
+
+.premium__sports-icon-size-5 { justify-content: flex-start !important; }
+
+.premium__sports-icon-size-2 { justify-content: center !important; }
+
+.NE .step-text--icon.sports .step-text__item { margin-bottom: 30px !important; }
+
+.NE .step-text--icon.sports .step-text__item:last-child { margin-bottom: 0 !important; }
+
+.radio-wrap .radio.radio__block { display: block; }
+
+.radio-wrap .radio.radio__block + .radio__block { margin-top: 16px; margin-left: 0; }
+
+.my-survice__label-label03, .anchor-list__label-label03 { background: #ff5000 !important; }
+
 /* responsive.css 추가 요망 */
 @media all and (min-width: 1080px) { .event-detail__results { margin: -10px; display: flex; flex-wrap: wrap; }
   .event-detail__results.in-mypage { padding-bottom: 0; margin-left: 0; margin-right: 0; display: block; }
@@ -254,7 +272,12 @@
   .list-product__item.type02 .list-product__info { float: none; width: auto; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; height: auto; }
   .list-product__item.type02 .list-bottom-wrap { display: flex; justify-content: space-between; align-items: flex-end; }
   .list-product__item.type02 .list-bottom-wrap .list-btns .button { margin-top: 0; }
-  .is-jj-members::after { top: 40px; width: 137px; height: 137px; } }
+  .is-jj-members::after { top: 40px; width: 137px; height: 137px; }
+  .main-nd .box-list__img .box-list__item, .main-nd .ND .box-list__img .box-list__item { width: 33.3333% !important; }
+  .premium__sports-icon-size-5 { justify-content: center !important; gap: 45px; }
+  .premium__sports-icon-size-2 { justify-content: center !important; gap: 45px; }
+  .NE .step-text--icon.sports { align-items: center; }
+  .NE .step-text--icon.sports .step-text__item { flex: 1; margin-bottom: 0 !important; } }
 
 /* //responsive.css 추가 요망 */
 /*# sourceMappingURL=promotion.css.map */

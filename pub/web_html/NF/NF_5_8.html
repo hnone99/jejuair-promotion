@@ -18,7 +18,6 @@
 </head>
 <body>
   <div id="skipNav" class="skip-nav">
-    <a href="#gnb" class="skip-nav__item">메뉴 바로가기</a>
     <a href="#content" class="skip-nav__item">본문 바로가기</a>
   </div>
 
@@ -27,7 +26,7 @@
       <button class="header__button">
         <span class="hidden">이전으로</span>
       </button>
-      <h2 class="header__page-name">수하물 안내</h2>
+      <h2 class="header__page-name">스포츠 수하물</h2>
 
       <div class="header__button-wrap" data-element="gnbToggle">
         <button type="button" class="gnb__button">
@@ -131,75 +130,44 @@
           </div>
         </div><!-- //header__box 추가 -->
 
-        <!-- 전체메뉴 --><!-- //전체메뉴 -->
+        <!-- 전체메뉴 --> <!-- //전체메뉴 -->
       </div>
     </header>
   </div>
 
   <div id="body">
-    <div class="wrap NF">
-      <div id="breadcrumb" class="breadcrumb pc-only" aria-label="breadcrumb">
-        <nav class="breadcrumb__inner">
-          <div class="breadcrumb__item">
-            <a href="#" class="breadcrumb__link">홈</a>
-          </div>
-          <div class="breadcrumb__item">
-            <a href="#" class="breadcrumb__link">탑승수속안내</a>
-          </div>
-          <div class="breadcrumb__item">
-            <a href="#" class="breadcrumb__link">수하물 안내</a>
-          </div>
-
-        </nav>
-      </div>
+    <div class="wrap wrap--no-pab NF_5_3 ">
       <div class="content" id="content">
         <main id="main" class="main">
 
           <div class="page-title-wrap">
-            <div class="page-title">수하물 안내</div>
-            <div class="page-sub-title">여행을 <br class="mobile-only">계획 중이신가요?</div>
-            <div class="page-title-add">여행을 준비하실 때 꼭 알아야 할 수하물 정보를 안내해 드리니 여행 전에 꼭 확인해 주세요.</div>
-          </div>
-
-
-          <div class="section-wrap">
-            <div class="section-title">휴대 수하물</div>
-            <div class="arrow-list arrow-list--box">
-              <a href="#" class="arrow-list__item">
-                <span class="arrow-list__text arrow-list__text--title">기내 수하물</span>
-              </a>
-            </div>
+            <div class="page-title">스포츠 수하물</div>
+            <div class="page-sub-title">스포츠 수하물 규정을 <br class="mobile-only">확인해 주세요.</div>
           </div>
 
           <div class="section-wrap">
-            <div class="section-title">위탁 수하물</div>
-            <div class="arrow-list arrow-list--box">
-              <a href="#" class="arrow-list__item">
-                <span class="arrow-list__text arrow-list__text--title">위탁 수하물</span>
-              </a>
-              <a href="#" class="arrow-list__item">
-                <span class="arrow-list__text arrow-list__text--title">특수 수하물</span>
-              </a>
-              <!-- 2022-08 김하나 추가 -->
-              <a href="#" class="arrow-list__item">
-                <span class="arrow-list__text arrow-list__text--title">스포츠 수하물</span>
-              </a>
-              <!-- //2022-08 김하나 추가 -->
-              <a href="#" class="arrow-list__item">
-                <span class="arrow-list__text arrow-list__text--title">수하물 운임</span>
-              </a>
-            </div>
-          </div>
 
-          <div class="section-wrap">
-            <div class="section-title">기타 안내</div>
-            <div class="arrow-list arrow-list--box">
-              <a href="#" class="arrow-list__item">
-                <span class="arrow-list__text arrow-list__text--title">운송제한 물품</span>
-              </a>
-              <a href="#" class="arrow-list__item">
-                <span class="arrow-list__text arrow-list__text--title">수하물 분실 및 배상</span>
-              </a>
+            <div class="gray-box pc-search pc-search--flex">
+              <div class="input-wrap input--line">
+                <div class="input-row">
+                  <div class="input-label label-top">수하물선택</div>
+                  <div class="select-wrap select-wrap--line">
+                    <select title="특수 수하물 선택" class="select-wrap__select select-special-cargo selected">
+                      <option disabled="" selected="" hidden="">선택해 주세요</option>
+                      <option value="1">스포츠 용품</option>
+                      <option value="2">골프클럽</option>
+                      <option value="3">스쿠버 다이빙 장비</option>
+                      <option value="4">낚시 장비</option>
+                      <option value="5">하키/라크로스 장비</option>
+                      <option value="6">라켓</option>
+                      <option value="7">스케이드 보드</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="button-wrap sub-section">
+                <button type="button" class="button button--optional"><span class="button__text">조회</span></button>
+              </div>
             </div>
           </div>
 
@@ -237,7 +205,7 @@
         </div>
 
         <div class="footer__top-item footer__top-item--family">
-          <div class="family-wrap" data-element="toggle" data-options="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
+          <div class="family-wrap" data-element="toggle" ="{'mode': 'slide', 'speed': 300, 'clickToClose': true}">
             <button type="button" class="button-family" data-element="toggle__anchor">Family Site</button>
             <div class="family-list" data-element="toggle__panel">
               <a href="#" class="family-link">㈜애경산업</a>
@@ -311,9 +279,10 @@
   </div>
   <!-- //FOOTER -->
 
-<script src="../../assets/js/lib/lib.min.js"></script>
-<script src="../../assets/js/plugin.js"></script>
-<script src="../../assets/js/common.js"></script>
+  <script src="../../assets/js/lib/lib.min.js"></script>
+  <script src="../../assets/js/plugin.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
 </body>
 
 </html>
