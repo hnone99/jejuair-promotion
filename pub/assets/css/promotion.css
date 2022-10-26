@@ -238,6 +238,14 @@
 
 .my-survice__label-label03, .anchor-list__label-label03 { background: #ff5000 !important; }
 
+.tab.tab--square.tab--cols3 { margin-left: -21px; margin-right: -21px; }
+
+.tab.tab--square.tab--cols3 .tab__button { width: 33.3333%; height: auto; }
+
+.tab.tab--square.tab--cols3 .tab__anchor { height: 100%; padding: 15px 7px; line-height: 1.5; }
+
+.tab.tab--square.tab--cols3 .tab__anchor:not(.is-active) { color: #666; }
+
 /* responsive.css 추가 요망 */
 @media all and (min-width: 1080px) { .event-detail__results { margin: -10px; display: flex; flex-wrap: wrap; }
   .event-detail__results.in-mypage { padding-bottom: 0; margin-left: 0; margin-right: 0; display: block; }
@@ -280,7 +288,8 @@
   .premium__sports-icon-size-5 { justify-content: center !important; gap: 45px; }
   .premium__sports-icon-size-2 { justify-content: center !important; gap: 45px; }
   .NE .step-text--icon.sports { align-items: center; }
-  .NE .step-text--icon.sports .step-text__item { flex: 1; margin-bottom: 0 !important; } }
+  .NE .step-text--icon.sports .step-text__item { flex: 1; margin-bottom: 0 !important; }
+  .tab.tab--square.tab--cols3 { margin-left: 0; margin-right: 0; } }
 
 /* //responsive.css 추가 요망 */
 /*# sourceMappingURL=promotion.css.map */

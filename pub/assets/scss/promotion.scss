@@ -262,6 +262,16 @@ $orange: #ff5000;
 .my-survice__label-label03,
 .anchor-list__label-label03{background: $orange !important;}
 
+.tab{
+  &.tab--square{
+    &.tab--cols3{
+      margin-left: -21px;margin-right: -21px;
+      .tab__button{width: 33.3333%;height: auto;}
+      .tab__anchor{height: 100%;padding: 15px 7px;line-height: 1.5;}
+      .tab__anchor:not(.is-active){color: #666;}
+    }
+  }
+}
 
 /* responsive.css 추가 요망 */
 @media all and (min-width: 1080px) {
@@ -384,6 +394,14 @@ $orange: #ff5000;
     .step-text--icon.sports{
       align-items: center;
       .step-text__item{flex: 1;margin-bottom: 0 !important;}
+    }
+  }
+
+  .tab{
+    &.tab--square{
+      &.tab--cols3{
+        margin-left: 0;margin-right: 0;
+      }
     }
   }
 }
