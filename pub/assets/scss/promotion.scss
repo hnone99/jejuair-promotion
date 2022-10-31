@@ -138,18 +138,38 @@ $orange: #ff5000;
     width:100%; height:0; padding-top: 100%;background-position: 0 0;background-repeat: no-repeat; background-size: contain;
     img{position:absolute; width:36px;}
   }
-  @for $i from 3 through 6 {
+  @for $i from 2 through 6 {
     &[data-roulette-length="#{$i}"] .roulette-board{
       background-image: url('../images/event/roulette-bg-item-length-#{$i}.png');
+      @if($i == 2){
+        img:nth-child(1){left: 50%; top: 12%;margin-left: -18px;}
+        img:nth-child(2){left: 50%; bottom: 12%;margin-left: -18px;}
+      }
       @if($i == 3){
-        img:nth-child(1){left: 50%; top: 11%;margin-left: -18px;}
+        img:nth-child(1){left: 50%; top: 12%;margin-left: -18px;}
         img:nth-child(2){right: 17%; top: 60%;}
         img:nth-child(3){left: 17%; top: 60%;}
       }
+      @if($i == 4){
+        img:nth-child(1){left: 50%; top: 12%;margin-left: -18px;}
+        img:nth-child(2){right: 12%; top: 50%;margin-top: -18px;}
+        img:nth-child(3){left: 50%; bottom: 12%;margin-left: -18px;}
+        img:nth-child(4){left: 12%; top: 50%;margin-top: -18px;}
+      }
+      @if($i == 5){
+        img:nth-child(1){left: 50%; top: 12%;margin-left: -18px;}
+        img:nth-child(2){right: 14%; top: 35%;}
+        img:nth-child(3){right: 26%; bottom: 19%;}
+        img:nth-child(4){left: 26%; bottom: 19%;}
+        img:nth-child(5){left: 14%; top: 35%;}
+      }
       @if($i == 6){
-        img:nth-child(4){left: 50%;; bottom: 11%; margin-left: -18px;}
-        img:nth-child(5){left: 15%; bottom: 27%;}
-        img:nth-child(6){left: 15%; top: 27%;}
+        img:nth-child(1){left: 50%; top: 12%;margin-left: -18px;}
+        img:nth-child(2){right: 16%; top: 28%;}
+        img:nth-child(3){right: 16%; bottom: 28%;}
+        img:nth-child(4){left: 50%;; bottom: 12%; margin-left: -18px;}
+        img:nth-child(5){left: 16%; bottom: 28%;}
+        img:nth-child(6){left: 16%; top: 28%;}
       }
     }
   }
@@ -159,7 +179,7 @@ $orange: #ff5000;
     }
     .roulette-board{background: none !important;}
     .bomb.active{content: url('../images/event/roulette-item-3-white.svg') !important;}
-    @for $i from 3 through 6 {
+    @for $i from 2 through 6 {
       &[data-roulette-length="#{$i}"] .roulette-board-wrap{
         background-image: url('../images/event/roulette-bg-item-length-#{$i}-active.png');
       }
@@ -322,10 +342,22 @@ $orange: #ff5000;
     .roulette-board{
       img{width: 60px;}
     }
-    @for $i from 3 through 6 {
+    @for $i from 2 through 6 {
       &[data-roulette-length="#{$i}"] .roulette-board{
-        background-image: url('../images/event/roulette-bg-item-length-#{$i}.png');
+        @if($i == 2){
+          img:nth-child(1),
+          img:nth-child(2){margin-left: -30px;}
+        }
         @if($i == 3){
+          img:nth-child(1){margin-left: -30px;}
+        }
+        @if($i == 4){
+          img:nth-child(1){margin-left: -30px;}
+          img:nth-child(2){margin-top: -30px;}
+          img:nth-child(3){margin-left: -30px;}
+          img:nth-child(4){margin-top: -30px;}
+        }
+        @if($i == 5){
           img:nth-child(1){margin-left: -30px;}
         }
         @if($i == 6){
