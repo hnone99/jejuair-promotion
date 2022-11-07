@@ -212,7 +212,7 @@
 
 .scratch .canvas-area { position: relative; width: 100%; height: 100%; }
 
-.scratch .canvas-area canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.scratch .canvas-area canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: opacity .5s; }
 
 .scratch .back-item { display: flex; flex-direction: column; height: 100%; justify-content: center; align-items: center; padding: 15px; visibility: hidden; opacity: 0; transition: .3s ease-in; }
 
@@ -270,16 +270,34 @@
 
 .my-survice__label-label03, .anchor-list__label-label03 { background: #ff5000 !important; }
 
-.tab.tab--square.tab--cols3 { margin-left: -21px; margin-right: -21px; }
+/* .tab{ &.tab--square{ &.tab--cols3{ margin-left: -21px;margin-right: -21px; .tab__button{width: 33.3333%;height: auto;} .tab__anchor{height: 100%;padding: 15px 7px;line-height: 1.5;} .tab__anchor:not(.is-active){color: #666;} } } } */
+.container1 { display: grid; grid-template-columns: 100px 100px 100px; gap: 1px; /* you can use gap instead of grid-gap */ }
 
-.tab.tab--square.tab--cols3 .tab__button { width: 33.3333%; height: auto; }
+.container1 .block { width: 100px; height: 100px; background-color: lightgrey; outline: 1px solid darkgreen; /* Use outline instead of border */ }
 
-.tab.tab--square.tab--cols3 .tab__anchor { height: 100%; padding: 15px 7px; line-height: 1.5; }
+.event-sticky.new-type { height: auto; }
 
-.tab.tab--square.tab--cols3 .tab__anchor:not(.is-active) { color: #666; }
+.event-sticky.new-type .sticky-wrap { height: auto !important; overflow: visible; }
+
+.event-sticky.new-type .sticky__inner { padding-bottom: 0; overflow: visible; background: #fff; }
+
+.event-sticky.new-type .event-detail__anchor-list { background: #fff; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; padding: 0; }
+
+.event-sticky.new-type .event-detail__anchor-list[data-item-length="2"] { grid-template-columns: 1fr 1fr; }
+
+.event-sticky.new-type .event-detail__anchor-list .event-detail__anchor { min-height: 60px; height: 100%; padding: 12px 6px; flex: 0 0 33.33333%; outline: solid 1px #ddd; background: #fff; text-align: center; }
+
+.event-sticky.new-type .event-detail__anchor-list .event-detail__anchor span { white-space: normal; }
+
+.event-sticky.new-type .event-detail__anchor-list .event-detail__anchor::after { display: none; }
+
+.event-sticky.new-type .event-detail__anchor-list .event-detail__anchor.is-active { background: #ff5000; color: #fff; }
+
+.event-sticky.new-type .event-detail__anchor-list .event-detail__anchor.is-active span { color: #fff; }
 
 /* responsive.css 추가 요망 */
-@media all and (min-width: 1080px) { .event-detail__results { margin: -10px; display: flex; flex-wrap: wrap; }
+@media all and (min-width: 1080px) { .event-sticky.new-type .event-detail__anchor-list { padding: 0 1px; }
+  .event-detail__results { margin: -10px; display: flex; flex-wrap: wrap; }
   .event-detail__results.in-mypage { padding-bottom: 0; margin-left: 0; margin-right: 0; display: block; }
   .event-detail__results.in-mypage .event-detail__results-item { width: 100%; padding-left: 0; padding-right: 0; }
   .event-detail__results.in-mypage .event-result-header { flex: 0 0 230px; }
@@ -323,7 +341,7 @@
   .premium__sports-icon-size-2 { justify-content: center !important; gap: 45px; }
   .NE .step-text--icon.sports { align-items: center; }
   .NE .step-text--icon.sports .step-text__item { flex: 1; margin-bottom: 0 !important; }
-  .tab.tab--square.tab--cols3 { margin-left: 0; margin-right: 0; } }
+  /* .tab{ &.tab--square{ &.tab--cols3{ margin-left: 0;margin-right: 0; } } } */ }
 
 /* //responsive.css 추가 요망 */
 /*# sourceMappingURL=promotion.css.map */

@@ -171,11 +171,11 @@ var lotteryScratch = (function () {
         var canvas = document.createElement('canvas'); // canvas init
         var imageContext = canvas.getContext('2d'); // canvas.getContext('2d') for image
         var topImage = new Image(); // new image
-        //this.lotteryScratchElement.style.width = this.lotteryScratchWidth + "px";
-        //this.lotteryScratchElement.style.height = this.lotteryScratchHeight + "px";
+        this.lotteryScratchElement.style.width = this.lotteryScratchWidth + "px";
+        this.lotteryScratchElement.style.height = this.lotteryScratchHeight + "px";
         //this.lotteryScratchElement.onmouseover = function () { canvas.style.cursor = 'crosshair' };
-        //canvas.width = this.lotteryScratchWidth; // canvas image width
-        //canvas.height = this.lotteryScratchHeight; // canvas image height
+        canvas.width = this.lotteryScratchWidth; // canvas image width
+        canvas.height = this.lotteryScratchHeight; // canvas image height
         this.lotteryScratchElement.appendChild(canvas); // canvas append
         this.lotteryScratchElement = canvas;
         topImage.onload = function () {
@@ -264,8 +264,11 @@ var lotteryScratch = (function () {
 
 
 window.addEventListener('load', function () {
+  var canvasWidth = document.querySelector('#lotteryScratch').offsetWidth;
+  var canvasHeight = document.querySelector('#lotteryScratch').offsetHeight;
+
   var myScratch = new lotteryScratch(
-    document.querySelector('#lotteryScratch'), 492, 259, 25,
+    document.querySelector('#lotteryScratch'), canvasWidth, canvasHeight, 25,
     '../../assets/images/event/scratch.png',
   );
 

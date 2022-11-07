@@ -210,7 +210,7 @@ $orange: #ff5000;
   }
   .canvas-area{
     position: relative;width: 100%;height: 100%;
-    canvas{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+    canvas{position: absolute;top: 0;left: 0;width: 100%;height: 100%;transition: opacity .5s;}
   }
   .back-item{
     display: flex;flex-direction: column; height: 100%;justify-content: center;align-items: center;padding: 15px;visibility: hidden;opacity: 0;transition: .3s ease-in;
@@ -282,7 +282,7 @@ $orange: #ff5000;
 .my-survice__label-label03,
 .anchor-list__label-label03{background: $orange !important;}
 
-.tab{
+/* .tab{
   &.tab--square{
     &.tab--cols3{
       margin-left: -21px;margin-right: -21px;
@@ -291,10 +291,49 @@ $orange: #ff5000;
       .tab__anchor:not(.is-active){color: #666;}
     }
   }
+} */
+
+.container1 {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  gap: 1px; /* you can use gap instead of grid-gap */
+  .block {
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+    outline: 1px solid darkgreen; /* Use outline instead of border */
+  }
+}
+
+
+.event-sticky.new-type{
+  height: auto;
+  .sticky-wrap{height: auto !important;overflow: visible;}
+  .sticky__inner{padding-bottom: 0;overflow: visible;background: #fff;}
+  .event-detail__anchor-list{
+    background: #fff;display: grid;grid-template-columns: 1fr 1fr 1fr;gap: 1px;padding: 0;
+    &[data-item-length="2"]{
+      grid-template-columns: 1fr 1fr;
+    }
+    .event-detail__anchor{
+      min-height: 60px;height: 100%;padding: 12px 6px;flex: 0 0 33.33333%;outline:solid 1px #ddd;background: #fff;text-align: center;
+      span{white-space: normal;}
+      &::after{display: none;}
+      &.is-active{
+        background: $orange;color: #fff;
+        span{color: #fff}
+      }
+    }
+  }
 }
 
 /* responsive.css 추가 요망 */
 @media all and (min-width: 1080px) {
+  .event-sticky.new-type{
+    .event-detail__anchor-list{
+      padding: 0 1px;
+    }
+  }
   .event-detail__results{
     margin: -10px;display: flex;flex-wrap: wrap;
     &.in-mypage{
@@ -429,13 +468,13 @@ $orange: #ff5000;
     }
   }
 
-  .tab{
+  /* .tab{
     &.tab--square{
       &.tab--cols3{
         margin-left: 0;margin-right: 0;
       }
     }
-  }
+  } */
 }
 /* //responsive.css 추가 요망 */
 
