@@ -8,6 +8,7 @@ $orange: #ff5000;
 .align-items-center {align-items: center !important;}
 .bt0{border-top: 0 !important;}
 .text-muted{color: #888 !important;}
+.position-relative{position: relative !important;}
 /* //front_global.css 추가 요망 */
 
 /* 이벤트 당첨 결과 */
@@ -237,11 +238,11 @@ $orange: #ff5000;
     border-bottom: 1px solid #ddd;padding-bottom: 30px;
     .list-product__image{
       display: flex;align-items: center;justify-content: center;
-      min-height: 120px;border: 1px solid #ddd;
+      min-height: 120px;border: 1px solid #ddd;position: relative;
       img{width: auto;height: auto;}
-      &.jj-members{
-        position: relative;
-        &::before{display: block;content: '';width: 50px;height: 50px; background: url('../images/icon/icon-jj-members-partners.png') no-repeat 0 0;background-size: contain;position: absolute;right: 6px;top: 6px;}
+      .badge-jj-members{
+        display: block;width: 50px;height: 50px;position: absolute;right: 6px;top: 6px;
+        img{width: 100%;height: 100%;object-fit: contain;}
       }
     }
   }
@@ -249,9 +250,11 @@ $orange: #ff5000;
   .list-period{color: $orange;font-size: 13px;}
 }
 
-.is-jj-members{
+.mypage-index-top{
   position: relative;padding-right: 92px;
-  &::after{content: '';display: block;background: url('../images/icon/icon-jj-members-partners.png');background-size: contain;width: 72px;height: 72px;position: absolute;right: 0;top: 0;}
+  .badge-jj-members{
+    display: block;width: 72px;height: 72px;position: absolute;right: 0;top: 0;
+  }
 }
 
 .jj-members-banner{
@@ -324,6 +327,15 @@ $orange: #ff5000;
         span{color: #fff}
       }
     }
+  }
+}
+
+.guide-text{
+  border-top: 1px solid #ddd;margin-top: 40px;padding: 10px 0;
+  > p{
+    color: #888;font-size: 13px;padding-left: 10px;
+    &::before{content: '*';display: inline-block;color: $orange;margin-left: -10px;width: 10px;transform: translateY(2px);}
+    a{color: $orange;text-decoration: underline;}
   }
 }
 
@@ -431,8 +443,8 @@ $orange: #ff5000;
       display: flex;
       .list-product__image{
         min-height: 150px;flex: 0 0 400px;
-        &.jj-members{
-          &::before{width: 72px;height: 72px;}
+        .badge-jj-members{
+          width: 72px;height: 72px;
         }
       }
       .list-product__info{
@@ -448,8 +460,8 @@ $orange: #ff5000;
     }
   }
 
-  .is-jj-members{
-    &::after{top: 40px;width: 137px;height: 137px;}
+  .mypage-index-top{
+    .badge-jj-members{top: 40px;width: 137px;height: 137px;}
   }
 
   .main-nd{
